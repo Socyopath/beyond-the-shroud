@@ -3,3 +3,24 @@ defined_text = {
     value = root.value:bts_end_of_the_cycle_favor_per_month
 }
 
+defined_text = {
+	name = bts_eoc_estimated_favor_per_1_year
+    value = root.value:bts_end_of_the_cycle_favor_per_1_year
+}
+
+defined_text = {
+	name = bts_eoc_estimated_favor_per_5_year
+    value = root.value:bts_end_of_the_cycle_favor_per_5_year
+}
+
+defined_text = {
+	name = bts_eoc_estimated_favor_per_10_year
+    value = root.value:bts_end_of_the_cycle_favor_per_10_year
+}
+
+defined_text = {
+	name = bts_eoc_estimated_favor_per_25_year
+    value = root.value:bts_end_of_the_cycle_favor_per_25_year
+}
+
+

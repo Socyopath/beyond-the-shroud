@@ -7,6 +7,11 @@
 # Covenant
 
 end_covenant_chain_title: "EOC Chain"
-end_covenant_chain_desc: "Total favor: §Y[root.end_covenant_rank]§! favor per month\nFavor per month: §Y[root.bts_eoc_favor_per_month]§!"
+end_covenant_chain_desc: "Total favor: §Y[root.end_covenant_rank]§!\nFavor per month: §Y[root.bts_eoc_favor_per_month]§!\n$end_covenant_estimated_favor_years$"
+end_covenant_estimated_favor_1_year: "§Y1§! year : §Y[root.bts_eoc_estimated_favor_per_1_year]§!"
+end_covenant_estimated_favor_5_year: "§Y5§! year : §Y[root.bts_eoc_estimated_favor_per_5_year]§!"
+end_covenant_estimated_favor_10_year: "§Y10§! year : §Y[root.bts_eoc_estimated_favor_per_10_year]§!"
+end_covenant_estimated_favor_25_year: "§Y25§! year : §Y[root.bts_eoc_estimated_favor_per_25_year]§!"
+end_covenant_estimated_favor_years: "Estimated favor in :\n- $end_covenant_estimated_favor_1_year$\n- $end_covenant_estimated_favor_5_year$\n- $end_covenant_estimated_favor_10_year$\n- $end_covenant_estimated_favor_25_year$"
 covenant_end_of_the_cycle_0: "$covenant_end_of_the_cycle$"
 covenant_end_of_the_cycle_desc_0: "$covenant_end_of_the_cycle_desc$"

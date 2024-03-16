@@ -17,6 +17,32 @@ bts_end_of_the_cycle_favor_per_month = {
 		subtract = 0.02
 	}
 }
-
 # has_ascension_perk = 
 # has_tradition = 
+
+bts_end_of_the_cycle_favor_per_1_year = {
+    set = root.value:bts_end_of_the_cycle_favor_per_month
+    multiply = 12
+    add = root.end_covenant_rank
+}
+
+bts_end_of_the_cycle_favor_per_5_year = {
+    set = root.value:bts_end_of_the_cycle_favor_per_month
+    multiply = 12
+    multiply = 5
+    add = root.end_covenant_rank
+}
+
+bts_end_of_the_cycle_favor_per_10_year = {
+    set = root.value:bts_end_of_the_cycle_favor_per_month
+    multiply = 12
+    multiply = 10
+    add = root.end_covenant_rank
+}
+
+bts_end_of_the_cycle_favor_per_25_year = {
+    set = root.value:bts_end_of_the_cycle_favor_per_month
+    multiply = 12
+    multiply = 25
+    add = root.end_covenant_rank
+}
