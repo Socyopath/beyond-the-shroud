@@ -5,3 +5,8 @@
 # Astral Actions
 
 # Covenant
+
+end_covenant_chain_title: "EOC Chain"
+end_covenant_chain_desc: "Total favor: §Y[root.end_covenant_rank]§! favor per month\nFavor per month: §Y[root.bts_eoc_favor_per_month]§!"
+covenant_end_of_the_cycle_0: "$covenant_end_of_the_cycle$"
+covenant_end_of_the_cycle_desc_0: "$covenant_end_of_the_cycle_desc$"

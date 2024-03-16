@@ -1,0 +1,5 @@
+defined_text = {
+	name = bts_eoc_favor_per_month
+    value = root.value:bts_end_of_the_cycle_favor_per_month
+}
+

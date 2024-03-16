@@ -1,0 +1,11 @@
+suitable_for_chosen = {
+	has_psionic_leader_trait = yes
+	OR = {
+		owner = { has_country_flag = composer_covenant_rank_3 }
+		owner = { has_country_flag = eater_covenant_rank_3 }
+		owner = { has_country_flag = instrument_covenant_rank_3 }
+		owner = { has_country_flag = whisperers_covenant_rank_3 }
+        owner = { has_country_flag = end_covenant_rank_3 }
+	}
+	is_exploring_astral_rift = no
+}

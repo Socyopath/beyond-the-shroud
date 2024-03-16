@@ -1,0 +1,14 @@
+covenant_end_of_the_cycle_0 = {
+	station_gatherers_produces_mult = 0.5
+	station_researchers_produces_mult = 0.5
+	planet_jobs_produces_mult = 0.5
+	country_naval_cap_mult = 0.5
+	country_starbase_capacity_add = 5
+	country_covenant_influence_produces_add = 2
+}
+
+agenda_psionic_supremacy_finish_end = {
+	planet_psionic_jobs_produces_mult = 0.2
+	category_psionics_research_speed_mult = 0.4
+	starbase_shipyard_build_speed_mult = 0.10 # A modifier
+}
