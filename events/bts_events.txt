@@ -1,0 +1,48 @@
+namespace = bts
+
+country_event = {
+	id = bts.100
+	title = "ancrel.1.name"
+	desc = "ancrel.1.desc"
+	picture = GFX_evt_overgrown_city
+	show_sound = event_wind_ruins
+	fire_only_once = yes
+	is_triggered_only = yes
+
+    immediate = {
+        set_country_flag = zroni_intro
+		set_global_flag = zroni_started
+		capital_scope = {
+            solar_system = { set_star_flag = first_zroni_site@root }
+        }
+        random_planet_within_border = {
+            limit = {
+                is_capital = no
+                is_moon = yes
+                is_star = no
+                is_asteroid = no
+            }
+            save_event_target_as = bts_zroni_start
+        }
+    }
+	option = {
+		name = CURIOUS
+		hidden_effect = {
+			country_event = { id = story.5 days = 30 }
+		}
+        event_target:bts_zroni_start = {
+            create_archaeological_site = zroni_digsite_1
+            root.owner = {
+                set_country_flag = zroni_arc_chain_@prev
+            }
+            add_deposit = d_zro_deposit_2
+        }
+
+        add_monthly_resource_mult = {
+            resource = engineering_research
+            value = @tier1researchreward
+            min = @tier1researchmin
+            max = @tier1researchmax
+        }
+	}
+}
