@@ -1,0 +1,14 @@
+origin_bts_zroni = {
+	is_origin = yes
+	icon = ""
+	picture = ""
+
+	possible = {
+
+	}
+
+    modifier = {
+    }
+
+	description = ""
+}

@@ -1,0 +1,6 @@
+#spriteTypes = {
+#    spriteType = { 
+#        name = "GFX_resource_sr_matrix_unit" 
+#        textureFile = "gfx/interface/icons/resources/sr_matrix_unit.dds" 
+#    }
+#}
