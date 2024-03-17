@@ -1,5 +1,8 @@
 ﻿l_english:
 
+# Modifiers
+bts_astral_action_cost: "Astral Actions Cost"
+
 # Techs
 
 # Astral Actions
@@ -20,3 +23,29 @@ covenant_end_of_the_cycle_desc_0: "$covenant_end_of_the_cycle_desc$"
 origin_bts_zroni: "ZRONI"
 origin_bts_zroni_desc: "ZRONI DESC"
 origin_bts_zroni_effects: "ZRONI EFFECTS"
+
+# Tradition
+
+tradition_astral_studies: "Astral Studies"
+tradition_astral_studies_desc: "Astral Studies desc"
+
+tr_astral_studies_adopt: "$tradition_astral_studies$ Traditions"
+tr_astral_studies_adopt_desc: "Add intel on system"
+
+tr_astral_studies_finish: "$tr_astral_studies_adopt$ Finished"
+tr_astral_studies_finish_desc: "Spawn astral rift"
+
+tr_astral_studies_quantum_storage: "Quantum Storage"
+tr_astral_studies_quantum_storage_desc: ""
+
+tr_astral_studies_rift_analyser: "Rift Analyser"
+tr_astral_studies_rift_analyser_desc: ""
+
+tr_astral_studies_extradimensional_knowledge: "Extradimensional knowledge"
+tr_astral_studies_extradimensional_knowledge_desc: ""
+
+tr_astral_studies_rift_collapser: "Rift Collapser"
+tr_astral_studies_rift_collapser_desc: ""
+
+tr_astral_studies_causality_reverser: "Causality Reverser"
+tr_astral_studies_causality_reverser_desc: ""

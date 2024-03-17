@@ -15,8 +15,8 @@
 
 @bts_eoc_favor_per_month_rift = 0.03
 
-@bts_eoc_favor_per_month_trad = 0.04
-@bts_eoc_favor_per_month_asc = 0.06
+@bts_eoc_favor_per_month_trad = 0.06
+@bts_eoc_favor_per_month_asc = 0.04
 
 
 # Techs

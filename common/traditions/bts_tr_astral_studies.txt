@@ -1,0 +1,55 @@
+tr_astral_studies_adopt = {
+	possible = {
+		has_ascension_perk = ap_archaeoengineers
+	}
+	custom_tooltip = tr_astral_studies_adopt_desc
+	on_enabled = {
+		hidden_effect = {
+			# country_event = { id = utopia.2600 }
+		}
+	}
+}
+
+tr_astral_studies_finish = {
+	custom_tooltip = tr_astral_studies_finish_desc
+	on_enabled = {
+		hidden_effect = {
+			# country_event = { id = utopia.2600 }
+		}
+	}
+}
+
+tr_astral_studies_quantum_storage = {
+	modifier = {
+		country_resource_max_astral_threads_add = 250
+	}
+}
+tr_astral_studies_rift_analyser = {
+	modifier = {
+		country_astral_threads_produces_mult = 0.25
+	}
+}
+tr_astral_studies_extradimensional_knowledge = {
+	modifier = {
+		country_astral_rift_speed_mult = 0.50
+	}
+}
+
+tr_astral_studies_rift_collapser = {
+	possible = {
+		has_tradition = tr_astral_studies_quantum_storage
+		has_tradition = tr_astral_studies_rift_analyser
+	}
+	modifier = {
+		bts_astral_action_cost = -0.25
+	}
+}
+tr_astral_studies_causality_reverser = {
+	possible = {
+		has_tradition = tr_astral_studies_rift_analyser
+		has_tradition = tr_astral_studies_extradimensional_knowledge
+	}
+	modifier = {
+		country_astral_rift_fail_mult = -0.25
+	}
+}

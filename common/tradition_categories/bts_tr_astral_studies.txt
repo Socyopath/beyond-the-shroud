@@ -1,0 +1,17 @@
+tradition_astral_studies = {
+	tree_template = "tree_21_21"
+	adoption_bonus = "tr_astral_studies_adopt"
+	finish_bonus = "tr_astral_studies_finish"
+
+	potential = {
+		has_ascension_perk = ap_archaeoengineers
+	}
+
+	traditions = {
+		"tr_astral_studies_quantum_storage"
+		"tr_astral_studies_rift_analyser"
+		"tr_astral_studies_extradimensional_knowledge"
+		"tr_astral_studies_rift_collapser"
+		"tr_astral_studies_causality_reverser"
+	}
+}
