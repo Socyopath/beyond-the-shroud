@@ -3,6 +3,10 @@
 # Modifiers
 bts_astral_action_cost: "Astral Actions Cost"
 
+# Traits
+leader_trait_end_chosen: "Chosen of the End"
+leader_trait_end_chosen_desc: "This leader has been chosen to wield the power of an inscrutable Shroud entity. Sustained by eldritch energies, death is now foreign to them."
+
 # Techs
 
 # Astral Actions

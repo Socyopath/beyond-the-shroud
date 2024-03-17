@@ -1777,7 +1777,7 @@ country_event = {
 				limit = {
 					ROOT = { has_country_flag = end_covenant_rank_3 }
 				}
-				add_trait = leader_trait_whisperers_chosen
+				add_trait = leader_trait_end_chosen
 				remove_trait = leader_trait_psionic
 			}
 		}
