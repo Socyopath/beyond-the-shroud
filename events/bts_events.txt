@@ -12,17 +12,30 @@ country_event = {
     immediate = {
         set_country_flag = zroni_intro
 		set_global_flag = zroni_started
-		capital_scope = {
+        capital_scope = {
             solar_system = { set_star_flag = first_zroni_site@root }
-        }
-        random_planet_within_border = {
-            limit = {
-                is_capital = no
-                is_moon = yes
-                is_star = no
-                is_asteroid = no
+            if = {
+                limit = {
+                    has_moon = yes
+                }
+                random_moon = {
+                    save_event_target_as = bts_zroni_start
+                }
             }
-            save_event_target_as = bts_zroni_start
+            else = {
+                solar_system = {
+                    random_system_planet = {
+                        limit = {
+                            is_colonizable = no
+                            is_star = no
+                            is_asteroid = no
+                            is_homeworld = no
+                            NOT = { is_planet_class = pc_gas_giant }
+                        }
+                        save_event_target_as = bts_zroni_start
+                    }
+                }
+            }
         }
     }
 	option = {
