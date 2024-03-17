@@ -5,7 +5,6 @@
 # Astral Actions
 
 # Covenant
-
 end_covenant_chain_title: "EOC Chain"
 end_covenant_chain_desc: "Total favor: §Y[root.end_covenant_rank]§!\nFavor per month: §Y[root.bts_eoc_favor_per_month]§!\n$end_covenant_estimated_favor_years$"
 end_covenant_estimated_favor_1_year: "§Y1§! year : §Y[root.bts_eoc_estimated_favor_per_1_year]§!"
@@ -15,3 +14,8 @@ end_covenant_estimated_favor_25_year: "§Y25§! year : §Y[root.bts_eoc_estimate
 end_covenant_estimated_favor_years: "Estimated favor in :\n- $end_covenant_estimated_favor_1_year$\n- $end_covenant_estimated_favor_5_year$\n- $end_covenant_estimated_favor_10_year$\n- $end_covenant_estimated_favor_25_year$"
 covenant_end_of_the_cycle_0: "$covenant_end_of_the_cycle$"
 covenant_end_of_the_cycle_desc_0: "$covenant_end_of_the_cycle_desc$"
+
+# Origin
+origin_bts_zroni: "ZRONI"
+origin_bts_zroni_desc: "ZRONI DESC"
+origin_bts_zroni_effects: "ZRONI EFFECTS"

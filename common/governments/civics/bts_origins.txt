@@ -1,14 +1,27 @@
 origin_bts_zroni = {
 	is_origin = yes
-	icon = ""
-	picture = ""
+	icon = "gfx/interface/icons/origins/origins_shroudwalker_apprentice.dds"
+	picture = GFX_origin_bts_zroni
+	max_once_global = yes
 
 	possible = {
-
+		species_archetype = {
+			value = BIOLOGICAL
+		}
+		ethics = { 
+			NOT = { 
+				value = ethic_gestalt_consciousness 
+			} 
+		}
+		civics = {
+			value = civic_dimensional_worship
+		}
 	}
 
     modifier = {
+		ship_archaeological_site_excavation_speed_mult = 1.00
+		ship_archaeological_site_clues_add = 2
     }
 
-	description = ""
+	description = "origin_bts_zroni_effects"
 }

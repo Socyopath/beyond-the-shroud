@@ -1,6 +1,7 @@
-#spriteTypes = {
-#    spriteType = { 
-#        name = "GFX_resource_sr_matrix_unit" 
-#        textureFile = "gfx/interface/icons/resources/sr_matrix_unit.dds" 
-#    }
-#}
+spriteTypes = {
+	spriteType = {
+		name = "GFX_origin_bts_zroni"
+		texturefile = "gfx/event_pictures/origins/origin_bts_zroni.dds"
+		alwaystransparent = yes
+	}
+}
