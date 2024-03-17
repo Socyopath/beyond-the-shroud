@@ -14,6 +14,7 @@ country_event = {
     }
 
     immediate = {
+        give_technology = { tech = tech_archaeostudies message = yes }
         set_country_flag = zroni_intro
 		set_global_flag = zroni_started
         capital_scope = {

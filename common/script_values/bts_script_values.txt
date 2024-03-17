@@ -1,24 +1,37 @@
 bts_end_of_the_cycle_favor_per_month = {
-    base = 0.03
-    modifier = {
-        has_ethic = ethic_fanatic_spiritualist
-		add = 0.07
-	}
+    base = @bts_eoc_favor_per_month_base
     modifier = {
         has_ethic = ethic_spiritualist
-		add = 0.03
+		add = @bts_eoc_favor_per_month_spirit
 	}
     modifier = {
-        has_ethic = ethic_fanatic_materialist
-		subtract = 0.05
+        has_ethic = ethic_fanatic_spiritualist
+		add = @bts_eoc_favor_per_month_f_spirit
 	}
     modifier = {
         has_ethic = ethic_materialist
-		subtract = 0.02
+		add = @bts_eoc_favor_per_month_mat
 	}
+    modifier = {
+        has_ethic = ethic_fanatic_materialist
+		add = @bts_eoc_favor_per_month_f_mat
+	}
+
+	complex_trigger_modifier = {
+		trigger = astral_rifts_completed
+		mult = @bts_eoc_favor_per_month_rift
+        mode = add
+	}
+    
+    # modifier = {
+    #     has_tradition = ethic_materialist
+	# 	add = @bts_eoc_favor_per_month_trad
+	# }
+    # modifier = {
+    #     has_ascension_perk = ethic_materialist
+	# 	add = @bts_eoc_favor_per_month_asc
+	# }
 }
-# has_ascension_perk = 
-# has_tradition = 
 
 bts_end_of_the_cycle_favor_per_1_year = {
     set = root.value:bts_end_of_the_cycle_favor_per_month

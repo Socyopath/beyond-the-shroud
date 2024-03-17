@@ -429,6 +429,28 @@ country_event = {
 		trigger = {
 			has_modifier = covenant_end_of_the_cycle_0
 		}
+		hidden_effect = {
+			set_saved_date = {
+				key = bts_eoc_final_date
+				days_from_present = @bts_eoc_days_before_end
+				expires = @bts_eoc_days_before_end
+			}
+			set_timed_country_flag = { 
+				flag = bts_eoc_waiting_final
+				days = @bts_eoc_days_before_end
+			}
+			every_owned_planet = {
+				limit = { NOT = { has_modifier = covenant_shroud_marked } }
+				add_modifier = { modifier = covenant_shroud_marked days = -1 }
+			}
+			every_subject = {
+				every_owned_planet = {
+					limit = { NOT = { has_modifier = covenant_shroud_marked } }
+					add_modifier = { modifier = covenant_shroud_marked days = -1 }
+				}
+			}
+			country_event = { id = utopia.3320 days = @bts_eoc_days_before_end }
+		}
 		begin_event_chain = {
 			event_chain = "end_covenant_chain"
 			target = this
@@ -486,7 +508,7 @@ country_event = {
 
 	desc = {
 		text = covenant.cycle.desc
-		trigger = { has_modifier = covenant_end_of_the_cycle }
+		trigger = { has_modifier = covenant_end_of_the_cycle_0 }
 	}
 
 	option = {
@@ -518,19 +540,6 @@ country_event = {
 			has_modifier = covenant_end_of_the_cycle_0
 		}
 		name = covenant.cycle.option
-		hidden_effect = {
-			every_owned_planet = {
-				limit = { NOT = { has_modifier = covenant_shroud_marked } }
-				add_modifier = { modifier = covenant_shroud_marked days = -1 }
-			}
-			every_subject = {
-				every_owned_planet = {
-					limit = { NOT = { has_modifier = covenant_shroud_marked } }
-					add_modifier = { modifier = covenant_shroud_marked days = -1 }
-				}
-			}
-			country_event = { id = utopia.3320 days = 18000 }
-		}
 	}
 }
 

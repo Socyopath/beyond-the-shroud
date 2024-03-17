@@ -23,4 +23,10 @@ defined_text = {
     value = root.value:bts_end_of_the_cycle_favor_per_25_year
 }
 
-
+defined_text = {
+    name = end_covenant_end_status
+    text = {
+		trigger = { has_country_flag = bts_eoc_waiting_final }
+        localization_key = end_covenant_end_date
+    }
+}
