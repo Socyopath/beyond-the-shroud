@@ -1,0 +1,11 @@
+scaled_astral_action_cost = {
+	base = 0
+	modifier = {
+		add = $INCREASE_VARIABLE$
+		is_variable_set = $INCREASE_VARIABLE$
+	}
+	mult = $INCREASE$
+	add = $BASE$
+    mult = value:scripted_modifier_mult|MODIFIER|bts_astral_action_cost|
+	max = $MAX$
+}
