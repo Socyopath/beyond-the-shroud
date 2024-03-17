@@ -7,7 +7,14 @@ bts_astral_action_cost: "Astral Actions Cost"
 leader_trait_end_chosen: "Chosen of the End"
 leader_trait_end_chosen_desc: "This leader has been chosen to wield the power of an inscrutable Shroud entity. Sustained by eldritch energies, death is now foreign to them."
 
+
+# Components
+END_MARK: "Mark of the End"
+END_MARK_DESC: "$COMPOSER_MARK_DESC$"
+
 # Techs
+tech_covenant_end: "$END_MARK$"
+tech_covenant_end_desc: "$tech_covenant_composer_desc$"
 
 # Astral Actions
 
