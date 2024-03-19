@@ -20,3 +20,4 @@
 
 
 # Techs
+@bts_eoc_mark_of_the_end_armor_penetration = 0.25

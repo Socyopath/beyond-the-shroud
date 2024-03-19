@@ -13,19 +13,8 @@ utility_component_template = {
 	}
 
 	modifier = {
-		ship_armor_penetration_mult = 0.25
+		ship_armor_penetration_mult = @bts_eoc_mark_of_the_end_armor_penetration
 	}
-
-	# triggered_ship_modifier = {
-	# 	potential = {
-	# 		has_non_psionic_shields = yes
-	# 		has_hp_percentage > 0.5
-	# 		is_in_combat = yes
-	# 	}
-	# 	modifier = {
-	# 		ship_shield_reduction = 1
-	# 	}
-	# }
 
 	prerequisites = { tech_covenant_end }
 	component_set = "END_MARK"
