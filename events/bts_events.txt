@@ -1,5 +1,6 @@
 namespace = bts
 
+# Debug
 astral_rift_event = {
 	id = bts.101
 	title = astral_rift.3235.name
@@ -22,4 +23,75 @@ astral_rift_event = {
 	immediate = {
 		finish_astral_rift = yes
 	}
+}
+
+# Tradition Astral Studies adopted
+country_event = {
+    id = bts.10
+	title = tr_astral_studies_adopt_event_name
+	desc = tr_astral_studies_adopt_event_desc
+	picture = GFX_evt_astral_rift_psionic_stranger
+	show_sound = ap_rift_event_32_psionic_comms
+	is_triggered_only = yes
+
+	option = {
+        name = OK
+        hidden_effect = {
+            every_system = {
+                limit = {
+                    OR = {
+                        has_astral_rift = yes
+                        any_system_planet = {
+                            is_astral_scar = yes
+                        }
+                    }
+                }
+                set_surveyed = { surveyed = yes surveyor = root }
+                # root = { set_visited = prev }
+            }
+        }
+    }
+}
+
+# Tradition Astral Studies finished Status
+country_event = {
+    id = bts.11
+	title = tr_astral_studies_finish_event_name
+	desc = tr_astral_studies_finish_event_desc
+	picture = GFX_evt_astral_rift_psionic_stranger
+	show_sound = ap_rift_event_32_psionic_comms
+	is_triggered_only = yes
+
+    trigger = {
+        has_country_flag = wait_spawn_astral_rift
+        any_system_within_border = {
+            can_spawn_astral_rift = yes
+        }
+    }
+
+    immediate = {
+        remove_country_flag = wait_spawn_astral_rift
+        ordered_system_within_border = {
+            limit = {
+                can_spawn_astral_rift = yes
+            }
+            position = 0
+            order_by = trigger:distance_to_capital
+            inverse = yes
+            save_event_target_as = bts_astral_studies_target_system
+        }
+    }
+
+	option = {
+        name = tr_astral_studies_finish_event_target_system
+        hidden_effect = {
+            event_target:bts_astral_studies_target_system = {
+                spawn_astral_rift = {
+					random_pos = yes
+					orbit_angle = 360
+					spawn_sound = no
+				}
+            }
+        }
+    }
 }

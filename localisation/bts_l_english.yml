@@ -42,9 +42,15 @@ tradition_astral_studies_desc: "Astral Studies desc"
 
 tr_astral_studies_adopt: "$tradition_astral_studies$ Traditions"
 tr_astral_studies_adopt_desc: "Add intel on system"
+tr_astral_studies_adopt_event_name: ""
+tr_astral_studies_adopt_event_desc: ""
 
 tr_astral_studies_finish: "$tr_astral_studies_adopt$ Finished"
 tr_astral_studies_finish_desc: "Spawn astral rift"
+tr_astral_studies_finish_event_name: ""
+tr_astral_studies_finish_event_desc: ""
+
+tr_astral_studies_finish_event_target_system: "[bts_astral_studies_target_system.GetName]"
 
 tr_astral_studies_quantum_storage: "Quantum Storage"
 tr_astral_studies_quantum_storage_desc: ""

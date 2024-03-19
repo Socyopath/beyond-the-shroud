@@ -5,7 +5,7 @@ tr_astral_studies_adopt = {
 	custom_tooltip = tr_astral_studies_adopt_desc
 	on_enabled = {
 		hidden_effect = {
-			# country_event = { id = utopia.2600 }
+			country_event = { id = bts.10 }
 		}
 	}
 }
@@ -14,7 +14,7 @@ tr_astral_studies_finish = {
 	custom_tooltip = tr_astral_studies_finish_desc
 	on_enabled = {
 		hidden_effect = {
-			# country_event = { id = utopia.2600 }
+			set_country_flag = wait_spawn_astral_rift
 		}
 	}
 }

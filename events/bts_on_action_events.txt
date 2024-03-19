@@ -1,5 +1,6 @@
 namespace = bts
 
+# Origin Event
 country_event = {
 	id = bts.1
 	title = "ancrel.1.name"
