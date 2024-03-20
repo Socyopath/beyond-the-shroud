@@ -1,5 +1,7 @@
 # End Of The Cycle Covenant
 @bts_eoc_days_before_end = 18000
+@bts_eoc_rank_to_survive = 10
+
 ## Favor bonus
 @bts_eoc_zro_per_telepath_0 = 2
 @bts_eoc_zro_per_telepath_1 = 5

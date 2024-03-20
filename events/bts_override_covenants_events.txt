@@ -449,7 +449,7 @@ country_event = {
 					add_modifier = { modifier = covenant_shroud_marked days = -1 }
 				}
 			}
-			country_event = { id = utopia.3320 days = @bts_eoc_days_before_end }
+			country_event = { id = bts.20 days = @bts_eoc_days_before_end }
 		}
 		begin_event_chain = {
 			event_chain = "end_covenant_chain"

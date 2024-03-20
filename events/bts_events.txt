@@ -95,3 +95,56 @@ country_event = {
         }
     }
 }
+
+# End of the cycle check 
+country_event = {
+	id = bts.20
+    hide_window = yes
+	is_triggered_only = yes
+
+    immediate = {
+        if = {
+            limit = {
+                check_variable = {
+                    which = end_covenant_rank
+                    value > @bts_eoc_rank_to_survive
+                }
+            }
+            country_event = { id = bts.21 } # Won End of the Cycle race
+        }
+        else = {
+            country_event = { id = utopia.3320 } # Default End of the Cycle behavior
+        }
+    }
+}
+
+country_event = {
+	id = bts.21
+	title = end_covenant_surive_event_title
+	picture = GFX_evt_unspeakable_horror
+	show_sound = event_red_alert
+	location = root
+
+	is_triggered_only = yes
+
+	desc = end_covenant_surive_event_desc
+
+    immediate = {
+        every_owned_planet = {
+            limit = { has_modifier = covenant_shroud_marked }
+            remove_modifier = covenant_shroud_marked
+        }
+        every_subject = {
+            every_owned_planet = {
+                limit = { has_modifier = covenant_shroud_marked } 
+                remove_modifier = covenant_shroud_marked
+            }
+        }
+    }
+
+    option = {
+        name = OK
+    }
+
+}
+

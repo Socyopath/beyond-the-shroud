@@ -29,4 +29,5 @@ defined_text = {
 		trigger = { has_country_flag = bts_eoc_waiting_final }
         localization_key = end_covenant_end_date
     }
+    default = BLANK_STRING
 }

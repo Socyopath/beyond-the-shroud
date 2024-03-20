@@ -29,6 +29,9 @@ end_covenant_estimated_favor_25_year: "§Y25§! year : §Y[root.bts_eoc_estimate
 end_covenant_estimated_favor_years: "Estimated favor in :\n- $end_covenant_estimated_favor_1_year$\n- $end_covenant_estimated_favor_5_year$\n- $end_covenant_estimated_favor_10_year$\n- $end_covenant_estimated_favor_25_year$"
 covenant_end_of_the_cycle_0: "$covenant_end_of_the_cycle$"
 covenant_end_of_the_cycle_desc_0: "$covenant_end_of_the_cycle_desc$"
+end_covenant_surive_event_title: "Won EOC"
+end_covenant_surive_event_desc: "You survived"
+
 
 # Origin
 origin_bts_zroni: "ZRONI"
