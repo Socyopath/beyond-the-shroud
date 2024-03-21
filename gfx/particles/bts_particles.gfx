@@ -14,5 +14,19 @@ objectTypes = {
 		
 		scale = 1
 	}
+
+	pdxparticle = {
+		name = "bts_psionic_wave_effect"
+		type = "bts_psionic_wave_file"
+		
+		scale = 75.0
+	}
+
+	pdxparticle = {
+		name = "bts_psionic_wave_star_effect"
+		type = "bts_psionic_wave_star_file"
+		
+		scale = 75.0
+	}
 }
 

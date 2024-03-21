@@ -1,5 +1,6 @@
 eoc_mega_0 = {
-    	entity = "dyson_sphere_phase_01_entity"
+	entity = "quantum_catapult_stage_1_entity"
+	construction_entity = "construction_platform_entity"
 	portrait = "GFX_megastructure_construction_background"
 	build_time = 3600
 	resources = {
@@ -13,11 +14,28 @@ eoc_mega_0 = {
 	potential = { 
 
 	}
+
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "must_build_around_star"
+				is_star = yes
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = { has_anomaly = yes }
+			}
+		}
+	}
+
+	on_build_complete = {
+
+	}
 }
 
 eoc_mega_1 = {
-    entity = "dyson_sphere_phase_02_entity"
-    construction_entity = "dyson_sphere_part_1_entity"
+	entity = "quantum_catapult_stage_1_entity"
+	construction_entity = "quantum_catapult_stage_1_entity"
 	portrait = "GFX_megastructure_construction_background"
 	build_time = 3600
 	resources = {
@@ -31,6 +49,42 @@ eoc_mega_1 = {
 	}
 
 	on_build_complete = {
+        set_star_class = sc_black_hole
+        star = {
+            change_pc = pc_black_hole
+            create_ambient_object = {
+                type = "star_explosion"
+                play_animation_once = yes
+                location = this
+            }
+            last_created_ambient_object = {
+                set_location = {
+                    target = prev
+                    distance = 0
+                    angle = random
+                }
+            }
+        }
+	}
+
+}
+
+eoc_mega_2 = {
+	entity = "quantum_catapult_stage_1_entity"
+	construction_entity = "quantum_catapult_stage_1_entity"
+	portrait = "GFX_megastructure_construction_background"
+	build_time = 3600
+	resources = {
+	}
+
+	country_modifier = {
+	}
+
+    upgrade_from = {
+		eoc_mega_1
+	}
+
+    on_build_complete = {
         star = {
             create_ambient_object = {
                 type = "bts_shroud_portal_1"
@@ -45,13 +99,12 @@ eoc_mega_1 = {
                 }
             }
         }
-	}
-
+    }
 }
 
-eoc_mega_2 = {
-    entity = "dyson_sphere_phase_03_entity"
-    construction_entity = "dyson_sphere_part_2_entity"
+eoc_mega_3 = {
+	entity = "quantum_catapult_stage_2_entity"
+	construction_entity = "quantum_catapult_stage_2_entity"
 	portrait = "GFX_megastructure_construction_background"
 	build_time = 3600
 	resources = {
@@ -61,11 +114,11 @@ eoc_mega_2 = {
 	}
 
     upgrade_from = {
-		eoc_mega_1
+		eoc_mega_2
 	}
 
     on_build_complete = {
-        random_system_ambient_object = {
+        every_system_ambient_object = {
             limit = { has_ambient_object_flag = bts_shroud_portal_1_system_effect }
             destroy_ambient_object = this
         }
@@ -86,9 +139,9 @@ eoc_mega_2 = {
     }
 }
 
-eoc_mega_3 = {
-    entity = "dyson_sphere_phase_04_entity"
-    construction_entity = "dyson_sphere_part_3_entity"
+eoc_mega_4 = {
+	entity = "quantum_catapult_stage_3_entity"
+	construction_entity = "quantum_catapult_stage_3_entity"
 	portrait = "GFX_megastructure_construction_background"
 	build_time = 3600
 	resources = {
@@ -98,11 +151,10 @@ eoc_mega_3 = {
 	}
 
     upgrade_from = {
-		eoc_mega_2
+		eoc_mega_3
 	}
-
     on_build_complete = {
-        random_system_ambient_object = {
+        every_system_ambient_object = {
             limit = { has_ambient_object_flag = bts_shroud_portal_2_system_effect }
             destroy_ambient_object = this
         }
@@ -119,13 +171,25 @@ eoc_mega_3 = {
                     angle = random
                 }
             }
+            create_ambient_object = {
+                type = "psi_storm_1"
+                location = this
+            }
+            last_created_ambient_object = {
+                set_ambient_object_flag = bts_shroud_portal_3_system_effect
+                set_location = {
+                    target = prev
+                    distance = 0
+                    angle = random
+                }
+            }
         }
     }
 }
 
-eoc_mega_4 = {
-    entity = "dyson_sphere_phase_05_entity"
-    construction_entity = "dyson_sphere_part_4_entity"
+eoc_mega_5 = {
+	entity = "bts_no_entity"
+	construction_entity = "quantum_catapult_stage_3_entity"
 	portrait = "GFX_megastructure_construction_background"
 	build_time = 3600
 	resources = {
@@ -135,35 +199,42 @@ eoc_mega_4 = {
 	}
 
     upgrade_from = {
-		eoc_mega_3
+		eoc_mega_4
 	}
-    # on_build_complete = {
-    #     star = {
-    #         create_ambient_object = {
-    #             type = "psi_storm_1"
-    #             location = this
-    #         }
-    #         last_created_ambient_object = {
-    #             set_ambient_object_flag = crisis_sphere_4_system_effect
-    #             set_location = {
-    #                 target = prev
-    #                 distance = 0
-    #                 angle = random
-    #             }
-    #         }
-    #         create_ambient_object = {
-    #             type = "shroud_rift_object"
-	# 			scale = 5
-    #             location = this
-    #         }
-    #         last_created_ambient_object = {
-    #             set_ambient_object_flag = crisis_sphere_4_system_effect
-    #             set_location = {
-    #                 target = prev
-    #                 distance = 0
-    #                 angle = random
-    #             }
-    #         }
-    #     }
-    # }
+
+    on_build_complete = {
+        every_system_ambient_object = {
+            limit = { has_ambient_object_flag = bts_shroud_portal_3_system_effect }
+            destroy_ambient_object = this
+        }
+        # set_star_class = sc_black_hole
+        star = {
+            change_pc = pc_bts_invisible_star
+            create_ambient_object = {
+                type = "bts_psionic_wave"
+                play_animation_once = yes
+                location = this
+            }
+            last_created_ambient_object = {
+                set_location = {
+                    target = prev
+                    distance = 0
+                    angle = random
+                }
+            }
+            create_ambient_object = {
+                type = "extradimensional_2"
+                location = this
+                scale = 0.20
+            }
+            last_created_ambient_object = {
+                set_location = {
+                    target = prev
+                    distance = 0
+                    angle = random
+                }
+            }
+        }
+    }
+
 }
