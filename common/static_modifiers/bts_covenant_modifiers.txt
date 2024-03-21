@@ -12,3 +12,7 @@ agenda_psionic_supremacy_finish_end = {
 	category_psionics_research_speed_mult = 0.4
 	country_sr_zro_cost_mult = @bts_agenda_psionic_supremacy_end_zro_cost_mult
 }
+
+bts_zroni_shield_reduction_protection = {
+	ship_shield_reduction = -1
+}

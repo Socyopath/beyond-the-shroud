@@ -19,3 +19,29 @@ utility_component_template = {
 	prerequisites = { tech_covenant_end }
 	component_set = "END_MARK"
 }
+
+utility_component_template = {
+	key = "bts_zroni_shield"
+	size = aux
+	icon = "GFX_ship_part_whisperers_covenant_aux"
+	icon_frame = 1
+	power = -20
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+			sr_zro = 2
+		}
+	}
+
+	# triggered_ship_modifier = {
+	# 	potential = {
+
+	# 	}
+	# 	modifier = {
+	# 		ship_shield_reduction = -1
+	# 	}
+	# }
+
+	component_set = "ANTI_SHIELD_REDUCTION"
+}
