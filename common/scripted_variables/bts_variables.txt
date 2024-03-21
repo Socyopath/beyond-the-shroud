@@ -4,7 +4,7 @@
 
 ## Favor bonus
 @bts_eoc_zro_per_telepath_0 = 2
-@bts_eoc_zro_per_telepath_1 = 5
+@bts_eoc_zro_per_telepath_1 = 3 # Total 2 + 3 = 5
 
 ## Favor generation
 @bts_eoc_favor_per_month_base = 0.03
@@ -20,6 +20,9 @@
 @bts_eoc_favor_per_month_trad = 0.06
 @bts_eoc_favor_per_month_asc = 0.04
 
+
+@bts_enc_sanctum_jobs = 3
+@bts_enc_sanctum_zro_mult = 0.50
 
 # Techs
 @bts_eoc_mark_of_the_end_armor_penetration = 0.25

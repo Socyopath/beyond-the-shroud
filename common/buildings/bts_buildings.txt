@@ -1,0 +1,51 @@
+building_end_sanctum = {
+	base_buildtime = @b3_time
+
+	category = government
+
+	base_cap_amount = 1
+
+	potential = {
+		host_has_dlc = "Utopia"
+		owner = { has_country_flag = end_covenant_rank_1 }
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
+	}
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+
+	destroy_trigger = {
+		exists = owner
+		NOT = {
+			owner = { has_country_flag = end_covenant_rank_1 }
+		}
+	}
+
+	planet_modifier = {
+		job_telepath_add = @bts_enc_sanctum_jobs
+	}
+
+	country_modifier = {
+		country_sr_zro_produces_mult = @bts_enc_sanctum_zro_mult
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+			exotic_gases = @b3_rare_cost
+		}
+		upkeep = {
+			energy = @b3_upkeep
+			exotic_gases = @b3_rare_upkeep
+		}
+	}
+
+	triggered_desc = {
+		text = job_telepath_effect_desc
+	}
+}

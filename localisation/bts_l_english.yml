@@ -33,6 +33,10 @@ end_covenant_surive_event_title: "Won EOC"
 end_covenant_surive_event_desc: "You survived"
 
 
+building_end_sanctum: "Sanctum of the End"
+building_end_sanctum_desc: "The Sanctum is a place dedicated to communion with the End of the Cycle. Here, secrets are traded in hushed tones, new knowledge is brought to be sealed away, and our murmurs join the chorus."
+
+
 # Origin
 origin_bts_zroni: "ZRONI"
 origin_bts_zroni_desc: "ZRONI DESC"
