@@ -1,0 +1,58 @@
+entity = {
+	name = "bts_shroud_portal_system_effect_1_entity"
+	locator = { name = "root" }
+	
+	default_state = "idle"
+	state = {		
+        name = "idle"		
+        state_time = 5
+        # event = { time = 0 	particle = "bts_shroud_portal_system_effect_1_effect" trigger_once = yes keep_particle = yes }
+        event = { time = 0 	particle = "bts_shroud_portal_system_core_effect" trigger_once = yes keep_particle = yes }
+        start_event = { trigger_once = yes sound = { soundeffect = "amb_system_reality_breach_hum" } }
+        start_event = { trigger_once = yes sound = { soundeffect = "amb_system_reality_breach_energy" } }
+    }
+		
+		
+	scale = 10
+}
+
+entity = {
+	name = "bts_shroud_portal_system_effect_2_entity"
+	locator = { name = "root" }
+	
+	default_state = "idle"
+	state = {		
+        name = "idle"		
+        state_time = 5
+        # event = { time = 0 	particle = "bts_shroud_portal_system_effect_1_effect" trigger_once = yes keep_particle = yes }
+        event = { time = 0 	particle = "bts_shroud_portal_system_core_effect" trigger_once = yes keep_particle = yes }
+        start_event = { trigger_once = yes sound = { soundeffect = "amb_system_reality_breach_hum" } }
+        start_event = { trigger_once = yes sound = { soundeffect = "amb_system_reality_breach_energy" } }
+        start_event = { trigger_once = yes sound = { soundeffect = "amb_system_reality_breach_sub_wobble" } }
+        start_event = { trigger_once = yes sound = { soundeffect = "amb_system_reality_breach_ethereal_tones" } }
+    }
+		
+		
+	scale = 10
+}
+
+entity = {
+	name = "bts_shroud_portal_system_effect_3_entity"
+	locator = { name = "root" }
+	
+	default_state = "idle"
+	state = {		
+        name = "idle"		
+        state_time = 5
+        event = { time = 0 	particle = "bts_shroud_portal_system_effect_1_effect" trigger_once = yes keep_particle = yes }
+        event = { time = 0 	particle = "bts_shroud_portal_system_core_effect" trigger_once = yes keep_particle = yes }
+        start_event = { trigger_once = yes sound = { soundeffect = "amb_system_reality_breach_hum" } }
+        start_event = { trigger_once = yes sound = { soundeffect = "amb_system_reality_breach_energy" } }
+        start_event = { trigger_once = yes sound = { soundeffect = "amb_system_reality_breach_sub_wobble" } }
+        start_event = { trigger_once = yes sound = { soundeffect = "amb_system_reality_breach_ethereal_tones" } }
+        start_event = { trigger_once = yes sound = { soundeffect = "amb_system_reality_breach_horror" } }
+        start_event = { trigger_once = yes sound = { soundeffect = "sfx_system_reality_breach_sparks" } }	
+    }
+		
+	scale = 10
+}

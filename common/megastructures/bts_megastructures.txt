@@ -1,0 +1,169 @@
+eoc_mega_0 = {
+    	entity = "dyson_sphere_phase_01_entity"
+	portrait = "GFX_megastructure_construction_background"
+	build_time = 3600
+	resources = {
+
+	}
+
+	country_modifier = {
+		
+	}
+
+	potential = { 
+
+	}
+}
+
+eoc_mega_1 = {
+    entity = "dyson_sphere_phase_02_entity"
+    construction_entity = "dyson_sphere_part_1_entity"
+	portrait = "GFX_megastructure_construction_background"
+	build_time = 3600
+	resources = {
+	}
+
+	country_modifier = {
+	}
+
+    upgrade_from = {
+		eoc_mega_0
+	}
+
+	on_build_complete = {
+        star = {
+            create_ambient_object = {
+                type = "bts_shroud_portal_1"
+                location = this
+            }
+            last_created_ambient_object = {
+                set_ambient_object_flag = bts_shroud_portal_1_system_effect
+                set_location = {
+                    target = prev
+                    distance = 0
+                    angle = random
+                }
+            }
+        }
+	}
+
+}
+
+eoc_mega_2 = {
+    entity = "dyson_sphere_phase_03_entity"
+    construction_entity = "dyson_sphere_part_2_entity"
+	portrait = "GFX_megastructure_construction_background"
+	build_time = 3600
+	resources = {
+	}
+
+	country_modifier = {
+	}
+
+    upgrade_from = {
+		eoc_mega_1
+	}
+
+    on_build_complete = {
+        random_system_ambient_object = {
+            limit = { has_ambient_object_flag = bts_shroud_portal_1_system_effect }
+            destroy_ambient_object = this
+        }
+        star = {
+            create_ambient_object = {
+                type = "bts_shroud_portal_2"
+                location = this
+            }
+            last_created_ambient_object = {
+                set_ambient_object_flag = bts_shroud_portal_2_system_effect
+                set_location = {
+                    target = prev
+                    distance = 0
+                    angle = random
+                }
+            }
+        }
+    }
+}
+
+eoc_mega_3 = {
+    entity = "dyson_sphere_phase_04_entity"
+    construction_entity = "dyson_sphere_part_3_entity"
+	portrait = "GFX_megastructure_construction_background"
+	build_time = 3600
+	resources = {
+	}
+
+	country_modifier = {
+	}
+
+    upgrade_from = {
+		eoc_mega_2
+	}
+
+    on_build_complete = {
+        random_system_ambient_object = {
+            limit = { has_ambient_object_flag = bts_shroud_portal_2_system_effect }
+            destroy_ambient_object = this
+        }
+        star = {
+            create_ambient_object = {
+                type = "bts_shroud_portal_3"
+                location = this
+            }
+            last_created_ambient_object = {
+                set_ambient_object_flag = bts_shroud_portal_3_system_effect
+                set_location = {
+                    target = prev
+                    distance = 0
+                    angle = random
+                }
+            }
+        }
+    }
+}
+
+eoc_mega_4 = {
+    entity = "dyson_sphere_phase_05_entity"
+    construction_entity = "dyson_sphere_part_4_entity"
+	portrait = "GFX_megastructure_construction_background"
+	build_time = 3600
+	resources = {
+	}
+
+	country_modifier = {
+	}
+
+    upgrade_from = {
+		eoc_mega_3
+	}
+    # on_build_complete = {
+    #     star = {
+    #         create_ambient_object = {
+    #             type = "psi_storm_1"
+    #             location = this
+    #         }
+    #         last_created_ambient_object = {
+    #             set_ambient_object_flag = crisis_sphere_4_system_effect
+    #             set_location = {
+    #                 target = prev
+    #                 distance = 0
+    #                 angle = random
+    #             }
+    #         }
+    #         create_ambient_object = {
+    #             type = "shroud_rift_object"
+	# 			scale = 5
+    #             location = this
+    #         }
+    #         last_created_ambient_object = {
+    #             set_ambient_object_flag = crisis_sphere_4_system_effect
+    #             set_location = {
+    #                 target = prev
+    #                 distance = 0
+    #                 angle = random
+    #             }
+    #         }
+    #     }
+    # }
+}
