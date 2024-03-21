@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 
 # Modifiers
 bts_astral_action_cost: "Astral Actions Cost"
@@ -25,9 +25,10 @@ tech_covenant_end_desc: "$tech_covenant_composer_desc$"
 
 # Astral Actions
 
-# Covenant
+# Covenant Events
 end_covenant_chain_title: "EOC Chain"
-end_covenant_chain_desc: "[root.end_covenant_end_status]Total favor: §Y[root.end_covenant_rank]§!\nFavor per month: §Y[root.bts_eoc_favor_per_month]§!\n$end_covenant_estimated_favor_years$"
+end_covenant_favor_count: "[root.end_covenant_rank]"
+end_covenant_chain_desc: "[root.end_covenant_end_status]Total favor: §Y$end_covenant_favor_count$§!\nFavor per month: §Y[root.bts_eoc_favor_per_month]§!\n$end_covenant_estimated_favor_years$"
 end_covenant_end_date: "End of the Cycle will happend at §R[root.bts_eoc_final_date]§!\n"
 end_covenant_estimated_favor_1_year: "§Y1§! year : §Y[root.bts_eoc_estimated_favor_per_1_year]§!"
 end_covenant_estimated_favor_5_year: "§Y5§! year : §Y[root.bts_eoc_estimated_favor_per_5_year]§!"
