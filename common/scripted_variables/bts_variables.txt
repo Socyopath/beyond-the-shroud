@@ -20,6 +20,10 @@
 @bts_eoc_favor_per_month_trad = 0.06
 @bts_eoc_favor_per_month_asc = 0.04
 
+@bts_eoc_power_summon_1_zro_cost = 100
+@bts_eoc_power_summon_2_zro_cost = 200
+@bts_eoc_power_summon_3_zro_cost = 300
+@bts_eoc_power_summon_4_zro_cost = 400
 
 @bts_agenda_psionic_supremacy_end_zro_cost_mult = -0.15
 @bts_enc_sanctum_jobs = 3

@@ -148,3 +148,113 @@ country_event = {
 
 }
 
+
+# End of the cycle powers
+country_event = {
+	id = bts.30
+	title = "utopia.3000.name"
+	desc = "utopia.3170.desc"
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+	force_open = yes
+
+	picture_event_data = {
+		portrait = shroud1
+		room = shroud_room
+	}
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = shroud_diplomacy_engaged
+	}
+
+	after = {
+		hidden_effect = {
+			remove_country_flag = shroud_diplomacy_engaged
+		}
+	}
+
+    inline_script = {
+        script = bts_shroud_power_option
+        NAME = bts_eoc_power_summon_1
+        ALLOW = "bts_can_use_power_summon_1 = yes"
+        RESOURCE = sr_zro
+        USE_COST = @bts_eoc_power_summon_1_zro_cost
+        EVENT_ID = bts.31
+    }
+
+    inline_script = {
+        script = bts_shroud_power_option
+        NAME = bts_eoc_power_summon_2
+        ALLOW = "bts_can_use_power_summon_2 = yes"
+        RESOURCE = sr_zro
+        USE_COST = @bts_eoc_power_summon_2_zro_cost
+        EVENT_ID = bts.32
+    }
+
+    inline_script = {
+        script = bts_shroud_power_option
+        NAME = bts_eoc_power_summon_3
+        ALLOW = "bts_can_use_power_summon_3 = yes"
+        RESOURCE = sr_zro
+        USE_COST = @bts_eoc_power_summon_3_zro_cost
+        EVENT_ID = bts.33
+    }
+
+    inline_script = {
+        script = bts_shroud_power_option
+        NAME = bts_eoc_power_summon_4
+        ALLOW = "bts_can_use_power_summon_4 = yes"
+        RESOURCE = sr_zro
+        USE_COST = @bts_eoc_power_summon_4_zro_cost
+        EVENT_ID = bts.34
+    }
+
+	option = {
+		name = "exit.shroud"
+		custom_tooltip = "exit.shroud.tooltip"
+		default_hide_option = yes
+	}
+}
+
+
+country_event = {
+	id = bts.31
+    hide_window = yes
+	is_triggered_only = yes
+
+    immediate = {
+
+    }
+}
+
+country_event = {
+	id = bts.32
+    hide_window = yes
+	is_triggered_only = yes
+
+    immediate = {
+
+    }
+}
+
+country_event = {
+	id = bts.33
+    hide_window = yes
+	is_triggered_only = yes
+
+    immediate = {
+
+    }
+}
+
+country_event = {
+	id = bts.34
+    hide_window = yes
+	is_triggered_only = yes
+
+    immediate = {
+
+    }
+}

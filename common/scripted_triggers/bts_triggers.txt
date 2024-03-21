@@ -1,0 +1,28 @@
+bts_can_use_powers = {
+    bts_can_use_power_summon_1 = yes
+}
+
+bts_can_use_power_summon_1 = {
+    OR = {
+        has_megastructure = eoc_mega_2
+        bts_can_use_power_summon_2 = yes
+    }
+}
+
+bts_can_use_power_summon_2 = {
+    OR = {
+        has_megastructure = eoc_mega_3
+        bts_can_use_power_summon_3 = yes
+    }
+}
+
+bts_can_use_power_summon_3 = {
+    OR = {
+        has_megastructure = eoc_mega_4
+        bts_can_use_power_summon_4 = yes
+    }
+}
+
+bts_can_use_power_summon_4 = {
+    has_megastructure = eoc_mega_5
+}

@@ -207,7 +207,7 @@ eoc_mega_5 = {
             limit = { has_ambient_object_flag = bts_shroud_portal_3_system_effect }
             destroy_ambient_object = this
         }
-        # set_star_class = sc_black_hole
+        set_star_class = sc_rift_star
         star = {
             change_pc = pc_bts_invisible_star
             create_ambient_object = {

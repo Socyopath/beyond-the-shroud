@@ -1,0 +1,26 @@
+option = {
+    name = $NAME$
+    allow = {
+        $ALLOW$
+        resource_stockpile_compare = {
+            resource = $RESOURCE$
+            value >= $USE_COST$
+            mult = value:scripted_modifier_mult|MODIFIER|country_$RESOURCE$_cost_mult|
+        }
+    }
+
+    add_resource = {
+        $RESOURCE$ = -$USE_COST$
+        mult = value:scripted_modifier_mult|MODIFIER|country_$RESOURCE$_cost_mult|
+    }
+
+    add_modifier = {
+        modifier = "shroud_cooldown"
+        days = 2160
+        time_multiplier = value:scripted_modifier_mult|MODIFIER|shroud_delve_cooldown|
+    }
+
+    hidden_effect = {
+        country_event = { id = $EVENT_ID$ }
+    }
+}
