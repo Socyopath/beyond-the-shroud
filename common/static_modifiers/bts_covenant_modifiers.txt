@@ -10,5 +10,5 @@ covenant_end_of_the_cycle_0 = {
 agenda_psionic_supremacy_finish_end = {
 	planet_psionic_jobs_produces_mult = 0.2
 	category_psionics_research_speed_mult = 0.4
-	starbase_shipyard_build_speed_mult = 0.10 # A modifier
+	country_sr_zro_cost_mult = @bts_agenda_psionic_supremacy_end_zro_cost_mult
 }

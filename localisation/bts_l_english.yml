@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 
 # Modifiers
 bts_astral_action_cost: "Astral Actions Cost"
@@ -7,6 +7,9 @@ bts_astral_action_cost: "Astral Actions Cost"
 leader_trait_end_chosen: "Chosen of the End"
 leader_trait_end_chosen_desc: "This leader has been chosen to wield the power of an inscrutable Shroud entity. Sustained by eldritch energies, death is now foreign to them."
 
+# Council Agenda
+council_agenda_agenda_psionic_supremacy_end_name: "$council_agenda_agenda_psionic_supremacy_name$"
+council_agenda_agenda_psionic_supremacy_end_desc: "$council_agenda_agenda_psionic_supremacy_desc$"
 
 # Components
 END_MARK: "Mark of the End"

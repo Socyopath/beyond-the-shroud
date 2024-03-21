@@ -21,6 +21,7 @@
 @bts_eoc_favor_per_month_asc = 0.04
 
 
+@bts_agenda_psionic_supremacy_end_zro_cost_mult = -0.15
 @bts_enc_sanctum_jobs = 3
 @bts_enc_sanctum_zro_mult = 0.50
 
