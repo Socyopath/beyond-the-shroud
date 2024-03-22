@@ -5,7 +5,7 @@ bts_update_ship_shield_reduction_zroni_shield = {
 			bts_has_zroni_shield = yes
             NOT = {	has_modifier = bts_zroni_shield_reduction_protection }
 			fleet.solar_system = {
-				bts_trigger_zroni_shield_reduction_protection = yes
+				has_modifier = zroni_storm
 			}
 		}
 		add_modifier = { modifier = bts_zroni_shield_reduction_protection }
@@ -14,7 +14,9 @@ bts_update_ship_shield_reduction_zroni_shield = {
 		limit = {
             has_modifier = bts_zroni_shield_reduction_protection
 			fleet.solar_system = {
-				bts_trigger_zroni_shield_reduction_protection = no
+				NOT = {
+					has_modifier = zroni_storm
+				}
 			}
 		}
 		remove_modifier = bts_zroni_shield_reduction_protection

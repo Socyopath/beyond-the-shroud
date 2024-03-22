@@ -27,16 +27,6 @@ bts_can_use_power_summon_4 = {
     has_megastructure = eoc_mega_5
 }
 
-# This : System
-bts_trigger_zroni_shield_reduction_protection = {
-    OR = {
-        any_system_planet = {
-            is_planet_class = pc_pulsar
-        }
-        has_modifier = space_storm
-        has_modifier = zroni_storm
-    }
-}
 
 bts_has_zroni_shield = {
     OR = {
