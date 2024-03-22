@@ -2,11 +2,11 @@ bts_tech_occultism = {
 	icon = bts_tech_occultism
 	area = society
 	category = { psionics }
-	cost = @guardiantechcost
-	tier = @guardiantechtier
+	cost = @bts_tech_occultism_cost
+	tier = @bts_tech_occultism_tier
 	is_rare = yes
 	is_reverse_engineerable = no
-	weight = 0
+	weight = @tier3weight2
 
 	prerequisites = { "tech_psionic_theory" }
 	
@@ -33,11 +33,11 @@ bts_tech_otherworldly_knowledge_1 = {
 	icon = bts_tech_otherworldly_knowledge_1
 	area = society
 	category = { psionics }
-	cost = @guardiantechcost
-	tier = @guardiantechtier
+	cost = @bts_tech_otherworldly_knowledge_1_cost
+	tier = @bts_tech_otherworldly_knowledge_1_tier
 	is_rare = yes
 	is_reverse_engineerable = no
-	weight = 0
+	weight = @tier3weight2
 
 	prerequisites = { "tech_psionic_theory" }
 	
@@ -64,11 +64,11 @@ bts_tech_otherworldly_knowledge_2 = {
 	icon = bts_tech_otherworldly_knowledge_2
 	area = society
 	category = { psionics }
-	cost = @guardiantechcost
-	tier = @guardiantechtier
+	cost = @bts_tech_otherworldly_knowledge_2_cost
+	tier = @bts_tech_otherworldly_knowledge_2_tier
 	is_rare = yes
 	is_reverse_engineerable = no
-	weight = 0
+	weight = @tier3weight2
 
 	prerequisites = { "bts_tech_otherworldly_knowledge_1" }
 	
@@ -88,11 +88,11 @@ bts_tech_mind_evocation_1 = {
 	icon = bts_tech_mind_evocation_1
 	area = society
 	category = { psionics }
-	cost = @guardiantechcost
-	tier = @guardiantechtier
+	cost = @bts_tech_mind_evocation_1_cost
+	tier = @bts_tech_mind_evocation_1_tier
 	is_rare = yes
 	is_reverse_engineerable = no
-	weight = 0
+	weight = @tier3weight2
 
 	prerequisites = { "tech_psionic_theory" }
 	
@@ -120,11 +120,11 @@ bts_tech_mind_evocation_2 = {
 	icon = bts_tech_mind_evocation_2
 	area = society
 	category = { psionics }
-	cost = @guardiantechcost
-	tier = @guardiantechtier
+	cost = @bts_tech_mind_evocation_2_cost
+	tier = @bts_tech_mind_evocation_2_tier
 	is_rare = yes
 	is_reverse_engineerable = no
-	weight = 0
+	weight = @tier3weight2
 
 	prerequisites = { "bts_tech_mind_evocation_1" }
 	
@@ -145,19 +145,18 @@ bts_tech_psychic_coalition = {
 	icon = bts_tech_psychic_coalition
 	area = society
 	category = { psionics }
-	cost = @guardiantechcost
+	cost = @bts_tech_psychic_coalition_cost
 	cost_per_level = @repeatableTechLevelCost
 	levels = @bts_tech_psychic_coalition_levels
-	tier = @guardiantechtier
+	tier = @bts_tech_psychic_coalition_tier
 	is_rare = yes
 	is_reverse_engineerable = no
-	weight = 0
+	weight = @tier4weight2
 
 	prerequisites = { "tech_telepathy" }
 	
 	modifier = {
-		planet_telepaths_sr_zro_produces_add = @bts_tech_psychic_coalition_telepath_zro
-		planet_telepaths_unity_produces_add = @bts_tech_psychic_coalition_telepath_unity
+		planet_telepaths_produces_mult = @bts_tech_psychic_coalition_telepaths_produces_mult
 	}
 
 	weight_modifier = {
@@ -180,11 +179,11 @@ bts_tech_prescience = {
 	icon = bts_tech_prescience
 	area = society
 	category = { psionics }
-	cost = @guardiantechcost
-	tier = @guardiantechtier
+	cost = @bts_tech_prescience_cost
+	tier = @bts_tech_prescience_tier
 	is_rare = yes
 	is_reverse_engineerable = no
-	weight = 0
+	weight = @tier5weight2
 
 	prerequisites = { "bts_tech_psychic_coalition" }
 	
@@ -206,13 +205,13 @@ bts_tech_shrouded_shields = {
 	icon = bts_tech_shrouded_shields
 	area = society
 	category = { psionics }
-	cost = @guardiantechcost
+	cost = @bts_tech_shrouded_shields_cost
 	cost_per_level = @repeatableTechLevelCost
 	levels = @bts_tech_shrouded_shields_levels
-	tier = @guardiantechtier
+	tier = @bts_tech_shrouded_shields_tier
 	is_rare = yes
 	is_reverse_engineerable = no
-	weight = 0
+	weight = @tier5weight2
 
 	prerequisites = { "tech_psionic_shield" }
 	
@@ -234,11 +233,11 @@ bts_tech_zroni_shield = {
 	icon = bts_tech_zroni_shield
 	area = society
 	category = { psionics }
-	cost = @guardiantechcost
-	tier = @guardiantechtier
+	cost = @bts_tech_zroni_shield_cost
+	tier = @bts_tech_zroni_shield_tier
 	is_rare = yes
 	is_reverse_engineerable = no
-	weight = 0
+	weight = @tier5weight3
 
 	prerequisites = { "bts_tech_shrouded_shields" }
 
@@ -254,12 +253,12 @@ bts_tech_zro_infusion = {
 	icon = bts_tech_zro_infusion
 	area = society
 	category = { psionics }
-	cost = @guardiantechcost
-	tier = @guardiantechtier
+	cost = @bts_tech_zro_infusion_cost
+	tier =@bts_tech_zro_infusion_tier
 	is_rare = yes
 	is_dangerous = yes
 	is_reverse_engineerable = no
-	weight = 0
+	weight = @tier5weight1
 
 	prerequisites = { "bts_tech_psychic_coalition" }
 
@@ -285,8 +284,8 @@ bts_tech_covenant_end = {
 	icon = bts_tech_covenant_end
 	area = society
 	category = { psionics }
-	cost = @guardiantechcost
-	tier = @guardiantechtier
+	cost = @bts_tech_covenant_end_cost
+	tier = @bts_tech_covenant_end_tier
 	is_rare = yes
 	is_reverse_engineerable = no
 	weight = 0
@@ -302,12 +301,12 @@ bts_tech_shroud_destabilizer = {
 	icon = bts_tech_shroud_destabilizer
 	area = society
 	category = { psionics }
-	cost = @guardiantechcost
-	tier = @guardiantechtier
+	cost = @bts_tech_shroud_destabilizer_cost
+	tier = @bts_tech_shroud_destabilizer_tier
 	is_rare = yes
 	is_dangerous = yes
 	is_reverse_engineerable = no
-	weight = 0
+	weight = @tier5weight3
 
 	prerequisites = { "tech_psionic_theory" }
 
@@ -328,6 +327,5 @@ bts_tech_shroud_destabilizer = {
 		}
 	}
 }
-
 
 

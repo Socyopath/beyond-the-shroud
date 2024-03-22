@@ -102,3 +102,4 @@ tr_astral_studies_causality_reverser_desc: ""
 
 # Modifiers
 mod_planet_telepaths_sr_zro_produces_add: "£sr_zro£ $sr_zro$ from £job_telepath£ $job_telepath_plural$"
+mod_planet_telepaths_produces_mult: "£job_telepath£ $job_telepath$ Output"
