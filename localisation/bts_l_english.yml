@@ -42,7 +42,7 @@ bts_tech_prescience_desc: "We have reached an unimaginable level of consciousnes
 bts_tech_shrouded_shields: "Shrouded shields"
 bts_tech_shrouded_shields_desc: "We learned to enhance our shields with psychic energy."
 bts_tech_zroni_shield: "Zroni Shield"
-bts_tech_zroni_shield_desc: "The shroud brought to light an ancient artifact, the shield used by the Zroni empire. It is insensitive to natural disturbances and offers increased regeneration if a Zroni storm is active."
+bts_tech_zroni_shield_desc: "The shroud revealed an ancient artifact, the shield used by the Zroni empire. It provides immeasurable shield power and is impervious to Zroni storms."
 bts_tech_zro_infusion: "Zro Infusion"
 bts_tech_zro_infusion_desc: "As we're more connected to the shroud itself, we've found a way to infuse our bodies with zro in order to fuel ourselves with psionic energy instead of food."
 bts_tech_zro_infusion_effect: "£food£ $food$ upkeep cost from £pops£ Pops: §G-100%§!\n£sr_zro£ $sr_zro$ upkeep cost from £pops£ Pops: §R+$@bts_tech_zro_infusion_zro_upkeep_cost$§!"
