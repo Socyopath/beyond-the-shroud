@@ -15,10 +15,9 @@
 @bts_eoc_favor_per_month_mat = -0.02
 @bts_eoc_favor_per_month_f_mat = -0.05
 
-@bts_eoc_favor_per_month_rift = 0.03
+@bts_eoc_favor_per_month_rift = 0.04
 
-@bts_eoc_favor_per_month_trad = 0.06
-@bts_eoc_favor_per_month_asc = 0.04
+@bts_eoc_favor_per_month_trad = 0.08
 
 @bts_eoc_power_summon_1_zro_cost = 100
 @bts_eoc_power_summon_2_zro_cost = 200

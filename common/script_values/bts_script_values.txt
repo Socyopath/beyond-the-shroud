@@ -23,14 +23,10 @@ bts_end_of_the_cycle_favor_per_month = {
         mode = add
 	}
     
-    # modifier = {
-    #     has_tradition = ethic_materialist
-	# 	add = @bts_eoc_favor_per_month_trad
-	# }
-    # modifier = {
-    #     has_ascension_perk = ethic_materialist
-	# 	add = @bts_eoc_favor_per_month_asc
-	# }
+    modifier = {
+        has_tradition = tr_astral_studies_adopt
+		add = @bts_eoc_favor_per_month_trad
+	}
 }
 
 bts_end_of_the_cycle_favor_per_1_year = {
