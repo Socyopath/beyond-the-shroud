@@ -16,8 +16,8 @@ pc_bts_invisible_star = {
 }
 
 pc_bts_black_hole_small = {
-	entity = "black_hole_entity"
-	entity_scale = 5.0
+	entity = "bts_shroud_rift_entity"
+	entity_scale = 8.0
 	icon = GFX_planet_type_black_hole
 
 	atmosphere_color		= hsv { 0.075 0.13 1.5 }

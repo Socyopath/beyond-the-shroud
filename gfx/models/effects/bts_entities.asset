@@ -44,7 +44,7 @@ entity = {
 	state = {		
         name = "idle"		
         state_time = 5
-        event = { time = 0 	particle = "bts_shroud_portal_system_effect_1_effect" trigger_once = yes keep_particle = yes }
+        # event = { time = 0 	particle = "bts_shroud_portal_system_effect_1_effect" trigger_once = yes keep_particle = yes }
         event = { time = 0 	particle = "bts_shroud_portal_system_core_effect" trigger_once = yes keep_particle = yes }
         start_event = { trigger_once = yes sound = { soundeffect = "amb_system_reality_breach_hum" } }
         start_event = { trigger_once = yes sound = { soundeffect = "amb_system_reality_breach_energy" } }
@@ -73,6 +73,29 @@ entity = {
 	}
 		
 	scale = 10
+}
+
+entity = {
+	name = "bts_shroud_rift_entity"
+	pdxmesh = "black_hole_new_mesh"
+	
+	scale = 1
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+        # event = { time = 0 	particle = "bts_shroud_portal_system_effect_1_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 particle = "bts_shroud_rift_particle" trigger_once = yes keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "blackhole_hum_idle" } }
+	}
+	locator = { name = "planet" }
+	# attach = { "planet" = "black_hole_rings_entity" }
+	# attach = { "planet" = "black_hole_grav_lens_entity" }
+	# attach = { "planet" = "black_hole_grav_animation_entity" }
+	
+	# game_data = {
+	# 	size = 1.0
+	# 	bloom_factor = 5
+	# }
+	cull_radius = 700
 }
 
 entity = { name = "bts_no_entity" }

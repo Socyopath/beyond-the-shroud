@@ -28,5 +28,12 @@ objectTypes = {
 		
 		scale = 75.0
 	}
+
+	pdxparticle = {
+		name = "bts_shroud_rift_particle"
+		type = "bts_shroud_rift_file"
+		
+		scale = 1.0
+	}
 }
 

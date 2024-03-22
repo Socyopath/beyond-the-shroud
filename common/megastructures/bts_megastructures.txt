@@ -171,24 +171,12 @@ eoc_mega_4 = {
                     angle = random
                 }
             }
-            create_ambient_object = {
-                type = "psi_storm_1"
-                location = this
-            }
-            last_created_ambient_object = {
-                set_ambient_object_flag = bts_shroud_portal_3_system_effect
-                set_location = {
-                    target = prev
-                    distance = 0
-                    angle = random
-                }
-            }
         }
     }
 }
 
 eoc_mega_5 = {
-	entity = "bts_no_entity"
+	entity = "quantum_catapult_stage_3_entity"
 	construction_entity = "quantum_catapult_stage_3_entity"
 	portrait = "GFX_megastructure_construction_background"
 	build_time = 3600
@@ -209,7 +197,7 @@ eoc_mega_5 = {
         }
         set_star_class = sc_rift_star
         star = {
-            change_pc = pc_bts_invisible_star
+            change_pc = pc_bts_black_hole_small
             create_ambient_object = {
                 type = "bts_psionic_wave"
                 play_animation_once = yes
@@ -223,9 +211,8 @@ eoc_mega_5 = {
                 }
             }
             create_ambient_object = {
-                type = "extradimensional_2"
+                type = "psi_storm_1"
                 location = this
-                scale = 0.20
             }
             last_created_ambient_object = {
                 set_location = {
