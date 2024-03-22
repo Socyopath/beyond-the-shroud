@@ -1,0 +1,333 @@
+bts_tech_occultism = {
+	icon = bts_tech_occultism
+	area = society
+	category = { psionics }
+	cost = @guardiantechcost
+	tier = @guardiantechtier
+	is_rare = yes
+	is_reverse_engineerable = no
+	weight = 0
+
+	prerequisites = { "tech_psionic_theory" }
+	
+	modifier = {
+		shroud_delve_cooldown = @bts_tech_occultism_shroud_delve_cooldown
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = {
+				has_relic = r_zro_crystal
+				has_tradition = tr_psionics_finish
+			}
+		}
+		modifier = {
+			factor = @bts_tech_zro_crystal_factor
+			has_relic = r_zro_crystal
+		}
+	}
+}
+
+bts_tech_otherworldly_knowledge_1 = {
+	icon = bts_tech_otherworldly_knowledge_1
+	area = society
+	category = { psionics }
+	cost = @guardiantechcost
+	tier = @guardiantechtier
+	is_rare = yes
+	is_reverse_engineerable = no
+	weight = 0
+
+	prerequisites = { "tech_psionic_theory" }
+	
+	modifier = {
+		shroud_delve_cost = @bts_tech_otherworldly_knowledge_1_shroud_delve_cost
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = {
+				has_relic = r_zro_crystal
+				has_tradition = tr_psionics_finish
+			}
+		}
+		modifier = {
+			factor = @bts_tech_zro_crystal_factor
+			has_relic = r_zro_crystal
+		}
+	}
+}
+
+bts_tech_otherworldly_knowledge_2 = {
+	icon = bts_tech_otherworldly_knowledge_2
+	area = society
+	category = { psionics }
+	cost = @guardiantechcost
+	tier = @guardiantechtier
+	is_rare = yes
+	is_reverse_engineerable = no
+	weight = 0
+
+	prerequisites = { "bts_tech_otherworldly_knowledge_1" }
+	
+	modifier = {
+		shroud_delve_cost = @bts_tech_otherworldly_knowledge_2_shroud_delve_cost
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = @bts_tech_zro_crystal_factor
+			has_relic = r_zro_crystal
+		}
+	}
+}
+
+bts_tech_mind_evocation_1 = {
+	icon = bts_tech_mind_evocation_1
+	area = society
+	category = { psionics }
+	cost = @guardiantechcost
+	tier = @guardiantechtier
+	is_rare = yes
+	is_reverse_engineerable = no
+	weight = 0
+
+	prerequisites = { "tech_psionic_theory" }
+	
+	modifier = {
+		add_base_country_intel = @bts_tech_mind_evocation_1_intel_add
+		intel_encryption_add = @bts_tech_mind_evocation_1_encryption_add
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = {
+				has_relic = r_zro_crystal
+				has_tradition = tr_psionics_mind_readers
+			}
+		}
+		modifier = {
+			factor = @bts_tech_zro_crystal_factor
+			has_relic = r_zro_crystal
+		}
+	}
+}
+
+bts_tech_mind_evocation_2 = {
+	icon = bts_tech_mind_evocation_2
+	area = society
+	category = { psionics }
+	cost = @guardiantechcost
+	tier = @guardiantechtier
+	is_rare = yes
+	is_reverse_engineerable = no
+	weight = 0
+
+	prerequisites = { "bts_tech_mind_evocation_1" }
+	
+	modifier = {
+		add_base_country_intel = @bts_tech_mind_evocation_2_intel_add
+		intel_encryption_add = @bts_tech_mind_evocation_2_encryption_add
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = @bts_tech_zro_crystal_factor
+			has_relic = r_zro_crystal
+		}
+	}
+}
+
+bts_tech_psychic_coalition = {
+	icon = bts_tech_psychic_coalition
+	area = society
+	category = { psionics }
+	cost = @guardiantechcost
+	cost_per_level = @repeatableTechLevelCost
+	levels = @bts_tech_psychic_coalition_levels
+	tier = @guardiantechtier
+	is_rare = yes
+	is_reverse_engineerable = no
+	weight = 0
+
+	prerequisites = { "tech_telepathy" }
+	
+	modifier = {
+		planet_telepaths_sr_zro_produces_add = @bts_tech_psychic_coalition_telepath_zro
+		planet_telepaths_unity_produces_add = @bts_tech_psychic_coalition_telepath_unity
+	}
+
+	weight_modifier = {
+		factor = @repatableTechFactor
+		modifier = {
+			factor = 0
+			NOR = {
+				has_relic = r_zro_crystal
+				has_tradition = tr_psionics_mind_readers
+			}
+		}
+		modifier = {
+			factor = @bts_tech_zro_crystal_factor
+			has_relic = r_zro_crystal
+		}
+	}
+}
+
+bts_tech_prescience = {
+	icon = bts_tech_prescience
+	area = society
+	category = { psionics }
+	cost = @guardiantechcost
+	tier = @guardiantechtier
+	is_rare = yes
+	is_reverse_engineerable = no
+	weight = 0
+
+	prerequisites = { "bts_tech_psychic_coalition" }
+	
+	modifier = {
+		ship_emergency_ftl_min_days_mult = @bts_tech_prescience_ftl_cooldown
+		ship_emergency_ftl_mult = @bts_tech_prescience_ftl_damage
+		fleet_mia_time_mult = @bts_tech_prescience_mia_time
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = @bts_tech_zro_crystal_factor
+			has_relic = r_zro_crystal
+		}
+	}
+}
+
+bts_tech_shrouded_shields = {
+	icon = bts_tech_shrouded_shields
+	area = society
+	category = { psionics }
+	cost = @guardiantechcost
+	cost_per_level = @repeatableTechLevelCost
+	levels = @bts_tech_shrouded_shields_levels
+	tier = @guardiantechtier
+	is_rare = yes
+	is_reverse_engineerable = no
+	weight = 0
+
+	prerequisites = { "tech_psionic_shield" }
+	
+	modifier = {
+		ship_shield_hardening_add = @bts_tech_shrouded_shields_hardening
+		ship_shield_mult = @bts_tech_shrouded_shields_hit_point
+	}
+
+	weight_modifier = {
+		factor = @repatableTechFactor
+		modifier = {
+			factor = @bts_tech_zro_crystal_factor
+			has_relic = r_zro_crystal
+		}
+	}
+}
+
+bts_tech_zroni_shield = {
+	icon = bts_tech_zroni_shield
+	area = society
+	category = { psionics }
+	cost = @guardiantechcost
+	tier = @guardiantechtier
+	is_rare = yes
+	is_reverse_engineerable = no
+	weight = 0
+
+	prerequisites = { "bts_tech_shrouded_shields" }
+
+	weight_modifier = {
+		modifier = {
+			factor = @bts_tech_zro_crystal_factor
+			has_relic = r_zro_crystal
+		}
+	}
+}
+
+bts_tech_zro_infusion = {
+	icon = bts_tech_zro_infusion
+	area = society
+	category = { psionics }
+	cost = @guardiantechcost
+	tier = @guardiantechtier
+	is_rare = yes
+	is_dangerous = yes
+	is_reverse_engineerable = no
+	weight = 0
+
+	prerequisites = { "bts_tech_psychic_coalition" }
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = {
+				has_relic = r_zro_crystal
+				check_variable = {
+					which = end_covenant_rank
+					value >= @bts_tech_zro_infusion_favor_cost
+				}
+			}
+		}
+		modifier = {
+			factor = @bts_tech_zro_crystal_factor
+			has_relic = r_zro_crystal
+		}
+	}
+}
+
+bts_tech_covenant_end = {
+	icon = bts_tech_covenant_end
+	area = society
+	category = { psionics }
+	cost = @guardiantechcost
+	tier = @guardiantechtier
+	is_rare = yes
+	is_reverse_engineerable = no
+	weight = 0
+	
+	prerequisites = { "tech_psionic_theory" }
+
+	weight_modifier = {
+		factor = 0
+	}
+}
+
+bts_tech_shroud_destabilizer = {
+	icon = bts_tech_shroud_destabilizer
+	area = society
+	category = { psionics }
+	cost = @guardiantechcost
+	tier = @guardiantechtier
+	is_rare = yes
+	is_dangerous = yes
+	is_reverse_engineerable = no
+	weight = 0
+
+	prerequisites = { "tech_psionic_theory" }
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = {
+				has_relic = r_zro_crystal
+				check_variable = {
+					which = end_covenant_rank
+					value >= @bts_tech_shroud_destabilizer_favor_cost
+				}
+			}
+		}
+		modifier = {
+			factor = @bts_tech_zro_crystal_factor
+			has_relic = r_zro_crystal
+		}
+	}
+}
+
+
+

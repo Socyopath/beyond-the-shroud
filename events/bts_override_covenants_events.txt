@@ -1939,7 +1939,7 @@ country_event = {
 			has_country_flag = end_covenant_rank_4
 		}
 		give_technology = {
-			tech = tech_covenant_end
+			tech = bts_tech_covenant_end
 			message = yes
 		}
 	}

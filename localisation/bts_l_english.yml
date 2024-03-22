@@ -20,8 +20,30 @@ END_MARK: "Mark of the End"
 END_MARK_DESC: "$COMPOSER_MARK_DESC$"
 
 # Techs
-tech_covenant_end: "$END_MARK$"
-tech_covenant_end_desc: "$tech_covenant_composer_desc$"
+bts_tech_occultism: "Occultism"
+bts_tech_occultism_desc: ""
+bts_tech_otherworldly_knowledge_1: "Otherworldly Knowledge I"
+bts_tech_otherworldly_knowledge_1_desc: ""
+bts_tech_otherworldly_knowledge_2: "Otherworldly Knowledge II"
+bts_tech_otherworldly_knowledge_2_desc: ""
+bts_tech_mind_evocation_1: "Mind Evocation I"
+bts_tech_mind_evocation_1_desc: ""
+bts_tech_mind_evocation_2: "Mind Evocation II"
+bts_tech_mind_evocation_2_desc: ""
+bts_tech_psychic_coalition: "Psychic Coalition"
+bts_tech_psychic_coalition_desc: ""
+bts_tech_prescience: "Prescience"
+bts_tech_prescience_desc: ""
+bts_tech_shrouded_shields: "Shrouded shields"
+bts_tech_shrouded_shields_desc: ""
+bts_tech_zroni_shield: "Zroni Shield"
+bts_tech_zroni_shield_desc: ""
+bts_tech_zro_infusion: "Zro Infusion"
+bts_tech_zro_infusion_desc: ""
+bts_tech_covenant_end: "$END_MARK$"
+bts_tech_covenant_end_desc: "$tech_covenant_composer_desc$"
+bts_tech_shroud_destabilizer: "Shroud Destabilizer"
+bts_tech_shroud_destabilizer_desc: ""
 
 # Astral Actions
 
@@ -77,3 +99,6 @@ tr_astral_studies_rift_collapser_desc: ""
 
 tr_astral_studies_causality_reverser: "Causality Reverser"
 tr_astral_studies_causality_reverser_desc: ""
+
+# Modifiers
+mod_planet_telepaths_sr_zro_produces_add: "£sr_zro£ $sr_zro$ from £job_telepath£ $job_telepath_plural$"
