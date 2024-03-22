@@ -56,5 +56,11 @@ spriteTypes = {
 		name = "GFX_ship_part_zroni_shield"
 		textureFile = "gfx/interface/icons/ship_parts/bts_zroni_shield.dds"
 	}
+
+	# Agendas
+	spriteType = {
+		name = "GFX_council_agenda_icon_agenda_psionic_supremacy_end"
+		texturefile = "gfx/interface/icons/agenda_icons/agenda_psionic_supremacy.dds"
+	}
 	
 }

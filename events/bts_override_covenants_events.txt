@@ -1293,8 +1293,8 @@ country_event = {
 		}
 	}
 	option = { #End of the Cycle
-		name = "EOC"
-		custom_tooltip = "eoc"
+		name = "bts_end_covenant_rank_1"
+		custom_tooltip = "bts_end_covenant_rank_1_desc"
 		trigger = {
 			has_country_flag = end_covenant_rank_1
 		}
@@ -1460,7 +1460,7 @@ country_event = {
 		}
 	}
 	option = { #End of the cycle
-		name = "EOC2"
+		name = "bts_end_covenant_rank_2"
 		trigger = {
 			has_country_flag = end_covenant_rank_2
 		}
@@ -1934,7 +1934,7 @@ country_event = {
 		}
 	}
 	option = { #End of the cycle
-		name = "EOC4"
+		name = "bts_end_covenant_rank_4"
 		trigger = {
 			has_country_flag = end_covenant_rank_4
 		}

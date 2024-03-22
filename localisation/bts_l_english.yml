@@ -54,7 +54,13 @@ bts_tech_shroud_destabilizer_desc: ""
 # Astral Actions
 
 # Covenant Events
-end_covenant_chain_title: "EOC Chain"
+bts_name_end: "End of the Cycle"
+bts_end_covenant_rank_1: "A filled mind has no room for doubt."
+bts_end_covenant_rank_1_desc: "Our telepaths now produce additional $sr_zro$.\n\nWe can now build a £building£ §Y$building_end_sanctum$§! on one of our planets."
+bts_end_covenant_rank_2: "Secrecy is safety."
+bts_end_covenant_rank_4: "Secrets are weapons without compare."
+
+end_covenant_chain_title: "$bts_name_end$"
 end_covenant_favor_count: "[root.end_covenant_rank]"
 end_covenant_chain_desc: "[root.end_covenant_end_status]Total favor: §Y$end_covenant_favor_count$§!\nFavor per month: §Y[root.bts_eoc_favor_per_month]§!\n$end_covenant_estimated_favor_years$"
 end_covenant_end_date: "End of the Cycle will happend at §R[root.bts_eoc_final_date]§!\n"
@@ -109,3 +115,5 @@ tr_astral_studies_causality_reverser_desc: ""
 # Modifiers
 mod_planet_telepaths_sr_zro_produces_add: "£sr_zro£ $sr_zro$ from £job_telepath£ $job_telepath_plural$"
 mod_planet_telepaths_produces_mult: "£job_telepath£ $job_telepath$ Output"
+mod_bts_astral_action_cost: "Astral Actions Cost"
+mod_country_sr_zro_cost_mult: "£sr_zro£ $sr_zro$ Cost"
