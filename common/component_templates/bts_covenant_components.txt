@@ -1,7 +1,7 @@
 utility_component_template = {
 	key = "END_MARK"
 	size = aux
-	icon = "GFX_ship_part_whisperers_covenant_aux"
+	icon = "GFX_ship_part_end_covenant_aux"
 	icon_frame = 1
 	power = -20
 	resources = {
@@ -21,9 +21,9 @@ utility_component_template = {
 }
 
 utility_component_template = {
-	key = "bts_zroni_shield"
-	size = aux
-	icon = "GFX_ship_part_whisperers_covenant_aux"
+	key = "bts_small_zroni_shield"
+	size = small
+	icon = "GFX_ship_part_zroni_shield"
 	icon_frame = 1
 	power = -20
 	resources = {
@@ -34,7 +34,57 @@ utility_component_template = {
 		}
 	}
 
-	prerequisites = { bts_tech_zroni_shield }
+	modifier = {
+		ship_shield_add = @bts_small_zroni_shield_point
+		ship_shield_regen_add_static = @bts_small_zroni_shield_regen
+	}
 
-	component_set = "ANTI_SHIELD_REDUCTION"
+	prerequisites = { bts_tech_zroni_shield }
+	component_set = "ZRONI_SHIELD"
+}
+
+utility_component_template = {
+	key = "bts_medium_zroni_shield"
+	size = medium
+	icon = "GFX_ship_part_zroni_shield"
+	icon_frame = 1
+	power = -20
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+			sr_zro = 2
+		}
+	}
+
+	modifier = {
+		ship_shield_add = @bts_medium_zroni_shield_point
+		ship_shield_regen_add_static = @bts_medium_zroni_shield_regen
+	}
+
+	prerequisites = { bts_tech_zroni_shield }
+	component_set = "ZRONI_SHIELD"
+}
+
+utility_component_template = {
+	key = "bts_large_zroni_shield"
+	size = large
+	icon = "GFX_ship_part_zroni_shield"
+	icon_frame = 1
+	power = -20
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+			sr_zro = 2
+		}
+	}
+
+	modifier = {
+		ship_shield_add = @bts_large_zroni_shield_point
+		ship_shield_regen_add_static = @bts_large_zroni_shield_regen
+	}
+
+	prerequisites = { bts_tech_zroni_shield }
+	component_set = "ZRONI_SHIELD"
 }

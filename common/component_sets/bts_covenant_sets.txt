@@ -1,13 +1,13 @@
 component_set = {
 	key = "END_MARK"
 
-	icon = "GFX_ship_part_whisperers_covenant_aux"
+	icon = "GFX_ship_part_end_covenant_aux"
 	icon_frame = 1
 }
 
 component_set = {
-	key = "ANTI_SHIELD_REDUCTION"
+	key = "ZRONI_SHIELD"
 
-	icon = "GFX_ship_part_whisperers_covenant_aux"
+	icon = "GFX_ship_part_zroni_shield"
 	icon_frame = 1
 }
