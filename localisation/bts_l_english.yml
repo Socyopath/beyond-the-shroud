@@ -106,7 +106,7 @@ origin_bts_zroni_effects: "ZRONI EFFECTS"
 
 # Tradition
 tradition_astral_studies: "Astral Studies"
-tradition_astral_studies_desc: "We've sensed the presence of immeasurable power within these rips in space and time, and we need to know more about them."
+tradition_astral_studies_desc: "We've sensed the presence of immeasurable power within these rifts in space and time, and we need to know more about them."
 
 tr_astral_studies_adopt: "$tradition_astral_studies$ Traditions"
 tr_astral_studies_adopt_desc: "By analyzing the space-time fluctuations emanating from the rift, we can §Yidentify all the other rifts in the galaxy§!."
@@ -133,6 +133,19 @@ tr_astral_studies_causality_reverser_delayed: "We've discovered that the timelin
 
 tr_astral_studies_rift_collapser: "Rift Collapser"
 tr_astral_studies_rift_collapser_delayed: "Every time we draw energy from the rift, we make it collapse slightly in on itself to limit energy losses."
+
+# Powers
+
+BTS_SHROUD_ENTITY: "Shroud Manifestation"
+bts_eoc_option_powers: ""
+bts_eoc_power_summon_1: "Summon §M$NAME_Shroud_Avatar$§!."
+bts_eoc_power_summon_1_desc: ""
+bts_eoc_power_summon_2: "Summon §M$NAME_Corrupted_Avatar$§!."
+bts_eoc_power_summon_2_desc: ""
+bts_eoc_power_summon_3: "Summon §M$NAME_Shroud_Manifestation$§!."
+bts_eoc_power_summon_3_desc: ""
+bts_eoc_power_summon_4: "Summon §M$NAME_Reckoning$§!."
+bts_eoc_power_summon_4_desc: ""
 
 # Modifiers
 bts_astral_action_cost: "Astral Actions Cost"

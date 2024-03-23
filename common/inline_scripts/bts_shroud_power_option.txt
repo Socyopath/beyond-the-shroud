@@ -1,5 +1,6 @@
 option = {
     name = $NAME$
+    custom_tooltip = $NAME$_desc
     allow = {
         $ALLOW$
         resource_stockpile_compare = {
@@ -16,7 +17,7 @@ option = {
 
     add_modifier = {
         modifier = "shroud_cooldown"
-        days = 2160
+        days = $SHROUD_DELVE_COOLDOWN$
         time_multiplier = value:scripted_modifier_mult|MODIFIER|shroud_delve_cooldown|
     }
 
