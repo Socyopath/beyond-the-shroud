@@ -1,6 +1,15 @@
 tr_astral_studies_adopt = {
 	possible = {
 		has_ascension_perk = ap_archaeoengineers
+		custom_tooltip = {
+			fail_text = bts_no_astral_rift_scar_in_system
+			any_system_within_border = {
+				OR = {
+					exists = astral_rift
+					any_system_planet = { has_resource = { type = astral_threads amount > 0 } }
+				}
+			}
+		}
 	}
 	custom_tooltip = tr_astral_studies_adopt_desc
 	on_enabled = {
@@ -29,7 +38,7 @@ tr_astral_studies_rift_analyser = {
 		country_astral_threads_produces_mult = 0.25
 	}
 }
-tr_astral_studies_extradimensional_knowledge = {
+tr_astral_studies_astral_excavators = {
 	modifier = {
 		country_astral_rift_speed_mult = 0.50
 	}
@@ -47,7 +56,7 @@ tr_astral_studies_rift_collapser = {
 tr_astral_studies_causality_reverser = {
 	possible = {
 		has_tradition = tr_astral_studies_rift_analyser
-		has_tradition = tr_astral_studies_extradimensional_knowledge
+		has_tradition = tr_astral_studies_astral_excavators
 	}
 	modifier = {
 		country_astral_rift_fail_mult = -0.25

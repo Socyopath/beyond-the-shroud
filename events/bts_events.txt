@@ -30,7 +30,7 @@ country_event = {
     id = bts.10
 	title = tr_astral_studies_adopt_event_name
 	desc = tr_astral_studies_adopt_event_desc
-	picture = GFX_evt_astral_rift_psionic_stranger
+	picture = GFX_evt_astral_scar
 	show_sound = ap_rift_event_32_psionic_comms
 	is_triggered_only = yes
 
@@ -47,7 +47,6 @@ country_event = {
                     }
                 }
                 set_surveyed = { surveyed = yes surveyor = root }
-                # root = { set_visited = prev }
             }
         }
     }
@@ -58,7 +57,7 @@ country_event = {
     id = bts.11
 	title = tr_astral_studies_finish_event_name
 	desc = tr_astral_studies_finish_event_desc
-	picture = GFX_evt_astral_rift_psionic_stranger
+	picture = GFX_evt_astral_rift
 	show_sound = ap_rift_event_32_psionic_comms
 	is_triggered_only = yes
 

@@ -35,8 +35,8 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/traditions/tradition_astral_studies_rift_analyser.dds"
 	}
 	spriteType = {
-		name = "GFX_tr_astral_studies_extradimensional_knowledge"
-		textureFile = "gfx/interface/icons/traditions/tradition_astral_studies_extradimensional_knowledge.dds"
+		name = "GFX_tr_astral_studies_astral_excavators"
+		textureFile = "gfx/interface/icons/traditions/tradition_astral_studies_astral_excavators.dds"
 	}
 	spriteType = {
 		name = "GFX_tr_astral_studies_rift_collapser"

@@ -1,8 +1,5 @@
 ﻿l_english:
 
-# Modifiers
-bts_astral_action_cost: "Astral Actions Cost"
-
 # Traits
 leader_trait_end_chosen: "Chosen of the End"
 leader_trait_end_chosen_desc: "This leader has been chosen to wield the power of an inscrutable Shroud entity. Sustained by eldritch energies, death is now foreign to them."
@@ -51,8 +48,6 @@ bts_tech_covenant_end_desc: "We have discovered how to let psionic energy flow t
 bts_tech_shroud_destabilizer: "Shroud Destabilizer"
 bts_tech_shroud_destabilizer_desc: ""
 
-# Astral Actions
-
 # Covenant Events
 bts_name_end: "End of the Cycle"
 bts_end_covenant_rank_1: "A filled mind has no room for doubt."
@@ -81,39 +76,41 @@ origin_bts_zroni_desc: "ZRONI DESC"
 origin_bts_zroni_effects: "ZRONI EFFECTS"
 
 # Tradition
-
 tradition_astral_studies: "Astral Studies"
-tradition_astral_studies_desc: "Astral Studies desc"
+tradition_astral_studies_desc: "We've sensed the presence of immeasurable power within these rips in space and time, and we need to know more about them."
 
 tr_astral_studies_adopt: "$tradition_astral_studies$ Traditions"
-tr_astral_studies_adopt_desc: "Add intel on system"
-tr_astral_studies_adopt_event_name: ""
-tr_astral_studies_adopt_event_desc: ""
+tr_astral_studies_adopt_desc: "By analyzing the space-time fluctuations emanating from the rift, we can §Yidentify all the other rifts in the galaxy§!."
+tr_astral_studies_adopt_event_name: "$tradition_astral_studies$: Spacetime analysis report"
+tr_astral_studies_adopt_event_desc: "We sent a request for a dimensional echo inside the scars and received a response from all the other rifts in the galaxy. By analyzing the data received, we were able to obtain information on systems hosting an astral anomaly."
 
 tr_astral_studies_finish: "$tr_astral_studies_adopt$ Finished"
-tr_astral_studies_finish_desc: "Spawn astral rift"
-tr_astral_studies_finish_event_name: ""
-tr_astral_studies_finish_event_desc: ""
-
-tr_astral_studies_finish_event_target_system: "[bts_astral_studies_target_system.GetName]"
-
-tr_astral_studies_quantum_storage: "Quantum Storage"
-tr_astral_studies_quantum_storage_desc: ""
+tr_astral_studies_finish_desc: "§YInvokes an astral rift in an owned system§!. If no system is available, the invocation is delayed until a system is available (monthly check)."
+tr_astral_studies_finish_event_name: "$tradition_astral_studies$: Spacetime tearing report"
+tr_astral_studies_finish_event_desc: "After years of astral study, we've become masters of the art. We've created an astral rift directly inside our own system to draw even more power from it."
+tr_astral_studies_finish_event_target_system: "Invokes an §YAstral Rift§! in system §Y[bts_astral_studies_target_system.GetName]§!."
 
 tr_astral_studies_rift_analyser: "Rift Analyser"
-tr_astral_studies_rift_analyser_desc: ""
+tr_astral_studies_rift_analyser_delayed: "As our analysis progresses, we have a better understanding of the energy flowing through these rifts."
 
-tr_astral_studies_extradimensional_knowledge: "Extradimensional knowledge"
-tr_astral_studies_extradimensional_knowledge_desc: ""
+tr_astral_studies_astral_excavators: "Astral Excavators"
+tr_astral_studies_astral_excavators_delayed: "Our excavation techniques reach a cosmic level, enabling us to extract information from rifts at an extraordinary speed."
 
-tr_astral_studies_rift_collapser: "Rift Collapser"
-tr_astral_studies_rift_collapser_desc: ""
+tr_astral_studies_quantum_storage: "Quantum Storage"
+tr_astral_studies_quantum_storage_delayed: "We can compress the fabric of space-time like never before, increasing our storage capacity."
 
 tr_astral_studies_causality_reverser: "Causality Reverser"
-tr_astral_studies_causality_reverser_desc: ""
+tr_astral_studies_causality_reverser_delayed: "We've discovered that the timelines of other realities beyond these rifts can be synchronized with our own to influence the past."
+
+tr_astral_studies_rift_collapser: "Rift Collapser"
+tr_astral_studies_rift_collapser_delayed: "Every time we draw energy from the rift, we make it collapse slightly in on itself to limit energy losses."
 
 # Modifiers
+bts_astral_action_cost: "Astral Actions Cost"
 mod_planet_telepaths_sr_zro_produces_add: "£sr_zro£ $sr_zro$ from £job_telepath£ $job_telepath_plural$"
 mod_planet_telepaths_produces_mult: "£job_telepath£ $job_telepath$ Output"
 mod_bts_astral_action_cost: "Astral Actions Cost"
 mod_country_sr_zro_cost_mult: "£sr_zro£ $sr_zro$ Cost"
+
+# Others
+bts_no_astral_rift_scar_in_system: "$TRIGGER_FAIL$An §YAstral Rift§! or §YAstral Scar§! must be present in an owned system"
