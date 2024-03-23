@@ -314,7 +314,7 @@ country_event = {
     inline_script = {
         script = bts_shroud_power_option
         NAME = bts_eoc_power_summon_4
-        ALLOW = "bts_can_use_power_summon_4 = yes"
+        ALLOW = "bts_can_use_power_summon_4 = yes custom_tooltip = { fail_text = bts_power_4_already_in_use NOT = { any_owned_ship = { is_ship_size = warped_consciousness } } }"
         RESOURCE = sr_zro
         SHROUD_DELVE_COOLDOWN = @bts_eoc_power_summon_4_shroud_delve_cooldown
         USE_COST = @bts_eoc_power_summon_4_zro_cost
@@ -622,8 +622,8 @@ planet_event = {
 
 country_event = {
 	id = bts.341
-	title = planet_destruction.401.name
-	desc = planet_destruction.401.desc
+	title = bts_planet_destruction_name
+	desc = bts_planet_destruction_desc
 	picture = GFX_evt_planet_beam
 	show_sound = event_mystic_reveal
 	location = from
@@ -633,7 +633,7 @@ country_event = {
 	option = {
 		name = OK
 		from = {
-			custom_tooltip = planet_destruction.401.tooltip
+			custom_tooltip = bts_planet_destruction_tooltip
 		}
 	}
 }

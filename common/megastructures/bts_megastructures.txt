@@ -16,6 +16,11 @@ bts_mega_aetherophasic_collapser_0 = {
 
 	potential = { 
         has_country_flag = end_covenant_confirmed
+        NOT = { 
+            any_owned_megastructure = {
+                bts_is_aetherophasic_collapser = yes
+            }
+        }
 	}
 
 	possible = {
@@ -23,12 +28,6 @@ bts_mega_aetherophasic_collapser_0 = {
 		custom_tooltip = {
 			fail_text = "requires_inside_border"
 			is_inside_border = from
-		}
-		custom_tooltip = {
-			fail_text = "bts_requires_no_existing_aetherophasic_collapser"
-			from = {
-                NOT = { has_country_flag = bts_mega_aetherophasic_collapser_built }
-			}
 		}
 		custom_tooltip = {
 			fail_text = "requires_surveyed_system"
@@ -91,17 +90,6 @@ bts_mega_aetherophasic_collapser_0 = {
 			}
 		}
 	}
-
-	on_build_start = {
-        from = {
-            set_country_flag = bts_mega_aetherophasic_collapser_built
-        }
-    }
-	on_build_cancel = {
-        from = {
-            remove_country_flag = bts_mega_aetherophasic_collapser_built
-        }
-    }
 }
 
 bts_mega_aetherophasic_collapser_1 = {

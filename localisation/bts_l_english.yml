@@ -141,15 +141,15 @@ tr_astral_studies_rift_collapser_delayed: "Every time we draw energy from the ri
 # Powers
 
 BTS_SHROUD_ENTITY: "Shroud Manifestation"
-bts_eoc_option_powers: ""
+bts_eoc_option_powers: "Use §MAetherophasic Collapser§! powers."
 bts_eoc_power_summon_1: "Summon §M$NAME_Shroud_Avatar$§!."
-bts_eoc_power_summon_1_desc: ""
+bts_eoc_power_summon_1_desc: "A warrior from the Shroud that has been forged out of pure psionic energy."
 bts_eoc_power_summon_2: "Summon §M$NAME_Corrupted_Avatar$§!."
-bts_eoc_power_summon_2_desc: ""
+bts_eoc_power_summon_2_desc: "A vengeful avatar that has amassed a tremendous amount of psionic energy, and is using it to lash out at anything and anyone unfortunate enough to get in its path."
 bts_eoc_power_summon_3: "Summon §M$NAME_Shroud_Manifestation$§!."
-bts_eoc_power_summon_3_desc: ""
+bts_eoc_power_summon_3_desc: "A greater Shroud entity that represents an unspeakable concept of all thoughts."
 bts_eoc_power_summon_4: "Summon §M$NAME_Reckoning$§!."
-bts_eoc_power_summon_4_desc: ""
+bts_eoc_power_summon_4_desc: "A massive paranormal being of pure energy that seeks to devour the consciousness of other life forms."
 
 # Modifiers
 bts_astral_action_cost: "Astral Actions Cost"
@@ -160,4 +160,5 @@ mod_bts_astral_action_cost: "Astral Actions Cost"
 mod_country_sr_zro_cost_mult: "£sr_zro£ $sr_zro$ Cost"
 
 # Others
+bts_power_4_already_in_use: "No §M$NAME_Reckoning$§! is already owned by the empire"
 bts_no_astral_rift_scar_in_system: "$TRIGGER_FAIL$An §YAstral Rift§! or §YAstral Scar§! must be present in an owned system"
