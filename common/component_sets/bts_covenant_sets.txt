@@ -11,3 +11,11 @@ component_set = {
 	icon = "GFX_ship_part_zroni_shield"
 	icon_frame = 1
 }
+
+component_set = {
+	key = "PLANET_KILLER_END"
+
+	icon = "GFX_ship_part_killer_end"
+	icon_frame = 1
+}
+

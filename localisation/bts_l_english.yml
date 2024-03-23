@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 
 # Traits
 leader_trait_end_chosen: "Chosen of the End"
@@ -13,6 +13,11 @@ council_agenda_agenda_psionic_supremacy_end_name: "$council_agenda_agenda_psioni
 council_agenda_agenda_psionic_supremacy_end_desc: "$council_agenda_agenda_psionic_supremacy_desc$"
 
 # Components
+PLANET_KILLER_END: ""
+PLANET_KILLER_END_DESC: ""
+PLANET_KILLER_END_ACTION: ""
+FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_END: ""
+MESSAGE_DESC_FOR_PLANET_KILLER_END: ""
 ZRONI_SHIELD: "$bts_tech_zroni_shield$"
 ZRONI_SHIELD_DESC: "$bts_tech_zroni_shield_desc$"
 bts_small_zroni_shield: "$ZRONI_SHIELD$"

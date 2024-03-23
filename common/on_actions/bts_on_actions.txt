@@ -13,3 +13,18 @@ on_monthly_pulse_country = {
         bts.11 # Spawn astral rift for tradition finished
     }
 }
+
+
+on_destroy_planet_with_PLANET_KILLER_END = {
+	events = {
+		bts.34
+		origin.3245
+		awareness.150 # Planet cracker used OR planet terraformed, chance to gain 20 awareness.
+	}
+}
+
+on_destroy_planet_with_PLANET_KILLER_END_queued = {
+}
+
+on_destroy_planet_with_PLANET_KILLER_END_unqueued = {
+}

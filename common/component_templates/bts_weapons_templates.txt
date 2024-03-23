@@ -1,0 +1,15 @@
+weapon_component_template = {
+	key = "PLANET_KILLER_END"
+	size = planet_killer
+	type = planet_killer
+	use_ship_kill_target = no
+
+	icon = GFX_ship_part_killer_end
+	icon_frame = 1
+
+	size_restriction = { warped_consciousness }
+	component_set = "PLANET_KILLER_END"
+
+	planet_destruction_gfx = "god_ray_gfx"
+
+}
