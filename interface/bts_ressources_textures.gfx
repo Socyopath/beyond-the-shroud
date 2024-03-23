@@ -62,5 +62,11 @@ spriteTypes = {
 		name = "GFX_council_agenda_icon_agenda_psionic_supremacy_end"
 		texturefile = "gfx/interface/icons/agenda_icons/agenda_psionic_supremacy.dds"
 	}
+
+	# Megastructure
+	spriteType = {
+		name = "GFX_megastructure_aetherophasic_collapser"
+		texturefile = "gfx/interface/planetview/aetherophasic_collapser.dds"
+	}
 	
 }

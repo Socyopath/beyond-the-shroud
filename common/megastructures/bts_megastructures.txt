@@ -1,4 +1,4 @@
-eoc_mega_0 = {
+bts_mega_aetherophasic_collapser_0 = {
 	entity = "quantum_catapult_stage_1_entity"
 	construction_entity = "construction_platform_entity"
 	portrait = "GFX_megastructure_construction_background"
@@ -33,10 +33,10 @@ eoc_mega_0 = {
 	}
 }
 
-eoc_mega_1 = {
+bts_mega_aetherophasic_collapser_1 = {
 	entity = "quantum_catapult_stage_1_entity"
 	construction_entity = "quantum_catapult_stage_1_entity"
-	portrait = "GFX_megastructure_construction_background"
+	portrait = "GFX_megastructure_aetherophasic_collapser"
 	build_time = 3600
 	resources = {
 	}
@@ -45,7 +45,7 @@ eoc_mega_1 = {
 	}
 
     upgrade_from = {
-		eoc_mega_0
+		bts_mega_aetherophasic_collapser_0
 	}
 
 	on_build_complete = {
@@ -69,10 +69,10 @@ eoc_mega_1 = {
 
 }
 
-eoc_mega_2 = {
+bts_mega_aetherophasic_collapser_2 = {
 	entity = "quantum_catapult_stage_1_entity"
 	construction_entity = "quantum_catapult_stage_1_entity"
-	portrait = "GFX_megastructure_construction_background"
+	portrait = "GFX_megastructure_aetherophasic_collapser"
 	build_time = 3600
 	resources = {
 	}
@@ -81,7 +81,7 @@ eoc_mega_2 = {
 	}
 
     upgrade_from = {
-		eoc_mega_1
+		bts_mega_aetherophasic_collapser_1
 	}
 
     on_build_complete = {
@@ -102,10 +102,10 @@ eoc_mega_2 = {
     }
 }
 
-eoc_mega_3 = {
+bts_mega_aetherophasic_collapser_3 = {
 	entity = "quantum_catapult_stage_2_entity"
 	construction_entity = "quantum_catapult_stage_2_entity"
-	portrait = "GFX_megastructure_construction_background"
+	portrait = "GFX_megastructure_aetherophasic_collapser"
 	build_time = 3600
 	resources = {
 	}
@@ -114,7 +114,7 @@ eoc_mega_3 = {
 	}
 
     upgrade_from = {
-		eoc_mega_2
+		bts_mega_aetherophasic_collapser_2
 	}
 
     on_build_complete = {
@@ -139,10 +139,10 @@ eoc_mega_3 = {
     }
 }
 
-eoc_mega_4 = {
+bts_mega_aetherophasic_collapser_4 = {
 	entity = "quantum_catapult_stage_3_entity"
 	construction_entity = "quantum_catapult_stage_3_entity"
-	portrait = "GFX_megastructure_construction_background"
+	portrait = "GFX_megastructure_aetherophasic_collapser"
 	build_time = 3600
 	resources = {
 	}
@@ -151,7 +151,7 @@ eoc_mega_4 = {
 	}
 
     upgrade_from = {
-		eoc_mega_3
+		bts_mega_aetherophasic_collapser_3
 	}
     on_build_complete = {
         every_system_ambient_object = {
@@ -175,10 +175,10 @@ eoc_mega_4 = {
     }
 }
 
-eoc_mega_5 = {
+bts_mega_aetherophasic_collapser_5 = {
 	entity = "quantum_catapult_stage_3_entity"
 	construction_entity = "quantum_catapult_stage_3_entity"
-	portrait = "GFX_megastructure_construction_background"
+	portrait = "GFX_megastructure_aetherophasic_collapser"
 	build_time = 3600
 	resources = {
 	}
@@ -187,7 +187,7 @@ eoc_mega_5 = {
 	}
 
     upgrade_from = {
-		eoc_mega_4
+		bts_mega_aetherophasic_collapser_4
 	}
 
     on_build_complete = {
