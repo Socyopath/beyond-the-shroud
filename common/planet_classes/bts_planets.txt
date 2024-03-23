@@ -1,4 +1,4 @@
-pc_bts_black_hole_small = {
+pc_bts_shroud_rift = {
 	entity = "bts_shroud_rift_entity"
 	entity_scale = 8.0
 	icon = GFX_planet_type_black_hole

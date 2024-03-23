@@ -197,7 +197,7 @@ eoc_mega_5 = {
         }
         set_star_class = sc_rift_star
         star = {
-            change_pc = pc_bts_black_hole_small
+            change_pc = pc_bts_shroud_rift
             create_ambient_object = {
                 type = "bts_psionic_wave"
                 play_animation_once = yes
