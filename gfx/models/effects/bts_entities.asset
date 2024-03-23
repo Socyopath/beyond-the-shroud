@@ -97,5 +97,3 @@ entity = {
 	# }
 	cull_radius = 700
 }
-
-entity = { name = "bts_no_entity" }
