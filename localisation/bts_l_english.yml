@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 
 # Traits
 leader_trait_end_chosen: "Chosen of the End"
@@ -13,11 +13,15 @@ council_agenda_agenda_psionic_supremacy_end_name: "$council_agenda_agenda_psioni
 council_agenda_agenda_psionic_supremacy_end_desc: "$council_agenda_agenda_psionic_supremacy_desc$"
 
 # Components
-PLANET_KILLER_END: ""
-PLANET_KILLER_END_DESC: ""
-PLANET_KILLER_END_ACTION: ""
-FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_END: ""
-MESSAGE_DESC_FOR_PLANET_KILLER_END: ""
+PLANET_KILLER_END: "Consciousness Assimilator"
+PLANET_KILLER_END_DESC: "Assimilate the consciousness of all living beings on a planet and increase your power as you kill more."
+PLANET_KILLER_END_ACTION: "Assimilate all the consciousnesses of"
+FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_END: "Preparing to assimilate all consciousnesses of $PLANET|Y$."
+MESSAGE_DESC_FOR_PLANET_KILLER_END: "had all of its life forms consciousness being absorbed by"
+
+bts_planet_destruction_name: "Consciousness assimilated"
+bts_planet_destruction_desc: "The psionic power from [From.From.GetName]'s fades, and for a moment all is quiet. Down on [From.GetName] the people stand slack-jawed (or local physiognomic equivalent), enraptured by the powerful and personal truths the psionic ray unfetters from the tangled web of their minds.\n\nIf they did not understand before, they know now viscerally: we are all part of something greater."
+bts_planet_destruction_tooltip: "Any §Y$trait_mechanical$§!, §Y$trait_machine_unit$§! or §Y$trait_hive_mind$§! pops are §Rdestroyed§! by the psionic resonance.\n\nAll remaining §Ybiological§! pops consciousness have been absorbed to strengthen the §M$NAME_Reckoning$§!"
 ZRONI_SHIELD: "$bts_tech_zroni_shield$"
 ZRONI_SHIELD_DESC: "$bts_tech_zroni_shield_desc$"
 bts_small_zroni_shield: "$ZRONI_SHIELD$"
@@ -149,6 +153,7 @@ bts_eoc_power_summon_4_desc: ""
 
 # Modifiers
 bts_astral_action_cost: "Astral Actions Cost"
+absorbed_consciousness_0: "$absorbed_consciousness_1$"
 mod_planet_telepaths_sr_zro_produces_add: "£sr_zro£ $sr_zro$ from £job_telepath£ $job_telepath_plural$"
 mod_planet_telepaths_produces_mult: "£job_telepath£ $job_telepath$ Output"
 mod_bts_astral_action_cost: "Astral Actions Cost"
