@@ -48,10 +48,19 @@ bts_tech_covenant_end_desc: "We have discovered how to let psionic energy flow t
 bts_tech_shroud_destabilizer: "Shroud Destabilizer"
 bts_tech_shroud_destabilizer_desc: ""
 
+bts_mega_aetherophasic_collapser_0_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_0_favor_cost$§! favor required with End of the Cycle, currently have §Y[from.end_covenant_rank]§!"
+bts_mega_aetherophasic_collapser_1_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_1_favor_cost$§! favor required with End of the Cycle, currently have §Y[from.end_covenant_rank]§!"
+bts_mega_aetherophasic_collapser_2_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_2_favor_cost$§! favor required with End of the Cycle, currently have §Y[from.end_covenant_rank]§!"
+bts_mega_aetherophasic_collapser_3_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_3_favor_cost$§! favor required with End of the Cycle, currently have §Y[from.end_covenant_rank]§!"
+bts_mega_aetherophasic_collapser_4_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_4_favor_cost$§! favor required with End of the Cycle, currently have §Y[from.end_covenant_rank]§!"
+bts_mega_aetherophasic_collapser_5_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_5_favor_cost$§! favor required with End of the Cycle, currently have §Y[from.end_covenant_rank]§!"
+
 # Megastructures
+bts_requires_no_existing_aetherophasic_collapser: "$TRIGGER_FAIL$Cannot build more than one Aetherophasic Collapser."
 bts_mega_aetherophasic_collapser_0_MEGASTRUCTURE_DETAILS: "The Aetherophasic Collapser, which will rip apart the barriers that exist between this world and the Shroud and §Menable powerful psionic beings to be summoned§!."
 bts_mega_aetherophasic_collapser_0: "Aetherophasic Collapser Frame"
 bts_mega_aetherophasic_collapser_0_DESC: "The framework that surrounds the star is the basis for the future Aetherophasic Collapser"
+
 bts_mega_aetherophasic_collapser_1: "Aetherophasic Collapser"
 bts_mega_aetherophasic_collapser_1_DESC: "The Aetherophasic Collapser compresses matter to extreme density, creating a black hole."
 bts_mega_aetherophasic_collapser_2: "Unstable Aetherophasic Collapser"

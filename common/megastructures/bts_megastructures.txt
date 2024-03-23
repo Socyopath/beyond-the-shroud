@@ -2,17 +2,81 @@ bts_mega_aetherophasic_collapser_0 = {
 	entity = "quantum_catapult_stage_1_entity"
 	construction_entity = "construction_platform_entity"
 	portrait = "GFX_megastructure_construction_background"
-	build_time = 3600
-	resources = {
-
-	}
+    build_time = @bts_mega_aetherophasic_collapser_0_build_time
+    resources = {
+        category = megastructures
+        cost = {
+            astral_threads = @bts_mega_aetherophasic_collapser_0_cost
+        }
+    }
 
 	country_modifier = {
 		
 	}
 
 	potential = { 
+        has_country_flag = end_covenant_confirmed
+	}
 
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "bts_requires_no_existing_aetherophasic_collapser"
+			from = {
+                NOT = { has_country_flag = bts_mega_aetherophasic_collapser_built }
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_black_hole_neutron_star_pulsar"
+			NOT = {
+				is_star_class = sc_black_hole
+				is_star_class = sc_neutron_star
+				is_star_class = sc_pulsar
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_binary_trinary"
+			NOR = {
+				is_star_class = sc_binary_1
+				is_star_class = sc_binary_2
+				is_star_class = sc_binary_3
+				is_star_class = sc_binary_4
+				is_star_class = sc_binary_5
+				is_star_class = sc_binary_6
+				is_star_class = sc_binary_7
+				is_star_class = sc_binary_8
+				is_star_class = sc_binary_9
+				is_star_class = sc_binary_10
+				is_star_class = sc_trinary_1
+				is_star_class = sc_trinary_2
+				is_star_class = sc_trinary_3
+				is_star_class = sc_trinary_4
+			}
+		}
+        custom_tooltip = {
+            fail_text = bts_mega_aetherophasic_collapser_0_missing_favor
+            from = {
+                check_variable = {
+                    which = end_covenant_rank
+                    value >= @bts_mega_aetherophasic_collapser_0_favor_cost
+                }
+            }
+        }
 	}
 
 	placement_rules = {
@@ -28,18 +92,25 @@ bts_mega_aetherophasic_collapser_0 = {
 		}
 	}
 
-	on_build_complete = {
-
-	}
+	on_build_start = {
+        set_country_flag = bts_mega_aetherophasic_collapser_built
+    }
+	on_build_cancel = {
+        remove_country_flag = bts_mega_aetherophasic_collapser_built
+    }
 }
 
 bts_mega_aetherophasic_collapser_1 = {
 	entity = "quantum_catapult_stage_1_entity"
 	construction_entity = "quantum_catapult_stage_1_entity"
 	portrait = "GFX_megastructure_aetherophasic_collapser"
-	build_time = 3600
-	resources = {
-	}
+    build_time = @bts_mega_aetherophasic_collapser_1_build_time
+    resources = {
+        category = megastructures
+        cost = {
+            astral_threads = @bts_mega_aetherophasic_collapser_1_cost
+        }
+    }
 
 	country_modifier = {
 	}
@@ -47,6 +118,18 @@ bts_mega_aetherophasic_collapser_1 = {
     upgrade_from = {
 		bts_mega_aetherophasic_collapser_0
 	}
+
+    possible = {
+        custom_tooltip = {
+            fail_text = bts_mega_aetherophasic_collapser_1_missing_favor
+            from = {
+                check_variable = {
+                    which = end_covenant_rank
+                    value >= @bts_mega_aetherophasic_collapser_1_favor_cost
+                }
+            }
+        }
+    }
 
 	on_build_complete = {
         set_star_class = sc_black_hole
@@ -73,9 +156,13 @@ bts_mega_aetherophasic_collapser_2 = {
 	entity = "quantum_catapult_stage_1_entity"
 	construction_entity = "quantum_catapult_stage_1_entity"
 	portrait = "GFX_megastructure_aetherophasic_collapser"
-	build_time = 3600
-	resources = {
-	}
+    build_time = @bts_mega_aetherophasic_collapser_2_build_time
+    resources = {
+        category = megastructures
+        cost = {
+            astral_threads = @bts_mega_aetherophasic_collapser_2_cost
+        }
+    }
 
 	country_modifier = {
 	}
@@ -83,6 +170,18 @@ bts_mega_aetherophasic_collapser_2 = {
     upgrade_from = {
 		bts_mega_aetherophasic_collapser_1
 	}
+
+    possible = {
+        custom_tooltip = {
+            fail_text = bts_mega_aetherophasic_collapser_2_missing_favor
+            from = {
+                check_variable = {
+                    which = end_covenant_rank
+                    value >= @bts_mega_aetherophasic_collapser_2_favor_cost
+                }
+            }
+        }
+    }
 
     on_build_complete = {
         star = {
@@ -106,9 +205,13 @@ bts_mega_aetherophasic_collapser_3 = {
 	entity = "quantum_catapult_stage_2_entity"
 	construction_entity = "quantum_catapult_stage_2_entity"
 	portrait = "GFX_megastructure_aetherophasic_collapser"
-	build_time = 3600
-	resources = {
-	}
+    build_time = @bts_mega_aetherophasic_collapser_3_build_time
+    resources = {
+        category = megastructures
+        cost = {
+            astral_threads = @bts_mega_aetherophasic_collapser_3_cost
+        }
+    }
 
 	country_modifier = {
 	}
@@ -116,6 +219,18 @@ bts_mega_aetherophasic_collapser_3 = {
     upgrade_from = {
 		bts_mega_aetherophasic_collapser_2
 	}
+
+    possible = {
+        custom_tooltip = {
+            fail_text = bts_mega_aetherophasic_collapser_3_missing_favor
+            from = {
+                check_variable = {
+                    which = end_covenant_rank
+                    value >= @bts_mega_aetherophasic_collapser_3_favor_cost
+                }
+            }
+        }
+    }
 
     on_build_complete = {
         every_system_ambient_object = {
@@ -143,9 +258,13 @@ bts_mega_aetherophasic_collapser_4 = {
 	entity = "quantum_catapult_stage_3_entity"
 	construction_entity = "quantum_catapult_stage_3_entity"
 	portrait = "GFX_megastructure_aetherophasic_collapser"
-	build_time = 3600
-	resources = {
-	}
+    build_time = @bts_mega_aetherophasic_collapser_4_build_time
+    resources = {
+        category = megastructures
+        cost = {
+            astral_threads = @bts_mega_aetherophasic_collapser_4_cost
+        }
+    }
 
 	country_modifier = {
 	}
@@ -153,6 +272,19 @@ bts_mega_aetherophasic_collapser_4 = {
     upgrade_from = {
 		bts_mega_aetherophasic_collapser_3
 	}
+
+    possible = {
+        custom_tooltip = {
+            fail_text = bts_mega_aetherophasic_collapser_4_missing_favor
+            from = {
+                check_variable = {
+                    which = end_covenant_rank
+                    value >= @bts_mega_aetherophasic_collapser_4_favor_cost
+                }
+            }
+        }
+    }
+
     on_build_complete = {
         every_system_ambient_object = {
             limit = { has_ambient_object_flag = bts_shroud_portal_2_system_effect }
@@ -179,9 +311,13 @@ bts_mega_aetherophasic_collapser_5 = {
 	entity = "quantum_catapult_stage_3_entity"
 	construction_entity = "quantum_catapult_stage_3_entity"
 	portrait = "GFX_megastructure_aetherophasic_collapser"
-	build_time = 3600
-	resources = {
-	}
+    build_time = @bts_mega_aetherophasic_collapser_5_build_time
+    resources = {
+        category = megastructures
+        cost = {
+            astral_threads = @bts_mega_aetherophasic_collapser_5_cost
+        }
+    }
 
 	country_modifier = {
 	}
@@ -189,6 +325,18 @@ bts_mega_aetherophasic_collapser_5 = {
     upgrade_from = {
 		bts_mega_aetherophasic_collapser_4
 	}
+
+    possible = {
+        custom_tooltip = {
+            fail_text = bts_mega_aetherophasic_collapser_5_missing_favor
+            from = {
+                check_variable = {
+                    which = end_covenant_rank
+                    value >= @bts_mega_aetherophasic_collapser_5_favor_cost
+                }
+            }
+        }
+    }
 
     on_build_complete = {
         every_system_ambient_object = {
