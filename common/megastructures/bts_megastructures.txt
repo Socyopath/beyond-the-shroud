@@ -93,10 +93,14 @@ bts_mega_aetherophasic_collapser_0 = {
 	}
 
 	on_build_start = {
-        set_country_flag = bts_mega_aetherophasic_collapser_built
+        from = {
+            set_country_flag = bts_mega_aetherophasic_collapser_built
+        }
     }
 	on_build_cancel = {
-        remove_country_flag = bts_mega_aetherophasic_collapser_built
+        from = {
+            remove_country_flag = bts_mega_aetherophasic_collapser_built
+        }
     }
 }
 
