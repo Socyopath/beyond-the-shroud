@@ -1,15 +1,17 @@
 weapon_component_template = {
 	key = "PLANET_KILLER_END"
+	icon = GFX_ship_part_killer_end
+	icon_frame = 1
 	size = planet_killer
 	type = planet_killer
 	use_ship_kill_target = no
-
-	icon = GFX_ship_part_killer_end
-	icon_frame = 1
+	hidden = yes
+	planet_destruction_gfx = "assimilation_psionic_gfx"
 
 	size_restriction = { warped_consciousness }
+
+    windup = { min = 5 max = 5 }
+	total_fire_time = 30
+
 	component_set = "PLANET_KILLER_END"
-
-	planet_destruction_gfx = "god_ray_gfx"
-
 }

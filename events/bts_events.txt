@@ -440,12 +440,11 @@ country_event = {
 				create_ship = {
 					name = "NAME_Reckoning"
 					design = "NAME_Warped_Consciousness"
+					effect = {
+						ship_event = { id = bts.342 } # Update modifiers
+					}
 				}
 				set_location = event_target:bts_aetherophasic_collapser_summon
-                add_modifier = {
-                    modifier = "absorbed_consciousness_1"
-                    days = -1
-                }
 			}
 		}
     }
@@ -646,12 +645,27 @@ ship_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		remove_modifier = absorbed_consciousness_0
         remove_modifier = absorbed_consciousness_1
         remove_modifier = absorbed_consciousness_2
         remove_modifier = absorbed_consciousness_3
         remove_modifier = absorbed_consciousness_4
         remove_modifier = absorbed_consciousness_5
         if = {
+        	limit = {
+        		root = {
+        			check_variable = {
+        				which = "pop_killed"
+        				value < 250
+        			}
+        		}
+        	}
+        	add_modifier = {
+        		modifier = "absorbed_consciousness_0"
+        		days = -1
+        	}
+		}
+		else_if = {
         	limit = {
         		root = {
         			check_variable = {

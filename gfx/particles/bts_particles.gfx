@@ -35,5 +35,19 @@ objectTypes = {
 		
 		scale = 1.0
 	}
+
+	pdxparticle = {
+		name = "bts_assimilate_nano_effect_psionic"
+		type = "bts_assimilate_nano_effect_psionic_file"
+		
+		scale = 1.0
+	}
+
+	pdxparticle = {
+		name = "bts_assimilate_laser_hit_effect_psionic"
+		type = "bts_assimilate_laser_hit_effect_psionic_file"
+		
+		scale = 1.0
+	}
 }
 

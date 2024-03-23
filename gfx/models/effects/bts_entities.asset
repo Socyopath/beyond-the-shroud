@@ -97,3 +97,26 @@ entity = {
 	# }
 	cull_radius = 700
 }
+
+entity = {
+	name = "colossus_assimilate_hit_psionic_entity"
+	pdxmesh = "assimilate_hit_effect_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" looping = yes animation = "idle"
+		start_event = { particle = "bts_assimilate_laser_hit_effect_psionic" keep_particle = yes trigger_once = yes }
+		start_event = { node = "effect_1" particle = "bts_assimilate_nano_effect_psionic" keep_particle = yes trigger_once = yes }
+		start_event = { node = "effect_2" particle = "bts_assimilate_nano_effect_psionic" keep_particle = yes trigger_once = yes }
+		start_event = { node = "effect_3" particle = "bts_assimilate_nano_effect_psionic" keep_particle = yes trigger_once = yes }
+		
+		event = { trigger_once = yes sound = { soundeffect = "assimilate_hit_layer_1" } }
+		event = { trigger_once = yes sound = { soundeffect = "assimilate_hit_layer_2" } }
+
+		event = { trigger_once = yes sound = { soundeffect = "distance_assimilate_hit_layer_1" } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_assimilate_hit_layer_2" } }
+
+	}
+	state = { name = "stop" animation = "idle" state_time = 0.5 looping = no }
+	
+	#scale = 0.9
+}
