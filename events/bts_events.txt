@@ -1,29 +1,136 @@
 namespace = bts
 
 # Debug
-astral_rift_event = {
-	id = bts.101
-	title = astral_rift.3235.name
-	desc = {
-		trigger = {
-			switch = {
-				trigger = has_astral_rift_flag
-				description_gestalt = { text = astral_rift.3235.desc.gestalt }
-				description_materialist = { text = astral_rift.3235.desc.materialist }
-				default = { text = astral_rift.3235.desc.default }
+
+
+country_event = {
+    id = bts.100
+    is_triggered_only = yes
+    hide_window = yes
+    immediate = {
+        give_technology = { tech = bts_tech_occultism }
+        give_technology = { tech = bts_tech_otherworldly_knowledge_1 }
+        give_technology = { tech = bts_tech_otherworldly_knowledge_2 }
+        give_technology = { tech = bts_tech_mind_evocation_1 }
+        give_technology = { tech = bts_tech_mind_evocation_2 }
+        give_technology = { tech = bts_tech_psychic_coalition }
+        give_technology = { tech = bts_tech_prescience }
+        give_technology = { tech = bts_tech_shrouded_shields }
+        give_technology = { tech = bts_tech_zroni_shield }
+        give_technology = { tech = bts_tech_zro_infusion }
+        give_technology = { tech = bts_tech_covenant_end }
+        give_technology = { tech = bts_tech_shroud_destabilizer }
+    }
+}
+
+fleet_event = {
+    id = bts.101
+    is_triggered_only = yes
+    hide_window = yes
+    immediate = {
+        solar_system = {
+			create_country = {
+				name = "NAME_Voidwyrm"
+				type = guardian_dragon
+				flag = {
+					icon = {
+						category = "zoological"
+						file = "flag_zoological_5.dds"
+					}
+					background= {
+						category = "backgrounds"
+						file = "00_solid.dds"
+					}
+					colors={
+						"red"
+						"red"
+						"null"
+						"null"
+					}
+				}
+			}
+			last_created_country = {
+				save_global_event_target_as = guardian_dragon_country
+				set_country_flag = dragon_country
+			}
+
+			create_fleet = {
+				name = "NAME_Ether_Drake"
+				settings = {
+					spawn_debris = no
+					is_boss = yes
+				}
+				effect = {
+					set_owner = event_target:guardian_dragon_country
+					create_ship = {
+						name = "NAME_Avice"
+						design = "NAME_Grand_Dragon"
+					}
+					set_fleet_flag = dragon_fleet
+					set_location = root.solar_system
+					set_fleet_stance = aggressive
+					set_aggro_range_measure_from = self
+					set_aggro_range = 500
+				}
 			}
 		}
-	}
-	picture = GFX_evt_astral_rift_psionic_stranger
-	show_sound = ap_rift_event_32_psionic_comms
-	difficulty = @astral_rift_easy_plus_difficulty
-	astral_rift = yes
-	is_triggered_only = yes
-
-	immediate = {
-		finish_astral_rift = yes
-	}
+    }
 }
+
+fleet_event = {
+    id = bts.102
+    is_triggered_only = yes
+    hide_window = yes
+    immediate = {
+        # solar_system = {
+        #     system_event = { id = ancrel.9900 }
+        #     add_modifier = {
+        #         modifier = zroni_storm
+        #         days = -1
+        #     }
+        #     star = {
+        #         create_ambient_object = {
+        #             type = "space_storm_1"
+        #             location = this
+        #         }
+        #     }
+        #     last_created_ambient_object = {	
+        #         set_ambient_object_flag = zroni_storm
+        #         set_location = {
+        #             target = prev
+        #             distance = 0
+        #             angle = random
+        #         }
+        #     }
+        # }
+    }
+}
+
+
+
+# astral_rift_event = {
+# 	id = bts.101
+# 	title = astral_rift.3235.name
+# 	desc = {
+# 		trigger = {
+# 			switch = {
+# 				trigger = has_astral_rift_flag
+# 				description_gestalt = { text = astral_rift.3235.desc.gestalt }
+# 				description_materialist = { text = astral_rift.3235.desc.materialist }
+# 				default = { text = astral_rift.3235.desc.default }
+# 			}
+# 		}
+# 	}
+# 	picture = GFX_evt_astral_rift_psionic_stranger
+# 	show_sound = ap_rift_event_32_psionic_comms
+# 	difficulty = @astral_rift_easy_plus_difficulty
+# 	astral_rift = yes
+# 	is_triggered_only = yes
+
+# 	immediate = {
+# 		finish_astral_rift = yes
+# 	}
+# }
 
 # Tradition Astral Studies adopted
 country_event = {
@@ -401,4 +508,245 @@ country_event = {
 			}
 		}
     }
+}
+
+
+# God Ray
+planet_event = {
+	id = bts.34
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { is_planet_class = pc_ai }
+				exists = owner
+				owner = { NOT = { is_same_value = from.owner } }
+			}
+			from.owner = {
+				country_event = { id = planet_destruction.401 }
+			}
+		}
+
+		# Contingency Machine World
+		if = {
+			limit = {
+				is_planet_class = pc_ai
+				NOT = { has_planet_flag = machine_lair }
+			}
+			set_planet_flag = destroyed_by_colossus
+			set_planet_flag = planet_godrayed
+			planet_event = { id = crisis.2040 }
+			create_ambient_object = {
+				location = this
+				type = habitat_cracker_object
+				duration = 5
+
+				use_3d_location = yes
+				base_angle_towards = star
+				entity_face_object = star
+
+				entity_offset = { min = 0 max = 0 }
+
+				entity_scale_to_size = yes
+				scale = 0.5
+			}
+		}
+
+		# Contingency Final Machine World
+		if = {
+			limit = {
+				is_planet_class = pc_ai
+				has_planet_flag = machine_lair
+			}
+			set_planet_flag = destroyed_by_colossus
+			set_planet_flag = planet_godrayed
+			from.owner = { save_event_target_as = final_machine_world_destroyer }
+			stop_crisis_sound = yes
+			planet_event = { id = crisis.2046 }
+			create_ambient_object = {
+				location = this
+				type = habitat_cracker_object
+				duration = 5
+
+				use_3d_location = yes
+				base_angle_towards = star
+				entity_face_object = star
+
+				entity_offset = { min = 0 max = 0 }
+
+				entity_scale_to_size = yes
+				scale = 0.5
+			}
+		}
+
+		if = {
+			limit = {
+				OR = {
+					is_active_resolution = "resolution_rulesofwar_independent_tribunals"
+					is_active_resolution = "resolution_rulesofwar_last_resort_doctrine"
+					is_active_resolution = "resolution_rulesofwar_demobilization_initiative"
+				}
+			}
+			from.owner = {
+				set_timed_country_flag = { flag = resolution_breached_fired_godray days = 3600 }
+			}
+		}
+
+		if = {
+			limit = {
+				NOT = { is_planet_class = pc_ai }
+				exists = owner
+				owner = {
+					NOT = { is_same_value = from.owner }
+					OR = {
+						is_country_type = default
+						is_country_type = fallen_empire
+						is_country_type = awakened_fallen_empire
+					}
+				}
+			}
+			# Generate threat
+			add_threat = { who = from.owner amount = 3 }
+			# modifier for allies + those upset by conversion
+			every_country = {
+				limit = {
+					NOR = {
+						is_same_value = from.owner
+						is_same_value = root.owner
+						AND = {
+							has_federation = yes
+							is_in_federation_with = from.owner
+						}
+					}
+					OR = {
+						has_communications = from.owner
+						has_communications = root.owner
+					}
+					OR = {
+						AND = {
+							has_federation = yes
+							is_in_federation_with = root.owner
+						}
+						has_ai_personality = awakened_fallen_empire_materialist
+						AND = {
+							is_country_type = default
+							OR = {
+								is_materialist = yes
+								is_egalitarian = yes
+								has_authority = auth_machine_intelligence
+							}
+						}
+					}
+				}
+				add_opinion_modifier = {
+					modifier = opinion_converted_a_world
+					who = from.owner
+				}
+			}
+			# modifiers for victim
+			owner = {
+				add_opinion_modifier = {
+					modifier = opinion_converted_my_world
+					who = from.owner
+				}
+				if = {
+					limit = { NOT = { has_ethic = ethic_gestalt_consciousness } }
+					add_modifier = {
+						modifier = colossus_victim
+						days = 10800 # 30 years
+					}
+				}
+			}
+			# Add war exhaustion to planet owner
+			owner = {
+				if = {
+					limit = { #isn't the case when the crisis bombards planets, for instance
+						is_at_war_with = from.fleet.owner
+					}
+					add_static_war_exhaustion = {
+						attacker = from.fleet.owner
+						location = root
+						value_for_planet_destruction = 1.0
+					}
+				}
+			}
+		}
+		every_owned_pop = {
+			limit = {
+				OR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					has_trait = trait_hive_mind
+					has_living_standard = { # Bio-trophies die without care
+						country = root.owner
+						type = living_standard_organic_trophy
+					}
+				}
+			}
+			kill_pop = yes
+			from.owner = {
+				if = {
+					limit = { has_ascension_perk = ap_become_the_crisis }
+					complete_crisis_objective = crisobj_purge_pops
+				}
+			}
+		}
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					has_trait = trait_hive_mind
+					has_living_standard = {
+						country = root.owner
+						type = living_standard_organic_trophy
+					}
+				}
+			}
+			pop_change_ethic = ethic_spiritualist
+		}
+		# Special graphics for Habitats and Ring Worlds
+		if = {
+			limit = {
+				is_planet_class = pc_habitat
+			}
+			spawn_habitat_divine_effect = yes
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_ringworld_habitable
+			}
+			spawn_ringworld_divine_effect = yes
+		}
+		if = {
+			limit = {
+				OR = {
+					is_planet_class = pc_habitat
+					is_planet_class = pc_ringworld_habitable
+				}
+			}
+			# nothing
+		}
+		else = {
+			change_pc = this
+		}
+		add_modifier = {
+			modifier = god_rayed
+			days = 3600
+		}
+		# self-raying
+		if = {
+			limit = {
+				exists = owner
+				owner = { is_same_value = from.owner }
+			}
+			add_modifier = {
+				modifier = uneasy_faith
+				days = 3600
+			}
+		}
+	}
 }
