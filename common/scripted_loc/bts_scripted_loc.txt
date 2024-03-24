@@ -31,3 +31,16 @@ defined_text = {
     }
     default = BLANK_STRING
 }
+
+defined_text = {
+    name = end_pop_killed_status
+    text = {
+		trigger = { 
+            any_owned_ship = {
+                is_ship_size = warped_consciousness
+            }
+         }
+        localization_key = bts_reckoning_info
+    }
+    default = BLANK_STRING
+}

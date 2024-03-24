@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 
 # Traits
 leader_trait_end_chosen: "Chosen of the End"
@@ -90,7 +90,7 @@ bts_end_covenant_rank_4: "Secrets are weapons without compare."
 
 end_covenant_chain_title: "$bts_name_end$"
 end_covenant_favor_count: "[root.end_covenant_rank]"
-end_covenant_chain_desc: "[root.end_covenant_end_status]Total favor: §Y$end_covenant_favor_count$§!\nFavor per month: §Y[root.bts_eoc_favor_per_month]§!\n$end_covenant_estimated_favor_years$"
+end_covenant_chain_desc: "[root.end_covenant_end_status]Total favor: §Y$end_covenant_favor_count$§!\nFavor per month: §Y[root.bts_eoc_favor_per_month]§!\n$end_covenant_estimated_favor_years$\n[root.end_pop_killed_status]"
 end_covenant_end_date: "End of the Cycle will happend at §R[root.bts_eoc_final_date]§!\n"
 end_covenant_estimated_favor_1_year: "§Y1§! year : §Y[root.bts_eoc_estimated_favor_per_1_year]§!"
 end_covenant_estimated_favor_5_year: "§Y5§! year : §Y[root.bts_eoc_estimated_favor_per_5_year]§!"
@@ -101,7 +101,7 @@ covenant_end_of_the_cycle_0: "$covenant_end_of_the_cycle$"
 covenant_end_of_the_cycle_desc_0: "$covenant_end_of_the_cycle_desc$"
 end_covenant_surive_event_title: "Won EOC"
 end_covenant_surive_event_desc: "You survived"
-
+bts_reckoning_info: "§M$NAME_Reckoning$§! : §Y[root.end_pop_killed]§! organic pops §Rkilled§!"
 
 # Origin
 origin_bts_zroni: "ZRONI"
@@ -150,6 +150,7 @@ bts_eoc_power_summon_3: "Summon §M$NAME_Shroud_Manifestation$§!."
 bts_eoc_power_summon_3_desc: "A greater Shroud entity that represents an unspeakable concept of all thoughts."
 bts_eoc_power_summon_4: "Summon §M$NAME_Reckoning$§!."
 bts_eoc_power_summon_4_desc: "A massive paranormal being of pure energy that seeks to devour the consciousness of other life forms."
+bts_power_4_already_in_use: "No §M$NAME_Reckoning$§! is already owned by the empire"
 
 # Modifiers
 bts_astral_action_cost: "Astral Actions Cost"
@@ -160,5 +161,5 @@ mod_bts_astral_action_cost: "Astral Actions Cost"
 mod_country_sr_zro_cost_mult: "£sr_zro£ $sr_zro$ Cost"
 
 # Others
-bts_power_4_already_in_use: "No §M$NAME_Reckoning$§! is already owned by the empire"
+
 bts_no_astral_rift_scar_in_system: "$TRIGGER_FAIL$An §YAstral Rift§! or §YAstral Scar§! must be present in an owned system"

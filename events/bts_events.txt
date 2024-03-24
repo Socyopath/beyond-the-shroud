@@ -505,6 +505,10 @@ country_event = {
 				set_location = event_target:bts_aetherophasic_collapser_summon
 			}
 		}
+		set_variable = {
+			which = "end_pop_killed"
+			value = 0
+		}
     }
 }
 
@@ -525,13 +529,6 @@ planet_event = {
     }
 
 	immediate = {
-        # Retrieve ship
-        from = {
-            random_owned_ship = {
-                limit = { is_ship_size = warped_consciousness }
-                save_event_target_as = bts_end_killer_ship
-            }
-        }
         # Non robot planet : SUCCESS
 		if = {
 			limit = {
@@ -632,9 +629,9 @@ planet_event = {
 				}
 			}
 
-            event_target:bts_end_killer_ship = {
+            from.owner = {
                 change_variable = {
-                    which = "pop_killed"
+                    which = "end_pop_killed"
                     value = 1
                 }
             }
@@ -672,9 +669,14 @@ planet_event = {
 			change_pc = this
 		}
 
-        event_target:bts_end_killer_ship = {
-            ship_event = { id = bts.342 }
-        }
+		from = {
+			random_owned_ship = {
+				limit = {
+					is_ship_size = warped_consciousness
+				}
+				ship_event = { id = bts.342 }
+			}
+		}
 	}
 }
 
@@ -711,9 +713,9 @@ ship_event = {
         remove_modifier = absorbed_consciousness_5
         if = {
         	limit = {
-        		root = {
+        		owner = {
         			check_variable = {
-        				which = "pop_killed"
+        				which = "end_pop_killed"
         				value < 250
         			}
         		}
@@ -725,9 +727,9 @@ ship_event = {
 		}
 		else_if = {
         	limit = {
-        		root = {
+        		owner = {
         			check_variable = {
-        				which = "pop_killed"
+        				which = "end_pop_killed"
         				value < 500
         			}
         		}
@@ -739,9 +741,9 @@ ship_event = {
         }
         else_if = {
         	limit = {
-        		root = {
+        		owner = {
         			check_variable = {
-        				which = "pop_killed"
+        				which = "end_pop_killed"
         				value < 1000
         			}
         		}
@@ -753,9 +755,9 @@ ship_event = {
         }
         else_if = {
         	limit = {
-        		root = {
+        		owner = {
         			check_variable = {
-        				which = "pop_killed"
+        				which = "end_pop_killed"
         				value < 2500
         			}
         		}
@@ -767,9 +769,9 @@ ship_event = {
         }
         else_if = {
         	limit = {
-        		root = {
+        		owner = {
         			check_variable = {
-        				which = "pop_killed"
+        				which = "end_pop_killed"
         				value < 5000
         			}
         		}
