@@ -1,0 +1,43 @@
+bts_shroud_destabilizer = {
+	icon = "GFX_starbase_communication_jammer"
+	construction_days = 180
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport_or_ring"
+			OR = {
+				has_starbase_size >= starbase_starport
+				is_orbital_ring = yes
+			}
+		}
+		solar_system = {
+			count_starbase_buildings = {
+				type = bts_shroud_destabilizer
+				count < 1
+				include_being_constructed = yes
+			}
+		}
+	}
+
+	abort_construction_trigger = {
+		solar_system = {
+			count_starbase_buildings = {
+				type = bts_shroud_destabilizer
+				count > 1
+				include_being_constructed = yes
+			}
+		}
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 50
+		}
+
+		upkeep = {
+			energy = 1
+		}
+	}
+
+}

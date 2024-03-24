@@ -28,3 +28,14 @@ on_destroy_planet_with_PLANET_KILLER_END_queued = {
 
 on_destroy_planet_with_PLANET_KILLER_END_unqueued = {
 }
+
+
+# This = owner of fleet 1
+# From = owner of fleet 2
+# FromFrom = fleet 1
+# FromFromFrom = fleet 2
+on_entering_battle = {
+	events = {
+		bts.12
+	}
+}
