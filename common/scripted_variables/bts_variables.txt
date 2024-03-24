@@ -115,3 +115,9 @@
 @bts_eoc_power_summon_3_shroud_delve_cooldown = 1080
 @bts_eoc_power_summon_4_zro_cost = 20000
 @bts_eoc_power_summon_4_shroud_delve_cooldown = 3600
+
+
+# Modules
+@bts_shroud_destabilizer_build_time = 1080
+@bts_shroud_destabilizer_zro_cost = 15000
+@bts_shroud_destabilizer_zro_upkeep = 250

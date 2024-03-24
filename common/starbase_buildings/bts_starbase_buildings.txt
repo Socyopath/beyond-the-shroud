@@ -1,6 +1,6 @@
 bts_shroud_destabilizer = {
 	icon = "GFX_starbase_communication_jammer"
-	construction_days = 180
+	construction_days = @bts_shroud_destabilizer_build_time
 
 	possible = {
 		custom_tooltip = {
@@ -32,11 +32,11 @@ bts_shroud_destabilizer = {
 	resources = {
 		category = starbase_buildings
 		cost = {
-			alloys = 50
+			sr_zro = @bts_shroud_destabilizer_zro_cost
 		}
 
 		upkeep = {
-			energy = 1
+			sr_zro = @bts_shroud_destabilizer_zro_upkeep
 		}
 	}
 
