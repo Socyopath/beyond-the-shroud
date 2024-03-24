@@ -1,3 +1,0 @@
-covenant_shroud_marked all planet on covenant sealed
-covenant_end_of_the_cycle_0 à ajouter
-end_covenant_confirmed
