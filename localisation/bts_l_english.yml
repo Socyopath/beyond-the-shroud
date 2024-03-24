@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 
 # Traits
 leader_trait_end_chosen: "Chosen of the End"
@@ -18,7 +18,6 @@ PLANET_KILLER_END_DESC: "Assimilate the consciousness of all living beings on a 
 PLANET_KILLER_END_ACTION: "Assimilate all the consciousnesses of"
 FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_END: "Preparing to assimilate all consciousnesses of $PLANET|Y$."
 MESSAGE_DESC_FOR_PLANET_KILLER_END: "had all of its life forms consciousness being absorbed by"
-
 bts_planet_destruction_name: "Consciousness assimilated"
 bts_planet_destruction_desc: "The psionic power from [From.From.GetName]'s fades, and for a moment all is quiet. Down on [From.GetName] the people stand slack-jawed (or local physiognomic equivalent), enraptured by the powerful and personal truths the psionic ray unfetters from the tangled web of their minds.\n\nIf they did not understand before, they know now viscerally: we are all part of something greater."
 bts_planet_destruction_tooltip: "Any §Y$trait_mechanical$§!, §Y$trait_machine_unit$§! or §Y$trait_hive_mind$§! pops are §Rdestroyed§! by the psionic resonance.\n\nAll remaining §Ybiological§! pops consciousness have been absorbed to strengthen the §M$NAME_Reckoning$§!"
@@ -29,6 +28,11 @@ bts_medium_zroni_shield: "$ZRONI_SHIELD$"
 bts_large_zroni_shield: "$ZRONI_SHIELD$"
 END_MARK: "Mark of the End"
 END_MARK_DESC: "$COMPOSER_MARK_DESC$"
+sm_bts_shroud_destabilizer: "$bts_tech_shroud_destabilizer$"
+sm_bts_shroud_destabilizer_desc: "$bts_tech_shroud_destabilizer_desc$"
+sm_bts_shroud_destabilizer_effects: ""
+bts_shroud_destabilizer_aura_component: "$bts_tech_shroud_destabilizer$"
+bts_shroud_destabilizer_aura_component_desc: "$bts_tech_shroud_destabilizer_desc$"
 
 # Techs
 bts_tech_occultism: "Occultism"
@@ -55,7 +59,7 @@ bts_tech_zro_infusion_effect: "£food£ $food$ upkeep cost from £pops£ Pops: �
 bts_tech_covenant_end: "$END_MARK$"
 bts_tech_covenant_end_desc: "We have discovered how to let psionic energy flow through our ships. Armed with this knowledge, we can now imbue our vessels with the powers of our patron."
 bts_tech_shroud_destabilizer: "Shroud Destabilizer"
-bts_tech_shroud_destabilizer_desc: ""
+bts_tech_shroud_destabilizer_desc: "We've managed to infuse the pure psionic energy of the shroud into our starbase. Due to the unstable nature of this energy, violent psionic waves emanate from it, disrupting enemy systems."
 
 bts_mega_aetherophasic_collapser_0_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_0_favor_cost$§! favor required with End of the Cycle, currently have §Y[from.end_covenant_rank]§!"
 bts_mega_aetherophasic_collapser_1_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_1_favor_cost$§! favor required with End of the Cycle, currently have §Y[from.end_covenant_rank]§!"

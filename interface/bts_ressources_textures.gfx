@@ -60,7 +60,12 @@ spriteTypes = {
 		name = "GFX_ship_part_killer_end"
 		textureFile = "gfx/interface/icons/ship_parts/bts_planet_killer_end.dds"
 	}
-	
+
+	# Starbase Module
+	spriteType = {
+		name = "GFX_starbase_shroud_destabilizer"
+		textureFile = "gfx/interface/icons/modules/bts_shroud_destabilizer.dds"
+	}
 
 	# Agendas
 	spriteType = {

@@ -1,6 +1,15 @@
 bts_shroud_destabilizer = {
-	icon = "GFX_starbase_communication_jammer"
+	icon = "GFX_starbase_shroud_destabilizer"
 	construction_days = @bts_shroud_destabilizer_build_time
+
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = bts_tech_shroud_destabilizer
+			is_gestalt = no
+		}
+		has_starbase_size >= starbase_citadel
+	}
 
 	possible = {
 		custom_tooltip = {
@@ -40,4 +49,7 @@ bts_shroud_destabilizer = {
 		}
 	}
 
+	show_in_tech = "bts_tech_shroud_destabilizer"
+	custom_tooltip = sm_bts_shroud_destabilizer_effects
+	equipped_component = "bts_shroud_destabilizer_aura_component"
 }
