@@ -21,6 +21,10 @@ tr_astral_studies_adopt = {
 
 tr_astral_studies_finish = {
 	custom_tooltip = tr_astral_studies_finish_desc
+	modifier = {
+		ascension_perks_add = 1
+	}
+
 	on_enabled = {
 		hidden_effect = {
 			set_country_flag = wait_spawn_astral_rift
