@@ -87,33 +87,41 @@
 @bts_mega_aetherophasic_collapser_1_favor_cost = 75
 
 @bts_mega_aetherophasic_collapser_2_zro = 500
+@bts_mega_aetherophasic_collapser_2_astral_thread_storage = 250
 @bts_mega_aetherophasic_collapser_2_cost = 500
 @bts_mega_aetherophasic_collapser_2_build_time = 1800
 @bts_mega_aetherophasic_collapser_2_favor_cost = 100
 
 @bts_mega_aetherophasic_collapser_3_zro = 1000
+@bts_mega_aetherophasic_collapser_3_astral_thread_storage = 500
 @bts_mega_aetherophasic_collapser_3_cost = 750
 @bts_mega_aetherophasic_collapser_3_build_time = 1800
 @bts_mega_aetherophasic_collapser_3_favor_cost = 125
 
 @bts_mega_aetherophasic_collapser_4_zro = 2000
+@bts_mega_aetherophasic_collapser_4_astral_thread_storage = 750
 @bts_mega_aetherophasic_collapser_4_cost = 1000
 @bts_mega_aetherophasic_collapser_4_build_time = 1800
 @bts_mega_aetherophasic_collapser_4_favor_cost = 150
 
 @bts_mega_aetherophasic_collapser_5_zro = 4000
+@bts_mega_aetherophasic_collapser_5_astral_thread_storage = 1000
 @bts_mega_aetherophasic_collapser_5_cost = 2000
 @bts_mega_aetherophasic_collapser_5_build_time = 1800
 @bts_mega_aetherophasic_collapser_5_favor_cost = 200
 
 # Powers
 @bts_eoc_power_summon_1_zro_cost = 1000
+@bts_eoc_power_summon_1_astral_threads_cost = 100
 @bts_eoc_power_summon_1_shroud_delve_cooldown = 360
 @bts_eoc_power_summon_2_zro_cost = 2000
+@bts_eoc_power_summon_2_astral_threads_cost = 200
 @bts_eoc_power_summon_2_shroud_delve_cooldown = 720
 @bts_eoc_power_summon_3_zro_cost = 4000
+@bts_eoc_power_summon_3_astral_threads_cost = 500
 @bts_eoc_power_summon_3_shroud_delve_cooldown = 1080
 @bts_eoc_power_summon_4_zro_cost = 20000
+@bts_eoc_power_summon_4_astral_threads_cost = 2000
 @bts_eoc_power_summon_4_shroud_delve_cooldown = 3600
 
 

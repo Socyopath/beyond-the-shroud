@@ -160,6 +160,7 @@ bts_mega_aetherophasic_collapser_2 = {
     }
 
 	country_modifier = {
+        country_resource_max_astral_threads_add = @bts_mega_aetherophasic_collapser_2_astral_thread_storage
 	}
 
     upgrade_from = {
@@ -212,6 +213,7 @@ bts_mega_aetherophasic_collapser_3 = {
     }
 
 	country_modifier = {
+        country_resource_max_astral_threads_add = @bts_mega_aetherophasic_collapser_3_astral_thread_storage
 	}
 
     upgrade_from = {
@@ -268,6 +270,7 @@ bts_mega_aetherophasic_collapser_4 = {
     }
 
 	country_modifier = {
+        country_resource_max_astral_threads_add = @bts_mega_aetherophasic_collapser_4_astral_thread_storage
 	}
 
     upgrade_from = {
@@ -324,6 +327,7 @@ bts_mega_aetherophasic_collapser_5 = {
     }
 
 	country_modifier = {
+        country_resource_max_astral_threads_add = @bts_mega_aetherophasic_collapser_5_astral_thread_storage
 	}
 
     upgrade_from = {

@@ -212,8 +212,10 @@ country_event = {
         NAME = bts_eoc_power_summon_1
         ALLOW = "bts_can_use_power_summon_1 = yes"
         RESOURCE = sr_zro
+		USE_COST = @bts_eoc_power_summon_1_zro_cost
+		RESOURCE_2 = astral_threads
+		USE_COST_2 = @bts_eoc_power_summon_1_astral_threads_cost
         SHROUD_DELVE_COOLDOWN = @bts_eoc_power_summon_1_shroud_delve_cooldown
-        USE_COST = @bts_eoc_power_summon_1_zro_cost
         EVENT_ID = bts.31
     }
 
@@ -222,8 +224,10 @@ country_event = {
         NAME = bts_eoc_power_summon_2
         ALLOW = "bts_can_use_power_summon_2 = yes"
         RESOURCE = sr_zro
+		USE_COST = @bts_eoc_power_summon_2_zro_cost
+		RESOURCE_2 = astral_threads
+		USE_COST_2 = @bts_eoc_power_summon_2_astral_threads_cost
         SHROUD_DELVE_COOLDOWN = @bts_eoc_power_summon_2_shroud_delve_cooldown
-        USE_COST = @bts_eoc_power_summon_2_zro_cost
         EVENT_ID = bts.32
     }
 
@@ -232,8 +236,10 @@ country_event = {
         NAME = bts_eoc_power_summon_3
         ALLOW = "bts_can_use_power_summon_3 = yes"
         RESOURCE = sr_zro
+		USE_COST = @bts_eoc_power_summon_3_zro_cost
+		RESOURCE_2 = astral_threads
+		USE_COST_2 = @bts_eoc_power_summon_3_astral_threads_cost
         SHROUD_DELVE_COOLDOWN = @bts_eoc_power_summon_3_shroud_delve_cooldown
-        USE_COST = @bts_eoc_power_summon_3_zro_cost
         EVENT_ID = bts.33
     }
 
@@ -242,8 +248,10 @@ country_event = {
         NAME = bts_eoc_power_summon_4
         ALLOW = "bts_can_use_power_summon_4 = yes custom_tooltip = { fail_text = bts_power_4_already_in_use NOT = { any_owned_ship = { is_ship_size = warped_consciousness } } }"
         RESOURCE = sr_zro
+		USE_COST = @bts_eoc_power_summon_4_zro_cost
+		RESOURCE_2 = astral_threads
+		USE_COST_2 = @bts_eoc_power_summon_4_astral_threads_cost
         SHROUD_DELVE_COOLDOWN = @bts_eoc_power_summon_4_shroud_delve_cooldown
-        USE_COST = @bts_eoc_power_summon_4_zro_cost
         EVENT_ID = bts.34
     }
 
