@@ -13,7 +13,6 @@ bts_tech_occultism = {
 	modifier = {
 		shroud_delve_cooldown = @bts_tech_occultism_shroud_delve_cooldown
 	}
-
 	weight_modifier = {
 		modifier = {
 			factor = 0
@@ -21,6 +20,14 @@ bts_tech_occultism = {
 				has_relic = r_zro_crystal
 				has_tradition = tr_psionics_finish
 			}
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = bts_tech_occultism
+		}
+		modifier = {
+			factor = 2
+			has_tier1or2or3_in_council = { TRAIT = leader_trait_expertise_psionics }
 		}
 		modifier = {
 			factor = @bts_tech_zro_crystal_factor
@@ -53,6 +60,14 @@ bts_tech_otherworldly_knowledge_1 = {
 				has_tradition = tr_psionics_finish
 			}
 		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = bts_tech_otherworldly_knowledge_1
+		}
+		modifier = {
+			factor = 2
+			has_tier1or2or3_in_council = { TRAIT = leader_trait_expertise_psionics }
+		}
 		modifier = {
 			factor = @bts_tech_zro_crystal_factor
 			has_relic = r_zro_crystal
@@ -80,6 +95,14 @@ bts_tech_otherworldly_knowledge_2 = {
 		modifier = {
 			factor = @bts_tech_zro_crystal_factor
 			has_relic = r_zro_crystal
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = bts_tech_otherworldly_knowledge_2
+		}
+		modifier = {
+			factor = 2
+			has_tier1or2or3_in_council = { TRAIT = leader_trait_expertise_psionics }
 		}
 	}
 }
@@ -113,6 +136,14 @@ bts_tech_mind_evocation_1 = {
 			factor = @bts_tech_zro_crystal_factor
 			has_relic = r_zro_crystal
 		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = bts_tech_mind_evocation_1
+		}
+		modifier = {
+			factor = 2
+			has_tier1or2or3_in_council = { TRAIT = leader_trait_expertise_psionics }
+		}
 	}
 }
 
@@ -137,6 +168,14 @@ bts_tech_mind_evocation_2 = {
 		modifier = {
 			factor = @bts_tech_zro_crystal_factor
 			has_relic = r_zro_crystal
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = bts_tech_mind_evocation_2
+		}
+		modifier = {
+			factor = 2
+			has_tier1or2or3_in_council = { TRAIT = leader_trait_expertise_psionics }
 		}
 	}
 }
@@ -172,6 +211,14 @@ bts_tech_psychic_coalition = {
 			factor = @bts_tech_zro_crystal_factor
 			has_relic = r_zro_crystal
 		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = bts_tech_psychic_coalition
+		}
+		modifier = {
+			factor = 2
+			has_tier1or2or3_in_council = { TRAIT = leader_trait_expertise_psionics }
+		}
 	}
 }
 
@@ -197,6 +244,14 @@ bts_tech_prescience = {
 		modifier = {
 			factor = @bts_tech_zro_crystal_factor
 			has_relic = r_zro_crystal
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = bts_tech_prescience
+		}
+		modifier = {
+			factor = 2
+			has_tier1or2or3_in_council = { TRAIT = leader_trait_expertise_psionics }
 		}
 	}
 }
@@ -226,6 +281,14 @@ bts_tech_shrouded_shields = {
 			factor = @bts_tech_zro_crystal_factor
 			has_relic = r_zro_crystal
 		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = bts_tech_shrouded_shields
+		}
+		modifier = {
+			factor = 2
+			has_tier1or2or3_in_council = { TRAIT = leader_trait_expertise_psionics }
+		}
 	}
 }
 
@@ -245,6 +308,14 @@ bts_tech_zroni_shield = {
 		modifier = {
 			factor = @bts_tech_zro_crystal_factor
 			has_relic = r_zro_crystal
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = bts_tech_zroni_shield
+		}
+		modifier = {
+			factor = 2
+			has_tier1or2or3_in_council = { TRAIT = leader_trait_expertise_psionics }
 		}
 	}
 }
@@ -280,6 +351,14 @@ bts_tech_zro_infusion = {
 		modifier = {
 			factor = @bts_tech_zro_crystal_factor
 			has_relic = r_zro_crystal
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = bts_tech_zro_infusion
+		}
+		modifier = {
+			factor = 2
+			has_tier1or2or3_in_council = { TRAIT = leader_trait_expertise_psionics }
 		}
 	}
 }
@@ -328,6 +407,14 @@ bts_tech_shroud_destabilizer = {
 		modifier = {
 			factor = @bts_tech_zro_crystal_factor
 			has_relic = r_zro_crystal
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = bts_tech_shroud_destabilizer
+		}
+		modifier = {
+			factor = 2
+			has_tier1or2or3_in_council = { TRAIT = leader_trait_expertise_psionics }
 		}
 	}
 }

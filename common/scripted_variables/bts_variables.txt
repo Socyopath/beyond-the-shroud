@@ -24,7 +24,7 @@
 @bts_enc_sanctum_zro_mult = 0.50
 
 ##  Techs
-@bts_tech_zro_crystal_factor = 2
+@bts_tech_zro_crystal_factor = 5
 
 @bts_tech_occultism_cost = 12000
 @bts_tech_occultism_shroud_delve_cooldown = -0.10
