@@ -232,7 +232,7 @@ bts_tech_prescience = {
 	is_reverse_engineerable = no
 	weight = @tier5weight2
 
-	prerequisites = { "bts_tech_psychic_coalition" }
+	prerequisites = { "tech_precognition_interface" }
 	
 	modifier = {
 		ship_emergency_ftl_min_days_mult = @bts_tech_prescience_ftl_cooldown
@@ -331,7 +331,7 @@ bts_tech_zro_infusion = {
 	is_reverse_engineerable = no
 	weight = @tier5weight1
 
-	prerequisites = { "bts_tech_psychic_coalition" }
+	prerequisites = { "tech_mine_zro" }
 
 	modifier = {
 		description = bts_tech_zro_infusion_effect
