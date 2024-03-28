@@ -1,31 +1,31 @@
 namespace = bts
 
 # Tradition Astral Studies adopted
-country_event = {
-    id = bts.10
-	title = tr_astral_studies_adopt_event_name
-	desc = tr_astral_studies_adopt_event_desc
-	picture = GFX_evt_astral_scar
-	show_sound = ap_rift_event_32_psionic_comms
-	is_triggered_only = yes
+# country_event = {
+#     id = bts.10
+# 	title = tr_astral_studies_adopt_event_name
+# 	desc = tr_astral_studies_adopt_event_desc
+# 	picture = GFX_evt_astral_scar
+# 	show_sound = ap_rift_event_32_psionic_comms
+# 	is_triggered_only = yes
 
-	option = {
-        name = OK
-        hidden_effect = {
-            every_system = {
-                limit = {
-                    OR = {
-                        has_astral_rift = yes
-                        any_system_planet = {
-                            is_astral_scar = yes
-                        }
-                    }
-                }
-                set_surveyed = { surveyed = yes surveyor = root }
-            }
-        }
-    }
-}
+# 	option = {
+#         name = OK
+#         hidden_effect = {
+#             every_system = {
+#                 limit = {
+#                     OR = {
+#                         has_astral_rift = yes
+#                         any_system_planet = {
+#                             is_astral_scar = yes
+#                         }
+#                     }
+#                 }
+#                 set_surveyed = { surveyed = yes surveyor = root }
+#             }
+#         }
+#     }
+# }
 
 # Tradition Astral Studies finished Status
 country_event = {
