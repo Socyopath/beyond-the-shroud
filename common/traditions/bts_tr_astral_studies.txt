@@ -11,7 +11,7 @@ tr_astral_studies_adopt = {
 			}
 		}
 	}
-	custom_tooltip = tr_astral_studies_adopt_desc
+	# custom_tooltip = tr_astral_studies_adopt_desc
 	on_enabled = {
 		add_research_option = tech_astral_harvesting
 		# hidden_effect = {

@@ -126,7 +126,7 @@ tradition_astral_studies: "Astral Studies"
 tradition_astral_studies_desc: "We've sensed the presence of immeasurable power within these rifts in space and time, and we need to know more about them."
 
 tr_astral_studies_adopt: "$tradition_astral_studies$ Traditions"
-tr_astral_studies_adopt_desc: "By analyzing the space-time fluctuations emanating from the rift, we can §Yidentify all the other rifts in the galaxy§!."
+# tr_astral_studies_adopt_desc: "By analyzing the space-time fluctuations emanating from the rift, we identified a way to draw it's power."
 tr_astral_studies_adopt_event_name: "$tradition_astral_studies$: Spacetime analysis report"
 tr_astral_studies_adopt_event_desc: "We sent a request for a dimensional echo inside the scars and received a response from all the other rifts in the galaxy. By analyzing the data received, we were able to obtain information on systems hosting an astral anomaly."
 
