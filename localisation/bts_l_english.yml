@@ -33,7 +33,8 @@ sm_bts_shroud_destabilizer_desc: "$bts_tech_shroud_destabilizer_desc$"
 sm_bts_shroud_destabilizer_effects: ""
 bts_shroud_destabilizer_aura_component: "$bts_tech_shroud_destabilizer$"
 bts_shroud_destabilizer_aura_component_desc: "$bts_tech_shroud_destabilizer_desc$"
-
+NAME_Warped_Consciousness_zroni: "Zroni $NAME_Warped_Consciousness$"
+NAME_Shroud_Manifestation_zroni: "Zroni $NAME_Shroud_Manifestation$"
 # Techs
 bts_tech_occultism: "Occultism"
 bts_tech_occultism_desc: "By letting the shroud reach us, we gain quicker access to its core."
