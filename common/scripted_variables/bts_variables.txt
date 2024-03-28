@@ -2,6 +2,10 @@
 @bts_eoc_days_before_end = 18000
 @bts_eoc_rank_to_survive = 150
 
+# Decisions
+@decision_bts_zroni_astral_spliting_energy_cost = 2000
+@decision_bts_zroni_astral_spliting_astral_threads_cost = 100
+
 ## Favor bonus
 @bts_eoc_phy_per_telepath_0 = 2  
 @bts_eoc_soc_per_telepath_0 = 5
