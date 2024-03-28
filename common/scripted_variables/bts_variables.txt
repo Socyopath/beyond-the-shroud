@@ -3,8 +3,12 @@
 @bts_eoc_rank_to_survive = 150
 
 ## Favor bonus
-@bts_eoc_zro_per_telepath_0 = 2
-@bts_eoc_zro_per_telepath_1 = 3 # Total 2 + 3 = 5
+@bts_eoc_phy_per_telepath_0 = 2  
+@bts_eoc_soc_per_telepath_0 = 5
+@bts_eoc_eng_per_telepath_0 = 2
+@bts_eoc_phy_per_telepath_1 = 2 # Total 2 + 2 = 4
+@bts_eoc_soc_per_telepath_1 = 5 # Total 5 + 5 = 10
+@bts_eoc_eng_per_telepath_1 = 2 # Total 2 + 2 = 4
 
 ## Favor generation
 @bts_eoc_favor_per_month_base = 0.03
