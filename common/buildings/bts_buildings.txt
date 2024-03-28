@@ -29,10 +29,6 @@ building_end_sanctum = {
 		job_telepath_add = @bts_enc_sanctum_jobs
 	}
 
-	country_modifier = {
-		country_sr_zro_produces_mult = @bts_enc_sanctum_zro_mult
-	}
-
 	resources = {
 		category = planet_buildings
 		cost = {
