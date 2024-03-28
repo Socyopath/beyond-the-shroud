@@ -74,6 +74,8 @@ bts_mega_aetherophasic_collapser_4_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_
 bts_mega_aetherophasic_collapser_5_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_5_favor_cost$§! favor required with End of the Cycle, currently have §Y[from.end_covenant_rank]§!"
 
 # Megastructures
+bts_mega_aetherophasic_collapser_unlocked: "Aetherophasic Collapser"
+bts_mega_aetherophasic_collapser_unlocked_desc: "Your dedication to the §YEnd of the Cycle§! is beginning to give you visions of unimaginable concepts. The entity has §Yrevealed plans for the construction of a megastructure§! designed to merge the shroud with our reality. This is the §MAetherophase Collapser§!."
 bts_requires_no_existing_aetherophasic_collapser: "$TRIGGER_FAIL$Cannot build more than one Aetherophasic Collapser."
 bts_mega_aetherophasic_collapser_0_MEGASTRUCTURE_DETAILS: "The Aetherophasic Collapser, which will rip apart the barriers that exist between this world and the Shroud and §Menable powerful psionic beings to be summoned§!."
 bts_mega_aetherophasic_collapser_0: "Aetherophasic Collapser Frame"
@@ -112,12 +114,12 @@ end_covenant_estimated_favor_years: "Estimated favor in :\n- $end_covenant_estim
 covenant_end_of_the_cycle_0: "$covenant_end_of_the_cycle$"
 covenant_end_of_the_cycle_desc_0: "$covenant_end_of_the_cycle_desc$"
 end_covenant_surive_event_title: "$bts_name_end$"
-end_covenant_surive_event_desc: "Your incredible dedication to the §YEnd§! has paid off, as the shroud entity has accepted you as its chosen one in the multiverse. The §MReckoning§! won't appear as planned, but maybe it'll be you instead..."
+end_covenant_survive_event_desc: "Your incredible dedication to the §YEnd§! has paid off, as the shroud entity has accepted you as its chosen one in the multiverse. The §MReckoning§! won't appear as planned, but maybe it'll be you instead..."
 
 # Origin
 origin_bts_zroni: "In the Footsteps of the Zroni"
 origin_bts_zroni_desc: "This origin begins with a civilization that perceives a mysterious energy emanating from its moon that disrupts dreams. Intrigued and passionate about archaeology and exploration, they embark on a quest to understand how an ancient civilization as powerful as the Zroni disappeared. Their fascination with the relics of the past leads them to explore the mysteries hidden in galactic ruins, seeking answers through the stars."
-origin_bts_zroni_effects: "- Technology §Y$tech_archaeostudies$§! researched\n- §MZroni §!Abandoned Colony Ruins on capital's moon\nA §Rone-time§! decision to §Ysplit an astral scar into an astral rift§!\n- You will establish a covenant with §REnd of The Cycle§! and can §Ysurvive§! if you §Ycollect enough favor before the end§!"
+origin_bts_zroni_effects: "- Technology §Y$tech_archaeostudies$§! researched\n- §MZroni §!Abandoned Colony Ruins on capital's moon\n- A §Rone-time§! decision to §Ysplit an astral scar into an astral rift§!\n- You will establish a covenant with §REnd of The Cycle§! and can §Ysurvive§! if you §Ycollect enough favor before the end§!"
 
 # Tradition
 tradition_astral_studies: "Astral Studies"

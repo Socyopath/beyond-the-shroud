@@ -11,6 +11,7 @@ on_game_start_country = {
 on_monthly_pulse_country = {
 	events = {
         bts.11 # Spawn astral rift for tradition finished
+		bts.22 # Megastructure Info event
     }
 }
 

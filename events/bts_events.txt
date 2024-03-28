@@ -159,7 +159,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-	desc = end_covenant_surive_event_desc
+	desc = end_covenant_survive_event_desc
 
     immediate = {
         every_owned_planet = {
@@ -180,6 +180,31 @@ country_event = {
 
 }
 
+# Megastructure Info event
+country_event = { 
+	id = bts.22
+	title = bts_mega_aetherophasic_collapser_unlocked
+	picture = GFX_evt_unspeakable_horror
+	show_sound = event_red_alert
+	location = root
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	desc = bts_mega_aetherophasic_collapser_unlocked_desc
+
+	trigger = {
+		has_country_flag = end_covenant_confirmed
+		check_variable = {
+			which = end_covenant_rank
+			value >= @bts_end_covenant_rank_mega_aetherophasic_collapser
+		}
+	}
+
+	option = {
+		name = OK
+	}
+}
 
 # End of the cycle powers
 country_event = {

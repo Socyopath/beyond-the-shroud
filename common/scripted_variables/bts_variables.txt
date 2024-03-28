@@ -81,6 +81,7 @@
 @bts_tech_shroud_destabilizer_favor_cost = 175
 
 # Megastructure
+@bts_end_covenant_rank_mega_aetherophasic_collapser = 50
 
 @bts_mega_aetherophasic_collapser_0_cost = 100
 @bts_mega_aetherophasic_collapser_0_build_time = 1800
