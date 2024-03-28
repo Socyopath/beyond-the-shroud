@@ -80,10 +80,10 @@ bts_tech_otherworldly_knowledge_2 = {
 	area = society
 	category = { psionics }
 	cost = @bts_tech_otherworldly_knowledge_2_cost
-	tier = 3
+	tier = 4
 	is_rare = yes
 	is_reverse_engineerable = no
-	weight = @tier3weight2
+	weight = @tier4weight1
 
 	prerequisites = { "bts_tech_otherworldly_knowledge_1" }
 	
@@ -152,10 +152,10 @@ bts_tech_mind_evocation_2 = {
 	area = society
 	category = { psionics }
 	cost = @bts_tech_mind_evocation_2_cost
-	tier = 3
+	tier = 4
 	is_rare = yes
 	is_reverse_engineerable = no
-	weight = @tier3weight2
+	weight = @tier4weight1
 
 	prerequisites = { "bts_tech_mind_evocation_1" }
 	
