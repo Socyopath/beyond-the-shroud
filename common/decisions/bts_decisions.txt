@@ -22,6 +22,12 @@ decision_bts_zroni_astral_spliting = {
         }
 	}
 
+    allow = {
+        solar_system.owner = {
+            has_technology = tech_astral_harvesting
+        }
+    }
+
 	effect = {
         solar_system.owner = {
             set_country_flag = bts_zroni_astral_spliting
