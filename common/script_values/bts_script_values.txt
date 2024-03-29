@@ -9,11 +9,10 @@ bts_end_of_the_cycle_favor_per_month = {
 		add = @bts_eoc_favor_per_month_f_spirit
 	}
 
-	complex_trigger_modifier = {
-		trigger = astral_rifts_completed
-		mult = @bts_eoc_favor_per_month_rift
-        mode = add
-	}
+    modifier = {
+        astral_rifts_completed >= 1
+        add = @bts_eoc_favor_per_month_rift
+    }
     
     modifier = {
         has_tradition = tr_astral_studies_adopt
