@@ -194,7 +194,7 @@ country_event = {
 		has_country_flag = end_covenant_confirmed
 		check_variable = {
 			which = end_covenant_rank
-			value >= @bts_end_covenant_rank_mega_aetherophasic_collapser
+			value >= @bts_mega_aetherophasic_collapser_0_favor_cost
 		}
 	}
 
