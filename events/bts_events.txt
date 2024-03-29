@@ -137,10 +137,7 @@ country_event = {
     immediate = {
         if = {
             limit = {
-                check_variable = {
-                    which = end_covenant_rank
-                    value > @bts_eoc_rank_to_survive
-                }
+				astral_rifts_completed >= @bts_eoc_nb_rifts_to_survive
             }
             country_event = { id = bts.21 } # Won End of the Cycle race
         }

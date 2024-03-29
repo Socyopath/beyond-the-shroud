@@ -1,6 +1,6 @@
 # End Of The Cycle Covenant
 @bts_eoc_days_before_end = 18000
-@bts_eoc_rank_to_survive = 150
+@bts_eoc_nb_rifts_to_survive = 2
 
 # Decisions
 @decision_bts_zroni_astral_spliting_energy_cost = 2000
