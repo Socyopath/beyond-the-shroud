@@ -20,9 +20,9 @@
 @bts_eoc_favor_per_month_spirit = 0.03
 @bts_eoc_favor_per_month_f_spirit = 0.07
 
-@bts_eoc_favor_per_month_rift = 0.15
+@bts_eoc_favor_per_month_rift = 0.18
 
-@bts_eoc_favor_per_month_trad = 0.1
+@bts_eoc_favor_per_month_trad = 0.07
 
 @bts_agenda_psionic_supremacy_end_zro_cost_mult = -0.15
 @bts_enc_sanctum_jobs = 5
