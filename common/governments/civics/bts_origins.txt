@@ -17,7 +17,6 @@ origin_bts_zroni = {
 		}
 		civics = {
 			value = civic_dimensional_worship
-			value = civic_eager_explorers
 		}
 	}
 
