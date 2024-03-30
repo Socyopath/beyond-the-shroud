@@ -119,7 +119,7 @@ end_covenant_survive_event_desc: "Your incredible dedication to the §YEnd§! ha
 # Origin
 origin_bts_zroni: "In the Footsteps of the Zroni"
 origin_bts_zroni_desc: "This origin begins with a civilization that perceives a mysterious energy emanating from its moon that disrupts dreams of it's own population. Intrigued and passionate about archaeology and exploration, they embark on a quest to understand how an ancient civilization as powerful as the Zroni disappeared. Their fascination with the relics of the past leads them to explore the mysteries hidden in galactic ruins, seeking answers through the stars."
-origin_bts_zroni_effects: "- Technology §Y$tech_archaeostudies$§! researched\n- §MZroni §!Abandoned Colony Ruins on capital's moon\n- A §Rone-time§! decision to §Ysplit an astral scar into an astral rift§!\n- You will establish a covenant with §REnd of The Cycle§! and can §Ysurvive§! if you §Ycollect enough favor before the end§!"
+origin_bts_zroni_effects: "- Technology §Y$tech_archaeostudies$§! researched\n- §MZroni §!Abandoned Colony Ruins on capital's moon\n- §MMind Over Matter§! require §Y1§! ascension perk instead of §Y2§!\n- You will establish a covenant with §REnd of The Cycle§! and can §Ysurvive§! if you §Yexplore enough astral rifts before the end§!"
 
 # Tradition
 tradition_astral_studies: "Astral Studies"
