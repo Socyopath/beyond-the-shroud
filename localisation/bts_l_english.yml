@@ -184,9 +184,11 @@ bts_astral_action_cost: "Astral Actions Cost"
 absorbed_consciousness_0: "$absorbed_consciousness_1$"
 mod_planet_telepaths_sr_zro_produces_add: "£sr_zro£ $sr_zro$ from £job_telepath£ $job_telepath_plural$"
 mod_planet_telepaths_produces_mult: "£job_telepath£ $job_telepath$ Output"
-mod_bts_astral_action_cost: "Astral Actions Cost"
+mod_bts_astral_action_cost: "$bts_astral_action_cost$"
 mod_country_sr_zro_cost_mult: "£sr_zro£ $sr_zro$ Cost"
 
+bts_astral_rift_spawn_mult: "Chance for [ 'concept_astral_rift', $ASTRAL_RIFTS$ ] to appear in systems you control:"
+mod_bts_astral_rift_spawn_mult: "$bts_astral_rift_spawn_mult$"
 # Others
 
 bts_no_astral_rift_scar_in_system: "$TRIGGER_FAIL$An §YAstral Rift§! or §YAstral Scar§! must be present in an owned system"

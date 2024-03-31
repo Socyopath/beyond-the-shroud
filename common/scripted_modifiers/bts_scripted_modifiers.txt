@@ -33,3 +33,11 @@ bts_astral_action_cost = {
 	category = country
 	percentage = yes
 }
+
+bts_astral_rift_spawn_mult = {
+	icon = mod_country_astral_threads_produces_mult
+	good = yes
+	category = country
+	percentage = yes
+}
+
