@@ -66,10 +66,12 @@ bts_mega_aetherophasic_collapser_0 = {
 				is_star_class = sc_trinary_3
 				is_star_class = sc_trinary_4
 			}
-		}
+		} 
         custom_tooltip = {
             fail_text = bts_mega_aetherophasic_collapser_0_missing_favor
-            bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_mega_aetherophasic_collapser_0_favor_cost }
+            from = {
+                bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_mega_aetherophasic_collapser_0_favor_cost }
+            }
         }
 	}
 
@@ -109,7 +111,9 @@ bts_mega_aetherophasic_collapser_1 = {
     possible = {
         custom_tooltip = {
             fail_text = bts_mega_aetherophasic_collapser_1_missing_favor
-            bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_mega_aetherophasic_collapser_1_favor_cost }
+            from = {
+                bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_mega_aetherophasic_collapser_1_favor_cost }
+            }
         }
     }
 
@@ -160,7 +164,9 @@ bts_mega_aetherophasic_collapser_2 = {
     possible = {
         custom_tooltip = {
             fail_text = bts_mega_aetherophasic_collapser_2_missing_favor
-            bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_mega_aetherophasic_collapser_2_favor_cost }
+            from = {
+                bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_mega_aetherophasic_collapser_2_favor_cost }
+            }
         }
     }
 
@@ -208,7 +214,9 @@ bts_mega_aetherophasic_collapser_3 = {
     possible = {
         custom_tooltip = {
             fail_text = bts_mega_aetherophasic_collapser_3_missing_favor
-            bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_mega_aetherophasic_collapser_3_favor_cost }
+            from = {
+                bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_mega_aetherophasic_collapser_3_favor_cost }
+            }
         }
     }
 
@@ -260,7 +268,9 @@ bts_mega_aetherophasic_collapser_4 = {
     possible = {
         custom_tooltip = {
             fail_text = bts_mega_aetherophasic_collapser_4_missing_favor
-            bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_mega_aetherophasic_collapser_4_favor_cost }
+            from = {
+                bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_mega_aetherophasic_collapser_4_favor_cost }
+            }
         }
     }
 

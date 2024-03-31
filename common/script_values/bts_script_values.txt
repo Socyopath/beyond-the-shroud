@@ -21,28 +21,28 @@ bts_covenant_favor_per_month = {
 }
 
 bts_covenant_favor_per_1_year = {
-    set = root.value:bts_covenant_favor_per_month
+    set = value:bts_covenant_favor_per_month
     multiply = 12
-    add = root.bts_covenant_rank
+    add = bts_covenant_rank
 }
 
 bts_covenant_favor_per_5_year = {
-    set = root.value:bts_covenant_favor_per_month
+    set = value:bts_covenant_favor_per_month
     multiply = 12
     multiply = 5
-    add = root.bts_covenant_rank
+    add = bts_covenant_rank
 }
 
 bts_covenant_favor_per_10_year = {
-    set = root.value:bts_covenant_favor_per_month
+    set = value:bts_covenant_favor_per_month
     multiply = 12
     multiply = 10
-    add = root.bts_covenant_rank
+    add = bts_covenant_rank
 }
 
 bts_covenant_favor_per_25_year = {
-    set = root.value:bts_covenant_favor_per_month
+    set = value:bts_covenant_favor_per_month
     multiply = 12
     multiply = 25
-    add = root.bts_covenant_rank
+    add = bts_covenant_rank
 }
