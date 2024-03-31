@@ -67,12 +67,12 @@ bts_tech_covenant_mark_desc: "We have discovered how to let psionic energy flow 
 bts_tech_shroud_destabilizer: "Shroud Destabilizer"
 bts_tech_shroud_destabilizer_desc: "We've managed to infuse the pure psionic energy of the shroud into our starbase. Due to the unstable nature of this energy, violent psionic waves emanate from it, disrupting enemy systems."
 
-bts_mega_aetherophasic_collapser_0_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_0_favor_cost$§! favor required with $bts_covenant_name_full$, currently have §Y[from.bts_covenant_rank]§!"
-bts_mega_aetherophasic_collapser_1_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_1_favor_cost$§! favor required with $bts_covenant_name_full$, currently have §Y[from.bts_covenant_rank]§!"
-bts_mega_aetherophasic_collapser_2_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_2_favor_cost$§! favor required with $bts_covenant_name_full$, currently have §Y[from.bts_covenant_rank]§!"
-bts_mega_aetherophasic_collapser_3_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_3_favor_cost$§! favor required with $bts_covenant_name_full$, currently have §Y[from.bts_covenant_rank]§!"
-bts_mega_aetherophasic_collapser_4_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_4_favor_cost$§! favor required with $bts_covenant_name_full$, currently have §Y[from.bts_covenant_rank]§!"
-bts_mega_aetherophasic_collapser_5_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_5_favor_cost$§! favor required with $bts_covenant_name_full$, currently have §Y[from.bts_covenant_rank]§!"
+bts_mega_aetherophasic_collapser_0_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_0_favor_cost$§! favor required with §Y[from.GetShroudPatron]§!"
+bts_mega_aetherophasic_collapser_1_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_1_favor_cost$§! favor required with §Y[from.GetShroudPatron]§!"
+bts_mega_aetherophasic_collapser_2_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_2_favor_cost$§! favor required with §Y[from.GetShroudPatron]§!"
+bts_mega_aetherophasic_collapser_3_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_3_favor_cost$§! favor required with §Y[from.GetShroudPatron]§!"
+bts_mega_aetherophasic_collapser_4_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_4_favor_cost$§! favor required with §Y[from.GetShroudPatron]§!"
+bts_mega_aetherophasic_collapser_5_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_5_favor_cost$§! favor required with §Y[from.GetShroudPatron]§!"
 
 # Megastructures
 bts_mega_aetherophasic_collapser_unlocked: "Aetherophasic Collapser"
@@ -100,12 +100,27 @@ bts_covenant_rank_1: "A filled mind has no room for doubt."
 bts_covenant_rank_1_desc: "Our telepaths now produce additional $sr_zro$.\n\nWe can now build a £building£ §Y$bts_building_covenant_sanctum$§! on one of our planets."
 bts_covenant_rank_2: "Secrecy is safety."
 bts_covenant_rank_4: "Secrets are weapons without compare."
-
+bts_covenant_establish_desc: "As we reach out for the presence, the mind of our telepaths  are filled with visions of unknown places. The visions go by faster and faster, and they discover so many different realities. They become aware of the immensity of the multiverse, and a sudden desire to know more emerges. It seems that these visions correspond to ancient explorers who disappeared during their quest for the universe."
+bts_covenant_establish_option: "§YForm a Covenant with the $bts_covenant_name_full$§!"
+bts_covenant_contact: "§MOne that travels beyond known borders.§!"
+bts_covenant_sealed_desc: "It is done. We have formed a Covenant with the §Y$bts_covenant_name_full$§! and already they have begun to share its secrets with our scientists and leaders. We will benefit immensely from their knowledge. The only drawback seems to be an irresistible urge to indulge our curiosity at the risk of our lives."
+bts_covenant_sealed_option: "Let's see what lies beyond."
+ 
 bts_covenant_chain_title: "$bts_covenant_name_full$"
 bts_covenant_favor_count: "[root.bts_covenant_rank]"
-bts_covenant_chain_desc_intro: "We have created a bond with a Shroud Entity named the §Y$bts_covenant_name_full$§!. Unspeakable, it granted us crumbs of its power for a price. There will likely be more to follow.\n\nOur telepaths theorize, that the bond can be deepened more easily if we align ourselves more with our patron.\n\nThe End is unstoppable and its influence must travel beyond all realities. §YSeek for rifts in our universe§! and §Yexplore them§! as much as you can to expand the influence of your divinity and §Ygain favor§!."
+bts_covenant_chain_desc_intro: "We have created a bond with a Shroud Entity named the §Y$bts_covenant_name_full$§!. Unspeakable, it granted us crumbs of its power for a price. There will likely be more to follow.\n\nOur telepaths theorize, that the bond can be deepened more easily if we align ourselves more with our patron.\n\nThe $bts_covenant_name_prefix$ is unstoppable and its influence must travel beyond all realities. §YSeek for rifts in our universe§! and §Yexplore them§! as much as you can to expand the influence of your divinity and §Ygain favor§!."
 bts_covenant_chain_desc_info: "Total favor: §Y$bts_covenant_favor_count$§!\nFavor per month: §Y[root.bts_covenant_favor_per_month]§!\n$bts_covenant_estimated_favor_years$\n[root.bts_covenant_planet_killer_pop_killed_status]"
 bts_covenant_chain_desc: "$bts_covenant_chain_desc_intro$\n\n$bts_covenant_chain_desc_info$"
+
+bts_whisperers_covenant_chain_title: "The Whisperers in the Void"
+bts_whisperers_covenant_chain_desc: "We have created a bond with a Shroud Entity named the §YWhisperers in the Void§!. Unfathomable, it granted us crumbs of its power for a price. There will likely be more to follow.\n\nOur telepaths theorize, that the bond can be deepened more easily if we align ourselves more on our patron.\n\nThe Whisperers enjoy new knowledge, silent secrets and conspiracies. They revel in the simple joy of a mind filled to the brim, cracking at the seams.\n\nTotal favor: §Y[root.whisperers_covenant_rank]§!\n"
+bts_eater_covenant_chain_title: "The Eater of Worlds"
+bts_eater_covenant_chain_desc: "We have created a bond with a Shroud Entity named the §YEater of Worlds§!. Insatiable, it granted us crumbs of its power for a price. There will likely be more to follow.\n\nOur telepaths theorize, that the bond can be deepened more easily if we align ourselves more on our patron.\n\nThe Eater hungers impatiently. It craves war, the sweet taste of strife and lament.\n\nTotal favor: §Y[root.eater_covenant_rank]§!\n"
+bts_composer_covenant_chain_title: "The Composer of Strands"
+bts_composer_covenant_chain_desc: "We have created a bond with a Shroud Entity named the §YComposer of Strands§!. Sheltering, it granted us crumbs of its power for a price. There will likely be more to follow.\n\nOur telepaths theorize, that the bond can be further deepened if we align ourselves more with our patron.\n\nThe Composer yearns for flesh set free from the constraints of evolution and genetic manipulations. It tells us about the respect of life, of nature and the sanctity of the flesh.\n\nTotal favor: §Y[root.composer_covenant_rank]§!\n"
+bts_instrument_covenant_chain_title: "The Instrument of Desire"
+bts_instrument_covenant_chain_desc: "We have created a bond with a Shroud Entity named the §YInstrument of Desire§!. Pampering, it granted us crumbs of its power for a price. There will likely be more to follow.\n\nOur telepaths theorize, that the bond can be deepened more easily if we align ourselves more with our patron.\n\nThe Instrument longs for yearning. Indulged pleasures, decadence and slavery spell the name of the Instrument.\n\nTotal favor: §Y[root.instrument_covenant_rank]§!\n"
+
 bts_covenant_estimated_favor_1_year: "§Y1§! year : §Y[root.bts_covenant_estimated_favor_per_1_year]§!"
 bts_covenant_estimated_favor_5_year: "§Y5§! year : §Y[root.bts_covenant_estimated_favor_per_5_year]§!"
 bts_covenant_estimated_favor_10_year: "§Y10§! year : §Y[root.bts_covenant_estimated_favor_per_10_year]§!"
@@ -118,7 +133,7 @@ bts_covenant_modifier_1: "$bts_covenant_name_full$"
 # Origin
 origin_bts_zroni: "In the Footsteps of the Zroni"
 origin_bts_zroni_desc: "This origin begins with a civilization that perceives a mysterious energy emanating from its moon that disrupts dreams of it's own population. Intrigued and passionate about archaeology and exploration, they embark on a quest to understand how an ancient civilization as powerful as the Zroni disappeared. Their fascination with the relics of the past leads them to explore the mysteries hidden in galactic ruins, seeking answers through the stars."
-origin_bts_zroni_effects: "- Technology §Y$tech_archaeostudies$§! researched\n- §MZroni §!Abandoned Colony Ruins on capital's moon\n- §MMind Over Matter§! require §Y1§! ascension perk instead of §Y2§!\n- You will establish a covenant with §R$bts_covenant_name_full$§! and can §Ysurvive§! if you §Yexplore enough astral rifts before the end§!"
+origin_bts_zroni_effects: "- Technology §Y$tech_archaeostudies$§! researched\n- §MZroni §!Abandoned Colony Ruins on capital's moon\n- §MMind Over Matter§! require §Y1§! ascension perk instead of §Y2§!"
 
 # Tradition
 tradition_astral_studies: "Astral Studies"

@@ -15,7 +15,7 @@ bts_mega_aetherophasic_collapser_0 = {
 	}
 
 	potential = { 
-        has_country_flag = bts_covenant_confirmed
+        bts_has_covenant_confirmed = yes
         NOT = { 
             any_owned_megastructure = {
                 bts_is_aetherophasic_collapser = yes
@@ -69,12 +69,7 @@ bts_mega_aetherophasic_collapser_0 = {
 		}
         custom_tooltip = {
             fail_text = bts_mega_aetherophasic_collapser_0_missing_favor
-            from = {
-                check_variable = {
-                    which = bts_covenant_rank
-                    value >= @bts_mega_aetherophasic_collapser_0_favor_cost
-                }
-            }
+            bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_mega_aetherophasic_collapser_0_favor_cost }
         }
 	}
 
@@ -114,12 +109,7 @@ bts_mega_aetherophasic_collapser_1 = {
     possible = {
         custom_tooltip = {
             fail_text = bts_mega_aetherophasic_collapser_1_missing_favor
-            from = {
-                check_variable = {
-                    which = bts_covenant_rank
-                    value >= @bts_mega_aetherophasic_collapser_1_favor_cost
-                }
-            }
+            bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_mega_aetherophasic_collapser_1_favor_cost }
         }
     }
 
@@ -170,12 +160,7 @@ bts_mega_aetherophasic_collapser_2 = {
     possible = {
         custom_tooltip = {
             fail_text = bts_mega_aetherophasic_collapser_2_missing_favor
-            from = {
-                check_variable = {
-                    which = bts_covenant_rank
-                    value >= @bts_mega_aetherophasic_collapser_2_favor_cost
-                }
-            }
+            bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_mega_aetherophasic_collapser_2_favor_cost }
         }
     }
 
@@ -223,12 +208,7 @@ bts_mega_aetherophasic_collapser_3 = {
     possible = {
         custom_tooltip = {
             fail_text = bts_mega_aetherophasic_collapser_3_missing_favor
-            from = {
-                check_variable = {
-                    which = bts_covenant_rank
-                    value >= @bts_mega_aetherophasic_collapser_3_favor_cost
-                }
-            }
+            bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_mega_aetherophasic_collapser_3_favor_cost }
         }
     }
 
@@ -280,12 +260,7 @@ bts_mega_aetherophasic_collapser_4 = {
     possible = {
         custom_tooltip = {
             fail_text = bts_mega_aetherophasic_collapser_4_missing_favor
-            from = {
-                check_variable = {
-                    which = bts_covenant_rank
-                    value >= @bts_mega_aetherophasic_collapser_4_favor_cost
-                }
-            }
+            bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_mega_aetherophasic_collapser_4_favor_cost }
         }
     }
 
@@ -338,10 +313,7 @@ bts_mega_aetherophasic_collapser_5 = {
         custom_tooltip = {
             fail_text = bts_mega_aetherophasic_collapser_5_missing_favor
             from = {
-                check_variable = {
-                    which = bts_covenant_rank
-                    value >= @bts_mega_aetherophasic_collapser_5_favor_cost
-                }
+                bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_mega_aetherophasic_collapser_5_favor_cost }
             }
         }
     }

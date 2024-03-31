@@ -1,3 +1,23 @@
+bts_has_any_covenant_favor = {
+	OR = {
+		check_variable = { which = composer_covenant_rank value >= $FAVOR_AMOUNT$ }
+		check_variable = { which = eater_covenant_rank value >= $FAVOR_AMOUNT$ }
+		check_variable = { which = instrument_covenant_rank value >= $FAVOR_AMOUNT$ }
+		check_variable = { which = whisperers_covenant_rank value >= $FAVOR_AMOUNT$ }
+		check_variable = { which = bts_covenant_rank value >= $FAVOR_AMOUNT$ }
+	}
+}
+
+bts_has_covenant_confirmed = {
+	OR = {
+		has_country_flag = composer_covenant_confirmed
+		has_country_flag = eater_covenant_confirmed
+		has_country_flag = instrument_covenant_confirmed
+		has_country_flag = whisperers_covenant_confirmed
+		has_country_flag = bts_covenant_confirmed
+	}
+}
+
 bts_can_use_powers = {
     bts_can_use_power_summon_1 = yes
 }

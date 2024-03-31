@@ -2,3 +2,23 @@ bts_covenant_chain = {
 	picture = GFX_evt_shroudwalker_enclave
 	icon = "gfx/interface/icons/situation_log/situation_log_extradimensional.dds"
 }
+
+bts_whisperers_covenant_chain = {
+	picture = GFX_evt_shroudwalker_enclave
+	icon = "gfx/interface/icons/situation_log/situation_log_extradimensional.dds"
+}
+
+bts_eater_covenant_chain = {
+	picture = GFX_evt_shroudwalker_enclave
+	icon = "gfx/interface/icons/situation_log/situation_log_extradimensional.dds"
+}
+
+bts_composer_covenant_chain = {
+	picture = GFX_evt_shroudwalker_enclave
+	icon = "gfx/interface/icons/situation_log/situation_log_extradimensional.dds"
+}
+
+bts_instrument_covenant_chain = {
+	picture = GFX_evt_shroudwalker_enclave
+	icon = "gfx/interface/icons/situation_log/situation_log_extradimensional.dds"
+}
