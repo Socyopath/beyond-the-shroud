@@ -1,25 +1,21 @@
 bts_covenant_modifier_0 = {
-	station_gatherers_produces_mult = 0.5
-	station_researchers_produces_mult = 0.5
-	planet_jobs_produces_mult = 0.5
-	country_naval_cap_mult = 0.5
-	country_starbase_capacity_add = 5
-	country_covenant_influence_produces_add = 2
+	ship_speed_mult = @bts_covenant_modifier_0_speed_mult
+	ship_evasion_add = @bts_covenant_modifier_0_evasion_add
+	ship_jumpdrive_cooldown_mult = @bts_covenant_modifier_0_jump_cd_mult
+	ship_disengage_chance_reduction = @bts_covenant_modifier_0_disengage_reduc
 }
 
 bts_covenant_modifier_1 = {
-	station_gatherers_produces_mult = 0.5
-	station_researchers_produces_mult = 0.5
-	planet_jobs_produces_mult = 0.5
-	country_naval_cap_mult = 0.5
-	country_starbase_capacity_add = 5
-	country_covenant_influence_produces_add = 2
+	ship_speed_mult = @bts_covenant_modifier_1_speed_mult
+	ship_evasion_add = @bts_covenant_modifier_1_evasion_add
+	ship_jumpdrive_cooldown_mult = @bts_covenant_modifier_1_jump_cd_mult
+	ship_disengage_chance_reduction = @bts_covenant_modifier_1_disengage_reduc
 }
 
 agenda_psionic_supremacy_finish_bts_covenant = {
 	planet_psionic_jobs_produces_mult = 0.2
 	category_psionics_research_speed_mult = 0.4
-	country_sr_zro_cost_mult = @bts_agenda_psionic_supremacy_covenant_zro_cost_mult
+	category_psionics_draw_chance_mult = @bts_agenda_psionic_supremacy_covenant_psionic_draw
 }
 
 bts_zroni_shield_reduction_protection = {
