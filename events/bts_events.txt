@@ -1,48 +1,5 @@
 namespace = bts
 
-# Tradition Astral Studies finished Status
-country_event = {
-    id = bts.11
-	title = tr_astral_studies_finish_event_name
-	desc = tr_astral_studies_finish_event_desc
-	picture = GFX_evt_astral_rift
-	show_sound = ap_rift_event_32_psionic_comms
-	is_triggered_only = yes
-
-    trigger = {
-        has_country_flag = wait_spawn_astral_rift
-        any_system_within_border = {
-            can_spawn_astral_rift = yes
-        }
-    }
-
-    immediate = {
-        remove_country_flag = wait_spawn_astral_rift
-        ordered_system_within_border = {
-            limit = {
-                can_spawn_astral_rift = yes
-            }
-            position = 0
-            order_by = trigger:distance_to_capital
-            inverse = yes
-            save_event_target_as = bts_astral_studies_target_system
-        }
-    }
-
-	option = {
-        name = tr_astral_studies_finish_event_target_system
-        hidden_effect = {
-            event_target:bts_astral_studies_target_system = {
-                spawn_astral_rift = {
-					random_pos = yes
-					orbit_angle = 360
-					spawn_sound = no
-				}
-            }
-        }
-    }
-}
-
 # Trigger psionic wave pulse on enter battle
 country_event = {
 	id = bts.12
@@ -193,11 +150,8 @@ country_event = {
 	desc = bts_mega_aetherophasic_collapser_unlocked_desc
 
 	trigger = {
-		has_country_flag = bts_covenant_confirmed
-		check_variable = {
-			which = bts_covenant_rank
-			value >= @bts_mega_aetherophasic_collapser_0_favor_cost
-		}
+		bts_has_any_covenant_confirmed = yes
+		bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_mega_aetherophasic_collapser_0_favor_cost }
 	}
 
 	option = {

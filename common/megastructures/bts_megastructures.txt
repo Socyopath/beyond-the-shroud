@@ -15,7 +15,7 @@ bts_mega_aetherophasic_collapser_0 = {
 	}
 
 	potential = { 
-        bts_has_covenant_confirmed = yes
+        bts_has_any_covenant_confirmed = yes
         NOT = { 
             any_owned_megastructure = {
                 bts_is_aetherophasic_collapser = yes

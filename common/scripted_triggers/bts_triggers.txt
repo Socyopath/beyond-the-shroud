@@ -8,7 +8,7 @@ bts_has_any_covenant_favor = {
 	}
 }
 
-bts_has_covenant_confirmed = {
+bts_has_any_covenant_confirmed = {
 	OR = {
 		has_country_flag = composer_covenant_confirmed
 		has_country_flag = eater_covenant_confirmed

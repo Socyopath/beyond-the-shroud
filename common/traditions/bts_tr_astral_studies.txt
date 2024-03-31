@@ -22,12 +22,6 @@ tr_astral_studies_finish = {
 	modifier = {
 		ascension_perks_add = 1
 	}
-
-	on_enabled = {
-		hidden_effect = {
-			set_country_flag = wait_spawn_astral_rift
-		}
-	}
 }
 
 tr_astral_studies_quantum_storage = {
