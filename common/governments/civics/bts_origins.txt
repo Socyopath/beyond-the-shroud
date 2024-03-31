@@ -8,16 +8,6 @@ origin_bts_zroni = {
 		species_archetype = {
 			value = BIOLOGICAL
 		}
-		ethics = { 
-			OR = {
-				text = civic_tooltip_spiritualist
-				value = ethic_spiritualist
-				value = ethic_fanatic_spiritualist
-			}
-		}
-		civics = {
-			value = civic_dimensional_worship
-		}
 	}
 
     modifier = {
