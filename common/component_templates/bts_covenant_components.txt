@@ -13,7 +13,7 @@ utility_component_template = {
 	}
 
 	modifier = {
-		ship_armor_penetration_mult = @bts_tech_covenant_mark_armor_penetration
+		ship_ftl_jumpdrive_range_mult = @bts_tech_covenant_mark_jumpdrive_range_mult
 	}
 
 	prerequisites = { bts_tech_covenant_mark }

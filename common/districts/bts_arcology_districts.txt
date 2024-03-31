@@ -16,13 +16,8 @@ district_arcology_psionic = {
 		uses_district_set = city_world
 		owner = {
 			exists = owner
-            OR = {
-                has_country_flag = composer_covenant_confirmed
-                has_country_flag = instrument_covenant_confirmed
-                has_country_flag = eater_covenant_confirmed
-                has_country_flag = whisperers_covenant_confirmed
-                has_country_flag = bts_covenant_confirmed
-            }
+            bts_has_any_covenant_confirmed = yes
+			bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_district_arcology_psionic_favor_cost }
 		}
 	}
 
@@ -37,11 +32,11 @@ district_arcology_psionic = {
 		category = planet_districts
 		cost = {
 			minerals = 1000
-			rare_crystals = 50
+			sr_zro = 50
 		}
 		upkeep = {
 			energy = 5
-			rare_crystals = 1
+			sr_zro = 1
 		}
 	}
 
@@ -74,13 +69,10 @@ district_arcology_religious = {
 		uses_district_set = city_world
 		owner = {
 			exists = owner
-            NOR = {
-                has_country_flag = composer_covenant_confirmed
-                has_country_flag = instrument_covenant_confirmed
-                has_country_flag = eater_covenant_confirmed
-                has_country_flag = whisperers_covenant_confirmed
-                has_country_flag = bts_covenant_confirmed
-            }
+			OR = {
+				bts_has_any_covenant_confirmed = no
+				NOT = { bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_district_arcology_psionic_favor_cost } }
+			}
 			OR = {
 				is_spiritualist = yes
 				has_make_spiritualist_perk = yes
