@@ -1,4 +1,4 @@
-leader_trait_end_chosen = {
+bts_leader_trait_covenant_chosen = {
 	immortal_leaders = yes
 	inline_script = {
 		script = trait/icon_psionic

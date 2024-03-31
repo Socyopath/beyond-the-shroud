@@ -3107,10 +3107,10 @@ defined_text = {
 		}
 	}
 	text = {
-		localization_key = bts_name_end
+		localization_key = bts_covenant_name_full
 		trigger = {
 			OR = {
-				has_modifier = covenant_end_of_the_cycle_0
+				has_modifier = bts_covenant_modifier_0
 				has_modifier = covenant_end_of_the_cycle
 			}
 		}

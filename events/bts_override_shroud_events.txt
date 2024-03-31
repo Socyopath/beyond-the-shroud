@@ -474,7 +474,7 @@ country_event = {
 					has_trait = leader_trait_eater_chosen
 					has_trait = leader_trait_instrument_chosen
 					has_trait = leader_trait_whisperers_chosen
-                    has_trait = leader_trait_end_chosen
+                    has_trait = bts_leader_trait_covenant_chosen
 				}
 			}
 			save_event_target_as = leader_3

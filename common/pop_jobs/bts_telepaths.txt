@@ -62,7 +62,7 @@ telepath = {
 		produces = {
 			trigger = {
 				exists = owner
-				owner = { has_country_flag = end_covenant_rank_1 }
+				owner = { has_country_flag = bts_covenant_rank_1 }
 			}
 			physics_research = @bts_eoc_phy_per_telepath_1
 			engineering_research = @bts_eoc_eng_per_telepath_1

@@ -24,7 +24,7 @@
 
 @bts_eoc_favor_per_month_trad = 0.07
 
-@bts_agenda_psionic_supremacy_end_zro_cost_mult = -0.15
+@bts_bts_agenda_psionic_supremacy_covenant_zro_cost_mult = -0.15
 @bts_enc_sanctum_jobs = 5
 
 ##  Techs
@@ -74,8 +74,8 @@
 @bts_tech_zro_infusion_zro_upkeep_cost = 0.5
 @bts_tech_zro_infusion_favor_cost = 50
 
-@bts_tech_covenant_end_cost = 48000
-@bts_tech_covenant_end_armor_penetration = 0.25
+@bts_tech_covenant_mark_cost = 48000
+@bts_tech_covenant_mark_armor_penetration = 0.25
 
 @bts_tech_shroud_destabilizer_cost = 72000
 @bts_tech_shroud_destabilizer_favor_cost = 400

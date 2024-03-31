@@ -71,7 +71,7 @@ bts_mega_aetherophasic_collapser_0 = {
             fail_text = bts_mega_aetherophasic_collapser_0_missing_favor
             from = {
                 check_variable = {
-                    which = end_covenant_rank
+                    which = bts_covenant_rank
                     value >= @bts_mega_aetherophasic_collapser_0_favor_cost
                 }
             }
@@ -116,7 +116,7 @@ bts_mega_aetherophasic_collapser_1 = {
             fail_text = bts_mega_aetherophasic_collapser_1_missing_favor
             from = {
                 check_variable = {
-                    which = end_covenant_rank
+                    which = bts_covenant_rank
                     value >= @bts_mega_aetherophasic_collapser_1_favor_cost
                 }
             }
@@ -172,7 +172,7 @@ bts_mega_aetherophasic_collapser_2 = {
             fail_text = bts_mega_aetherophasic_collapser_2_missing_favor
             from = {
                 check_variable = {
-                    which = end_covenant_rank
+                    which = bts_covenant_rank
                     value >= @bts_mega_aetherophasic_collapser_2_favor_cost
                 }
             }
@@ -225,7 +225,7 @@ bts_mega_aetherophasic_collapser_3 = {
             fail_text = bts_mega_aetherophasic_collapser_3_missing_favor
             from = {
                 check_variable = {
-                    which = end_covenant_rank
+                    which = bts_covenant_rank
                     value >= @bts_mega_aetherophasic_collapser_3_favor_cost
                 }
             }
@@ -282,7 +282,7 @@ bts_mega_aetherophasic_collapser_4 = {
             fail_text = bts_mega_aetherophasic_collapser_4_missing_favor
             from = {
                 check_variable = {
-                    which = end_covenant_rank
+                    which = bts_covenant_rank
                     value >= @bts_mega_aetherophasic_collapser_4_favor_cost
                 }
             }
@@ -339,7 +339,7 @@ bts_mega_aetherophasic_collapser_5 = {
             fail_text = bts_mega_aetherophasic_collapser_5_missing_favor
             from = {
                 check_variable = {
-                    which = end_covenant_rank
+                    which = bts_covenant_rank
                     value >= @bts_mega_aetherophasic_collapser_5_favor_cost
                 }
             }

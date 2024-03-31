@@ -5,7 +5,7 @@ suitable_for_chosen = {
 		owner = { has_country_flag = eater_covenant_rank_3 }
 		owner = { has_country_flag = instrument_covenant_rank_3 }
 		owner = { has_country_flag = whisperers_covenant_rank_3 }
-        owner = { has_country_flag = end_covenant_rank_3 }
+        owner = { has_country_flag = bts_covenant_rank_3 }
 	}
 	is_exploring_astral_rift = no
 }
@@ -18,7 +18,7 @@ has_psionic_leader_trait = {
 		has_trait = leader_trait_eater_chosen
 		has_trait = leader_trait_whisperers_chosen
 		has_trait = leader_trait_admiral_warform
-		has_trait = leader_trait_end_chosen
+		has_trait = bts_leader_trait_covenant_chosen
 	}
 }
 
@@ -29,7 +29,7 @@ has_chosen_one_leader_trait = {
 		has_trait = leader_trait_instrument_chosen
 		has_trait = leader_trait_eater_chosen
 		has_trait = leader_trait_whisperers_chosen
-		has_trait = leader_trait_end_chosen
+		has_trait = bts_leader_trait_covenant_chosen
 	}
 }
 
@@ -39,6 +39,6 @@ has_chosen_covenant_trait_non_ruler = {
 		has_trait = leader_trait_eater_chosen
 		has_trait = leader_trait_instrument_chosen
 		has_trait = leader_trait_whisperers_chosen
-		has_trait = leader_trait_end_chosen
+		has_trait = bts_leader_trait_covenant_chosen
 	}
 }

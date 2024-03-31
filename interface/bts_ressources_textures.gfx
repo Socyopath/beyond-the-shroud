@@ -58,7 +58,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_ship_part_killer_end"
-		textureFile = "gfx/interface/icons/ship_parts/bts_planet_killer_end.dds"
+		textureFile = "gfx/interface/icons/ship_parts/bts_BTS_PLANET_KILLER_COVENANT.dds"
 	}
 
 	# Starbase Module
@@ -69,7 +69,7 @@ spriteTypes = {
 
 	# Agendas
 	spriteType = {
-		name = "GFX_council_agenda_icon_agenda_psionic_supremacy_end"
+		name = "GFX_council_agenda_icon_bts_agenda_psionic_supremacy_covenant"
 		texturefile = "gfx/interface/icons/agenda_icons/agenda_psionic_supremacy.dds"
 	}
 

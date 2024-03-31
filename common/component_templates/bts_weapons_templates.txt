@@ -1,5 +1,5 @@
 weapon_component_template = {
-	key = "PLANET_KILLER_END"
+	key = "BTS_PLANET_KILLER_COVENANT"
 	icon = GFX_ship_part_killer_end
 	icon_frame = 1
 	size = planet_killer
@@ -13,5 +13,5 @@ weapon_component_template = {
     windup = { min = 5 max = 5 }
 	total_fire_time = 30
 
-	component_set = "PLANET_KILLER_END"
+	component_set = "BTS_PLANET_KILLER_COVENANT"
 }

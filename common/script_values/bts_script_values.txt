@@ -23,26 +23,26 @@ bts_end_of_the_cycle_favor_per_month = {
 bts_end_of_the_cycle_favor_per_1_year = {
     set = root.value:bts_end_of_the_cycle_favor_per_month
     multiply = 12
-    add = root.end_covenant_rank
+    add = root.bts_covenant_rank
 }
 
 bts_end_of_the_cycle_favor_per_5_year = {
     set = root.value:bts_end_of_the_cycle_favor_per_month
     multiply = 12
     multiply = 5
-    add = root.end_covenant_rank
+    add = root.bts_covenant_rank
 }
 
 bts_end_of_the_cycle_favor_per_10_year = {
     set = root.value:bts_end_of_the_cycle_favor_per_month
     multiply = 12
     multiply = 10
-    add = root.end_covenant_rank
+    add = root.bts_covenant_rank
 }
 
 bts_end_of_the_cycle_favor_per_25_year = {
     set = root.value:bts_end_of_the_cycle_favor_per_month
     multiply = 12
     multiply = 25
-    add = root.end_covenant_rank
+    add = root.bts_covenant_rank
 }

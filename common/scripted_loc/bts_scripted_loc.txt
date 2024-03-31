@@ -4,36 +4,27 @@ defined_text = {
 }
 
 defined_text = {
-	name = bts_eoc_estimated_favor_per_1_year
+	name = bts_covenant_estimated_favor_per_1_year
     value = root.value:bts_end_of_the_cycle_favor_per_1_year
 }
 
 defined_text = {
-	name = bts_eoc_estimated_favor_per_5_year
+	name = bts_covenant_estimated_favor_per_5_year
     value = root.value:bts_end_of_the_cycle_favor_per_5_year
 }
 
 defined_text = {
-	name = bts_eoc_estimated_favor_per_10_year
+	name = bts_covenant_estimated_favor_per_10_year
     value = root.value:bts_end_of_the_cycle_favor_per_10_year
 }
 
 defined_text = {
-	name = bts_eoc_estimated_favor_per_25_year
+	name = bts_covenant_estimated_favor_per_25_year
     value = root.value:bts_end_of_the_cycle_favor_per_25_year
 }
 
 defined_text = {
-    name = end_covenant_end_status
-    text = {
-		trigger = { has_country_flag = bts_eoc_waiting_final }
-        localization_key = end_covenant_end_date
-    }
-    default = BLANK_STRING
-}
-
-defined_text = {
-    name = end_pop_killed_status
+    name = bts_covenant_planet_killer_pop_killed_status
     text = {
 		trigger = { 
             any_owned_ship = {

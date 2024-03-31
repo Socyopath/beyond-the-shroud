@@ -1,5 +1,5 @@
 utility_component_template = {
-	key = "END_MARK"
+	key = "BTS_COVENANT_MARK"
 	size = aux
 	icon = "GFX_ship_part_end_covenant_aux"
 	icon_frame = 1
@@ -13,11 +13,11 @@ utility_component_template = {
 	}
 
 	modifier = {
-		ship_armor_penetration_mult = @bts_tech_covenant_end_armor_penetration
+		ship_armor_penetration_mult = @bts_tech_covenant_mark_armor_penetration
 	}
 
-	prerequisites = { bts_tech_covenant_end }
-	component_set = "END_MARK"
+	prerequisites = { bts_tech_covenant_mark }
+	component_set = "BTS_COVENANT_MARK"
 }
 
 utility_component_template = {

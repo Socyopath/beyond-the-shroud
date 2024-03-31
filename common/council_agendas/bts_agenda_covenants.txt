@@ -31,7 +31,7 @@ agenda_psionic_supremacy = {
 	finish_modifier = agenda_psionic_supremacy_finish_no_covenant
 }
 
-agenda_psionic_supremacy_end = {
+bts_agenda_psionic_supremacy_covenant = {
 	agenda_cost = @base_tradition_agenda_cost
 	allow = {
 		has_tradition = tr_psionics_adopt

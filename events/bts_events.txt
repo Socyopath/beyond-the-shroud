@@ -193,7 +193,7 @@ country_event = {
 	trigger = {
 		has_country_flag = end_covenant_confirmed
 		check_variable = {
-			which = end_covenant_rank
+			which = bts_covenant_rank
 			value >= @bts_mega_aetherophasic_collapser_0_favor_cost
 		}
 	}
@@ -456,7 +456,7 @@ country_event = {
 		}
 
 		set_variable = {
-			which = "end_pop_killed"
+			which = "bts_covenant_planet_killer_pop_killed"
 			value = 0
 		}
     }
@@ -581,7 +581,7 @@ planet_event = {
 
             from.owner = {
                 change_variable = {
-                    which = "end_pop_killed"
+                    which = "bts_covenant_planet_killer_pop_killed"
                     value = 1
                 }
             }
@@ -665,7 +665,7 @@ ship_event = {
         	limit = {
         		owner = {
         			check_variable = {
-        				which = "end_pop_killed"
+        				which = "bts_covenant_planet_killer_pop_killed"
         				value < 250
         			}
         		}
@@ -679,7 +679,7 @@ ship_event = {
         	limit = {
         		owner = {
         			check_variable = {
-        				which = "end_pop_killed"
+        				which = "bts_covenant_planet_killer_pop_killed"
         				value < 500
         			}
         		}
@@ -693,7 +693,7 @@ ship_event = {
         	limit = {
         		owner = {
         			check_variable = {
-        				which = "end_pop_killed"
+        				which = "bts_covenant_planet_killer_pop_killed"
         				value < 1000
         			}
         		}
@@ -707,7 +707,7 @@ ship_event = {
         	limit = {
         		owner = {
         			check_variable = {
-        				which = "end_pop_killed"
+        				which = "bts_covenant_planet_killer_pop_killed"
         				value < 2500
         			}
         		}
@@ -721,7 +721,7 @@ ship_event = {
         	limit = {
         		owner = {
         			check_variable = {
-        				which = "end_pop_killed"
+        				which = "bts_covenant_planet_killer_pop_killed"
         				value < 5000
         			}
         		}

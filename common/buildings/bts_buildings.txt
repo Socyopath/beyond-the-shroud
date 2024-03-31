@@ -1,4 +1,4 @@
-building_end_sanctum = {
+bts_building_covenant_sanctum = {
 	base_buildtime = @b3_time
 
 	category = government
@@ -7,7 +7,7 @@ building_end_sanctum = {
 
 	potential = {
 		host_has_dlc = "Utopia"
-		owner = { has_country_flag = end_covenant_rank_1 }
+		owner = { has_country_flag = bts_covenant_rank_1 }
 		NOR = {
 			has_modifier = resort_colony
 			has_modifier = slave_colony
@@ -21,7 +21,7 @@ building_end_sanctum = {
 	destroy_trigger = {
 		exists = owner
 		NOT = {
-			owner = { has_country_flag = end_covenant_rank_1 }
+			owner = { has_country_flag = bts_covenant_rank_1 }
 		}
 	}
 

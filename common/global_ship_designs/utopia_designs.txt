@@ -95,7 +95,7 @@ ship_design = {
 		}
 		component = {
 			slot = "PLANET_KILLER_GUN_01"
-			template = "PLANET_KILLER_END"
+			template = "BTS_PLANET_KILLER_COVENANT"
 		}
 	}
 	required_component="COMBAT_COMPUTER_LINE_DEFAULT"
@@ -133,7 +133,7 @@ ship_design = {
 		}
 		component = {
 			slot = "PLANET_KILLER_GUN_01"
-			template = "PLANET_KILLER_END"
+			template = "BTS_PLANET_KILLER_COVENANT"
 		}
 		component = {
 			slot = "SMALL_UTILITY_1"

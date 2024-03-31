@@ -343,7 +343,7 @@ bts_tech_zro_infusion = {
 			NOR = {
 				has_relic = r_zro_crystal
 				check_variable = {
-					which = end_covenant_rank
+					which = bts_covenant_rank
 					value >= @bts_tech_zro_infusion_favor_cost
 				}
 			}
@@ -363,11 +363,11 @@ bts_tech_zro_infusion = {
 	}
 }
 
-bts_tech_covenant_end = {
-	icon = bts_tech_covenant_end
+bts_tech_covenant_mark = {
+	icon = bts_tech_covenant_mark
 	area = society
 	category = { psionics }
-	cost = @bts_tech_covenant_end_cost
+	cost = @bts_tech_covenant_mark_cost
 	tier = 5
 	is_rare = yes
 	is_reverse_engineerable = no
@@ -399,7 +399,7 @@ bts_tech_shroud_destabilizer = {
 			NOR = {
 				has_relic = r_zro_crystal
 				check_variable = {
-					which = end_covenant_rank
+					which = bts_covenant_rank
 					value >= @bts_tech_shroud_destabilizer_favor_cost
 				}
 			}
