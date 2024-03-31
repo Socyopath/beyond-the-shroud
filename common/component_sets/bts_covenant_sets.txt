@@ -1,7 +1,7 @@
 component_set = {
 	key = "BTS_COVENANT_MARK"
 
-	icon = "GFX_ship_part_end_covenant_aux"
+	icon = "GFX_ship_part_bts_covenant_aux"
 	icon_frame = 1
 }
 
@@ -15,7 +15,7 @@ component_set = {
 component_set = {
 	key = "BTS_PLANET_KILLER_COVENANT"
 
-	icon = "GFX_ship_part_killer_end"
+	icon = "GFX_ship_part_killer_bts_covenant"
 	icon_frame = 1
 }
 

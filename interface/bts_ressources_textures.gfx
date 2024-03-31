@@ -49,16 +49,16 @@ spriteTypes = {
 
 	# Components
 	spriteType = {
-		name = "GFX_ship_part_end_covenant_aux"
-		textureFile = "gfx/interface/icons/ship_parts/bts_mark_of_the_end.dds"
+		name = "GFX_ship_part_bts_covenant_aux"
+		textureFile = "gfx/interface/icons/ship_parts/bts_mark_covenant.dds.dds"
 	}
 	spriteType = {
 		name = "GFX_ship_part_zroni_shield"
 		textureFile = "gfx/interface/icons/ship_parts/bts_zroni_shield.dds"
 	}
 	spriteType = {
-		name = "GFX_ship_part_killer_end"
-		textureFile = "gfx/interface/icons/ship_parts/bts_BTS_PLANET_KILLER_COVENANT.dds"
+		name = "GFX_ship_part_killer_bts_covenant"
+		textureFile = "gfx/interface/icons/ship_parts/bts_planet_killer.dds.dds"
 	}
 
 	# Starbase Module

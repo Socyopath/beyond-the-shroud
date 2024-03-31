@@ -3111,7 +3111,7 @@ defined_text = {
 		trigger = {
 			OR = {
 				has_modifier = bts_covenant_modifier_0
-				has_modifier = covenant_end_of_the_cycle
+				has_modifier = bts_covenant_modifier_1
 			}
 		}
 	}

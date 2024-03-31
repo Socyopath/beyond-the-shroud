@@ -21,7 +21,7 @@ agenda_psionic_supremacy = {
 			has_country_flag = instrument_covenant_confirmed
 			has_country_flag = eater_covenant_confirmed
 			has_country_flag = whisperers_covenant_confirmed
-			has_country_flag = end_covenant_confirmed
+			has_country_flag = bts_covenant_confirmed
 		}
 	}
 	modifier = {
@@ -38,11 +38,11 @@ bts_agenda_psionic_supremacy_covenant = {
 	}
 	potential = {
 		has_utopia = yes
-		has_country_flag = end_covenant_confirmed
+		has_country_flag = bts_covenant_confirmed
 	}
 	modifier = {
 		planet_psionic_jobs_produces_mult = 0.05
 		category_psionics_research_speed_mult = 0.1
 	}
-	finish_modifier = agenda_psionic_supremacy_finish_end
+	finish_modifier = agenda_psionic_supremacy_finish_bts_covenant
 }

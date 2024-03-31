@@ -114,8 +114,6 @@ bts_reckoning_info: "§M$NAME_Reckoning$§! : §Y[root.bts_covenant_planet_kille
 bts_covenant_estimated_favor_years: "Estimated favor in :\n- $bts_covenant_estimated_favor_1_year$\n- $bts_covenant_estimated_favor_5_year$\n- $bts_covenant_estimated_favor_10_year$\n- $bts_covenant_estimated_favor_25_year$"
 bts_covenant_modifier_0: "$bts_covenant_name_full$"
 bts_covenant_modifier_1: "$bts_covenant_name_full$"
-end_covenant_surive_event_title: "$bts_covenant_name_full$"
-end_covenant_survive_event_desc: "Your incredible dedication to the §YEnd§! has paid off, as the shroud entity has accepted you as its chosen one in the multiverse. The §MReckoning§! won't appear as planned, but maybe it'll be you instead..."
 
 # Origin
 origin_bts_zroni: "In the Footsteps of the Zroni"

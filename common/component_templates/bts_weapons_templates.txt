@@ -1,6 +1,6 @@
 weapon_component_template = {
 	key = "BTS_PLANET_KILLER_COVENANT"
-	icon = GFX_ship_part_killer_end
+	icon = GFX_ship_part_killer_bts_covenant
 	icon_frame = 1
 	size = planet_killer
 	type = planet_killer

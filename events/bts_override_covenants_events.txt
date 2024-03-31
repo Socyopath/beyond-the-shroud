@@ -16,9 +16,8 @@ country_event = {
 		if = {
 			limit = {
 				has_origin = origin_bts_zroni
-				NOT = { has_global_flag = end_of_the_cycle }
 			}
-			country_event = { id = utopia.3308 } # The End of the Cycle
+			country_event = { id = bts.20 } # BTS Covenant
 		}
 		else = {
 			random_list = {
@@ -424,39 +423,17 @@ country_event = {
 			}
 		}
 	}
-	option = { #Confirm End of the cycle
+	option = { #Confirm BTS Custom covenant
 		name = "utopia.2658.a"
 		trigger = {
 			has_modifier = bts_covenant_modifier_0
-		}
-		hidden_effect = {
-			set_saved_date = {
-				key = bts_covenant_final_date
-				days_from_present = @bts_covenant_days_before_end
-				expires = @bts_covenant_days_before_end
-			}
-			set_timed_country_flag = { 
-				flag = bts_covenant_waiting_final
-				days = @bts_covenant_days_before_end
-			}
-			every_owned_planet = {
-				limit = { NOT = { has_modifier = covenant_shroud_marked } }
-				add_modifier = { modifier = covenant_shroud_marked days = -1 }
-			}
-			every_subject = {
-				every_owned_planet = {
-					limit = { NOT = { has_modifier = covenant_shroud_marked } }
-					add_modifier = { modifier = covenant_shroud_marked days = -1 }
-				}
-			}
-			country_event = { id = bts.20 days = @bts_covenant_days_before_end }
 		}
 		begin_event_chain = {
 			event_chain = "bts_covenant_chain"
 			target = this
 		}
 		hidden_effect = {
-			set_country_flag = end_covenant_confirmed
+			set_country_flag = bts_covenant_confirmed
 			set_variable = {
 				which = bts_covenant_rank
 				value = 1
@@ -472,6 +449,7 @@ country_event = {
 			remove_modifier = covenant_instrument_of_desire_0
 			remove_modifier = covenant_whisperers_in_the_void_0
 			remove_modifier = covenant_whisperers_in_the_void_0_fircon
+			remove_modifier = bts_covenant_modifier_0
 		}
 	}
 }
@@ -543,11 +521,11 @@ country_event = {
 	}
 }
 
-# The End of the Cycle
+# BTS Custom covenant
 country_event = {
-	id = utopia.3308
+	id = bts.20
 	title = "utopia.3000.name"
-	desc = "utopia.3308.desc"
+	desc = "utopia.3307.desc"
 	diplomatic = yes
 	diplomatic_title = BLANK_STRING
 	force_open = yes
@@ -570,29 +548,34 @@ country_event = {
 	}
 
 	option = {
-		name = "utopia.3308.a"
+		name = "utopia.3307.a"
 		trigger = {
 			NOT = { has_country_flag = tradition_covenant }
 		}
-		custom_tooltip = "covenant.cycle.tooltip"
+		custom_tooltip = "covenant.tooltip"
 		add_modifier = { modifier = bts_covenant_modifier_0 days = -1 }
+		begin_event_chain = {
+			event_chain = "bts_covenant_chain"
+			target = this
+		}
 		hidden_effect = {
-			set_global_flag = end_of_the_cycle
 			set_country_flag = has_shroud_patron
+			set_country_flag = bts_covenant_confirmed
 			country_event = { id = utopia.3310 } # Covenant Sealed
-			country_event = { id = utopia.2658 } # Covenent Confirmed
+			set_variable = {
+				which = bts_covenant_rank
+				value = 1
+			}
 		}
 	}
-
-	option = {
-		name = "utopia.3308.a"
+	option = { #Tradition Covenant
+		name = "utopia.3307.a"
 		trigger = {
 			has_country_flag = tradition_covenant
 		}
-		custom_tooltip = "covenant.cycle.tooltip"
-		add_modifier = { modifier = bts_covenant_modifier_0 days = -1 } # You really shouldn't have done that...
+		custom_tooltip = "covenant.tooltip"
+		add_modifier = { modifier = bts_covenant_modifier_0 days = -1 }
 		hidden_effect = {
-			set_global_flag = end_of_the_cycle
 			set_country_flag = has_shroud_patron
 			remove_country_flag = tradition_covenant
 			country_event = { id = utopia.3310 } # Covenant Sealed
@@ -601,7 +584,7 @@ country_event = {
 					has_tradition = tr_psionics_finish
 					NOT = { has_country_flag = confirmation_incoming }
 				}
-				country_event = { id = utopia.2658 days = 360 } # Covenent Confirmed
+				country_event = { id = utopia.2658 days = 360 }
 			}
 		}
 	}
@@ -628,7 +611,7 @@ country_event = {
 			has_country_flag = eater_covenant_confirmed
 			has_country_flag = instrument_covenant_confirmed
 			has_country_flag = whisperers_covenant_confirmed
-			has_country_flag = end_covenant_confirmed
+			has_country_flag = bts_covenant_confirmed
 		}
 		OR = {
 			check_variable = {
@@ -1140,7 +1123,7 @@ country_event = {
 				}
 			}
 		}
-		else_if = { 	#End modifiers
+		else_if = { 	#BTS Custom covenant modifier
 			limit = {
 				check_variable = {
 					which = bts_covenant_rank
@@ -1149,7 +1132,7 @@ country_event = {
 			}
 			change_variable = {
 				which = bts_covenant_rank
-				value = root.value:bts_end_of_the_cycle_favor_per_month
+				value = root.value:bts_covenant_favor_per_month
 			}
 		}
 	}
@@ -1175,7 +1158,7 @@ country_event = {
 			has_country_flag = eater_covenant_confirmed
 			has_country_flag = instrument_covenant_confirmed
 			has_country_flag = whisperers_covenant_confirmed
-			has_country_flag = end_covenant_confirmed
+			has_country_flag = bts_covenant_confirmed
 		}
 		OR = {
 			check_variable = {
@@ -1292,7 +1275,7 @@ country_event = {
 			has_country_flag = whisperers_covenant_rank_1
 		}
 	}
-	option = { #End of the Cycle
+	option = { #BTS Custom covenant
 		name = "bts_covenant_rank_1"
 		custom_tooltip = "bts_covenant_rank_1_desc"
 		trigger = {
@@ -1321,7 +1304,7 @@ country_event = {
 			has_country_flag = eater_covenant_confirmed
 			has_country_flag = instrument_covenant_confirmed
 			has_country_flag = whisperers_covenant_confirmed
-			has_country_flag = end_covenant_confirmed
+			has_country_flag = bts_covenant_confirmed
 		}
 		OR = {
 			check_variable = {
@@ -1459,12 +1442,12 @@ country_event = {
 			remove_modifier = covenant_whisperers_in_the_void_0_fircon
 		}
 	}
-	option = { #End of the cycle
+	option = { #BTS Custom covenant
 		name = "bts_covenant_rank_2"
 		trigger = {
 			has_country_flag = bts_covenant_rank_2
 		}
-		add_modifier = { modifier = covenant_end_of_the_cycle days = -1 }
+		add_modifier = { modifier = bts_covenant_modifier_1 days = -1 }
 		hidden_effect = {
 			remove_modifier = bts_covenant_modifier_0
 		}
@@ -1491,7 +1474,7 @@ country_event = {
 			has_country_flag = eater_covenant_confirmed
 			has_country_flag = instrument_covenant_confirmed
 			has_country_flag = whisperers_covenant_confirmed
-			has_country_flag = end_covenant_confirmed
+			has_country_flag = bts_covenant_confirmed
 		}
 		OR = {
 			check_variable = {
@@ -1772,7 +1755,7 @@ country_event = {
 				remove_trait = leader_trait_psionic
 			}
 
-			# End.
+			# BTS Custom covenant.
 			if = {
 				limit = {
 					ROOT = { has_country_flag = bts_covenant_rank_3 }
@@ -1804,7 +1787,7 @@ country_event = {
 			has_country_flag = eater_covenant_confirmed
 			has_country_flag = instrument_covenant_confirmed
 			has_country_flag = whisperers_covenant_confirmed
-			has_country_flag = end_covenant_confirmed
+			has_country_flag = bts_covenant_confirmed
 		}
 		OR = {
 			check_variable = {
@@ -1933,7 +1916,7 @@ country_event = {
 			message = yes
 		}
 	}
-	option = { #End of the cycle
+	option = { #BTS Custom covenant
 		name = "bts_covenant_rank_4"
 		trigger = {
 			has_country_flag = bts_covenant_rank_4

@@ -128,55 +128,6 @@ starbase_event = {
 	}
 }
 
-# End of the cycle check 
-country_event = {
-	id = bts.20
-    hide_window = yes
-	is_triggered_only = yes
-
-    immediate = {
-        if = {
-            limit = {
-				astral_rifts_completed >= @bts_covenant_nb_rifts_to_survive
-            }
-            country_event = { id = bts.21 } # Won End of the Cycle race
-        }
-        else = {
-            country_event = { id = utopia.3320 } # Default End of the Cycle behavior
-        }
-    }
-}
-
-country_event = {
-	id = bts.21
-	title = end_covenant_surive_event_title
-	picture = GFX_evt_unspeakable_horror
-	show_sound = event_red_alert
-	location = root
-
-	is_triggered_only = yes
-
-	desc = end_covenant_survive_event_desc
-
-    immediate = {
-        every_owned_planet = {
-            limit = { has_modifier = covenant_shroud_marked }
-            remove_modifier = covenant_shroud_marked
-        }
-        every_subject = {
-            every_owned_planet = {
-                limit = { has_modifier = covenant_shroud_marked } 
-                remove_modifier = covenant_shroud_marked
-            }
-        }
-    }
-
-    option = {
-        name = OK
-    }
-
-}
-
 # Megastructure Info event
 country_event = { 
 	id = bts.22
@@ -191,7 +142,7 @@ country_event = {
 	desc = bts_mega_aetherophasic_collapser_unlocked_desc
 
 	trigger = {
-		has_country_flag = end_covenant_confirmed
+		has_country_flag = bts_covenant_confirmed
 		check_variable = {
 			which = bts_covenant_rank
 			value >= @bts_mega_aetherophasic_collapser_0_favor_cost
@@ -203,7 +154,7 @@ country_event = {
 	}
 }
 
-# End of the cycle powers
+# BTS custom covenant powers
 country_event = {
 	id = bts.30
 	title = "utopia.3000.name"

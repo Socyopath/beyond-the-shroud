@@ -1,7 +1,7 @@
 utility_component_template = {
 	key = "BTS_COVENANT_MARK"
 	size = aux
-	icon = "GFX_ship_part_end_covenant_aux"
+	icon = "GFX_ship_part_bts_covenant_aux"
 	icon_frame = 1
 	power = -20
 	resources = {

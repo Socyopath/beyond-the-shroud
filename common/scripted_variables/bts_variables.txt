@@ -1,7 +1,3 @@
-# End Of The Cycle Covenant
-@bts_covenant_days_before_end = 18000
-@bts_covenant_nb_rifts_to_survive = 2
-
 # Decisions
 @decision_bts_zroni_astral_spliting_energy_cost = 2000
 @decision_bts_zroni_astral_spliting_astral_threads_cost = 100

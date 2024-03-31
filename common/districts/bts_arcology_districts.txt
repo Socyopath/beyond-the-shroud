@@ -21,7 +21,7 @@ district_arcology_psionic = {
                 has_country_flag = instrument_covenant_confirmed
                 has_country_flag = eater_covenant_confirmed
                 has_country_flag = whisperers_covenant_confirmed
-                has_country_flag = end_covenant_confirmed
+                has_country_flag = bts_covenant_confirmed
             }
 		}
 	}
@@ -79,7 +79,7 @@ district_arcology_religious = {
                 has_country_flag = instrument_covenant_confirmed
                 has_country_flag = eater_covenant_confirmed
                 has_country_flag = whisperers_covenant_confirmed
-                has_country_flag = end_covenant_confirmed
+                has_country_flag = bts_covenant_confirmed
             }
 			OR = {
 				is_spiritualist = yes
