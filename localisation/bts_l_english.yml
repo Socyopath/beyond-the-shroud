@@ -76,7 +76,7 @@ bts_mega_aetherophasic_collapser_5_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_
 
 # Megastructures
 bts_mega_aetherophasic_collapser_unlocked: "Aetherophasic Collapser"
-bts_mega_aetherophasic_collapser_unlocked_desc: "Your dedication to the §Y$bts_covenant_name_full$§! is beginning to give you visions of unimaginable concepts. The entity has §Yrevealed plans for the construction of a megastructure§! designed to merge the shroud with our reality. This is the §MAetherophase Collapser§!."
+bts_mega_aetherophasic_collapser_unlocked_desc: "Your dedication to the §Y[root.GetShroudPatron]§! is beginning to give you visions of unimaginable concepts. The entity has §Yrevealed plans for the construction of a megastructure§! designed to merge the shroud with our reality. This is the §MAetherophase Collapser§!."
 bts_requires_no_existing_aetherophasic_collapser: "$TRIGGER_FAIL$Cannot build more than one Aetherophasic Collapser."
 bts_mega_aetherophasic_collapser_0_MEGASTRUCTURE_DETAILS: "The Aetherophasic Collapser, which will rip apart the barriers that exist between this world and the Shroud and §Menable powerful psionic beings to be summoned§!."
 bts_mega_aetherophasic_collapser_0: "Aetherophasic Collapser Frame"
@@ -145,7 +145,7 @@ tr_astral_studies_adopt_event_name: "$tradition_astral_studies$: Spacetime analy
 tr_astral_studies_adopt_event_desc: "We sent a request for a dimensional echo inside the scars and received a response from all the other rifts in the galaxy. By analyzing the data received, we were able to obtain information on systems hosting an astral anomaly."
 
 tr_astral_studies_finish: "$tr_astral_studies_adopt$ Finished"
-tr_astral_studies_finish_desc: "§YInvokes an astral rift in an owned system§!. If no system is available, the invocation is delayed until a system is available (monthly check)."
+tr_astral_studies_finish_desc: "Unlock a §Ydecision§! (§RONLY ONE USE§!) which can be used to transform an §Yastral scar§! into an §Yastral rift§!."
 tr_astral_studies_finish_event_name: "$tradition_astral_studies$: Spacetime tearing report"
 tr_astral_studies_finish_event_desc: "After years of astral study, we've become masters of the art. We've created an astral rift directly inside our own system to draw even more power from it."
 tr_astral_studies_finish_event_target_system: "Invokes an §YAstral Rift§! in system §Y[bts_astral_studies_target_system.GetName]§!."
