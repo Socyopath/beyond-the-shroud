@@ -143,7 +143,7 @@ country_event = {
 	}
 
 	option = { # End of cycle special powers
-		name = bts_eoc_option_powers
+		name = bts_covenant_option_powers
 		trigger = {
 			bts_can_use_powers = yes
 		}

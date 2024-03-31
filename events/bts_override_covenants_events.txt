@@ -431,13 +431,13 @@ country_event = {
 		}
 		hidden_effect = {
 			set_saved_date = {
-				key = bts_eoc_final_date
-				days_from_present = @bts_eoc_days_before_end
-				expires = @bts_eoc_days_before_end
+				key = bts_covenant_final_date
+				days_from_present = @bts_covenant_days_before_end
+				expires = @bts_covenant_days_before_end
 			}
 			set_timed_country_flag = { 
-				flag = bts_eoc_waiting_final
-				days = @bts_eoc_days_before_end
+				flag = bts_covenant_waiting_final
+				days = @bts_covenant_days_before_end
 			}
 			every_owned_planet = {
 				limit = { NOT = { has_modifier = covenant_shroud_marked } }
@@ -449,7 +449,7 @@ country_event = {
 					add_modifier = { modifier = covenant_shroud_marked days = -1 }
 				}
 			}
-			country_event = { id = bts.20 days = @bts_eoc_days_before_end }
+			country_event = { id = bts.20 days = @bts_covenant_days_before_end }
 		}
 		begin_event_chain = {
 			event_chain = "bts_covenant_chain"

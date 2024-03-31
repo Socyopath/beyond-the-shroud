@@ -55,18 +55,18 @@ telepath = {
 				exists = owner
 				owner = { has_country_flag = end_covenant_confirmed }
 			}
-			physics_research = @bts_eoc_phy_per_telepath_0
-			engineering_research = @bts_eoc_eng_per_telepath_0
-			society_research = @bts_eoc_soc_per_telepath_0
+			physics_research = @bts_covenant_phy_per_telepath_0
+			engineering_research = @bts_covenant_eng_per_telepath_0
+			society_research = @bts_covenant_soc_per_telepath_0
 		}
 		produces = {
 			trigger = {
 				exists = owner
 				owner = { has_country_flag = bts_covenant_rank_1 }
 			}
-			physics_research = @bts_eoc_phy_per_telepath_1
-			engineering_research = @bts_eoc_eng_per_telepath_1
-			society_research = @bts_eoc_soc_per_telepath_1
+			physics_research = @bts_covenant_phy_per_telepath_1
+			engineering_research = @bts_covenant_eng_per_telepath_1
+			society_research = @bts_covenant_soc_per_telepath_1
 		}
 
 		upkeep = {

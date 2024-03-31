@@ -7,10 +7,19 @@ bts_covenant_modifier_0 = {
 	country_covenant_influence_produces_add = 2
 }
 
+bts_covenant_modifier_1 = {
+	station_gatherers_produces_mult = 0.5
+	station_researchers_produces_mult = 0.5
+	planet_jobs_produces_mult = 0.5
+	country_naval_cap_mult = 0.5
+	country_starbase_capacity_add = 5
+	country_covenant_influence_produces_add = 2
+}
+
 agenda_psionic_supremacy_finish_end = {
 	planet_psionic_jobs_produces_mult = 0.2
 	category_psionics_research_speed_mult = 0.4
-	country_sr_zro_cost_mult = @bts_bts_agenda_psionic_supremacy_covenant_zro_cost_mult
+	country_sr_zro_cost_mult = @bts_agenda_psionic_supremacy_covenant_zro_cost_mult
 }
 
 bts_zroni_shield_reduction_protection = {

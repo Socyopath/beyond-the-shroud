@@ -1,30 +1,30 @@
 # End Of The Cycle Covenant
-@bts_eoc_days_before_end = 18000
-@bts_eoc_nb_rifts_to_survive = 2
+@bts_covenant_days_before_end = 18000
+@bts_covenant_nb_rifts_to_survive = 2
 
 # Decisions
 @decision_bts_zroni_astral_spliting_energy_cost = 2000
 @decision_bts_zroni_astral_spliting_astral_threads_cost = 100
 
 ## Favor bonus
-@bts_eoc_phy_per_telepath_0 = 2  
-@bts_eoc_soc_per_telepath_0 = 5
-@bts_eoc_eng_per_telepath_0 = 2
-@bts_eoc_phy_per_telepath_1 = 2 # Total 2 + 2 = 4
-@bts_eoc_soc_per_telepath_1 = 5 # Total 5 + 5 = 10
-@bts_eoc_eng_per_telepath_1 = 2 # Total 2 + 2 = 4
+@bts_covenant_phy_per_telepath_0 = 2  
+@bts_covenant_soc_per_telepath_0 = 5
+@bts_covenant_eng_per_telepath_0 = 2
+@bts_covenant_phy_per_telepath_1 = 2 # Total 2 + 2 = 4
+@bts_covenant_soc_per_telepath_1 = 5 # Total 5 + 5 = 10
+@bts_covenant_eng_per_telepath_1 = 2 # Total 2 + 2 = 4
 
 ## Favor generation
-@bts_eoc_favor_per_month_base = 0.03
+@bts_covenant_favor_per_month_base = 0.03
 
-@bts_eoc_favor_per_month_spirit = 0.03
-@bts_eoc_favor_per_month_f_spirit = 0.07
+@bts_covenant_favor_per_month_spirit = 0.03
+@bts_covenant_favor_per_month_f_spirit = 0.07
 
-@bts_eoc_favor_per_month_rift = 0.18
+@bts_covenant_favor_per_month_rift = 0.18
 
-@bts_eoc_favor_per_month_trad = 0.07
+@bts_covenant_favor_per_month_trad = 0.07
 
-@bts_bts_agenda_psionic_supremacy_covenant_zro_cost_mult = -0.15
+@bts_agenda_psionic_supremacy_covenant_zro_cost_mult = -0.15
 @bts_enc_sanctum_jobs = 5
 
 ##  Techs
@@ -114,18 +114,18 @@
 @bts_mega_aetherophasic_collapser_5_favor_cost = 500
 
 # Powers
-@bts_eoc_power_summon_1_zro_cost = 1000
-@bts_eoc_power_summon_1_astral_threads_cost = 100
-@bts_eoc_power_summon_1_shroud_delve_cooldown = 360
-@bts_eoc_power_summon_2_zro_cost = 2000
-@bts_eoc_power_summon_2_astral_threads_cost = 200
-@bts_eoc_power_summon_2_shroud_delve_cooldown = 720
-@bts_eoc_power_summon_3_zro_cost = 4000
-@bts_eoc_power_summon_3_astral_threads_cost = 500
-@bts_eoc_power_summon_3_shroud_delve_cooldown = 1080
-@bts_eoc_power_summon_4_zro_cost = 20000
-@bts_eoc_power_summon_4_astral_threads_cost = 2000
-@bts_eoc_power_summon_4_shroud_delve_cooldown = 3600
+@bts_covenant_power_summon_1_zro_cost = 1000
+@bts_covenant_power_summon_1_astral_threads_cost = 100
+@bts_covenant_power_summon_1_shroud_delve_cooldown = 360
+@bts_covenant_power_summon_2_zro_cost = 2000
+@bts_covenant_power_summon_2_astral_threads_cost = 200
+@bts_covenant_power_summon_2_shroud_delve_cooldown = 720
+@bts_covenant_power_summon_3_zro_cost = 4000
+@bts_covenant_power_summon_3_astral_threads_cost = 500
+@bts_covenant_power_summon_3_shroud_delve_cooldown = 1080
+@bts_covenant_power_summon_4_zro_cost = 20000
+@bts_covenant_power_summon_4_astral_threads_cost = 2000
+@bts_covenant_power_summon_4_shroud_delve_cooldown = 3600
 
 
 # Modules

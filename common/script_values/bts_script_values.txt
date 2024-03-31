@@ -1,22 +1,22 @@
 bts_end_of_the_cycle_favor_per_month = {
-    base = @bts_eoc_favor_per_month_base
+    base = @bts_covenant_favor_per_month_base
     modifier = {
         has_ethic = ethic_spiritualist
-		add = @bts_eoc_favor_per_month_spirit
+		add = @bts_covenant_favor_per_month_spirit
 	}
     modifier = {
         has_ethic = ethic_fanatic_spiritualist
-		add = @bts_eoc_favor_per_month_f_spirit
+		add = @bts_covenant_favor_per_month_f_spirit
 	}
 
     modifier = {
         astral_rifts_completed >= 1
-        add = @bts_eoc_favor_per_month_rift
+        add = @bts_covenant_favor_per_month_rift
     }
     
     modifier = {
         has_tradition = tr_astral_studies_adopt
-		add = @bts_eoc_favor_per_month_trad
+		add = @bts_covenant_favor_per_month_trad
 	}
 }
 
