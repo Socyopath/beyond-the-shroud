@@ -342,10 +342,7 @@ bts_tech_zro_infusion = {
 			factor = 0
 			NOR = {
 				has_relic = r_zro_crystal
-				check_variable = {
-					which = bts_covenant_rank
-					value >= @bts_tech_zro_infusion_favor_cost
-				}
+				bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_tech_zro_infusion_favor_cost }
 			}
 		}
 		modifier = {
@@ -398,10 +395,7 @@ bts_tech_shroud_destabilizer = {
 			factor = 0
 			NOR = {
 				has_relic = r_zro_crystal
-				check_variable = {
-					which = bts_covenant_rank
-					value >= @bts_tech_shroud_destabilizer_favor_cost
-				}
+				bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_tech_shroud_destabilizer_favor_cost }
 			}
 		}
 		modifier = {

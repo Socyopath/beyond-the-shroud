@@ -4,7 +4,7 @@ tradition_astral_studies = {
 	finish_bonus = "tr_astral_studies_finish"
 
 	potential = {
-		has_ascension_perk = ap_archaeoengineers
+		has_astral_planes_dlc = yes
 	}
 
 	traditions = {
