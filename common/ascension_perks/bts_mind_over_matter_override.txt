@@ -12,7 +12,7 @@ ap_mind_over_matter = {
 			NOT = { has_trait = trait_mechanical }
 		}
 		if = {
-			limit = { has_origin = origin_bts_zroni }
+			limit = { has_relic = r_zro_crystal }
 			custom_tooltip = {
                 fail_text = "requires_ascension_perks_1"
                 num_ascension_perks > 0
