@@ -32,6 +32,26 @@ on_destroy_planet_with_BTS_PLANET_KILLER_COVENANT_unqueued = {
 }
 
 
+# Triggers event when ship enters a system. It's usually better to use on_entering_system_first_time or on_entering_system_fleet
+# Scope = Ship
+# From = System
+# FromFrom = Country
+on_entering_system = {
+	events = {
+		bts.100 # Update zroni shield
+	}
+}
+
+# Scope: Ship Event
+#A ship has been built
+# Root = Ship
+# From = Planet
+on_ship_built = {
+	events = {
+		bts.100 # Update zroni shield
+	}
+}
+
 # This = owner of fleet 1
 # From = owner of fleet 2
 # FromFrom = fleet 1
