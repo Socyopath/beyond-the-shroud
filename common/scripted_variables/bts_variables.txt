@@ -74,7 +74,7 @@
 @bts_tech_prescience_mia_time = -0.75
 
 @bts_tech_shrouded_shields_cost = 48000
-@bts_tech_shrouded_shields_levels = 5
+@bts_tech_shrouded_shields_levels = 10
 @bts_tech_shrouded_shields_hardening = 0.10
 @bts_tech_shrouded_shields_hit_point = 0.05
 
