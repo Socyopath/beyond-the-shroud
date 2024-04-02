@@ -3,7 +3,9 @@ bts_building_covenant_sanctum = {
 
 	category = government
 
-	base_cap_amount = 1
+	empire_limit = {
+		base = 1
+	}
 
 	potential = {
 		host_has_dlc = "Utopia"
@@ -26,7 +28,12 @@ bts_building_covenant_sanctum = {
 	}
 
 	planet_modifier = {
-		job_telepath_add = @bts_enc_sanctum_jobs
+		job_telepath_add = @bts_covenant_sanctum_telepath_jobs
+	}
+
+	country_modifier = {
+		shroud_delve_cooldown = @bts_covenant_sanctum_shroud_cooldown_mult
+		ship_windup_mult = @bts_covenant_sanctum_ship_windup_mult
 	}
 
 	resources = {

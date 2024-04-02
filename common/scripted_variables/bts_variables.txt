@@ -27,7 +27,9 @@
 @bts_covenant_phy_per_telepath_1 = 2 # Total 2 + 2 = 4
 @bts_covenant_soc_per_telepath_1 = 5 # Total 5 + 5 = 10
 @bts_covenant_eng_per_telepath_1 = 2 # Total 2 + 2 = 4
-@bts_enc_sanctum_jobs = 5
+@bts_covenant_sanctum_telepath_jobs = 3
+@bts_covenant_sanctum_shroud_cooldown_mult = -0.10
+@bts_covenant_sanctum_ship_windup_mult = -0.15
 
 ## Rank 2 Bonus
 @bts_covenant_modifier_1_speed_mult = 0.30
