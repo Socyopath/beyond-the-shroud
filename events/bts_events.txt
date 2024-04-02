@@ -247,27 +247,11 @@ country_event = {
 	is_triggered_only = yes
 
     immediate = {
-        random_owned_megastructure = {
-            limit = {
-                bts_is_aetherophasic_collapser = yes
-            }
-            save_event_target_as = bts_aetherophasic_collapser_summon
-        }
-		create_fleet = {
-			name = "NAME_Psionic_Avatar"
-			settings = {
-				spawn_debris = no
-			}
-			effect = {
-				set_owner = root
-				create_ship = {
-					name = "NAME_Avatar"
-					design = "NAME_Shroud_Avatar"
-					prefix = no
-					upgradable = no
-				}
-				set_location = event_target:bts_aetherophasic_collapser_summon
-			}
+		bts_summon_power = {
+			FLEET_NAME = "NAME_Psionic_Avatar"
+			SHIP_NAME = "NAME_Avatar"
+			SHIP_DESIGN = "NAME_Shroud_Avatar"
+			SHIP_DESIGN_ZRONI = "NAME_Shroud_Avatar_zroni"
 		}
     }
 }
@@ -278,25 +262,11 @@ country_event = {
 	is_triggered_only = yes
 
     immediate = {
-        random_owned_megastructure = {
-            limit = {
-                bts_is_aetherophasic_collapser = yes
-            }
-            save_event_target_as = bts_aetherophasic_collapser_summon
-        }
-		create_fleet = {
-			name = "NAME_Corrupted_Avatar"
-			settings = {
-				spawn_debris = no
-			}
-			effect = {
-				set_owner = root
-				create_ship = {
-					name = "NAME_Corrupted_Avatar"
-					design = "NAME_Corrupted_Avatar"
-				}
-				set_location = event_target:bts_aetherophasic_collapser_summon
-            }
+		bts_summon_power = {
+			FLEET_NAME = "NAME_Corrupted_Avatar"
+			SHIP_NAME = "NAME_Corrupted_Avatar"
+			SHIP_DESIGN = "NAME_Corrupted_Avatar"
+			SHIP_DESIGN_ZRONI = "NAME_Corrupted_Avatar_zroni"
 		}
     }
 }
@@ -307,49 +277,11 @@ country_event = {
 	is_triggered_only = yes
 
     immediate = {
-        random_owned_megastructure = {
-            limit = {
-                bts_is_aetherophasic_collapser = yes
-            }
-            save_event_target_as = bts_aetherophasic_collapser_summon
-        }
-		if = {
-			limit = {
-				has_technology = bts_tech_zroni_shield
-			}
-			create_fleet = {
-				name = "NAME_Shroud_Manifestation_zroni"
-				settings = {
-					spawn_debris = no
-				}
-				effect = {
-					set_owner = root
-					create_ship = {
-						name = "NAME_Fragment"
-						design = "NAME_Shroud_Manifestation_zroni"
-					}
-					set_location = event_target:bts_aetherophasic_collapser_summon
-				}
-			}
-			last_created_ship = {
-				bts_update_ship_shield_reduction_zroni_shield = yes
-			}
-		}
-		else = {
-			create_fleet = {
-				name = "NAME_Shroud_Manifestation"
-				settings = {
-					spawn_debris = no
-				}
-				effect = {
-					set_owner = root
-					create_ship = {
-						name = "NAME_Fragment"
-						design = "NAME_Shroud_Manifestation"
-					}
-					set_location = event_target:bts_aetherophasic_collapser_summon
-				}
-			}
+		bts_summon_power = {
+			FLEET_NAME = "NAME_Shroud_Manifestation"
+			SHIP_NAME = "NAME_Fragment"
+			SHIP_DESIGN = "NAME_Shroud_Manifestation"
+			SHIP_DESIGN_ZRONI = "NAME_Shroud_Manifestation_zroni"
 		}
     }
 }
@@ -360,57 +292,15 @@ country_event = {
 	is_triggered_only = yes
 
     immediate = {
-        random_owned_megastructure = {
-            limit = {
-                bts_is_aetherophasic_collapser = yes
-            }
-            save_event_target_as = bts_aetherophasic_collapser_summon
-        }
-		if = {
-			limit = {
-				has_technology = bts_tech_zroni_shield
-			}
-			create_fleet = {
-				name = "NAME_The_End"
-				settings = {
-					spawn_debris = no
-				}
-				effect = {
-					set_owner = root
-					create_ship = {
-						name = "NAME_Reckoning"
-						design = "NAME_Warped_Consciousness_zroni"
-						effect = {
-							ship_event = { id = bts.342 } # Update modifiers
-						}
-					}
-					set_location = event_target:bts_aetherophasic_collapser_summon
-				}
-			}
-			last_created_ship = {
-				bts_update_ship_shield_reduction_zroni_shield = yes
-			}
+		bts_summon_power = {
+			FLEET_NAME = "NAME_The_End"
+			SHIP_NAME = "NAME_Reckoning"
+			SHIP_DESIGN = "NAME_Warped_Consciousness"
+			SHIP_DESIGN_ZRONI = "NAME_Warped_Consciousness_zroni"
 		}
-		else = {
-			create_fleet = {
-				name = "NAME_The_End"
-				settings = {
-					spawn_debris = no
-				}
-				effect = {
-					set_owner = root
-					create_ship = {
-						name = "NAME_Reckoning"
-						design = "NAME_Warped_Consciousness"
-						effect = {
-							ship_event = { id = bts.342 } # Update modifiers
-						}
-					}
-					set_location = event_target:bts_aetherophasic_collapser_summon
-				}
-			}
+		last_created_ship = {
+			ship_event = { id = bts.342 } # Update modifiers
 		}
-
 		set_variable = {
 			which = "bts_covenant_planet_killer_pop_killed"
 			value = 0

@@ -3,25 +3,57 @@ bts_update_ship_shield_reduction_zroni_shield = {
 	if = {
 		limit = {
 			bts_has_zroni_shield = yes
-            NOT = {	has_modifier = bts_zroni_shield_reduction_protection }
-			fleet.solar_system = {
+            NOT = {	has_modifier = bts_zroni_shield_zroni_storm_protection }
+			$SYSTEM|fleet.solar_system$ = {
 				has_modifier = zroni_storm
 			}
 		}
-		add_modifier = { modifier = bts_zroni_shield_reduction_protection }
+		add_modifier = { modifier = bts_zroni_shield_zroni_storm_protection }
 	}
 	else_if = {
 		limit = {
-            has_modifier = bts_zroni_shield_reduction_protection
-			fleet.solar_system = {
+            has_modifier = bts_zroni_shield_zroni_storm_protection
+			$SYSTEM|fleet.solar_system$ = {
 				NOT = {
 					has_modifier = zroni_storm
 				}
 			}
 		}
-		remove_modifier = bts_zroni_shield_reduction_protection
+		remove_modifier = bts_zroni_shield_zroni_storm_protection
 	}
 	else = {
 		
+	}
+}
+
+bts_summon_power = {
+	random_owned_megastructure = {
+		limit = {
+			bts_is_aetherophasic_collapser = yes
+		}
+		save_event_target_as = bts_aetherophasic_collapser_summon
+	}
+	create_fleet = {
+		name = $FLEET_NAME$
+		settings = {
+			spawn_debris = no
+		}
+		effect = {
+			set_owner = root
+			create_ship = {
+				name = $SHIP_NAME$
+				design = $SHIP_DESIGN$
+			}
+			if = {
+				limit = { root = { has_technology = bts_tech_zroni_shield } }
+				last_created_ship = {
+					set_ship_design = {
+						design = $SHIP_DESIGN_ZRONI$
+					}
+					bts_update_ship_shield_reduction_zroni_shield = { SYSTEM = event_target:bts_aetherophasic_collapser_summon.solar_system }
+				}
+			}
+			set_location = event_target:bts_aetherophasic_collapser_summon
+		}
 	}
 }
