@@ -18,8 +18,8 @@ district_arcology_psionic_plural: "Psi Arcologies"
 district_arcology_psionic_desc: "A true testament to our devotion to a shroud entity, these spires may hold the key to the spiritual well-being of our empire."
 
 # Council Agenda
-bts_council_agenda_agenda_psionic_supremacy_covenant_name: "$council_agenda_agenda_psionic_supremacy_name$"
-bts_council_agenda_agenda_psionic_supremacy_covenant_desc: "$council_agenda_agenda_psionic_supremacy_desc$"
+council_agenda_bts_agenda_psionic_supremacy_covenant_name: "$council_agenda_agenda_psionic_supremacy_name$"
+council_agenda_bts_agenda_psionic_supremacy_covenant_desc: "$council_agenda_agenda_psionic_supremacy_desc$"
 
 # Components
 BTS_PLANET_KILLER_COVENANT: "Consciousness Assimilator"
