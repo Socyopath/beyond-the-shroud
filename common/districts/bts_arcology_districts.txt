@@ -14,10 +14,9 @@ district_arcology_psionic = {
 
 	potential = {
 		uses_district_set = city_world
+		has_planet_flag = bts_shrouded_covenant_arcology
 		owner = {
 			exists = owner
-            bts_has_any_covenant_confirmed = yes
-			bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_district_arcology_psionic_favor_cost }
 		}
 	}
 
@@ -67,12 +66,9 @@ district_arcology_religious = {
 
 	potential = {
 		uses_district_set = city_world
+		NOT = { has_planet_flag = bts_shrouded_covenant_arcology }
 		owner = {
 			exists = owner
-			OR = {
-				bts_has_any_covenant_confirmed = no
-				NOT = { bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_district_arcology_psionic_favor_cost } }
-			}
 			OR = {
 				is_spiritualist = yes
 				has_make_spiritualist_perk = yes
