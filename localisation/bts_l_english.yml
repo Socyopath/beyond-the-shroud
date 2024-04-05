@@ -118,7 +118,9 @@ bts_covenant_establish_option: "§YForm a Covenant with the $bts_covenant_name_f
 bts_covenant_contact: "§MOne that travels beyond known borders.§!"
 bts_covenant_sealed_desc: "It is done. We have formed a Covenant with the §Y$bts_covenant_name_full$§! and already they have begun to share its secrets with our scientists and leaders. We will benefit immensely from their knowledge. The only drawback seems to be an irresistible urge to indulge our curiosity at the risk of our lives."
 bts_covenant_sealed_option: "Let's see what lies beyond."
- 
+# Rank 3 event
+utopia.2681.desc: "Our patron, the §Y[GetShroudPatron]§! seems to have relinquished a fraction of its energy in a fold of the Shroud, allowing us to perform §M$decision_bts_shrouded_covenant_arcology_project$§! §Y(Ascension $ap_arcology_project$ is required)§!. The conclave of Telepaths is certain that our close bond will allow one of us to safely absorb and wield this power. A few candidates were selected, but only one of them can be granted the privilege to wield the power of our patron. Who shall it be?"
+
 bts_covenant_chain_title: "$bts_covenant_name_full$"
 bts_covenant_favor_count: "[root.bts_covenant_rank]"
 bts_covenant_chain_desc_intro: "We have created a bond with a Shroud Entity named the §Y$bts_covenant_name_full$§!. Unspeakable, it granted us crumbs of its power for a price. There will likely be more to follow.\n\nOur telepaths theorize, that the bond can be deepened more easily if we align ourselves more with our patron.\n\nThe $bts_covenant_name_prefix$ is unstoppable and its influence must travel beyond all realities. §YSeek for rifts in our universe§! and §Yexplore them§! as much as you can to expand the influence of your divinity and §Ygain favor§!."
