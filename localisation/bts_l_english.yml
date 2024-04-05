@@ -3,6 +3,12 @@
 # Decision
 decision_bts_zroni_astral_spliting: "Archaeo-Spliting"
 decision_bts_zroni_astral_spliting_desc: "We've learned from ancient knowledge how to open this rip in space and time, but we don't know what's going to happen next."
+decision_bts_shrouded_covenant_arcology_project: "Psionic $ap_arcology_project$"
+decision_bts_shrouded_covenant_arcology_project_desc: "$decision_arcology_project_desc$"
+decision_bts_shrouded_covenant_arcology_project_effects: "Turns the planet into a §MPsionic§! §Y$pc_city$§!, increasing £housing£ §Y$PLANET_HOUSING_TITLE$§!, §YResource Production§! and §YPop Growth§! and unlocking special £district£ §YArcology Districts§! including £job_telepath£ $job_telepath_plural$ §Ydistricts§! at the expense of the planet's natural resources becoming §Rinaccessible§!, preventing all further construction of £district£ §YGenerator§!, §YMining§! and §YAgriculture Districts§!."
+decision_bts_convert_shrouded_covenant_arcology_project: "Psionic conversion $ap_arcology_project$"
+decision_bts_convert_shrouded_covenant_arcology_project_desc: "$decision_arcology_project_desc$"
+decision_bts_convert_shrouded_covenant_arcology_project_effects: "Convert this §Y$pc_city$§! planet into a §Mpsionic variant§!, providing special districts with £job_telepath£ $job_telepath_plural$"
 
 # Traits
 bts_leader_trait_covenant_chosen: "Chosen of the $bts_covenant_name_prefix$"
@@ -141,6 +147,9 @@ bts_covenant_modifier_1: "$bts_covenant_name_full$"
 origin_bts_zroni: "In the Footsteps of the Zroni"
 origin_bts_zroni_desc: "This origin begins with a civilization that perceives a mysterious energy emanating from its moon that disrupts dreams of it's own population. Intrigued and passionate about archaeology and exploration, they embark on a quest to understand how an ancient civilization as powerful as the Zroni disappeared. Their fascination with the relics of the past leads them to explore the mysteries hidden in galactic ruins, seeking answers through the stars."
 origin_bts_zroni_effects: "- Technology §Y$tech_archaeostudies$§! researched\n- §MZroni §!Abandoned Colony Ruins on capital's moon\n- §MMind Over Matter§! require §Y1§! ascension perk instead of §Y2§!"
+
+# Ascension
+bts_shrouded_covenant_arcology_project: "§Y$pc_city$§! can be turned into a §Mpsionic variant§!, providing special districts with £job_telepath£ $job_telepath_plural$"
 
 # Tradition
 tradition_astral_studies: "Astral Studies"
