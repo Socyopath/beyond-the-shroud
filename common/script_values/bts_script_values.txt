@@ -10,7 +10,7 @@ bts_covenant_favor_per_month = {
 	}
 
     modifier = {
-        astral_rifts_completed >= 1
+        astral_rifts_completed >= @bts_covenant_favor_rift_required
         add = @bts_covenant_favor_per_month_rift
     }
     
