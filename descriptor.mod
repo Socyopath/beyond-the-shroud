@@ -11,4 +11,4 @@ tags={
 	"Balance"
 }
 name="Beyond The Shroud"
-supported_version="3.11.2"
+supported_version="3.11.3"
