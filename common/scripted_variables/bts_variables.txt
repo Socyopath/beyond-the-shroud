@@ -6,11 +6,16 @@
 ## Favor generation
 @bts_covenant_favor_per_month_base = 0.03
 
-@bts_covenant_favor_per_month_spirit = 0.03
-@bts_covenant_favor_per_month_f_spirit = 0.07
+@bts_covenant_favor_per_month_liked_civic = 0.04
+@bts_covenant_favor_per_month_disliked_civic = -0.02
+
+@bts_covenant_favor_per_month_liked_ethic = 0.03
+@bts_covenant_favor_per_month_liked_fn_ethic = 0.07
+@bts_covenant_favor_per_month_disliked_ethic = -0.02
+@bts_covenant_favor_per_month_disliked_fn_ethic = -0.05
 
 @bts_covenant_favor_rift_required = 1
-@bts_covenant_favor_per_month_rift = 0.19
+@bts_covenant_favor_per_month_rift = 0.15
 
 @bts_covenant_favor_per_month_trad = 0.06
 

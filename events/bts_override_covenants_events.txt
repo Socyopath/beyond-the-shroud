@@ -292,10 +292,6 @@ country_event = {
 				}
 				modifier = {
 					factor = 1.3
-					has_ascension_perk = ap_archaeoengineers
-				}
-				modifier = {
-					factor = 1.3
 					has_ethic = ethic_spiritualist
 				}
 				modifier = {
@@ -303,7 +299,7 @@ country_event = {
 					has_ethic = ethic_fanatic_spiritualist
 				}
 				modifier = {
-					factor = 1.6
+					factor = 1.9
 					any_system_within_border = {
 						OR = {
 							exists = astral_rift

@@ -274,25 +274,49 @@ whisperers_favor_per_month = {
 
 bts_covenant_favor_per_month = {
     base = @bts_covenant_favor_per_month_base
-    modifier = {
-        has_ethic = ethic_spiritualist
-		add = @bts_covenant_favor_per_month_spirit
-	}
-    modifier = {
-        has_ethic = ethic_fanatic_spiritualist
-		add = @bts_covenant_favor_per_month_f_spirit
-	}
-    modifier = {
-        astral_rifts_completed >= @bts_covenant_favor_rift_required
-        add = @bts_covenant_favor_per_month_rift
+    modifier = { #Civics liked
+        OR = {
+            has_civic = civic_dimensional_worship
+            has_civic = civic_eager_explorers
+        }
+        add = @bts_covenant_favor_per_month_liked_civic
     }
-    modifier = {
+    modifier = { #Civics disliked
+        has_civic = civic_inwards_perfection
+        add = @bts_covenant_favor_per_month_disliked_civic
+    }
+    modifier = { #Ethics liked
+        has_ethic = ethic_spiritualist
+		add = @bts_covenant_favor_per_month_liked_ethic
+	}
+    modifier = { #Ethics liked
+        has_ethic = ethic_fanatic_spiritualist
+		add = @bts_covenant_favor_per_month_liked_fn_ethic
+	}
+    modifier = { #Ethics disliked
+        has_ethic = ethic_materialist
+		add = @bts_covenant_favor_per_month_disliked_ethic
+	}
+    modifier = { #Ethics disliked
+        has_ethic = ethic_fanatic_materialist
+		add = @bts_covenant_favor_per_month_disliked_fn_ethic
+	}
+    modifier = { #Tradition liked
         OR = {
             has_tradition = tr_astral_studies_adopt
             has_tradition = tr_discovery_adopt
         }
 		add = @bts_covenant_favor_per_month_trad
 	}
+    modifier = { #Other things liked
+        any_system_within_border = {
+            OR = {
+                exists = astral_rift
+                any_system_planet = { has_resource = { type = astral_threads amount > 0 } }
+            }
+        }
+        add = @bts_covenant_favor_per_month_rift
+    }
 }
 
 current_covenant_favor_per_month = {
