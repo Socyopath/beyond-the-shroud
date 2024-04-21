@@ -16,7 +16,7 @@ bts_tech_occultism = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOR = {
+			NAND = {
 				has_relic = r_zro_crystal
 				has_tradition = tr_psionics_finish
 			}
@@ -55,7 +55,7 @@ bts_tech_otherworldly_knowledge_1 = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOR = {
+			NAND = {
 				has_relic = r_zro_crystal
 				has_tradition = tr_psionics_finish
 			}
@@ -127,7 +127,7 @@ bts_tech_mind_evocation_1 = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOR = {
+			NAND = {
 				has_relic = r_zro_crystal
 				has_tradition = tr_psionics_mind_readers
 			}
@@ -202,7 +202,7 @@ bts_tech_psychic_coalition = {
 		factor = @repatableTechFactor
 		modifier = {
 			factor = 0
-			NOR = {
+			NAND = {
 				has_relic = r_zro_crystal
 				has_tradition = tr_psionics_mind_readers
 			}
@@ -340,7 +340,7 @@ bts_tech_zro_infusion = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOR = {
+			NAND = {
 				has_relic = r_zro_crystal
 				bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_tech_zro_infusion_favor_cost }
 			}
@@ -393,7 +393,7 @@ bts_tech_shroud_destabilizer = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOR = {
+			NAND = {
 				has_relic = r_zro_crystal
 				bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_tech_shroud_destabilizer_favor_cost }
 			}
