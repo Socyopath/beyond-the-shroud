@@ -53,7 +53,7 @@
 
 ## Rank 4 Bonus
 @bts_tech_covenant_mark_cost = 48000
-@bts_tech_covenant_mark_jumpdrive_range_mult = 1.00
+@bts_tech_covenant_mark_jumpdrive_range_mult = 0.50
 
 #  Techs
 @bts_tech_zro_crystal_factor = 20
