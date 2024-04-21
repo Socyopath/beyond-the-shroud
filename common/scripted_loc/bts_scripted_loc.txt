@@ -1,29 +1,4 @@
 defined_text = {
-	name = bts_covenant_favor_per_month
-    value = root.value:bts_covenant_favor_per_month
-}
-
-defined_text = {
-	name = bts_covenant_estimated_favor_per_1_year
-    value = root.value:bts_covenant_favor_per_1_year
-}
-
-defined_text = {
-	name = bts_covenant_estimated_favor_per_5_year
-    value = root.value:bts_covenant_favor_per_5_year
-}
-
-defined_text = {
-	name = bts_covenant_estimated_favor_per_10_year
-    value = root.value:bts_covenant_favor_per_10_year
-}
-
-defined_text = {
-	name = bts_covenant_estimated_favor_per_25_year
-    value = root.value:bts_covenant_favor_per_25_year
-}
-
-defined_text = {
     name = bts_covenant_planet_killer_pop_killed_status
     text = {
 		trigger = { 
