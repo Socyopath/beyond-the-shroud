@@ -156,6 +156,9 @@ country_event = {
 
 	option = {
 		name = OK
+		hidden_effect = {
+			set_country_flag = bts_can_build_aetherophasic_collapser
+		}
 	}
 }
 
