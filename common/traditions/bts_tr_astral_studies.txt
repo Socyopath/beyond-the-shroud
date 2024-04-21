@@ -1,6 +1,5 @@
 tr_astral_studies_adopt = {
 	possible = {
-		has_ascension_perk = ap_archaeoengineers
 		custom_tooltip = {
 			fail_text = bts_no_astral_rift_scar_in_system
 			any_system_within_border = {
