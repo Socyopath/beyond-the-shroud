@@ -282,14 +282,15 @@ bts_covenant_favor_per_month = {
         has_ethic = ethic_fanatic_spiritualist
 		add = @bts_covenant_favor_per_month_f_spirit
 	}
-
     modifier = {
         astral_rifts_completed >= @bts_covenant_favor_rift_required
         add = @bts_covenant_favor_per_month_rift
     }
-    
     modifier = {
-        has_tradition = tr_astral_studies_adopt
+        OR = {
+            has_tradition = tr_astral_studies_adopt
+            has_tradition = tr_discovery_adopt
+        }
 		add = @bts_covenant_favor_per_month_trad
 	}
 }

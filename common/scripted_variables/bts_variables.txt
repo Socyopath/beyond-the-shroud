@@ -9,10 +9,10 @@
 @bts_covenant_favor_per_month_spirit = 0.03
 @bts_covenant_favor_per_month_f_spirit = 0.07
 
-@bts_covenant_favor_rift_required = 2
-@bts_covenant_favor_per_month_rift = 0.18
+@bts_covenant_favor_rift_required = 1
+@bts_covenant_favor_per_month_rift = 0.19
 
-@bts_covenant_favor_per_month_trad = 0.07
+@bts_covenant_favor_per_month_trad = 0.06
 
 ## Starting Bonus
 @bts_covenant_modifier_0_speed_mult = 0.15
