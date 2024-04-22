@@ -8,6 +8,9 @@ bts_mega_aetherophasic_collapser_0 = {
         cost = {
             astral_threads = @bts_mega_aetherophasic_collapser_0_cost
         }
+        produces = {
+			sr_zro = @bts_mega_aetherophasic_collapser_0_zro
+		}
     }
 
 	country_modifier = {
@@ -100,6 +103,9 @@ bts_mega_aetherophasic_collapser_1 = {
         cost = {
             astral_threads = @bts_mega_aetherophasic_collapser_1_cost
         }
+        produces = {
+			sr_zro = @bts_mega_aetherophasic_collapser_1_zro
+		}
     }
 
 	country_modifier = {

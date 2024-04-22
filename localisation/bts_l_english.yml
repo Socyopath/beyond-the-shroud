@@ -159,8 +159,8 @@ bts_covenant_modifier_1: "$bts_covenant_name_full$"
 
 # Origin
 origin_bts_zroni: "In the Footsteps of the Zroni"
-origin_bts_zroni_desc: "This origin begins with a civilization that perceives a mysterious energy emanating from its moon that disrupts dreams of it's own population. This leads them to embark on a quest to understand how an ancient civilization as powerful as the Zroni disappeared. Their fascination with the relics of the past leads them to explore the mysteries hidden in galactic ruins, seeking answers through the stars."
-origin_bts_zroni_effects: "- Technology §Y$tech_archaeostudies$§! researched\n- §MZroni §!Abandoned Colony Ruins on capital's moon\n- §MMind Over Matter§! require §Y1§! ascension perk instead of §Y2§!"
+origin_bts_zroni_desc: "This origin begins with a civilization that perceives a mysterious energy emanating from its moon that disrupts dreams of it's own population. This leads them embark on a quest to understand how an ancient civilization as powerful as the Zroni disappeared. Their fascination with the relics of the past leads them to explore the mysteries hidden in galactic ruins, seeking answers through the stars."
+origin_bts_zroni_effects: "- Technology §Y$tech_archaeostudies$§! researched\n- §MZroni §!Abandoned Colony Ruins on capital's moon\n"
 
 # Ascension
 bts_shrouded_covenant_arcology_project: "§Y$pc_city$§! can be turned into a §Mpsionic variant§!, providing special districts with £job_telepath£ $job_telepath_plural$"
