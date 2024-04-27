@@ -74,6 +74,29 @@ entity = {
 		
 	scale = 10
 }
+entity = {
+	name = "bts_mega_aetherophasic_collapser_entity"
+	cull_radius = 1000
+	scale = 10.0
+
+	locator = { name = "loc104" position = { 0 0 0 } rotation = { 0 0 0 } }
+
+	attach = { loc104 = "bts_mega_aetherophasic_collapser_core_entity" }
+}
+
+entity = {
+	name = "bts_mega_aetherophasic_collapser_core_entity"
+	cull_radius = 1000
+	pdxmesh = "ai_01_station_large_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_hum_idle_01" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_hum_idle_02" } }
+	}
+	scale = 1.5
+
+}
 
 entity = {
 	name = "bts_shroud_rift_entity"

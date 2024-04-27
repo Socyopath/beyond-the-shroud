@@ -304,7 +304,7 @@ bts_mega_aetherophasic_collapser_4 = {
 }
 
 bts_mega_aetherophasic_collapser_5 = {
-	entity = "quantum_catapult_stage_3_entity"
+	entity = "bts_mega_aetherophasic_collapser_entity"
 	construction_entity = "quantum_catapult_stage_3_entity"
 	portrait = "GFX_megastructure_aetherophasic_collapser"
     build_time = @bts_mega_aetherophasic_collapser_5_build_time
