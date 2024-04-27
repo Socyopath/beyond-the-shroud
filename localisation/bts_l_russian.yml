@@ -1,0 +1,218 @@
+﻿l_russian:
+  
+ # Decision 
+ decision_bts_zroni_astral_spliting: "Архео-Расщепление" 
+ decision_bts_zroni_astral_spliting_desc: "Из древних знаний мы узнали, как открыть эту брешь в пространстве и времени, но мы не знаем, что произойдет дальше."  
+ decision_bts_shrouded_covenant_arcology_project: "Псионический $ap_arcology_project$" 
+ decision_bts_shrouded_covenant_arcology_project_desc: "$decision_arcology_project_desc$" 
+ decision_bts_shrouded_covenant_arcology_project_effects: "Превращает планету в §MPsionic§! §Y$pc_city$§!, повышая £housing£ §Y$PLANET_HOUSING_TITLE$§!, §YПроизводство ресурсов§! и §YРост населения§! и unlocking special £district£ §YArcology Districts§! including £job_telepath£ $job_telepath_plural$ §Ydistricts§! at the expense of the planet's natural resources becoming §Rinaccessible§!, preventing all further construction of £district£ §YGenerator§!, §YMining§! and §YAgriculture Districts§!."  <"Превращает планету в §MPsionic§! §Y$pc_city$§!, увеличение £housing£ §Y$PLANET_HOUSING_TITLE$§!, §YПроизводство ресурсов§! и §YРост населения§! и разблокирование особых £district£ §YАркологических районов§!, включая §Y$pc_city$§1 §Y$pc_city$§2 §Yрайонов§! за счет превращения природных ресурсов планеты в §Y$pc_city$§4_5, предотвращая дальнейшее строительство £district£ §YГенератор§!, §YГорнодобывающее производство§! и §YСельскохозяйственных районов§!.">  #NT!
+ decision_bts_convert_shrouded_covenant_arcology_project: "Псионическое преобразование $ap_arcology_project$"
+ decision_bts_convert_shrouded_covenant_arcology_project_desc: "$decision_arcology_project_desc$" 
+ decision_bts_convert_shrouded_covenant_arcology_project_effects: "Преобразуйте этот §Y$pc_city$§! планету в §Mпсионический вариант§!, предоставляющий особые районы с £job_telepath£ $job_telepath_plural$"
+  
+ # Traits 
+ bts_leader_trait_covenant_chosen: "Избран $bts_covenant_name_prefix$ом"  
+ bts_leader_trait_covenant_chosen_desc: "Этот лидер был избран, чтобы обладать силой непостижимого существа из Покрова. Поддерживаемый сверхъестественными энергиями, смерть теперь им чужда."  
+  
+ # Buildings 
+ bts_building_covenant_sanctum:   "Святилище $bts_covenant_name_prefix$ка"
+ bts_building_covenant_sanctum_desc: "Святилище - это место, посвященное общению с $bts_covenant_name_full$ом. Здесь мы делимся секретами вполголоса, передаем новые знания, чтобы сохранить их в тайне, и где наш шепот присоединяется к хору." 
+  
+ # Districts 
+ district_arcology_psionic: "Пси-аркология" 
+ district_arcology_psionic_plural: "Пси-аркологии"  
+ district_arcology_psionic_desc: "Являясь истинным свидетельством нашей преданности сущности покрова, эти шпили могут стать ключом к духовному благополучию нашей империи." 
+  
+ # Council Agenda 
+ council_agenda_bts_agenda_psionic_supremacy_covenant_name: "$council_agenda_agenda_psionic_supremacy_name$"  
+ council_agenda_bts_agenda_psionic_supremacy_covenant_desc: "$council_agenda_agenda_psionic_supremacy_desc$"  
+ agenda_psionic_supremacy_finish_bts_covenant: "$council_agenda_agenda_psionic_supremacy_name$ $agenda_ref$" 
+ agenda_psionic_supremacy_finish_bts_covenant_desc: "$council_agenda_agenda_psionic_supremacy_desc$"  
+ # Components 
+ BTS_PLANET_KILLER_COVENANT: "Ассимилятор сознания"
+ BTS_PLANET_KILLER_COVENANT_DESC: "Ассимилируй сознание всех живых существ на планете и увеличивая свою силу по мере того, как будете убивать больше людей."
+ BTS_PLANET_KILLER_COVENANT_ACTION: "Ассимилировать всё сознание"
+ FLEETORDER_DESTROY_PLANET_WITH_BTS_PLANET_KILLER_COVENANT: "Готовлюсь к ассимиляции всех сознаний $PLANET|Y$." 
+ MESSAGE_DESC_FOR_BTS_PLANET_KILLER_COVENANT: "сознание всех форм жизни было поглощено"  
+ bts_planet_destruction_name: "Сознание ассимилировано"
+ bts_planet_destruction_desc: "Псионическая сила [From.From.GetName] рассеивается, и на мгновение все утихает.  Внизу, на [From.GetName] люди стоят с разинутыми ртами (или местным физиогномическим эквивалентом), восхищенные мощными и личными истинами, которые псионический луч высвобождает из запутанной паутины их разума.\n\nЕсли они не понимали этого раньше, то теперь интуитивно понимают: мы все являемся частью чего-то большего." 
+ bts_planet_destruction_tooltip: "Любые §Y$trait_mechanical$§!, §Y$trait_machine_unit$§! или §Y$trait_hive_mind$§! жители будут §Rdestroyed§! с помощью псионического резонанса.\n\nВсё оставшиеся §Ybiological§! сознание населения было поглощено, чтобы усилить §M$NAME_Reckoning$§!"  
+ ZRONI_SHIELD: "$bts_tech_zroni_shield$" 
+ ZRONI_SHIELD_DESC: "$bts_tech_zroni_shield_desc$" 
+ bts_small_zroni_shield: "$ZRONI_SHIELD$"  
+ bts_medium_zroni_shield: "$ZRONI_SHIELD$"  
+ bts_large_zroni_shield: "$ZRONI_SHIELD$" 
+ BTS_COVENANT_MARK: "Метка $bts_covenant_name_prefix$" 
+ BTS_COVENANT_MARK_DESC: "$COMPOSER_MARK_DESC$"  
+ sm_bts_shroud_destabilizer: "$bts_tech_shroud_destabilizer$" 
+ sm_bts_shroud_destabilizer_desc: "$bts_tech_shroud_destabilizer_desc$"  
+ sm_bts_shroud_destabilizer_effects: ""
+ bts_shroud_destabilizer_aura_component: "$bts_tech_shroud_destabilizer$" 
+ bts_shroud_destabilizer_aura_component_desc: "$bts_tech_shroud_destabilizer_desc$"  
+ NAME_Shroud_Avatar_zroni: "Зрони $NAME_Shroud_Avatar$"  
+ NAME_Corrupted_Avatar_zroni: "Зрони $NAME_Corrupted_Avatar$"
+ NAME_Warped_Consciousness_zroni: "Зрони $NAME_Warped_Consciousness$" 
+ NAME_Shroud_Manifestation_zroni: "зрони $NAME_Shroud_Manifestation$"  
+  
+ # Techs 
+ bts_tech_occultism: "Оккультизм"  
+ bts_tech_occultism_desc: "Позволяя покрову добраться до нас, мы быстрее доберёмся к его сути."  
+ bts_tech_otherworldly_knowledge_1: "Потусторонние знания I"  
+ bts_tech_otherworldly_knowledge_1_desc: "Изучая эзотерические знания о покрове, мы узнали, как добраться туда более эффективно."  
+ bts_tech_otherworldly_knowledge_2: "Потусторонние знания II"  
+ bts_tech_otherworldly_knowledge_2_desc: "Изучая эзотерические знания о покрове, мы узнали, как добраться туда более эффективно."  
+ bts_tech_mind_evocation_1: "Чтение разума I"  
+ bts_tech_mind_evocation_1_desc: "С нашими псионическими способностями мы способны читать мысли других империй."  
+ bts_tech_mind_evocation_2: "Чтение разума II"
+ bts_tech_mind_evocation_2_desc: "С нашими псионическими способностями мы способны читать мысли других империй."  
+ bts_tech_psychic_coalition: "Психическая общность" 
+ bts_tech_psychic_coalition_desc: "Наши телепаты научились резонировать друг с другом, чтобы усилить свою силу."  
+ bts_tech_prescience: "Предвидение" 
+ bts_tech_prescience_desc: "Мы достигли невообразимого уровня осознанности и способны предсказывать возможное будущее. Мы можем мгновенно избежать космического боя."  
+ bts_tech_shrouded_shields: "Щиты покрова"  
+ bts_tech_shrouded_shields_desc: "Мы научились усиливать свои щиты с помощью психической энергии."  
+ bts_tech_zroni_shield: "Щит Зрони" 
+ bts_tech_zroni_shield_desc: "В покрове был обнаружен древний артефакт - щит, который использовался империей Зрони. Он обладает неизмеримой прочностью и невосприимчив для штормов зрони." 
+ bts_tech_zro_infusion: "Инфузия Зро" 
+ bts_tech_zro_infusion_desc: "Поскольку мы все больше связаны с покровом, мы нашли способ наполнять наши тела зро, чтобы подпитывать себя псионической энергией вместо пищи." 
+ bts_tech_zro_infusion_effect: "£food£ Стоимость содержания $food$ от населения £pops£: §G-100%§!\n£sr_zro£ Стоимость содержания $sr_zro$ от населения £pops£: §R+$@bts_tech_zro_infusion_zro_upkeep_cost$§!"
+ bts_tech_covenant_mark: "$BTS_COVENANT_MARK$" 
+ bts_tech_covenant_mark_desc: "Мы выяснили, как пропускать псионическую энергию через наши корабли. Вооружившись этими знаниями, мы теперь можем наполнять наши корабли силами нашего покровителя." 
+ bts_tech_shroud_destabilizer: "Дестабилизатор покрова"  
+ bts_tech_shroud_destabilizer_desc: "Нам удалось наполнить нашу звездную базу чистой псионической энергией покрова. Из-за нестабильной природы этой энергии от нее исходят мощные псионические волны, разрушающие системы противника." 
+  
+ bts_mega_aetherophasic_collapser_0_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_0_favor_cost$§! требуется благосклонность §Y[from.GetShroudPatron]§!"
+ bts_mega_aetherophasic_collapser_1_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_1_favor_cost$§! требуется благосклонность §Y[from.GetShroudPatron]§!"
+ bts_mega_aetherophasic_collapser_2_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_2_favor_cost$§! требуется благосклонность §Y[from.GetShroudPatron]§!"
+ bts_mega_aetherophasic_collapser_3_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_3_favor_cost$§! требуется благосклонность §Y[from.GetShroudPatron]§!"
+ bts_mega_aetherophasic_collapser_4_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_4_favor_cost$§! требуется благосклонность §Y[from.GetShroudPatron]§!"
+ bts_mega_aetherophasic_collapser_5_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_5_favor_cost$§! требуется благосклонность §Y[from.GetShroudPatron]§!"
+  
+ # Megastructures 
+ bts_mega_aetherophasic_collapser_unlocked: "Эфирнофазный коллапсер"  
+ bts_mega_aetherophasic_collapser_unlocked_desc: "Ваша преданность §Y[root.GetShroudPatron]§! начинает давать вам видения невообразимых концепций. Сущность §Yраскрыла планы строительства мегаструктуры§!, предназначенной для слияния покрова с нашей реальностью. Это §MЭфирнофазный коллапсер§!."
+ bts_requires_no_existing_aetherophasic_collapser: "$TRIGGER_FAIL$Невозможно построить более одного Этерофазного Коллапсера."
+ bts_mega_aetherophasic_collapser_0_MEGASTRUCTURE_DETAILS: "Эфирнофазный коллапсер, который разрушит барьеры, существующие между этим миром и Покровом, и §Mпозволит призвать могущественных псионических существ§!." 
+ ts_mega_aetherophasic_collapser_0: "Каркас Эфирнофазного коллапсера"
+ bts_mega_aetherophasic_collapser_0_DESC: "Каркас, который окружает звезду, является основой для будущего Эфирнофазного коллапсера" 
+  
+ bts_mega_aetherophasic_collapser_1: "Эфирнофазный коллапсер" 
+ bts_mega_aetherophasic_collapser_1_DESC: "Эфирнофазный коллапс сжимает материю до экстремальной плотности, создавая черную дыру."  
+ bts_mega_aetherophasic_collapser_2: "Нестабильный Эфирнофазный коллапсер"  
+ bts_mega_aetherophasic_collapser_2_DESC: "Наполняя черную дыру псионической энергией, Эфирнофазный коллапсер позволяет вызывать псионических существ непосредственно в эту реальность." 
+ bts_mega_aetherophasic_collapser_3: "Крайне нестабильный Этерофазный коллапсер"  <
+ bts_mega_aetherophasic_collapser_3_DESC: "$bts_mega_aetherophasic_collapser_2_DESC$"  
+ bts_mega_aetherophasic_collapser_4: "Чрезвычайно нестабильный Эфирофазный коллапсер" 
+ bts_mega_aetherophasic_collapser_4_DESC: "$bts_mega_aetherophasic_collapser_2_DESC$"  
+ bts_mega_aetherophasic_collapser_5: "Окутанный Эфирофазный коллапсер"
+ bts_mega_aetherophasic_collapser_5_DESC: "Эфирнофазный коллапсер направил в черную дыру слишком много псионической энергии. Центральная сингулярность вошла в резонанс с самой оболочкой, создав зону нулевого измерения, которая преобразовала энергию черной дыры в псионическую волну. Вблизи эфирнофазного коллапсера две реальности сливаются воедино, бросая вызов всякой рациональности."  
+  
+ # Covenant Events 
+ bts_covenant_name_full: "Путешественник из-за пределья"  
+ bts_covenant_name_prefix: "Путешественник"  
+ bts_covenant_rank_1: "В наполненном уме нет места сомнениям."  
+ bts_covenant_rank_1_desc: "Наши телепаты теперь производят дополнительное $sr_zro$.\n\nТеперь мы можем построить £building£ §Y$bts_building_covenant_sanctum$§! на одной из наших планет."  
+ bts_covenant_rank_2: "Секретность - это безопасность."  
+ bts_covenant_rank_4: "Секреты - это оружие, не имеющее себе равных."  
+ bts_covenant_establish_desc: "По мере того, как мы простираемся к присутствию, умы наших телепатов наполняются видениями неизвестных мест. Видения сменяют друг друга все быстрее и быстрее, и они открывают для себя множество отличных от нашей реальностей. Они начинают осознавать необъятность Мультивселенной, и внезапное желание узнать больше овладевает ими. Похоже, что эти видения соответствуют древним исследователям, которые исчезли во время своих поисков Вселенной." 
+ bts_covenant_establish_option: "§YЗаключите контракт $bts_covenant_name_full$§!"  
+ bts_covenant_contact: "§MТот, который выходит за грань.§!" 
+ bts_covenant_sealed_desc: "Наконец, всё готово. Мы заключили контракт с §Y$bts_covenant_name_full$§! и они уже начали делиться своими секретами с нашими учеными и руководителями. Мы получим огромную пользу от их знаний. Единственным недостатком, по-видимому, является непреодолимое желание удовлетворить свое любопытство с риском для жизни." 
+ bts_covenant_sealed_option: "Давайте посмотрим, что находится за гранью."  
+ # Rank 3 event 
+ utopia.2681.desc: "Наш покровитель, §Y[GetShroudPatron]§!  даровал частичку своей энергии из складок Покрова, позволив нам осуществить §M$decision_bts_shrouded_covenant_arcology_project$§! §Y(Требуется Возвышение $ap_arcology_project$)§!. Конклав телепатов уверен, что наша тесная связь позволит одному из нас безопасно поглощать и использовать эту силу. Было отобрано несколько кандидатов, но только одному из них может быть предоставлена привилегия использовать силу нашего покровителя. Кто это будет?" 
+  
+ bts_covenant_chain_title: "$bts_covenant_name_full$" 
+ bts_covenant_chain_desc: ""Мы установили связь с Существом из Покрова по имени §Y$bts_covenant_name_full$§!. Невероятно, но оно предоставило нам крупицы своей силы за определенную плату. Вероятно, за этим последует еще что-то.\n\nНаши телепаты преполагают, что связь может быть легче укреплена, если мы сильнее сблизимся с нашим покровителем.\n\n$bts_covenant_name_prefix$ не остановить, и его влияние должно распространиться за пределы всех реальностей. §YИщите разломы в нашей вселенной§! и §Yисследуйте их§! как можно больше, чтобы расширить влияние своей божественности и §Yзаслужить благосклонность§!.\n\n$text_covenant_favor_info$\n$[root.bts_covenant_planet_killer_pop_killed_status]$"  
+ bts_whisperers_covenant_chain_title: "Шепчущие в пустоте"  
+ bts_whisperers_covenant_chain_desc: "Мы установили связьс Существом из Покрова по имени §YШепчущие в пустоте§!. Непостижимо, но оно предоставило нам крупицы своей силы за определенную плату. Вероятно, за этим последует еще что-то.\n\nНаши телепаты предполагают, что связь может быть легче укреплена, если мы будем больше полагаться на своего покровителя.\n\nШепчущие наслаждаются новыми знаниями, молчаливыми секретами и заговорами. Они наслаждаются простой радостью от того, что разум, наполненный до краев, трещит по швам.\n\n$text_covenant_favor_info$\n$[root.bts_covenant_planet_killer_pop_killed_status]$" 
+ bts_eater_covenant_chain_title: "Пожиратель миров"  
+ bts_eater_covenant_chain_desc: "Мы установили связьс Существом из Покрова по имени  §YПожиратель миров§!. Ненасытно, оно предоставило нам крупицы своей силы за определенную плату. Вероятно, за этим последует еще что-то.\n\nНаши телепаты преполагают, что связь может быть легче укреплена, если мы сильнее сблизимся с нашим покровителем.\n\nПожиратель испытывает нетерпеливый голод. Он жаждет войны, сладкого вкуса раздора и скорби.\n\n$text_covenant_favor_info$\n$[root.bts_covenant_planet_killer_pop_killed_status]$" 
+ bts_composer_covenant_chain_title: "Составитель цепочек"  
+ bts_composer_covenant_chain_desc: "Мы установили связь с Существом из Покрова по имени  §YСоставитель цепочек§!. Укрывая нас, оно предоставило нам крупицы своей силы за определенную плату. Вероятно, за этим последует еще что-то.\n\nНаши телепаты преполагают, что связь может быть легче укреплена, если мы сильнее сблизимся с нашим покровителем\n\nКомпозитор мечтает о плоти, свободной от ограничений эволюции и генетических манипуляций. Это говорит нам об уважении к жизни, природе и святости плоти.\n\n$text_covenant_favor_info$\n$[root.bts_covenant_planet_killer_pop_killed_status]$" 
+ bts_instrument_covenant_chain_title: "Исполнитель желаний" 
+ bts_instrument_covenant_chain_desc: "Мы создали связь с Сущностью из Покрова по имени §YИсполнитель желаний§!. Побаловав, он даровал нам крохи своей силы за определенную плату. Вероятно, за этим последует еще что-то.\n\nНаши телепаты предполагают, что связь можно будет углубить легче, если мы будем больше присоединяться к нашему покровителю.\n\nИнструмент жаждет тоски. Наслаждения, упадок и рабство – вот имя Инструмента.\n\n$text_covenant_favor_info$\n$[root.bts_covenant_planet_killer_pop_killed_status]$"
+  
+ text_covenant_total_favor: "Общая благосклонность : §Y[root.covenant_total_favor]§!"  
+ text_covenant_favor_per_month: "Благосклонность в месяц : §Y[root.covenant_favor_per_month]§!"  
+ text_covenant_favor_per_year: "Благосклонность в год  : §Y[root.covenant_favor_per_year]§!"  
+ text_covenant_estimated_years_20_favor: "§Y20§!  Благосклонность : §Y[root.covenant_estimated_years_20_favor]§! лет\n" 
+ text_covenant_estimated_years_50_favor: "§Y50§!  Благосклонность : §Y[root.covenant_estimated_years_50_favor]§! лет\n"  
+ text_covenant_estimated_years_90_favor: "§Y90§!  Благосклонность : §Y[root.covenant_estimated_years_90_favor]§! лет\n"  
+ text_covenant_estimated_years_100_favor: "§Y100§! Благосклонность : §Y[root.covenant_estimated_years_100_favor]§! лет\n"  
+ text_covenant_estimated_years_150_favor: "§Y150§! Благосклонность : §Y[root.covenant_estimated_years_150_favor]§! лет\n"  
+ text_covenant_estimated_years_200_favor: "§Y200§! Благосклонность : §Y[root.covenant_estimated_years_200_favor]§! лет\n" 
+ text_covenant_estimated_years_250_favor: "§Y250§! Благосклонность : §Y[root.covenant_estimated_years_250_favor]§! лет\n"  
+ text_covenant_estimated_years_300_favor: "§Y300§! Благосклонность : §Y[root.covenant_estimated_years_300_favor]§! лет\n"  
+ text_covenant_estimated_years_350_favor: "§Y350§! Благосклонность : §Y[root.covenant_estimated_years_350_favor]§! лет\n"  
+ text_covenant_estimated_years_400_favor: "§Y400§! Благосклонность : §Y[root.covenant_estimated_years_400_favor]§! лет\n"  
+ text_covenant_estimated_years_450_favor: "§Y450§! Благосклонность : §Y[root.covenant_estimated_years_450_favor]§! лет\n"  
+ text_covenant_estimated_years_500_favor: "§Y500§! Благосклонность : §Y[root.covenant_estimated_years_500_favor]§! лет\n"  
+ text_covenant_estimated_years_favor: "[root.scripted_text_covenant_estimated_years_20_favor][root.scripted_text_covenant_estimated_years_50_favor][root.scripted_text_covenant_estimated_years_90_favor][root.scripted_text_covenant_estimated_years_100_favor][root.scripted_text_covenant_estimated_years_150_favor][root.scripted_text_covenant_estimated_years_200_favor][root.scripted_text_covenant_estimated_years_250_favor][root.scripted_text_covenant_estimated_years_300_favor][root.scripted_text_covenant_estimated_years_350_favor][root.scripted_text_covenant_estimated_years_400_favor][root.scripted_text_covenant_estimated_years_450_favor][root.scripted_text_covenant_estimated_years_500_favor]" 
+ text_covenant_favor_info: "$text_covenant_total_favor$\n$text_covenant_favor_per_month$\n$text_covenant_favor_per_year$\n\nЛет, прежде чем достичь каждого следующего ранга благосклонности:\n$text_covenant_estimated_years_favor$" 
+  
+  
+ bts_reckoning_info: "§M$NAME_Reckoning$§! : §Y[root.bts_covenant_planet_killer_pop_killed]§! органические жители §Rkilled§!"
+  
+ bts_covenant_modifier_0: "$bts_covenant_name_full$"  
+ bts_covenant_modifier_1: "$bts_covenant_name_full$"  
+  
+ # Origin 
+ origin_bts_zroni: "По следам Зрони"  
+ origin_bts_zroni_desc: "История начинается с цивилизации, которая ощущает таинственную энергию, исходящую от своей Луны, которая возмущает грезы ее собственного населения. Это заставляет их отправиться на поиски, чтобы понять, как исчезла такая могущественная древняя цивилизация, как зрони. Их увлечение реликвиями прошлого заставляет их исследовать тайны, скрытые в галактических руинах, в поисках ответов среди звезд."  
+ origin_bts_zroni_effects: "- Технология §Y$tech_archaeostudies$§! исследована\n- §MЗрони §!Руины заброшенной колонии на столичной луне\n"
+  
+ # Ascension 
+ bts_shrouded_covenant_arcology_project: "§Y$pc_city$§! может быть преобразован в §Mпсионический вариант§!, предоставляя специальные районы с £job_telepath£ $job_telepath_plural$"  
+  
+ # Tradition 
+ tradition_astral_studies: "Астральные исследования"  
+ tradition_astral_studies_desc: "Мы почувствовали присутствие неизмеримой силы в этих разломах пространства и времени, и нам нужно узнать о них больше." 
+  
+ tr_astral_studies_adopt: "$tradition_astral_studies$ Традиции" 
+  
+ tr_astral_studies_finish: "$tr_astral_studies_adopt$ Готово"  
+ tr_astral_studies_finish_desc: "Разблокируйте §Yрешение $decision_bts_zroni_astral_spliting$§! (§RМОЖНО ИСПОЛЬЗОВАТЬ ТОЛЬКО ОДИН РАЗ§!), которое может быть использовано для преобразования §Yзведного рубца§! в §Yастральный разлом§!.\nРазблокированы перк возвышения: §G+1§!"
+  
+ tr_astral_studies_rift_analyser: "Анализатор разломов"  
+ tr_astral_studies_rift_analyser_delayed: "По мере продвижения нашего анализа мы все лучше понимаем энергию, текущую через эти трещины."  
+  
+ tr_astral_studies_astral_excavators: "Астральные экскаваторы"  
+ tr_astral_studies_astral_excavators_delayed: "Наши методы раскопок достигают космического уровня, позволяя нам извлекать информацию из разломов с невероятной скоростью."  
+  
+ tr_astral_studies_quantum_storage: "Квантовое хранилище" 
+ tr_astral_studies_quantum_storage_delayed: "Мы можем сжимать ткань пространства-времени так, как никогда раньше, увеличивая объем наших хранилищ."  
+  
+ tr_astral_studies_causality_reverser: "Преобразователь причинно-следственной связи"  
+ tr_astral_studies_causality_reverser_delayed: "Мы обнаружили, что временные линии других реальностей за пределами этих разломов могут быть синхронизированы с нашей собственной, чтобы влиять на прошлое."  
+  
+ tr_astral_studies_rift_collapser: "Разрушитель разлома" 
+ tr_astral_studies_rift_collapser_delayed: "Каждый раз, когда мы черпаем энергию из разлома, мы заставляем его слегка сжиматься, чтобы ограничить потери энергии." 
+  
+ # Powers 
+  
+ BTS_SHROUD_ENTITY: "Проявление Покрова"  
+ bts_covenant_option_powers: "Используйте способности  §MЭфирнофазного коллапсера§!."  
+ bts_covenant_power_summon_1: "Призвать §M$NAME_Shroud_Avatar$§!." 
+ bts_covenant_power_summon_1_desc: "Воин из Покрова, выкованный из чистой псионической энергии." 
+ bts_covenant_power_summon_2: "Призвать §M$NAME_Corrupted_Avatar$§!."  
+ bts_covenant_power_summon_2_desc: "Мстительный аватар, который накопил огромное количество псионической энергии и использует ее, чтобы обрушиться на всех и каждого, кому не посчастливилось встать у него на пути."  
+ bts_covenant_power_summon_3: "Призвать §M$NAME_Shroud_Manifestation$§!." 
+ bts_covenant_power_summon_3_desc: "Великая сущность Покрова, представляющая собой невыразимую концепцию всех мыслей." 
+ bts_covenant_power_summon_4: "Призвать §M$NAME_Reckoning$§!." 
+ bts_covenant_power_summon_4_desc: "Огромное паранормальное существо из чистой энергии, которое стремится поглотить сознание других форм жизни."  
+ bts_power_4_already_in_use: "Нет, §M$NAME_Reckoning$§! уже принадлежит империи" 
+  
+ # Modifiers 
+ bts_astral_action_cost: "Стоимость астральных действий" 
+ absorbed_consciousness_0: "$absorbed_consciousness_1$"  
+ mod_planet_telepaths_sr_zro_produces_add: "£sr_zro£ $sr_zro$ из £job_telepath£ $job_telepath_plural$" 
+ mod_planet_telepaths_produces_mult: "£job_telepath£ $job_telepath$ Выход" 
+ mod_bts_astral_action_cost: "$bts_astral_action_cost$"  
+ mod_country_sr_zro_cost_mult: "£sr_zro£ $sr_zro$ Стоимость"  
+  
+ bts_astral_rift_spawn_mult: "Шанс появления [ 'concept_astral_rift', $ASTRAL_RIFTS$ ] в системах, которые вы контролируете:"
+ mod_bts_astral_rift_spawn_mult: "$bts_astral_rift_spawn_mult$" 
+ # Others 
+  
+ bts_no_astral_rift_scar_in_system: "$TRIGGER_FAIL$В принадлежащей системе должен присутствовать §Yастральный разлом§! или §Yастральный рубец§!"  
