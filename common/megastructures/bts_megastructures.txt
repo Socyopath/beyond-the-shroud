@@ -146,8 +146,7 @@ bts_mega_aetherophasic_collapser_1 = {
 }
 
 bts_mega_aetherophasic_collapser_2 = {
-	entity = "quantum_catapult_stage_1_entity"
-	construction_entity = "quantum_catapult_stage_1_entity"
+	entity = "bts_mega_aetherophasic_collapser_entity"
 	portrait = "GFX_megastructure_aetherophasic_collapser"
     build_time = @bts_mega_aetherophasic_collapser_2_build_time
     resources = {
@@ -196,8 +195,7 @@ bts_mega_aetherophasic_collapser_2 = {
 }
 
 bts_mega_aetherophasic_collapser_3 = {
-	entity = "quantum_catapult_stage_2_entity"
-	construction_entity = "quantum_catapult_stage_2_entity"
+	entity = "bts_mega_aetherophasic_collapser_entity"
 	portrait = "GFX_megastructure_aetherophasic_collapser"
     build_time = @bts_mega_aetherophasic_collapser_3_build_time
     resources = {
@@ -250,8 +248,7 @@ bts_mega_aetherophasic_collapser_3 = {
 }
 
 bts_mega_aetherophasic_collapser_4 = {
-	entity = "quantum_catapult_stage_3_entity"
-	construction_entity = "quantum_catapult_stage_3_entity"
+	entity = "bts_mega_aetherophasic_collapser_entity"
 	portrait = "GFX_megastructure_aetherophasic_collapser"
     build_time = @bts_mega_aetherophasic_collapser_4_build_time
     resources = {
@@ -305,7 +302,6 @@ bts_mega_aetherophasic_collapser_4 = {
 
 bts_mega_aetherophasic_collapser_5 = {
 	entity = "bts_mega_aetherophasic_collapser_entity"
-	construction_entity = "quantum_catapult_stage_3_entity"
 	portrait = "GFX_megastructure_aetherophasic_collapser"
     build_time = @bts_mega_aetherophasic_collapser_5_build_time
     resources = {
