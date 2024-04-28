@@ -282,3 +282,9 @@ bts_district_third_eye_observatory_desc: "$job_telepath_effect_desc$"
 bts_district_influence_control_complex: "Influence Control Complex"
 bts_district_influence_control_complex_plural: "Influence Control Complexes"
 bts_district_influence_control_complex_desc: "$job_telepath_effect_desc$"
+
+# Jobs
+job_bts_new:0 "New"
+job_bts_new_plural:0 "News"
+job_bts_new_desc:0 "Members of the Psi-Corps, a unit of psionically-gifted crime fighters."
+job_bts_new_effect_desc:1 "£job_telepath£ $job_telepath_plural$ produce £unity£ §Y$unity$§!, decrease £crime£ §Y$PLANET_CRIME_TITLE$§!, and provide a general productivity boost on the planet."
