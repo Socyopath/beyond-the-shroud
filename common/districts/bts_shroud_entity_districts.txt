@@ -22,6 +22,10 @@ bts_district_third_eye_observatory = {
 		}
 	}
 
+    planet_modifier = {
+        planet_max_buildings_add = 1
+    }
+
     triggered_desc = {
 		text = bts_district_third_eye_observatory_desc
 	}
@@ -51,6 +55,10 @@ bts_district_influence_control_complex = {
 		}
 	}
 
+    planet_modifier = {
+        planet_max_buildings_add = 1
+    }
+    
     triggered_desc = {
 		text = bts_district_influence_control_complex_desc
 	}
