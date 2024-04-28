@@ -252,9 +252,9 @@ country_event = {
     immediate = {
 		bts_summon_power = {
 			FLEET_NAME = "NAME_Psionic_Avatar"
-			SHIP_NAME = "NAME_Avatar"
-			SHIP_DESIGN = "NAME_Shroud_Avatar"
-			SHIP_DESIGN_ZRONI = "NAME_Shroud_Avatar_zroni"
+			SHIP_NAME = "NAME_Psionic_Avatar"
+			SHIP_DESIGN = "bts_shroud_avatar"
+			SHIP_DESIGN_ZRONI = "bts_shroud_avatar_zroni"
 		}
     }
 }
@@ -266,10 +266,10 @@ country_event = {
 
     immediate = {
 		bts_summon_power = {
-			FLEET_NAME = "NAME_Corrupted_Avatar"
-			SHIP_NAME = "NAME_Corrupted_Avatar"
-			SHIP_DESIGN = "NAME_Corrupted_Avatar"
-			SHIP_DESIGN_ZRONI = "NAME_Corrupted_Avatar_zroni"
+			FLEET_NAME = "NAME_Shroud_Manifestation"
+			SHIP_NAME = "NAME_Shroud_Manifestation"
+			SHIP_DESIGN = "bts_shroud_manifestation"
+			SHIP_DESIGN_ZRONI = "bts_shroud_manifestation_zroni"
 		}
     }
 }
@@ -281,10 +281,10 @@ country_event = {
 
     immediate = {
 		bts_summon_power = {
-			FLEET_NAME = "NAME_Shroud_Manifestation"
-			SHIP_NAME = "NAME_Fragment"
-			SHIP_DESIGN = "NAME_Shroud_Manifestation"
-			SHIP_DESIGN_ZRONI = "NAME_Shroud_Manifestation_zroni"
+			FLEET_NAME = "NAME_Dimensional_Horror"
+			SHIP_NAME = "NAME_Dimensional_Horror"
+			SHIP_DESIGN = "bts_dimensional_horror"
+			SHIP_DESIGN_ZRONI = "bts_dimensional_horror_zroni"
 		}
     }
 }
@@ -298,8 +298,8 @@ country_event = {
 		bts_summon_power = {
 			FLEET_NAME = "NAME_The_End"
 			SHIP_NAME = "NAME_Reckoning"
-			SHIP_DESIGN = "NAME_Warped_Consciousness"
-			SHIP_DESIGN_ZRONI = "NAME_Warped_Consciousness_zroni"
+			SHIP_DESIGN = "bts_warped_consciousness"
+			SHIP_DESIGN_ZRONI = "bts_warped_consciousness_zroni"
 		}
 		last_created_ship = {
 			ship_event = { id = bts.342 } # Update modifiers
