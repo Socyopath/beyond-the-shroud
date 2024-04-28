@@ -1,12 +1,12 @@
 # Shroud Avatar
 ship_design = {
-	name = "NAME_Shroud_Avatar"
+	name = "bts_shroud_avatar"
 	ship_size = psionic_avatar
 	is_event_design = yes
 	hide_size = yes
 
 	section = {
-		template = "psionic_avatar_section"
+		template = "bts_psionic_avatar_section"
 		slot = "mid"
 
 		component = {
@@ -34,93 +34,13 @@ ship_design = {
 
 # Shroud Avatar Zroni
 ship_design = {
-	name = "NAME_Shroud_Avatar_zroni"
+	name = "bts_shroud_avatar_zroni"
 	ship_size = psionic_avatar
 	is_event_design = yes
 	hide_size = yes
 
 	section = {
-		template = "psionic_avatar_section"
-		slot = "mid"
-
-		component = {
-			slot = "MEDIUM_GUN_01"
-			template = "PSIONIC_BLAST_1"
-		}
-		component = {
-			slot = "MEDIUM_GUN_02"
-			template = "PSIONIC_BLAST_1"
-		}
-		component = {
-			slot = "MEDIUM_GUN_03"
-			template = "PSIONIC_BLAST_1"
-		}
-		component = {
-			slot = "MEDIUM_GUN_04"
-			template = "PSIONIC_BLAST_1"
-		}
-		component = {
-			slot = "SMALL_UTILITY_1"
-			template = "bts_small_zroni_shield"
-		}
-		component = {
-			slot = "MEDIUM_UTILITY_1"
-			template = "bts_medium_zroni_shield"
-		}
-		component = {
-			slot = "LARGE_UTILITY_1"
-			template = "bts_large_zroni_shield"
-		}
-	}
-	required_component="COMBAT_COMPUTER_LINE_DEFAULT"
-	required_component="SHIP_THRUSTER_1"
-	required_component="SENSOR_1"
-	required_component="PSI_JUMP_DRIVE_1"
-}
-
-# Corrupted Avatar
-ship_design = {
-	name = "NAME_Corrupted_Avatar"
-	ship_size = corrupted_avatar
-	is_event_design = yes
-	hide_size = yes
-
-	section = {
-		template = "corrupted_psionic_avatar_section"
-		slot = "mid"
-
-		component = {
-			slot = "MEDIUM_GUN_01"
-			template = "PSIONIC_BLAST_1"
-		}
-		component = {
-			slot = "MEDIUM_GUN_02"
-			template = "PSIONIC_BLAST_1"
-		}
-		component = {
-			slot = "MEDIUM_GUN_03"
-			template = "PSIONIC_BLAST_1"
-		}
-		component = {
-			slot = "MEDIUM_GUN_04"
-			template = "PSIONIC_BLAST_1"
-		}
-	}
-	required_component="COMBAT_COMPUTER_LINE_DEFAULT"
-	required_component="SHIP_THRUSTER_1"
-	required_component="SENSOR_1"
-	required_component="PSI_JUMP_DRIVE_1"
-}
-
-# Corrupted Avatar Zroni
-ship_design = {
-	name = "NAME_Corrupted_Avatar_zroni"
-	ship_size = corrupted_avatar
-	is_event_design = yes
-	hide_size = yes
-
-	section = {
-		template = "corrupted_psionic_avatar_section"
+		template = "bts_psionic_avatar_section"
 		slot = "mid"
 
 		component = {
@@ -160,13 +80,13 @@ ship_design = {
 
 # Warped Consciousness
 ship_design = {
-	name = "NAME_Warped_Consciousness"
+	name = "bts_warped_consciousness"
 	ship_size = warped_consciousness
 	is_event_design = yes
 	hide_size = yes
 
 	section = {
-		template = "warped_consciousness_avatar_section"
+		template = "bts_warped_consciousness_section"
 		slot = "mid"
 
 		component = {
@@ -198,13 +118,13 @@ ship_design = {
 
 # Warped Consciousness Zroni
 ship_design = {
-	name = "NAME_Warped_Consciousness_zroni"
+	name = "bts_warped_consciousness_zroni"
 	ship_size = warped_consciousness
 	is_event_design = yes
 	hide_size = yes
 
 	section = {
-		template = "warped_consciousness_avatar_section"
+		template = "bts_warped_consciousness_section"
 		slot = "mid"
 
 		component = {
@@ -239,10 +159,6 @@ ship_design = {
 			slot = "LARGE_UTILITY_1"
 			template = "bts_large_zroni_shield"
 		}
-		# component = {
-		# 	slot = "AUX_UTILITY_1"
-		# 	template = "AUTO_REPAIR"
-		# }
 	}
 	required_component="COMBAT_COMPUTER_LINE_DEFAULT"
 	required_component="SHIP_THRUSTER_1"
@@ -252,13 +168,13 @@ ship_design = {
 
 # Shroud Manifestation
 ship_design = {
-	name = "NAME_Shroud_Manifestation"
+	name = "bts_shroud_manifestation"
 	ship_size = shroud_manifestation
 	is_event_design = yes
 	hide_size = yes
 
 	section = {
-		template = "corrupted_psionic_avatar_section"
+		template = "bts_shroud_manifestation_section"
 		slot = "mid"
 
 		component = {
@@ -286,13 +202,13 @@ ship_design = {
 
 # Shroud Manifestation Zroni
 ship_design = {
-	name = "NAME_Shroud_Manifestation_zroni"
+	name = "bts_shroud_manifestation_zroni"
 	ship_size = shroud_manifestation
 	is_event_design = yes
 	hide_size = yes
 
 	section = {
-		template = "corrupted_psionic_avatar_section"
+		template = "bts_shroud_manifestation_section"
 		slot = "mid"
 
 		component = {
@@ -323,13 +239,178 @@ ship_design = {
 			slot = "LARGE_UTILITY_1"
 			template = "bts_large_zroni_shield"
 		}
-		# component = {
-		# 	slot = "AUX_UTILITY_1"
-		# 	template = "AUTO_REPAIR"
-		# }
 	}
 	required_component="COMBAT_COMPUTER_LINE_DEFAULT"
 	required_component="SHIP_THRUSTER_1"
 	required_component="SENSOR_1"
+	required_component="PSI_JUMP_DRIVE_1"
+}
+
+# Dimensional Horror
+ship_design = {
+	name = "bts_dimensional_horror"
+	ship_size = dimensional_horror
+
+	section = {
+		template = "bts_dimensional_horror"
+		slot = "mid"
+
+		component = {
+			slot = "PRIMARY_WEAPON_01"
+			template = "DIMENSIONAL_HORROR_PRIMARY_WEAPON"
+		}
+
+		component = {
+			slot = "LARGE_WEAPON_01"
+			template = "DIMENSIONAL_HORROR_LARGE_WEAPON"
+		}
+
+		component = {
+			slot = "LARGE_WEAPON_02"
+			template = "DIMENSIONAL_HORROR_LARGE_WEAPON"
+		}
+
+		component = {
+			slot = "MEDIUM_WEAPON_01"
+			template = "DIMENSIONAL_HORROR_MEDIUM_WEAPON"
+		}
+
+		component = {
+			slot = "MEDIUM_WEAPON_02"
+			template = "DIMENSIONAL_HORROR_MEDIUM_WEAPON"
+		}
+
+		component = {
+			slot = "SMALL_WEAPON_01"
+			template = "DIMENSIONAL_HORROR_SMALL_WEAPON"
+		}
+
+		component = {
+			slot = "SMALL_WEAPON_02"
+			template = "DIMENSIONAL_HORROR_SMALL_WEAPON"
+		}
+
+		component = {
+			slot = "POINT_DEFENCE_01"
+			template = "DIMENSIONAL_HORROR_PD"
+		}
+
+		component = {
+			slot = "POINT_DEFENCE_02"
+			template = "DIMENSIONAL_HORROR_PD"
+		}
+
+		component = {
+			slot = "POINT_DEFENCE_03"
+			template = "DIMENSIONAL_HORROR_PD"
+		}
+
+		component = {
+			slot = "POINT_DEFENCE_04"
+			template = "DIMENSIONAL_HORROR_PD"
+		}
+
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_3"
+			template = "AUTO_REPAIR"
+		}
+	}
+	required_component="COMBAT_COMPUTER_ARTILLERY_BASIC"
+	required_component="GUARDIAN_SENSORS"
+	required_component="PSI_JUMP_DRIVE_1"
+}
+
+# Dimensional Horror Zroni
+ship_design = {
+	name = "bts_dimensional_horror_zroni"
+	ship_size = dimensional_horror
+
+	section = {
+		template = "bts_dimensional_horror"
+		slot = "mid"
+
+		component = {
+			slot = "PRIMARY_WEAPON_01"
+			template = "DIMENSIONAL_HORROR_PRIMARY_WEAPON"
+		}
+
+		component = {
+			slot = "LARGE_WEAPON_01"
+			template = "DIMENSIONAL_HORROR_LARGE_WEAPON"
+		}
+
+		component = {
+			slot = "LARGE_WEAPON_02"
+			template = "DIMENSIONAL_HORROR_LARGE_WEAPON"
+		}
+
+		component = {
+			slot = "MEDIUM_WEAPON_01"
+			template = "DIMENSIONAL_HORROR_MEDIUM_WEAPON"
+		}
+
+		component = {
+			slot = "MEDIUM_WEAPON_02"
+			template = "DIMENSIONAL_HORROR_MEDIUM_WEAPON"
+		}
+
+		component = {
+			slot = "SMALL_WEAPON_01"
+			template = "DIMENSIONAL_HORROR_SMALL_WEAPON"
+		}
+
+		component = {
+			slot = "SMALL_WEAPON_02"
+			template = "DIMENSIONAL_HORROR_SMALL_WEAPON"
+		}
+
+		component = {
+			slot = "POINT_DEFENCE_01"
+			template = "DIMENSIONAL_HORROR_PD"
+		}
+
+		component = {
+			slot = "POINT_DEFENCE_02"
+			template = "DIMENSIONAL_HORROR_PD"
+		}
+
+		component = {
+			slot = "POINT_DEFENCE_03"
+			template = "DIMENSIONAL_HORROR_PD"
+		}
+
+		component = {
+			slot = "POINT_DEFENCE_04"
+			template = "DIMENSIONAL_HORROR_PD"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "bts_large_zroni_shield"
+		}
+        
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_3"
+			template = "AUTO_REPAIR"
+		}
+	}
+	required_component="COMBAT_COMPUTER_ARTILLERY_BASIC"
+	required_component="GUARDIAN_SENSORS"
 	required_component="PSI_JUMP_DRIVE_1"
 }
