@@ -72,7 +72,7 @@ bts_shroud_entity_core_1 = {
 
 	planet_modifier = {
 		planet_housing_add = 10
-		job_telepath_add = 10
+		job_bts_new_add = 10
 	}
 	resources = {
 		category = planet_buildings
@@ -101,7 +101,7 @@ bts_shroud_entity_core_2 = {
 		is_planet_class = pc_bts_shroud_entity
 	}
 	allow = {
-		num_sapient_pops >= 10
+		count_owned_pop = { limit = { has_job = bts_new } count >= 10 }
 	}
 	upgrades = {
 		bts_shroud_entity_core_3
@@ -109,7 +109,7 @@ bts_shroud_entity_core_2 = {
 
 	planet_modifier = {
 		planet_housing_add = 25
-		job_telepath_add = 25
+		job_bts_new_add = 25
 	}
 	resources = {
 		category = planet_buildings
@@ -145,7 +145,7 @@ bts_shroud_entity_core_3 = {
 		is_planet_class = pc_bts_shroud_entity
 	}
 	allow = {
-		num_sapient_pops >= 25
+		count_owned_pop = { limit = { has_job = bts_new } count >= 25 }
 	}
 	upgrades = {
 		bts_shroud_entity_core_4
@@ -153,7 +153,7 @@ bts_shroud_entity_core_3 = {
 
 	planet_modifier = {
 		planet_housing_add = 50
-		job_telepath_add = 50
+		job_bts_new_add = 50
 	}
 	resources = {
 		category = planet_buildings
@@ -189,12 +189,12 @@ bts_shroud_entity_core_4 = {
 		is_planet_class = pc_bts_shroud_entity
 	}
 	allow = {
-		num_sapient_pops >= 50
+		count_owned_pop = { limit = { has_job = bts_new } count >= 50 }
 	}
 
 	planet_modifier = {
 		planet_housing_add = 100
-		job_telepath_add = 100
+		job_bts_new_add = 100
 	}
 	resources = {
 		category = planet_buildings
