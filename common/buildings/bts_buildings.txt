@@ -97,6 +97,14 @@ bts_shroud_entity_core_2 = {
 	position_priority = 0
 	category = government
 
+	destroy_trigger = {
+		count_owned_pop = { limit = { has_job = bts_new } count < 10 }
+	}
+
+	convert_to = {
+		bts_shroud_entity_core_1
+	}
+
 	potential = {
 		is_planet_class = pc_bts_shroud_entity
 	}
@@ -141,6 +149,14 @@ bts_shroud_entity_core_3 = {
 	position_priority = 0
 	category = government
 
+	destroy_trigger = {
+		count_owned_pop = { limit = { has_job = bts_new } count < 25 }
+	}
+
+	convert_to = {
+		bts_shroud_entity_core_2
+	}
+
 	potential = {
 		is_planet_class = pc_bts_shroud_entity
 	}
@@ -184,6 +200,15 @@ bts_shroud_entity_core_4 = {
 	can_be_disabled = no
 	position_priority = 0
 	category = government
+
+	destroy_trigger = {
+		count_owned_pop = { limit = { has_job = bts_new } count < 50 }
+	}
+
+	convert_to = {
+		bts_shroud_entity_core_3
+	}
+
 
 	potential = {
 		is_planet_class = pc_bts_shroud_entity
