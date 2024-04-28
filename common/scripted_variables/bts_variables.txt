@@ -169,3 +169,13 @@
 @bts_shroud_destabilizer_tracking_mult = -0.50
 @bts_shroud_destabilizer_speed_reduction = 0.50
 @bts_shroud_destabilizer_fire_rate_mult = -0.50
+
+# Soul Labyrinth
+# Third Eye Observatory
+@bts_district_third_eye_observatory_intel = 0.1
+@bts_district_third_eye_observatory_sensor_range = 0.2
+@bts_district_third_eye_observatory_hyperlane_range = 0.3
+# Influence Control Complex
+@bts_district_influence_control_complex_trust_cap = 0.15
+@bts_district_influence_control_complex_trust_growth = 0.004
+@bts_district_influence_control_complex_influence = 0.01
