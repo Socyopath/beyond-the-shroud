@@ -1,0 +1,57 @@
+bts_district_third_eye_observatory = {
+	base_buildtime = 600
+	is_capped_by_modifier = no
+
+    potential = {
+		uses_district_set = bts_shroud_entity_district_set
+		is_planet_class = pc_bts_shroud_entity
+		owner = {
+			exists = owner
+		}
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1000
+			sr_zro = 50
+		}
+		upkeep = {
+			energy = 5
+			sr_zro = 1
+		}
+	}
+
+    triggered_desc = {
+		text = bts_district_third_eye_observatory_desc
+	}
+}
+
+bts_district_influence_control_complex = {
+	base_buildtime = 600
+	is_capped_by_modifier = no
+
+    potential = {
+		uses_district_set = bts_shroud_entity_district_set
+		is_planet_class = pc_bts_shroud_entity
+		owner = {
+			exists = owner
+		}
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1000
+			sr_zro = 50
+		}
+		upkeep = {
+			energy = 5
+			sr_zro = 1
+		}
+	}
+
+    triggered_desc = {
+		text = bts_district_influence_control_complex_desc
+	}
+}
