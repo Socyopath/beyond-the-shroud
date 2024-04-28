@@ -74,6 +74,23 @@ entity = {
 		
 	scale = 10
 }
+
+entity = {
+	name = "bts_shroud_entity_01_entity"
+	pdxmesh = "paragon_01_legendary_ship_01_frame_mesh"
+
+	attach = { "frame_ship" = "temple_of_whispers_ship_entity" }
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" }
+
+	game_data = {
+		shader_type = ship
+		size = 24
+		emissive_recolor_crunch = 2.0
+	}
+}
+
 entity = {
 	name = "bts_mega_aetherophasic_collapser_entity"
 	cull_radius = 1000

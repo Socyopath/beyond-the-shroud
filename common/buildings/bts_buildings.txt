@@ -52,3 +52,166 @@ bts_building_covenant_sanctum = {
 		text = job_telepath_effect_desc
 	}
 }
+
+# Colony
+bts_shroud_entity_core_1 = {
+	capital = yes
+	can_build = no
+	can_demolish = no
+	can_be_ruined = no
+	can_be_disabled = no
+	position_priority = 0
+	category = government
+
+	potential = {
+		is_planet_class = pc_bts_shroud_entity
+	}
+	upgrades = {
+		bts_shroud_entity_core_2
+	}
+
+	planet_modifier = {
+		planet_housing_add = 10
+		job_telepath_add = 10
+	}
+	resources = {
+		category = planet_buildings
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	# inline_script = {
+	# 	script = buildings/on_all_capital_buildings
+	# }
+}
+
+# Planetary Administration
+bts_shroud_entity_core_2 = {
+	base_buildtime = @b2_time
+	capital = yes
+	can_build = no
+	can_demolish = no
+	can_be_ruined = no
+	can_be_disabled = no
+	position_priority = 0
+	category = government
+
+	potential = {
+		is_planet_class = pc_bts_shroud_entity
+	}
+	allow = {
+		num_sapient_pops >= 10
+	}
+	upgrades = {
+		bts_shroud_entity_core_3
+	}
+
+	planet_modifier = {
+		planet_housing_add = 25
+		job_telepath_add = 25
+	}
+	resources = {
+		category = planet_buildings
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	# inline_script = {
+	# 	script = buildings/on_all_capital_buildings
+	# }
+
+	# prerequisites = {
+	# 	"tech_planetary_government"
+	# }
+
+	# show_tech_unlock_if = {
+	# 	is_regular_empire = yes
+	# }
+}
+
+bts_shroud_entity_core_3 = {
+	base_buildtime = @b3_time
+	capital = yes
+	can_build = no
+	can_demolish = no
+	can_be_ruined = no
+	can_be_disabled = no
+	position_priority = 0
+	category = government
+
+	potential = {
+		is_planet_class = pc_bts_shroud_entity
+	}
+	allow = {
+		num_sapient_pops >= 25
+	}
+	upgrades = {
+		bts_shroud_entity_core_4
+	}
+
+	planet_modifier = {
+		planet_housing_add = 50
+		job_telepath_add = 50
+	}
+	resources = {
+		category = planet_buildings
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	# inline_script = {
+	# 	script = buildings/on_all_capital_buildings
+	# }
+
+	# prerequisites = {
+	# 	"tech_planetary_government"
+	# }
+
+	# show_tech_unlock_if = {
+	# 	is_regular_empire = yes
+	# }
+}
+
+bts_shroud_entity_core_4 = {
+	base_buildtime = @b3_time
+	capital = yes
+	can_build = no
+	can_demolish = no
+	can_be_ruined = no
+	can_be_disabled = no
+	position_priority = 0
+	category = government
+
+	potential = {
+		is_planet_class = pc_bts_shroud_entity
+	}
+	allow = {
+		num_sapient_pops >= 50
+	}
+
+	planet_modifier = {
+		planet_housing_add = 100
+		job_telepath_add = 100
+	}
+	resources = {
+		category = planet_buildings
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	# inline_script = {
+	# 	script = buildings/on_all_capital_buildings
+	# }
+
+	# prerequisites = {
+	# 	"tech_planetary_government"
+	# }
+
+	# show_tech_unlock_if = {
+	# 	is_regular_empire = yes
+	# }
+}

@@ -366,3 +366,97 @@ bts_mega_aetherophasic_collapser_5 = {
     }
 
 }
+
+# root = system
+# from = country	
+bts_shorud_mega = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	build_time = 1
+
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 10
+			energy = 10
+		}
+	}
+
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = from
+						status = no
+					}
+				}
+			}
+		}
+        NOT = {
+            from = {
+                any_planet_within_border = {
+                    is_planet_class = pc_bts_shroud_entity
+                }
+            }
+        }
+    }
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "requires_surveyed_planet"
+				is_surveyed = {
+					who = from
+					status = yes
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				has_anomaly = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_orbital_station"
+				has_orbital_station = no
+			}
+		}
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	
+	on_build_complete = {
+		spawn_planet = {
+			class = "pc_bts_shroud_entity"
+			location = fromfrom.planet
+			orbit_location = yes
+			orbit_angle_offset = 45
+			orbit_distance_offset = 9.899
+			has_ring = no
+			init_effect = {
+				set_name = "Shroud TEST"
+				set_surveyed = {
+					surveyed = yes
+					surveyor = FROM
+				}
+				set_all_comms_surveyed = yes
+				clear_blockers = yes
+                clear_deposits = yes
+                prevent_anomaly = yes
+                create_colony = {
+                    owner = root.owner
+                }
+                remove_all_buildings = yes
+                add_building = bts_shroud_entity_core_1
+			}
+		}
+		remove_megastructure = fromfrom
+	}
+}
