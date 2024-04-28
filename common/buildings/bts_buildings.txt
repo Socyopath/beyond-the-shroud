@@ -81,6 +81,14 @@ bts_shroud_entity_core_1 = {
 		}
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		planet_max_buildings_add = -1
+		mult = owner.modifier:planet_max_buildings_add
+	}
+
 	# inline_script = {
 	# 	script = buildings/on_all_capital_buildings
 	# }
@@ -124,6 +132,14 @@ bts_shroud_entity_core_2 = {
 		upkeep = {
 			energy = 1
 		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		planet_max_buildings_add = -1
+		mult = owner.modifier:planet_max_buildings_add
 	}
 
 	# inline_script = {
@@ -178,6 +194,14 @@ bts_shroud_entity_core_3 = {
 		}
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		planet_max_buildings_add = -1
+		mult = owner.modifier:planet_max_buildings_add
+	}
+
 	# inline_script = {
 	# 	script = buildings/on_all_capital_buildings
 	# }
@@ -226,6 +250,14 @@ bts_shroud_entity_core_4 = {
 		upkeep = {
 			energy = 1
 		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		planet_max_buildings_add = -1
+		mult = owner.modifier:planet_max_buildings_add
 	}
 
 	# inline_script = {
