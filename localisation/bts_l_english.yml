@@ -216,3 +216,69 @@ mod_bts_astral_rift_spawn_mult: "$bts_astral_rift_spawn_mult$"
 # Others
 
 bts_no_astral_rift_scar_in_system: "$TRIGGER_FAIL$An §YAstral Rift§! or §YAstral Scar§! must be present in an owned system"
+
+
+
+# Soul Labyrinth
+# Buildings
+bts_building_dimensional_converger_1: "Dimensional Converger"
+bts_building_dimensional_converger_2: "$bts_building_dimensional_converger_1$"
+bts_building_dimensional_converger_3: "$bts_building_dimensional_converger_1$"
+bts_building_dimensional_converger_4: "$bts_building_dimensional_converger_1$"
+bts_building_dimensional_converger_1_desc: ""
+bts_building_dimensional_converger_2_desc: "$bts_building_dimensional_converger_1_desc$"
+bts_building_dimensional_converger_3_desc: "$bts_building_dimensional_converger_1_desc$"
+bts_building_dimensional_converger_4_desc: "$bts_building_dimensional_converger_1_desc$"
+
+bts_building_greed_restrictor_1: "Greed Restrictor"
+bts_building_greed_restrictor_2: "bts_building_greed_restrictor_1$"
+bts_building_greed_restrictor_3: "bts_building_greed_restrictor_1$"
+bts_building_greed_restrictor_4: "bts_building_greed_restrictor_1$"
+bts_building_greed_restrictor_1_desc: ""
+bts_building_greed_restrictor_2_desc: "bts_building_greed_restrictor_1_desc$"
+bts_building_greed_restrictor_3_desc: "bts_building_greed_restrictor_1_desc$"
+bts_building_greed_restrictor_4_desc: "bts_building_greed_restrictor_1_desc$"
+
+bts_building_utopia_distiller_1: "Utopia Distiller"
+bts_building_utopia_distiller_2: "bts_building_utopia_distiller_1$"
+bts_building_utopia_distiller_3: "bts_building_utopia_distiller_1$"
+bts_building_utopia_distiller_4: "bts_building_utopia_distiller_1$"
+bts_building_utopia_distiller_1_desc: ""
+bts_building_utopia_distiller_2_desc: "bts_building_utopia_distiller_1_desc$"
+bts_building_utopia_distiller_3_desc: "bts_building_utopia_distiller_1_desc$"
+bts_building_utopia_distiller_4_desc: "bts_building_utopia_distiller_1_desc$"
+
+bts_building_psionic_resonator_1: "Psionic Resonator"
+bts_building_psionic_resonator_2: "bts_building_psionic_resonator_1$"
+bts_building_psionic_resonator_3: "bts_building_psionic_resonator_1$"
+bts_building_psionic_resonator_4: "bts_building_psionic_resonator_1$"
+bts_building_psionic_resonator_1_desc: ""
+bts_building_psionic_resonator_2_desc: "bts_building_psionic_resonator_1_desc$"
+bts_building_psionic_resonator_3_desc: "bts_building_psionic_resonator_1_desc$"
+bts_building_psionic_resonator_4_desc: "bts_building_psionic_resonator_1_desc$"
+
+bts_building_divergence_regulator_1: "Divergence Regulator"
+bts_building_divergence_regulator_2: "bts_building_divergence_regulator_1$"
+bts_building_divergence_regulator_3: "bts_building_divergence_regulator_1$"
+bts_building_divergence_regulator_4: "bts_building_divergence_regulator_1$"
+bts_building_divergence_regulator_1_desc: ""
+bts_building_divergence_regulator_2_desc: "bts_building_divergence_regulator_1_desc$"
+bts_building_divergence_regulator_3_desc: "bts_building_divergence_regulator_1_desc$"
+bts_building_divergence_regulator_4_desc: "bts_building_divergence_regulator_1_desc$"
+
+bts_building_thoughts_stabilizer_1: "Thoughts Stabilizer"
+bts_building_thoughts_stabilizer_2: "bts_building_thoughts_stabilizer_1$"
+bts_building_thoughts_stabilizer_3: "bts_building_thoughts_stabilizer_1$"
+bts_building_thoughts_stabilizer_4: "bts_building_thoughts_stabilizer_1$"
+bts_building_thoughts_stabilizer_1_desc: ""
+bts_building_thoughts_stabilizer_2_desc: "bts_building_thoughts_stabilizer_1_desc$"
+bts_building_thoughts_stabilizer_3_desc: "bts_building_thoughts_stabilizer_1_desc$"
+bts_building_thoughts_stabilizer_4_desc: "bts_building_thoughts_stabilizer_1_desc$"
+
+# Districts
+bts_district_third_eye_observatory: "Third Eye Observatory"
+bts_district_third_eye_observatory_plural: "Third Eye Observatories"
+bts_district_third_eye_observatory_desc: "$job_telepath_effect_desc$"
+bts_district_influence_control_complex: "Influence Control Complex"
+bts_district_influence_control_complex_plural: "Influence Control Complexes"
+bts_district_influence_control_complex_desc: "$job_telepath_effect_desc$"
