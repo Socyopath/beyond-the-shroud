@@ -1,0 +1,25 @@
+bts_building_utopia_distiller = {
+	base_buildtime = @b3_time
+	category = government
+	base_cap_amount = 1
+
+    potential = {
+		is_planet_class = pc_bts_shroud_entity
+	}
+
+	country_modifier = {
+		pop_happiness = 0.25
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+			exotic_gases = @b3_rare_cost
+		}
+		upkeep = {
+			energy = @b3_upkeep
+			exotic_gases = @b3_rare_upkeep
+		}
+	}
+}
