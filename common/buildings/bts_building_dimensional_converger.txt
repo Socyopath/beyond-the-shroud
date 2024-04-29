@@ -7,9 +7,10 @@ bts_building_dimensional_converger = {
 		is_planet_class = pc_bts_shroud_entity
 	}
 
-	country_modifier = {
-		shroud_delve_cooldown = -0.15
-		country_unity_produces_mult = 0.10
+	triggered_country_modifier = {
+		potential = { always = yes }
+		mult = owner.value:bts_shroud_entity_level
+		shroud_delve_cooldown = @bts_building_dimensional_converger_shroud_cooldown
 	}
 
 	resources = {

@@ -7,8 +7,10 @@ bts_building_arcanic_council = {
 		is_planet_class = pc_bts_shroud_entity
 	}
 
-	country_modifier = {
-		all_technology_research_speed = 0.15
+	triggered_country_modifier = {
+		potential = { always = yes }
+		mult = owner.value:bts_shroud_entity_level
+		all_technology_research_speed = @bts_building_arcanic_council_research_speed
 	}
 
 	resources = {

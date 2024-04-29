@@ -7,9 +7,11 @@ bts_building_eternal_archive = {
 		is_planet_class = pc_bts_shroud_entity
 	}
 
-	country_modifier = {
-		leader_initial_skill = 2
-		leader_lifespan_add = 35
+	triggered_country_modifier = {
+		potential = { always = yes }
+		mult = owner.value:bts_shroud_entity_level
+		leader_initial_skill = @bts_building_eternal_archive_leader_skill
+		leader_lifespan_add = @bts_building_eternal_archive_leader_lifespan
 	}
 
 	resources = {

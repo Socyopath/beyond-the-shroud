@@ -7,8 +7,10 @@ bts_building_thoughts_stabilizer = {
 		is_planet_class = pc_bts_shroud_entity
 	}
 
-	country_modifier = {
-		empire_size_pops_mult = -0.50
+	triggered_country_modifier = {
+		potential = { always = yes }
+		mult = owner.value:bts_shroud_entity_level
+		empire_size_pops_mult = @bts_building_thoughts_stabilizer_empire_size_pops
 	}
 
 	resources = {

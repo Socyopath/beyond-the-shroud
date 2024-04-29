@@ -340,6 +340,13 @@ current_covenant_favor_per_month = {
         has_country_flag = bts_covenant_confirmed
         add = value:bts_covenant_favor_per_month
     }
+    modifier = {
+        check_variable_arithmetic = {
+            which = value:bts_shroud_entity_level
+            value >= @bts_shroud_entity_favor_boost_level
+        }
+        add = @bts_shroud_entity_favor_boost
+    }
 }
 
 current_covenant_favor_per_year = {
@@ -409,5 +416,37 @@ bts_district_influence_control_complex_count = {
             type = bts_district_influence_control_complex
         }
         mode = add
+    }
+}
+# Scope = country
+bts_shroud_entity_level = {
+    base = 0
+    modifier = {
+        any_owned_planet = {
+            is_planet_class = pc_bts_shroud_entity
+            has_building = bts_shroud_entity_core_1
+        }
+        add = 1
+    }
+    modifier = {
+        any_owned_planet = {
+            is_planet_class = pc_bts_shroud_entity
+            has_building = bts_shroud_entity_core_2
+        }
+        add = 2
+    }
+    modifier = {
+        any_owned_planet = {
+            is_planet_class = pc_bts_shroud_entity
+            has_building = bts_shroud_entity_core_3
+        }
+        add = 3
+    }
+    modifier = {
+        any_owned_planet = {
+            is_planet_class = pc_bts_shroud_entity
+            has_building = bts_shroud_entity_core_4
+        }
+        add = 4
     }
 }

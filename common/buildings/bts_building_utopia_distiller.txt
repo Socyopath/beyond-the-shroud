@@ -7,8 +7,10 @@ bts_building_utopia_distiller = {
 		is_planet_class = pc_bts_shroud_entity
 	}
 
-	country_modifier = {
-		pop_happiness = 0.25
+	triggered_country_modifier = {
+		potential = { always = yes }
+		mult = owner.value:bts_shroud_entity_level
+		pop_happiness = @bts_building_utopia_distiller_happiness
 	}
 
 	resources = {

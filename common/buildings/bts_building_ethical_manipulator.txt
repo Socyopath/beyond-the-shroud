@@ -7,8 +7,11 @@ bts_building_ethical_manipulator = {
 		is_planet_class = pc_bts_shroud_entity
 	}
 
-	country_modifier = {
-		pop_ethics_shift_speed_mult = 1.00
+	triggered_country_modifier = {
+		potential = { always = yes }
+		mult = owner.value:bts_shroud_entity_level
+		pop_ethics_shift_speed_mult = @bts_building_ethical_manipulator_ethics_shift
+		pop_government_ethic_attraction = @bts_building_ethical_manipulator_ethic_attraction
 	}
 
 	resources = {

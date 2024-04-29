@@ -7,8 +7,10 @@ bts_building_greed_restrictor = {
 		is_planet_class = pc_bts_shroud_entity
 	}
 
-	country_modifier = {
-		pop_amenities_usage_mult = -0.40
+	triggered_country_modifier = {
+		potential = { always = yes }
+		mult = owner.value:bts_shroud_entity_level
+		pop_amenities_usage_mult = @bts_building_greed_restrictor_amenities_usage
 	}
 
 	resources = {

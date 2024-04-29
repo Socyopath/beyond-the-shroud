@@ -7,8 +7,10 @@ bts_building_divergence_regulator = {
 		is_planet_class = pc_bts_shroud_entity
 	}
 
-	country_modifier = {
-		planet_crime_mult = -0.50
+	triggered_country_modifier = {
+		potential = { always = yes }
+		mult = owner.value:bts_shroud_entity_level
+		planet_crime_mult = @bts_building_divergence_regulator_crime
 	}
 
 	resources = {
