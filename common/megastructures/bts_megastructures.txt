@@ -404,7 +404,7 @@ bts_shorud_mega = {
         NOT = {
             from = {
                 any_planet_within_border = {
-                    is_planet_class = pc_bts_shroud_entity
+                    is_planet_class = pc_bts_labyrinth_of_abstraction
                 }
             }
         }
@@ -434,7 +434,7 @@ bts_shorud_mega = {
 	
 	on_build_complete = {
 		spawn_planet = {
-			class = "pc_bts_shroud_entity"
+			class = "pc_bts_labyrinth_of_abstraction"
 			location = fromfrom.planet
 			orbit_location = yes
 			orbit_angle_offset = 45
@@ -454,7 +454,7 @@ bts_shorud_mega = {
                     owner = root.owner
                 }
                 remove_all_buildings = yes
-                add_building = bts_shroud_entity_core_1
+                add_building = bts_labyrinth_of_abstraction_core_1
 			}
 		}
 		remove_megastructure = fromfrom

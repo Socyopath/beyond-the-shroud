@@ -1,5 +1,5 @@
-pc_bts_shroud_entity = {
-	entity = "bts_shroud_entity"
+pc_bts_labyrinth_of_abstraction = {
+	entity = "bts_labyrinth_of_abstraction"
 	icon = GFX_planet_type_habitat
 	entity_scale = 1.0
 	enable_tilt = no
@@ -17,7 +17,7 @@ pc_bts_shroud_entity = {
 	planet_size = 6
 	moon_size = 0
 	colonizable = yes
-	district_set = bts_shroud_entity_district_set
+	district_set = bts_labyrinth_of_abstraction_district_set
 	ideal = yes
 	starting_planet = no
 	# orbit_lines = no

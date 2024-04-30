@@ -4,12 +4,12 @@ bts_building_ethical_manipulator = {
 	base_cap_amount = 1
 
     potential = {
-		is_planet_class = pc_bts_shroud_entity
+		is_planet_class = pc_bts_labyrinth_of_abstraction
 	}
 
 	triggered_country_modifier = {
 		potential = { always = yes }
-		mult = owner.value:bts_shroud_entity_level
+		mult = owner.value:bts_labyrinth_of_abstraction_level
 		pop_ethics_shift_speed_mult = @bts_building_ethical_manipulator_ethics_shift
 		pop_government_ethic_attraction = @bts_building_ethical_manipulator_ethic_attraction
 	}

@@ -1,4 +1,4 @@
-bts_new = {
+bts_conceptual_architect = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_psi_corps

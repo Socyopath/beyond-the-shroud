@@ -1,6 +1,6 @@
 
 # Colony
-bts_shroud_entity_core_1 = {
+bts_labyrinth_of_abstraction_core_1 = {
 	capital = yes
 	can_build = no
 	can_demolish = no
@@ -10,15 +10,15 @@ bts_shroud_entity_core_1 = {
 	category = government
 
 	potential = {
-		is_planet_class = pc_bts_shroud_entity
+		is_planet_class = pc_bts_labyrinth_of_abstraction
 	}
 	upgrades = {
-		bts_shroud_entity_core_2
+		bts_labyrinth_of_abstraction_core_2
 	}
 
 	planet_modifier = {
-		planet_housing_add = @bts_shroud_entity_core_1_job
-		job_bts_new_add = @bts_shroud_entity_core_1_job
+		planet_housing_add = @bts_labyrinth_of_abstraction_core_1_job
+		job_bts_conceptual_architect_add = @bts_labyrinth_of_abstraction_core_1_job
 	}
 	resources = {
 		category = planet_buildings
@@ -41,7 +41,7 @@ bts_shroud_entity_core_1 = {
 }
 
 # Planetary Administration
-bts_shroud_entity_core_2 = {
+bts_labyrinth_of_abstraction_core_2 = {
 	base_buildtime = @b2_time
 	capital = yes
 	can_build = no
@@ -52,26 +52,26 @@ bts_shroud_entity_core_2 = {
 	category = government
 
 	destroy_trigger = {
-		count_owned_pop = { limit = { has_job = bts_new } count < @bts_shroud_entity_core_1_job }
+		count_owned_pop = { limit = { has_job = bts_conceptual_architect } count < @bts_labyrinth_of_abstraction_core_1_job }
 	}
 
 	convert_to = {
-		bts_shroud_entity_core_1
+		bts_labyrinth_of_abstraction_core_1
 	}
 
 	potential = {
-		is_planet_class = pc_bts_shroud_entity
+		is_planet_class = pc_bts_labyrinth_of_abstraction
 	}
 	allow = {
-		count_owned_pop = { limit = { has_job = bts_new } count >= @bts_shroud_entity_core_1_job }
+		count_owned_pop = { limit = { has_job = bts_conceptual_architect } count >= @bts_labyrinth_of_abstraction_core_1_job }
 	}
 	upgrades = {
-		bts_shroud_entity_core_3
+		bts_labyrinth_of_abstraction_core_3
 	}
 
 	planet_modifier = {
-		planet_housing_add = @bts_shroud_entity_core_2_job
-		job_bts_new_add = @bts_shroud_entity_core_2_job
+		planet_housing_add = @bts_labyrinth_of_abstraction_core_2_job
+		job_bts_conceptual_architect_add = @bts_labyrinth_of_abstraction_core_2_job
 	}
 	resources = {
 		category = planet_buildings
@@ -101,7 +101,7 @@ bts_shroud_entity_core_2 = {
 	# }
 }
 
-bts_shroud_entity_core_3 = {
+bts_labyrinth_of_abstraction_core_3 = {
 	base_buildtime = @b3_time
 	capital = yes
 	can_build = no
@@ -112,26 +112,26 @@ bts_shroud_entity_core_3 = {
 	category = government
 
 	destroy_trigger = {
-		count_owned_pop = { limit = { has_job = bts_new } count < @bts_shroud_entity_core_2_job }
+		count_owned_pop = { limit = { has_job = bts_conceptual_architect } count < @bts_labyrinth_of_abstraction_core_2_job }
 	}
 
 	convert_to = {
-		bts_shroud_entity_core_2
+		bts_labyrinth_of_abstraction_core_2
 	}
 
 	potential = {
-		is_planet_class = pc_bts_shroud_entity
+		is_planet_class = pc_bts_labyrinth_of_abstraction
 	}
 	allow = {
-		count_owned_pop = { limit = { has_job = bts_new } count >= @bts_shroud_entity_core_2_job }
+		count_owned_pop = { limit = { has_job = bts_conceptual_architect } count >= @bts_labyrinth_of_abstraction_core_2_job }
 	}
 	upgrades = {
-		bts_shroud_entity_core_4
+		bts_labyrinth_of_abstraction_core_4
 	}
 
 	planet_modifier = {
-		planet_housing_add = @bts_shroud_entity_core_3_job
-		job_bts_new_add = @bts_shroud_entity_core_3_job
+		planet_housing_add = @bts_labyrinth_of_abstraction_core_3_job
+		job_bts_conceptual_architect_add = @bts_labyrinth_of_abstraction_core_3_job
 	}
 	resources = {
 		category = planet_buildings
@@ -161,7 +161,7 @@ bts_shroud_entity_core_3 = {
 	# }
 }
 
-bts_shroud_entity_core_4 = {
+bts_labyrinth_of_abstraction_core_4 = {
 	base_buildtime = @b3_time
 	capital = yes
 	can_build = no
@@ -172,24 +172,24 @@ bts_shroud_entity_core_4 = {
 	category = government
 
 	destroy_trigger = {
-		count_owned_pop = { limit = { has_job = bts_new } count < @bts_shroud_entity_core_3_job }
+		count_owned_pop = { limit = { has_job = bts_conceptual_architect } count < @bts_labyrinth_of_abstraction_core_3_job }
 	}
 
 	convert_to = {
-		bts_shroud_entity_core_3
+		bts_labyrinth_of_abstraction_core_3
 	}
 
 
 	potential = {
-		is_planet_class = pc_bts_shroud_entity
+		is_planet_class = pc_bts_labyrinth_of_abstraction
 	}
 	allow = {
-		count_owned_pop = { limit = { has_job = bts_new } count >= @bts_shroud_entity_core_3_job }
+		count_owned_pop = { limit = { has_job = bts_conceptual_architect } count >= @bts_labyrinth_of_abstraction_core_3_job }
 	}
 
 	planet_modifier = {
-		planet_housing_add = @bts_shroud_entity_core_4_job
-		job_bts_new_add = @bts_shroud_entity_core_4_job
+		planet_housing_add = @bts_labyrinth_of_abstraction_core_4_job
+		job_bts_conceptual_architect_add = @bts_labyrinth_of_abstraction_core_4_job
 	}
 	resources = {
 		category = planet_buildings

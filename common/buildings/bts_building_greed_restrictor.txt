@@ -4,12 +4,12 @@ bts_building_greed_restrictor = {
 	base_cap_amount = 1
 
     potential = {
-		is_planet_class = pc_bts_shroud_entity
+		is_planet_class = pc_bts_labyrinth_of_abstraction
 	}
 
 	triggered_country_modifier = {
 		potential = { always = yes }
-		mult = owner.value:bts_shroud_entity_level
+		mult = owner.value:bts_labyrinth_of_abstraction_level
 		pop_amenities_usage_mult = @bts_building_greed_restrictor_amenities_usage
 	}
 

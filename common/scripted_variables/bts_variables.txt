@@ -198,11 +198,12 @@
 
 @bts_building_utopia_distiller_happiness = 0.05
 
-@bts_shroud_entity_core_1_job = 10
+@bts_labyrinth_of_abstraction_core_1_job = 10
 
-@bts_shroud_entity_core_2_job = 25
-@bts_shroud_entity_favor_boost_level = 2
-@bts_shroud_entity_favor_boost = 0.05
+@bts_labyrinth_of_abstraction_core_2_job = 25
+@bts_labyrinth_of_abstraction_favor_boost_level = 2
+@bts_labyrinth_of_abstraction_favor_boost = 0.05
 
-@bts_shroud_entity_core_3_job = 50
-@bts_shroud_entity_core_4_job = 100
+@bts_labyrinth_of_abstraction_core_3_job = 50
+
+@bts_labyrinth_of_abstraction_core_4_job = 100

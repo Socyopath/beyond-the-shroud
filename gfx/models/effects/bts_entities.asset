@@ -76,7 +76,7 @@ entity = {
 }
 
 entity = {
-	name = "bts_shroud_entity_01_entity"
+	name = "bts_labyrinth_of_abstraction_01_entity"
 	pdxmesh = "paragon_01_legendary_ship_01_frame_mesh"
 
 	attach = { "frame_ship" = "temple_of_whispers_ship_entity" }
