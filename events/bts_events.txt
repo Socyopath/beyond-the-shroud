@@ -588,3 +588,57 @@ ship_event = {
         }
     }
 }
+
+country_event = {
+	id = bts.200
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		every_system = {
+			limit = {
+				any_ship_in_system = {
+					is_owned_by = root
+					is_ship_class = shipclass_military
+				}
+			}
+			random_ship_in_system = {
+				limit = {
+					is_owned_by = root
+					is_ship_class = shipclass_military
+				}
+				save_event_target_as = bts_temp_shroud_portal_target
+			}
+
+			spawn_megastructure = {
+				type = bts_shroud_portal_megastructure
+				owner = root
+				coords_from = event_target:bts_temp_shroud_portal_target
+				orbit_angle = 0
+				orbit_distance = 0
+				init_effect = {
+					set_megastructure_flag = bts_shroud_portal_megastructure_temp_of@root
+				}
+			}
+		}
+		country_event = {
+			id = bts.201
+			days = @bts_shroud_portal_expiration_days
+		}
+	}
+}
+
+country_event = {
+	id = bts.201
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		every_megastructure = {
+			limit = { 
+				has_megastructure_flag = bts_shroud_portal_megastructure_temp_of@root
+			}
+			remove_megastructure = this
+		}
+	}
+}

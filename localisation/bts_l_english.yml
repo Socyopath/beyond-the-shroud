@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 
 # Decision
 decision_bts_zroni_astral_spliting: "Archaeo-Spliting"
@@ -263,3 +263,8 @@ job_bts_conceptual_architect: "Conceptual Architect"
 job_bts_conceptual_architect_plural: "Conceptual Architects"
 job_bts_conceptual_architect_desc: "Members of the Psi-Corps, a unit of psionically-gifted crime fighters."
 job_bts_conceptual_architect_effect_desc: "£job_telepath£ $job_telepath_plural$ produce £unity£ §Y$unity$§!, decrease £crime£ §Y$PLANET_CRIME_TITLE$§!, and provide a general productivity boost on the planet."
+
+
+bts_shroud_portal_megastructure_MEGASTRUCTURE_DETAILS: "Shroud Portal MEGA"
+bts_shroud_portal_megastructure: "Shroud Portal"
+bts_shroud_portal_megastructure_DESC: "Shroud Portal desc"

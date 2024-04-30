@@ -207,3 +207,4 @@
 @bts_labyrinth_of_abstraction_core_3_job = 50
 
 @bts_labyrinth_of_abstraction_core_4_job = 100
+@bts_shroud_portal_expiration_days = 100

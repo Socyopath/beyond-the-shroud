@@ -460,3 +460,35 @@ bts_shorud_mega = {
 		remove_megastructure = fromfrom
 	}
 }
+
+
+bts_shroud_portal_megastructure = {
+	entity = "bts_shroud_portal_entity"
+	construction_entity = "construction_platform_entity"
+	show_galactic_map_icon = no
+	show_in_outliner = no
+    build_outside_gravity_well = yes
+	build_time = 1
+
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 10
+			energy = 10
+		}
+	}
+
+    potential = {
+        always = yes
+    }
+
+    possible = {
+        custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+        NOT = { has_megastructure = bts_shroud_portal_megastructure }
+    }
+
+	bypass_type = bts_shroud_portal
+}
