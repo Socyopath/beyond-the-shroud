@@ -339,6 +339,8 @@ bts_mega_aetherophasic_collapser_5 = {
         set_star_class = sc_rift_star
         star = {
             change_pc = pc_bts_shroud_rift
+            clear_deposits = yes
+            set_name = pc_bts_shroud_rift
             create_ambient_object = {
                 type = "bts_psionic_wave"
                 play_animation_once = yes
@@ -369,7 +371,7 @@ bts_mega_aetherophasic_collapser_5 = {
 
 # root = system
 # from = country	
-bts_shorud_mega = {
+bts_labyrinth_of_abstraction_megastructure = {
 	entity = "construction_platform_entity"
 	construction_entity = "construction_platform_entity"
 	portrait = "GFX_megastructure_construction_background"
@@ -438,10 +440,9 @@ bts_shorud_mega = {
 			location = fromfrom.planet
 			orbit_location = yes
 			orbit_angle_offset = 45
-			orbit_distance_offset = 9.899
+			orbit_distance_offset = 10
 			has_ring = no
 			init_effect = {
-				set_name = "Shroud TEST"
 				set_surveyed = {
 					surveyed = yes
 					surveyor = FROM
@@ -453,6 +454,7 @@ bts_shorud_mega = {
                 create_colony = {
                     owner = root.owner
                 }
+                set_name = pc_bts_labyrinth_of_abstraction
                 remove_all_buildings = yes
                 add_building = bts_labyrinth_of_abstraction_core_1
 			}
@@ -479,7 +481,10 @@ bts_shroud_portal_megastructure = {
 	}
 
     potential = {
-        always = yes
+        check_variable_arithmetic = {
+            which = value:bts_labyrinth_of_abstraction_level
+            value >= @bts_labyrinth_of_abstraction_shroud_portal_level
+        }
     }
 
     possible = {
