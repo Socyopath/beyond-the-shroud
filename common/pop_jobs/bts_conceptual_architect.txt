@@ -1,7 +1,7 @@
 bts_conceptual_architect = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_psi_corps
+	building_icon = building_temple_of_whispers
 	clothes_texture_index = 5
 
 	possible_pre_triggers = {
