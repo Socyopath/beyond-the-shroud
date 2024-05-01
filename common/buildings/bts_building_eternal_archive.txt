@@ -1,4 +1,5 @@
 bts_building_eternal_archive = {
+	icon = building_paragon_memory_vaults
 	base_buildtime = @b3_time
 	category = government
 	base_cap_amount = 1

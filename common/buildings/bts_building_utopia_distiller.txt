@@ -1,4 +1,5 @@
 bts_building_utopia_distiller = {
+	icon = building_archaeostudies_faculty
 	base_buildtime = @b3_time
 	category = government
 	base_cap_amount = 1
