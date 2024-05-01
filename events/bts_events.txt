@@ -589,6 +589,7 @@ ship_event = {
     }
 }
 
+# Spawn temporary shroud portal to every fleets
 country_event = {
 	id = bts.200
 	is_triggered_only = yes
@@ -628,6 +629,7 @@ country_event = {
 	}
 }
 
+# Remove all temporary shroud portals
 country_event = {
 	id = bts.201
 	is_triggered_only = yes
@@ -640,5 +642,25 @@ country_event = {
 			}
 			remove_megastructure = this
 		}
+	}
+}
+
+# Captial Upgrade - Gives relic
+planet_event = {
+	id = bts.202
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		is_planet_class = pc_bts_labyrinth_of_abstraction
+		exists = owner
+		check_variable_arithmetic = {
+            which = owner.value:bts_labyrinth_of_abstraction_level
+            value >= @bts_labyrinth_of_abstraction_relic_level
+        }
+	}
+
+	immediate = {
+		owner = { add_relic = r_bts_relic } 
 	}
 }

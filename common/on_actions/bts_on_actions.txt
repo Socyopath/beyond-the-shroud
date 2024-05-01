@@ -61,3 +61,11 @@ on_entering_battle = {
 		bts.12
 	}
 }
+
+
+# This = Planet
+on_building_upgraded = {
+	events = {
+		bts.202 # Gives relic 
+	}
+}

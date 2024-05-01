@@ -1,0 +1,53 @@
+@activation_cost = 3000
+@triumph_duration = 3600
+
+r_bts_relic = {
+	activation_duration = @triumph_duration
+	portrait = "GFX_relic_wormhole_key_5"
+	sound = "par_ui_keides_relic"
+
+
+	resources = {
+		category = relics
+		# Activation cost
+		cost = {
+			unity = @activation_cost
+		}
+	}
+
+	triggered_country_modifier = {
+		potential = {
+			always = yes
+		}
+		country_physics_tech_research_speed = 0.20
+		ship_jumpdrive_cooldown_mult = -0.25
+	}
+
+	score = 2500
+
+	active_effect = {
+		country_event = { id = bts.200 }
+		custom_tooltip = relic_triumph_cooldown
+		hidden_effect = {
+			add_modifier = {
+				modifier = "relic_activation_cooldown"
+				days = @triumph_duration
+			}
+		}
+	}
+
+	# Possible check for activation
+	possible = {
+		custom_tooltip = {
+			fail_text = bts_relic_needed_level
+			check_variable_arithmetic = {
+				which = value:bts_labyrinth_of_abstraction_level
+				value >= @bts_labyrinth_of_abstraction_relic_level
+			}
+		}
+		inline_script = {
+			script = relics/activation_checks
+			RELIC = r_bts_relic
+		}
+	}
+}

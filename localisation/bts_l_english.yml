@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 
 # Decision
 decision_bts_zroni_astral_spliting: "Archaeo-Spliting"
@@ -278,3 +278,10 @@ job_bts_conceptual_architect_effect_desc: "£job_telepath£ $job_telepath_plural
 bts_shroud_portal_megastructure_MEGASTRUCTURE_DETAILS: "Shroud Portal MEGA"
 bts_shroud_portal_megastructure: "Shroud Portal"
 bts_shroud_portal_megastructure_DESC: "Shroud Portal desc"
+
+pc_bts_shroud_rift: "Shroud Rift"
+pc_bts_shroud_rift_desc: ""
+
+r_bts_relic: "RELIC"
+r_bts_relic_desc: "RELIC DESC"
+bts_relic_needed_level: "$TRIGGER_FAIL$$pc_bts_labyrinth_of_abstraction$ level §Ygreater or equal than $@bts_labyrinth_of_abstraction_relic_level|*0$§! is required"
