@@ -3,11 +3,9 @@ bts_district_third_eye_observatory = {
 	is_capped_by_modifier = no
 
     potential = {
-		uses_district_set = bts_labyrinth_of_abstraction_district_set
 		is_planet_class = pc_bts_labyrinth_of_abstraction
-		owner = {
-			exists = owner
-		}
+		uses_district_set = bts_labyrinth_of_abstraction_district_set
+		exists = owner
 	}
 
 	resources = {
@@ -36,11 +34,9 @@ bts_district_influence_control_complex = {
 	is_capped_by_modifier = no
 
     potential = {
-		uses_district_set = bts_labyrinth_of_abstraction_district_set
 		is_planet_class = pc_bts_labyrinth_of_abstraction
-		owner = {
-			exists = owner
-		}
+		uses_district_set = bts_labyrinth_of_abstraction_district_set
+		exists = owner
 	}
 
 	resources = {
