@@ -159,7 +159,7 @@ country_event = {
 			mult = value:scripted_modifier_mult|MODIFIER|shroud_delve_cost|
 		}
 		hidden_effect = {
-			country_event = { id =  bts.30 }
+			country_event = { id =  bts.301 }
 		}
 	}
 	option = { # Shroud delve

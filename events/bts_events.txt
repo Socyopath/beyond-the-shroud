@@ -59,86 +59,9 @@ starbase_event = {
 }
 
 
-# BTS Custom covenant
-country_event = {
-	id = bts.20
-	title = "utopia.3000.name"
-	desc = bts_covenant_establish_desc
-	diplomatic = yes
-	diplomatic_title = BLANK_STRING
-	force_open = yes
-
-	picture_event_data = {
-		portrait = shroud1
-		room = shroud_room
-	}
-
-	is_triggered_only = yes
-
-	immediate = {
-		set_country_flag = shroud_diplomacy_engaged
-	}
-
-	after = {
-		hidden_effect = {
-			remove_country_flag = shroud_diplomacy_engaged
-		}
-	}
-
-	option = {
-		name = bts_covenant_establish_option
-		trigger = {
-			NOT = { has_country_flag = tradition_covenant }
-		}
-		custom_tooltip = "covenant.tooltip"
-		add_modifier = { modifier = bts_covenant_modifier_0 days = -1 }
-		begin_event_chain = {
-			event_chain = "bts_covenant_chain"
-			target = this
-		}
-		hidden_effect = {
-			set_country_flag = has_shroud_patron
-			set_country_flag = bts_covenant_confirmed
-			country_event = { id = utopia.3310 } # Covenant Sealed
-			set_variable = {
-				which = bts_covenant_rank
-				value = 1
-			}
-		}
-	}
-	option = { #Tradition Covenant
-		name = bts_covenant_establish_option
-		trigger = {
-			has_country_flag = tradition_covenant
-		}
-		custom_tooltip = "covenant.tooltip"
-		add_modifier = { modifier = bts_covenant_modifier_0 days = -1 }
-		hidden_effect = {
-			set_country_flag = has_shroud_patron
-			remove_country_flag = tradition_covenant
-			country_event = { id = utopia.3310 } # Covenant Sealed
-			if = {
-				limit = {
-					has_tradition = tr_psionics_finish
-					NOT = { has_country_flag = confirmation_incoming }
-				}
-				country_event = { id = utopia.2658 days = 360 }
-			}
-		}
-	}
-	option = {
-		name = "exit.shroud"
-		custom_tooltip = "exit.shroud.tooltip"
-		default_hide_option = yes
-		hidden_effect = {
-			remove_country_flag = form_covenant_flag
-		}
-	}
-}
-
 # Megastructure Info event
 country_event = { 
-	id = bts.22
+	id = bts.300
 	title = bts_mega_aetherophasic_collapser_unlocked
 	picture = GFX_evt_unspeakable_horror
 	show_sound = event_red_alert
@@ -162,9 +85,9 @@ country_event = {
 	}
 }
 
-# BTS custom covenant powers
+# BTS covenant powers
 country_event = {
-	id = bts.30
+	id = bts.301
 	title = "utopia.3000.name"
 	desc = "utopia.3170.desc"
 	diplomatic = yes
@@ -197,7 +120,7 @@ country_event = {
 		RESOURCE_2 = astral_threads
 		USE_COST_2 = @bts_covenant_power_summon_1_astral_threads_cost
         SHROUD_DELVE_COOLDOWN = @bts_covenant_power_summon_1_shroud_delve_cooldown
-        EVENT_ID = bts.31
+        EVENT_ID = bts.310
     }
 
     inline_script = {
@@ -209,7 +132,7 @@ country_event = {
 		RESOURCE_2 = astral_threads
 		USE_COST_2 = @bts_covenant_power_summon_2_astral_threads_cost
         SHROUD_DELVE_COOLDOWN = @bts_covenant_power_summon_2_shroud_delve_cooldown
-        EVENT_ID = bts.32
+        EVENT_ID = bts.320
     }
 
     inline_script = {
@@ -221,7 +144,7 @@ country_event = {
 		RESOURCE_2 = astral_threads
 		USE_COST_2 = @bts_covenant_power_summon_3_astral_threads_cost
         SHROUD_DELVE_COOLDOWN = @bts_covenant_power_summon_3_shroud_delve_cooldown
-        EVENT_ID = bts.33
+        EVENT_ID = bts.330
     }
 
     inline_script = {
@@ -233,7 +156,7 @@ country_event = {
 		RESOURCE_2 = astral_threads
 		USE_COST_2 = @bts_covenant_power_summon_4_astral_threads_cost
         SHROUD_DELVE_COOLDOWN = @bts_covenant_power_summon_4_shroud_delve_cooldown
-        EVENT_ID = bts.34
+        EVENT_ID = bts.340
     }
 
 	option = {
@@ -245,7 +168,7 @@ country_event = {
 
 
 country_event = {
-	id = bts.31
+	id = bts.310
     hide_window = yes
 	is_triggered_only = yes
 
@@ -260,7 +183,7 @@ country_event = {
 }
 
 country_event = {
-	id = bts.32
+	id = bts.320
     hide_window = yes
 	is_triggered_only = yes
 
@@ -275,7 +198,7 @@ country_event = {
 }
 
 country_event = {
-	id = bts.33
+	id = bts.330
     hide_window = yes
 	is_triggered_only = yes
 
@@ -290,7 +213,7 @@ country_event = {
 }
 
 country_event = {
-	id = bts.34
+	id = bts.340
     hide_window = yes
 	is_triggered_only = yes
 
@@ -302,7 +225,7 @@ country_event = {
 			SHIP_DESIGN_ZRONI = "bts_warped_consciousness_zroni"
 		}
 		last_created_ship = {
-			ship_event = { id = bts.342 } # Update modifiers
+			ship_event = { id = bts.343 } # Update modifiers
 		}
 		set_variable = {
 			which = "bts_covenant_planet_killer_pop_killed"
@@ -314,7 +237,7 @@ country_event = {
 
 # God Ray
 planet_event = {
-	id = bts.340
+	id = bts.341
 	hide_window = yes
 
 	is_triggered_only = yes
@@ -336,7 +259,7 @@ planet_event = {
 				owner = { NOT = { is_same_value = from.owner } }
 			}
 			from.owner = {
-				country_event = { id = bts.341 }
+				country_event = { id = bts.342 }
 			}
 		}
 
@@ -473,14 +396,14 @@ planet_event = {
 				limit = {
 					is_ship_size = warped_consciousness
 				}
-				ship_event = { id = bts.342 }
+				ship_event = { id = bts.343 }
 			}
 		}
 	}
 }
 
 country_event = {
-	id = bts.341
+	id = bts.342
 	title = bts_planet_destruction_name
 	desc = bts_planet_destruction_desc
 	picture = GFX_evt_planet_beam
@@ -499,7 +422,7 @@ country_event = {
 
 # Updated Reckoning modifier
 ship_event = {
-	id = bts.342
+	id = bts.343
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -591,7 +514,7 @@ ship_event = {
 
 # Spawn temporary shroud portal to every fleets
 country_event = {
-	id = bts.200
+	id = bts.400
 	is_triggered_only = yes
 	hide_window = yes
 
@@ -623,7 +546,7 @@ country_event = {
 			}
 		}
 		country_event = {
-			id = bts.201
+			id = bts.401
 			days = @bts_shroud_portal_expiration_days
 		}
 	}
@@ -631,7 +554,7 @@ country_event = {
 
 # Remove all temporary shroud portals
 country_event = {
-	id = bts.201
+	id = bts.401
 	is_triggered_only = yes
 	hide_window = yes
 
@@ -647,7 +570,7 @@ country_event = {
 
 # Captial Upgrade - Gives relic
 planet_event = {
-	id = bts.202
+	id = bts.402
 	is_triggered_only = yes
 	hide_window = yes
 
@@ -661,6 +584,6 @@ planet_event = {
 	}
 
 	immediate = {
-		owner = { add_relic = r_bts_relic } 
+		owner = { add_relic = r_bts_relic_shroud_nexus } 
 	}
 }
