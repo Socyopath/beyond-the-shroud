@@ -1,4 +1,53 @@
 defined_text = {
+	name = BtsGetShroudPatron
+	text = {
+		localization_key = name_composer
+		trigger = {
+			OR = {
+				has_modifier = covenant_composer_of_strands_0
+				has_modifier = covenant_composer_of_strands
+			}
+		}
+	}
+	text = {
+		localization_key = name_eater
+		trigger = {
+			OR = {
+				has_modifier = covenant_eater_of_worlds_0
+				has_modifier = covenant_eater_of_worlds
+			}
+		}
+	}
+	text = {
+		localization_key = name_instrument
+		trigger = {
+			OR = {
+				has_modifier = covenant_instrument_of_desire_0
+				has_modifier = covenant_instrument_of_desire
+			}
+		}
+	}
+	text = {
+		localization_key = name_whisperers
+		trigger = {
+			OR = {
+				has_modifier = covenant_whisperers_in_the_void_0
+				has_modifier = covenant_whisperers_in_the_void
+			}
+		}
+	}
+	text = {
+		localization_key = bts_covenant_name_full
+		trigger = {
+			OR = {
+				has_modifier = bts_covenant_modifier_0
+				has_modifier = bts_covenant_modifier_1
+			}
+		}
+	}
+}
+
+defined_text = {
     name = bts_covenant_planet_killer_pop_killed_status
     text = {
 		trigger = { 

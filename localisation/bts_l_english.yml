@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 
 # Decision
 decision_bts_zroni_astral_spliting: "Archaeo-Spliting"
@@ -81,16 +81,16 @@ bts_tech_covenant_mark_desc: "We have discovered how to let psionic energy flow 
 bts_tech_shroud_destabilizer: "Shroud Destabilizer"
 bts_tech_shroud_destabilizer_desc: "We've managed to infuse the pure psionic energy of the shroud into our starbase. Due to the unstable nature of this energy, violent psionic waves emanate from it, disrupting enemy systems."
 
-bts_mega_aetherophasic_collapser_0_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_0_favor_cost$§! favor required with §Y[from.GetShroudPatron]§!"
-bts_mega_aetherophasic_collapser_1_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_1_favor_cost$§! favor required with §Y[from.GetShroudPatron]§!"
-bts_mega_aetherophasic_collapser_2_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_2_favor_cost$§! favor required with §Y[from.GetShroudPatron]§!"
-bts_mega_aetherophasic_collapser_3_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_3_favor_cost$§! favor required with §Y[from.GetShroudPatron]§!"
-bts_mega_aetherophasic_collapser_4_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_4_favor_cost$§! favor required with §Y[from.GetShroudPatron]§!"
-bts_mega_aetherophasic_collapser_5_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_5_favor_cost$§! favor required with §Y[from.GetShroudPatron]§!"
+bts_mega_aetherophasic_collapser_0_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_0_favor_cost$§! favor required with §Y[from.BtsGetShroudPatron]§!"
+bts_mega_aetherophasic_collapser_1_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_1_favor_cost$§! favor required with §Y[from.BtsGetShroudPatron]§!"
+bts_mega_aetherophasic_collapser_2_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_2_favor_cost$§! favor required with §Y[from.BtsGetShroudPatron]§!"
+bts_mega_aetherophasic_collapser_3_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_3_favor_cost$§! favor required with §Y[from.BtsGetShroudPatron]§!"
+bts_mega_aetherophasic_collapser_4_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_4_favor_cost$§! favor required with §Y[from.BtsGetShroudPatron]§!"
+bts_mega_aetherophasic_collapser_5_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_5_favor_cost$§! favor required with §Y[from.BtsGetShroudPatron]§!"
 
 # Megastructures
 bts_mega_aetherophasic_collapser_unlocked: "Aetherophasic Collapser"
-bts_mega_aetherophasic_collapser_unlocked_desc: "Your dedication to the §Y[root.GetShroudPatron]§! is beginning to give you visions of unimaginable concepts. The entity has §Yrevealed plans for the construction of a megastructure§! designed to merge the shroud with our reality. This is the §MAetherophase Collapser§!."
+bts_mega_aetherophasic_collapser_unlocked_desc: "Your dedication to the §Y[root.BtsGetShroudPatron]§! is beginning to give you visions of unimaginable concepts. The entity has §Yrevealed plans for the construction of a megastructure§! designed to merge the shroud with our reality. This is the §MAetherophase Collapser§!."
 bts_requires_no_existing_aetherophasic_collapser: "$TRIGGER_FAIL$Cannot build more than one Aetherophasic Collapser."
 bts_mega_aetherophasic_collapser_0_MEGASTRUCTURE_DETAILS: "The Aetherophasic Collapser, which will rip apart the barriers that exist between this world and the Shroud and §Menable powerful psionic beings to be summoned§!."
 bts_mega_aetherophasic_collapser_0: "Aetherophasic Collapser Frame"
@@ -119,9 +119,16 @@ bts_covenant_establish_option: "§YForm a Covenant with the $bts_covenant_name_f
 bts_covenant_contact: "§MOne that travels beyond known borders.§!"
 bts_covenant_sealed_desc: "It is done. We have formed a Covenant with the §Y$bts_covenant_name_full$§! and already they have begun to share its secrets with our scientists and leaders. We will benefit immensely from their knowledge. The only drawback seems to be an irresistible urge to indulge our curiosity at the risk of our lives."
 bts_covenant_sealed_option: "Let's see what lies beyond."
-# Rank 3 event
-utopia.2681.desc: "Our patron, the §Y[GetShroudPatron]§! seems to have relinquished a fraction of its energy in a fold of the Shroud, allowing us to perform §M$decision_bts_shrouded_covenant_arcology_project$§! §Y(Ascension $ap_arcology_project$ is required)§!. The conclave of Telepaths is certain that our close bond will allow one of us to safely absorb and wield this power. A few candidates were selected, but only one of them can be granted the privilege to wield the power of our patron. Who shall it be?"
 
+# Covenant event loc
+utopia.2658.desc: "Time has passed since we established the foundation of a covenant with the §Y[BtsGetShroudPatron]§!. Our bond is still weak, and we still have a chance to break it - or alternatively, strengthen our connection."
+utopia.2658.b: "Renounce the §Y[BtsGetShroudPatron]§!."
+utopia.2671.desc: "Our understanding of our patron grows. We are no more than an afterthought to it. Insects in its home. Yet, it has taken a liking to us and on this occasion, it has bestowed another drop of power upon us.\n\nOur telepaths are now more closely attuned to our patron, and we have been inspired to create a monument to celebrate our covenant, a place where our best telepaths can try to commune with the §Y[BtsGetShroudPatron]§!."
+utopia.2676.desc: "The mysteries of the Shroud are too alien for us to dispel, but we have become more attuned to the §Y[BtsGetShroudPatron]§!. Everywhere we go, we can sense it at the back of our minds, and its power seeps into our reality from the cracks of our psyche." utopia.2681.desc: "Our patron, the §Y[BtsGetShroudPatron]§! seems to have relinquished a fraction of its energy in a fold of the Shroud, allowing us to perform §M$decision_bts_shrouded_covenant_arcology_project$§! §Y(Ascension $ap_arcology_project$ is required)§!. The conclave of Telepaths is certain that our close bond will allow one of us to safely absorb and wield this power. A few candidates were selected, but only one of them can be granted the privilege to wield the power of our patron. Who shall it be?"
+utopia.2681.desc: "Our patron, the §Y[BtsGetShroudPatron]§! seems to have relinquished a fraction of its energy in a fold of the Shroud, allowing us to perform §M$decision_bts_shrouded_covenant_arcology_project$§! §Y(Ascension $ap_arcology_project$ is required)§!. The conclave of Telepaths is certain that our close bond will allow one of us to safely absorb and wield this power. A few candidates were selected, but only one of them can be granted the privilege to wield the power of our patron. Who shall it be?"
+utopia.2682.desc: "It is done. As the power was invested in [chosen_leader.GetName], all those around could feel the weight of its psionic presence. It is powerful and commands respect. [chosen_leader.GetHeShe] will now be the immortal champion of the §Y[BtsGetShroudPatron]§!."
+utopia.2686.desc: "The conclave of Telepaths has made a breakthrough in harnessing the powers of our patron, the §Y[BtsGetShroudPatron]§!. Where previously only psionic individuals could fully grasp the extent of the Covenant, we have devised a way to let power flow through entire starships, at a scale never seen before. Should we wish it, the mark of the §Y[BtsGetShroudPatron]§! can push our ships further than ever before."
+ 
 bts_covenant_chain_title: "$bts_covenant_name_full$"
 bts_covenant_chain_desc: ""We have created a bond with a Shroud Entity named the §Y$bts_covenant_name_full$§!. Unspeakable, it granted us crumbs of its power for a price. There will likely be more to follow.\n\nOur telepaths theorize, that the bond can be deepened more easily if we align ourselves more with our patron.\n\nThe $bts_covenant_name_prefix$ is unstoppable and its influence must travel beyond all realities. §YSeek for rifts in our universe§! and §Yexplore them§! as much as you can to expand the influence of your divinity and §Ygain favor§!.\n\n$text_covenant_favor_info$\n$[root.bts_covenant_planet_killer_pop_killed_status]$"
 bts_whisperers_covenant_chain_title: "The Whisperers in the Void"

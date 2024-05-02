@@ -81,16 +81,16 @@
  bts_tech_shroud_destabilizer: "Дестабилизатор покрова"  
  bts_tech_shroud_destabilizer_desc: "Нам удалось наполнить нашу звездную базу чистой псионической энергией покрова. Из-за нестабильной природы этой энергии от нее исходят мощные псионические волны, разрушающие системы противника." 
   
- bts_mega_aetherophasic_collapser_0_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_0_favor_cost$§! требуется благосклонность §Y[from.GetShroudPatron]§!"
- bts_mega_aetherophasic_collapser_1_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_1_favor_cost$§! требуется благосклонность §Y[from.GetShroudPatron]§!"
- bts_mega_aetherophasic_collapser_2_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_2_favor_cost$§! требуется благосклонность §Y[from.GetShroudPatron]§!"
- bts_mega_aetherophasic_collapser_3_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_3_favor_cost$§! требуется благосклонность §Y[from.GetShroudPatron]§!"
- bts_mega_aetherophasic_collapser_4_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_4_favor_cost$§! требуется благосклонность §Y[from.GetShroudPatron]§!"
- bts_mega_aetherophasic_collapser_5_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_5_favor_cost$§! требуется благосклонность §Y[from.GetShroudPatron]§!"
+ bts_mega_aetherophasic_collapser_0_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_0_favor_cost$§! требуется благосклонность §Y[from.BtsGetShroudPatron]§!"
+ bts_mega_aetherophasic_collapser_1_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_1_favor_cost$§! требуется благосклонность §Y[from.BtsGetShroudPatron]§!"
+ bts_mega_aetherophasic_collapser_2_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_2_favor_cost$§! требуется благосклонность §Y[from.BtsGetShroudPatron]§!"
+ bts_mega_aetherophasic_collapser_3_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_3_favor_cost$§! требуется благосклонность §Y[from.BtsGetShroudPatron]§!"
+ bts_mega_aetherophasic_collapser_4_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_4_favor_cost$§! требуется благосклонность §Y[from.BtsGetShroudPatron]§!"
+ bts_mega_aetherophasic_collapser_5_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_5_favor_cost$§! требуется благосклонность §Y[from.BtsGetShroudPatron]§!"
   
  # Megastructures 
  bts_mega_aetherophasic_collapser_unlocked: "Эфирнофазный коллапсер"  
- bts_mega_aetherophasic_collapser_unlocked_desc: "Ваша преданность §Y[root.GetShroudPatron]§! начинает давать вам видения невообразимых концепций. Сущность §Yраскрыла планы строительства мегаструктуры§!, предназначенной для слияния покрова с нашей реальностью. Это §MЭфирнофазный коллапсер§!."
+ bts_mega_aetherophasic_collapser_unlocked_desc: "Ваша преданность §Y[root.BtsGetShroudPatron]§! начинает давать вам видения невообразимых концепций. Сущность §Yраскрыла планы строительства мегаструктуры§!, предназначенной для слияния покрова с нашей реальностью. Это §MЭфирнофазный коллапсер§!."
  bts_requires_no_existing_aetherophasic_collapser: "$TRIGGER_FAIL$Невозможно построить более одного Этерофазного Коллапсера."
  bts_mega_aetherophasic_collapser_0_MEGASTRUCTURE_DETAILS: "Эфирнофазный коллапсер, который разрушит барьеры, существующие между этим миром и Покровом, и §Mпозволит призвать могущественных псионических существ§!." 
  ts_mega_aetherophasic_collapser_0: "Каркас Эфирнофазного коллапсера"
@@ -119,9 +119,16 @@
  bts_covenant_contact: "§MТот, который выходит за грань.§!" 
  bts_covenant_sealed_desc: "Наконец, всё готово. Мы заключили контракт с §Y$bts_covenant_name_full$§! и они уже начали делиться своими секретами с нашими учеными и руководителями. Мы получим огромную пользу от их знаний. Единственным недостатком, по-видимому, является непреодолимое желание удовлетворить свое любопытство с риском для жизни." 
  bts_covenant_sealed_option: "Давайте посмотрим, что находится за гранью."  
- # Rank 3 event 
- utopia.2681.desc: "Наш покровитель, §Y[GetShroudPatron]§!  даровал частичку своей энергии из складок Покрова, позволив нам осуществить §M$decision_bts_shrouded_covenant_arcology_project$§! §Y(Требуется Возвышение $ap_arcology_project$)§!. Конклав телепатов уверен, что наша тесная связь позволит одному из нас безопасно поглощать и использовать эту силу. Было отобрано несколько кандидатов, но только одному из них может быть предоставлена привилегия использовать силу нашего покровителя. Кто это будет?" 
-  
+
+ # Covenant event loc
+ utopia.2658.desc: "Прошло некоторое время с тех пор, как мы и §Y[BtsGetShroudPatron]§! заключили союз. Наши узы еще слабы, и у нас есть шанс вырваться или, напротив, укрепить связь."
+ utopia.2658.b: "Мы и §Y[BtsGetShroudPatron]§! пойдем разными путями."
+ utopia.2671.desc: "Мы все лучше понимаем нашего покровителя. Для него мы не более чем мысль на задворках сознания. Насекомые в его доме. И все же мы пришлись ему по нраву, и в связи с этим он одарил нас еще одной крупицей своей силы.\n\nТеперь наши телепаты теснее связаны с покровителем, что вдохновило нас на возведение монумента в честь нашего договора — особого места, где наши телепаты и §Y[BtsGetShroudPatron]§! могут попытаться продолжить общение."
+ utopia.2676.desc: "Загадки Покрова слишком чужды нам, но мы и §Y[BtsGetShroudPatron]§! стали ближе. Куда бы мы ни шли, он всегда с нами, словно смутная мысль в сознании, и его сила просачивается в нашу реальность через трещины в нашей душе."
+ utopia.2681.desc: "Наш покровитель, §Y[BtsGetShroudPatron]§!  даровал частичку своей энергии из складок Покрова, позволив нам осуществить §M$decision_bts_shrouded_covenant_arcology_project$§! §Y(Требуется Возвышение $ap_arcology_project$)§!. Конклав телепатов уверен, что наша тесная связь позволит одному из нас безопасно поглощать и использовать эту силу. Было отобрано несколько кандидатов, но только одному из них может быть предоставлена привилегия использовать силу нашего покровителя. Кто это будет?" 
+ utopia.2682.desc: "Свершилось. [chosen_leader.GetName] получает всю силу, и все вокруг ощущают тяжесть псионического присутствия. Оно могущественно, оно вызывает уважение. [chosen_leader.GetHeShe] с этого момента станет бессмертным избранником."
+ utopia.2686.desc: "Конклав телепатов совершил прорыв в использовании силы, что дарует нам §Y[BtsGetShroudPatron]§!. Ранее лишь псионики могли в полной мере проникнуться договором, теперь же мы нашли способ направить поток силы сквозь целые космические корабли в доселе невиданных масштабах. Если мы пожелаем, §Y[BtsGetShroudPatron]§! может направить наши корабли сквозь расстояния, ранее казавшиеся невозможными."
+ 
  bts_covenant_chain_title: "$bts_covenant_name_full$" 
  bts_covenant_chain_desc: ""Мы установили связь с Существом из Покрова по имени §Y$bts_covenant_name_full$§!. Невероятно, но оно предоставило нам крупицы своей силы за определенную плату. Вероятно, за этим последует еще что-то.\n\nНаши телепаты преполагают, что связь может быть легче укреплена, если мы сильнее сблизимся с нашим покровителем.\n\n$bts_covenant_name_prefix$ не остановить, и его влияние должно распространиться за пределы всех реальностей. §YИщите разломы в нашей вселенной§! и §Yисследуйте их§! как можно больше, чтобы расширить влияние своей божественности и §Yзаслужить благосклонность§!.\n\n$text_covenant_favor_info$\n$[root.bts_covenant_planet_killer_pop_killed_status]$"  
  bts_whisperers_covenant_chain_title: "Шепчущие в пустоте"  
