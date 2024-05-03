@@ -302,7 +302,7 @@ bts_tech_zroni_shield = {
 	is_reverse_engineerable = no
 	weight = @tier5weight3
 
-	prerequisites = { "bts_tech_shrouded_shields" }
+	prerequisites = { "tech_psionic_shield" "tech_secrets_zroni" }
 
 	weight_modifier = {
 		modifier = {
