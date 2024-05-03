@@ -174,6 +174,11 @@ ship_section_template = {
 		template = "medium_turret"
 		locatorname = "root"
 	}
+	component_slot = {
+		name = "PLANET_KILLER_GUN_01"
+		template = "invisible_planet_killer_fixed"
+		locatorname = "root"
+	}
 
 	small_utility_slots = 1
 	medium_utility_slots = 1
