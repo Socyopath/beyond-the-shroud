@@ -249,7 +249,7 @@ ship_design = {
 # Dimensional Horror
 ship_design = {
 	name = "bts_dimensional_horror"
-	ship_size = dimensional_horror
+	ship_size = bts_dimensional_horror
 
 	section = {
 		template = "bts_dimensional_horror"
@@ -331,7 +331,7 @@ ship_design = {
 # Dimensional Horror Zroni
 ship_design = {
 	name = "bts_dimensional_horror_zroni"
-	ship_size = dimensional_horror
+	ship_size = bts_dimensional_horror
 
 	section = {
 		template = "bts_dimensional_horror"

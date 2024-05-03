@@ -210,6 +210,15 @@ bts_covenant_power_summon_4: "Summon §M$NAME_Reckoning$§!."
 bts_covenant_power_summon_4_desc: "A massive paranormal being of pure energy that seeks to devour the consciousness of other life forms."
 bts_power_4_already_in_use: "No §M$NAME_Reckoning$§! is already owned by the empire"
 
+bts_shroud_avatar: "$NAME_Shroud_Avatar$"
+bts_shroud_avatar_zroni: "Zroni $bts_shroud_avatar$"
+bts_shroud_manifestation: "$NAME_Shroud_Manifestation$"
+bts_shroud_manifestation_zroni: "Zroni $bts_shroud_manifestation$"
+bts_warped_consciousness: "$NAME_Warped_Consciousness$"
+bts_warped_consciousness_zroni: "Zroni $bts_warped_consciousness$"
+bts_dimensional_horror: "$NAME_Dimensional_Horror$"
+bts_dimensional_horror_zroni: "Zroni $bts_dimensional_horror$"
+
 # Modifiers
 bts_astral_action_cost: "Astral Actions Cost"
 absorbed_consciousness_0: "$absorbed_consciousness_1$"

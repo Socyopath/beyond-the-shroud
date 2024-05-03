@@ -2,7 +2,7 @@
 @build_block_radius_military = 200
 
 # Dimensional Horror
-dimensional_horror = {
+bts_dimensional_horror = {
 	graphical_culture = no
 	is_space_object = yes
 	max_speed = 10.0

@@ -71,7 +71,7 @@ ship_section_template = {
 # Dimensional Horror
 ship_section_template = {
 	key = "bts_dimensional_horror"
-	ship_size = dimensional_horror
+	ship_size = bts_dimensional_horror
 	fits_on_slot = mid
 	entity = "dimensional_horror_hull_entity"
 	icon = "GFX_ship_part_core_mid"
