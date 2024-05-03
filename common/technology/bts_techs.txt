@@ -334,6 +334,14 @@ bts_tech_zro_infusion = {
 	prerequisites = { "tech_mine_zro" }
 
 	modifier = {
+		planet_pops_unemployed_sr_zro_upkeep_add = @bts_tech_zro_infusion_zro_upkeep_cost
+		pop_category_workers_sr_zro_upkeep_add = @bts_tech_zro_infusion_zro_upkeep_cost
+		pop_category_specialists_sr_zro_upkeep_add = @bts_tech_zro_infusion_zro_upkeep_cost
+		pop_category_rulers_sr_zro_upkeep_add = @bts_tech_zro_infusion_zro_upkeep_cost
+		planet_pops_food_upkeep_mult = -1.00
+		pop_category_workers_food_upkeep_add = -5
+		pop_category_specialists_food_upkeep_add = -5
+		pop_category_rulers_food_upkeep_add = -5
 		description = bts_tech_zro_infusion_effect
 	}
 
