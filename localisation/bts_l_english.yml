@@ -31,7 +31,7 @@ agenda_psionic_supremacy_finish_bts_covenant_desc: "$council_agenda_agenda_psion
 # Components
 BTS_PLANET_KILLER_COVENANT: "Consciousness Assimilator"
 BTS_PLANET_KILLER_COVENANT_DESC: "Assimilate the consciousness of all living beings on a planet and increase your power as you kill more."
-BTS_PLANET_KILLER_COVENANT_ACTION: "Assimilate all the consciousnesses of"
+BTS_PLANET_KILLER_COVENANT_ACTION: "Assimilate all the consciousnesses"
 FLEETORDER_DESTROY_PLANET_WITH_BTS_PLANET_KILLER_COVENANT: "Preparing to assimilate all consciousnesses of $PLANET|Y$."
 MESSAGE_DESC_FOR_BTS_PLANET_KILLER_COVENANT: "had all of its life forms consciousness being absorbed by"
 bts_planet_destruction_name: "Consciousness assimilated"
