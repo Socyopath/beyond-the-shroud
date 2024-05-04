@@ -195,6 +195,9 @@
 @bts_labyrinth_of_abstraction_core_3_time = 600
 @bts_labyrinth_of_abstraction_core_3_job = 50
 @bts_labyrinth_of_abstraction_shroud_portal_level = 3
+@bts_shroud_portal_time = 360
+@bts_shroud_portal_sr_zro = 100
+@bts_shroud_portal_energy = 400
 ### Level 4
 @bts_labyrinth_of_abstraction_core_4_upkeep_energy = 10
 @bts_labyrinth_of_abstraction_core_4_cost_sr = 200

@@ -472,13 +472,13 @@ bts_shroud_portal_megastructure = {
 	show_galactic_map_icon = no
 	show_in_outliner = no
     build_outside_gravity_well = yes
-	build_time = 1
+	build_time = @bts_shroud_portal_time
 
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 10
-			energy = 10
+			sr_zro = @bts_shroud_portal_sr_zro
+			energy = @bts_shroud_portal_energy
 		}
 	}
 
