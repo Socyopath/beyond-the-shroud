@@ -2,6 +2,10 @@ bts_district_third_eye_observatory = {
 	base_buildtime = @bts_labyrinth_of_abstraction_district_time
 	is_capped_by_modifier = no
 
+	show_on_uncolonized = {
+		uses_district_set = bts_labyrinth_of_abstraction_district_set
+	}
+
     potential = {
 		is_planet_class = pc_bts_labyrinth_of_abstraction
 		uses_district_set = bts_labyrinth_of_abstraction_district_set
@@ -33,6 +37,10 @@ bts_district_influence_control_complex = {
 	base_buildtime = @bts_labyrinth_of_abstraction_district_time
 	is_capped_by_modifier = no
 
+	show_on_uncolonized = {
+		uses_district_set = bts_labyrinth_of_abstraction_district_set
+	}
+	
     potential = {
 		is_planet_class = pc_bts_labyrinth_of_abstraction
 		uses_district_set = bts_labyrinth_of_abstraction_district_set
