@@ -24,7 +24,7 @@ bts_labyrinth_of_abstraction_core_1 = {
 	resources = {
 		category = planet_buildings
 		upkeep = {
-			energy = 1
+			energy = @bts_labyrinth_of_abstraction_core_1_upkeep_energy
 		}
 	}
 
@@ -40,7 +40,7 @@ bts_labyrinth_of_abstraction_core_1 = {
 # Planetary Administration
 bts_labyrinth_of_abstraction_core_2 = {
 	icon = building_temple_of_whispers
-	base_buildtime = @b2_time
+	base_buildtime = @bts_labyrinth_of_abstraction_core_2_time
 	capital = yes
 	can_build = no
 	can_demolish = no
@@ -73,8 +73,12 @@ bts_labyrinth_of_abstraction_core_2 = {
 	}
 	resources = {
 		category = planet_buildings
+		cost = {
+			minerals = @bts_labyrinth_of_abstraction_core_2_cost
+			sr_zro = @bts_labyrinth_of_abstraction_core_2_cost_sr
+		}
 		upkeep = {
-			energy = 1
+			energy = @bts_labyrinth_of_abstraction_core_2_upkeep_energy
 		}
 	}
 
@@ -89,7 +93,7 @@ bts_labyrinth_of_abstraction_core_2 = {
 
 bts_labyrinth_of_abstraction_core_3 = {
 	icon = building_temple_of_whispers
-	base_buildtime = @b3_time
+	base_buildtime = @bts_labyrinth_of_abstraction_core_3_time
 	capital = yes
 	can_build = no
 	can_demolish = no
@@ -122,8 +126,12 @@ bts_labyrinth_of_abstraction_core_3 = {
 	}
 	resources = {
 		category = planet_buildings
+		cost = {
+			minerals = @bts_labyrinth_of_abstraction_core_3_cost
+			sr_zro = @bts_labyrinth_of_abstraction_core_3_cost_sr
+		}
 		upkeep = {
-			energy = 1
+			energy = @bts_labyrinth_of_abstraction_core_3_upkeep_energy
 		}
 	}
 
@@ -138,7 +146,7 @@ bts_labyrinth_of_abstraction_core_3 = {
 
 bts_labyrinth_of_abstraction_core_4 = {
 	icon = building_temple_of_whispers
-	base_buildtime = @b3_time
+	base_buildtime = @bts_labyrinth_of_abstraction_core_4_time
 	capital = yes
 	can_build = no
 	can_demolish = no
@@ -169,8 +177,12 @@ bts_labyrinth_of_abstraction_core_4 = {
 	}
 	resources = {
 		category = planet_buildings
+		cost = {
+			minerals = @bts_labyrinth_of_abstraction_core_4_cost
+			sr_zro = @bts_labyrinth_of_abstraction_core_4_cost_sr
+		}
 		upkeep = {
-			energy = 1
+			energy = @bts_labyrinth_of_abstraction_core_4_upkeep_energy
 		}
 	}
 

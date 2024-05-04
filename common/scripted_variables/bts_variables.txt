@@ -176,15 +176,28 @@
 
 ## Capital
 ### Level 1
+@bts_labyrinth_of_abstraction_core_1_upkeep_energy = 2
 @bts_labyrinth_of_abstraction_core_1_job = 10
 ### Level 2
+@bts_labyrinth_of_abstraction_core_2_upkeep_energy = 5
+@bts_labyrinth_of_abstraction_core_2_cost_sr = 50
+@bts_labyrinth_of_abstraction_core_2_cost = 600
+@bts_labyrinth_of_abstraction_core_2_time = 480
 @bts_labyrinth_of_abstraction_core_2_job = 25
 @bts_labyrinth_of_abstraction_favor_boost_level = 2
 @bts_labyrinth_of_abstraction_favor_boost = 0.05
 ### Level 3
+@bts_labyrinth_of_abstraction_core_3_upkeep_energy = 8
+@bts_labyrinth_of_abstraction_core_3_cost_sr = 100
+@bts_labyrinth_of_abstraction_core_3_cost = 800
+@bts_labyrinth_of_abstraction_core_3_time = 600
 @bts_labyrinth_of_abstraction_core_3_job = 50
 @bts_labyrinth_of_abstraction_shroud_portal_level = 3
 ### Level 4
+@bts_labyrinth_of_abstraction_core_4_upkeep_energy = 10
+@bts_labyrinth_of_abstraction_core_4_cost_sr = 200
+@bts_labyrinth_of_abstraction_core_4_cost = 2000
+@bts_labyrinth_of_abstraction_core_4_time = 900
 @bts_labyrinth_of_abstraction_core_4_job = 100
 @bts_labyrinth_of_abstraction_relic_level = 4
 @bts_shroud_portal_expiration_days = 100
