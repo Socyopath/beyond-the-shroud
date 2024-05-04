@@ -89,6 +89,10 @@ bts_labyrinth_of_abstraction_core_2 = {
 		planet_max_buildings_add = -1
 		mult = owner.modifier:planet_max_buildings_add
 	}
+
+	triggered_desc = {
+		text = bts_labyrinth_of_abstraction_core_2_effects
+	}
 }
 
 bts_labyrinth_of_abstraction_core_3 = {
@@ -142,6 +146,10 @@ bts_labyrinth_of_abstraction_core_3 = {
 		planet_max_buildings_add = -1
 		mult = owner.modifier:planet_max_buildings_add
 	}
+
+	triggered_desc = {
+		text = bts_labyrinth_of_abstraction_core_3_effects
+	}
 }
 
 bts_labyrinth_of_abstraction_core_4 = {
@@ -192,5 +200,9 @@ bts_labyrinth_of_abstraction_core_4 = {
 		}
 		planet_max_buildings_add = -1
 		mult = owner.modifier:planet_max_buildings_add
+	}
+
+	triggered_desc = {
+		text = bts_labyrinth_of_abstraction_core_4_effects
 	}
 }
