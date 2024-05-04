@@ -85,6 +85,7 @@ bts_arcology_swap_planet = {
 	}]
 	
 	change_pc = pc_bts_arcology_psionic
+	add_deposit = d_hab_zro_5
 
 	[[CITY]
 	while = {
