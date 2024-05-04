@@ -19,3 +19,10 @@ component_set = {
 	icon_frame = 1
 }
 
+component_set = {
+	key = "BTS_SHROUD_BLAST"
+
+	icon = "GFX_ship_part_bts_shroud_blast"
+	icon_frame = 1
+}
+

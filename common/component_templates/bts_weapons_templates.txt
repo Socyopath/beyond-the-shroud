@@ -15,3 +15,32 @@ weapon_component_template = {
 
 	component_set = "BTS_PLANET_KILLER_END"
 }
+
+weapon_component_template = {
+	key = "BTS_SHROUD_BLAST"
+	hidden = yes
+	size = medium
+	type = instant
+	entity = "large_space_cloud_weapon_entity"
+	icon = "GFX_ship_part_bts_shroud_blast"
+	icon_frame = 1
+	projectile_gfx = "arc_emitter"
+	tags = { weapon_type_energy weapon_type_space_fauna m_slot }
+	ai_tags = { weapon_role_anti_armor }
+
+	damage = { min = 500 max = 1000 }
+	windup = { min = 5 max = 10 }
+	total_fire_time = 20
+
+	hull_damage = 1.00
+	shield_damage = 0.50
+	shield_penetration = 0.00
+	armor_damage = 1.00
+	armor_penetration = 1.00
+
+	range = 150.00
+	accuracy = 0.90
+	tracking = 1.00
+
+	component_set = "BTS_SHROUD_BLAST"
+}

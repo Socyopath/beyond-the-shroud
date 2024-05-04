@@ -82,6 +82,7 @@ bts_warped_consciousness: "$NAME_Warped_Consciousness$"
 bts_warped_consciousness_zroni: "Zroni $bts_warped_consciousness$"
 bts_dimensional_horror: "$NAME_Dimensional_Horror$"
 bts_dimensional_horror_zroni: "Zroni $bts_dimensional_horror$"
+## Weapons
 
 # Global Techs
 bts_tech_occultism: "Occultism"
@@ -226,7 +227,6 @@ mod_bts_astral_rift_spawn_mult: "$bts_astral_rift_spawn_mult$"
 bts_no_astral_rift_scar_in_system: "$TRIGGER_FAIL$An §YAstral Rift§! or §YAstral Scar§! must be present in an owned system"
 bts_reckoning_info: "§M$NAME_Reckoning$§! : §Y[root.bts_planet_killer_end_pop_killed]§! organic pops §Rkilled§!"
 
-
 ## Laybrinth of Abstraction
 pc_bts_labyrinth_of_abstraction: "Laybrinth of Abstraction"
 pc_bts_labyrinth_of_abstraction_desc: "An enigmatic construction that allows our telepaths to reach a higher state of consciousness, enabling them to influence the thoughts of other entities and rewrite reality thanks to their deep connection with the shroud."
@@ -301,3 +301,6 @@ r_bts_relic_shroud_nexus: "Shroud Nexus"
 r_bts_relic_shroud_nexus_desc: "All our §Y$job_bts_conceptual_architect_plural$§! manage to establish a link between each of our ships."
 r_bts_relic_shroud_nexus_active: "A §Y$bts_shroud_portal_megastructure$§! will appear next to your fleets for §Y$@bts_shroud_portal_expiration_days|*0$ days§!"
 r_bts_relic_shroud_nexus_needed_level: "$TRIGGER_FAIL$$pc_bts_labyrinth_of_abstraction$ level §Ygreater or equal than $@bts_labyrinth_of_abstraction_relic_level|*0$§! is required"
+
+BTS_SHROUD_BLAST: "Shroud Blast"
+BTS_SHROUD_BLAST_DESC: ""

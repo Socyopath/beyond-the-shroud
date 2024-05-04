@@ -82,6 +82,7 @@ bts_warped_consciousness: "$NAME_Warped_Consciousness$"
 bts_warped_consciousness_zroni: "зрони $bts_warped_consciousness$"
 bts_dimensional_horror: "$NAME_Dimensional_Horror$"
 bts_dimensional_horror_zroni: "зрони $bts_dimensional_horror$"
+## Weapons
 
 # Global Techs
 bts_tech_occultism: "Оккультизм"  

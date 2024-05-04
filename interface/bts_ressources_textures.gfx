@@ -79,4 +79,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/planetview/aetherophasic_collapser.dds"
 	}
 	
+	# Weapons
+	spriteType = {
+		name = "GFX_ship_part_bts_shroud_blast"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_bts_shroud_blast.dds"
+	}
+
 }
