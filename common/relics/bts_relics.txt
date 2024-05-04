@@ -1,7 +1,7 @@
 @activation_cost = 3000
 @triumph_duration = 3600
 
-r_bts_relic = {
+r_bts_relic_shroud_nexus = {
 	activation_duration = @triumph_duration
 	portrait = "GFX_relic_wormhole_key_5"
 	sound = "par_ui_keides_relic"
@@ -27,6 +27,7 @@ r_bts_relic = {
 
 	active_effect = {
 		country_event = { id = bts.400 }
+		custom_tooltip = r_bts_relic_shroud_nexus_active
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
 			add_modifier = {
@@ -39,7 +40,7 @@ r_bts_relic = {
 	# Possible check for activation
 	possible = {
 		custom_tooltip = {
-			fail_text = bts_relic_needed_level
+			fail_text = r_bts_relic_shroud_nexus_needed_level
 			check_variable_arithmetic = {
 				which = value:bts_labyrinth_of_abstraction_level
 				value >= @bts_labyrinth_of_abstraction_relic_level
@@ -47,7 +48,7 @@ r_bts_relic = {
 		}
 		inline_script = {
 			script = relics/activation_checks
-			RELIC = r_bts_relic
+			RELIC = r_bts_relic_shroud_nexus
 		}
 	}
 }

@@ -291,13 +291,15 @@ job_bts_conceptual_architect_desc: "Members of the Psi-Corps, a unit of psionica
 job_bts_conceptual_architect_effect_desc: "£job_telepath£ $job_telepath_plural$ produce £unity£ §Y$unity$§!, decrease £crime£ §Y$PLANET_CRIME_TITLE$§!, and provide a general productivity boost on the planet."
 
 
-bts_shroud_portal_megastructure_MEGASTRUCTURE_DETAILS: "Shroud Portal MEGA"
+bts_shroud_portal_megastructure_MEGASTRUCTURE_DETAILS: "$bts_shroud_portal_megastructure_DESC$"
 bts_shroud_portal_megastructure: "Shroud Portal"
-bts_shroud_portal_megastructure_DESC: "Shroud Portal desc"
+bts_shroud_portal_megastructure_DESC: "Portal linking several locations in space. Any entity able to pass through it will be dematerialized in order to pass through the shroud, then rematerialized once on the other side."
+bts_shroud_portal_galactic_DESC: "This system contains a §Y$bts_shroud_portal_megastructure$§!"
 
 pc_bts_shroud_rift: "Shroud Rift"
 pc_bts_shroud_rift_desc: ""
 
-r_bts_relic: "RELIC"
-r_bts_relic_desc: "RELIC DESC"
-bts_relic_needed_level: "$TRIGGER_FAIL$$pc_bts_labyrinth_of_abstraction$ level §Ygreater or equal than $@bts_labyrinth_of_abstraction_relic_level|*0$§! is required"
+r_bts_relic_shroud_nexus: "Shroud Nexus"
+r_bts_relic_shroud_nexus_desc: "All our §Y$job_bts_conceptual_architect_plural$§! manage to establish a link between each of our ships."
+r_bts_relic_shroud_nexus_active: "A §Y$bts_shroud_portal_megastructure$§! will appear next to your fleets for §Y$@bts_shroud_portal_expiration_days|*0$ days§!"
+r_bts_relic_shroud_nexus_needed_level: "$TRIGGER_FAIL$$pc_bts_labyrinth_of_abstraction$ level §Ygreater or equal than $@bts_labyrinth_of_abstraction_relic_level|*0$§! is required"
