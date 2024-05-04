@@ -1,6 +1,6 @@
 pc_bts_labyrinth_of_abstraction = {
 	entity = "bts_labyrinth_of_abstraction"
-	icon = GFX_planet_type_habitat
+	icon = GFX_type_pc_bts_labyrinth_of_abstraction
 	entity_scale = 1.0
 	enable_tilt = no
 	fixed_entity_scale = yes
