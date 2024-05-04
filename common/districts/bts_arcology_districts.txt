@@ -1,4 +1,4 @@
-district_arcology_psionic = {
+bts_district_arcology_psionic = {
 	base_buildtime = 600
 	is_capped_by_modifier = no
 
@@ -40,8 +40,8 @@ district_arcology_psionic = {
 	}
 
 	planet_modifier = {
-		planet_housing_add = 10
-        job_telepath_add = 6
+		planet_housing_add = @bts_district_arcology_psionic_housing
+        job_telepath_add = @bts_district_arcology_psionic_telepaths
         
 	}
 

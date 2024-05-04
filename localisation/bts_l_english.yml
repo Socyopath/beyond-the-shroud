@@ -19,9 +19,9 @@ bts_building_covenant_sanctum: "Sanctum of the $bts_covenant_name_prefix$"
 bts_building_covenant_sanctum_desc: "The Sanctum is a place dedicated to communion with the $bts_covenant_name_full$. Here, secrets are traded in hushed tones, new knowledge is brought to be sealed away, and our murmurs join the chorus."
 
 # Districts
-district_arcology_psionic: "Psi Arcology"
-district_arcology_psionic_plural: "Psi Arcologies"
-district_arcology_psionic_desc: "A true testament to our devotion to a shroud entity, these spires may hold the key to the spiritual well-being of our empire."
+bts_district_arcology_psionic: "Psi Arcology"
+bts_district_arcology_psionic_plural: "Psi Arcologies"
+bts_district_arcology_psionic_desc: "A true testament to our devotion to a shroud entity, these spires may hold the key to the spiritual well-being of our empire."
 
 # Council Agenda
 council_agenda_bts_agenda_psionic_supremacy_covenant_name: "$council_agenda_agenda_psionic_supremacy_name$"

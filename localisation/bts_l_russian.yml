@@ -19,9 +19,9 @@
  bts_building_covenant_sanctum_desc: "Святилище - это место, посвященное общению с $bts_covenant_name_full$ом. Здесь мы делимся секретами вполголоса, передаем новые знания, чтобы сохранить их в тайне, и где наш шепот присоединяется к хору." 
   
  # Districts 
- district_arcology_psionic: "Пси-аркология" 
- district_arcology_psionic_plural: "Пси-аркологии"  
- district_arcology_psionic_desc: "Являясь истинным свидетельством нашей преданности сущности покрова, эти шпили могут стать ключом к духовному благополучию нашей империи." 
+ bts_district_arcology_psionic: "Пси-аркология" 
+ bts_district_arcology_psionic_plural: "Пси-аркологии"  
+ bts_district_arcology_psionic_desc: "Являясь истинным свидетельством нашей преданности сущности покрова, эти шпили могут стать ключом к духовному благополучию нашей империи." 
   
  # Council Agenda 
  council_agenda_bts_agenda_psionic_supremacy_covenant_name: "$council_agenda_agenda_psionic_supremacy_name$"  
