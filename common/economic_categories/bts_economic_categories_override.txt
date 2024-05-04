@@ -6,6 +6,7 @@ planet_telepaths = {
 	}
 	generate_mult_modifiers = {
 		produces
+		upkeep
 	}
 	modifier_category = pop
 }
