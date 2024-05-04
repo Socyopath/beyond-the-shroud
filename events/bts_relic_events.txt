@@ -1,0 +1,75 @@
+# Spawn temporary shroud portal to every fleets
+country_event = {
+	id = bts.400
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		every_system = {
+			limit = {
+				any_ship_in_system = {
+					is_owned_by = root
+					is_ship_class = shipclass_military
+				}
+			}
+			random_ship_in_system = {
+				limit = {
+					is_owned_by = root
+					is_ship_class = shipclass_military
+				}
+				save_event_target_as = bts_temp_shroud_portal_target
+			}
+
+			spawn_megastructure = {
+				type = bts_shroud_portal_megastructure
+				owner = root
+				coords_from = event_target:bts_temp_shroud_portal_target
+				orbit_angle = 0
+				orbit_distance = 0
+				init_effect = {
+					set_megastructure_flag = bts_shroud_portal_megastructure_temp_of@root
+				}
+			}
+		}
+		country_event = {
+			id = bts.401
+			days = @bts_shroud_portal_expiration_days
+		}
+	}
+}
+
+# Remove all temporary shroud portals
+country_event = {
+	id = bts.401
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		every_megastructure = {
+			limit = { 
+				has_megastructure_flag = bts_shroud_portal_megastructure_temp_of@root
+			}
+			remove_megastructure = this
+		}
+	}
+}
+
+# Captial Upgrade - Gives relic
+planet_event = {
+	id = bts.402
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		is_planet_class = pc_bts_labyrinth_of_abstraction
+		exists = owner
+		check_variable_arithmetic = {
+            which = owner.value:bts_labyrinth_of_abstraction_level
+            value >= @bts_labyrinth_of_abstraction_relic_level
+        }
+	}
+
+	immediate = {
+		owner = { add_relic = r_bts_relic_shroud_nexus } 
+	}
+}

@@ -70,7 +70,7 @@ country_event = {
 # Zroni Storm immunity - ship entered system
 # Zroni Storm immunity - ship created
 ship_event = {
-	id = bts.100
+	id = bts.10
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -82,3 +82,64 @@ ship_event = {
 		bts_update_ship_shield_reduction_zroni_shield = yes
 	}
 }
+
+# Trigger psionic wave pulse on enter battle
+country_event = {
+	id = bts.12
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		fromfrom.solar_system  = {
+			exists = starbase
+			starbase = {
+				has_starbase_building = bts_shroud_destabilizer
+			}
+		}
+	}
+    immediate = {
+		fromfrom.solar_system.starbase = {
+			starbase_event = { id = bts.13 }
+		}
+    }
+}
+
+# Psionic wave pulse
+starbase_event = {
+	id = bts.13
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		fleet = {
+			solar_system = {
+				every_system_ambient_object = {
+					limit = { has_ambient_object_flag = bts_psionic_wave_starbase_module }
+					destroy_ambient_object = this
+				}
+			}
+			if = {
+				limit = { is_in_combat = yes }
+				create_ambient_object = {
+					type = "bts_psionic_wave"
+					location = this
+					play_animation_once = yes
+				}
+				last_created_ambient_object = {
+					set_ambient_object_flag = bts_psionic_wave_starbase_module
+					set_location = {
+						target = prev
+						distance = 0
+						angle = random
+					}
+				}
+				root = {
+					starbase_event = { id = bts.13 days = 10 }
+				}
+			}
+		}
+	}
+}
+
+
+

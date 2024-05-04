@@ -43,7 +43,7 @@ on_destroy_planet_with_BTS_PLANET_KILLER_END_unqueued = {
 # FromFrom = Country
 on_entering_system = {
 	events = {
-		bts.100 # Update zroni shield
+		bts.10 # Update zroni shield
 	}
 }
 
@@ -53,7 +53,7 @@ on_entering_system = {
 # From = Planet
 on_ship_built = {
 	events = {
-		bts.100 # Update zroni shield
+		bts.10 # Update zroni shield
 	}
 }
 
