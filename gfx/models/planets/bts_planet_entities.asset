@@ -6,7 +6,7 @@ entity = {
 }
 
 entity = {
-	name = "bts_shrouded_city_entity"
+	name = "bts_arcology_psionic_01_entity"
 	pdxmesh = "planet_clouded_mesh"
 
 	#planet surface texture override

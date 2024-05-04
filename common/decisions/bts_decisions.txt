@@ -55,7 +55,6 @@ decision_bts_convert_shrouded_arcology_project = {
 	potential = {
 		is_planet_class = pc_city
 		exists = owner
-		NOT = { has_planet_flag = bts_shrouded_covenant_arcology }
 		owner = { 
 			has_ascension_perk = ap_arcology_project 
 			bts_has_any_covenant_confirmed = yes
@@ -67,10 +66,11 @@ decision_bts_convert_shrouded_arcology_project = {
 		# Make city-planet
 		custom_tooltip = decision_bts_convert_shrouded_arcology_project_effects
 		hidden_effect = {
-			set_planet_entity = {
-				entity = bts_shrouded_city_entity
+			bts_arcology_swap_planet = {
+				CITY = district_arcology_housing
+				ARM_INDUSTRIAL = district_arcology_arms_industry
+				CIV_INDUSTRIAL = district_arcology_civilian_industry
 			}
-			set_planet_flag = bts_shrouded_covenant_arcology
 		}
 	}
 }
@@ -94,6 +94,7 @@ decision_bts_shrouded_arcology_project = {
 		NOR = {
 			is_planet_class = pc_city
 			is_planet_class = pc_relic
+			is_planet_class = pc_bts_arcology_psionic
 			has_modifier = resort_colony
 			has_modifier = penal_colony
 			has_modifier = slave_colony
@@ -134,21 +135,10 @@ decision_bts_shrouded_arcology_project = {
 		custom_tooltip = decision_bts_shrouded_arcology_project_effects
 		hidden_effect = {
 			clear_deposits = yes
-			set_industrial_focus_flags = yes
-			change_pc = pc_city
-			relic_world_conversion_effect = {
-				DISTRICT = district_arcology_housing
-				VARIABLE = num_housing_districts
+			bts_arcology_swap_planet = {
+				CITY = district_city
+				CIV_INDUSTRIAL = district_industrial
 			}
-			relic_world_conversion_effect = {
-				DISTRICT = district_arcology_arms_industry
-				VARIABLE = num_industrial_districts
-			}
-			set_ecu_industrial_districts_effect = yes
-			set_planet_entity = {
-				entity = bts_shrouded_city_entity
-			}
-			set_planet_flag = bts_shrouded_covenant_arcology
 			planet_event = { id = action.68 }
 			owner = {
 				country_event = { id = distar.201 } # port for living planet distar.197, triggers in event

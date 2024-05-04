@@ -10,10 +10,21 @@ decision_bts_convert_shrouded_arcology_project: "Psionic conversion $ap_arcology
 decision_bts_convert_shrouded_arcology_project_desc: "$decision_arcology_project_desc$"
 decision_bts_convert_shrouded_arcology_project_effects: "Convert this §Y$pc_city$§! planet into a §Mpsionic variant§!, providing special districts with £job_telepath£ $job_telepath_plural$"
 
-# Global Districts
-bts_district_arcology_psionic: "Psi Arcology"
-bts_district_arcology_psionic_plural: "Psi Arcologies"
-bts_district_arcology_psionic_desc: "A true testament to our devotion to a shroud entity, these spires may hold the key to the spiritual well-being of our empire."
+# Psi Arcology
+pc_bts_arcology_psionic: "Psi $pc_city$"
+pc_bts_arcology_psionic_desc: "$pc_city_desc$"
+bts_district_housing_arcology_psionic: "$district_arcology_housing$"
+bts_district_housing_arcology_psionic_plural: "$district_arcology_housing_plural$"
+bts_district_housing_arcology_psionic_desc: "$district_arcology_housing_desc$"
+bts_district_arms_industry_arcology_psionic: "$district_arcology_arms_industry$"
+bts_district_arms_industry_arcology_psionic_plural: "$district_arcology_arms_industry_plural$"
+bts_district_arms_industry_arcology_psionic_desc: "$district_arcology_arms_industry_desc$"
+bts_district_civilian_industry_arcology_psionic: "$district_arcology_civilian_industry$"
+bts_district_civilian_industry_arcology_psionic_plural: "$district_arcology_civilian_industry_plural$"
+bts_district_civilian_industry_arcology_psionic_desc: "$district_arcology_civilian_industry_desc$"
+bts_district_psi_arcology_psionic: "Psi Arcology"
+bts_district_psi_arcology_psionic_plural: "Psi Arcologies"
+bts_district_psi_arcology_psionic_desc: "A true testament to our devotion to a shroud entity, these spires may hold the key to the spiritual well-being of our empire."
 
 # Covenant Traveller From Beyond
 bts_covenant_name_full: "Traveller From Beyond"
