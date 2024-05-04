@@ -469,6 +469,7 @@ bts_labyrinth_of_abstraction_megastructure = {
 bts_shroud_portal_megastructure = {
 	entity = "bts_shroud_portal_entity"
 	construction_entity = "construction_platform_entity"
+    portrait = "GFX_megastructure_bts_shroud_portal"
 	show_galactic_map_icon = no
 	show_in_outliner = no
     build_outside_gravity_well = yes
