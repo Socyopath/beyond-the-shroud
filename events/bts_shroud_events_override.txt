@@ -185,7 +185,7 @@ country_event = {
 			random_list = {
 				10 = {
 					if = {
-						limit = { NOT = { has_country_flag = bts_labyrinth_of_abstraction_unlocked } }
+						limit = { bts_is_labyrinth_of_abstraction_unlocked = no }
 						country_event = { id = bts.100 }
 					}
 					else = { country_event = { id = utopia.3200 } }

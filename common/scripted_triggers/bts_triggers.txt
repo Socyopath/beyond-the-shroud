@@ -22,6 +22,10 @@ bts_can_use_powers = {
     bts_can_use_power_summon_1 = yes
 }
 
+bts_is_labyrinth_of_abstraction_unlocked = {
+	has_country_flag = bts_labyrinth_of_abstraction_unlocked
+}
+
 bts_can_use_power_summon_1 = {
     OR = {
         has_megastructure = bts_mega_aetherophasic_collapser_2

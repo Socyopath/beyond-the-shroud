@@ -385,7 +385,7 @@ bts_labyrinth_of_abstraction_megastructure = {
 	}
 
     potential = {
-        has_country_flag = bts_labyrinth_of_abstraction_unlocked
+        bts_is_labyrinth_of_abstraction_unlocked = yes
     }
 
 	possible = {
