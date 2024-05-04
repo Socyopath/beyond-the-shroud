@@ -369,22 +369,24 @@ bts_mega_aetherophasic_collapser_5 = {
 
 }
 
-# root = system
-# from = country	
 bts_labyrinth_of_abstraction_megastructure = {
 	entity = "construction_platform_entity"
 	construction_entity = "construction_platform_entity"
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
-	build_time = 1
+	build_time = @bts_labyrinth_of_abstraction_megastructure_time
 
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 10
-			energy = 10
+			alloys = @bts_labyrinth_of_abstraction_megastructure_cost_alloys
+			energy = @bts_labyrinth_of_abstraction_megastructure_cost_energy
 		}
 	}
+
+    potential = {
+        has_country_flag = bts_labyrinth_of_abstraction_unlocked
+    }
 
 	possible = {
 		exists = starbase
