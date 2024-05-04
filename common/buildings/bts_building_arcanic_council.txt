@@ -1,5 +1,5 @@
 bts_building_arcanic_council = {
-	base_buildtime = @b3_time
+	base_buildtime = @bts_labyrinth_of_abstraction_building_time
 	category = government
 	base_cap_amount = 1
 
@@ -16,12 +16,12 @@ bts_building_arcanic_council = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = @b3_minerals
-			exotic_gases = @b3_rare_cost
+			minerals = @bts_labyrinth_of_abstraction_building_cost
+			sr_zro = @bts_labyrinth_of_abstraction_building_cost_sr
 		}
 		upkeep = {
-			energy = @b3_upkeep
-			exotic_gases = @b3_rare_upkeep
+			energy = @bts_labyrinth_of_abstraction_building_upkeep_energy
+			sr_zro = @bts_labyrinth_of_abstraction_building_upkeep_sr
 		}
 	}
 }

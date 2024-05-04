@@ -1,5 +1,5 @@
 bts_district_third_eye_observatory = {
-	base_buildtime = 600
+	base_buildtime = @bts_labyrinth_of_abstraction_district_time
 	is_capped_by_modifier = no
 
     potential = {
@@ -11,12 +11,12 @@ bts_district_third_eye_observatory = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = 1000
-			sr_zro = 50
+			minerals = @bts_labyrinth_of_abstraction_district_cost
+			sr_zro = @bts_labyrinth_of_abstraction_district_cost_sr
 		}
 		upkeep = {
-			energy = 5
-			sr_zro = 1
+			energy = @bts_labyrinth_of_abstraction_district_upkeep_energy
+			sr_zro = @bts_labyrinth_of_abstraction_district_upkeep_sr
 		}
 	}
 
@@ -30,7 +30,7 @@ bts_district_third_eye_observatory = {
 }
 
 bts_district_influence_control_complex = {
-	base_buildtime = 600
+	base_buildtime = @bts_labyrinth_of_abstraction_district_time
 	is_capped_by_modifier = no
 
     potential = {
@@ -42,12 +42,12 @@ bts_district_influence_control_complex = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = 1000
-			sr_zro = 50
+			minerals = @bts_labyrinth_of_abstraction_district_cost
+			sr_zro = @bts_labyrinth_of_abstraction_district_cost_sr
 		}
 		upkeep = {
-			energy = 5
-			sr_zro = 1
+			energy = @bts_labyrinth_of_abstraction_district_upkeep_energy
+			sr_zro = @bts_labyrinth_of_abstraction_district_upkeep_sr
 		}
 	}
 
