@@ -1,60 +1,89 @@
-l_english:
+﻿l_english:
 
-# Decision
+# Global Decisions
 decision_bts_zroni_astral_spliting: "Archaeo-Spliting"
 decision_bts_zroni_astral_spliting_desc: "We've learned from ancient knowledge how to open this rip in space and time, but we don't know what's going to happen next."
-decision_bts_shrouded_covenant_arcology_project: "Psionic $ap_arcology_project$"
-decision_bts_shrouded_covenant_arcology_project_desc: "$decision_arcology_project_desc$"
-decision_bts_shrouded_covenant_arcology_project_effects: "Turns the planet into a §MPsionic§! §Y$pc_city$§!, increasing £housing£ §Y$PLANET_HOUSING_TITLE$§!, §YResource Production§! and §YPop Growth§! and unlocking special £district£ §YArcology Districts§! including £job_telepath£ $job_telepath_plural$ §Ydistricts§! at the expense of the planet's natural resources becoming §Rinaccessible§!, preventing all further construction of £district£ §YGenerator§!, §YMining§! and §YAgriculture Districts§!."
-decision_bts_convert_shrouded_covenant_arcology_project: "Psionic conversion $ap_arcology_project$"
-decision_bts_convert_shrouded_covenant_arcology_project_desc: "$decision_arcology_project_desc$"
-decision_bts_convert_shrouded_covenant_arcology_project_effects: "Convert this §Y$pc_city$§! planet into a §Mpsionic variant§!, providing special districts with £job_telepath£ $job_telepath_plural$"
+decision_bts_shrouded_arcology_project: "Psionic $ap_arcology_project$"
+decision_bts_shrouded_arcology_project_desc: "$decision_arcology_project_desc$"
+decision_bts_shrouded_arcology_project_effects: "Turns the planet into a §MPsionic§! §Y$pc_city$§!, increasing £housing£ §Y$PLANET_HOUSING_TITLE$§!, §YResource Production§! and §YPop Growth§! and unlocking special £district£ §YArcology Districts§! including £job_telepath£ $job_telepath_plural$ §Ydistricts§! at the expense of the planet's natural resources becoming §Rinaccessible§!, preventing all further construction of £district£ §YGenerator§!, §YMining§! and §YAgriculture Districts§!."
+decision_bts_convert_shrouded_arcology_project: "Psionic conversion $ap_arcology_project$"
+decision_bts_convert_shrouded_arcology_project_desc: "$decision_arcology_project_desc$"
+decision_bts_convert_shrouded_arcology_project_effects: "Convert this §Y$pc_city$§! planet into a §Mpsionic variant§!, providing special districts with £job_telepath£ $job_telepath_plural$"
 
-# Traits
-bts_leader_trait_covenant_chosen: "Chosen of the $bts_covenant_name_prefix$"
-bts_leader_trait_covenant_chosen_desc: "This leader has been chosen to wield the power of an inscrutable Shroud entity. Sustained by eldritch energies, death is now foreign to them."
-
-# Buildings
-bts_building_covenant_sanctum: "Sanctum of the $bts_covenant_name_prefix$"
-bts_building_covenant_sanctum_desc: "The Sanctum is a place dedicated to communion with the $bts_covenant_name_full$. Here, secrets are traded in hushed tones, new knowledge is brought to be sealed away, and our murmurs join the chorus."
-
-# Districts
+# Global Districts
 bts_district_arcology_psionic: "Psi Arcology"
 bts_district_arcology_psionic_plural: "Psi Arcologies"
 bts_district_arcology_psionic_desc: "A true testament to our devotion to a shroud entity, these spires may hold the key to the spiritual well-being of our empire."
 
-# Council Agenda
+# Covenant Traveller From Beyond
+bts_covenant_name_full: "Traveller From Beyond"
+bts_covenant_name_prefix: "Traveller"
+## Modifiers
+bts_covenant_modifier_0: "$bts_covenant_name_full$"
+bts_covenant_modifier_1: "$bts_covenant_name_full$"
+## Traits
+bts_leader_trait_covenant_chosen: "Chosen of the $bts_covenant_name_prefix$"
+bts_leader_trait_covenant_chosen_desc: "This leader has been chosen to wield the power of an inscrutable Shroud entity. Sustained by eldritch energies, death is now foreign to them."
+## Buildings
+bts_building_covenant_sanctum: "Sanctum of the $bts_covenant_name_prefix$"
+bts_building_covenant_sanctum_desc: "The Sanctum is a place dedicated to communion with the $bts_covenant_name_full$. Here, secrets are traded in hushed tones, new knowledge is brought to be sealed away, and our murmurs join the chorus."
+## Council Agenda
 council_agenda_bts_agenda_psionic_supremacy_covenant_name: "$council_agenda_agenda_psionic_supremacy_name$"
 council_agenda_bts_agenda_psionic_supremacy_covenant_desc: "$council_agenda_agenda_psionic_supremacy_desc$"
 agenda_psionic_supremacy_finish_bts_covenant: "$council_agenda_agenda_psionic_supremacy_name$ $agenda_ref$" # Modifier
 agenda_psionic_supremacy_finish_bts_covenant_desc: "$council_agenda_agenda_psionic_supremacy_desc$" # Modifier
-# Components
-BTS_PLANET_KILLER_COVENANT: "Consciousness Assimilator"
-BTS_PLANET_KILLER_COVENANT_DESC: "Assimilate the consciousness of all living beings on a planet and increase your power as you kill more."
-BTS_PLANET_KILLER_COVENANT_ACTION: "Assimilate all the consciousnesses"
-FLEETORDER_DESTROY_PLANET_WITH_BTS_PLANET_KILLER_COVENANT: "Preparing to assimilate all consciousnesses of $PLANET|Y$."
-MESSAGE_DESC_FOR_BTS_PLANET_KILLER_COVENANT: "had all of its life forms consciousness being absorbed by"
+## Components
+BTS_COVENANT_MARK: "Mark of the $bts_covenant_name_prefix$"
+BTS_COVENANT_MARK_DESC: "$COMPOSER_MARK_DESC$"
+## Techs
+bts_tech_covenant_mark: "$BTS_COVENANT_MARK$"
+bts_tech_covenant_mark_desc: "We have discovered how to let psionic energy flow through our ships. Armed with this knowledge, we can now imbue our vessels with the powers of our patron."
+## Events
+bts_covenant_rank_1: "A filled mind has no room for doubt."
+bts_covenant_rank_1_desc: "Our telepaths now produce additional $sr_zro$.\n\nWe can now build a £building£ §Y$bts_building_covenant_sanctum$§! on one of our planets."
+bts_covenant_rank_2: "Secrecy is safety."
+bts_covenant_rank_4: "Secrets are weapons without compare."
+bts_covenant_establish_desc: "As we reach out for the presence, the mind of our telepaths  are filled with visions of unknown places. The visions go by faster and faster, and they discover so many different realities. They become aware of the immensity of the multiverse, and a sudden desire to know more emerges. It seems that these visions correspond to ancient explorers who disappeared during their quest for the universe."
+bts_covenant_establish_option: "§YForm a Covenant with the $bts_covenant_name_full$§!"
+bts_covenant_contact: "§MOne that travels beyond known borders.§!"
+bts_covenant_sealed_desc: "It is done. We have formed a Covenant with the §Y$bts_covenant_name_full$§! and already they have begun to share its secrets with our scientists and leaders. We will benefit immensely from their knowledge. The only drawback seems to be an irresistible urge to indulge our curiosity at the risk of our lives."
+bts_covenant_sealed_option: "Let's see what lies beyond."
+bts_covenant_chain_title: "$bts_covenant_name_full$"
+bts_covenant_chain_desc: ""We have created a bond with a Shroud Entity named the §Y$bts_covenant_name_full$§!. Unspeakable, it granted us crumbs of its power for a price. There will likely be more to follow.\n\nOur telepaths theorize, that the bond can be deepened more easily if we align ourselves more with our patron.\n\nThe $bts_covenant_name_prefix$ is unstoppable and its influence must travel beyond all realities. §YSeek for rifts in our universe§! and §Yexplore them§! as much as you can to expand the influence of your divinity and §Ygain favor§!.\n\n$text_covenant_favor_info$\n$[root.bts_planet_killer_end_pop_killed_status]$"
+
+# Global Components
+## Planet Killers
+BTS_PLANET_KILLER_END: "Consciousness Assimilator"
+BTS_PLANET_KILLER_END_DESC: "Assimilate the consciousness of all living beings on a planet and increase your power as you kill more."
+BTS_PLANET_KILLER_END_ACTION: "Assimilate all the consciousnesses"
+FLEETORDER_DESTROY_PLANET_WITH_BTS_PLANET_KILLER_END: "Preparing to assimilate all consciousnesses of $PLANET|Y$."
+MESSAGE_DESC_FOR_BTS_PLANET_KILLER_END: "had all of its life forms consciousness being absorbed by"
 bts_planet_destruction_name: "Consciousness assimilated"
 bts_planet_destruction_desc: "The psionic power from [From.From.GetName]'s fades, and for a moment all is quiet. Down on [From.GetName] the people stand slack-jawed (or local physiognomic equivalent), enraptured by the powerful and personal truths the psionic ray unfetters from the tangled web of their minds.\n\nIf they did not understand before, they know now viscerally: we are all part of something greater."
 bts_planet_destruction_tooltip: "Any §Y$trait_mechanical$§!, §Y$trait_machine_unit$§! or §Y$trait_hive_mind$§! pops are §Rdestroyed§! by the psionic resonance.\n\nAll remaining §Ybiological§! pops consciousness have been absorbed to strengthen the §M$NAME_Reckoning$§!"
+## Shields
 ZRONI_SHIELD: "$bts_tech_zroni_shield$"
 ZRONI_SHIELD_DESC: "$bts_tech_zroni_shield_desc$"
 bts_small_zroni_shield: "$ZRONI_SHIELD$"
 bts_medium_zroni_shield: "$ZRONI_SHIELD$"
 bts_large_zroni_shield: "$ZRONI_SHIELD$"
-BTS_COVENANT_MARK: "Mark of the $bts_covenant_name_prefix$"
-BTS_COVENANT_MARK_DESC: "$COMPOSER_MARK_DESC$"
+## Starbase Buildings
 sm_bts_shroud_destabilizer: "$bts_tech_shroud_destabilizer$"
 sm_bts_shroud_destabilizer_desc: "$bts_tech_shroud_destabilizer_desc$"
 sm_bts_shroud_destabilizer_effects: ""
 bts_shroud_destabilizer_aura_component: "$bts_tech_shroud_destabilizer$"
 bts_shroud_destabilizer_aura_component_desc: "$bts_tech_shroud_destabilizer_desc$"
-NAME_Shroud_Avatar_zroni: "Zroni $NAME_Shroud_Avatar$"
-NAME_Corrupted_Avatar_zroni: "Zroni $NAME_Corrupted_Avatar$"
-NAME_Warped_Consciousness_zroni: "Zroni $NAME_Warped_Consciousness$"
-NAME_Shroud_Manifestation_zroni: "Zroni $NAME_Shroud_Manifestation$"
+## Section Templates
+bts_shroud_avatar: "$NAME_Shroud_Avatar$"
+bts_shroud_avatar_zroni: "Zroni $bts_shroud_avatar$"
+bts_shroud_manifestation: "$NAME_Shroud_Manifestation$"
+bts_shroud_manifestation_zroni: "Zroni $bts_shroud_manifestation$"
+bts_warped_consciousness: "$NAME_Warped_Consciousness$"
+bts_warped_consciousness_zroni: "Zroni $bts_warped_consciousness$"
+bts_dimensional_horror: "$NAME_Dimensional_Horror$"
+bts_dimensional_horror_zroni: "Zroni $bts_dimensional_horror$"
 
-# Techs
+# Global Techs
 bts_tech_occultism: "Occultism"
 bts_tech_occultism_desc: "By letting the shroud reach us, we gain quicker access to its core."
 bts_tech_otherworldly_knowledge_1: "Otherworldly Knowledge I"
@@ -76,26 +105,17 @@ bts_tech_zroni_shield_desc: "The shroud revealed an ancient artifact, the shield
 bts_tech_zro_infusion: "Zro Infusion"
 bts_tech_zro_infusion_desc: "As we're more connected to the shroud itself, we've found a way to infuse our bodies with zro in order to fuel ourselves with psionic energy instead of food."
 bts_tech_zro_infusion_effect: "£food£ $food$ upkeep cost from £pops£ Pops: §G-100%§!\n£sr_zro£ $sr_zro$ upkeep cost from £pops£ Pops: §R+$@bts_tech_zro_infusion_zro_upkeep_cost$§!"
-bts_tech_covenant_mark: "$BTS_COVENANT_MARK$"
-bts_tech_covenant_mark_desc: "We have discovered how to let psionic energy flow through our ships. Armed with this knowledge, we can now imbue our vessels with the powers of our patron."
 bts_tech_shroud_destabilizer: "Shroud Destabilizer"
 bts_tech_shroud_destabilizer_desc: "We've managed to infuse the pure psionic energy of the shroud into our starbase. Due to the unstable nature of this energy, violent psionic waves emanate from it, disrupting enemy systems."
 
-bts_mega_aetherophasic_collapser_0_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_0_favor_cost$§! favor required with §Y[from.BtsGetShroudPatron]§!"
-bts_mega_aetherophasic_collapser_1_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_1_favor_cost$§! favor required with §Y[from.BtsGetShroudPatron]§!"
-bts_mega_aetherophasic_collapser_2_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_2_favor_cost$§! favor required with §Y[from.BtsGetShroudPatron]§!"
-bts_mega_aetherophasic_collapser_3_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_3_favor_cost$§! favor required with §Y[from.BtsGetShroudPatron]§!"
-bts_mega_aetherophasic_collapser_4_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_4_favor_cost$§! favor required with §Y[from.BtsGetShroudPatron]§!"
-bts_mega_aetherophasic_collapser_5_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_5_favor_cost$§! favor required with §Y[from.BtsGetShroudPatron]§!"
-
-# Megastructures
+# Global Megastructures
+## Aetherophasic Collapser
 bts_mega_aetherophasic_collapser_unlocked: "Aetherophasic Collapser"
 bts_mega_aetherophasic_collapser_unlocked_desc: "Your dedication to the §Y[root.BtsGetShroudPatron]§! is beginning to give you visions of unimaginable concepts. The entity has §Yrevealed plans for the construction of a megastructure§! designed to merge the shroud with our reality. This is the §MAetherophase Collapser§!."
 bts_requires_no_existing_aetherophasic_collapser: "$TRIGGER_FAIL$Cannot build more than one Aetherophasic Collapser."
 bts_mega_aetherophasic_collapser_0_MEGASTRUCTURE_DETAILS: "The Aetherophasic Collapser, which will rip apart the barriers that exist between this world and the Shroud and §Menable powerful psionic beings to be summoned§!."
 bts_mega_aetherophasic_collapser_0: "Aetherophasic Collapser Frame"
 bts_mega_aetherophasic_collapser_0_DESC: "The framework that surrounds the star is the basis for the future Aetherophasic Collapser"
-
 bts_mega_aetherophasic_collapser_1: "Aetherophasic Collapser"
 bts_mega_aetherophasic_collapser_1_DESC: "The Aetherophasic Collapser compresses matter to extreme density, creating a black hole."
 bts_mega_aetherophasic_collapser_2: "Unstable Aetherophasic Collapser"
@@ -106,40 +126,30 @@ bts_mega_aetherophasic_collapser_4: "Extremely Unstable Aetherophasic Collapser"
 bts_mega_aetherophasic_collapser_4_DESC: "$bts_mega_aetherophasic_collapser_2_DESC$"
 bts_mega_aetherophasic_collapser_5: "Shrouded Aetherophasic Collapser"
 bts_mega_aetherophasic_collapser_5_DESC: "The Aetherophasic Collapser sent too much psionic energy into the black hole. The central singularity resonated with the shroud itself, creating a zero dimensional zone that converted the black hole's energy into a psionic wave. Near the Aetherophasic Collapser, two realities merge, defying all rationality."
+bts_mega_aetherophasic_collapser_0_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_0_favor_cost$§! favor required with §Y[from.BtsGetShroudPatron]§!"
+bts_mega_aetherophasic_collapser_1_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_1_favor_cost$§! favor required with §Y[from.BtsGetShroudPatron]§!"
+bts_mega_aetherophasic_collapser_2_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_2_favor_cost$§! favor required with §Y[from.BtsGetShroudPatron]§!"
+bts_mega_aetherophasic_collapser_3_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_3_favor_cost$§! favor required with §Y[from.BtsGetShroudPatron]§!"
+bts_mega_aetherophasic_collapser_4_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_4_favor_cost$§! favor required with §Y[from.BtsGetShroudPatron]§!"
+bts_mega_aetherophasic_collapser_5_missing_favor: "$TRIGGER_FAIL$ §Y$@bts_mega_aetherophasic_collapser_5_favor_cost$§! favor required with §Y[from.BtsGetShroudPatron]§!"
 
-# Covenant Events
-bts_covenant_name_full: "Traveller From Beyond"
-bts_covenant_name_prefix: "Traveller"
-bts_covenant_rank_1: "A filled mind has no room for doubt."
-bts_covenant_rank_1_desc: "Our telepaths now produce additional $sr_zro$.\n\nWe can now build a £building£ §Y$bts_building_covenant_sanctum$§! on one of our planets."
-bts_covenant_rank_2: "Secrecy is safety."
-bts_covenant_rank_4: "Secrets are weapons without compare."
-bts_covenant_establish_desc: "As we reach out for the presence, the mind of our telepaths  are filled with visions of unknown places. The visions go by faster and faster, and they discover so many different realities. They become aware of the immensity of the multiverse, and a sudden desire to know more emerges. It seems that these visions correspond to ancient explorers who disappeared during their quest for the universe."
-bts_covenant_establish_option: "§YForm a Covenant with the $bts_covenant_name_full$§!"
-bts_covenant_contact: "§MOne that travels beyond known borders.§!"
-bts_covenant_sealed_desc: "It is done. We have formed a Covenant with the §Y$bts_covenant_name_full$§! and already they have begun to share its secrets with our scientists and leaders. We will benefit immensely from their knowledge. The only drawback seems to be an irresistible urge to indulge our curiosity at the risk of our lives."
-bts_covenant_sealed_option: "Let's see what lies beyond."
-
-# Covenant event loc
+# Global Events
+## Covenants
 utopia.2658.desc: "Time has passed since we established the foundation of a covenant with the §Y[BtsGetShroudPatron]§!. Our bond is still weak, and we still have a chance to break it - or alternatively, strengthen our connection."
 utopia.2658.b: "Renounce the §Y[BtsGetShroudPatron]§!."
 utopia.2671.desc: "Our understanding of our patron grows. We are no more than an afterthought to it. Insects in its home. Yet, it has taken a liking to us and on this occasion, it has bestowed another drop of power upon us.\n\nOur telepaths are now more closely attuned to our patron, and we have been inspired to create a monument to celebrate our covenant, a place where our best telepaths can try to commune with the §Y[BtsGetShroudPatron]§!."
-utopia.2676.desc: "The mysteries of the Shroud are too alien for us to dispel, but we have become more attuned to the §Y[BtsGetShroudPatron]§!. Everywhere we go, we can sense it at the back of our minds, and its power seeps into our reality from the cracks of our psyche." utopia.2681.desc: "Our patron, the §Y[BtsGetShroudPatron]§! seems to have relinquished a fraction of its energy in a fold of the Shroud, allowing us to perform §M$decision_bts_shrouded_covenant_arcology_project$§! §Y(Ascension $ap_arcology_project$ is required)§!. The conclave of Telepaths is certain that our close bond will allow one of us to safely absorb and wield this power. A few candidates were selected, but only one of them can be granted the privilege to wield the power of our patron. Who shall it be?"
-utopia.2681.desc: "Our patron, the §Y[BtsGetShroudPatron]§! seems to have relinquished a fraction of its energy in a fold of the Shroud, allowing us to perform §M$decision_bts_shrouded_covenant_arcology_project$§! §Y(Ascension $ap_arcology_project$ is required)§!. The conclave of Telepaths is certain that our close bond will allow one of us to safely absorb and wield this power. A few candidates were selected, but only one of them can be granted the privilege to wield the power of our patron. Who shall it be?"
+utopia.2676.desc: "The mysteries of the Shroud are too alien for us to dispel, but we have become more attuned to the §Y[BtsGetShroudPatron]§!. Everywhere we go, we can sense it at the back of our minds, and its power seeps into our reality from the cracks of our psyche." utopia.2681.desc: "Our patron, the §Y[BtsGetShroudPatron]§! seems to have relinquished a fraction of its energy in a fold of the Shroud, allowing us to perform §M$decision_bts_shrouded_arcology_project$§! §Y(Ascension $ap_arcology_project$ is required)§!. The conclave of Telepaths is certain that our close bond will allow one of us to safely absorb and wield this power. A few candidates were selected, but only one of them can be granted the privilege to wield the power of our patron. Who shall it be?"
+utopia.2681.desc: "Our patron, the §Y[BtsGetShroudPatron]§! seems to have relinquished a fraction of its energy in a fold of the Shroud, allowing us to perform §M$decision_bts_shrouded_arcology_project$§! §Y(Ascension $ap_arcology_project$ is required)§!. The conclave of Telepaths is certain that our close bond will allow one of us to safely absorb and wield this power. A few candidates were selected, but only one of them can be granted the privilege to wield the power of our patron. Who shall it be?"
 utopia.2682.desc: "It is done. As the power was invested in [chosen_leader.GetName], all those around could feel the weight of its psionic presence. It is powerful and commands respect. [chosen_leader.GetHeShe] will now be the immortal champion of the §Y[BtsGetShroudPatron]§!."
 utopia.2686.desc: "The conclave of Telepaths has made a breakthrough in harnessing the powers of our patron, the §Y[BtsGetShroudPatron]§!. Where previously only psionic individuals could fully grasp the extent of the Covenant, we have devised a way to let power flow through entire starships, at a scale never seen before. Should we wish it, the mark of the §Y[BtsGetShroudPatron]§! can push our ships further than ever before."
- 
-bts_covenant_chain_title: "$bts_covenant_name_full$"
-bts_covenant_chain_desc: ""We have created a bond with a Shroud Entity named the §Y$bts_covenant_name_full$§!. Unspeakable, it granted us crumbs of its power for a price. There will likely be more to follow.\n\nOur telepaths theorize, that the bond can be deepened more easily if we align ourselves more with our patron.\n\nThe $bts_covenant_name_prefix$ is unstoppable and its influence must travel beyond all realities. §YSeek for rifts in our universe§! and §Yexplore them§! as much as you can to expand the influence of your divinity and §Ygain favor§!.\n\n$text_covenant_favor_info$\n$[root.bts_covenant_planet_killer_pop_killed_status]$"
 bts_whisperers_covenant_chain_title: "The Whisperers in the Void"
-bts_whisperers_covenant_chain_desc: "We have created a bond with a Shroud Entity named the §YWhisperers in the Void§!. Unfathomable, it granted us crumbs of its power for a price. There will likely be more to follow.\n\nOur telepaths theorize, that the bond can be deepened more easily if we align ourselves more on our patron.\n\nThe Whisperers enjoy new knowledge, silent secrets and conspiracies. They revel in the simple joy of a mind filled to the brim, cracking at the seams.\n\n$text_covenant_favor_info$\n$[root.bts_covenant_planet_killer_pop_killed_status]$"
+bts_whisperers_covenant_chain_desc: "We have created a bond with a Shroud Entity named the §YWhisperers in the Void§!. Unfathomable, it granted us crumbs of its power for a price. There will likely be more to follow.\n\nOur telepaths theorize, that the bond can be deepened more easily if we align ourselves more on our patron.\n\nThe Whisperers enjoy new knowledge, silent secrets and conspiracies. They revel in the simple joy of a mind filled to the brim, cracking at the seams.\n\n$text_covenant_favor_info$\n$[root.bts_planet_killer_end_pop_killed_status]$"
 bts_eater_covenant_chain_title: "The Eater of Worlds"
-bts_eater_covenant_chain_desc: "We have created a bond with a Shroud Entity named the §YEater of Worlds§!. Insatiable, it granted us crumbs of its power for a price. There will likely be more to follow.\n\nOur telepaths theorize, that the bond can be deepened more easily if we align ourselves more on our patron.\n\nThe Eater hungers impatiently. It craves war, the sweet taste of strife and lament.\n\n$text_covenant_favor_info$\n$[root.bts_covenant_planet_killer_pop_killed_status]$"
+bts_eater_covenant_chain_desc: "We have created a bond with a Shroud Entity named the §YEater of Worlds§!. Insatiable, it granted us crumbs of its power for a price. There will likely be more to follow.\n\nOur telepaths theorize, that the bond can be deepened more easily if we align ourselves more on our patron.\n\nThe Eater hungers impatiently. It craves war, the sweet taste of strife and lament.\n\n$text_covenant_favor_info$\n$[root.bts_planet_killer_end_pop_killed_status]$"
 bts_composer_covenant_chain_title: "The Composer of Strands"
-bts_composer_covenant_chain_desc: "We have created a bond with a Shroud Entity named the §YComposer of Strands§!. Sheltering, it granted us crumbs of its power for a price. There will likely be more to follow.\n\nOur telepaths theorize, that the bond can be further deepened if we align ourselves more with our patron.\n\nThe Composer yearns for flesh set free from the constraints of evolution and genetic manipulations. It tells us about the respect of life, of nature and the sanctity of the flesh.\n\n$text_covenant_favor_info$\n$[root.bts_covenant_planet_killer_pop_killed_status]$"
+bts_composer_covenant_chain_desc: "We have created a bond with a Shroud Entity named the §YComposer of Strands§!. Sheltering, it granted us crumbs of its power for a price. There will likely be more to follow.\n\nOur telepaths theorize, that the bond can be further deepened if we align ourselves more with our patron.\n\nThe Composer yearns for flesh set free from the constraints of evolution and genetic manipulations. It tells us about the respect of life, of nature and the sanctity of the flesh.\n\n$text_covenant_favor_info$\n$[root.bts_planet_killer_end_pop_killed_status]$"
 bts_instrument_covenant_chain_title: "The Instrument of Desire"
-bts_instrument_covenant_chain_desc: "We have created a bond with a Shroud Entity named the §YInstrument of Desire§!. Pampering, it granted us crumbs of its power for a price. There will likely be more to follow.\n\nOur telepaths theorize, that the bond can be deepened more easily if we align ourselves more with our patron.\n\nThe Instrument longs for yearning. Indulged pleasures, decadence and slavery spell the name of the Instrument.\n\n$text_covenant_favor_info$\n$[root.bts_covenant_planet_killer_pop_killed_status]$"
-
+bts_instrument_covenant_chain_desc: "We have created a bond with a Shroud Entity named the §YInstrument of Desire§!. Pampering, it granted us crumbs of its power for a price. There will likely be more to follow.\n\nOur telepaths theorize, that the bond can be deepened more easily if we align ourselves more with our patron.\n\nThe Instrument longs for yearning. Indulged pleasures, decadence and slavery spell the name of the Instrument.\n\n$text_covenant_favor_info$\n$[root.bts_planet_killer_end_pop_killed_status]$"
 text_covenant_total_favor: "Total Favor : §Y[root.covenant_total_favor]§!"
 text_covenant_favor_per_month: "Favor per month : §Y[root.covenant_favor_per_month]§!"
 text_covenant_favor_per_year: "Favor per year  : §Y[root.covenant_favor_per_year]§!"
@@ -157,12 +167,6 @@ text_covenant_estimated_years_450_favor: "§Y450§! Favor : §Y[root.covenant_es
 text_covenant_estimated_years_500_favor: "§Y500§! Favor : §Y[root.covenant_estimated_years_500_favor]§! years\n"
 text_covenant_estimated_years_favor: "[root.scripted_text_covenant_estimated_years_20_favor][root.scripted_text_covenant_estimated_years_50_favor][root.scripted_text_covenant_estimated_years_90_favor][root.scripted_text_covenant_estimated_years_100_favor][root.scripted_text_covenant_estimated_years_150_favor][root.scripted_text_covenant_estimated_years_200_favor][root.scripted_text_covenant_estimated_years_250_favor][root.scripted_text_covenant_estimated_years_300_favor][root.scripted_text_covenant_estimated_years_350_favor][root.scripted_text_covenant_estimated_years_400_favor][root.scripted_text_covenant_estimated_years_450_favor][root.scripted_text_covenant_estimated_years_500_favor]"
 text_covenant_favor_info: "$text_covenant_total_favor$\n$text_covenant_favor_per_month$\n$text_covenant_favor_per_year$\n\nYears before reaching each following favor ranks:\n$text_covenant_estimated_years_favor$"
-
-
-bts_reckoning_info: "§M$NAME_Reckoning$§! : §Y[root.bts_covenant_planet_killer_pop_killed]§! organic pops §Rkilled§!"
-
-bts_covenant_modifier_0: "$bts_covenant_name_full$"
-bts_covenant_modifier_1: "$bts_covenant_name_full$"
 
 # Origin
 origin_bts_zroni: "In the Footsteps of the Zroni"
@@ -197,45 +201,33 @@ tr_astral_studies_rift_collapser: "Rift Collapser"
 tr_astral_studies_rift_collapser_delayed: "Every time we draw energy from the rift, we make it collapse slightly in on itself to limit energy losses."
 
 # Powers
+bts_option_powers: "Use §MAetherophasic Collapser§! powers."
+bts_power_summon_1: "Summon §M$NAME_Shroud_Avatar$§!."
+bts_power_summon_1_desc: "A warrior from the Shroud that has been forged out of pure psionic energy."
+bts_power_summon_2: "Summon §M$NAME_Shroud_Manifestation$§!."
+bts_power_summon_2_desc: "A greater Shroud entity that represents an unspeakable concept of all thoughts."
+bts_power_summon_3: "Summon §M$NAME_Dimensional_Horror$§!."
+bts_power_summon_3_desc: "It is a creature of pure malice, born in a dimension that bears more than a striking resemblance to the realm of Hell as described by many galactic religions."
+bts_power_summon_4: "Summon §M$NAME_Reckoning$§!."
+bts_power_summon_4_desc: "A massive paranormal being of pure energy that seeks to devour the consciousness of other life forms."
+bts_power_summon_4_already_in_use: "No §M$NAME_Reckoning$§! is already owned by the empire"
 
-BTS_SHROUD_ENTITY: "Shroud Manifestation"
-bts_covenant_option_powers: "Use §MAetherophasic Collapser§! powers."
-bts_covenant_power_summon_1: "Summon §M$NAME_Shroud_Avatar$§!."
-bts_covenant_power_summon_1_desc: "A warrior from the Shroud that has been forged out of pure psionic energy."
-bts_covenant_power_summon_2: "Summon §M$NAME_Shroud_Manifestation$§!."
-bts_covenant_power_summon_2_desc: "A greater Shroud entity that represents an unspeakable concept of all thoughts."
-bts_covenant_power_summon_3: "Summon §M$NAME_Dimensional_Horror$§!."
-bts_covenant_power_summon_3_desc: "It is a creature of pure malice, born in a dimension that bears more than a striking resemblance to the realm of Hell as described by many galactic religions."
-bts_covenant_power_summon_4: "Summon §M$NAME_Reckoning$§!."
-bts_covenant_power_summon_4_desc: "A massive paranormal being of pure energy that seeks to devour the consciousness of other life forms."
-bts_power_4_already_in_use: "No §M$NAME_Reckoning$§! is already owned by the empire"
-
-bts_shroud_avatar: "$NAME_Shroud_Avatar$"
-bts_shroud_avatar_zroni: "Zroni $bts_shroud_avatar$"
-bts_shroud_manifestation: "$NAME_Shroud_Manifestation$"
-bts_shroud_manifestation_zroni: "Zroni $bts_shroud_manifestation$"
-bts_warped_consciousness: "$NAME_Warped_Consciousness$"
-bts_warped_consciousness_zroni: "Zroni $bts_warped_consciousness$"
-bts_dimensional_horror: "$NAME_Dimensional_Horror$"
-bts_dimensional_horror_zroni: "Zroni $bts_dimensional_horror$"
-
-# Modifiers
+# Global Modifiers
 bts_astral_action_cost: "Astral Actions Cost"
 absorbed_consciousness_0: "$absorbed_consciousness_1$"
 mod_planet_telepaths_sr_zro_produces_add: "£sr_zro£ $sr_zro$ from £job_telepath£ $job_telepath_plural$"
 mod_planet_telepaths_produces_mult: "£job_telepath£ $job_telepath$ Output"
 mod_bts_astral_action_cost: "$bts_astral_action_cost$"
 mod_country_sr_zro_cost_mult: "£sr_zro£ $sr_zro$ Cost"
-
 bts_astral_rift_spawn_mult: "Chance for [ 'concept_astral_rift', $ASTRAL_RIFTS$ ] to appear in systems you control:"
 mod_bts_astral_rift_spawn_mult: "$bts_astral_rift_spawn_mult$"
+
 # Others
-
 bts_no_astral_rift_scar_in_system: "$TRIGGER_FAIL$An §YAstral Rift§! or §YAstral Scar§! must be present in an owned system"
+bts_reckoning_info: "§M$NAME_Reckoning$§! : §Y[root.bts_planet_killer_end_pop_killed]§! organic pops §Rkilled§!"
 
 
-
-# Laybrinth of Abstraction
+## Laybrinth of Abstraction
 pc_bts_labyrinth_of_abstraction: "Laybrinth of Abstraction"
 pc_bts_labyrinth_of_abstraction_desc: "An enigmatic construction that allows our telepaths to reach a higher state of consciousness, enabling them to influence the thoughts of other entities and rewrite reality thanks to their deep connection with the shroud."
 bts_labyrinth_of_abstraction_megastructure: "$pc_bts_labyrinth_of_abstraction$"
@@ -251,7 +243,7 @@ bts_labyrinth_of_abstraction_core_2_desc: "$pc_bts_labyrinth_of_abstraction_desc
 bts_labyrinth_of_abstraction_core_3_desc: "$pc_bts_labyrinth_of_abstraction_desc$"
 bts_labyrinth_of_abstraction_core_4_desc: "$pc_bts_labyrinth_of_abstraction_desc$"
 
-# Buildings
+### Buildings
 bts_building_dimensional_converger: "Dimensional Converger"
 bts_building_dimensional_converger_desc: ""
 
@@ -276,18 +268,18 @@ bts_building_eternal_archive_desc: ""
 bts_building_ethical_manipulator: "Ethical Manipulator"
 bts_building_ethical_manipulator_desc: ""
 
-# Districts
+### Districts
 bts_district_third_eye_observatory: "Third Eye Observatory"
 bts_district_influence_control_complex: "Influence Control Complex"
 bts_district_third_eye_observatory_plural: "Third Eye Observatories"
-bts_district_third_eye_observatory_desc: "$job_telepath_effect_desc$"
-bts_district_influence_control_complex: "Influence Control Complex"
 bts_district_influence_control_complex_plural: "Influence Control Complexes"
+bts_district_third_eye_observatory_desc: ""
+bts_district_influence_control_complex_desc: ""
 bts_district_third_eye_observatory_effects: "Each district in this category adds the following bonuses to your $job_bts_conceptual_architect_plural$:\n- $MOD_ADD_BASE_COUNTRY_INTEL$: §G+$@bts_district_third_eye_observatory_intel$§!\n- $MOD_PLANET_SENSOR_RANGE_ADD$: §G+$@bts_district_third_eye_observatory_sensor_range$§!\n- $MOD_PLANET_HYPERLANE_RANGE_ADD$: §G+$@bts_district_third_eye_observatory_hyperlane_range$§!"
 bts_district_influence_control_complex_effects: "Each district in this category adds the following bonuses to your $job_bts_conceptual_architect_plural$:\n- $MOD_COUNTRY_TRUST_CAP_ADD$: §G+$@bts_district_influence_control_complex_trust_cap$§!\n- $MOD_COUNTRY_TRUST_GROWTH$: §G+$@bts_district_influence_control_complex_trust_growth_text|1*$%§!\n- $mod_country_base_influence_produces_add$: §G+$@bts_district_influence_control_complex_influence$§!"
 
 
-# Jobs
+### Jobs
 job_bts_conceptual_architect: "Conceptual Architect"
 job_bts_conceptual_architect_plural: "Conceptual Architects"
 job_bts_conceptual_architect_desc: "A highly skilled telepath able to materialize certain concepts locally from his mind. He also excels in the art of controlling the thoughts of other entities."
@@ -300,9 +292,11 @@ bts_shroud_portal_megastructure: "Shroud Portal"
 bts_shroud_portal_megastructure_DESC: "Portal linking several locations in space. Any entity able to pass through it will be dematerialized in order to pass through the shroud, then rematerialized once on the other side."
 bts_shroud_portal_galactic_DESC: "This system contains a §Y$bts_shroud_portal_megastructure$§!"
 
+# Global Bypass
 pc_bts_shroud_rift: "Shroud Rift"
 pc_bts_shroud_rift_desc: ""
 
+# Global Relics
 r_bts_relic_shroud_nexus: "Shroud Nexus"
 r_bts_relic_shroud_nexus_desc: "All our §Y$job_bts_conceptual_architect_plural$§! manage to establish a link between each of our ships."
 r_bts_relic_shroud_nexus_active: "A §Y$bts_shroud_portal_megastructure$§! will appear next to your fleets for §Y$@bts_shroud_portal_expiration_days|*0$ days§!"

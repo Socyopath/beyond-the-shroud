@@ -22,7 +22,7 @@ on_monthly_pulse_country = {
 # Scope:
 # this/root = planet that have been fired upon
 # from = fleet that fired
-on_destroy_planet_with_BTS_PLANET_KILLER_COVENANT = {
+on_destroy_planet_with_BTS_PLANET_KILLER_END = {
 	events = {
 		bts.341
 		origin.3245
@@ -30,10 +30,10 @@ on_destroy_planet_with_BTS_PLANET_KILLER_COVENANT = {
 	}
 }
 
-on_destroy_planet_with_BTS_PLANET_KILLER_COVENANT_queued = {
+on_destroy_planet_with_BTS_PLANET_KILLER_END_queued = {
 }
 
-on_destroy_planet_with_BTS_PLANET_KILLER_COVENANT_unqueued = {
+on_destroy_planet_with_BTS_PLANET_KILLER_END_unqueued = {
 }
 
 

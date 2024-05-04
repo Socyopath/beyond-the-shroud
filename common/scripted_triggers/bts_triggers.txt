@@ -66,7 +66,7 @@ bts_has_zroni_shield = {
     }
 }
 
-can_destroy_planet_with_BTS_PLANET_KILLER_COVENANT = {
+can_destroy_planet_with_BTS_PLANET_KILLER_END = {
 	custom_tooltip = {
 		fail_text = is_not_a_habitable_planet_or_megastructure
 		OR = {

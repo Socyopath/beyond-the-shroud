@@ -13,7 +13,7 @@ component_set = {
 }
 
 component_set = {
-	key = "BTS_PLANET_KILLER_COVENANT"
+	key = "BTS_PLANET_KILLER_END"
 
 	icon = "GFX_ship_part_killer_bts_covenant"
 	icon_frame = 1

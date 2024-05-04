@@ -48,15 +48,15 @@
 @bts_district_arcology_psionic_telepaths = 4
 @bts_district_arcology_psionic_housing = 10
 
-@decision_bts_shrouded_covenant_arcology_project_build_time = 3600
-@decision_bts_shrouded_covenant_arcology_project_influence_cost = 200
-@decision_bts_shrouded_covenant_arcology_project_minerals_cost = 20000
-@decision_bts_shrouded_covenant_arcology_project_sr_zro_cost = 4000
+@decision_bts_shrouded_arcology_project_build_time = 3600
+@decision_bts_shrouded_arcology_project_influence_cost = 200
+@decision_bts_shrouded_arcology_project_minerals_cost = 20000
+@decision_bts_shrouded_arcology_project_sr_zro_cost = 4000
 
-@decision_bts_convert_shrouded_covenant_arcology_project_build_time = 1800
-@decision_bts_convert_shrouded_covenant_arcology_project_influence_cost = 100
-@decision_bts_convert_shrouded_covenant_arcology_project_minerals_cost = 10000
-@decision_bts_convert_shrouded_covenant_arcology_project_sr_zro_cost = 2000
+@decision_bts_convert_shrouded_arcology_project_build_time = 1800
+@decision_bts_convert_shrouded_arcology_project_influence_cost = 100
+@decision_bts_convert_shrouded_arcology_project_minerals_cost = 10000
+@decision_bts_convert_shrouded_arcology_project_sr_zro_cost = 2000
 
 ## Rank 4 Bonus
 @bts_tech_covenant_mark_cost = 48000
@@ -148,18 +148,18 @@
 @bts_mega_aetherophasic_collapser_5_favor_cost = 500
 
 # Powers
-@bts_covenant_power_summon_1_zro_cost = 1000
-@bts_covenant_power_summon_1_astral_threads_cost = 100
-@bts_covenant_power_summon_1_shroud_delve_cooldown = 360
-@bts_covenant_power_summon_2_zro_cost = 2000
-@bts_covenant_power_summon_2_astral_threads_cost = 200
-@bts_covenant_power_summon_2_shroud_delve_cooldown = 720
-@bts_covenant_power_summon_3_zro_cost = 4000
-@bts_covenant_power_summon_3_astral_threads_cost = 500
-@bts_covenant_power_summon_3_shroud_delve_cooldown = 1080
-@bts_covenant_power_summon_4_zro_cost = 20000
-@bts_covenant_power_summon_4_astral_threads_cost = 2000
-@bts_covenant_power_summon_4_shroud_delve_cooldown = 3600
+@bts_power_summon_1_zro_cost = 1000
+@bts_power_summon_1_astral_threads_cost = 100
+@bts_power_summon_1_shroud_delve_cooldown = 360
+@bts_power_summon_2_zro_cost = 2000
+@bts_power_summon_2_astral_threads_cost = 200
+@bts_power_summon_2_shroud_delve_cooldown = 720
+@bts_power_summon_3_zro_cost = 4000
+@bts_power_summon_3_astral_threads_cost = 500
+@bts_power_summon_3_shroud_delve_cooldown = 1080
+@bts_power_summon_4_zro_cost = 20000
+@bts_power_summon_4_astral_threads_cost = 2000
+@bts_power_summon_4_shroud_delve_cooldown = 3600
 
 
 # Modules

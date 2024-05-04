@@ -290,7 +290,7 @@ defined_text = {
 }
 
 defined_text = {
-    name = bts_covenant_planet_killer_pop_killed_status
+    name = bts_planet_killer_end_pop_killed_status
     text = {
 		trigger = { 
             any_owned_ship = {
