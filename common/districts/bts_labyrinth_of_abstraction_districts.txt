@@ -25,7 +25,7 @@ bts_district_third_eye_observatory = {
     }
 
     triggered_desc = {
-		text = bts_district_third_eye_observatory_desc
+		text = bts_district_third_eye_observatory_effects
 	}
 }
 
@@ -56,6 +56,6 @@ bts_district_influence_control_complex = {
     }
     
     triggered_desc = {
-		text = bts_district_influence_control_complex_desc
+		text = bts_district_influence_control_complex_effects
 	}
 }

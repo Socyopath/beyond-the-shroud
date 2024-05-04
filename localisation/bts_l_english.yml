@@ -278,18 +278,22 @@ bts_building_ethical_manipulator_desc: ""
 
 # Districts
 bts_district_third_eye_observatory: "Third Eye Observatory"
+bts_district_influence_control_complex: "Influence Control Complex"
 bts_district_third_eye_observatory_plural: "Third Eye Observatories"
 bts_district_third_eye_observatory_desc: "$job_telepath_effect_desc$"
 bts_district_influence_control_complex: "Influence Control Complex"
 bts_district_influence_control_complex_plural: "Influence Control Complexes"
-bts_district_influence_control_complex_desc: "$job_telepath_effect_desc$"
+bts_district_third_eye_observatory_effects: "Each district in this category adds the following bonuses to your $job_bts_conceptual_architect_plural$:\n- $MOD_ADD_BASE_COUNTRY_INTEL$: §G+$@bts_district_third_eye_observatory_intel$§!\n- $MOD_PLANET_SENSOR_RANGE_ADD$: §G+$@bts_district_third_eye_observatory_sensor_range$§!\n- $MOD_PLANET_HYPERLANE_RANGE_ADD$: §G+$@bts_district_third_eye_observatory_hyperlane_range$§!"
+bts_district_influence_control_complex_effects: "Each district in this category adds the following bonuses to your $job_bts_conceptual_architect_plural$:\n- $MOD_COUNTRY_TRUST_CAP_ADD$: §G+$@bts_district_influence_control_complex_trust_cap$§!\n- $MOD_COUNTRY_TRUST_GROWTH$: §G+$@bts_district_influence_control_complex_trust_growth_text|1*$%§!\n- $mod_country_base_influence_produces_add$: §G+$@bts_district_influence_control_complex_influence$§!"
+
 
 # Jobs
 job_bts_conceptual_architect: "Conceptual Architect"
 job_bts_conceptual_architect_plural: "Conceptual Architects"
-job_bts_conceptual_architect_desc: "Members of the Psi-Corps, a unit of psionically-gifted crime fighters."
-job_bts_conceptual_architect_effect_desc: "£job_telepath£ $job_telepath_plural$ produce £unity£ §Y$unity$§!, decrease £crime£ §Y$PLANET_CRIME_TITLE$§!, and provide a general productivity boost on the planet."
-
+job_bts_conceptual_architect_desc: "A highly skilled telepath able to materialize certain concepts locally from his mind. He also excels in the art of controlling the thoughts of other entities."
+job_bts_conceptual_architect_effect_desc: "$job_bts_conceptual_architect_plural$ produce nothing by default, you need to specialize them by building districts on $pc_bts_labyrinth_of_abstraction$."
+mod_job_bts_conceptual_architect_add: "$job_bts_conceptual_architect$ Jobs"
+planet_bts_conceptual_architect: "$job_bts_conceptual_architect$ Jobs"
 
 bts_shroud_portal_megastructure_MEGASTRUCTURE_DETAILS: "$bts_shroud_portal_megastructure_DESC$"
 bts_shroud_portal_megastructure: "Shroud Portal"

@@ -178,6 +178,7 @@
 # Influence Control Complex
 @bts_district_influence_control_complex_trust_cap = 0.15
 @bts_district_influence_control_complex_trust_growth = 0.004
+@bts_district_influence_control_complex_trust_growth_text = 0.4
 @bts_district_influence_control_complex_influence = 0.01
 
 @bts_building_arcanic_council_research_speed = 0.15

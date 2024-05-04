@@ -20,16 +20,11 @@ bts_conceptual_architect = {
 	}
 
 	resources = {
-		category = planet_telepaths
+		category = planet_bts_conceptual_architect
 		upkeep = {
 			energy = 1
 		}
 	}
-
-    pop_modifier = {
-        pop_amenities_usage_mult = -1.00
-        pop_happiness = 1.00
-    }
 
 	triggered_country_modifier = {
 		potential = {
