@@ -158,3 +158,31 @@ decision_bts_shrouded_arcology_project = {
 		}
 	}
 }
+
+decision_bts_labyrinth_of_abstraction_shroud_interraction = {
+	owned_planets_only = yes
+	icon = decision_wormhole
+
+	potential = {
+		is_planet_class = pc_bts_labyrinth_of_abstraction
+		exists = owner
+		owner = {
+			bts_has_labyrinth_of_abstraction_level = { LEVEL = @bts_labyrinth_shroud_inter_unlock_level }
+		}
+	}
+	allow = {
+		owner = {
+			NOT = { has_country_flag = shroud_diplomacy_engaged }
+		}
+	}
+	effect = {
+		custom_tooltip = decision_bts_labyrinth_of_abstraction_shroud_interraction_effects
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = bts.100
+				}
+			}
+		}
+	}
+}
