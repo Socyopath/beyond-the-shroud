@@ -70,7 +70,7 @@ bts_mega_aetherophasic_collapser_0 = {
 				is_star_class = sc_trinary_3
 				is_star_class = sc_trinary_4
 			}
-		} 
+		}
 	}
 
 	placement_rules = {
@@ -478,9 +478,8 @@ bts_shroud_portal_megastructure = {
 	}
 
     potential = {
-        check_variable_arithmetic = {
-            which = value:bts_labyrinth_of_abstraction_level
-            value >= @bts_labyrinth_of_abstraction_shroud_portal_level
+        bts_has_labyrinth_of_abstraction_level = {
+            LEVEL = @bts_labyrinth_of_abstraction_shroud_portal_level
         }
     }
 

@@ -8,14 +8,17 @@ country_event = {
 	show_sound = event_red_alert
 	location = root
 
-	fire_only_once = yes
 	is_triggered_only = yes
 
 	desc = bts_mega_aetherophasic_collapser_unlocked_desc
 
 	trigger = {
+		NOT = { has_country_flag = bts_can_build_aetherophasic_collapser }
 		bts_has_any_covenant_confirmed = yes
 		bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_mega_aetherophasic_collapser_0_favor_cost }
+		bts_has_labyrinth_of_abstraction_level = {
+			LEVEL = @bts_labyrinth_shroud_inter_mega_powers_unlock_level
+		}
 	}
 
 	option = {
@@ -55,7 +58,8 @@ country_event = {
     inline_script = {
         script = bts_shroud_power_option
         NAME = bts_power_summon_1
-        ALLOW = "bts_can_use_power_summon_1 = yes"
+        TRIGGER = "bts_can_use_power_summon_1 = yes"
+		ALLOW = ""
         RESOURCE = sr_zro
 		USE_COST = @bts_power_summon_1_zro_cost
 		RESOURCE_2 = astral_threads
@@ -67,7 +71,8 @@ country_event = {
     inline_script = {
         script = bts_shroud_power_option
         NAME = bts_power_summon_2
-        ALLOW = "bts_can_use_power_summon_2 = yes"
+		TRIGGER = "bts_can_use_power_summon_2 = yes"
+        ALLOW = "custom_tooltip = { fail_text = bts_power_summon_2_invalid_number count_owned_ship = { count < @bts_power_summon_2_max_number limit = { is_ship_size = shroud_manifestation } } }"
         RESOURCE = sr_zro
 		USE_COST = @bts_power_summon_2_zro_cost
 		RESOURCE_2 = astral_threads
@@ -79,7 +84,8 @@ country_event = {
     inline_script = {
         script = bts_shroud_power_option
         NAME = bts_power_summon_3
-        ALLOW = "bts_can_use_power_summon_3 = yes"
+		TRIGGER = "bts_can_use_power_summon_3 = yes"
+        ALLOW = "custom_tooltip = { fail_text = bts_power_summon_3_invalid_number count_owned_ship = { count < @bts_power_summon_3_max_number limit = { is_ship_size = bts_dimensional_horror } } }"
         RESOURCE = sr_zro
 		USE_COST = @bts_power_summon_3_zro_cost
 		RESOURCE_2 = astral_threads
@@ -91,7 +97,8 @@ country_event = {
     inline_script = {
         script = bts_shroud_power_option
         NAME = bts_power_summon_4
-        ALLOW = "bts_can_use_power_summon_4 = yes custom_tooltip = { fail_text = bts_power_summon_4_already_in_use NOT = { any_owned_ship = { is_ship_size = warped_consciousness } } }"
+		TRIGGER = "bts_can_use_power_summon_4 = yes"
+        ALLOW = "custom_tooltip = { fail_text = bts_power_summon_4_invalid_number count_owned_ship = { count < @bts_power_summon_4_max_number limit = { is_ship_size = warped_consciousness } } }"
         RESOURCE = sr_zro
 		USE_COST = @bts_power_summon_4_zro_cost
 		RESOURCE_2 = astral_threads

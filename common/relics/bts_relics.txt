@@ -41,9 +41,8 @@ r_bts_relic_shroud_nexus = {
 	possible = {
 		custom_tooltip = {
 			fail_text = r_bts_relic_shroud_nexus_needed_level
-			check_variable_arithmetic = {
-				which = value:bts_labyrinth_of_abstraction_level
-				value >= @bts_labyrinth_of_abstraction_relic_level
+			bts_has_labyrinth_of_abstraction_level = {
+				LEVEL = @bts_labyrinth_of_abstraction_relic_level
 			}
 		}
 		inline_script = {

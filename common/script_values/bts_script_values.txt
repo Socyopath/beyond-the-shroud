@@ -341,9 +341,8 @@ current_covenant_favor_per_month = {
         add = value:bts_covenant_favor_per_month
     }
     modifier = {
-        check_variable_arithmetic = {
-            which = value:bts_labyrinth_of_abstraction_level
-            value >= @bts_labyrinth_of_abstraction_favor_boost_level
+        bts_has_labyrinth_of_abstraction_level = {
+            LEVEL = @bts_labyrinth_of_abstraction_favor_boost_level
         }
         add = @bts_labyrinth_of_abstraction_favor_boost
     }

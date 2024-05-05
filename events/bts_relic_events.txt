@@ -63,10 +63,11 @@ planet_event = {
 	trigger = {
 		is_planet_class = pc_bts_labyrinth_of_abstraction
 		exists = owner
-		check_variable_arithmetic = {
-            which = owner.value:bts_labyrinth_of_abstraction_level
-            value >= @bts_labyrinth_of_abstraction_relic_level
-        }
+		owner = {
+			bts_has_labyrinth_of_abstraction_level = {
+				LEVEL = @bts_labyrinth_of_abstraction_relic_level
+			}
+		}
 	}
 
 	immediate = {
