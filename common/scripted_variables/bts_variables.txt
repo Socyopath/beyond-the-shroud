@@ -177,6 +177,7 @@
 @bts_labyrinth_of_abstraction_megastructure_cost_alloys = 1200
 @bts_labyrinth_of_abstraction_megastructure_cost_energy = 2000
 ## Capital
+@bts_conceptual_architect_unity = 12
 ### Level 1
 @bts_labyrinth_of_abstraction_core_1_upkeep_energy = 2
 @bts_labyrinth_of_abstraction_core_1_job = 10

@@ -303,7 +303,7 @@ bts_district_influence_control_complex_effects: "Each district in this category 
 job_bts_conceptual_architect: "Conceptual Architect"
 job_bts_conceptual_architect_plural: "Conceptual Architects"
 job_bts_conceptual_architect_desc: "A highly skilled telepath able to materialize certain concepts locally from his mind. He also excels in the art of controlling the thoughts of other entities."
-job_bts_conceptual_architect_effect_desc: "$job_bts_conceptual_architect_plural$ produce nothing by default, you need to specialize them by building districts on $pc_bts_labyrinth_of_abstraction$."
+job_bts_conceptual_architect_effect_desc: "$job_bts_conceptual_architect_plural$ produce only unity by default, you need to specialize them by building districts on $pc_bts_labyrinth_of_abstraction$."
 mod_job_bts_conceptual_architect_add: "$job_bts_conceptual_architect$ Jobs"
 planet_bts_conceptual_architect: "$job_bts_conceptual_architect$ Jobs"
 

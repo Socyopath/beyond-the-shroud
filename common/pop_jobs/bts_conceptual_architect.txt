@@ -21,6 +21,9 @@ bts_conceptual_architect = {
 
 	resources = {
 		category = planet_bts_conceptual_architect
+		produces = {
+			unity = @bts_conceptual_architect_unity
+		}
 		upkeep = {
 			energy = 1
 		}
