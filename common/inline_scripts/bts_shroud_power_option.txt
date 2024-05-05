@@ -1,6 +1,9 @@
 option = {
     name = $NAME$
     custom_tooltip = $NAME$_desc
+    trigger = {
+        $TRIGGER$
+    }
     allow = {
         $ALLOW$
         resource_stockpile_compare = {
