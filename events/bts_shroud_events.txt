@@ -1,12 +1,116 @@
 namespace = bts
 
-# Vision - Labyrinth of Abstraction
+
+# The Shroud Lobby
 country_event = {
 	id = bts.100
 	title = "utopia.3000.name"
-	desc = "bts.100.desc"
-	diplomatic = yes
+	desc = {
+		text = utopia.3000.intro.desc
+		trigger = { has_country_flag = shroud_intro }
+	}
+	desc = {
+		text = utopia.3000.1.desc
+		trigger = { normal_shroud_message = yes }
+	}
+	desc = {
+		text = utopia.3000.2.desc
+		trigger = { normal_shroud_message = yes }
+	}
+	desc = {
+		text = utopia.3000.3.desc
+		trigger = { normal_shroud_message = yes }
+	}
+	desc = {
+		text = utopia.3000.4.desc
+		trigger = { normal_shroud_message = yes }
+	}
+	desc = {
+		text = utopia.3000.5.desc
+		trigger = { normal_shroud_message = yes }
+	}
+	desc = {
+		text = utopia.3000.6.desc
+		trigger = { normal_shroud_message = yes }
+	}
+	desc = {
+		text = utopia.3000.7.desc
+		trigger = { normal_shroud_message = yes }
+	}
+	desc = {
+		text = utopia.3000.8.desc
+		trigger = { normal_shroud_message = yes }
+	}
+	desc = {
+		text = utopia.3000.9.desc
+		trigger = { normal_shroud_message = yes }
+	}
+	desc = {
+		text = utopia.3000.10.desc
+		trigger = { normal_shroud_message = yes }
+	}
+	desc = {
+		text = utopia.3000.11.desc
+		trigger = { normal_shroud_message = yes }
+	}
+	desc = {
+		text = utopia.3000.12.desc
+		trigger = { normal_shroud_message = yes }
+	}
+	desc = {
+		text = utopia.3000.13.desc
+		trigger = { normal_shroud_message = yes }
+	}
+	desc = {
+		text = utopia.3000.14.desc
+		trigger = { normal_shroud_message = yes }
+	}
+	desc = {
+		text = utopia.3000.15.desc
+		trigger = { normal_shroud_message = yes }
+	}
+	desc = {
+		text = utopia.3000.16.desc
+		trigger = { normal_shroud_message = yes }
+	}
+	desc = {
+		text = utopia.3000.17.desc
+		trigger = { normal_shroud_message = yes }
+	}
+	desc = {
+		text = utopia.3000.18.desc
+		trigger = { normal_shroud_message = yes }
+	}
+	desc = {
+		text = utopia.3000.19.desc
+		trigger = { normal_shroud_message = yes }
+	}
+	desc = {
+		text = utopia.3000.20.desc
+		trigger = { crisis_shroud_message = yes }
+	}
+	desc = {
+		text = utopia.3000.21.desc
+		trigger = { crisis_shroud_message = yes }
+	}
+	desc = {
+		text = utopia.3000.22.desc
+		trigger = { crisis_shroud_message = yes }
+	}
+	desc = {
+		text = utopia.3000.23.desc
+		trigger = { crisis_shroud_message = yes }
+	}
+	desc = {
+		text = utopia.3000.24.desc
+		trigger = { crisis_shroud_message = yes }
+	}
+	desc = {
+		text = utopia.3000.25.desc
+		trigger = { crisis_shroud_message = yes }
+	}
 	diplomatic_title = BLANK_STRING
+	diplomatic = yes
 	force_open = yes
 
 	picture_event_data = {
@@ -27,96 +131,49 @@ country_event = {
 	}
 
 	option = {
-		name = "bts.100.a"
-		custom_tooltip = "shroud.unknown.chances.medium"
-		hidden_effect = {
-			random_list = {
-				60 = {
-					country_event = { id = bts.101 }
-				}
-				40 = {
-					modifier = {
-						factor = 0.5
-						has_relic = r_zro_crystal
-					}
-					country_Event = { id = bts.102 }
-				}
+		name = bts.100.init
+		trigger = {
+			bts_has_labyrinth_of_abstraction_level = { LEVEL = @bts_labyrinth_shroud_inter_unlock_level }
+		}
+	}
+	option = {
+		name = bts.100.boon
+		trigger = {
+			bts_has_labyrinth_of_abstraction_level = { LEVEL = @bts_labyrinth_shroud_inter_choose_boon_unlock_level }
+			bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_shroud_inter_choose_boon_favor_cost }
+		}
+
+	}
+	option = { # BTS Custom covenant special powers
+		name = bts.100.powers
+		trigger = {
+			bts_has_labyrinth_of_abstraction_level = { LEVEL = @bts_labyrinth_shroud_inter_powers_unlock_level }
+			bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_shroud_inter_powers_favor_cost }
+		}
+		allow = {
+			resource_stockpile_compare = {
+				resource = energy
+				value >= 1000
+				mult = value:scripted_modifier_mult|MODIFIER|shroud_delve_cost|
 			}
 		}
-	}
-
-	option = {
-		name = "exit.shroud"
-		custom_tooltip = "exit.shroud.tooltip"
-		default_hide_option = yes
-	}
-}
-
-# Schematic stealed
-country_event = {
-	id = bts.101
-	title = "bts.101.name"
-	desc = "bts.101.desc"
-	diplomatic = yes
-	diplomatic_title = BLANK_STRING
-	force_open = yes
-
-	picture_event_data = {
-		portrait = shroud1
-		room = shroud_room
-	}
-
-	is_triggered_only = yes
-
-	immediate = {
-		set_country_flag = shroud_diplomacy_engaged
-	}
-
-	after = {
+		add_resource = {
+			energy = -1000
+			mult = value:scripted_modifier_mult|MODIFIER|shroud_delve_cost|
+		}
 		hidden_effect = {
-			remove_country_flag = shroud_diplomacy_engaged
+			country_event = { id =  bts.301 }
 		}
 	}
 
 	option = {
-		name = "exit.shroud"
-        set_country_flag = bts_labyrinth_of_abstraction_unlocked
-		default_hide_option = yes
+		name = bts.100.effects
+		bts_has_labyrinth_of_abstraction_level = { LEVEL = @bts_labyrinth_shroud_inter_choose_effect_unlock_level }
+		bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_shroud_inter_choose_effect_favor_cost }
 	}
-}
-
-# Failed to Steal Schematic
-country_event = {
-	id = bts.102
-	title = "utopia.3000.name"
-	desc = "bts.102.desc"
-	diplomatic = yes
-	diplomatic_title = BLANK_STRING
-	force_open = yes
-
-	picture_event_data = {
-		portrait = shroud1
-		room = shroud_room
-	}
-
-	is_triggered_only = yes
-
-	immediate = {
-		set_country_flag = shroud_diplomacy_engaged
-	}
-
-	after = {
-		hidden_effect = {
-			remove_country_flag = shroud_diplomacy_engaged
-		}
-	}
-
 	option = {
 		name = "exit.shroud"
 		custom_tooltip = "exit.shroud.tooltip"
-		# hidden_effect = {
-		# 	country_event = { id = utopia.3024 }
-		# }
 		default_hide_option = yes
 	}
 }
