@@ -71,12 +71,6 @@ bts_mega_aetherophasic_collapser_0 = {
 				is_star_class = sc_trinary_4
 			}
 		} 
-        custom_tooltip = {
-            fail_text = bts_mega_aetherophasic_collapser_0_missing_favor
-            from = {
-                bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_mega_aetherophasic_collapser_0_favor_cost }
-            }
-        }
 	}
 
 	placement_rules = {
