@@ -85,30 +85,7 @@ country_event = {
 		text = utopia.3000.19.desc
 		trigger = { normal_shroud_message = yes }
 	}
-	desc = {
-		text = utopia.3000.20.desc
-		trigger = { crisis_shroud_message = yes }
-	}
-	desc = {
-		text = utopia.3000.21.desc
-		trigger = { crisis_shroud_message = yes }
-	}
-	desc = {
-		text = utopia.3000.22.desc
-		trigger = { crisis_shroud_message = yes }
-	}
-	desc = {
-		text = utopia.3000.23.desc
-		trigger = { crisis_shroud_message = yes }
-	}
-	desc = {
-		text = utopia.3000.24.desc
-		trigger = { crisis_shroud_message = yes }
-	}
-	desc = {
-		text = utopia.3000.25.desc
-		trigger = { crisis_shroud_message = yes }
-	}
+
 	diplomatic_title = BLANK_STRING
 	diplomatic = yes
 	force_open = yes
@@ -140,9 +117,21 @@ country_event = {
 		name = bts.100.boon
 		trigger = {
 			bts_has_labyrinth_of_abstraction_level = { LEVEL = @bts_labyrinth_shroud_inter_choose_boon_unlock_level }
-			bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_shroud_inter_choose_boon_favor_cost }
+			bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_shroud_inter_choose_boon_favor_cost_low }
 		}
-
+		hidden_effect = {
+			if = {
+				limit = { bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_shroud_inter_choose_boon_favor_cost_high } }
+				country_event = { id = bts.1022 }
+			}
+			else_if = {
+				limit = { bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_shroud_inter_choose_boon_favor_cost_medium } }
+				country_event = { id = bts.1021 }
+			}
+			else = {
+				country_event = { id = bts.1020 }
+			}
+		}
 	}
 	option = { # BTS Custom covenant special powers
 		name = bts.100.powers
@@ -168,12 +157,137 @@ country_event = {
 
 	option = {
 		name = bts.100.effects
-		bts_has_labyrinth_of_abstraction_level = { LEVEL = @bts_labyrinth_shroud_inter_choose_effect_unlock_level }
-		bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_shroud_inter_choose_effect_favor_cost }
+		trigger = {
+			bts_has_labyrinth_of_abstraction_level = { LEVEL = @bts_labyrinth_shroud_inter_choose_effect_unlock_level }
+			bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_shroud_inter_choose_effect_favor_cost }
+		}
 	}
 	option = {
 		name = "exit.shroud"
 		custom_tooltip = "exit.shroud.tooltip"
 		default_hide_option = yes
+	}
+}
+
+# Shroud Boon Low
+country_event = {
+	id = bts.1020
+	title = "utopia.3000.name"
+	desc = { text = utopia.3200.1.desc }
+	desc = { text = utopia.3200.2.desc }
+	desc = { text = utopia.3200.3.desc }
+	desc = { text = utopia.3200.4.desc }
+	desc = { text = utopia.3200.5.desc }
+	desc = { text = utopia.3200.6.desc }
+	desc = { text = utopia.3200.7.desc }
+	desc = { text = utopia.3200.8.desc }
+	desc = { text = utopia.3200.9.desc }
+
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+	force_open = yes
+
+	picture_event_data = {
+		portrait = shroud1
+		room = shroud_room
+	}
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = shroud_diplomacy_engaged
+	}
+
+	inline_script = {
+		script = bts_shroud_boon_choices
+		CHANCE = low
+	}
+
+	after = {
+		hidden_effect = {
+			remove_country_flag = shroud_diplomacy_engaged
+		}
+	}
+}
+
+# Shroud Boon Medium
+country_event = {
+	id = bts.1021
+	title = "utopia.3000.name"
+	desc = { text = utopia.3200.1.desc }
+	desc = { text = utopia.3200.2.desc }
+	desc = { text = utopia.3200.3.desc }
+	desc = { text = utopia.3200.4.desc }
+	desc = { text = utopia.3200.5.desc }
+	desc = { text = utopia.3200.6.desc }
+	desc = { text = utopia.3200.7.desc }
+	desc = { text = utopia.3200.8.desc }
+	desc = { text = utopia.3200.9.desc }
+
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+	force_open = yes
+
+	picture_event_data = {
+		portrait = shroud1
+		room = shroud_room
+	}
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = shroud_diplomacy_engaged
+	}
+
+	inline_script = {
+		script = bts_shroud_boon_choices
+		CHANCE = medium
+	}
+
+	after = {
+		hidden_effect = {
+			remove_country_flag = shroud_diplomacy_engaged
+		}
+	}
+}
+
+# Shroud Boon High
+country_event = {
+	id = bts.1022
+	title = "utopia.3000.name"
+	desc = { text = utopia.3200.1.desc }
+	desc = { text = utopia.3200.2.desc }
+	desc = { text = utopia.3200.3.desc }
+	desc = { text = utopia.3200.4.desc }
+	desc = { text = utopia.3200.5.desc }
+	desc = { text = utopia.3200.6.desc }
+	desc = { text = utopia.3200.7.desc }
+	desc = { text = utopia.3200.8.desc }
+	desc = { text = utopia.3200.9.desc }
+
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+	force_open = yes
+
+	picture_event_data = {
+		portrait = shroud1
+		room = shroud_room
+	}
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = shroud_diplomacy_engaged
+	}
+
+	inline_script = {
+		script = bts_shroud_boon_choices
+		CHANCE = high
+	}
+
+	after = {
+		hidden_effect = {
+			remove_country_flag = shroud_diplomacy_engaged
+		}
 	}
 }

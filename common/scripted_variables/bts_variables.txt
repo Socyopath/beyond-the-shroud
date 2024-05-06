@@ -183,7 +183,9 @@
 @bts_labyrinth_shroud_inter_unlock_level = 1
 
 @bts_labyrinth_shroud_inter_choose_boon_unlock_level = 2
-@bts_labyrinth_shroud_inter_choose_boon_favor_cost = 50
+@bts_labyrinth_shroud_inter_choose_boon_favor_cost_low = 50
+@bts_labyrinth_shroud_inter_choose_boon_favor_cost_medium = 75
+@bts_labyrinth_shroud_inter_choose_boon_favor_cost_high = 100
 
 @bts_labyrinth_shroud_inter_mega_powers_unlock_level = 3
 

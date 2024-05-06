@@ -1,0 +1,81 @@
+option = {
+    name = "boon.happiness.$CHANCE$"
+    custom_tooltip = "shroud.boon.chances.$CHANCE$"
+    happiness_shroud_$CHANCE$ = yes
+}
+option = {
+    name = "boon.upkeep.$CHANCE$"
+    custom_tooltip = "shroud.boon.chances.$CHANCE$"
+    upkeep_shroud_$CHANCE$ = yes
+}
+option = {
+    name = "boon.research.$CHANCE$"
+    custom_tooltip = "shroud.boon.chances.$CHANCE$"
+    research_shroud_$CHANCE$ = yes
+}
+option = {
+    name = "boon.shields.$CHANCE$"
+    custom_tooltip = "shroud.boon.chances.$CHANCE$"
+    shields_shroud_$CHANCE$ = yes
+}
+option = {
+    name = "boon.weapons.$CHANCE$"
+    custom_tooltip = "shroud.boon.chances.$CHANCE$"
+    weapons_shroud_$CHANCE$ = yes
+}
+option = {
+    name = "boon.firing.$CHANCE$"
+    custom_tooltip = "shroud.boon.chances.$CHANCE$"
+    firingrate_shroud_$CHANCE$ = yes
+}
+option = {
+    name = "boon.ethics.$CHANCE$"
+    custom_tooltip = "shroud.boon.chances.$CHANCE$"
+    ethics_shroud_$CHANCE$ = yes
+}
+option = {
+    name = "boon.influence.$CHANCE$"
+    custom_tooltip = "shroud.boon.chances.$CHANCE$"
+    influence_shroud_$CHANCE$ = yes
+}
+option = {
+    name = "boon.unity.$CHANCE$"
+    custom_tooltip = "shroud.boon.chances.$CHANCE$"
+    unity_shroud_$CHANCE$ = yes
+}
+option = {
+    name = "boon.evasion.$CHANCE$"
+    custom_tooltip = "shroud.boon.chances.$CHANCE$"
+    evasion_shroud_$CHANCE$ = yes
+}
+option = {
+    name = "boon.repair.$CHANCE$"
+    custom_tooltip = "shroud.boon.chances.$CHANCE$"
+    repair_shroud_$CHANCE$ = yes
+}
+option = {
+    name = "boon.lifespans.$CHANCE$"
+    custom_tooltip = "shroud.boon.chances.$CHANCE$"
+    lifespan_shroud_$CHANCE$ = yes
+}
+option = {
+    name = "boon.speed.$CHANCE$"
+    custom_tooltip = "shroud.boon.chances.$CHANCE$"
+    speed_shroud_$CHANCE$ = yes
+}
+option = {
+    name = "boon.morale.$CHANCE$"
+    custom_tooltip = "shroud.boon.chances.$CHANCE$"
+    morale_shroud_$CHANCE$ = yes
+}
+option = {
+    name = "boon.sensors.$CHANCE$"
+    custom_tooltip = "shroud.boon.chances.$CHANCE$"
+    sensor_shroud_$CHANCE$ = yes
+}
+
+option = {
+    name = "exit.shroud"
+    custom_tooltip = "exit.shroud.tooltip"
+    default_hide_option = yes
+}
