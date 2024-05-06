@@ -2,6 +2,7 @@ namespace = bts
 
 
 # The Shroud Lobby
+# FROM = Labyrinth of abstraction
 country_event = {
 	id = bts.100
 	title = "utopia.3000.name"
@@ -112,12 +113,25 @@ country_event = {
 		trigger = {
 			bts_has_labyrinth_of_abstraction_level = { LEVEL = @bts_labyrinth_shroud_inter_unlock_level }
 		}
+		allow = {
+
+		}
+		add_modifier = {
+			modifier = "shroud_cooldown"
+			days = 2160
+			time_multiplier = value:scripted_modifier_mult|MODIFIER|shroud_delve_cooldown|
+		}
 	}
 	option = { # Shroud Boons
 		name = bts.100.boon
 		trigger = {
 			bts_has_labyrinth_of_abstraction_level = { LEVEL = @bts_labyrinth_shroud_inter_choose_boon_unlock_level }
 			bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_shroud_inter_choose_boon_favor_cost_low }
+		}
+		add_modifier = {
+			modifier = "shroud_cooldown"
+			days = 2160
+			time_multiplier = value:scripted_modifier_mult|MODIFIER|shroud_delve_cooldown|
 		}
 		hidden_effect = {
 			if = {
@@ -139,17 +153,6 @@ country_event = {
 			bts_has_labyrinth_of_abstraction_level = { LEVEL = @bts_labyrinth_shroud_inter_powers_unlock_level }
 			bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_shroud_inter_powers_favor_cost }
 		}
-		allow = {
-			resource_stockpile_compare = {
-				resource = energy
-				value >= 1000
-				mult = value:scripted_modifier_mult|MODIFIER|shroud_delve_cost|
-			}
-		}
-		add_resource = {
-			energy = -1000
-			mult = value:scripted_modifier_mult|MODIFIER|shroud_delve_cost|
-		}
 		hidden_effect = {
 			country_event = { id =  bts.301 }
 		}
@@ -160,6 +163,11 @@ country_event = {
 		trigger = {
 			bts_has_labyrinth_of_abstraction_level = { LEVEL = @bts_labyrinth_shroud_inter_choose_effect_unlock_level }
 			bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_shroud_inter_choose_effect_favor_cost }
+		}
+		add_modifier = {
+			modifier = "shroud_cooldown"
+			days = 2160
+			time_multiplier = value:scripted_modifier_mult|MODIFIER|shroud_delve_cooldown|
 		}
 		hidden_effect = {
 			country_event = { id = bts.1040 }

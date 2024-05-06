@@ -168,11 +168,14 @@ decision_bts_labyrinth_of_abstraction_shroud_interraction = {
 		exists = owner
 		owner = {
 			bts_has_labyrinth_of_abstraction_level = { LEVEL = @bts_labyrinth_shroud_inter_unlock_level }
+			NOT = { has_country_flag = shroud_diplomacy_engaged }
 		}
 	}
 	allow = {
 		owner = {
-			NOT = { has_country_flag = shroud_diplomacy_engaged }
+			NOT = {
+				has_modifier = shroud_cooldown
+			}
 		}
 	}
 	effect = {
