@@ -113,7 +113,7 @@ country_event = {
 			bts_has_labyrinth_of_abstraction_level = { LEVEL = @bts_labyrinth_shroud_inter_unlock_level }
 		}
 	}
-	option = {
+	option = { # Shroud Boons
 		name = bts.100.boon
 		trigger = {
 			bts_has_labyrinth_of_abstraction_level = { LEVEL = @bts_labyrinth_shroud_inter_choose_boon_unlock_level }
@@ -155,11 +155,14 @@ country_event = {
 		}
 	}
 
-	option = {
+	option = { # SHroud effects
 		name = bts.100.effects
 		trigger = {
 			bts_has_labyrinth_of_abstraction_level = { LEVEL = @bts_labyrinth_shroud_inter_choose_effect_unlock_level }
 			bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_shroud_inter_choose_effect_favor_cost }
+		}
+		hidden_effect = {
+			country_event = { id = bts.1040 }
 		}
 	}
 	option = {
@@ -284,6 +287,152 @@ country_event = {
 		script = bts_shroud_boon_choices
 		CHANCE = high
 	}
+
+	after = {
+		hidden_effect = {
+			remove_country_flag = shroud_diplomacy_engaged
+		}
+	}
+}
+
+# Shroud Effects
+country_event = {
+	id = bts.1040
+	title = "utopia.3000.name"
+	desc = { text = utopia.3200.1.desc }
+	desc = { text = utopia.3200.2.desc }
+	desc = { text = utopia.3200.3.desc }
+	desc = { text = utopia.3200.4.desc }
+	desc = { text = utopia.3200.5.desc }
+	desc = { text = utopia.3200.6.desc }
+	desc = { text = utopia.3200.7.desc }
+	desc = { text = utopia.3200.8.desc }
+	desc = { text = utopia.3200.9.desc }
+
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+	force_open = yes
+
+	picture_event_data = {
+		portrait = shroud1
+		room = shroud_room
+	}
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = shroud_diplomacy_engaged
+	}
+
+	option = { # Psionic Shield
+		name = "utopia.3170.a"
+		custom_tooltip = "shroud.unknown.chances.medium"
+		trigger = {
+			NOR = {
+				has_technology = tech_psionic_shield
+				has_tech_option = tech_psionic_shield
+			}
+		}
+		hidden_effect = {
+			random_list = {
+				60 = {
+					country_event = { id = utopia.3171 }
+				}
+				40 = {
+					modifier = {
+						factor = 0.5
+						has_relic = r_zro_crystal
+					}
+					country_Event = { id = utopia.3172 }
+				}
+			}
+		}		
+	}
+
+	option = {
+		name = "utopia.3180.a"
+		custom_tooltip = "shroud.unknown.chances.medium"
+		trigger = {
+			NOR = {
+				has_technology = tech_precognition_interface
+				has_tech_option = tech_precognition_interface
+			}
+		}
+		hidden_effect = {
+			random_list = {
+				60 = {
+					country_event = { id = utopia.3181 }
+				}
+				40 = {
+					modifier = {
+						factor = 0.5
+						has_relic = r_zro_crystal
+					}
+					country_Event = { id = utopia.3182 }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "utopia.3160.a"
+		custom_tooltip = "shroud.unknown.chances.medium"
+		trigger = {
+			NOR = {
+				has_technology = tech_psi_jump_drive_1
+				has_tech_option = tech_psi_jump_drive_1
+			}
+		}
+		hidden_effect = {
+			random_list = {
+				60 = { 
+					modifier = {
+						factor = 1.5
+						has_country_flag = jaunted_traveler_secret_revealed
+					}
+					country_event = { id = utopia.3161 }
+				}
+				40 = {
+					modifier = {
+						factor = 0.5
+						has_relic = r_zro_crystal
+					}
+					country_event = { id = utopia.3162 }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "bts.100.effects.chosen"
+		trigger = {
+			NOT = {
+				any_owned_leader = {
+					has_trait = leader_trait_chosen
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = { id = utopia.3190 }
+		}
+	}
+
+	option = {
+		name = "bts.100.effects.steal"
+		trigger = {
+			any_country = {
+				is_country_type = fallen_empire
+				NOT = { has_ethic = ethic_gestalt_consciousness }
+				has_communications = root
+				NOT = { is_at_war_with = root }
+			}
+			# NOT = { has_country_flag = shroud_fallen_empire }
+		}
+		hidden_effect = {
+			country_event = { id = utopia.3150 }
+		}
+	}
+
 
 	after = {
 		hidden_effect = {

@@ -249,6 +249,8 @@ bts.100.init: "INIT"
 bts.100.boon: "Choose boon of the shroud"
 bts.100.powers: "Use §MAetherophasic Collapser§! powers"
 bts.100.effects: "Choose special effect from the shroud"
+bts.100.effects.chosen: "Promote a leader to be a Chosen One"
+bts.100.effects.steal: "Steal technology from a Fallen Empire"
 
 decision_bts_labyrinth_of_abstraction_shroud_interraction: "Shroud Interractions"
 decision_bts_labyrinth_of_abstraction_shroud_interraction: ""
