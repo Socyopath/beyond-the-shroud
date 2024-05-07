@@ -176,6 +176,7 @@
 @bts_shroud_destabilizer_fire_rate_mult = -0.50
 
 # Labyrinth of Abstraction
+@bts_labyrinth_of_abstraction_favor_cost = 25
 @bts_labyrinth_of_abstraction_megastructure_time = 1800
 @bts_labyrinth_of_abstraction_megastructure_cost_alloys = 1200
 @bts_labyrinth_of_abstraction_megastructure_cost_energy = 2000

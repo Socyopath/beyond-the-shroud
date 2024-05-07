@@ -18,10 +18,6 @@ bts_has_any_covenant_confirmed = {
 	}
 }
 
-bts_is_labyrinth_of_abstraction_unlocked = {
-	has_country_flag = bts_labyrinth_of_abstraction_unlocked
-}
-
 bts_has_labyrinth_of_abstraction = {
 	any_owned_planet = {
 		is_planet_class = pc_bts_labyrinth_of_abstraction

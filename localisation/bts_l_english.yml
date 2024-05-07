@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 
 # Global Decisions
 decision_bts_zroni_astral_spliting: "Archaeo-Spliting"
@@ -239,16 +239,9 @@ bts_no_astral_rift_scar_in_system: "$TRIGGER_FAIL$An §YAstral Rift§! or §YAst
 bts_reckoning_info: "§M$NAME_Reckoning$§! : §Y[root.bts_planet_killer_end_pop_killed]§! organic pops §Rkilled§!"
 
 ## Laybrinth of Abstraction
-# bts.100.desc: "In one of the lower planes of the Shroud, we encounter a schematic with strange patterns.\n\n§P"FORBIDDEN KNOWLEDGE."§!"
-# bts.100.a: "§YAttempt to steal the schematic.§!"
-# bts.101.name: "§G$pc_bts_labyrinth_of_abstraction$§!"
-# bts.101.desc: "We did not venture this deep into the Shroud only to be turned back now. After channeling all of their psionic might, our telepaths were able to steal the schematic.\n\nWe do not know what those telepaths saw on this schematic, but it was enough to permanently unhinge their minds. Their sacrifice was not in vain, however, as the act of stealing the schematic taught us how to build a megastructure called §Y$pc_bts_labyrinth_of_abstraction$§!"
-# bts.102.desc: "Our telepaths, already exhausted from having ventured this deeply into the Shroud, failed to channel enough psionic strength to steal the schematic."
+bts.1000.title: "$pc_bts_labyrinth_of_abstraction$"
+bts.1000.desc: "Our divinity offered us a vision in which we could see strange patterns for a §Ymegastructure§!.\n\n§PFORBIDDEN KNOWLEDGE : $pc_bts_labyrinth_of_abstraction$§!"
 
-bts.100.init: "INIT"
-bts.100.boon: "Choose boon of the shroud"
-bts.100.powers: "Use §MAetherophasic Collapser§! powers"
-bts.100.effects: "Choose special effect from the shroud"
 bts.100.effects.chosen: "Promote a leader to be a Chosen One"
 bts.100.effects.steal: "Steal technology from a Fallen Empire"
 

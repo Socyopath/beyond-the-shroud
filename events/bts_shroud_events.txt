@@ -1,6 +1,30 @@
 namespace = bts
 
 
+# Megastructure Info event
+country_event = { 
+	id = bts.1000
+	title = "bts.1000.title"
+	desc = "bts.1000.desc"
+	picture = GFX_evt_surreal_visions
+	show_sound = event_mystic_reveal
+	location = root
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = bts_labyrinth_of_abstraction_unlocked }
+		bts_has_any_covenant_confirmed = yes
+		bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_of_abstraction_favor_cost }
+	}
+
+	option = {
+		name = OK
+		hidden_effect = {
+			set_country_flag = bts_labyrinth_of_abstraction_unlocked
+		}
+	}
+}
+
 # The Shroud Lobby
 # FROM = Labyrinth of abstraction
 country_event = {
