@@ -1,5 +1,6 @@
 planet_telepaths = {
 	parent = planet_administrators
+	modifier_category = pop
 	generate_add_modifiers = {
 		produces
 		upkeep
@@ -8,5 +9,15 @@ planet_telepaths = {
 		produces
 		upkeep
 	}
-	modifier_category = pop
+	# Inherited Modifiers
+	triggered_produces_modifier = {
+		key = planet_administrators
+		modifier_types = {
+			add
+		}
+		trigger = {
+			always = yes
+		}
+		use_parent_icon = yes
+	}
 }

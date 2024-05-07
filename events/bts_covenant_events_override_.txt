@@ -328,6 +328,10 @@ country_event = {
 			}
 			2 = {
 				modifier = {
+					factor = 0
+					has_global_flag = no_end_of_cycle
+				}
+				modifier = {
 					factor = 5
 					any_country = {
 						NOT = { is_same_value = ROOT }

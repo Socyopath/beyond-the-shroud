@@ -118,7 +118,7 @@ telepath = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner  = { has_tradition = tr_psionics_breach_shroud }
+			owner = { has_tradition = tr_psionics_breach_shroud }
 		}
 		modifier = {
 			planet_psionic_jobs_produces_mult = 0.05
@@ -215,4 +215,6 @@ telepath = {
 			has_slavery_type = { type = slavery_indentured }
 		}
 	}
+
+	inline_script = "jobs/automodding_priority_unity"
 }
