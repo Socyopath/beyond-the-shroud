@@ -3,12 +3,12 @@ bts_district_third_eye_observatory = {
 	is_capped_by_modifier = no
 
 	show_on_uncolonized = {
-		uses_district_set = bts_labyrinth_of_abstraction_district_set
+		uses_district_set = bts_labyrinth_of_abstraction_set
 	}
 
     potential = {
 		is_planet_class = pc_bts_labyrinth_of_abstraction
-		uses_district_set = bts_labyrinth_of_abstraction_district_set
+		uses_district_set = bts_labyrinth_of_abstraction_set
 		exists = owner
 	}
 
@@ -25,6 +25,7 @@ bts_district_third_eye_observatory = {
 	}
 
     planet_modifier = {
+		pc_bts_labyrinth_of_abstraction_max_buildings_add = 1
         planet_max_buildings_add = 1
     }
 
@@ -38,12 +39,12 @@ bts_district_influence_control_complex = {
 	is_capped_by_modifier = no
 
 	show_on_uncolonized = {
-		uses_district_set = bts_labyrinth_of_abstraction_district_set
+		uses_district_set = bts_labyrinth_of_abstraction_set
 	}
 	
     potential = {
 		is_planet_class = pc_bts_labyrinth_of_abstraction
-		uses_district_set = bts_labyrinth_of_abstraction_district_set
+		uses_district_set = bts_labyrinth_of_abstraction_set
 		exists = owner
 	}
 
@@ -60,6 +61,7 @@ bts_district_influence_control_complex = {
 	}
 
     planet_modifier = {
+		pc_bts_labyrinth_of_abstraction_max_buildings_add = 1
         planet_max_buildings_add = 1
     }
     

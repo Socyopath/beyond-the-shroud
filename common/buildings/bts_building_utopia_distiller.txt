@@ -3,7 +3,8 @@ bts_building_utopia_distiller = {
 	base_buildtime = @bts_labyrinth_of_abstraction_building_time
 	category = government
 	base_cap_amount = 1
-
+	building_sets = { bts_labyrinth_of_abstraction_set }
+	
     potential = {
 		is_planet_class = pc_bts_labyrinth_of_abstraction
 	}

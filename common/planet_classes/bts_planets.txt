@@ -15,13 +15,16 @@ pc_bts_labyrinth_of_abstraction = {
 	planet_size = 6
 	moon_size = 0
 	colonizable = yes
-	district_set = bts_labyrinth_of_abstraction_district_set
+	district_set = bts_labyrinth_of_abstraction_set
+	building_set = bts_labyrinth_of_abstraction_set
 	ideal = yes
 	starting_planet = no
 	has_colonization_influence_cost = no			# applies when within own borders
 	is_artificial_planet = yes
 	can_be_invaded = no
 	show_health_bar_in_planet_view = yes
+
+	inherit_country_building_modifiers = no
 
 	modifier = {
 		pop_growth_speed_reduction = 1

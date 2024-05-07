@@ -439,6 +439,9 @@ bts_labyrinth_of_abstraction_megastructure = {
 			orbit_distance_offset = 10
 			has_ring = no
 			init_effect = {
+                set_name = {
+                    key = pc_bts_labyrinth_of_abstraction
+                }
 				set_surveyed = {
 					surveyed = yes
 					surveyor = FROM
@@ -447,10 +450,28 @@ bts_labyrinth_of_abstraction_megastructure = {
 				clear_blockers = yes
                 clear_deposits = yes
                 prevent_anomaly = yes
-                create_colony = {
-                    owner = root.owner
-                }
-                set_name = pc_bts_labyrinth_of_abstraction
+
+                set_planet_flag = megastructure
+
+				fromfrom.planet = {
+					set_planet_flag = has_megastructure
+					if = {
+						limit = { has_orbital_station = yes }
+						orbital_station = {
+							dismantle = yes
+						}
+					}
+				}
+
+                set_owner = fromfrom
+                set_controller = fromfrom
+                create_pop = {
+					species = owner_main_species
+				}
+                from = {
+					room_name_override = ""
+				}
+
                 remove_all_buildings = yes
                 add_building = bts_labyrinth_of_abstraction_core_1
 			}

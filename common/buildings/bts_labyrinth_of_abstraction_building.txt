@@ -9,6 +9,7 @@ bts_labyrinth_of_abstraction_core_1 = {
 	can_be_disabled = no
 	position_priority = 0
 	category = government
+	building_sets = { bts_labyrinth_of_abstraction_set }
 
 	potential = {
 		is_planet_class = pc_bts_labyrinth_of_abstraction
@@ -28,13 +29,6 @@ bts_labyrinth_of_abstraction_core_1 = {
 		}
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-		}
-		planet_max_buildings_add = -1
-		mult = owner.modifier:planet_max_buildings_add
-	}
 }
 
 # Planetary Administration
@@ -48,6 +42,7 @@ bts_labyrinth_of_abstraction_core_2 = {
 	can_be_disabled = no
 	position_priority = 0
 	category = government
+	building_sets = { bts_labyrinth_of_abstraction_set }
 
 	destroy_trigger = {
 		count_owned_pop = { limit = { has_job = bts_conceptual_architect } count < @bts_labyrinth_of_abstraction_core_1_job }
@@ -82,14 +77,6 @@ bts_labyrinth_of_abstraction_core_2 = {
 		}
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-		}
-		planet_max_buildings_add = -1
-		mult = owner.modifier:planet_max_buildings_add
-	}
-
 	triggered_desc = {
 		text = bts_labyrinth_of_abstraction_core_2_effects
 	}
@@ -105,6 +92,7 @@ bts_labyrinth_of_abstraction_core_3 = {
 	can_be_disabled = no
 	position_priority = 0
 	category = government
+	building_sets = { bts_labyrinth_of_abstraction_set }
 
 	destroy_trigger = {
 		count_owned_pop = { limit = { has_job = bts_conceptual_architect } count < @bts_labyrinth_of_abstraction_core_2_job }
@@ -139,14 +127,6 @@ bts_labyrinth_of_abstraction_core_3 = {
 		}
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-		}
-		planet_max_buildings_add = -1
-		mult = owner.modifier:planet_max_buildings_add
-	}
-
 	triggered_desc = {
 		text = bts_labyrinth_of_abstraction_core_3_effects
 	}
@@ -162,7 +142,8 @@ bts_labyrinth_of_abstraction_core_4 = {
 	can_be_disabled = no
 	position_priority = 0
 	category = government
-
+	building_sets = { bts_labyrinth_of_abstraction_set }
+	
 	destroy_trigger = {
 		count_owned_pop = { limit = { has_job = bts_conceptual_architect } count < @bts_labyrinth_of_abstraction_core_3_job }
 	}
@@ -192,14 +173,6 @@ bts_labyrinth_of_abstraction_core_4 = {
 		upkeep = {
 			energy = @bts_labyrinth_of_abstraction_core_4_upkeep_energy
 		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-		}
-		planet_max_buildings_add = -1
-		mult = owner.modifier:planet_max_buildings_add
 	}
 
 	triggered_desc = {

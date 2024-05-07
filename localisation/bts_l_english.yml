@@ -308,7 +308,7 @@ bts_district_third_eye_observatory_desc: ""
 bts_district_influence_control_complex_desc: ""
 bts_district_third_eye_observatory_effects: "Each district in this category adds the following bonuses to your $job_bts_conceptual_architect_plural$:\n- $MOD_ADD_BASE_COUNTRY_INTEL$: §G+$@bts_district_third_eye_observatory_intel$§!\n- $MOD_PLANET_SENSOR_RANGE_ADD$: §G+$@bts_district_third_eye_observatory_sensor_range$§!\n- $MOD_PLANET_HYPERLANE_RANGE_ADD$: §G+$@bts_district_third_eye_observatory_hyperlane_range$§!"
 bts_district_influence_control_complex_effects: "Each district in this category adds the following bonuses to your $job_bts_conceptual_architect_plural$:\n- $MOD_COUNTRY_TRUST_CAP_ADD$: §G+$@bts_district_influence_control_complex_trust_cap$§!\n- $MOD_COUNTRY_TRUST_GROWTH$: §G+$@bts_district_influence_control_complex_trust_growth_text|1*$%§!\n- $mod_country_base_influence_produces_add$: §G+$@bts_district_influence_control_complex_influence$§!"
-
+mod_pc_bts_labyrinth_of_abstraction_max_buildings_add: "Additional Building Slots"
 
 ### Jobs
 job_bts_conceptual_architect: "Conceptual Architect"
