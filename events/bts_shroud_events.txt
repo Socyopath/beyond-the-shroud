@@ -133,17 +133,33 @@ country_event = {
 	}
 
 	option = {
-		name = bts.100.init
+		name = bts.100.pop
 		trigger = {
 			bts_has_labyrinth_of_abstraction_level = { LEVEL = @bts_labyrinth_shroud_inter_unlock_level }
 		}
 		allow = {
+			resource_stockpile_compare = {
+				resource = energy
+				value >= 1000
+				mult = value:scripted_modifier_mult|MODIFIER|shroud_delve_cost|
+			}
+		}
 
+		add_resource = {
+			energy = -1000
+			mult = value:scripted_modifier_mult|MODIFIER|shroud_delve_cost|
 		}
 		add_modifier = {
 			modifier = "shroud_cooldown"
-			days = 2160
+			days = @bts_labyrinth_shroud_inter_pop_cooldown
 			time_multiplier = value:scripted_modifier_mult|MODIFIER|shroud_delve_cooldown|
+		}
+
+		from = {
+			create_pop = {
+				species = root
+				ethos = root
+			}
 		}
 	}
 	option = { # Shroud Boons
@@ -152,9 +168,22 @@ country_event = {
 			bts_has_labyrinth_of_abstraction_level = { LEVEL = @bts_labyrinth_shroud_inter_choose_boon_unlock_level }
 			bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_shroud_inter_choose_boon_favor_cost_low }
 		}
+
+		allow = {
+			resource_stockpile_compare = {
+				resource = energy
+				value >= 1500
+				mult = value:scripted_modifier_mult|MODIFIER|shroud_delve_cost|
+			}
+		}
+		add_resource = {
+			energy = -1500
+			mult = value:scripted_modifier_mult|MODIFIER|shroud_delve_cost|
+		}
+
 		add_modifier = {
 			modifier = "shroud_cooldown"
-			days = 2160
+			days = @bts_labyrinth_shroud_inter_choose_boon_cooldown
 			time_multiplier = value:scripted_modifier_mult|MODIFIER|shroud_delve_cooldown|
 		}
 		hidden_effect = {
@@ -182,15 +211,29 @@ country_event = {
 		}
 	}
 
-	option = { # SHroud effects
+	option = { # Shroud effects
 		name = bts.100.effects
 		trigger = {
 			bts_has_labyrinth_of_abstraction_level = { LEVEL = @bts_labyrinth_shroud_inter_choose_effect_unlock_level }
 			bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_shroud_inter_choose_effect_favor_cost }
 		}
+
+		allow = {
+			resource_stockpile_compare = {
+				resource = energy
+				value >= 2000
+				mult = value:scripted_modifier_mult|MODIFIER|shroud_delve_cost|
+			}
+		}
+
+		add_resource = {
+			energy = -2000
+			mult = value:scripted_modifier_mult|MODIFIER|shroud_delve_cost|
+		}
+
 		add_modifier = {
 			modifier = "shroud_cooldown"
-			days = 2160
+			days = @bts_labyrinth_shroud_inter_choose_effect_cooldown
 			time_multiplier = value:scripted_modifier_mult|MODIFIER|shroud_delve_cooldown|
 		}
 		hidden_effect = {
@@ -238,6 +281,12 @@ country_event = {
 		CHANCE = low
 	}
 
+	option = {
+		name = "exit.shroud"
+		custom_tooltip = "exit.shroud.tooltip"
+		default_hide_option = yes
+	}
+
 	after = {
 		hidden_effect = {
 			remove_country_flag = shroud_diplomacy_engaged
@@ -279,6 +328,12 @@ country_event = {
 		CHANCE = medium
 	}
 
+	option = {
+		name = "exit.shroud"
+		custom_tooltip = "exit.shroud.tooltip"
+		default_hide_option = yes
+	}
+
 	after = {
 		hidden_effect = {
 			remove_country_flag = shroud_diplomacy_engaged
@@ -318,6 +373,12 @@ country_event = {
 	inline_script = {
 		script = bts_shroud_boon_choices
 		CHANCE = high
+	}
+
+	option = {
+		name = "exit.shroud"
+		custom_tooltip = "exit.shroud.tooltip"
+		default_hide_option = yes
 	}
 
 	after = {
@@ -465,6 +526,11 @@ country_event = {
 		}
 	}
 
+	option = {
+		name = "exit.shroud"
+		custom_tooltip = "exit.shroud.tooltip"
+		default_hide_option = yes
+	}
 
 	after = {
 		hidden_effect = {

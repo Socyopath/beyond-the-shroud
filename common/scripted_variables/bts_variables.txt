@@ -182,11 +182,13 @@
 @bts_labyrinth_of_abstraction_megastructure_cost_energy = 2000
 
 @bts_labyrinth_shroud_inter_unlock_level = 1
+@bts_labyrinth_shroud_inter_pop_cooldown = 1080
 
 @bts_labyrinth_shroud_inter_choose_boon_unlock_level = 2
 @bts_labyrinth_shroud_inter_choose_boon_favor_cost_low = 50
 @bts_labyrinth_shroud_inter_choose_boon_favor_cost_medium = 75
 @bts_labyrinth_shroud_inter_choose_boon_favor_cost_high = 100
+@bts_labyrinth_shroud_inter_choose_boon_cooldown = 2520
 
 @bts_labyrinth_shroud_inter_mega_powers_unlock_level = 3
 
@@ -195,6 +197,7 @@
 
 @bts_labyrinth_shroud_inter_choose_effect_unlock_level = 4
 @bts_labyrinth_shroud_inter_choose_effect_favor_cost = 250
+@bts_labyrinth_shroud_inter_choose_effect_cooldown = 2880
 
 ## Capital
 @bts_conceptual_architect_unity = 12
