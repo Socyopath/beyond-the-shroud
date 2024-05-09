@@ -73,9 +73,3 @@ option = {
     custom_tooltip = "shroud.boon.chances.$CHANCE$"
     sensor_shroud_$CHANCE$ = yes
 }
-
-option = {
-    name = "exit.shroud"
-    custom_tooltip = "exit.shroud.tooltip"
-    default_hide_option = yes
-}
