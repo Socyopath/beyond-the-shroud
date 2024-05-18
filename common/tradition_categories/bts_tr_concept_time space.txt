@@ -1,0 +1,17 @@
+tradition_concept_space = {
+	tree_template = "tree_11_11_21"
+	adoption_bonus = "tr_concept_space_adopt"
+	finish_bonus = "tr_concept_space_finish"
+
+	potential = {
+		
+	}
+
+	traditions = {
+		"tr_concept_space_11"
+		"tr_concept_space_21"
+		"tr_concept_space_12"
+		"tr_concept_space_22"
+		"tr_concept_space_3"
+	}
+}
