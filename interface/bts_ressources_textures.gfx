@@ -47,6 +47,49 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/traditions/tradition_astral_studies_causality_reverser.dds"
 	}
 
+	spriteType = {
+		name = "GFX_tr_concept_time_11"
+		textureFile = "gfx/interface/icons/traditions/tr_concept_time_11.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_concept_time_12"
+		textureFile = "gfx/interface/icons/traditions/tr_concept_time_12.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_concept_time_21"
+		textureFile = "gfx/interface/icons/traditions/tr_concept_time_21.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_concept_time_22"
+		textureFile = "gfx/interface/icons/traditions/tr_concept_time_22.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_concept_time_3"
+		textureFile = "gfx/interface/icons/traditions/tr_concept_time_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_concept_space_11"
+		textureFile = "gfx/interface/icons/traditions/tr_concept_space_11.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_concept_space_12"
+		textureFile = "gfx/interface/icons/traditions/tr_concept_space_12.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_concept_space_21"
+		textureFile = "gfx/interface/icons/traditions/tr_concept_space_21.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_concept_space_22"
+		textureFile = "gfx/interface/icons/traditions/tr_concept_space_22.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_concept_space_3"
+		textureFile = "gfx/interface/icons/traditions/tr_concept_space_3.dds"
+	}
+
+
 	# Components
 	spriteType = {
 		name = "GFX_ship_part_bts_covenant_aux"
