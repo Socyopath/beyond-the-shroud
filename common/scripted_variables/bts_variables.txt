@@ -271,3 +271,31 @@
 @bts_building_thoughts_stabilizer_empire_size_pops = -0.20
 ### Utopia DIstiller
 @bts_building_utopia_distiller_happiness = 0.05
+
+
+@bts_concept_time_11_ship_build_speed = 0.01
+@bts_concept_time_11_starbase_upgrade_speed = 0.01
+@bts_concept_time_11_starbase_module_build_speed = 0.01
+@bts_concept_time_21_agenda_duration = 0.01
+@bts_concept_time_21_agenda_speed = 0.01
+@bts_concept_time_21_leader_xp_gain = 0.01
+@bts_concept_time_12_terraforming_speed = 0.01
+@bts_concept_time_12_colony_dev_speed = 0.01
+@bts_concept_time_12_clear_blocker_speed = 0.01
+@bts_concept_time_12_planet_build_speed = 0.01
+@bts_concept_time_22_intel_speed = 0.01
+@bts_concept_time_22_operation_speed = 0.01
+@bts_concept_time_3_relic_cd = -0.50
+
+
+@bts_concept_space_11_defense_plat_cap = 0.005
+@bts_concept_space_11_starbase_cap = 0.1
+@bts_concept_space_21_max_storage = 1000
+@bts_concept_space_12_naval_cap = 0.01
+@bts_concept_space_12_fleet_cmd = 0.01
+@bts_concept_space_22_building_slot = 0.10
+@bts_concept_space_22_district_slot = 0.05
+@bts_concept_space_22_housing_usage = -0.005
+@bts_concept_space_3_ftl_windup = 1.00
+@bts_concept_space_3_ftl_windown = 1.00
+@bts_concept_space_3_ftl_speed = 1.00
