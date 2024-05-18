@@ -75,3 +75,10 @@ on_building_upgraded = {
 		bts.402 # Gives relic 
 	}
 }
+
+# This = Country
+on_relic_activated = {
+	events = {
+		bts.14
+	}
+}

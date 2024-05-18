@@ -142,4 +142,28 @@ starbase_event = {
 }
 
 
+# Relic coodlown reduction
+country_event = {
+	id = bts.14
+	is_triggered_only = yes
+	hide_window = yes
 
+	immediate = {
+		export_modifier_duration_to_variable = {
+			modifier = relic_activation_cooldown
+			variable = current_relic_cooldown
+		}
+		multiply_variable = {
+			which = current_relic_cooldown
+			value = value:scripted_modifier_mult|MODIFIER|bts_relic_cooldown|
+		}
+		remove_modifier = relic_activation_cooldown
+		add_modifier = {
+			modifier = relic_activation_cooldown
+			days = 1
+			time_multiplier = current_relic_cooldown
+		}
+		clear_variable = current_relic_cooldown
+	}
+
+}

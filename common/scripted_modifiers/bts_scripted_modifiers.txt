@@ -41,3 +41,9 @@ bts_astral_rift_spawn_mult = {
 	percentage = yes
 }
 
+bts_relic_cooldown = {
+	icon = mod_relic_cooldown
+	good = no
+	category = country
+	percentage = yes
+}
