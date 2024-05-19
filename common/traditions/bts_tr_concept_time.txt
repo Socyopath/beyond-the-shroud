@@ -3,23 +3,25 @@ tr_concept_time_adopt = {
 }
 
 tr_concept_time_finish = {
-
+	modifier = {
+		ascension_perks_add = 1
+	}
 }
 
 tr_concept_time_11 = {
-
+	custom_tooltip = tr_concept_time_11_effect
 }
 
 tr_concept_time_12 = {
-
+	custom_tooltip = tr_concept_time_12_effect
 }
 
 tr_concept_time_21 = {
-
+	custom_tooltip = tr_concept_time_21_effect
 }
 
 tr_concept_time_22 = {
-
+	custom_tooltip = tr_concept_time_22_effect
 }
 
 tr_concept_time_3 = {
