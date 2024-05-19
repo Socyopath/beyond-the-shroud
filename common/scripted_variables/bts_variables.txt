@@ -296,6 +296,6 @@
 @bts_concept_space_22_building_slot = 0.10
 @bts_concept_space_22_district_slot = 0.05
 @bts_concept_space_22_housing_usage = -0.005
-@bts_concept_space_3_ftl_windup = 1.00
-@bts_concept_space_3_ftl_windown = 1.00
+@bts_concept_space_3_ftl_windup = -1.00
+@bts_concept_space_3_ftl_windown = -1.00
 @bts_concept_space_3_ftl_speed = 1.00

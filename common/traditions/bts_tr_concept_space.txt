@@ -1,27 +1,34 @@
 tr_concept_space_adopt = {
-
+    
 }
 
 tr_concept_space_finish = {
-
+    custom_tooltip = tr_concept_space_finish_effect
+	modifier = {
+		ascension_perks_add = 1
+	}
 }
 
 tr_concept_space_11 = {
-
+    custom_tooltip = tr_concept_space_11_effect
 }
 
 tr_concept_space_12 = {
-
+    custom_tooltip = tr_concept_space_12_effect
 }
 
 tr_concept_space_21 = {
-
+    custom_tooltip = tr_concept_space_21_effect
 }
 
 tr_concept_space_22 = {
-
+    custom_tooltip = tr_concept_space_22_effect
 }
 
 tr_concept_space_3 = {
-
+	modifier = {
+        ship_windup_mult = @bts_concept_space_3_ftl_windup
+        ship_winddown_mult = @bts_concept_space_3_ftl_windown
+        ship_interstellar_speed_mult = @bts_concept_space_3_ftl_speed
+	}
 }
