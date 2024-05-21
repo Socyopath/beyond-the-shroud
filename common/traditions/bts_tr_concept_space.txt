@@ -14,6 +14,9 @@ tr_concept_space_11 = {
 }
 
 tr_concept_space_12 = {
+	possible = {
+		has_tradition = tr_concept_space_11
+	}
     custom_tooltip = tr_concept_space_12_effect
 }
 
@@ -22,10 +25,17 @@ tr_concept_space_21 = {
 }
 
 tr_concept_space_22 = {
+	possible = {
+		has_tradition = tr_concept_space_21
+	}
     custom_tooltip = tr_concept_space_22_effect
 }
 
 tr_concept_space_3 = {
+	possible = {
+		has_tradition = tr_concept_space_12
+		has_tradition = tr_concept_space_22
+	}
 	modifier = {
         ship_windup_mult = @bts_concept_space_3_ftl_windup
         ship_winddown_mult = @bts_concept_space_3_ftl_windown

@@ -47,6 +47,7 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/traditions/tradition_astral_studies_causality_reverser.dds"
 	}
 
+	# Concept: Time
 	spriteType = {
 		name = "GFX_tradition_hex_bg_tradition_concept_time"
 		textureFile = "gfx/interface/traditions/tradition_hex_bg_psionics.dds"
@@ -86,9 +87,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/traditions/tr_concept_time_3.dds"
 	}
 
+	# Concept: Space
 	spriteType = {
 		name = "GFX_tradition_hex_bg_tradition_concept_space"
-		textureFile = "gfx/interface/traditions/tradition_hex_bg_psionics.dds"
+		textureFile = "gfx/interface/traditions/tradition_hex_bg_discovery.dds"
 	}
 	spriteType = {
 		name = "GFX_tradition_category_bg_tradition_concept_space"
@@ -102,7 +104,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_tradition_category_icon_tradition_concept_space"
-		textureFile = "gfx/interface/icons/resources/dark_matter_large.dds"
+		textureFile = "gfx/interface/icons/traditions/tree_icons/tradition_icon_concept_space.dds"
 	}
 	spriteType = {
 		name = "GFX_tr_concept_space_11"

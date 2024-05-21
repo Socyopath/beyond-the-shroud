@@ -341,18 +341,18 @@ tradition_concept_space_desc: ""
 
 tr_concept_space_adopt: ""
 tr_concept_space_finish: ""
-tr_concept_space_finish_effect: "Unlock a §Ystar decision to lock every bypass§! inside a system (owned or not) for §Y10 years§!."
+tr_concept_space_finish_effect: "Unlock a §Ystar decision to lock every bypass§! inside a system (owned or not) for §Y10 years§!.\nAscension Perks Unlocked: §G+1§!"
 
 tr_concept_space_11: ""
 tr_concept_space_11_effect: "$MOD_STARBASE_DEFENSE_PLATFORM_CAPACITY_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_11_defense_plat_cap|%1$§!\n$MOD_COUNTRY_STARBASE_CAPACITY_ADD$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_11_starbase_cap$§!"
 tr_concept_space_11_delayed: ""
 
 tr_concept_space_12: ""
-tr_concept_space_12_effect: "$MOD_COUNTRY_RESOURCE_MAX_ADD$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_21_max_storage|*0$§!"
+tr_concept_space_12_effect: "$MOD_COUNTRY_NAVAL_CAP_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_12_naval_cap|%0$§!\n$MOD_COMMAND_LIMIT_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_12_fleet_cmd|%0$§!"
 tr_concept_space_12_delayed: ""
 
 tr_concept_space_21: ""
-tr_concept_space_21_effect: "$MOD_COUNTRY_NAVAL_CAP_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_12_naval_cap|%0$§!\n$MOD_COMMAND_LIMIT_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_12_fleet_cmd|%0$§!"
+tr_concept_space_21_effect: "$MOD_COUNTRY_RESOURCE_MAX_ADD$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_21_max_storage|*0$§!"
 tr_concept_space_21_delayed: ""
 
 tr_concept_space_22: ""
@@ -368,18 +368,18 @@ tradition_concept_time_desc: ""
 
 tr_concept_time_adopt: ""
 tr_concept_time_finish: ""
-tr_concept_time_finish_effect: ""
+tr_concept_time_finish_effect: "\nAscension Perks Unlocked: §G+1§!"
 
 tr_concept_time_11: ""
 tr_concept_time_11_effect: "$MOD_STARBASE_SHIPYARD_BUILD_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_11_ship_build_speed|%0$§!\n$MOD_STARBASE_UPGRADE_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_11_starbase_upgrade_speed|%0$§!\n$MOD_STARBASE_MODULE_BUILD_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_11_starbase_module_build_speed|%0$§!"
 tr_concept_time_11_delayed: ""
 
 tr_concept_time_12: ""
-tr_concept_time_12_effect: "$MOD_COUNCIL_AGENDA_FINISHING_EFFECT_DURATION_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_21_agenda_duration|%0$§!\n$MOD_COUNCIL_AGENDA_PROGRESS_SPEED$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_21_agenda_speed|%0$§!\n$MOD_LEADER_SPECIES_EXP_GAIN$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_21_leader_xp_gain|%0$§!"
+tr_concept_time_12_effect: "$MOD_COUNTRY_TERRAFORM_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_12_terraforming_speed|%0$§!\n$MOD_PLANET_COLONY_DEVELOPMENT_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_12_colony_dev_speed|%0$§!\n$MOD_PLANET_CLEAR_BLOCKER_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_12_clear_blocker_speed|%0$§!\n$MOD_PLANET_BUILDING_BUILD_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_12_planet_build_speed|%0$§!"
 tr_concept_time_12_delayed: ""
 
 tr_concept_time_21: ""
-tr_concept_time_21_effect: "$MOD_COUNTRY_TERRAFORM_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_12_terraforming_speed|%0$§!\n$MOD_PLANET_COLONY_DEVELOPMENT_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_12_colony_dev_speed|%0$§!\n$MOD_PLANET_CLEAR_BLOCKER_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_12_clear_blocker_speed|%0$§!\n$MOD_PLANET_BUILDING_BUILD_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_12_planet_build_speed|%0$§!"
+tr_concept_time_21_effect: "$MOD_COUNCIL_AGENDA_FINISHING_EFFECT_DURATION_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_21_agenda_duration|%0$§!\n$MOD_COUNCIL_AGENDA_PROGRESS_SPEED$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_21_agenda_speed|%0$§!\n$MOD_LEADER_SPECIES_EXP_GAIN$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_21_leader_xp_gain|%0$§!"
 tr_concept_time_21_delayed: ""
 
 tr_concept_time_22: ""
@@ -389,29 +389,31 @@ tr_concept_time_22_delayed: ""
 tr_concept_time_3: ""
 tr_concept_time_3_delayed: ""
 
-## Concept: Reality
-tradition_concept_reality: "Concept: Reality"
-tradition_concept_reality_desc: ""
+## Concept: Energy
+tradition_concept_energy: "Concept: Energy"
+tradition_concept_energy_desc: ""
 
-tr_concept_reality_adopt: ""
-tr_concept_reality_finish: ""
-tr_concept_reality_finish_effect: ""
+tr_concept_energy_adopt: ""
+tr_concept_energy_finish: ""
+tr_concept_energy_finish_effect: "\nAscension Perks Unlocked: §G+1§!"
 
-tr_concept_reality_11: ""
-tr_concept_reality_11_effect: ""
-tr_concept_reality_11_delayed: ""
+tr_concept_energy_11: ""
+tr_concept_energy_11_effect: "$mod_ships_upkeep_mult$ $bts_tr_concept_jobs_msg$: §G$@bts_concept_energy_11_ship_upkeep|%0$§!\n$mod_starbases_upkeep_mult$ $bts_tr_concept_jobs_msg$: §G$@bts_concept_energy_11_starbase_upkeep|%0$§!"
+tr_concept_energy_11_delayed: ""
 
-tr_concept_reality_12: ""
-tr_concept_reality_12_effect: ""
-tr_concept_reality_12_delayed: ""
+tr_concept_energy_12: ""
+tr_concept_energy_12_effect: "$mod_planet_districts_upkeep_mult$ $bts_tr_concept_jobs_msg$: §G$@bts_concept_energy_12_district_upkeep|%1$§!\n$mod_planet_buildings_upkeep_mult$ $bts_tr_concept_jobs_msg$: §G$@bts_concept_energy_12_building_upkeep|%1$§!"
+tr_concept_energy_12_delayed: ""
 
-tr_concept_reality_21: ""
-tr_concept_reality_21_effect: ""
-tr_concept_reality_21_delayed: ""
+tr_concept_energy_21: ""
+tr_concept_energy_21_effect: "$mod_station_gatherers_produces_mult$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_energy_21_mining_station_output|%0$§!\n$mod_station_researchers_produces_mult$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_energy_21_research_station_output|%0$§!"
+tr_concept_energy_21_delayed: ""
 
-tr_concept_reality_22: ""
-tr_concept_reality_22_effect: ""
-tr_concept_reality_22_delayed: ""
+tr_concept_energy_22: ""
+tr_concept_energy_22_effect: "$mod_planet_jobs_upkeep_mult$ $bts_tr_concept_jobs_msg$: §G$@bts_concept_energy_22_job_upkeep|%1$§!\n$mod_planet_jobs_produces_mult$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_energy_22_job_output|%0$§!"
+tr_concept_energy_22_delayed: ""
 
-tr_concept_reality_3: ""
-tr_concept_reality_3_delayed: ""
+tr_concept_energy_3: ""
+tr_concept_energy_3_delayed: ""
+
+mod_bts_relic_cooldown: "Relic Activation Cooldown"
