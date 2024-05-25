@@ -397,23 +397,23 @@ tr_concept_energy_adopt: ""
 tr_concept_energy_finish: ""
 tr_concept_energy_finish_effect: "\nAscension Perks Unlocked: §G+1§!"
 
-tr_concept_energy_11: ""
+tr_concept_energy_11: "Structural Optimization"
 tr_concept_energy_11_effect: "$mod_ships_upkeep_mult$ $bts_tr_concept_jobs_msg$: §G$@bts_concept_energy_11_ship_upkeep|%0$§!\n$mod_starbases_upkeep_mult$ $bts_tr_concept_jobs_msg$: §G$@bts_concept_energy_11_starbase_upkeep|%0$§!"
-tr_concept_energy_11_delayed: ""
+tr_concept_energy_11_delayed: "We are able to modify the law of conservation of energy to our advantage, and thus significantly reduce the material requirements of spacecraft."
 
-tr_concept_energy_12: ""
+tr_concept_energy_12: "Equivalence Drain"
 tr_concept_energy_12_effect: "$mod_station_gatherers_produces_mult$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_energy_21_mining_station_output|%0$§!\n$mod_station_researchers_produces_mult$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_energy_21_research_station_output|%0$§!"
-tr_concept_energy_12_delayed: ""
+tr_concept_energy_12_delayed: "Our mastery of matter and energy enables us to drain energy from matter and vice versa."
 
-tr_concept_energy_21: ""
+tr_concept_energy_21: "Energy Convergence"
 tr_concept_energy_21_effect: "$mod_planet_districts_upkeep_mult$ $bts_tr_concept_jobs_msg$: §G$@bts_concept_energy_12_district_upkeep|%1$§!\n$mod_planet_buildings_upkeep_mult$ $bts_tr_concept_jobs_msg$: §G$@bts_concept_energy_12_building_upkeep|%1$§!"
-tr_concept_energy_21_delayed: ""
+tr_concept_energy_21_delayed: "All our planetary constructions now draw a part of their energy from our conceptual architects, limiting the losses caused by physical installations."
 
-tr_concept_energy_22: ""
+tr_concept_energy_22: "Wave Function"
 tr_concept_energy_22_effect: "$mod_planet_jobs_upkeep_mult$ $bts_tr_concept_jobs_msg$: §G$@bts_concept_energy_22_job_upkeep|%1$§!\n$mod_planet_jobs_produces_mult$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_energy_22_job_output|%0$§!"
-tr_concept_energy_22_delayed: ""
+tr_concept_energy_22_delayed: "We are able to influence probabilities at the quantum level, enabling our pops to synthesize materials more efficiently."
 
-tr_concept_energy_3: ""
-tr_concept_energy_3_delayed: ""
+tr_concept_energy_3: "Pure State Weapons"
+tr_concept_energy_3_delayed: "Energy can be used in its purest form, enhancing the power and efficiency of our energy-based weapons."
 
 mod_bts_relic_cooldown: "Relic Activation Cooldown"
