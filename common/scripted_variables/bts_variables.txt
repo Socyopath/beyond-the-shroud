@@ -302,14 +302,10 @@
 
 @bts_concept_energy_11_ship_upkeep = -0.01
 @bts_concept_energy_11_starbase_upkeep = -0.01
-
 @bts_concept_energy_21_mining_station_output = 0.01
 @bts_concept_energy_21_research_station_output = 0.01
-
 @bts_concept_energy_12_district_upkeep = -0.005
 @bts_concept_energy_12_building_upkeep = -0.005
-
 @bts_concept_energy_22_job_upkeep = -0.005
 @bts_concept_energy_22_job_output = 0.01
-
-@bts_concept_energy_3_energy_damage = 0.25
+@bts_concept_energy_3_energy_damage = 0.35
