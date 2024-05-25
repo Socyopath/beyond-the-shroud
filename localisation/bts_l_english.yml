@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 
 # Global Decisions
 decision_bts_zroni_astral_spliting: "Archaeo-Spliting"
@@ -343,24 +343,24 @@ tr_concept_space_adopt: ""
 tr_concept_space_finish: ""
 tr_concept_space_finish_effect: "Unlock a §Ystar decision to lock every bypass§! inside a system (owned or not) for §Y10 years§!.\nAscension Perks Unlocked: §G+1§!"
 
-tr_concept_space_11: ""
+tr_concept_space_11: "Structural Expansion"
 tr_concept_space_11_effect: "$MOD_STARBASE_DEFENSE_PLATFORM_CAPACITY_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_11_defense_plat_cap|%1$§!\n$MOD_COUNTRY_STARBASE_CAPACITY_ADD$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_11_starbase_cap$§!"
-tr_concept_space_11_delayed: ""
+tr_concept_space_11_delayed: "Our $job_bts_conceptual_architect_plural$ are able to inflate space in a localized area to increase our defensive capabilities."
 
-tr_concept_space_12: ""
+tr_concept_space_12: "Phase-Shifting Fleet"
 tr_concept_space_12_effect: "$MOD_COUNTRY_NAVAL_CAP_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_12_naval_cap|%0$§!\n$MOD_COMMAND_LIMIT_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_12_fleet_cmd|%0$§!"
-tr_concept_space_12_delayed: ""
+tr_concept_space_12_delayed: "We manage to phase-shift part of our fleet to carry more ships at a time."
 
-tr_concept_space_21: ""
-tr_concept_space_21_effect: "$MOD_COUNTRY_RESOURCE_MAX_ADD$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_21_max_storage|*0$§!"
-tr_concept_space_21_delayed: ""
+tr_concept_space_21: "Dimensional Construction"
+tr_concept_space_21_effect: "$MOD_PLANET_MAX_BUILDINGS_ADD$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_22_building_slot$§!\n$MOD_PLANET_MAX_DISTRICTS_ADD$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_22_district_slot$§!\n$MOD_POP_HOUSING_USAGE_MULT$ $bts_tr_concept_jobs_msg$: §G$@bts_concept_space_22_housing_usage|%1$§!"
+tr_concept_space_21_delayed: "Our mastery of spatial dimensions enables us to optimize the use of space on our planets."
 
-tr_concept_space_22: ""
-tr_concept_space_22_effect: "$MOD_PLANET_MAX_BUILDINGS_ADD$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_22_building_slot$§!\n$MOD_PLANET_MAX_DISTRICTS_ADD$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_22_district_slot$§!\n$MOD_POP_HOUSING_USAGE_MULT$ $bts_tr_concept_jobs_msg$: §G$@bts_concept_space_22_housing_usage|%1$§!"
-tr_concept_space_22_delayed: ""
+tr_concept_space_22: "Gravitational Convergence"
+tr_concept_space_22_effect: "$MOD_COUNTRY_RESOURCE_MAX_ADD$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_21_max_storage|*0$§!"
+tr_concept_space_22_delayed: "By manipulating the gravitational fields of nearby celestial bodies, we can create zones that concentrate and pull in valuable resources."
 
-tr_concept_space_3: ""
-tr_concept_space_3_delayed: ""
+tr_concept_space_3: "Hyperspace Distortion"
+tr_concept_space_3_delayed: "By folding space, we can cover vast interstellar distances in the blink of an eye."
 
 ## Concept: Time
 tradition_concept_time: "Concept: Time"
