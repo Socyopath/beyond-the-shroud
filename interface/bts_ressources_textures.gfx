@@ -50,7 +50,7 @@ spriteTypes = {
 	# Concept: Time
 	spriteType = {
 		name = "GFX_tradition_hex_bg_tradition_concept_time"
-		textureFile = "gfx/interface/traditions/tradition_hex_bg_psionics.dds"
+		textureFile = "gfx/interface/traditions/tradition_hex_bg_expansion.dds"
 	}
 	spriteType = {
 		name = "GFX_tradition_category_bg_tradition_concept_time"

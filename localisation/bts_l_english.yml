@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 
 # Global Decisions
 decision_bts_zroni_astral_spliting: "Archaeo-Spliting"
@@ -370,24 +370,24 @@ tr_concept_time_adopt: ""
 tr_concept_time_finish: ""
 tr_concept_time_finish_effect: "\nAscension Perks Unlocked: §G+1§!"
 
-tr_concept_time_11: ""
+tr_concept_time_11: "Structural Acceleration"
 tr_concept_time_11_effect: "$MOD_STARBASE_SHIPYARD_BUILD_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_11_ship_build_speed|%0$§!\n$MOD_STARBASE_UPGRADE_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_11_starbase_upgrade_speed|%0$§!\n$MOD_STARBASE_MODULE_BUILD_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_11_starbase_module_build_speed|%0$§!"
-tr_concept_time_11_delayed: ""
+tr_concept_time_11_delayed: "By focusing their thoughts, $job_bts_conceptual_architect_plural$ can manipulate time to speed up ship and starbase constructions, assembling fleets at unmatched speeds. "
 
-tr_concept_time_12: ""
+tr_concept_time_12: "Planetary Timewarp"
 tr_concept_time_12_effect: "$MOD_COUNTRY_TERRAFORM_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_12_terraforming_speed|%0$§!\n$MOD_PLANET_COLONY_DEVELOPMENT_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_12_colony_dev_speed|%0$§!\n$MOD_PLANET_CLEAR_BLOCKER_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_12_clear_blocker_speed|%0$§!\n$MOD_PLANET_BUILDING_BUILD_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_12_planet_build_speed|%0$§!"
-tr_concept_time_12_delayed: ""
+tr_concept_time_12_delayed: "By manipulating time flows, physical processes are accelerated to rapidly terraform and develop planets, transforming their environment in record time. "
 
-tr_concept_time_21: ""
+tr_concept_time_21: "Predestined Governance"
 tr_concept_time_21_effect: "$MOD_COUNCIL_AGENDA_FINISHING_EFFECT_DURATION_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_21_agenda_duration|%0$§!\n$MOD_COUNCIL_AGENDA_PROGRESS_SPEED$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_21_agenda_speed|%0$§!\n$MOD_LEADER_SPECIES_EXP_GAIN$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_21_leader_xp_gain|%0$§!"
-tr_concept_time_21_delayed: ""
+tr_concept_time_21_delayed: "Our $job_bts_conceptual_architect_plural$ are able to foresee political outcomes and make swift decisions, ensuring timely and effective governance."
 
-tr_concept_time_22: ""
+tr_concept_time_22: "Temporal Visions"
 tr_concept_time_22_effect: "$MOD_INTEL_GAIN_SPEED$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_22_intel_speed|%0$§!\n$MOD_ESPIONAGE_OPERATION_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_22_operation_speed|%0$§!"
-tr_concept_time_22_delayed: ""
+tr_concept_time_22_delayed: "Infiltration operations no longer take as long, as we can observe our enemies' past and future to predict their movements."
 
-tr_concept_time_3: ""
-tr_concept_time_3_delayed: ""
+tr_concept_time_3: "Ancient Times"
+tr_concept_time_3_delayed: "We can sense the time accumulated by relics over time and exploit it to increase their frequency of use."
 
 ## Concept: Energy
 tradition_concept_energy: "Concept: Energy"
