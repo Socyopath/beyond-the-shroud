@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 
 # Global Decisions
 decision_bts_zroni_astral_spliting: "Archaeo-Spliting"
@@ -337,11 +337,11 @@ bts_tr_concept_jobs_msg: "by §Y$job_bts_conceptual_architect$§!"
 
 ## Concept: Space
 tradition_concept_space: "Concept: Space"
-tradition_concept_space_desc: "$tradition_psionics_desc$"
+tradition_concept_space_desc: "Space is simply a concept that we can shape to our will."
 
-tr_concept_space_adopt: ""
-tr_concept_space_finish: ""
-tr_concept_space_finish_effect: "Unlock a §Ystar decision to lock every bypass§! inside a system (owned or not) for §Y10 years§!.\nAscension Perks Unlocked: §G+1§!"
+tr_concept_space_adopt: "$tradition_concept_space$ Traditions"
+tr_concept_space_finish: "$tr_concept_space_adopt$ Finished"
+tr_concept_space_finish_effect: "Unlock the star decision §Y$decision_bts_concept_space$§! (Can also be used in uncontrolled systems)\nAscension Perks Unlocked: §G+1§!"
 
 tr_concept_space_11: "Structural Expansion"
 tr_concept_space_11_effect: "$MOD_STARBASE_DEFENSE_PLATFORM_CAPACITY_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_11_defense_plat_cap|%1$§!\n$MOD_COUNTRY_STARBASE_CAPACITY_ADD$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_11_starbase_cap$§!"
@@ -367,11 +367,11 @@ decision_bts_concept_space_desc: "§YLock all bypass§! in the system for §Y$@b
 
 ## Concept: Time
 tradition_concept_time: "Concept: Time"
-tradition_concept_time_desc: "$tradition_psionics_desc$"
+tradition_concept_time_desc: "Past, present and future are concepts that no longer hold any secrets for us."
 
-tr_concept_time_adopt: ""
-tr_concept_time_finish: ""
-tr_concept_time_finish_effect: "\nAscension Perks Unlocked: §G+1§!"
+tr_concept_time_adopt: "$tradition_concept_time$ Traditions"
+tr_concept_time_finish: "$tr_concept_time_adopt$ Finished"
+tr_concept_time_finish_effect: "Unlock the star decision §Y$decision_bts_concept_time$§! (Can also be used in uncontrolled systems)\nAscension Perks Unlocked: §G+1§!"
 
 tr_concept_time_11: "Structural Acceleration"
 tr_concept_time_11_effect: "$MOD_STARBASE_SHIPYARD_BUILD_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_11_ship_build_speed|%0$§!\n$MOD_STARBASE_UPGRADE_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_11_starbase_upgrade_speed|%0$§!\n$MOD_STARBASE_MODULE_BUILD_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_11_starbase_module_build_speed|%0$§!"
@@ -397,11 +397,11 @@ decision_bts_concept_time_desc: "§YStops Time§Y for §Rall ships§! in the sys
 
 ## Concept: Energy
 tradition_concept_energy: "Concept: Energy"
-tradition_concept_energy_desc: "$tradition_psionics_desc$"
+tradition_concept_energy_desc: "The concept of energy derives from a higher-level reading of the concept of matter."
 
-tr_concept_energy_adopt: ""
-tr_concept_energy_finish: ""
-tr_concept_energy_finish_effect: "\nAscension Perks Unlocked: §G+1§!"
+tr_concept_energy_adopt: "$tradition_concept_energy$ Traditions"
+tr_concept_energy_finish: "$tr_concept_energy_adopt$ Finished"
+tr_concept_energy_finish_effect: "Unlock the star decision §Y$decision_bts_concept_energy$§! (Can also be used in uncontrolled systems)\nAscension Perks Unlocked: §G+1§!"
 
 tr_concept_energy_11: "Structural Optimization"
 tr_concept_energy_11_effect: "$mod_ships_upkeep_mult$ $bts_tr_concept_jobs_msg$: §G$@bts_concept_energy_11_ship_upkeep|%0$§!\n$mod_starbases_upkeep_mult$ $bts_tr_concept_jobs_msg$: §G$@bts_concept_energy_11_starbase_upkeep|%0$§!"
