@@ -161,7 +161,7 @@ decision_bts_shrouded_arcology_project = {
 
 decision_bts_labyrinth_of_abstraction_shroud_interraction = {
 	owned_planets_only = yes
-	icon = decision_wormhole
+	icon = decision_surreal_visions
 
 	potential = {
 		is_planet_class = pc_bts_labyrinth_of_abstraction

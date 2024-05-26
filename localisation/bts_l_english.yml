@@ -341,7 +341,7 @@ tradition_concept_space_desc: "Space is simply a concept that we can shape to ou
 
 tr_concept_space_adopt: "$tradition_concept_space$ Traditions"
 tr_concept_space_finish: "$tr_concept_space_adopt$ Finished"
-tr_concept_space_finish_effect: "Unlock the star decision §Y$decision_bts_concept_space$§! (Can also be used in uncontrolled systems)\nAscension Perks Unlocked: §G+1§!"
+tr_concept_space_finish_effect: "Unlock the §Y$bts_conceptual_effect_space$§! power in the §Y$pc_bts_labyrinth_of_abstraction$§!\nAscension Perks Unlocked: §G+1§!"
 
 tr_concept_space_11: "Structural Expansion"
 tr_concept_space_11_effect: "$MOD_STARBASE_DEFENSE_PLATFORM_CAPACITY_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_11_defense_plat_cap|%1$§!\n$MOD_COUNTRY_STARBASE_CAPACITY_ADD$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_11_starbase_cap$§!"
@@ -356,15 +356,15 @@ tr_concept_space_21_effect: "$MOD_PLANET_MAX_BUILDINGS_ADD$ $bts_tr_concept_jobs
 tr_concept_space_21_delayed: "Our mastery of spatial dimensions enables us to optimize the use of space on our planets."
 
 tr_concept_space_22: "Gravitational Convergence"
-tr_concept_space_22_effect: "$MOD_COUNTRY_RESOURCE_MAX_ADD$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_22_max_storage|*0$§!"
+tr_concept_space_22_effect: "$MOD_COUNTRY_RESOURCE_MAX_ADD$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_22_max_storage|0$§!"
 tr_concept_space_22_delayed: "By manipulating the gravitational fields of nearby celestial bodies, we can create zones that concentrate and pull in valuable resources."
 
 tr_concept_space_3: "Hyperspace Distortion"
 tr_concept_space_3_delayed: "By folding space, we can cover vast interstellar distances in the blink of an eye."
 
-decision_bts_concept_space: "Dimensional Lock"
-decision_bts_concept_space_desc: ""
-decision_bts_concept_space_effect: "$bts_decision_concept_ship_effect$§YLock all bypass§! in the system for §Y$@bts_concept_space_decision_duration|*0$§! days."
+bts_conceptual_effect_space: "Dimensional Lock"
+bts_conceptual_effect_space_power: "$bts_conceptual_effect_power$§Y$bts_conceptual_effect_space$§!"
+bts_conceptual_effect_space_desc: "$bts_conceptual_ship_effect$§YLock all bypass§! in the system for §Y$@bts_conceptual_effect_space_duration|*0$§! days.\n\nCooldown: §Y$@bts_conceptual_effect_space_cooldown|0$§! days"
 
 ## Concept: Time
 tradition_concept_time: "Concept: Time"
@@ -372,7 +372,7 @@ tradition_concept_time_desc: "Past, present and future are concepts that no long
 
 tr_concept_time_adopt: "$tradition_concept_time$ Traditions"
 tr_concept_time_finish: "$tr_concept_time_adopt$ Finished"
-tr_concept_time_finish_effect: "Unlock the star decision §Y$decision_bts_concept_time$§! (Can also be used in uncontrolled systems)\nAscension Perks Unlocked: §G+1§!"
+tr_concept_time_finish_effect: "Unlock the §Y$bts_conceptual_effect_time$§! power in the §Y$pc_bts_labyrinth_of_abstraction$§!\nAscension Perks Unlocked: §G+1§!"
 
 tr_concept_time_11: "Structural Acceleration"
 tr_concept_time_11_effect: "$MOD_STARBASE_SHIPYARD_BUILD_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_11_ship_build_speed|%0$§!\n$MOD_STARBASE_UPGRADE_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_11_starbase_upgrade_speed|%0$§!\n$MOD_STARBASE_MODULE_BUILD_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_11_starbase_module_build_speed|%0$§!"
@@ -393,9 +393,9 @@ tr_concept_time_22_delayed: "Infiltration operations no longer take as long, as 
 tr_concept_time_3: "Ancient Times"
 tr_concept_time_3_delayed: "We can sense the time accumulated by relics over time and exploit it to increase their frequency of use."
 
-decision_bts_concept_time: "Chronostasis"
-decision_bts_concept_time_desc: ""
-decision_bts_concept_time_effect: "$bts_decision_concept_ship_effect$§YStops Time§! for §Rall ships§! in the system for §Y$@bts_concept_time_decision_duration|*0$§! days."
+bts_conceptual_effect_time: "Chronostasis"
+bts_conceptual_effect_time_power: "$bts_conceptual_effect_power$§Y$bts_conceptual_effect_time$§!"
+bts_conceptual_effect_time_desc: "$bts_conceptual_ship_effect$§YStops Time§! for §Rall ships§! in the system for §Y$@bts_conceptual_effect_time_duration|*0$§! days.\n\nCooldown: §Y$@bts_conceptual_effect_time_cooldown|0$§! days"
 
 ## Concept: Energy
 tradition_concept_energy: "Concept: Energy"
@@ -403,7 +403,7 @@ tradition_concept_energy_desc: "The concept of energy derives from a higher-leve
 
 tr_concept_energy_adopt: "$tradition_concept_energy$ Traditions"
 tr_concept_energy_finish: "$tr_concept_energy_adopt$ Finished"
-tr_concept_energy_finish_effect: "Unlock the star decision §Y$decision_bts_concept_energy$§! (Can also be used in uncontrolled systems)\nAscension Perks Unlocked: §G+1§!"
+tr_concept_energy_finish_effect: "Unlock the §Y$bts_conceptual_effect_energy$§! power in the §Y$pc_bts_labyrinth_of_abstraction$§!\nAscension Perks Unlocked: §G+1§!"
 
 tr_concept_energy_11: "Structural Optimization"
 tr_concept_energy_11_effect: "$mod_ships_upkeep_mult$ $bts_tr_concept_jobs_msg$: §G$@bts_concept_energy_11_ship_upkeep|%2$§!\n$mod_starbases_upkeep_mult$ $bts_tr_concept_jobs_msg$: §G$@bts_concept_energy_11_starbase_upkeep|%2$§!"
@@ -424,12 +424,13 @@ tr_concept_energy_22_delayed: "We are able to influence probabilities at the qua
 tr_concept_energy_3: "Pure State Weapons"
 tr_concept_energy_3_delayed: "Energy can be used in its purest form, enhancing the power and efficiency of our energy-based weapons."
 
-decision_bts_concept_energy: "Zero-Point Energy"
-decision_bts_concept_energy_desc: ""
-decision_bts_concept_energy_effect: "$bts_decision_concept_ship_effect$§YNullifies the shield§! of §Rall enemies§! in the system for §Y$@bts_concept_energy_decision_duration|*0$§! days."
+bts_conceptual_effect_energy: "Zero-Point Energy"
+bts_conceptual_effect_energy_power: "$bts_conceptual_effect_power$§Y$bts_conceptual_effect_energy$§!"
+bts_conceptual_effect_energy_desc: "$bts_conceptual_ship_effect$§YNullifies the shield§! of §Rall enemies§! in the system for §Y$@bts_conceptual_effect_energy_duration|*0$§! days.\n\nCooldown: §Y$@bts_conceptual_effect_energy_cooldown|0$§! days"
 
-bts_decision_concept_ship_effect: "Summons a vessel that §Ytriggers§! the following effect when it §Yjumps into a system§!:\n"
-bts_decision_concept_already_use: "A conceptual ship is already in use"
-bts_decision_concept_cooldown: "Conceptual effect is in cooldown until §Y[this.bts_decision_concept_date]§!"
+bts_conceptual_effect_power: "Conceptual Effect: "
+bts_conceptual_ship_effect: "Summons a vessel that §Ytriggers§! the following effect when it §Yjumps into a system§!:\n"
+bts_conceptual_ship_already_use: "A conceptual ship is already in use"
+bts_conceptual_effect_cooldown: "Conceptual effect is on cooldown until §Y[this.bts_conceptual_effect_date]§!"
 
 mod_bts_relic_cooldown: "Relic Activation Cooldown"

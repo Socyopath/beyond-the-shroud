@@ -126,7 +126,7 @@ bts_create_concept_ship = {
 				upgradable = no
 				effect = {
 					set_ship_flag = $FLAG$
-					add_modifier = { modifier = bts_concept_ship }
+					add_modifier = { modifier = bts_conceptual_ship }
 				}
 			}
 			set_location = root

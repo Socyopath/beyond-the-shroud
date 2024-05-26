@@ -1,4 +1,4 @@
-bts_concept_ship = {
+bts_conceptual_ship = {
     ship_windup_mult = -1.00
     ship_winddown_mult = -1.00
     ship_ftl_jumpdrive_range_mult = 100.0

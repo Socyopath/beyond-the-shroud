@@ -240,6 +240,22 @@ country_event = {
 			country_event = { id = bts.1040 }
 		}
 	}
+
+	inline_script = {
+		script = bts_conceptual_effect
+		CONCEPT = time
+	}
+
+	inline_script = {
+		script = bts_conceptual_effect
+		CONCEPT = space
+	}
+
+	inline_script = {
+		script = bts_conceptual_effect
+		CONCEPT = energy
+	}
+
 	option = {
 		name = "exit.shroud"
 		custom_tooltip = "exit.shroud.tooltip"

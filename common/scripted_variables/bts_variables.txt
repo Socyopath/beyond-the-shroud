@@ -287,8 +287,8 @@
 @bts_concept_time_22_operation_speed = 0.01
 @bts_concept_time_22_spy_network_speed = 0.01
 @bts_concept_time_3_relic_cd = -0.50
-@bts_concept_time_decision_cooldown = 3600
-@bts_concept_time_decision_duration = 360
+@bts_conceptual_effect_time_cooldown = 3600
+@bts_conceptual_effect_time_duration = 360
 
 @bts_concept_space_adopt_megastructure_capacity = 1
 @bts_concept_space_11_defense_plat_cap = 0.005
@@ -302,8 +302,8 @@
 @bts_concept_space_3_ftl_windup = -1.00
 @bts_concept_space_3_ftl_windown = -1.00
 @bts_concept_space_3_ftl_speed = 1.00
-@bts_concept_space_decision_cooldown = 3600
-@bts_concept_space_decision_duration = 360
+@bts_conceptual_effect_space_cooldown = 3600
+@bts_conceptual_effect_space_duration = 360
 
 @bts_concept_energy_adopt_shield_regen = 0.10
 @bts_concept_energy_11_ship_upkeep = -0.0075
@@ -315,5 +315,5 @@
 @bts_concept_energy_22_job_upkeep = -0.005
 @bts_concept_energy_22_job_output = 0.01
 @bts_concept_energy_3_energy_damage = 0.35
-@bts_concept_energy_decision_cooldown = 3600
-@bts_concept_energy_decision_duration = 360
+@bts_conceptual_effect_energy_cooldown = 3600
+@bts_conceptual_effect_energy_duration = 360

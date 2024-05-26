@@ -195,17 +195,17 @@ ship_event = {
 					}
 					ship_event = { id = bts.16 } # Freeze time
 				}
-				system_event = { id = bts.17 days = @bts_concept_time_decision_duration } # Freeze time end
+				system_event = { id = bts.17 days = @bts_conceptual_effect_time_duration } # Freeze time end
 			}
 			root.owner = {
 				set_timed_country_flag = {
-					flag = bts_decision_concept_cooldown
-					days = @bts_concept_time_decision_cooldown
+					flag = bts_conceptual_effect_cooldown
+					days = @bts_conceptual_effect_time_cooldown
 				}
 				set_saved_date = {
-					key = bts_decision_concept_date
-					days_from_present = @bts_concept_time_decision_cooldown
-					expires = @bts_concept_time_decision_cooldown
+					key = bts_conceptual_effect_date
+					days_from_present = @bts_conceptual_effect_time_cooldown
+					expires = @bts_conceptual_effect_time_cooldown
 				}
 			}
 		}
@@ -221,18 +221,18 @@ ship_event = {
 				}
 				lock_bypass = {
 					country = root.owner
-					duration = @bts_concept_space_decision_duration
+					duration = @bts_conceptual_effect_space_duration
 				}
 			}
 			root.owner = {
 				set_timed_country_flag = {
-					flag = bts_decision_concept_cooldown
-					days = @bts_concept_space_decision_cooldown
+					flag = bts_conceptual_effect_cooldown
+					days = @bts_conceptual_effect_space_cooldown
 				}
 				set_saved_date = {
-					key = bts_decision_concept_date
-					days_from_present = @bts_concept_space_decision_cooldown
-					expires = @bts_concept_space_decision_cooldown
+					key = bts_conceptual_effect_date
+					days_from_present = @bts_conceptual_effect_space_cooldown
+					expires = @bts_conceptual_effect_space_cooldown
 				}
 			}
 		}
@@ -247,17 +247,17 @@ ship_event = {
 					}
 					ship_event = { id = bts.18 } # Nullify check
 				}
-				system_event = { id = bts.19 days = @bts_concept_time_decision_duration } #  Nullify end
+				system_event = { id = bts.19 days = @bts_conceptual_effect_time_duration } #  Nullify end
 			}
 			root.owner = {
 				set_timed_country_flag = {
-					flag = bts_decision_concept_cooldown
-					days = @bts_concept_energy_decision_cooldown
+					flag = bts_conceptual_effect_cooldown
+					days = @bts_conceptual_effect_energy_cooldown
 				}
 				set_saved_date = {
-					key = bts_decision_concept_date
-					days_from_present = @bts_concept_energy_decision_cooldown
-					expires = @bts_concept_energy_decision_cooldown
+					key = bts_conceptual_effect_date
+					days_from_present = @bts_conceptual_effect_energy_cooldown
+					expires = @bts_conceptual_effect_energy_cooldown
 				}
 			}
 		}
