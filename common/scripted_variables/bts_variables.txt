@@ -272,7 +272,7 @@
 ### Utopia DIstiller
 @bts_building_utopia_distiller_happiness = 0.05
 
-
+@bts_concept_time_adopt_pop_growth = 0.15
 @bts_concept_time_11_ship_build_speed = 0.01
 @bts_concept_time_11_starbase_upgrade_speed = 0.01
 @bts_concept_time_11_starbase_module_build_speed = 0.01
@@ -288,7 +288,7 @@
 @bts_concept_time_3_relic_cd = -0.50
 @bts_concept_time_decision_duration = 360
 
-
+@bts_concept_space_adopt_megastructure_capacity = 1
 @bts_concept_space_11_defense_plat_cap = 0.005
 @bts_concept_space_11_starbase_cap = 0.1
 @bts_concept_space_21_max_storage = 1000
@@ -302,6 +302,7 @@
 @bts_concept_space_3_ftl_speed = 1.00
 @bts_concept_space_decision_duration = 360
 
+@bts_concept_energy_adopt_shield_regen = 0.10
 @bts_concept_energy_11_ship_upkeep = -0.01
 @bts_concept_energy_11_starbase_upkeep = -0.01
 @bts_concept_energy_21_mining_station_output = 0.01

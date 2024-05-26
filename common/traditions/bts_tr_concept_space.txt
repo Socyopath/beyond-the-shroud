@@ -1,5 +1,7 @@
 tr_concept_space_adopt = {
-    
+	modifier = {
+		country_megastructure_build_cap_add = @bts_concept_space_adopt_megastructure_capacity
+	}
 }
 
 tr_concept_space_finish = {

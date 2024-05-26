@@ -1,5 +1,7 @@
 tr_concept_energy_adopt = {
-
+	modifier = {
+		ship_shield_regen_add_perc = @bts_concept_energy_adopt_shield_regen
+	}
 }
 
 tr_concept_energy_finish = {

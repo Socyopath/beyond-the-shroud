@@ -1,5 +1,7 @@
 tr_concept_time_adopt = {
-
+	modifier = {
+		pop_growth_speed = @bts_concept_time_adopt_pop_growth
+	}
 }
 
 tr_concept_time_finish = {
