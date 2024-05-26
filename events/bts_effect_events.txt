@@ -167,3 +167,154 @@ country_event = {
 	}
 
 }
+
+# From = System
+ship_event = {
+	id = bts.15
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		OR = {
+			has_ship_flag = bts_concept_time
+			has_ship_flag = bts_concept_space
+			has_ship_flag = bts_concept_energy
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_ship_flag = bts_concept_time
+			}
+			root.fleet.solar_system = {
+				set_star_flag = bts_concept_time_frozen
+				every_ship_in_system = {
+					limit = {
+						NOT = { is_same_value = root }
+					}
+					ship_event = { id = bts.16 } # Freeze time
+				}
+				system_event = { id = bts.17 days = @bts_concept_time_decision_duration } # Freeze time end
+			}
+		}
+		else_if = {
+			limit = {
+				has_ship_flag = bts_concept_space
+			}
+			every_bypass = {
+				limit = {
+					solar_system = {
+						is_same_value = root.fleet.solar_system
+					}
+				}
+				lock_bypass = {
+					country = root.owner
+					duration = @bts_concept_space_decision_duration
+				}
+			}
+		}
+		else = {
+			root.fleet.solar_system = {
+				root.owner = {
+					save_global_event_target_as = bts_concept_energy_nullify_caster@root.fleet.solar_system
+				}
+				every_ship_in_system = {
+					limit = {
+						NOT = { is_same_value = root }
+					}
+					ship_event = { id = bts.18 } # Nullify check
+				}
+				system_event = { id = bts.19 days = @bts_concept_time_decision_duration } #  Nullify end
+			}
+		}
+		destroy_ship = root
+	}
+}
+
+# Time freeze for ship in system
+ship_event = {
+	id = bts.16
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		from = {
+			has_star_flag = bts_concept_time_frozen
+		}
+	}
+	immediate = {
+		set_disabled = yes
+	}
+}
+
+# Stop Time freeze for every ship in system
+system_event = {
+	id = bts.17
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		remove_star_flag = bts_concept_time_frozen
+		every_ship_in_system = {
+			set_disabled = no
+		}
+	}
+}
+
+
+# Nullify Shield check
+# From = system
+ship_event = {
+	id = bts.18
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		OR = {
+			AND = {
+				exists = event_target:bts_concept_energy_nullify_caster@root.fleet.solar_system
+				event_target:bts_concept_energy_nullify_caster@root.fleet.solar_system = {
+					is_hostile = root.owner
+				}
+				NOT = { has_modifier = bts_concept_energy_nullify }
+			}
+			AND = {
+				NOT = {
+					exists = event_target:bts_concept_energy_nullify_caster@root.fleet.solar_system
+				}
+				has_modifier = bts_concept_energy_nullify
+			}
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				has_modifier = bts_concept_energy_nullify
+			}
+			remove_modifier = bts_concept_energy_nullify
+		}
+		else = {
+			add_modifier = { modifier = bts_concept_energy_nullify }
+		}
+	}
+}
+
+system_event = {
+	id = bts.19
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		clear_global_event_target = bts_concept_energy_nullify_caster@root
+		every_ship_in_system = {
+			if = {
+				limit = {
+					has_modifier = bts_concept_energy_nullify
+				}
+				remove_modifier = bts_concept_energy_nullify
+			}
+		}
+	}
+}
+

@@ -11,8 +11,11 @@ decision_bts_concept_time = {
 	}
 
 	potential = {
-		is_star = yes
-
+		is_planet_class = pc_bts_labyrinth_of_abstraction
+		exists = owner
+		owner = {
+			has_tradition = tr_concept_time_adopt
+		}
 	}
 
     allow = {
@@ -20,9 +23,15 @@ decision_bts_concept_time = {
     }
 
 	effect = {
-
+		bts_create_concept_ship = {
+			NAME = decision_bts_concept_time
+			FLAG = bts_concept_time
+		}
 	}
 }
+
+
+
 
 decision_bts_concept_space = {
 	owned_planets_only = no
@@ -37,8 +46,11 @@ decision_bts_concept_space = {
 	}
 
 	potential = {
-		is_star = yes
-
+		is_planet_class = pc_bts_labyrinth_of_abstraction
+		exists = owner
+		owner = {
+			has_tradition = tr_concept_space_adopt
+		}
 	}
 
     allow = {
@@ -46,7 +58,10 @@ decision_bts_concept_space = {
     }
 
 	effect = {
-
+		bts_create_concept_ship = {
+			NAME = decision_bts_concept_space
+			FLAG = bts_concept_space
+		}
 	}
 }
 
@@ -63,8 +78,11 @@ decision_bts_concept_energy = {
 	}
 
 	potential = {
-		is_star = yes
-
+		is_planet_class = pc_bts_labyrinth_of_abstraction
+		exists = owner
+		owner = {
+			has_tradition = tr_concept_energy_adopt
+		}
 	}
 
     allow = {
@@ -72,6 +90,9 @@ decision_bts_concept_energy = {
     }
 
 	effect = {
-
+		bts_create_concept_ship = {
+			NAME = decision_bts_concept_energy
+			FLAG = bts_concept_energy
+		}
 	}
 }

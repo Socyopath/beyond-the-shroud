@@ -45,6 +45,9 @@ on_destroy_planet_with_BTS_PLANET_KILLER_END_unqueued = {
 on_entering_system = {
 	events = {
 		bts.10 # Update zroni shield
+		bts.15 # Trigger concept effect
+		bts.16 # Freeze time effect
+		bts.18 # Nullify shield check
 	}
 }
 
