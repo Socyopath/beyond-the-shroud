@@ -26,7 +26,6 @@ bts_district_third_eye_observatory = {
 
     planet_modifier = {
 		pc_bts_labyrinth_of_abstraction_max_buildings_add = 1
-        planet_max_buildings_add = 1
     }
 
     triggered_desc = {
@@ -62,7 +61,6 @@ bts_district_influence_control_complex = {
 
     planet_modifier = {
 		pc_bts_labyrinth_of_abstraction_max_buildings_add = 1
-        planet_max_buildings_add = 1
     }
     
     triggered_desc = {
