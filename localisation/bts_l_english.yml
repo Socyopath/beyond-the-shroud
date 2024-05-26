@@ -386,7 +386,7 @@ tr_concept_time_21_effect: "$MOD_COUNCIL_AGENDA_FINISHING_EFFECT_DURATION_MULT$ 
 tr_concept_time_21_delayed: "Our $job_bts_conceptual_architect_plural$ are able to foresee political outcomes and make swift decisions, ensuring timely and effective governance."
 
 tr_concept_time_22: "Temporal Visions"
-tr_concept_time_22_effect: "$MOD_INTEL_GAIN_SPEED$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_22_intel_speed|%0$§!\n$MOD_ESPIONAGE_OPERATION_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_22_operation_speed|%0$§!"
+tr_concept_time_22_effect: "$MOD_INTEL_GAIN_SPEED$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_22_intel_speed|%0$§!\n$MOD_ESPIONAGE_OPERATION_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_22_operation_speed|%0$§!\n$MOD_SPY_NETWORK_DAILY_VALUE_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_22_spy_network_speed|%0$§!"
 tr_concept_time_22_delayed: "Infiltration operations no longer take as long, as we can observe our enemies' past and future to predict their movements."
 
 tr_concept_time_3: "Ancient Times"

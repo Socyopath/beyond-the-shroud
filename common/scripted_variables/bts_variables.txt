@@ -285,6 +285,7 @@
 @bts_concept_time_21_leader_xp_gain = 0.01
 @bts_concept_time_22_intel_speed = 0.01
 @bts_concept_time_22_operation_speed = 0.01
+@bts_concept_time_22_spy_network_speed = 0.01
 @bts_concept_time_3_relic_cd = -0.50
 @bts_concept_time_decision_duration = 360
 
