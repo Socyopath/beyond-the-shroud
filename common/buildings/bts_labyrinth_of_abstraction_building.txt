@@ -29,6 +29,14 @@ bts_labyrinth_of_abstraction_core_1 = {
 		}
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		planet_max_districts_add = -1
+		mult = owner.modifier:planet_max_districts_add
+	}
+
 }
 
 # Planetary Administration
@@ -80,6 +88,14 @@ bts_labyrinth_of_abstraction_core_2 = {
 	triggered_desc = {
 		text = bts_labyrinth_of_abstraction_core_2_effects
 	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		planet_max_districts_add = -1
+		mult = owner.modifier:planet_max_districts_add
+	}
 }
 
 bts_labyrinth_of_abstraction_core_3 = {
@@ -130,6 +146,14 @@ bts_labyrinth_of_abstraction_core_3 = {
 	triggered_desc = {
 		text = bts_labyrinth_of_abstraction_core_3_effects
 	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		planet_max_districts_add = -1
+		mult = owner.modifier:planet_max_districts_add
+	}
 }
 
 bts_labyrinth_of_abstraction_core_4 = {
@@ -177,5 +201,13 @@ bts_labyrinth_of_abstraction_core_4 = {
 
 	triggered_desc = {
 		text = bts_labyrinth_of_abstraction_core_4_effects
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		planet_max_districts_add = -1
+		mult = owner.modifier:planet_max_districts_add
 	}
 }
