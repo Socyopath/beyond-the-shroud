@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 
 # Global Decisions
 decision_bts_zroni_astral_spliting: "Archaeo-Spliting"
@@ -362,6 +362,9 @@ tr_concept_space_22_delayed: "By manipulating the gravitational fields of nearby
 tr_concept_space_3: "Hyperspace Distortion"
 tr_concept_space_3_delayed: "By folding space, we can cover vast interstellar distances in the blink of an eye."
 
+decision_bts_concept_space: "Dimensional Lock"
+decision_bts_concept_space_desc: "§YLock all bypass§! in the system for §Y$@bts_concept_space_decision_duration|*0$§! days."
+
 ## Concept: Time
 tradition_concept_time: "Concept: Time"
 tradition_concept_time_desc: "$tradition_psionics_desc$"
@@ -389,6 +392,9 @@ tr_concept_time_22_delayed: "Infiltration operations no longer take as long, as 
 tr_concept_time_3: "Ancient Times"
 tr_concept_time_3_delayed: "We can sense the time accumulated by relics over time and exploit it to increase their frequency of use."
 
+decision_bts_concept_time: "Chronostasis"
+decision_bts_concept_time_desc: "§YStops Time§Y for §Rall ships§! in the system for §Y$@bts_concept_time_decision_duration|*0$§! days."
+
 ## Concept: Energy
 tradition_concept_energy: "Concept: Energy"
 tradition_concept_energy_desc: "$tradition_psionics_desc$"
@@ -415,5 +421,9 @@ tr_concept_energy_22_delayed: "We are able to influence probabilities at the qua
 
 tr_concept_energy_3: "Pure State Weapons"
 tr_concept_energy_3_delayed: "Energy can be used in its purest form, enhancing the power and efficiency of our energy-based weapons."
+
+decision_bts_concept_energy: "Zero-Point Energy"
+decision_bts_concept_energy_desc: "§YNullifies the shields§! of all enemies in the system for §Y$@bts_concept_energy_decision_duration|*0$§! days."
+
 
 mod_bts_relic_cooldown: "Relic Activation Cooldown"

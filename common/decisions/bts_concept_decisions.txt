@@ -1,0 +1,77 @@
+decision_bts_concept_time = {
+	owned_planets_only = no
+	sound = event_energy_field
+	icon = decision_wormhole
+
+	resources = {
+		category = decisions
+		cost = {
+
+		}
+	}
+
+	potential = {
+		is_star = yes
+
+	}
+
+    allow = {
+
+    }
+
+	effect = {
+
+	}
+}
+
+decision_bts_concept_space = {
+	owned_planets_only = no
+	sound = event_energy_field
+	icon = decision_wormhole
+
+	resources = {
+		category = decisions
+		cost = {
+
+		}
+	}
+
+	potential = {
+		is_star = yes
+
+	}
+
+    allow = {
+
+    }
+
+	effect = {
+
+	}
+}
+
+decision_bts_concept_energy = {
+	owned_planets_only = no
+	sound = event_energy_field
+	icon = decision_wormhole
+
+	resources = {
+		category = decisions
+		cost = {
+
+		}
+	}
+
+	potential = {
+		is_star = yes
+
+	}
+
+    allow = {
+
+    }
+
+	effect = {
+
+	}
+}
