@@ -19,13 +19,31 @@ decision_bts_concept_time = {
 	}
 
     allow = {
-
+		owner = {
+			custom_tooltip = {
+				fail_text = "bts_decision_concept_already_use"
+				NOT = {
+					any_owned_ship = {
+						has_ship_flag = bts_concept_time
+					}
+				}
+			}
+			custom_tooltip = {
+				fail_text = "bts_decision_concept_cooldown"
+				NOT = {
+					has_country_flag = bts_decision_concept_cooldown
+				}
+			}
+		}
     }
 
 	effect = {
-		bts_create_concept_ship = {
-			NAME = decision_bts_concept_time
-			FLAG = bts_concept_time
+		custom_tooltip = decision_bts_concept_time_effect
+		hidden_effect = {
+			bts_create_concept_ship = {
+				NAME = decision_bts_concept_time
+				FLAG = bts_concept_time
+			}
 		}
 	}
 }
@@ -54,13 +72,31 @@ decision_bts_concept_space = {
 	}
 
     allow = {
-
+		owner = {
+			custom_tooltip = {
+				fail_text = "bts_decision_concept_already_use"
+				NOT = {
+					any_owned_ship = {
+						has_ship_flag = bts_concept_space
+					}
+				}
+			}
+			custom_tooltip = {
+				fail_text = "bts_decision_concept_cooldown"
+				NOT = {
+					has_country_flag = bts_decision_concept_cooldown
+				}
+			}
+		}
     }
 
 	effect = {
-		bts_create_concept_ship = {
-			NAME = decision_bts_concept_space
-			FLAG = bts_concept_space
+		custom_tooltip = decision_bts_concept_space_effect
+		hidden_effect = {
+			bts_create_concept_ship = {
+				NAME = decision_bts_concept_space
+				FLAG = bts_concept_space
+			}
 		}
 	}
 }
@@ -86,13 +122,31 @@ decision_bts_concept_energy = {
 	}
 
     allow = {
-
+		owner = {
+			custom_tooltip = {
+				fail_text = "bts_decision_concept_already_use"
+				NOT = {
+					any_owned_ship = {
+						has_ship_flag = bts_concept_energy
+					}
+				}
+			}
+			custom_tooltip = {
+				fail_text = "bts_decision_concept_cooldown"
+				NOT = {
+					has_country_flag = bts_decision_concept_cooldown
+				}
+			}
+		}
     }
 
 	effect = {
-		bts_create_concept_ship = {
-			NAME = decision_bts_concept_energy
-			FLAG = bts_concept_energy
+		custom_tooltip = decision_bts_concept_energy_effect
+		hidden_effect = {
+			bts_create_concept_ship = {
+				NAME = decision_bts_concept_energy
+				FLAG = bts_concept_energy
+			}
 		}
 	}
 }

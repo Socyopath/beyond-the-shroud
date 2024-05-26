@@ -363,7 +363,8 @@ tr_concept_space_3: "Hyperspace Distortion"
 tr_concept_space_3_delayed: "By folding space, we can cover vast interstellar distances in the blink of an eye."
 
 decision_bts_concept_space: "Dimensional Lock"
-decision_bts_concept_space_desc: "§YLock all bypass§! in the system for §Y$@bts_concept_space_decision_duration|*0$§! days."
+decision_bts_concept_space_desc: ""
+decision_bts_concept_space_effect: "$bts_decision_concept_ship_effect$§YLock all bypass§! in the system for §Y$@bts_concept_space_decision_duration|*0$§! days."
 
 ## Concept: Time
 tradition_concept_time: "Concept: Time"
@@ -393,7 +394,8 @@ tr_concept_time_3: "Ancient Times"
 tr_concept_time_3_delayed: "We can sense the time accumulated by relics over time and exploit it to increase their frequency of use."
 
 decision_bts_concept_time: "Chronostasis"
-decision_bts_concept_time_desc: "§YStops Time§Y for §Rall ships§! in the system for §Y$@bts_concept_time_decision_duration|*0$§! days."
+decision_bts_concept_time_desc: ""
+decision_bts_concept_time_effect: "$bts_decision_concept_ship_effect$§YStops Time§! for §Rall ships§! in the system for §Y$@bts_concept_time_decision_duration|*0$§! days."
 
 ## Concept: Energy
 tradition_concept_energy: "Concept: Energy"
@@ -423,7 +425,11 @@ tr_concept_energy_3: "Pure State Weapons"
 tr_concept_energy_3_delayed: "Energy can be used in its purest form, enhancing the power and efficiency of our energy-based weapons."
 
 decision_bts_concept_energy: "Zero-Point Energy"
-decision_bts_concept_energy_desc: "§YNullifies the shields§! of all enemies in the system for §Y$@bts_concept_energy_decision_duration|*0$§! days."
+decision_bts_concept_energy_desc: ""
+decision_bts_concept_energy_effect: "$bts_decision_concept_ship_effect$§YNullifies the shield§! of §Rall enemies§! in the system for §Y$@bts_concept_energy_decision_duration|*0$§! days."
 
+bts_decision_concept_ship_effect: "Summons a vessel that §Ytriggers§! the following effect when it §Yjumps into a system§!:\n"
+bts_decision_concept_already_use: "A conceptual ship is already in use"
+bts_decision_concept_cooldown: "Conceptual effect is in cooldown until §Y[this.bts_decision_concept_date]§!"
 
 mod_bts_relic_cooldown: "Relic Activation Cooldown"

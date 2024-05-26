@@ -197,6 +197,17 @@ ship_event = {
 				}
 				system_event = { id = bts.17 days = @bts_concept_time_decision_duration } # Freeze time end
 			}
+			root.owner = {
+				set_timed_country_flag = {
+					flag = bts_decision_concept_cooldown
+					days = @bts_concept_time_decision_cooldown
+				}
+				set_saved_date = {
+					key = bts_decision_concept_date
+					days_from_present = @bts_concept_time_decision_cooldown
+					expires = @bts_concept_time_decision_cooldown
+				}
+			}
 		}
 		else_if = {
 			limit = {
@@ -213,6 +224,17 @@ ship_event = {
 					duration = @bts_concept_space_decision_duration
 				}
 			}
+			root.owner = {
+				set_timed_country_flag = {
+					flag = bts_decision_concept_cooldown
+					days = @bts_concept_space_decision_cooldown
+				}
+				set_saved_date = {
+					key = bts_decision_concept_date
+					days_from_present = @bts_concept_space_decision_cooldown
+					expires = @bts_concept_space_decision_cooldown
+				}
+			}
 		}
 		else = {
 			root.fleet.solar_system = {
@@ -226,6 +248,17 @@ ship_event = {
 					ship_event = { id = bts.18 } # Nullify check
 				}
 				system_event = { id = bts.19 days = @bts_concept_time_decision_duration } #  Nullify end
+			}
+			root.owner = {
+				set_timed_country_flag = {
+					flag = bts_decision_concept_cooldown
+					days = @bts_concept_energy_decision_cooldown
+				}
+				set_saved_date = {
+					key = bts_decision_concept_date
+					days_from_present = @bts_concept_energy_decision_cooldown
+					expires = @bts_concept_energy_decision_cooldown
+				}
 			}
 		}
 		destroy_ship = root
