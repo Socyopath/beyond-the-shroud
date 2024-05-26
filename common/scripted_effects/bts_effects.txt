@@ -111,3 +111,25 @@ bts_arcology_swap_planet = {
 	clear_variable = num_civ_industrial_districts
 	]
 }
+
+# Scope : Planet
+bts_create_concept_ship = {
+	create_fleet = {
+		name = $NAME$
+		effect = {
+			set_owner = root.owner
+			create_ship = {
+				name = "NAME_Conceptual_Ship"
+				design = "NAME_From_Beyond_Ship"
+				graphical_culture = "extra_dimensional_01"
+				prefix = no
+				upgradable = no
+				effect = {
+					set_ship_flag = $FLAG$
+					add_modifier = { modifier = bts_concept_ship }
+				}
+			}
+			set_location = root
+		}
+	}
+}
