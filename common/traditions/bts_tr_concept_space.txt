@@ -1,4 +1,10 @@
 tr_concept_space_adopt = {
+	possible = {
+		custom_tooltip = {
+			fail_text = bts_req_spec_space
+			always = no
+		}
+	}
 	modifier = {
 		country_megastructure_build_cap_add = @bts_concept_space_adopt_megastructure_capacity
 	}
@@ -12,35 +18,84 @@ tr_concept_space_finish = {
 }
 
 tr_concept_space_11 = {
+	possible = {
+		custom_tooltip = {
+			fail_text = bts_req_spec_point
+			bts_have_spec_point = yes
+		}
+	}
     custom_tooltip = tr_concept_space_11_effect
+	on_enabled = {
+		hidden_effect = {
+			bts_remove_spec_point = yes
+		}
+	}
 }
 
 tr_concept_space_12 = {
 	possible = {
 		has_tradition = tr_concept_space_11
+		custom_tooltip = {
+			fail_text = bts_req_spec_point
+			bts_have_spec_point = yes
+		}
 	}
     custom_tooltip = tr_concept_space_12_effect
+	on_enabled = {
+		hidden_effect = {
+			bts_remove_spec_point = yes
+		}
+	}
 }
 
 tr_concept_space_21 = {
+	possible = {
+		custom_tooltip = {
+			fail_text = bts_req_spec_point
+			bts_have_spec_point = yes
+		}
+	}
     custom_tooltip = tr_concept_space_21_effect
+	on_enabled = {
+		hidden_effect = {
+			bts_remove_spec_point = yes
+		}
+	}
 }
 
 tr_concept_space_22 = {
 	possible = {
 		has_tradition = tr_concept_space_21
+		custom_tooltip = {
+			fail_text = bts_req_spec_point
+			bts_have_spec_point = yes
+		}
 	}
     custom_tooltip = tr_concept_space_22_effect
+	on_enabled = {
+		hidden_effect = {
+			bts_remove_spec_point = yes
+		}
+	}
 }
 
 tr_concept_space_3 = {
 	possible = {
 		has_tradition = tr_concept_space_12
 		has_tradition = tr_concept_space_22
+		custom_tooltip = {
+			fail_text = bts_req_spec_point
+			bts_have_spec_point = yes
+		}
 	}
 	modifier = {
         ship_windup_mult = @bts_concept_space_3_ftl_windup
         ship_winddown_mult = @bts_concept_space_3_ftl_windown
         ship_interstellar_speed_mult = @bts_concept_space_3_ftl_speed
+	}
+	on_enabled = {
+		hidden_effect = {
+			bts_remove_spec_point = yes
+		}
 	}
 }

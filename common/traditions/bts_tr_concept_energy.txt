@@ -1,4 +1,10 @@
 tr_concept_energy_adopt = {
+	possible = {
+		custom_tooltip = {
+			fail_text = bts_req_spec_energy
+			always = no
+		}
+	}
 	modifier = {
 		ship_shield_regen_add_perc = @bts_concept_energy_adopt_shield_regen
 	}
@@ -12,33 +18,82 @@ tr_concept_energy_finish = {
 }
 
 tr_concept_energy_11 = {
+	possible = {
+		custom_tooltip = {
+			fail_text = bts_req_spec_point
+			bts_have_spec_point = yes
+		}
+	}
 	custom_tooltip = tr_concept_energy_11_effect
+	on_enabled = {
+		hidden_effect = {
+			bts_remove_spec_point = yes
+		}
+	}
 }
 
 tr_concept_energy_12 = {
 	possible = {
 		has_tradition = tr_concept_energy_11
+		custom_tooltip = {
+			fail_text = bts_req_spec_point
+			bts_have_spec_point = yes
+		}
 	}
 	custom_tooltip = tr_concept_energy_12_effect
+	on_enabled = {
+		hidden_effect = {
+			bts_remove_spec_point = yes
+		}
+	}
 }
 
 tr_concept_energy_21 = {
+	possible = {
+		custom_tooltip = {
+			fail_text = bts_req_spec_point
+			bts_have_spec_point = yes
+		}
+	}
 	custom_tooltip = tr_concept_energy_21_effect
+	on_enabled = {
+		hidden_effect = {
+			bts_remove_spec_point = yes
+		}
+	}
 }
 
 tr_concept_energy_22 = {
 	possible = {
 		has_tradition = tr_concept_energy_21
+		custom_tooltip = {
+			fail_text = bts_req_spec_point
+			bts_have_spec_point = yes
+		}
 	}
 	custom_tooltip = tr_concept_energy_22_effect
+	on_enabled = {
+		hidden_effect = {
+			bts_remove_spec_point = yes
+		}
+	}
 }
 
 tr_concept_energy_3 = {
 	possible = {
 		has_tradition = tr_concept_energy_12
 		has_tradition = tr_concept_energy_22
+		custom_tooltip = {
+			fail_text = bts_req_spec_point
+			bts_have_spec_point = yes
+		}
 	}
 	modifier = {
 		weapon_type_energy_weapon_damage_mult = @bts_concept_energy_3_energy_damage
+	}
+	on_enabled = {
+		hidden_effect = {
+			bts_remove_spec_point = yes
+		}
 	}
 }

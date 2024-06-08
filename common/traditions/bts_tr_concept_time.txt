@@ -1,4 +1,10 @@
 tr_concept_time_adopt = {
+	possible = {
+		custom_tooltip = {
+			fail_text = bts_req_spec_time
+			always = no
+		}
+	}
 	modifier = {
 		pop_growth_speed = @bts_concept_time_adopt_pop_growth
 	}
@@ -12,33 +18,82 @@ tr_concept_time_finish = {
 }
 
 tr_concept_time_11 = {
+	possible = {
+		custom_tooltip = {
+			fail_text = bts_req_spec_point
+			bts_have_spec_point = yes
+		}
+	}
 	custom_tooltip = tr_concept_time_11_effect
+	on_enabled = {
+		hidden_effect = {
+			bts_remove_spec_point = yes
+		}
+	}
 }
 
 tr_concept_time_12 = {
 	possible = {
 		has_tradition = tr_concept_time_11
+		custom_tooltip = {
+			fail_text = bts_req_spec_point
+			bts_have_spec_point = yes
+		}
 	}
 	custom_tooltip = tr_concept_time_12_effect
+	on_enabled = {
+		hidden_effect = {
+			bts_remove_spec_point = yes
+		}
+	}
 }
 
 tr_concept_time_21 = {
+	possible = {
+		custom_tooltip = {
+			fail_text = bts_req_spec_point
+			bts_have_spec_point = yes
+		}
+	}
 	custom_tooltip = tr_concept_time_21_effect
+	on_enabled = {
+		hidden_effect = {
+			bts_remove_spec_point = yes
+		}
+	}
 }
 
 tr_concept_time_22 = {
 	possible = {
 		has_tradition = tr_concept_time_21
+		custom_tooltip = {
+			fail_text = bts_req_spec_point
+			bts_have_spec_point = yes
+		}
 	}
 	custom_tooltip = tr_concept_time_22_effect
+	on_enabled = {
+		hidden_effect = {
+			bts_remove_spec_point = yes
+		}
+	}
 }
 
 tr_concept_time_3 = {
 	possible = {
 		has_tradition = tr_concept_time_12
 		has_tradition = tr_concept_time_22
+		custom_tooltip = {
+			fail_text = bts_req_spec_point
+			bts_have_spec_point = yes
+		}
 	}
 	modifier = {
 		bts_relic_cooldown = @bts_concept_time_3_relic_cd
+	}
+	on_enabled = {
+		hidden_effect = {
+			bts_remove_spec_point = yes
+		}
 	}
 }
