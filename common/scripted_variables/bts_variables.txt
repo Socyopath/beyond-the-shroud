@@ -330,7 +330,8 @@
 
 @r_bts_relic_concept_time_evasion = 50
 @r_bts_relic_concept_time_speed = 1.00
-@r_bts_relic_concept_time_effect_speed = -0.50
+@r_bts_relic_concept_time_effect_speed_reduction = 0.50
+@r_bts_relic_concept_time_effect_fire_rate = -0.50
 @r_bts_relic_concept_time_effect_duration = 360
 
 @r_bts_relic_concept_space_jump_range = 1.00
