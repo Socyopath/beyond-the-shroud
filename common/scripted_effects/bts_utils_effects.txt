@@ -1,0 +1,508 @@
+# before scope : bts_event_target_list_clear = yes
+# in scope     : bts_event_target_list_save = yes
+# to use       : inline_script -> bts_option_list_hidden = { ACTION = do_stuff }
+bts_event_target_list_clear = {
+	if = { limit = { exists = event_target:bts_etl_001 } clear_global_event_target = bts_etl_001 }
+	if = { limit = { exists = event_target:bts_etl_002 } clear_global_event_target = bts_etl_002 }
+	if = { limit = { exists = event_target:bts_etl_003 } clear_global_event_target = bts_etl_003 }
+	if = { limit = { exists = event_target:bts_etl_004 } clear_global_event_target = bts_etl_004 }
+	if = { limit = { exists = event_target:bts_etl_005 } clear_global_event_target = bts_etl_005 }
+	if = { limit = { exists = event_target:bts_etl_006 } clear_global_event_target = bts_etl_006 }
+	if = { limit = { exists = event_target:bts_etl_007 } clear_global_event_target = bts_etl_007 }
+	if = { limit = { exists = event_target:bts_etl_008 } clear_global_event_target = bts_etl_008 }
+	if = { limit = { exists = event_target:bts_etl_009 } clear_global_event_target = bts_etl_009 }
+	if = { limit = { exists = event_target:bts_etl_010 } clear_global_event_target = bts_etl_010 }
+	if = { limit = { exists = event_target:bts_etl_011 } clear_global_event_target = bts_etl_011 }
+	if = { limit = { exists = event_target:bts_etl_012 } clear_global_event_target = bts_etl_012 }
+	if = { limit = { exists = event_target:bts_etl_013 } clear_global_event_target = bts_etl_013 }
+	if = { limit = { exists = event_target:bts_etl_014 } clear_global_event_target = bts_etl_014 }
+	if = { limit = { exists = event_target:bts_etl_015 } clear_global_event_target = bts_etl_015 }
+	if = { limit = { exists = event_target:bts_etl_016 } clear_global_event_target = bts_etl_016 }
+	if = { limit = { exists = event_target:bts_etl_017 } clear_global_event_target = bts_etl_017 }
+	if = { limit = { exists = event_target:bts_etl_018 } clear_global_event_target = bts_etl_018 }
+	if = { limit = { exists = event_target:bts_etl_019 } clear_global_event_target = bts_etl_019 }
+	if = { limit = { exists = event_target:bts_etl_020 } clear_global_event_target = bts_etl_020 }
+	if = { limit = { exists = event_target:bts_etl_021 } clear_global_event_target = bts_etl_021 }
+	if = { limit = { exists = event_target:bts_etl_022 } clear_global_event_target = bts_etl_022 }
+	if = { limit = { exists = event_target:bts_etl_023 } clear_global_event_target = bts_etl_023 }
+	if = { limit = { exists = event_target:bts_etl_024 } clear_global_event_target = bts_etl_024 }
+	if = { limit = { exists = event_target:bts_etl_025 } clear_global_event_target = bts_etl_025 }
+	if = { limit = { exists = event_target:bts_etl_026 } clear_global_event_target = bts_etl_026 }
+	if = { limit = { exists = event_target:bts_etl_027 } clear_global_event_target = bts_etl_027 }
+	if = { limit = { exists = event_target:bts_etl_028 } clear_global_event_target = bts_etl_028 }
+	if = { limit = { exists = event_target:bts_etl_029 } clear_global_event_target = bts_etl_029 }
+	if = { limit = { exists = event_target:bts_etl_030 } clear_global_event_target = bts_etl_030 }
+	if = { limit = { exists = event_target:bts_etl_031 } clear_global_event_target = bts_etl_031 }
+	if = { limit = { exists = event_target:bts_etl_032 } clear_global_event_target = bts_etl_032 }
+	if = { limit = { exists = event_target:bts_etl_033 } clear_global_event_target = bts_etl_033 }
+	if = { limit = { exists = event_target:bts_etl_034 } clear_global_event_target = bts_etl_034 }
+	if = { limit = { exists = event_target:bts_etl_035 } clear_global_event_target = bts_etl_035 }
+	if = { limit = { exists = event_target:bts_etl_036 } clear_global_event_target = bts_etl_036 }
+	if = { limit = { exists = event_target:bts_etl_037 } clear_global_event_target = bts_etl_037 }
+	if = { limit = { exists = event_target:bts_etl_038 } clear_global_event_target = bts_etl_038 }
+	if = { limit = { exists = event_target:bts_etl_039 } clear_global_event_target = bts_etl_039 }
+	if = { limit = { exists = event_target:bts_etl_040 } clear_global_event_target = bts_etl_040 }
+	if = { limit = { exists = event_target:bts_etl_041 } clear_global_event_target = bts_etl_041 }
+	if = { limit = { exists = event_target:bts_etl_042 } clear_global_event_target = bts_etl_042 }
+	if = { limit = { exists = event_target:bts_etl_043 } clear_global_event_target = bts_etl_043 }
+	if = { limit = { exists = event_target:bts_etl_044 } clear_global_event_target = bts_etl_044 }
+	if = { limit = { exists = event_target:bts_etl_045 } clear_global_event_target = bts_etl_045 }
+	if = { limit = { exists = event_target:bts_etl_046 } clear_global_event_target = bts_etl_046 }
+	if = { limit = { exists = event_target:bts_etl_047 } clear_global_event_target = bts_etl_047 }
+	if = { limit = { exists = event_target:bts_etl_048 } clear_global_event_target = bts_etl_048 }
+	if = { limit = { exists = event_target:bts_etl_049 } clear_global_event_target = bts_etl_049 }
+	if = { limit = { exists = event_target:bts_etl_050 } clear_global_event_target = bts_etl_050 }
+	if = { limit = { exists = event_target:bts_etl_051 } clear_global_event_target = bts_etl_051 }
+	if = { limit = { exists = event_target:bts_etl_052 } clear_global_event_target = bts_etl_052 }
+	if = { limit = { exists = event_target:bts_etl_053 } clear_global_event_target = bts_etl_053 }
+	if = { limit = { exists = event_target:bts_etl_054 } clear_global_event_target = bts_etl_054 }
+	if = { limit = { exists = event_target:bts_etl_055 } clear_global_event_target = bts_etl_055 }
+	if = { limit = { exists = event_target:bts_etl_056 } clear_global_event_target = bts_etl_056 }
+	if = { limit = { exists = event_target:bts_etl_057 } clear_global_event_target = bts_etl_057 }
+	if = { limit = { exists = event_target:bts_etl_058 } clear_global_event_target = bts_etl_058 }
+	if = { limit = { exists = event_target:bts_etl_059 } clear_global_event_target = bts_etl_059 }
+	if = { limit = { exists = event_target:bts_etl_060 } clear_global_event_target = bts_etl_060 }
+	if = { limit = { exists = event_target:bts_etl_061 } clear_global_event_target = bts_etl_061 }
+	if = { limit = { exists = event_target:bts_etl_062 } clear_global_event_target = bts_etl_062 }
+	if = { limit = { exists = event_target:bts_etl_063 } clear_global_event_target = bts_etl_063 }
+	if = { limit = { exists = event_target:bts_etl_064 } clear_global_event_target = bts_etl_064 }
+	if = { limit = { exists = event_target:bts_etl_065 } clear_global_event_target = bts_etl_065 }
+	if = { limit = { exists = event_target:bts_etl_066 } clear_global_event_target = bts_etl_066 }
+	if = { limit = { exists = event_target:bts_etl_067 } clear_global_event_target = bts_etl_067 }
+	if = { limit = { exists = event_target:bts_etl_068 } clear_global_event_target = bts_etl_068 }
+	if = { limit = { exists = event_target:bts_etl_069 } clear_global_event_target = bts_etl_069 }
+	if = { limit = { exists = event_target:bts_etl_070 } clear_global_event_target = bts_etl_070 }
+	if = { limit = { exists = event_target:bts_etl_071 } clear_global_event_target = bts_etl_071 }
+	if = { limit = { exists = event_target:bts_etl_072 } clear_global_event_target = bts_etl_072 }
+	if = { limit = { exists = event_target:bts_etl_073 } clear_global_event_target = bts_etl_073 }
+	if = { limit = { exists = event_target:bts_etl_074 } clear_global_event_target = bts_etl_074 }
+	if = { limit = { exists = event_target:bts_etl_075 } clear_global_event_target = bts_etl_075 }
+	if = { limit = { exists = event_target:bts_etl_076 } clear_global_event_target = bts_etl_076 }
+	if = { limit = { exists = event_target:bts_etl_077 } clear_global_event_target = bts_etl_077 }
+	if = { limit = { exists = event_target:bts_etl_078 } clear_global_event_target = bts_etl_078 }
+	if = { limit = { exists = event_target:bts_etl_079 } clear_global_event_target = bts_etl_079 }
+	if = { limit = { exists = event_target:bts_etl_080 } clear_global_event_target = bts_etl_080 }
+	if = { limit = { exists = event_target:bts_etl_081 } clear_global_event_target = bts_etl_081 }
+	if = { limit = { exists = event_target:bts_etl_082 } clear_global_event_target = bts_etl_082 }
+	if = { limit = { exists = event_target:bts_etl_083 } clear_global_event_target = bts_etl_083 }
+	if = { limit = { exists = event_target:bts_etl_084 } clear_global_event_target = bts_etl_084 }
+	if = { limit = { exists = event_target:bts_etl_085 } clear_global_event_target = bts_etl_085 }
+	if = { limit = { exists = event_target:bts_etl_086 } clear_global_event_target = bts_etl_086 }
+	if = { limit = { exists = event_target:bts_etl_087 } clear_global_event_target = bts_etl_087 }
+	if = { limit = { exists = event_target:bts_etl_088 } clear_global_event_target = bts_etl_088 }
+	if = { limit = { exists = event_target:bts_etl_089 } clear_global_event_target = bts_etl_089 }
+	if = { limit = { exists = event_target:bts_etl_090 } clear_global_event_target = bts_etl_090 }
+	if = { limit = { exists = event_target:bts_etl_091 } clear_global_event_target = bts_etl_091 }
+	if = { limit = { exists = event_target:bts_etl_092 } clear_global_event_target = bts_etl_092 }
+	if = { limit = { exists = event_target:bts_etl_093 } clear_global_event_target = bts_etl_093 }
+	if = { limit = { exists = event_target:bts_etl_094 } clear_global_event_target = bts_etl_094 }
+	if = { limit = { exists = event_target:bts_etl_095 } clear_global_event_target = bts_etl_095 }
+	if = { limit = { exists = event_target:bts_etl_096 } clear_global_event_target = bts_etl_096 }
+	if = { limit = { exists = event_target:bts_etl_097 } clear_global_event_target = bts_etl_097 }
+	if = { limit = { exists = event_target:bts_etl_098 } clear_global_event_target = bts_etl_098 }
+	if = { limit = { exists = event_target:bts_etl_099 } clear_global_event_target = bts_etl_099 }
+	if = { limit = { exists = event_target:bts_etl_100 } clear_global_event_target = bts_etl_100 }
+	if = { limit = { exists = event_target:bts_etl_101 } clear_global_event_target = bts_etl_101 }
+	if = { limit = { exists = event_target:bts_etl_102 } clear_global_event_target = bts_etl_102 }
+	if = { limit = { exists = event_target:bts_etl_103 } clear_global_event_target = bts_etl_103 }
+	if = { limit = { exists = event_target:bts_etl_104 } clear_global_event_target = bts_etl_104 }
+	if = { limit = { exists = event_target:bts_etl_105 } clear_global_event_target = bts_etl_105 }
+	if = { limit = { exists = event_target:bts_etl_106 } clear_global_event_target = bts_etl_106 }
+	if = { limit = { exists = event_target:bts_etl_107 } clear_global_event_target = bts_etl_107 }
+	if = { limit = { exists = event_target:bts_etl_108 } clear_global_event_target = bts_etl_108 }
+	if = { limit = { exists = event_target:bts_etl_109 } clear_global_event_target = bts_etl_109 }
+	if = { limit = { exists = event_target:bts_etl_110 } clear_global_event_target = bts_etl_110 }
+	if = { limit = { exists = event_target:bts_etl_111 } clear_global_event_target = bts_etl_111 }
+	if = { limit = { exists = event_target:bts_etl_112 } clear_global_event_target = bts_etl_112 }
+	if = { limit = { exists = event_target:bts_etl_113 } clear_global_event_target = bts_etl_113 }
+	if = { limit = { exists = event_target:bts_etl_114 } clear_global_event_target = bts_etl_114 }
+	if = { limit = { exists = event_target:bts_etl_115 } clear_global_event_target = bts_etl_115 }
+	if = { limit = { exists = event_target:bts_etl_116 } clear_global_event_target = bts_etl_116 }
+	if = { limit = { exists = event_target:bts_etl_117 } clear_global_event_target = bts_etl_117 }
+	if = { limit = { exists = event_target:bts_etl_118 } clear_global_event_target = bts_etl_118 }
+	if = { limit = { exists = event_target:bts_etl_119 } clear_global_event_target = bts_etl_119 }
+	if = { limit = { exists = event_target:bts_etl_120 } clear_global_event_target = bts_etl_120 }
+	if = { limit = { exists = event_target:bts_etl_121 } clear_global_event_target = bts_etl_121 }
+	if = { limit = { exists = event_target:bts_etl_122 } clear_global_event_target = bts_etl_122 }
+	if = { limit = { exists = event_target:bts_etl_123 } clear_global_event_target = bts_etl_123 }
+	if = { limit = { exists = event_target:bts_etl_124 } clear_global_event_target = bts_etl_124 }
+	if = { limit = { exists = event_target:bts_etl_125 } clear_global_event_target = bts_etl_125 }
+	if = { limit = { exists = event_target:bts_etl_126 } clear_global_event_target = bts_etl_126 }
+	if = { limit = { exists = event_target:bts_etl_127 } clear_global_event_target = bts_etl_127 }
+	if = { limit = { exists = event_target:bts_etl_128 } clear_global_event_target = bts_etl_128 }
+	if = { limit = { exists = event_target:bts_etl_129 } clear_global_event_target = bts_etl_129 }
+	if = { limit = { exists = event_target:bts_etl_130 } clear_global_event_target = bts_etl_130 }
+	if = { limit = { exists = event_target:bts_etl_131 } clear_global_event_target = bts_etl_131 }
+	if = { limit = { exists = event_target:bts_etl_132 } clear_global_event_target = bts_etl_132 }
+	if = { limit = { exists = event_target:bts_etl_133 } clear_global_event_target = bts_etl_133 }
+	if = { limit = { exists = event_target:bts_etl_134 } clear_global_event_target = bts_etl_134 }
+	if = { limit = { exists = event_target:bts_etl_135 } clear_global_event_target = bts_etl_135 }
+	if = { limit = { exists = event_target:bts_etl_136 } clear_global_event_target = bts_etl_136 }
+	if = { limit = { exists = event_target:bts_etl_137 } clear_global_event_target = bts_etl_137 }
+	if = { limit = { exists = event_target:bts_etl_138 } clear_global_event_target = bts_etl_138 }
+	if = { limit = { exists = event_target:bts_etl_139 } clear_global_event_target = bts_etl_139 }
+	if = { limit = { exists = event_target:bts_etl_140 } clear_global_event_target = bts_etl_140 }
+	if = { limit = { exists = event_target:bts_etl_141 } clear_global_event_target = bts_etl_141 }
+	if = { limit = { exists = event_target:bts_etl_142 } clear_global_event_target = bts_etl_142 }
+	if = { limit = { exists = event_target:bts_etl_143 } clear_global_event_target = bts_etl_143 }
+	if = { limit = { exists = event_target:bts_etl_144 } clear_global_event_target = bts_etl_144 }
+	if = { limit = { exists = event_target:bts_etl_145 } clear_global_event_target = bts_etl_145 }
+	if = { limit = { exists = event_target:bts_etl_146 } clear_global_event_target = bts_etl_146 }
+	if = { limit = { exists = event_target:bts_etl_147 } clear_global_event_target = bts_etl_147 }
+	if = { limit = { exists = event_target:bts_etl_148 } clear_global_event_target = bts_etl_148 }
+	if = { limit = { exists = event_target:bts_etl_149 } clear_global_event_target = bts_etl_149 }
+	if = { limit = { exists = event_target:bts_etl_150 } clear_global_event_target = bts_etl_150 }
+	if = { limit = { exists = event_target:bts_etl_151 } clear_global_event_target = bts_etl_151 }
+	if = { limit = { exists = event_target:bts_etl_152 } clear_global_event_target = bts_etl_152 }
+	if = { limit = { exists = event_target:bts_etl_153 } clear_global_event_target = bts_etl_153 }
+	if = { limit = { exists = event_target:bts_etl_154 } clear_global_event_target = bts_etl_154 }
+	if = { limit = { exists = event_target:bts_etl_155 } clear_global_event_target = bts_etl_155 }
+	if = { limit = { exists = event_target:bts_etl_156 } clear_global_event_target = bts_etl_156 }
+	if = { limit = { exists = event_target:bts_etl_157 } clear_global_event_target = bts_etl_157 }
+	if = { limit = { exists = event_target:bts_etl_158 } clear_global_event_target = bts_etl_158 }
+	if = { limit = { exists = event_target:bts_etl_159 } clear_global_event_target = bts_etl_159 }
+	if = { limit = { exists = event_target:bts_etl_160 } clear_global_event_target = bts_etl_160 }
+	if = { limit = { exists = event_target:bts_etl_161 } clear_global_event_target = bts_etl_161 }
+	if = { limit = { exists = event_target:bts_etl_162 } clear_global_event_target = bts_etl_162 }
+	if = { limit = { exists = event_target:bts_etl_163 } clear_global_event_target = bts_etl_163 }
+	if = { limit = { exists = event_target:bts_etl_164 } clear_global_event_target = bts_etl_164 }
+	if = { limit = { exists = event_target:bts_etl_165 } clear_global_event_target = bts_etl_165 }
+	if = { limit = { exists = event_target:bts_etl_166 } clear_global_event_target = bts_etl_166 }
+	if = { limit = { exists = event_target:bts_etl_167 } clear_global_event_target = bts_etl_167 }
+	if = { limit = { exists = event_target:bts_etl_168 } clear_global_event_target = bts_etl_168 }
+	if = { limit = { exists = event_target:bts_etl_169 } clear_global_event_target = bts_etl_169 }
+	if = { limit = { exists = event_target:bts_etl_170 } clear_global_event_target = bts_etl_170 }
+	if = { limit = { exists = event_target:bts_etl_171 } clear_global_event_target = bts_etl_171 }
+	if = { limit = { exists = event_target:bts_etl_172 } clear_global_event_target = bts_etl_172 }
+	if = { limit = { exists = event_target:bts_etl_173 } clear_global_event_target = bts_etl_173 }
+	if = { limit = { exists = event_target:bts_etl_174 } clear_global_event_target = bts_etl_174 }
+	if = { limit = { exists = event_target:bts_etl_175 } clear_global_event_target = bts_etl_175 }
+	if = { limit = { exists = event_target:bts_etl_176 } clear_global_event_target = bts_etl_176 }
+	if = { limit = { exists = event_target:bts_etl_177 } clear_global_event_target = bts_etl_177 }
+	if = { limit = { exists = event_target:bts_etl_178 } clear_global_event_target = bts_etl_178 }
+	if = { limit = { exists = event_target:bts_etl_179 } clear_global_event_target = bts_etl_179 }
+	if = { limit = { exists = event_target:bts_etl_180 } clear_global_event_target = bts_etl_180 }
+	if = { limit = { exists = event_target:bts_etl_181 } clear_global_event_target = bts_etl_181 }
+	if = { limit = { exists = event_target:bts_etl_182 } clear_global_event_target = bts_etl_182 }
+	if = { limit = { exists = event_target:bts_etl_183 } clear_global_event_target = bts_etl_183 }
+	if = { limit = { exists = event_target:bts_etl_184 } clear_global_event_target = bts_etl_184 }
+	if = { limit = { exists = event_target:bts_etl_185 } clear_global_event_target = bts_etl_185 }
+	if = { limit = { exists = event_target:bts_etl_186 } clear_global_event_target = bts_etl_186 }
+	if = { limit = { exists = event_target:bts_etl_187 } clear_global_event_target = bts_etl_187 }
+	if = { limit = { exists = event_target:bts_etl_188 } clear_global_event_target = bts_etl_188 }
+	if = { limit = { exists = event_target:bts_etl_189 } clear_global_event_target = bts_etl_189 }
+	if = { limit = { exists = event_target:bts_etl_190 } clear_global_event_target = bts_etl_190 }
+	if = { limit = { exists = event_target:bts_etl_191 } clear_global_event_target = bts_etl_191 }
+	if = { limit = { exists = event_target:bts_etl_192 } clear_global_event_target = bts_etl_192 }
+	if = { limit = { exists = event_target:bts_etl_193 } clear_global_event_target = bts_etl_193 }
+	if = { limit = { exists = event_target:bts_etl_194 } clear_global_event_target = bts_etl_194 }
+	if = { limit = { exists = event_target:bts_etl_195 } clear_global_event_target = bts_etl_195 }
+	if = { limit = { exists = event_target:bts_etl_196 } clear_global_event_target = bts_etl_196 }
+	if = { limit = { exists = event_target:bts_etl_197 } clear_global_event_target = bts_etl_197 }
+	if = { limit = { exists = event_target:bts_etl_198 } clear_global_event_target = bts_etl_198 }
+	if = { limit = { exists = event_target:bts_etl_199 } clear_global_event_target = bts_etl_199 }
+	if = { limit = { exists = event_target:bts_etl_200 } clear_global_event_target = bts_etl_200 }
+	if = { limit = { exists = event_target:bts_etl_201 } clear_global_event_target = bts_etl_201 }
+	if = { limit = { exists = event_target:bts_etl_202 } clear_global_event_target = bts_etl_202 }
+	if = { limit = { exists = event_target:bts_etl_203 } clear_global_event_target = bts_etl_203 }
+	if = { limit = { exists = event_target:bts_etl_204 } clear_global_event_target = bts_etl_204 }
+	if = { limit = { exists = event_target:bts_etl_205 } clear_global_event_target = bts_etl_205 }
+	if = { limit = { exists = event_target:bts_etl_206 } clear_global_event_target = bts_etl_206 }
+	if = { limit = { exists = event_target:bts_etl_207 } clear_global_event_target = bts_etl_207 }
+	if = { limit = { exists = event_target:bts_etl_208 } clear_global_event_target = bts_etl_208 }
+	if = { limit = { exists = event_target:bts_etl_209 } clear_global_event_target = bts_etl_209 }
+	if = { limit = { exists = event_target:bts_etl_210 } clear_global_event_target = bts_etl_210 }
+	if = { limit = { exists = event_target:bts_etl_211 } clear_global_event_target = bts_etl_211 }
+	if = { limit = { exists = event_target:bts_etl_212 } clear_global_event_target = bts_etl_212 }
+	if = { limit = { exists = event_target:bts_etl_213 } clear_global_event_target = bts_etl_213 }
+	if = { limit = { exists = event_target:bts_etl_214 } clear_global_event_target = bts_etl_214 }
+	if = { limit = { exists = event_target:bts_etl_215 } clear_global_event_target = bts_etl_215 }
+	if = { limit = { exists = event_target:bts_etl_216 } clear_global_event_target = bts_etl_216 }
+	if = { limit = { exists = event_target:bts_etl_217 } clear_global_event_target = bts_etl_217 }
+	if = { limit = { exists = event_target:bts_etl_218 } clear_global_event_target = bts_etl_218 }
+	if = { limit = { exists = event_target:bts_etl_219 } clear_global_event_target = bts_etl_219 }
+	if = { limit = { exists = event_target:bts_etl_220 } clear_global_event_target = bts_etl_220 }
+	if = { limit = { exists = event_target:bts_etl_221 } clear_global_event_target = bts_etl_221 }
+	if = { limit = { exists = event_target:bts_etl_222 } clear_global_event_target = bts_etl_222 }
+	if = { limit = { exists = event_target:bts_etl_223 } clear_global_event_target = bts_etl_223 }
+	if = { limit = { exists = event_target:bts_etl_224 } clear_global_event_target = bts_etl_224 }
+	if = { limit = { exists = event_target:bts_etl_225 } clear_global_event_target = bts_etl_225 }
+	if = { limit = { exists = event_target:bts_etl_226 } clear_global_event_target = bts_etl_226 }
+	if = { limit = { exists = event_target:bts_etl_227 } clear_global_event_target = bts_etl_227 }
+	if = { limit = { exists = event_target:bts_etl_228 } clear_global_event_target = bts_etl_228 }
+	if = { limit = { exists = event_target:bts_etl_229 } clear_global_event_target = bts_etl_229 }
+	if = { limit = { exists = event_target:bts_etl_230 } clear_global_event_target = bts_etl_230 }
+	if = { limit = { exists = event_target:bts_etl_231 } clear_global_event_target = bts_etl_231 }
+	if = { limit = { exists = event_target:bts_etl_232 } clear_global_event_target = bts_etl_232 }
+	if = { limit = { exists = event_target:bts_etl_233 } clear_global_event_target = bts_etl_233 }
+	if = { limit = { exists = event_target:bts_etl_234 } clear_global_event_target = bts_etl_234 }
+	if = { limit = { exists = event_target:bts_etl_235 } clear_global_event_target = bts_etl_235 }
+	if = { limit = { exists = event_target:bts_etl_236 } clear_global_event_target = bts_etl_236 }
+	if = { limit = { exists = event_target:bts_etl_237 } clear_global_event_target = bts_etl_237 }
+	if = { limit = { exists = event_target:bts_etl_238 } clear_global_event_target = bts_etl_238 }
+	if = { limit = { exists = event_target:bts_etl_239 } clear_global_event_target = bts_etl_239 }
+	if = { limit = { exists = event_target:bts_etl_240 } clear_global_event_target = bts_etl_240 }
+	if = { limit = { exists = event_target:bts_etl_241 } clear_global_event_target = bts_etl_241 }
+	if = { limit = { exists = event_target:bts_etl_242 } clear_global_event_target = bts_etl_242 }
+	if = { limit = { exists = event_target:bts_etl_243 } clear_global_event_target = bts_etl_243 }
+	if = { limit = { exists = event_target:bts_etl_244 } clear_global_event_target = bts_etl_244 }
+	if = { limit = { exists = event_target:bts_etl_245 } clear_global_event_target = bts_etl_245 }
+	if = { limit = { exists = event_target:bts_etl_246 } clear_global_event_target = bts_etl_246 }
+	if = { limit = { exists = event_target:bts_etl_247 } clear_global_event_target = bts_etl_247 }
+	if = { limit = { exists = event_target:bts_etl_248 } clear_global_event_target = bts_etl_248 }
+	if = { limit = { exists = event_target:bts_etl_249 } clear_global_event_target = bts_etl_249 }
+	if = { limit = { exists = event_target:bts_etl_250 } clear_global_event_target = bts_etl_250 }
+}
+
+bts_event_target_list_save = {
+	if = {		limit = { NOT = { exists = event_target:bts_etl_001 } } save_global_event_target_as = bts_etl_001 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_002 } } save_global_event_target_as = bts_etl_002 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_003 } } save_global_event_target_as = bts_etl_003 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_004 } } save_global_event_target_as = bts_etl_004 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_005 } } save_global_event_target_as = bts_etl_005 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_006 } } save_global_event_target_as = bts_etl_006 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_007 } } save_global_event_target_as = bts_etl_007 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_008 } } save_global_event_target_as = bts_etl_008 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_009 } } save_global_event_target_as = bts_etl_009 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_010 } } save_global_event_target_as = bts_etl_010 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_011 } } save_global_event_target_as = bts_etl_011 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_012 } } save_global_event_target_as = bts_etl_012 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_013 } } save_global_event_target_as = bts_etl_013 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_014 } } save_global_event_target_as = bts_etl_014 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_015 } } save_global_event_target_as = bts_etl_015 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_016 } } save_global_event_target_as = bts_etl_016 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_017 } } save_global_event_target_as = bts_etl_017 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_018 } } save_global_event_target_as = bts_etl_018 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_019 } } save_global_event_target_as = bts_etl_019 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_020 } } save_global_event_target_as = bts_etl_020 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_021 } } save_global_event_target_as = bts_etl_021 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_022 } } save_global_event_target_as = bts_etl_022 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_023 } } save_global_event_target_as = bts_etl_023 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_024 } } save_global_event_target_as = bts_etl_024 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_025 } } save_global_event_target_as = bts_etl_025 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_026 } } save_global_event_target_as = bts_etl_026 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_027 } } save_global_event_target_as = bts_etl_027 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_028 } } save_global_event_target_as = bts_etl_028 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_029 } } save_global_event_target_as = bts_etl_029 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_030 } } save_global_event_target_as = bts_etl_030 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_031 } } save_global_event_target_as = bts_etl_031 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_032 } } save_global_event_target_as = bts_etl_032 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_033 } } save_global_event_target_as = bts_etl_033 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_034 } } save_global_event_target_as = bts_etl_034 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_035 } } save_global_event_target_as = bts_etl_035 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_036 } } save_global_event_target_as = bts_etl_036 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_037 } } save_global_event_target_as = bts_etl_037 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_038 } } save_global_event_target_as = bts_etl_038 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_039 } } save_global_event_target_as = bts_etl_039 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_040 } } save_global_event_target_as = bts_etl_040 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_041 } } save_global_event_target_as = bts_etl_041 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_042 } } save_global_event_target_as = bts_etl_042 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_043 } } save_global_event_target_as = bts_etl_043 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_044 } } save_global_event_target_as = bts_etl_044 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_045 } } save_global_event_target_as = bts_etl_045 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_046 } } save_global_event_target_as = bts_etl_046 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_047 } } save_global_event_target_as = bts_etl_047 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_048 } } save_global_event_target_as = bts_etl_048 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_049 } } save_global_event_target_as = bts_etl_049 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_050 } } save_global_event_target_as = bts_etl_050 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_051 } } save_global_event_target_as = bts_etl_051 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_052 } } save_global_event_target_as = bts_etl_052 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_053 } } save_global_event_target_as = bts_etl_053 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_054 } } save_global_event_target_as = bts_etl_054 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_055 } } save_global_event_target_as = bts_etl_055 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_056 } } save_global_event_target_as = bts_etl_056 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_057 } } save_global_event_target_as = bts_etl_057 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_058 } } save_global_event_target_as = bts_etl_058 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_059 } } save_global_event_target_as = bts_etl_059 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_060 } } save_global_event_target_as = bts_etl_060 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_061 } } save_global_event_target_as = bts_etl_061 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_062 } } save_global_event_target_as = bts_etl_062 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_063 } } save_global_event_target_as = bts_etl_063 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_064 } } save_global_event_target_as = bts_etl_064 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_065 } } save_global_event_target_as = bts_etl_065 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_066 } } save_global_event_target_as = bts_etl_066 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_067 } } save_global_event_target_as = bts_etl_067 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_068 } } save_global_event_target_as = bts_etl_068 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_069 } } save_global_event_target_as = bts_etl_069 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_070 } } save_global_event_target_as = bts_etl_070 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_071 } } save_global_event_target_as = bts_etl_071 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_072 } } save_global_event_target_as = bts_etl_072 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_073 } } save_global_event_target_as = bts_etl_073 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_074 } } save_global_event_target_as = bts_etl_074 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_075 } } save_global_event_target_as = bts_etl_075 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_076 } } save_global_event_target_as = bts_etl_076 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_077 } } save_global_event_target_as = bts_etl_077 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_078 } } save_global_event_target_as = bts_etl_078 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_079 } } save_global_event_target_as = bts_etl_079 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_080 } } save_global_event_target_as = bts_etl_080 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_081 } } save_global_event_target_as = bts_etl_081 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_082 } } save_global_event_target_as = bts_etl_082 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_083 } } save_global_event_target_as = bts_etl_083 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_084 } } save_global_event_target_as = bts_etl_084 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_085 } } save_global_event_target_as = bts_etl_085 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_086 } } save_global_event_target_as = bts_etl_086 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_087 } } save_global_event_target_as = bts_etl_087 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_088 } } save_global_event_target_as = bts_etl_088 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_089 } } save_global_event_target_as = bts_etl_089 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_090 } } save_global_event_target_as = bts_etl_090 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_091 } } save_global_event_target_as = bts_etl_091 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_092 } } save_global_event_target_as = bts_etl_092 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_093 } } save_global_event_target_as = bts_etl_093 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_094 } } save_global_event_target_as = bts_etl_094 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_095 } } save_global_event_target_as = bts_etl_095 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_096 } } save_global_event_target_as = bts_etl_096 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_097 } } save_global_event_target_as = bts_etl_097 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_098 } } save_global_event_target_as = bts_etl_098 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_099 } } save_global_event_target_as = bts_etl_099 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_100 } } save_global_event_target_as = bts_etl_100 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_101 } } save_global_event_target_as = bts_etl_101 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_102 } } save_global_event_target_as = bts_etl_102 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_103 } } save_global_event_target_as = bts_etl_103 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_104 } } save_global_event_target_as = bts_etl_104 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_105 } } save_global_event_target_as = bts_etl_105 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_106 } } save_global_event_target_as = bts_etl_106 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_107 } } save_global_event_target_as = bts_etl_107 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_108 } } save_global_event_target_as = bts_etl_108 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_109 } } save_global_event_target_as = bts_etl_109 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_110 } } save_global_event_target_as = bts_etl_110 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_111 } } save_global_event_target_as = bts_etl_111 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_112 } } save_global_event_target_as = bts_etl_112 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_113 } } save_global_event_target_as = bts_etl_113 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_114 } } save_global_event_target_as = bts_etl_114 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_115 } } save_global_event_target_as = bts_etl_115 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_116 } } save_global_event_target_as = bts_etl_116 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_117 } } save_global_event_target_as = bts_etl_117 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_118 } } save_global_event_target_as = bts_etl_118 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_119 } } save_global_event_target_as = bts_etl_119 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_120 } } save_global_event_target_as = bts_etl_120 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_121 } } save_global_event_target_as = bts_etl_121 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_122 } } save_global_event_target_as = bts_etl_122 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_123 } } save_global_event_target_as = bts_etl_123 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_124 } } save_global_event_target_as = bts_etl_124 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_125 } } save_global_event_target_as = bts_etl_125 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_126 } } save_global_event_target_as = bts_etl_126 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_127 } } save_global_event_target_as = bts_etl_127 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_128 } } save_global_event_target_as = bts_etl_128 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_129 } } save_global_event_target_as = bts_etl_129 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_130 } } save_global_event_target_as = bts_etl_130 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_131 } } save_global_event_target_as = bts_etl_131 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_132 } } save_global_event_target_as = bts_etl_132 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_133 } } save_global_event_target_as = bts_etl_133 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_134 } } save_global_event_target_as = bts_etl_134 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_135 } } save_global_event_target_as = bts_etl_135 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_136 } } save_global_event_target_as = bts_etl_136 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_137 } } save_global_event_target_as = bts_etl_137 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_138 } } save_global_event_target_as = bts_etl_138 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_139 } } save_global_event_target_as = bts_etl_139 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_140 } } save_global_event_target_as = bts_etl_140 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_141 } } save_global_event_target_as = bts_etl_141 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_142 } } save_global_event_target_as = bts_etl_142 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_143 } } save_global_event_target_as = bts_etl_143 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_144 } } save_global_event_target_as = bts_etl_144 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_145 } } save_global_event_target_as = bts_etl_145 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_146 } } save_global_event_target_as = bts_etl_146 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_147 } } save_global_event_target_as = bts_etl_147 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_148 } } save_global_event_target_as = bts_etl_148 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_149 } } save_global_event_target_as = bts_etl_149 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_150 } } save_global_event_target_as = bts_etl_150 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_151 } } save_global_event_target_as = bts_etl_151 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_152 } } save_global_event_target_as = bts_etl_152 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_153 } } save_global_event_target_as = bts_etl_153 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_154 } } save_global_event_target_as = bts_etl_154 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_155 } } save_global_event_target_as = bts_etl_155 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_156 } } save_global_event_target_as = bts_etl_156 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_157 } } save_global_event_target_as = bts_etl_157 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_158 } } save_global_event_target_as = bts_etl_158 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_159 } } save_global_event_target_as = bts_etl_159 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_160 } } save_global_event_target_as = bts_etl_160 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_161 } } save_global_event_target_as = bts_etl_161 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_162 } } save_global_event_target_as = bts_etl_162 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_163 } } save_global_event_target_as = bts_etl_163 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_164 } } save_global_event_target_as = bts_etl_164 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_165 } } save_global_event_target_as = bts_etl_165 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_166 } } save_global_event_target_as = bts_etl_166 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_167 } } save_global_event_target_as = bts_etl_167 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_168 } } save_global_event_target_as = bts_etl_168 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_169 } } save_global_event_target_as = bts_etl_169 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_170 } } save_global_event_target_as = bts_etl_170 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_171 } } save_global_event_target_as = bts_etl_171 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_172 } } save_global_event_target_as = bts_etl_172 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_173 } } save_global_event_target_as = bts_etl_173 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_174 } } save_global_event_target_as = bts_etl_174 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_175 } } save_global_event_target_as = bts_etl_175 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_176 } } save_global_event_target_as = bts_etl_176 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_177 } } save_global_event_target_as = bts_etl_177 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_178 } } save_global_event_target_as = bts_etl_178 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_179 } } save_global_event_target_as = bts_etl_179 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_180 } } save_global_event_target_as = bts_etl_180 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_181 } } save_global_event_target_as = bts_etl_181 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_182 } } save_global_event_target_as = bts_etl_182 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_183 } } save_global_event_target_as = bts_etl_183 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_184 } } save_global_event_target_as = bts_etl_184 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_185 } } save_global_event_target_as = bts_etl_185 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_186 } } save_global_event_target_as = bts_etl_186 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_187 } } save_global_event_target_as = bts_etl_187 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_188 } } save_global_event_target_as = bts_etl_188 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_189 } } save_global_event_target_as = bts_etl_189 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_190 } } save_global_event_target_as = bts_etl_190 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_191 } } save_global_event_target_as = bts_etl_191 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_192 } } save_global_event_target_as = bts_etl_192 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_193 } } save_global_event_target_as = bts_etl_193 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_194 } } save_global_event_target_as = bts_etl_194 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_195 } } save_global_event_target_as = bts_etl_195 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_196 } } save_global_event_target_as = bts_etl_196 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_197 } } save_global_event_target_as = bts_etl_197 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_198 } } save_global_event_target_as = bts_etl_198 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_199 } } save_global_event_target_as = bts_etl_199 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_200 } } save_global_event_target_as = bts_etl_200 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_201 } } save_global_event_target_as = bts_etl_201 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_202 } } save_global_event_target_as = bts_etl_202 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_203 } } save_global_event_target_as = bts_etl_203 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_204 } } save_global_event_target_as = bts_etl_204 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_205 } } save_global_event_target_as = bts_etl_205 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_206 } } save_global_event_target_as = bts_etl_206 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_207 } } save_global_event_target_as = bts_etl_207 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_208 } } save_global_event_target_as = bts_etl_208 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_209 } } save_global_event_target_as = bts_etl_209 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_210 } } save_global_event_target_as = bts_etl_210 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_211 } } save_global_event_target_as = bts_etl_211 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_212 } } save_global_event_target_as = bts_etl_212 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_213 } } save_global_event_target_as = bts_etl_213 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_214 } } save_global_event_target_as = bts_etl_214 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_215 } } save_global_event_target_as = bts_etl_215 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_216 } } save_global_event_target_as = bts_etl_216 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_217 } } save_global_event_target_as = bts_etl_217 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_218 } } save_global_event_target_as = bts_etl_218 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_219 } } save_global_event_target_as = bts_etl_219 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_220 } } save_global_event_target_as = bts_etl_220 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_221 } } save_global_event_target_as = bts_etl_221 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_222 } } save_global_event_target_as = bts_etl_222 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_223 } } save_global_event_target_as = bts_etl_223 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_224 } } save_global_event_target_as = bts_etl_224 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_225 } } save_global_event_target_as = bts_etl_225 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_226 } } save_global_event_target_as = bts_etl_226 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_227 } } save_global_event_target_as = bts_etl_227 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_228 } } save_global_event_target_as = bts_etl_228 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_229 } } save_global_event_target_as = bts_etl_229 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_230 } } save_global_event_target_as = bts_etl_230 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_231 } } save_global_event_target_as = bts_etl_231 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_232 } } save_global_event_target_as = bts_etl_232 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_233 } } save_global_event_target_as = bts_etl_233 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_234 } } save_global_event_target_as = bts_etl_234 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_235 } } save_global_event_target_as = bts_etl_235 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_236 } } save_global_event_target_as = bts_etl_236 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_237 } } save_global_event_target_as = bts_etl_237 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_238 } } save_global_event_target_as = bts_etl_238 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_239 } } save_global_event_target_as = bts_etl_239 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_240 } } save_global_event_target_as = bts_etl_240 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_241 } } save_global_event_target_as = bts_etl_241 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_242 } } save_global_event_target_as = bts_etl_242 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_243 } } save_global_event_target_as = bts_etl_243 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_244 } } save_global_event_target_as = bts_etl_244 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_245 } } save_global_event_target_as = bts_etl_245 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_246 } } save_global_event_target_as = bts_etl_246 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_247 } } save_global_event_target_as = bts_etl_247 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_248 } } save_global_event_target_as = bts_etl_248 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_249 } } save_global_event_target_as = bts_etl_249 }
+	else_if = {	limit = { NOT = { exists = event_target:bts_etl_250 } } save_global_event_target_as = bts_etl_250 }
+}
