@@ -353,7 +353,7 @@ system_event = {
 
 situation_event = { 
 	id = bts.20
-	title = "bts.20.name"
+	title = "bts.20.title"
 	desc = "bts.20.desc"
 
 	picture = GFX_evt_surreal_visions

@@ -319,10 +319,10 @@
 @bts_conceptual_effect_energy_duration = 360
 
 
-@situation_bts_conceptual_mastery_tree_unlock = 100
-@situation_bts_conceptual_mastery_perk1_unlock = 200
-@situation_bts_conceptual_mastery_perk2_unlock = 300
-@situation_bts_conceptual_mastery_perk3_unlock = 400
-@situation_bts_conceptual_mastery_perk4_unlock = 500
-@situation_bts_conceptual_mastery_perk5_unlock = 600
-@situation_bts_conceptual_mastery_relic_unlock = 700
+@situation_bts_conceptual_mastery_tree_unlock = 1000
+@situation_bts_conceptual_mastery_perk1_unlock = 2500
+@situation_bts_conceptual_mastery_perk2_unlock = 4000
+@situation_bts_conceptual_mastery_perk3_unlock = 5500
+@situation_bts_conceptual_mastery_perk4_unlock = 7000
+@situation_bts_conceptual_mastery_perk5_unlock = 8500
+@situation_bts_conceptual_mastery_relic_unlock = 10000
