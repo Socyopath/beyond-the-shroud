@@ -74,3 +74,37 @@ planet_event = {
 		owner = { add_relic = r_bts_relic_shroud_nexus } 
 	}
 }
+
+# Concept: Time
+country_event = {
+	id = bts.403
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+
+	}
+
+}
+
+# Concept: Space
+country_event = {
+	id = bts.404
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+
+	}
+}
+
+# Concept: Matter
+country_event = {
+	id = bts.405
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+
+	}
+}

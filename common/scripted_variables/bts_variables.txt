@@ -326,3 +326,19 @@
 @situation_bts_conceptual_mastery_perk4_unlock = 7000
 @situation_bts_conceptual_mastery_perk5_unlock = 8500
 @situation_bts_conceptual_mastery_relic_unlock = 10000
+
+
+@r_bts_relic_concept_time_evasion = 50
+@r_bts_relic_concept_time_speed = 1.00
+@r_bts_relic_concept_time_effect_speed = -0.50
+@r_bts_relic_concept_time_effect_duration = 360
+
+@r_bts_relic_concept_space_jump_range = 1.00
+@r_bts_relic_concept_space_jump_cd = -0.50
+@r_bts_relic_concept_space_effect_duration = 360
+
+@r_bts_relic_concept_energy_hull_regen = 0.10
+@r_bts_relic_concept_energy_armor_regen = 0.10
+@r_bts_relic_concept_energy_shield_regen = 0.10
+@r_bts_relic_concept_energy_effect_shield_penetration = 0.50
+@r_bts_relic_concept_energy_effect_duration = 360

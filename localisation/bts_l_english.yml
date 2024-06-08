@@ -477,3 +477,16 @@ bts_req_spec_time: "$TRIGGER_FAIL$Choose §Y$bts.20.time$§! during §Y$situatio
 bts_req_spec_space: "$TRIGGER_FAIL$Choose §Y$bts.20.space$§! during §Y$situation_bts_conceptual_mastery$§! Situation"
 bts_req_spec_energy: "$TRIGGER_FAIL$Choose §Y$bts.20.energy$§! during §Y$situation_bts_conceptual_mastery$§! Situation"
 bts_req_spec_point: "$TRIGGER_FAIL$Progress through §Y$situation_bts_conceptual_mastery$§! Situation to unlock"
+
+
+r_bts_relic_concept_time: "Conceptual Cube: Time"
+r_bts_relic_concept_time_desc: ""
+r_bts_relic_concept_time_active: ""
+
+r_bts_relic_concept_space: "Conceptual Cube: Space"
+r_bts_relic_concept_space_desc: ""
+r_bts_relic_concept_space_active: ""
+
+r_bts_relic_concept_energy: "Conceptual Cube: Energy"
+r_bts_relic_concept_energy_desc: ""
+r_bts_relic_concept_energy_active: ""

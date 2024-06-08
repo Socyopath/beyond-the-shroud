@@ -1,0 +1,139 @@
+@activation_cost = 3000
+@triumph_duration = 3600
+
+r_bts_relic_concept_time = {
+	activation_duration = @triumph_duration
+	portrait = "GFX_relic_rubricator"
+	sound = "par_ui_keides_relic"
+
+
+	resources = {
+		category = relics
+		# Activation cost
+		cost = {
+			unity = @activation_cost
+		}
+	}
+
+	triggered_country_modifier = {
+		potential = {
+			always = yes
+		}
+		ship_evasion_add = @r_bts_relic_concept_time_evasion
+		ship_speed_mult = @r_bts_relic_concept_time_speed
+	}
+
+	score = 2500
+
+	active_effect = {
+		custom_tooltip = r_bts_relic_concept_time_active
+		custom_tooltip = relic_triumph_cooldown
+		hidden_effect = {
+			country_event = { id = bts.403 }
+			add_modifier = {
+				modifier = "relic_activation_cooldown"
+				days = @triumph_duration
+			}
+		}
+	}
+
+	# Possible check for activation
+	possible = {
+		inline_script = {
+			script = relics/activation_checks
+			RELIC = r_bts_relic_shroud_nexus
+		}
+	}
+}
+
+r_bts_relic_concept_space = {
+	activation_duration = @triumph_duration
+	portrait = "GFX_relic_rubricator"
+	sound = "par_ui_keides_relic"
+
+
+	resources = {
+		category = relics
+		# Activation cost
+		cost = {
+			unity = @activation_cost
+		}
+	}
+
+	triggered_country_modifier = {
+		potential = {
+			always = yes
+		}
+		ship_ftl_jumpdrive_range_mult = @r_bts_relic_concept_space_jump_range
+		ship_jumpdrive_cooldown_mult = @r_bts_relic_concept_space_jump_cd
+	}
+
+	score = 2500
+
+	active_effect = {
+		custom_tooltip = r_bts_relic_concept_space_active
+		custom_tooltip = relic_triumph_cooldown
+		hidden_effect = {
+			country_event = { id = bts.404 }
+			add_modifier = {
+				modifier = "relic_activation_cooldown"
+				days = @triumph_duration
+			}
+		}
+	}
+
+	# Possible check for activation
+	possible = {
+		inline_script = {
+			script = relics/activation_checks
+			RELIC = r_bts_relic_concept_space
+		}
+	}
+}
+
+r_bts_relic_concept_energy = {
+	activation_duration = @triumph_duration
+	portrait = "GFX_relic_rubricator"
+	sound = "par_ui_keides_relic"
+
+
+	resources = {
+		category = relics
+		# Activation cost
+		cost = {
+			unity = @activation_cost
+		}
+	}
+
+	triggered_country_modifier = {
+		potential = {
+			always = yes
+		}
+
+        ship_hull_regen_add_perc = @r_bts_relic_concept_energy_hull_regen
+        ship_armor_regen_add_perc = @r_bts_relic_concept_energy_armor_regen
+		ship_shield_regen_add_perc = @r_bts_relic_concept_energy_shield_regen
+	}
+
+	score = 2500
+
+	active_effect = {
+		custom_tooltip = r_bts_relic_concept_energy_active
+		custom_tooltip = relic_triumph_cooldown
+		hidden_effect = {
+			country_event = { id = bts.405 }
+			add_modifier = {
+				modifier = "relic_activation_cooldown"
+				days = @triumph_duration
+			}
+		}
+	}
+
+	# Possible check for activation
+	possible = {
+		inline_script = {
+			script = relics/activation_checks
+			RELIC = r_bts_relic_concept_energy
+		}
+	}
+}

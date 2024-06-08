@@ -7,6 +7,23 @@ situation_bts_conceptual_mastery = {
     # Unlock relic
 	on_progress_complete = {
 		hidden_effect = {
+            owner = {
+                if = {
+                    limit = {
+                        has_tradition = tr_concept_time_adopt
+                    }
+                    add_relic = r_bts_relic_concept_time
+                }
+                else_if = {
+                    limit = {
+                        has_tradition = tr_concept_space_adopt
+                    }
+                    add_relic = r_bts_relic_concept_space
+                }
+                else = {
+                    add_relic = r_bts_relic_concept_energy
+                }
+            }
 		}
         destroy_situation = this
         custom_tooltip = situation_bts_conceptual_mastery_outcome
