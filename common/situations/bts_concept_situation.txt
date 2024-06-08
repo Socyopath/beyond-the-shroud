@@ -1,0 +1,114 @@
+situation_bts_conceptual_mastery = {
+	category = neutral
+	picture = GFX_evt_machine_sapience
+	complete_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_ascension
+
+    # Unlock relic
+	on_progress_complete = {
+		# custom_tooltip = situation_transformation_outcome
+		# hidden_effect = {
+		# 	if = {
+        #         limit = {
+        #             has_tradition = tr_concept_time_adopt
+        #         }
+        #         # add relic
+        #     }
+        #     else_if = {
+        #         limit = {
+        #             has_tradition = tr_concept_space_adopt
+        #         }
+        #         # add relic
+        #     }
+        #     else = {
+        #         # add relic
+        #     }
+		# }
+        destroy_situation = this
+	}
+	stages = {
+        situation_bts_conceptual_mastery_1 = { 
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_blue
+            end = @situation_bts_conceptual_mastery_tree_unlock
+        }
+
+        # Unlock tradtition tree
+        situation_bts_conceptual_mastery_2 = { 
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_blue
+            end = @situation_bts_conceptual_mastery_perk1_unlock
+            on_first_enter = {
+                situation_event = { id = bts.20 }
+            }
+        }
+
+        # Unlock a tradtition tree perk point
+        situation_bts_conceptual_mastery_3 = { 
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_blue
+            end = @situation_bts_conceptual_mastery_perk2_unlock
+            on_first_enter = {
+                owner = {
+                    bts_add_spec_point = yes
+                }
+            }
+        }
+
+        # Unlock a tradtition tree perk point
+        situation_bts_conceptual_mastery_4 = { 
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_blue
+            end = @situation_bts_conceptual_mastery_perk3_unlock
+            on_first_enter = {
+                owner = {
+                    bts_add_spec_point = yes
+                }
+            }
+        }
+
+        # Unlock a tradtition tree perk point
+        situation_bts_conceptual_mastery_5 = { 
+			icon = GFX_situation_stage_5
+			icon_background = GFX_situation_stage_frame_blue
+            end = @situation_bts_conceptual_mastery_perk4_unlock
+            on_first_enter = {
+                owner = {
+                    bts_add_spec_point = yes
+                }
+            }
+        }
+
+        # Unlock a tradtition tree perk point
+        situation_bts_conceptual_mastery_6 = { 
+			icon = GFX_situation_stage_6
+			icon_background = GFX_situation_stage_frame_blue
+            end = @situation_bts_conceptual_mastery_perk5_unlock
+            on_first_enter = {
+                owner = {
+                    bts_add_spec_point = yes
+                }
+            }
+        }
+
+        # Unlock a tradtition tree perk point
+        situation_bts_conceptual_mastery_7 = { 
+			icon = GFX_situation_stage_7
+			icon_background = GFX_situation_stage_frame_blue
+            end = @situation_bts_conceptual_mastery_relic_unlock
+            on_first_enter = {
+                owner = {
+                    bts_add_spec_point = yes
+                }
+            }
+        }
+    }
+
+    monthly_progress = { 
+		base = 1
+		modifier = {
+			mult = owner.value:bts_num_conceptual_architects
+            desc = situation_doomclock_difficulty_modifier
+		}
+	}
+}

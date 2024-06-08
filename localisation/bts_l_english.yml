@@ -434,3 +434,22 @@ bts_conceptual_ship_already_use: "A conceptual ship is already in use"
 bts_conceptual_effect_cooldown: "Conceptual effect is on cooldown until §Y[this.bts_conceptual_effect_date]§!"
 
 mod_bts_relic_cooldown: "Relic Activation Cooldown"
+
+
+
+bts.20.name: "SPEC"
+bts.20.desc: "SPEC DESC"
+
+bts.20.time: "Time"
+bts.20.space: "Space"
+bts.20.energy: "Energy"
+
+situation_bts_conceptual_mastery: "Conceptual Mastery"
+situation_bts_conceptual_mastery_type: "TYPE BTS"
+situation_bts_conceptual_mastery_desc: "DESC BTS"
+situation_bts_conceptual_mastery_monthly_change_tooltip: "Monthly BTS"
+
+bts_req_spec_time: "$TRIGGER_FAIL$Choose §Y$bts.20.time$§! during §Y$situation_bts_conceptual_mastery$ situation§!"
+bts_req_spec_space: "$TRIGGER_FAIL$Choose §Y$bts.20.space$§! during §Y$situation_bts_conceptual_mastery$ situation§!"
+bts_req_spec_energy: "$TRIGGER_FAIL$Choose §Y$bts.20.energy$§! during §Y$situation_bts_conceptual_mastery$ situation§!"
+bts_req_spec_point: "$TRIGGER_FAIL$Progress through §Y$situation_bts_conceptual_mastery$ situation§! to unlock"

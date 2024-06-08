@@ -351,3 +351,38 @@ system_event = {
 	}
 }
 
+situation_event = { 
+	id = bts.20
+	title = "bts.20.name"
+	desc = "bts.20.desc"
+
+	picture = GFX_evt_surreal_visions
+	show_sound = event_mystic_reveal
+	situation = this
+	is_triggered_only = yes
+
+	option = {
+		name = "bts.20.time"
+
+		owner = {
+			add_tradition = tr_concept_time_adopt
+		}
+	}
+
+	option = {
+		name = "bts.20.space"
+
+		owner = {
+			add_tradition = tr_concept_space_adopt
+		}
+	}
+
+	option = {
+		name = "bts.20.energy"
+
+		owner = {
+			add_tradition = tr_concept_energy_adopt
+		}
+	}
+
+}

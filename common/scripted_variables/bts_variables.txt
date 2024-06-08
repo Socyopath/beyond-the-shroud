@@ -317,3 +317,12 @@
 @bts_concept_energy_3_energy_damage = 0.35
 @bts_conceptual_effect_energy_cooldown = 3600
 @bts_conceptual_effect_energy_duration = 360
+
+
+@situation_bts_conceptual_mastery_tree_unlock = 100
+@situation_bts_conceptual_mastery_perk1_unlock = 200
+@situation_bts_conceptual_mastery_perk2_unlock = 300
+@situation_bts_conceptual_mastery_perk3_unlock = 400
+@situation_bts_conceptual_mastery_perk4_unlock = 500
+@situation_bts_conceptual_mastery_perk5_unlock = 600
+@situation_bts_conceptual_mastery_relic_unlock = 700
