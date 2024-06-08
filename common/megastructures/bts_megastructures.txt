@@ -474,8 +474,15 @@ bts_labyrinth_of_abstraction_megastructure = {
 
                 remove_all_buildings = yes
                 add_building = bts_labyrinth_of_abstraction_core_1
-			}
-		}
+
+                owner = {
+                    start_situation = {
+                        type = situation_bts_conceptual_mastery
+                        target = prev
+                    }
+			    }
+		    }
+        }
 		remove_megastructure = fromfrom
 	}
 }
