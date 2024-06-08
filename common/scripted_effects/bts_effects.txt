@@ -133,3 +133,17 @@ bts_create_concept_ship = {
 		}
 	}
 }
+
+bts_add_spec_point = {
+	change_variable = {
+		which = bts_spec_point
+		value = 1
+	}
+}
+
+bts_remove_spec_point = {
+	subtract_variable  = {
+		which = bts_spec_point
+		value = 1
+	}
+}

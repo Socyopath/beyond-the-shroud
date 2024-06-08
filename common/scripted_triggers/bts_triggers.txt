@@ -151,3 +151,10 @@ can_destroy_planet_with_BTS_PLANET_KILLER_END = {
 		}
 	}
 }
+
+bts_have_spec_point = {
+	check_variable = {
+		which = bts_spec_point
+		value >= 1
+	}
+}
