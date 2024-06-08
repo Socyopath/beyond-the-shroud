@@ -79,32 +79,130 @@ planet_event = {
 country_event = {
 	id = bts.403
 	is_triggered_only = yes
-	hide_window = yes
 
-	immediate = {
+	title = "utopia.3000.name"
+	desc = "utopia.3000.16.desc"
+	diplomatic_title = BLANK_STRING
+	diplomatic = yes
+	force_open = yes
 
+	picture_event_data = {
+		portrait = shroud1
+		room = shroud_room
 	}
 
+	immediate = {
+		bts_event_target_list_clear = yes
+		every_country = {
+			limit = {
+				OR = {
+					count_owned_ship = {
+						count >= 1
+					}
+					count_system_within_border = {
+						count >= 1
+					}
+				}
+			}
+			bts_event_target_list_save = yes
+		}
+	}
+
+	inline_script = {
+		script = bts_option_list_hidden
+		ACTION = "add_modifier = { modifier = bts_time_dilation days = @r_bts_relic_concept_time_effect_duration }"
+	}
 }
+
+ 
 
 # Concept: Space
 country_event = {
 	id = bts.404
 	is_triggered_only = yes
-	hide_window = yes
+
+	title = "utopia.3000.name"
+	desc = "utopia.3000.16.desc"
+	diplomatic_title = BLANK_STRING
+	diplomatic = yes
+	force_open = yes
+
+	picture_event_data = {
+		portrait = shroud1
+		room = shroud_room
+	}
 
 	immediate = {
+		bts_event_target_list_clear = yes
+		every_country = {
+			limit = {
+				count_system_within_border = {
+					count >= 1
+				}
+			}
+			bts_event_target_list_save = yes
+		}
+	}
 
+	inline_script = {
+		script = bts_option_list_hidden
+		ACTION = "country_event = { id = bts.4040 }"
 	}
 }
 
-# Concept: Matter
+country_event = {
+	id = bts.4040
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		every_system_within_border = {
+			limit = {
+				any_neighbor_system = { 
+					NOT = { 
+						is_within_borders_of = root
+					} 
+				}
+			}
+			# This system at borders of target empire
+			every_neighbor_system = {
+				limit = { 
+					NOT = { 
+						is_within_borders_of = root
+					}  
+				}
+				remove_hyperlane = { from = prev to = this }
+				system_event = { 
+					id = bts.4041
+					days = @r_bts_relic_concept_space_effect_duration
+					scopes = { from = prev }
+				}
+			}
+		}
+	}
+}
+
+system_event = {
+	id = bts.4041
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		add_hyperlane = { 
+			from = FROM 
+			to = root 
+		}
+	}
+}
+
+# Concept: Energy
 country_event = {
 	id = bts.405
 	is_triggered_only = yes
 	hide_window = yes
 
 	immediate = {
-
+		add_modifier = { 
+			modifier = bts_energy_surge 
+			days = @r_bts_relic_concept_energy_effect_duration
+		}
 	}
 }
