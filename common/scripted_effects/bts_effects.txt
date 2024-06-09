@@ -147,3 +147,32 @@ bts_remove_spec_point = {
 		value = 1
 	}
 }
+
+# Scope = System
+bts_spawn_conceptual_system_effect = {
+	create_ambient_object = {
+		type = "bts_psionic_wave"
+		location = this
+		play_animation_once = yes
+	}
+	last_created_ambient_object = {
+		set_location = {
+			target = prev
+			distance = 0
+			angle = random
+		}
+	}
+	create_ambient_object = {
+		type = "bts_conceptual_system_effect"
+		location = this
+		[[DAYS] duration = $DAYS$ ]
+	}
+	last_created_ambient_object = {
+		set_location = {
+			target = prev
+			distance = 0
+			angle = random
+		}
+	}
+}
+

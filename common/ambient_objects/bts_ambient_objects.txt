@@ -25,3 +25,10 @@ ambient_object = {
 	selectable = no
 	show_name = no
 }
+
+ambient_object = {
+	name = "bts_conceptual_system_effect"
+	entity = "bts_conceptual_system_effect_entity"
+	selectable = no
+	show_name = no
+}

@@ -184,3 +184,26 @@ entity = {
 	
 	#scale = 0.9
 }
+
+
+entity = {
+	name = "bts_conceptual_system_effect_entity"
+	pdxmesh = "horizon_edge_system_effect_mesh"
+	erosion_in = 9
+	erosion_out = 3
+	locator = { name = "core" position = { 0 0 0 }}
+	
+	scale = 14
+	
+	default_state = "idle"
+	state = { 
+		name = "idle" 		
+		state_time = 5
+		# event = { time = 0 node = "core" particle = "horizon_black_hole_explosion" keep_particle = yes trigger_once = yes }
+	}	
+	game_data = {
+		bloom_factor			= 1.5
+		uv_animation_speed 		= 0.02
+		uv_animation_direction 	= { -0.2 1 }
+	}	
+}
