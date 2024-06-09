@@ -26,7 +26,7 @@ ship_design = {
 			template = "PSIONIC_BLAST_1"
 		}
 	}
-	required_component="COMBAT_COMPUTER_LINE_DEFAULT"
+	required_component="COMBAT_COMPUTER_SWARM_PRECOG"
 	required_component="SHIP_THRUSTER_1"
 	required_component="SENSOR_1"
 	required_component="PSI_JUMP_DRIVE_1"
@@ -72,7 +72,7 @@ ship_design = {
 			template = "bts_large_zroni_shield"
 		}
 	}
-	required_component="COMBAT_COMPUTER_LINE_DEFAULT"
+	required_component="COMBAT_COMPUTER_SWARM_PRECOG"
 	required_component="SHIP_THRUSTER_1"
 	required_component="SENSOR_1"
 	required_component="PSI_JUMP_DRIVE_1"
@@ -110,7 +110,7 @@ ship_design = {
 			template = "BTS_PLANET_KILLER_END"
 		}
 	}
-	required_component="COMBAT_COMPUTER_LINE_DEFAULT"
+	required_component="COMBAT_COMPUTER_SWARM_PRECOG"
 	required_component="SHIP_THRUSTER_1"
 	required_component="SENSOR_1"
 	required_component="PSI_JUMP_DRIVE_1"
@@ -160,7 +160,7 @@ ship_design = {
 			template = "bts_large_zroni_shield"
 		}
 	}
-	required_component="COMBAT_COMPUTER_LINE_DEFAULT"
+	required_component="COMBAT_COMPUTER_SWARM_PRECOG"
 	required_component="SHIP_THRUSTER_1"
 	required_component="SENSOR_1"
 	required_component="PSI_JUMP_DRIVE_1"
@@ -194,7 +194,7 @@ ship_design = {
 			template = "BTS_SHROUD_BLAST"
 		}
 	}
-	required_component="COMBAT_COMPUTER_LINE_DEFAULT"
+	required_component="COMBAT_COMPUTER_SWARM_PRECOG"
 	required_component="SHIP_THRUSTER_1"
 	required_component="SENSOR_1"
 	required_component="PSI_JUMP_DRIVE_1"
@@ -240,7 +240,7 @@ ship_design = {
 			template = "bts_large_zroni_shield"
 		}
 	}
-	required_component="COMBAT_COMPUTER_LINE_DEFAULT"
+	required_component="COMBAT_COMPUTER_SWARM_PRECOG"
 	required_component="SHIP_THRUSTER_1"
 	required_component="SENSOR_1"
 	required_component="PSI_JUMP_DRIVE_1"
