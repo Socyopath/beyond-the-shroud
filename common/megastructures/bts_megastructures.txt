@@ -478,7 +478,7 @@ bts_labyrinth_of_abstraction_megastructure = {
                 owner = {
                     country_event = {
                         id = bts.1001
-                        days = 1
+                        days = @bts_days_before_conceptual_mastery
                         scopes = {
                             from = prev
                         }

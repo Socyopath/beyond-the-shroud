@@ -319,6 +319,7 @@
 @bts_conceptual_effect_energy_duration = 360
 
 
+@bts_days_before_conceptual_mastery = 720
 @situation_bts_conceptual_mastery_tree_unlock = 1000
 @situation_bts_conceptual_mastery_perk1_unlock = 2500
 @situation_bts_conceptual_mastery_perk2_unlock = 4000
