@@ -7,107 +7,59 @@ situation_bts_conceptual_mastery = {
     # Unlock relic
 	on_progress_complete = {
 		hidden_effect = {
-            owner = {
-                if = {
-                    limit = {
-                        has_tradition = tr_concept_time_adopt
-                    }
-                    add_relic = r_bts_relic_concept_time
-                }
-                else_if = {
-                    limit = {
-                        has_tradition = tr_concept_space_adopt
-                    }
-                    add_relic = r_bts_relic_concept_space
-                }
-                else = {
-                    add_relic = r_bts_relic_concept_energy
-                }
-            }
+            situation_event = { id = bts.25 }
 		}
-        destroy_situation = this
         custom_tooltip = situation_bts_conceptual_mastery_outcome
 	}
 	stages = {
-        situation_bts_conceptual_mastery_1 = { 
+        # Init stage
+        situation_bts_conceptual_mastery_stage_init = { 
 			icon = GFX_situation_stage_1
 			icon_background = GFX_situation_stage_frame_blue
             end = @situation_bts_conceptual_mastery_tree_unlock
         }
 
-        # Unlock tradtition tree
-        situation_bts_conceptual_mastery_2 = { 
+        # Unlock the tradtition tree
+        situation_bts_conceptual_mastery_stage_tradition = { 
 			icon = GFX_situation_stage_2
 			icon_background = GFX_situation_stage_frame_blue
-            end = @situation_bts_conceptual_mastery_perk1_unlock
-            custom_tooltip = situation_bts_conceptual_mastery_2_effect
+            end = @situation_bts_conceptual_mastery_first_points_unlock
+            custom_tooltip = situation_bts_conceptual_mastery_stage_tradition_effect
             on_first_enter = {
-                situation_event = { id = bts.20 }
+                situation_event = { id = bts.21 }
             }
         }
 
-        # Unlock a tradtition tree perk point
-        situation_bts_conceptual_mastery_3 = { 
+        # Unlock two tradtition tree perk points
+        situation_bts_conceptual_mastery_stage_first_points = { 
 			icon = GFX_situation_stage_3
 			icon_background = GFX_situation_stage_frame_blue
-            end = @situation_bts_conceptual_mastery_perk2_unlock
+            end = @situation_bts_conceptual_mastery_second_points_unlock
             custom_tooltip = situation_bts_conceptual_mastery_add_point
             on_first_enter = {
-                owner = {
-                    bts_add_spec_point = yes
-                }
+                situation_event = { id = bts.22 }
             }
         }
 
-        # Unlock a tradtition tree perk point
-        situation_bts_conceptual_mastery_4 = { 
+        # Unlock two tradtition tree perk points
+        situation_bts_conceptual_mastery_stage_second_points = { 
 			icon = GFX_situation_stage_4
 			icon_background = GFX_situation_stage_frame_blue
-            end = @situation_bts_conceptual_mastery_perk3_unlock
+            end = @situation_bts_conceptual_mastery_last_point_unlock
             custom_tooltip = situation_bts_conceptual_mastery_add_point
             on_first_enter = {
-                owner = {
-                    bts_add_spec_point = yes
-                }
+                situation_event = { id = bts.23 }
             }
         }
 
-        # Unlock a tradtition tree perk point
-        situation_bts_conceptual_mastery_5 = { 
+        # Unlock the last tradtition tree perk point
+        situation_bts_conceptual_mastery_stage_last_point = { 
 			icon = GFX_situation_stage_5
-			icon_background = GFX_situation_stage_frame_blue
-            end = @situation_bts_conceptual_mastery_perk4_unlock
-            custom_tooltip = situation_bts_conceptual_mastery_add_point
-            on_first_enter = {
-                owner = {
-                    bts_add_spec_point = yes
-                }
-            }
-        }
-
-        # Unlock a tradtition tree perk point
-        situation_bts_conceptual_mastery_6 = { 
-			icon = GFX_situation_stage_6
-			icon_background = GFX_situation_stage_frame_blue
-            end = @situation_bts_conceptual_mastery_perk5_unlock
-            custom_tooltip = situation_bts_conceptual_mastery_add_point
-            on_first_enter = {
-                owner = {
-                    bts_add_spec_point = yes
-                }
-            }
-        }
-
-        # Unlock a tradtition tree perk point
-        situation_bts_conceptual_mastery_7 = { 
-			icon = GFX_situation_stage_7
 			icon_background = GFX_situation_stage_frame_blue
             end = @situation_bts_conceptual_mastery_relic_unlock
             custom_tooltip = situation_bts_conceptual_mastery_add_point
             on_first_enter = {
-                owner = {
-                    bts_add_spec_point = yes
-                }
+                situation_event = { id = bts.24 }
             }
         }
     }

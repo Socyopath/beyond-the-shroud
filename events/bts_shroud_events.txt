@@ -25,25 +25,6 @@ country_event = {
 	}
 }
 
-# Specialization situation
-country_event = { 
-	id = bts.1001
-	title = "bts.1001.title"
-	desc = "bts.1001.desc"
-	picture = GFX_evt_surreal_visions
-	show_sound = event_mystic_reveal
-	location = root
-	is_triggered_only = yes
-
-	option = {
-		name = bts.1001.ok
-		start_situation = {
-			type = situation_bts_conceptual_mastery
-			target = from
-		}
-	}
-}
-
 # The Shroud Lobby
 # FROM = Labyrinth of abstraction
 country_event = {

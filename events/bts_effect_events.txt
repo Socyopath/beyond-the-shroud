@@ -356,10 +356,31 @@ system_event = {
 	}
 }
 
-situation_event = { 
+
+# Conceptual Mastery: Discovery
+country_event = { 
 	id = bts.20
 	title = "bts.20.title"
 	desc = "bts.20.desc"
+	picture = GFX_evt_surreal_visions
+	show_sound = event_mystic_reveal
+	location = root
+	is_triggered_only = yes
+
+	option = {
+		name = bts.20.ok
+		start_situation = {
+			type = situation_bts_conceptual_mastery
+			target = from
+		}
+	}
+}
+
+# Conceptual Mastery: Specialization
+situation_event = { 
+	id = bts.21
+	title = "bts.21.title"
+	desc = "bts.21.desc"
 
 	picture = GFX_evt_surreal_visions
 	show_sound = event_mystic_reveal
@@ -367,27 +388,138 @@ situation_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "bts.20.time"
-
+		name = "bts.21.time"
 		owner = {
 			add_tradition = tr_concept_time_adopt
 		}
 	}
 
 	option = {
-		name = "bts.20.space"
-
+		name = "bts.21.space"
 		owner = {
 			add_tradition = tr_concept_space_adopt
 		}
 	}
 
 	option = {
-		name = "bts.20.energy"
-
+		name = "bts.21.energy"
 		owner = {
 			add_tradition = tr_concept_energy_adopt
 		}
 	}
+}
 
+# Conceptual Mastery: Experimentation
+situation_event = { 
+	id = bts.22
+	title = "bts.22.title"
+	desc = "bts.22.desc"
+
+	picture = GFX_evt_surreal_visions
+	show_sound = event_mystic_reveal
+	situation = this
+	is_triggered_only = yes
+
+	option = {
+		name = bts.22.ok
+		custom_tooltip = situation_bts_conceptual_mastery_add_point
+		hidden_effect = {
+			owner = {
+				bts_add_spec_point = yes
+				bts_add_spec_point = yes
+			}
+		}
+	}
+}
+
+# Conceptual Mastery: Implementation
+situation_event = { 
+	id = bts.23
+	title = "bts.23.title"
+	desc = "bts.23.desc"
+
+	picture = GFX_evt_surreal_visions
+	show_sound = event_mystic_reveal
+	situation = this
+	is_triggered_only = yes
+
+	option = {
+		name = bts.23.ok
+		custom_tooltip = situation_bts_conceptual_mastery_add_point
+		hidden_effect = {
+			owner = {
+				bts_add_spec_point = yes
+				bts_add_spec_point = yes
+			}
+		}
+	}
+}
+
+# Conceptual Mastery: Mastery
+situation_event = { 
+	id = bts.24
+	title = "bts.24.title"
+	desc = "bts.24.desc"
+
+	picture = GFX_evt_surreal_visions
+	show_sound = event_mystic_reveal
+	situation = this
+	is_triggered_only = yes
+
+	option = {
+		name = bts.24.ok
+		custom_tooltip = situation_bts_conceptual_mastery_add_point
+		hidden_effect = {
+			owner = {
+				bts_add_spec_point = yes
+			}
+		}
+	}
+}
+
+# Conceptual Mastery: Finished
+situation_event = { 
+	id = bts.25
+	title = "bts.25.title"
+	desc = "bts.25.desc"
+
+	picture = GFX_evt_surreal_visions
+	show_sound = event_mystic_reveal
+	situation = this
+	is_triggered_only = yes
+
+	option = {
+		name = bts.25.ok
+		trigger = {
+			owner = { has_tradition = tr_concept_time_adopt }
+		}
+		owner = {
+			add_relic = r_bts_relic_concept_time
+		}
+	}
+
+	option = {
+		name = bts.25.ok
+		trigger = {
+			owner = { has_tradition = tr_concept_space_adopt }
+		}
+		owner = {
+			add_relic = r_bts_relic_concept_space
+		}
+		
+	}
+
+	option = {
+		name = bts.25.ok
+		trigger = {
+			owner = { has_tradition = tr_concept_energy_adopt }
+		}
+		owner = {
+			add_relic = r_bts_relic_concept_energy
+		}
+	}
+
+	after = {
+		destroy_situation = this
+	}
 }
