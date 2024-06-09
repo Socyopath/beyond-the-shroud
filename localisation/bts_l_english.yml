@@ -447,9 +447,9 @@ bts.1001.ok: "Wake Up"
 
 situation_bts_conceptual_mastery: "Conceptual Mastery"
 situation_bts_conceptual_mastery_type: "$situation_bts_conceptual_mastery$"
-situation_bts_conceptual_mastery_desc: "Our $job_bts_conceptual_architect_plural$ have had strange visions of the origin of existence, at the moment when mind and matter meet. They try to understand them so they can rewrite the fundamental concepts of reality according to their thoughts."
-situation_bts_conceptual_mastery_monthly_change_tooltip: "Grants %Y+1§! monthly progress per §Y$job_bts_conceptual_architect$§!"
-situation_bts_conceptual_mastery_outcome: "Unlock a new §Yrelic§! according to the path you've chosen."
+situation_bts_conceptual_mastery_desc: "After the construction of the labyrinth, visions began to manifest themselves in our $job_bts_conceptual_architect_plural$, where a strange voice evoked a mysterious power linked to abstraction...\nWe'll be concentrating our research on exploring the shroud to find out more."
+situation_bts_conceptual_mastery_monthly_change_tooltip: "Grants §Y+1§! monthly progress per §Y$job_bts_conceptual_architect$§!"
+situation_bts_conceptual_mastery_outcome: "\nUnlock a new §Yrelic§! according to the path you've chosen."
 
 situation_bts_conceptual_mastery_1: "Discovery"
 situation_bts_conceptual_mastery_1_desc: "Our $job_bts_conceptual_architect_plural$ have deepened their research in the Shroud, discovering a profound link that allows them to manipulate the very fabric of reality. This new power, if properly harnessed, could redefine the future of our empire."
