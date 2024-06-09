@@ -4,7 +4,7 @@ option = {
     custom_tooltip = bts_conceptual_effect_$CONCEPT$_desc
 
     trigger = {
-        has_tradition = tr_concept_$CONCEPT$_adopt
+        has_tradition = tr_concept_$CONCEPT$_finish
     }
 
     allow = {
