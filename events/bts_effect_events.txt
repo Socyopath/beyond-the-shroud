@@ -187,13 +187,13 @@ ship_event = {
 			limit = {
 				has_ship_flag = bts_concept_time
 			}
-			root.fleet.solar_system = {
+			from = {
 				set_star_flag = bts_concept_time_frozen
 				every_ship_in_system = {
 					limit = {
 						NOT = { is_same_value = root }
 					}
-					ship_event = { id = bts.16 } # Freeze time
+					ship_event = { id = bts.16 scopes = { FROM = prev } } # Freeze time
 				}
 				system_event = { id = bts.17 days = @bts_conceptual_effect_time_duration } # Freeze time end
 			}
@@ -216,7 +216,7 @@ ship_event = {
 			every_bypass = {
 				limit = {
 					solar_system = {
-						is_same_value = root.fleet.solar_system
+						is_same_value = from
 					}
 				}
 				lock_bypass = {
@@ -237,15 +237,15 @@ ship_event = {
 			}
 		}
 		else = {
-			root.fleet.solar_system = {
+			from = {
 				root.owner = {
-					save_global_event_target_as = bts_concept_energy_nullify_caster@root.fleet.solar_system
+					save_global_event_target_as = bts_concept_energy_nullify_caster@root.from
 				}
 				every_ship_in_system = {
 					limit = {
 						NOT = { is_same_value = root }
 					}
-					ship_event = { id = bts.18 } # Nullify check
+					ship_event = { id = bts.18 scopes = { FROM = prev } } # Nullify check
 				}
 				system_event = { id = bts.19 days = @bts_conceptual_effect_time_duration } #  Nullify end
 			}
@@ -306,15 +306,15 @@ ship_event = {
 	trigger = {
 		OR = {
 			AND = {
-				exists = event_target:bts_concept_energy_nullify_caster@root.fleet.solar_system
-				event_target:bts_concept_energy_nullify_caster@root.fleet.solar_system = {
+				exists = event_target:bts_concept_energy_nullify_caster@from
+				event_target:bts_concept_energy_nullify_caster@from = {
 					is_hostile = root.owner
 				}
 				NOT = { has_modifier = bts_concept_energy_nullify }
 			}
 			AND = {
 				NOT = {
-					exists = event_target:bts_concept_energy_nullify_caster@root.fleet.solar_system
+					exists = event_target:bts_concept_energy_nullify_caster@from
 				}
 				has_modifier = bts_concept_energy_nullify
 			}
