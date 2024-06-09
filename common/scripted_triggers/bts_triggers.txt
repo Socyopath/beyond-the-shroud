@@ -82,6 +82,7 @@ can_destroy_planet_with_BTS_PLANET_KILLER_END = {
 			is_a_habitable_planet_megastructure = yes
 			is_planet_class = pc_ai
 		}
+		is_under_colonization = no
 	}
 	custom_tooltip = {
 		fail_text = is_shielded
@@ -99,17 +100,16 @@ can_destroy_planet_with_BTS_PLANET_KILLER_END = {
 			NOT = { has_country_flag = fotd_seperatist_country@from.owner }
 		}
 	}
-	custom_tooltip = {
-		#success_text = "is at war with player"
-		fail_text = is_not_hostile_or_primitive
+	custom_tooltip = { # Hostile or owned planets / pre ftl
+		fail_text = is_not_hostile_or_primitive 
 		OR = {
 			planet_is_hostile = yes
 			is_planet_class = pc_ai
-			AND = {
+			AND = { # Pre ftl
 				exists = owner
 				owner = { is_country_type = primitive }
 			}
-			AND = {
+			AND = { # Owned planets
 				exists = owner
 				owner = { is_same_value = from.owner }
 			}
