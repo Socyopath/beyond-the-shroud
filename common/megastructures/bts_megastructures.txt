@@ -380,6 +380,11 @@ bts_labyrinth_of_abstraction_megastructure = {
 
     potential = {
         has_country_flag = bts_labyrinth_of_abstraction_unlocked
+        NOT = {
+            any_planet_within_border = {
+                is_planet_class = pc_bts_labyrinth_of_abstraction
+            }
+        }
     }
 
 	possible = {
