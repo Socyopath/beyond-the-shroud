@@ -481,11 +481,18 @@ bts_labyrinth_of_abstraction_megastructure = {
                 add_building = bts_labyrinth_of_abstraction_core_1
                 
                 owner = {
-                    country_event = {
-                        id = bts.20
-                        days = @bts_days_before_conceptual_mastery
-                        scopes = {
-                            from = prev
+                    if = {
+                        limit = {
+                            NOT = {
+                                any_situation = { is_situation_type = situation_bts_conceptual_mastery }
+                            }
+                        }
+                        country_event = {
+                            id = bts.20
+                            days = @bts_days_before_conceptual_mastery
+                            scopes = {
+                                from = prev
+                            }
                         }
                     }
 			    }
