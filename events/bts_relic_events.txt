@@ -112,6 +112,14 @@ country_event = {
 		script = bts_option_list_hidden
 		ACTION = "add_modifier = { modifier = bts_time_dilation days = @r_bts_relic_concept_time_effect_duration }"
 	}
+
+	option = {
+		name = bts_option_cancel
+		default_hide_option = yes
+		hidden_effect = {
+			remove_modifier = relic_activation_cooldown
+		}
+	}
 }
 
  
@@ -147,6 +155,14 @@ country_event = {
 	inline_script = {
 		script = bts_option_list_hidden
 		ACTION = "country_event = { id = bts.4040 }"
+	}
+	
+	option = {
+		name = bts_option_cancel
+		default_hide_option = yes
+		hidden_effect = {
+			remove_modifier = relic_activation_cooldown
+		}
 	}
 }
 
