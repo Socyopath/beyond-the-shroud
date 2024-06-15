@@ -1,0 +1,10 @@
+# Modules
+@bts_shroud_destabilizer_build_time = 1080
+@bts_shroud_destabilizer_zro_cost = 15000
+@bts_shroud_destabilizer_zro_upkeep = 250
+@bts_shroud_destabilizer_evasion_mult = -0.85
+@bts_shroud_destabilizer_accuracy_mult = -0.50
+@bts_shroud_destabilizer_tracking_mult = -0.50
+@bts_shroud_destabilizer_speed_reduction = 0.50
+@bts_shroud_destabilizer_fire_rate_mult = -0.50
+
