@@ -404,13 +404,6 @@ bts_labyrinth_of_abstraction_megastructure = {
 				}
 			}
 		}
-        NOT = {
-            from = {
-                any_planet_within_border = {
-                    is_planet_class = pc_bts_labyrinth_of_abstraction
-                }
-            }
-        }
     }
 	placement_rules = {
 		planet_possible = {
