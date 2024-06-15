@@ -1,0 +1,294 @@
+﻿l_russian:
+
+# Laybrinth of Abstraction
+bts.1000.title: "$pc_bts_labyrinth_of_abstraction$"
+bts.1000.desc: "Our divinity offered us a vision in which we could see strange patterns for a §Ymegastructure§!.\n\n§PFORBIDDEN KNOWLEDGE : $pc_bts_labyrinth_of_abstraction$§!"
+
+bts.100.pop: "Create a §Yliving being§! of our own kind"
+bts.100.boon: "Choose §Yboon§! of the shroud"
+bts.100.powers: "Use §YAetherophasic Collapser§! powers"
+bts.100.effects: "Choose §Yspecial effect§! from the shroud"
+bts.100.effects.chosen: "Promote a leader to be a §YChosen One§!"
+bts.100.effects.steal: "Steal §Ytechnology§! from a Fallen Empire"
+
+decision_bts_labyrinth_of_abstraction_shroud_interraction: "Enter Shroud"
+decision_bts_labyrinth_of_abstraction_shroud_interraction_desc: ""
+decision_bts_labyrinth_of_abstraction_shroud_interraction_effects: "Ask your §Y$job_bts_conceptual_architect_plural$§! to commune with the shroud to alter the reality."
+
+pc_bts_labyrinth_of_abstraction: "Laybrinth of Abstraction"
+pc_bts_labyrinth_of_abstraction_desc: "An enigmatic construction that allows our telepaths to reach a higher state of consciousness, enabling them to influence the thoughts of other entities and rewrite reality thanks to their deep connection with the shroud."
+bts_labyrinth_of_abstraction_megastructure: "$pc_bts_labyrinth_of_abstraction$"
+bts_labyrinth_of_abstraction_megastructure_DESC: "Our telepaths' visions have revealed some kind of megastructure construction project which seems to provide access to forbidden knowledge about the true nature of consciousness..."
+bts_labyrinth_of_abstraction_megastructure_MEGASTRUCTURE_DETAILS: "$bts_labyrinth_of_abstraction_megastructure_DESC$"
+
+bts_labyrinth_of_abstraction_core_1: "$pc_bts_labyrinth_of_abstraction$ I"
+bts_labyrinth_of_abstraction_core_2: "$pc_bts_labyrinth_of_abstraction$ II"
+bts_labyrinth_of_abstraction_core_2_effects: "Monthly §YCovenant Favor§!: §G+$@bts_labyrinth_of_abstraction_favor_boost$§!"
+bts_labyrinth_of_abstraction_core_3: "$pc_bts_labyrinth_of_abstraction$ III"
+bts_labyrinth_of_abstraction_core_3_effects: "$bts_labyrinth_of_abstraction_core_2_effects$\nUnlock §Y$bts_shroud_portal_megastructure$§! megastructure"
+bts_labyrinth_of_abstraction_core_4: "$pc_bts_labyrinth_of_abstraction$ IV"
+bts_labyrinth_of_abstraction_core_4_effects: "$bts_labyrinth_of_abstraction_core_3_effects$\nUnlock §Y$r_bts_relic_shroud_nexus$§! relic"
+bts_labyrinth_of_abstraction_core_1_desc: "$pc_bts_labyrinth_of_abstraction_desc$"
+bts_labyrinth_of_abstraction_core_2_desc: "$pc_bts_labyrinth_of_abstraction_desc$"
+bts_labyrinth_of_abstraction_core_3_desc: "$pc_bts_labyrinth_of_abstraction_desc$"
+bts_labyrinth_of_abstraction_core_4_desc: "$pc_bts_labyrinth_of_abstraction_desc$"
+
+## Buildings
+bts_building_dimensional_converger: "Dimensional Converger"
+bts_building_dimensional_converger_desc: ""
+
+bts_building_greed_restrictor: "Greed Restrictor"
+bts_building_greed_restrictor_desc: ""
+
+bts_building_utopia_distiller: "Utopia Distiller"
+bts_building_utopia_distiller_desc: ""
+
+bts_building_arcanic_council: "Arcanic Council"
+bts_building_arcanic_council_desc: ""
+
+bts_building_divergence_regulator: "Divergence Regulator"
+bts_building_divergence_regulator_desc: ""
+
+bts_building_thoughts_stabilizer: "Thoughts Stabilizer"
+bts_building_thoughts_stabilizer_desc: ""
+
+bts_building_eternal_archive: "Eternal Archive"
+bts_building_eternal_archive_desc: ""
+
+bts_building_ethical_manipulator: "Ethical Manipulator"
+bts_building_ethical_manipulator_desc: ""
+
+## Districts
+bts_district_third_eye_observatory: "Third Eye Observatory"
+bts_district_influence_control_complex: "Influence Control Complex"
+bts_district_third_eye_observatory_plural: "Third Eye Observatories"
+bts_district_influence_control_complex_plural: "Influence Control Complexes"
+bts_district_third_eye_observatory_desc: ""
+bts_district_influence_control_complex_desc: ""
+bts_district_third_eye_observatory_effects: "Each district in this category adds the following bonuses to your $job_bts_conceptual_architect_plural$:\n- $MOD_ADD_BASE_COUNTRY_INTEL$: §G+$@bts_district_third_eye_observatory_intel$§!\n- $MOD_PLANET_SENSOR_RANGE_ADD$: §G+$@bts_district_third_eye_observatory_sensor_range$§!\n- $MOD_PLANET_HYPERLANE_RANGE_ADD$: §G+$@bts_district_third_eye_observatory_hyperlane_range$§!"
+bts_district_influence_control_complex_effects: "Each district in this category adds the following bonuses to your $job_bts_conceptual_architect_plural$:\n- $MOD_COUNTRY_TRUST_CAP_ADD$: §G+$@bts_district_influence_control_complex_trust_cap$§!\n- $MOD_COUNTRY_TRUST_GROWTH$: §G+$@bts_district_influence_control_complex_trust_growth_text|1*$%§!\n- $mod_country_base_influence_produces_add$: §G+$@bts_district_influence_control_complex_influence$§!"
+mod_pc_bts_labyrinth_of_abstraction_max_buildings_add: "Additional Building Slots"
+
+## Jobs
+job_bts_conceptual_architect: "Conceptual Architect"
+job_bts_conceptual_architect_plural: "Conceptual Architects"
+job_bts_conceptual_architect_desc: "A highly skilled telepath able to materialize certain concepts locally from his mind. He also excels in the art of controlling the thoughts of other entities."
+job_bts_conceptual_architect_effect_desc: "$job_bts_conceptual_architect_plural$ produce only unity by default, you need to specialize them by building districts on $pc_bts_labyrinth_of_abstraction$."
+mod_job_bts_conceptual_architect_add: "$job_bts_conceptual_architect$ Jobs"
+planet_bts_conceptual_architect: "$job_bts_conceptual_architect$ Jobs"
+
+
+# Bypass
+bts_shroud_portal_megastructure_MEGASTRUCTURE_DETAILS: "$bts_shroud_portal_megastructure_DESC$"
+bts_shroud_portal_megastructure: "Shroud Portal"
+bts_shroud_portal_megastructure_DESC: "Portal linking several locations in space. Any entity able to pass through it will be dematerialized in order to pass through the shroud, then rematerialized once on the other side."
+bts_shroud_portal_galactic_DESC: "This system contains a §Y$bts_shroud_portal_megastructure$§!"
+
+# Concepts
+## Tradition Concept: Space
+tradition_concept_space: "Concept: Space"
+tradition_concept_space_desc: "Space is simply a concept that we can shape to our will."
+
+tr_concept_space_adopt: "$tradition_concept_space$ Traditions"
+tr_concept_space_finish: "$tr_concept_space_adopt$ Finished"
+tr_concept_space_finish_effect: "Unlock the §Y$bts_conceptual_effect_space$§! power in the §Y$pc_bts_labyrinth_of_abstraction$§!\nAscension Perks Unlocked: §G+1§!"
+
+tr_concept_space_11: "Structural Expansion"
+tr_concept_space_11_effect: "$MOD_STARBASE_DEFENSE_PLATFORM_CAPACITY_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_11_defense_plat_cap|%1$§!\n$MOD_COUNTRY_STARBASE_CAPACITY_ADD$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_11_starbase_cap$§!"
+tr_concept_space_11_delayed: "Our $job_bts_conceptual_architect_plural$ are able to inflate space in a localized area to increase our defensive capabilities."
+
+tr_concept_space_12: "Phase-Shifting Fleet"
+tr_concept_space_12_effect: "$MOD_COUNTRY_NAVAL_CAP_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_12_naval_cap|%0$§!\n$MOD_COMMAND_LIMIT_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_12_fleet_cmd|%0$§!"
+tr_concept_space_12_delayed: "We manage to phase-shift part of our fleet to carry more ships at a time."
+
+tr_concept_space_21: "Dimensional Construction"
+tr_concept_space_21_effect: "$MOD_PLANET_MAX_BUILDINGS_ADD$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_21_building_slot$§!\n$MOD_PLANET_MAX_DISTRICTS_ADD$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_21_district_slot$§!\n$MOD_POP_HOUSING_USAGE_MULT$ $bts_tr_concept_jobs_msg$: §G$@bts_concept_space_21_housing_usage|%1$§!"
+tr_concept_space_21_delayed: "Our mastery of spatial dimensions enables us to optimize the use of space on our planets."
+
+tr_concept_space_22: "Gravitational Convergence"
+tr_concept_space_22_effect: "$MOD_COUNTRY_RESOURCE_MAX_ADD$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_22_max_storage|0$§!"
+tr_concept_space_22_delayed: "By manipulating the gravitational fields of nearby celestial bodies, we can create zones that concentrate and pull in valuable resources."
+
+tr_concept_space_3: "Hyperspace Distortion"
+tr_concept_space_3_delayed: "By folding space, we can cover vast interstellar distances in the blink of an eye."
+
+bts_conceptual_effect_space: "Dimensional Lock"
+bts_conceptual_effect_space_power: "$bts_conceptual_effect_power$§Y$bts_conceptual_effect_space$§!"
+bts_conceptual_effect_space_desc: "$bts_conceptual_ship_effect$§YLock all bypass§! in the system for §Y$@bts_conceptual_effect_space_duration|*0$§! days.\n\nCooldown: §Y$@bts_conceptual_effect_space_cooldown|0$§! days"
+
+## Tradition Concept: Time
+tradition_concept_time: "Concept: Time"
+tradition_concept_time_desc: "Past, present and future are concepts that no longer hold any secrets for us."
+
+tr_concept_time_adopt: "$tradition_concept_time$ Traditions"
+tr_concept_time_finish: "$tr_concept_time_adopt$ Finished"
+tr_concept_time_finish_effect: "Unlock the §Y$bts_conceptual_effect_time$§! power in the §Y$pc_bts_labyrinth_of_abstraction$§!\nAscension Perks Unlocked: §G+1§!"
+
+tr_concept_time_11: "Structural Acceleration"
+tr_concept_time_11_effect: "$MOD_STARBASE_SHIPYARD_BUILD_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_11_ship_build_speed|%0$§!\n$MOD_STARBASE_UPGRADE_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_11_starbase_upgrade_speed|%0$§!\n$MOD_STARBASE_MODULE_BUILD_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_11_starbase_module_build_speed|%0$§!"
+tr_concept_time_11_delayed: "By focusing their thoughts, $job_bts_conceptual_architect_plural$ can manipulate time to speed up ship and starbase constructions, assembling fleets at unmatched speeds. "
+
+tr_concept_time_12: "Planetary Timewarp"
+tr_concept_time_12_effect: "$MOD_COUNTRY_TERRAFORM_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_12_terraforming_speed|%0$§!\n$MOD_PLANET_COLONY_DEVELOPMENT_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_12_colony_dev_speed|%0$§!\n$MOD_PLANET_CLEAR_BLOCKER_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_12_clear_blocker_speed|%0$§!\n$MOD_PLANET_BUILDING_BUILD_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_12_planet_build_speed|%0$§!"
+tr_concept_time_12_delayed: "By manipulating time flows, physical processes are accelerated to rapidly terraform and develop planets, transforming their environment in record time. "
+
+tr_concept_time_21: "Predestined Governance"
+tr_concept_time_21_effect: "$MOD_COUNCIL_AGENDA_FINISHING_EFFECT_DURATION_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_21_agenda_duration|%0$§!\n$MOD_COUNCIL_AGENDA_PROGRESS_SPEED$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_21_agenda_speed|%0$§!\n$MOD_LEADER_SPECIES_EXP_GAIN$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_21_leader_xp_gain|%0$§!"
+tr_concept_time_21_delayed: "Our $job_bts_conceptual_architect_plural$ are able to foresee political outcomes and make swift decisions, ensuring timely and effective governance."
+
+tr_concept_time_22: "Temporal Visions"
+tr_concept_time_22_effect: "$MOD_INTEL_GAIN_SPEED$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_22_intel_speed|%0$§!\n$MOD_ESPIONAGE_OPERATION_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_22_operation_speed|%0$§!\n$MOD_SPY_NETWORK_DAILY_VALUE_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_22_spy_network_speed|%0$§!"
+tr_concept_time_22_delayed: "Infiltration operations no longer take as long, as we can observe our enemies' past and future to predict their movements."
+
+tr_concept_time_3: "Ancient Times"
+tr_concept_time_3_delayed: "We can sense the time accumulated by relics over time and exploit it to increase their frequency of use."
+
+bts_conceptual_effect_time: "Chronostasis"
+bts_conceptual_effect_time_power: "$bts_conceptual_effect_power$§Y$bts_conceptual_effect_time$§!"
+bts_conceptual_effect_time_desc: "$bts_conceptual_ship_effect$§YStops Time§! for §Rall ships§! in the system for §Y$@bts_conceptual_effect_time_duration|*0$§! days.\n\nCooldown: §Y$@bts_conceptual_effect_time_cooldown|0$§! days"
+
+## Tradition Concept: Energy
+tradition_concept_energy: "Concept: Energy"
+tradition_concept_energy_desc: "The concept of energy derives from a higher-level reading of the concept of matter."
+
+tr_concept_energy_adopt: "$tradition_concept_energy$ Traditions"
+tr_concept_energy_finish: "$tr_concept_energy_adopt$ Finished"
+tr_concept_energy_finish_effect: "Unlock the §Y$bts_conceptual_effect_energy$§! power in the §Y$pc_bts_labyrinth_of_abstraction$§!\nAscension Perks Unlocked: §G+1§!"
+
+tr_concept_energy_11: "Structural Optimization"
+tr_concept_energy_11_effect: "$mod_ships_upkeep_mult$ $bts_tr_concept_jobs_msg$: §G$@bts_concept_energy_11_ship_upkeep|%2$§!\n$mod_starbases_upkeep_mult$ $bts_tr_concept_jobs_msg$: §G$@bts_concept_energy_11_starbase_upkeep|%2$§!"
+tr_concept_energy_11_delayed: "We are able to modify the law of conservation of energy to our advantage, and thus significantly reduce the material requirements of spacecraft."
+
+tr_concept_energy_12: "Equivalence Drain"
+tr_concept_energy_12_effect: "$mod_station_gatherers_produces_mult$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_energy_12_mining_station_output|%0$§!\n$mod_station_researchers_produces_mult$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_energy_12_research_station_output|%0$§!"
+tr_concept_energy_12_delayed: "Our mastery of matter and energy enables us to drain energy from matter and vice versa."
+
+tr_concept_energy_21: "Energy Convergence"
+tr_concept_energy_21_effect: "$mod_planet_districts_upkeep_mult$ $bts_tr_concept_jobs_msg$: §G$@bts_concept_energy_21_district_upkeep|%1$§!\n$mod_planet_buildings_upkeep_mult$ $bts_tr_concept_jobs_msg$: §G$@bts_concept_energy_21_building_upkeep|%1$§!"
+tr_concept_energy_21_delayed: "All our planetary constructions now draw a part of their energy from our conceptual architects, limiting the losses caused by physical installations."
+
+tr_concept_energy_22: "Wave Function"
+tr_concept_energy_22_effect: "$mod_planet_jobs_upkeep_mult$ $bts_tr_concept_jobs_msg$: §G$@bts_concept_energy_22_job_upkeep|%1$§!\n$mod_planet_jobs_produces_mult$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_energy_22_job_output|%0$§!"
+tr_concept_energy_22_delayed: "We are able to influence probabilities at the quantum level, enabling our pops to synthesize materials more efficiently."
+
+tr_concept_energy_3: "Pure State Weapons"
+tr_concept_energy_3_delayed: "Energy can be used in its purest form, enhancing the power and efficiency of our energy-based weapons."
+
+
+## Conceptual Effect (Tradition Finished abilities)
+bts_conceptual_effect_energy: "Zero-Point Energy"
+bts_conceptual_effect_energy_power: "$bts_conceptual_effect_power$§Y$bts_conceptual_effect_energy$§!"
+bts_conceptual_effect_energy_desc: "$bts_conceptual_ship_effect$§YNullifies the shield§! of §Rall enemies§! in the system for §Y$@bts_conceptual_effect_energy_duration|*0$§! days.\n\nCooldown: §Y$@bts_conceptual_effect_energy_cooldown|0$§! days"
+
+bts_conceptual_effect_power: "Conceptual Effect: "
+bts_conceptual_ship_effect: "Summons a vessel that §Ytriggers§! the following effect when it §Yjumps into a system§!:\n"
+bts_conceptual_ship_already_use: "A conceptual ship is already in use"
+bts_conceptual_effect_cooldown: "Conceptual effect is on cooldown until §Y[this.bts_conceptual_effect_date]§!"
+
+
+## Situation
+### Stage 0
+situation_bts_conceptual_mastery: "Conceptual Mastery"
+situation_bts_conceptual_mastery_type: "$situation_bts_conceptual_mastery$"
+situation_bts_conceptual_mastery_desc: "After the construction of the labyrinth, visions began to manifest themselves in our $job_bts_conceptual_architect_plural$, where a strange voice evoked a mysterious power linked to abstraction...\nWe'll be concentrating our research on exploring the shroud to find out more."
+situation_bts_conceptual_mastery_monthly_change_tooltip: "Grants §Y+1§! monthly progress per §Y$job_bts_conceptual_architect$§!"
+situation_bts_conceptual_mastery_outcome: "Unlock a new §Yrelic§! according to the path you've chosen."
+situation_bts_conceptual_mastery_add_point: "Progress throught the §Ytradition tree§!"
+
+### Stage 1
+situation_bts_conceptual_mastery_stage_init: "Discovery"
+situation_bts_conceptual_mastery_stage_init_desc: "Our $job_bts_conceptual_architect_plural$ have deepened their research in the Shroud, discovering a profound link that allows them to manipulate the very fabric of reality. This new power, if properly harnessed, could redefine the future of our empire."
+bts.20.title: "$situation_bts_conceptual_mastery$: A strange dream"
+bts.20.desc: "$bts.20.desc.0$\n\n$bts.20.desc.1$\n\n$bts.20.desc.2$\n\n$bts.20.desc.3$\n\n$bts.20.desc.4$"
+bts.20.desc.0: "§RWield the brush like an artist.§!"
+bts.20.desc.1: "Who... Who's there?"
+bts.20.desc.2: "§RIn its depths lie the secrets of reality, waiting to be revealed by those brave enough to look beyond.§!"
+bts.20.desc.3: "The secrets of reality ? What depths ?"
+bts.20.desc.4: "§RA canvas on which to paint wonders beyond imagination.\nAbstraction is the key to everything...§!"
+bts.20.ok: "Wake Up"
+
+### Stage 2
+situation_bts_conceptual_mastery_stage_tradition: "Specialization"
+situation_bts_conceptual_mastery_stage_tradition_desc: "By harnessing the Shroud's energies, our $job_bts_conceptual_architect_plural$ can now specialize in shaping reality by rewriting its most fundamental concepts."
+situation_bts_conceptual_mastery_stage_tradition_effect: "Unlock a new §Ytradition tree§!"
+bts.21.title: "$situation_bts_conceptual_mastery$ : $situation_bts_conceptual_mastery_stage_init$"
+bts.21.desc: "$bts.21.desc.0$\n\n$bts.21.desc.1$\n\n$bts.21.desc.2$\n\n$bts.21.desc.3$"
+bts.21.desc.0: "§RThe boundary between abstraction and reality can be very weak\nThink carefully about your words...§!"
+bts.21.desc.1: "When...\n\n§RA river that flows linearly through your perception, from which the concepts 'before' and 'after' are derived.§!"
+bts.21.desc.2: "Where...\n\n§RA canvas on which physical existence is based, from which the concepts 'near' and 'far' are derived.§!"
+bts.21.desc.3: "What...\n\n§RIn the beginning, it was there, sleeping in the void in its purest form, from which the concepts of 'force' and 'matter' are derived.§!"
+bts.21.time: "Time"
+bts.21.space: "Space"
+bts.21.energy: "Energy"
+
+### Stage 3
+situation_bts_conceptual_mastery_stage_first_points: "Experimentation"
+situation_bts_conceptual_mastery_stage_first_points_desc: "Our $job_bts_conceptual_architect_plural$ have begun their first experiments in shaping reality, and the initial results are promising."
+bts.22.title: "$situation_bts_conceptual_mastery$ : $situation_bts_conceptual_mastery_stage_first_points$"
+bts.22.desc: "$bts.22.desc.0$\n\n$bts.22.desc.1$\n\n$bts.22.desc.2$\n\n$bts.22.desc.3$"
+bts.22.desc.0: "§RSAY NOTHING, THINK OF NOTHING.\n\n§!..."
+bts.22.desc.1: "§RLet your mind be a quiet lake, sheltered from the winds of thought.\n\n§!..."
+bts.22.desc.2: "§REmbrace the void. A simple idea can grow and disturb the balance of existence.\n\n§!..."
+bts.22.desc.3: "§RThoughts are powerful, they can manifest and shape reality, but they can also crush it under their weight.§!"
+bts.22.ok: "..."
+
+### Stage 4
+situation_bts_conceptual_mastery_stage_second_points: "Implementation"
+situation_bts_conceptual_mastery_stage_second_points_desc: "The first applications of reality shaping are now effective within our empire, and our link with the shroud grows stronger every day."
+bts.23.title: "$situation_bts_conceptual_mastery$ : $situation_bts_conceptual_mastery_stage_second_points$"
+bts.23.desc: "$bts.23.desc.0$\n\n$bts.23.desc.1$\n\n$bts.23.desc.2$"
+bts.23.desc.0: "§RNot yet, keep increasing your capacity for abstraction.\n\n§!..."
+bts.23.desc.1: "§RYour changes are felt throughout your empire.\n\n§!..."
+bts.23.desc.2: "§RSome will oppose it, but they will be forced to accept this reality.§!"
+bts.23.ok: "..."
+
+### Stage 5
+situation_bts_conceptual_mastery_stage_last_point: "Mastery"
+situation_bts_conceptual_mastery_stage_last_point_desc: "The absolute abstraction of reality is within reach. The physical universe holds no secrets for our $job_bts_conceptual_architect_plural$, who play with the laws of physics as if they were in a sandbox."
+bts.24.title: "$situation_bts_conceptual_mastery$ : $situation_bts_conceptual_mastery_stage_last_point$"
+bts.24.desc: "$bts.24.desc.0$\n\n$bts.24.desc.1$\n\n$bts.24.desc.2$"
+bts.24.desc.0: "§RWe appreciate your devotion to alter reality.\n\n§!..."
+bts.24.desc.1: "§RYou seem to understand the power of abstraction.\n\n§!..."
+bts.24.desc.2: "§RSilence is necessary until you have achieved absolute mastery over your thoughts.§!"
+bts.24.ok: "..."
+
+### Final stage
+bts.25.title: "$situation_bts_conceptual_mastery$: Abstraction"
+bts.25.desc: "$bts.25.desc.0$\n\n$bts.25.desc.1$\n\n$bts.25.desc.2$"
+bts.25.desc.0: "§RThis is the end of the labyrinth. What do you have to say ?\n\n§!SILENCE"
+bts.25.desc.1: "§R...\n\n§!An abstract object that contains a fundamental concept of the universe."
+bts.25.desc.2: "§R...\n\n§!May this word rewrite reality."
+bts.25.ok.0: "WHEN"
+bts.25.ok.1: "WHERE"
+bts.25.ok.2: "WHAT"
+
+# Relics
+r_bts_relic_shroud_nexus: "Shroud Nexus"
+r_bts_relic_shroud_nexus_desc: "All our §Y$job_bts_conceptual_architect_plural$§! manage to establish a link between each of our ships."
+r_bts_relic_shroud_nexus_active: "A §Y$bts_shroud_portal_megastructure$§! will appear next to your fleets for §Y$@bts_shroud_portal_expiration_days|*0$ days§!"
+r_bts_relic_shroud_nexus_needed_level: "$TRIGGER_FAIL$$pc_bts_labyrinth_of_abstraction$ level §Ygreater or equal than $@bts_labyrinth_of_abstraction_relic_level|*0$§! is required"
+
+r_bts_relic_concept_time: "Conceptual Cube: Time"
+r_bts_relic_concept_time_desc: ""
+r_bts_relic_concept_time_active: "Apply the §Yfollowing modifiers§! to the §Ytarget empire§! for §Y$@r_bts_relic_concept_time_effect_duration|*0$§! days:\n- $r_bts_relic_concept_time_active.0$\n- $r_bts_relic_concept_time_active.1$"
+r_bts_relic_concept_time_active.0: "$MOD_SHIP_SPEED_REDUCTION$: §R-$@r_bts_relic_concept_time_effect_speed_reduction|%0$§!"
+r_bts_relic_concept_time_active.1: "$MOD_SHIP_FIRE_RATE_MULT$: §R$@r_bts_relic_concept_time_effect_fire_rate|%0$§!"
+
+r_bts_relic_concept_space: "Conceptual Cube: Space"
+r_bts_relic_concept_space_desc: ""
+r_bts_relic_concept_space_active: "Removes an §Yempire border hyperlanes§! for §Y$@r_bts_relic_concept_space_effect_duration|*0$§! days"
+
+r_bts_relic_concept_energy: "Conceptual Cube: Energy"
+r_bts_relic_concept_energy_desc: ""
+r_bts_relic_concept_energy_active: "Apply the §Yfollowing modifiers§! to §Yyour empire§! for §Y$@r_bts_relic_concept_energy_effect_duration|*0$§! days:\n- $r_bts_relic_concept_energy_active.0$"
+r_bts_relic_concept_energy_active.0: "$MOD_SHIP_SHIELD_PENETRATION_ADD$: §G+$@r_bts_relic_concept_energy_effect_shield_penetration|%0$§!"
+
+# Modifiers
+mod_bts_relic_cooldown: "Relic Activation Cooldown"
+
+# UI Text
+bts_tr_concept_jobs_msg: "by §Y$job_bts_conceptual_architect$§!"
+bts_req_spec_time: "$TRIGGER_FAIL$Choose §Y$bts.21.time$§! during §Y$situation_bts_conceptual_mastery$§! Situation"
+bts_req_spec_space: "$TRIGGER_FAIL$Choose §Y$bts.21.space$§! during §Y$situation_bts_conceptual_mastery$§! Situation"
+bts_req_spec_energy: "$TRIGGER_FAIL$Choose §Y$bts.21.energy$§! during §Y$situation_bts_conceptual_mastery$§! Situation"
+bts_req_spec_point: "$TRIGGER_FAIL$Progress through §Y$situation_bts_conceptual_mastery$§! Situation to unlock"

@@ -1,0 +1,38 @@
+﻿l_english:
+
+# Decisions
+decision_bts_zroni_astral_spliting: "Archaeo-Spliting"
+decision_bts_zroni_astral_spliting_desc: "We've learned from ancient knowledge how to open this rip in space and time, but we don't know what's going to happen next."
+
+# Tradition
+tradition_astral_studies: "Astral Studies"
+tradition_astral_studies_desc: "We've sensed the presence of immeasurable power within these rifts in space and time, and we need to know more about them."
+
+tr_astral_studies_adopt: "$tradition_astral_studies$ Traditions"
+
+tr_astral_studies_finish: "$tr_astral_studies_adopt$ Finished"
+tr_astral_studies_finish_desc: "Unlock the astral scar decision §Y$decision_bts_zroni_astral_spliting$§! (§RONLY ONE USE§!)\nAscension Perks Unlocked: §G+1§!"
+
+tr_astral_studies_rift_analyser: "Rift Analyser"
+tr_astral_studies_rift_analyser_delayed: "As our analysis progresses, we have a better understanding of the energy flowing through these rifts."
+
+tr_astral_studies_astral_excavators: "Astral Excavators"
+tr_astral_studies_astral_excavators_delayed: "Our excavation techniques reach a cosmic level, enabling us to extract information from rifts at an extraordinary speed."
+
+tr_astral_studies_quantum_storage: "Quantum Storage"
+tr_astral_studies_quantum_storage_delayed: "We can compress the fabric of space-time like never before, increasing our storage capacity."
+
+tr_astral_studies_causality_reverser: "Causality Reverser"
+tr_astral_studies_causality_reverser_delayed: "We've discovered that the timelines of other realities beyond these rifts can be synchronized with our own to influence the past."
+
+tr_astral_studies_rift_collapser: "Rift Collapser"
+tr_astral_studies_rift_collapser_delayed: "Every time we draw energy from the rift, we make it collapse slightly in on itself to limit energy losses."
+
+# Modifiers
+bts_astral_action_cost: "Astral Actions Cost"
+mod_bts_astral_action_cost: "$bts_astral_action_cost$"
+bts_astral_rift_spawn_mult: "Chance for [ 'concept_astral_rift', $ASTRAL_RIFTS$ ] to appear in systems you control:"
+mod_bts_astral_rift_spawn_mult: "$bts_astral_rift_spawn_mult$"
+
+# UI Text
+bts_no_astral_rift_scar_in_system: "$TRIGGER_FAIL$An §YAstral Rift§! or §YAstral Scar§! must be present in an owned system"
