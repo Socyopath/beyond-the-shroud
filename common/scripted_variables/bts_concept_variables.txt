@@ -35,7 +35,7 @@
 @bts_conceptual_effect_space_duration = 360
 
 # Energy
-@bts_concept_energy_adopt_shield_regen = 0.10
+@bts_concept_energy_adopt_shield = 0.15
 @bts_concept_energy_11_ship_upkeep = -0.0075
 @bts_concept_energy_11_starbase_upkeep = -0.0075
 @bts_concept_energy_12_mining_station_output = 0.01
