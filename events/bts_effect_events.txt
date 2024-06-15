@@ -489,7 +489,7 @@ situation_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = bts.25.ok
+		name = bts.25.ok.0
 		trigger = {
 			owner = { has_tradition = tr_concept_time_adopt }
 		}
@@ -499,7 +499,7 @@ situation_event = {
 	}
 
 	option = {
-		name = bts.25.ok
+		name = bts.25.ok.1
 		trigger = {
 			owner = { has_tradition = tr_concept_space_adopt }
 		}
@@ -510,7 +510,7 @@ situation_event = {
 	}
 
 	option = {
-		name = bts.25.ok
+		name = bts.25.ok.2
 		trigger = {
 			owner = { has_tradition = tr_concept_energy_adopt }
 		}
