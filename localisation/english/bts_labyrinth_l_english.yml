@@ -265,7 +265,7 @@ bts.25.ok.2: "WHAT"
 # Relics
 r_bts_relic_shroud_nexus: "Shroud Nexus"
 r_bts_relic_shroud_nexus_desc: "All our §Y$job_bts_conceptual_architect_plural$§! manage to establish a link between each of our ships."
-r_bts_relic_shroud_nexus_active: "A §Y$bts_shroud_portal_megastructure$§! will appear next to your fleets for §Y$@bts_shroud_portal_expiration_days|*0$ days§!"
+r_bts_relic_shroud_nexus_active: "A §Y$bts_shroud_portal_megastructure$§! will appear next to your fleets for §Y$@bts_shroud_portal_expiration_days|*0$§! days"
 r_bts_relic_shroud_nexus_needed_level: "$TRIGGER_FAIL$$pc_bts_labyrinth_of_abstraction$ level §Ygreater or equal than $@bts_labyrinth_of_abstraction_relic_level|*0$§! is required"
 
 r_bts_relic_concept_time: "Conceptual Cube: Time"
