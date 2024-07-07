@@ -3,7 +3,7 @@
 
 r_bts_relic_concept_time = {
 	activation_duration = @triumph_duration
-	portrait = "GFX_relic_rubricator"
+	portrait = "GFX_relic_bts_relic_concept_time"
 	sound = "par_ui_keides_relic"
 
 
@@ -48,7 +48,7 @@ r_bts_relic_concept_time = {
 
 r_bts_relic_concept_space = {
 	activation_duration = @triumph_duration
-	portrait = "GFX_relic_rubricator"
+	portrait = "GFX_relic_bts_relic_concept_space"
 	sound = "par_ui_keides_relic"
 
 
@@ -93,7 +93,7 @@ r_bts_relic_concept_space = {
 
 r_bts_relic_concept_energy = {
 	activation_duration = @triumph_duration
-	portrait = "GFX_relic_rubricator"
+	portrait = "GFX_relic_bts_relic_concept_energy"
 	sound = "par_ui_keides_relic"
 
 

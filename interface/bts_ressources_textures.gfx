@@ -86,6 +86,24 @@ spriteTypes = {
 		name = "GFX_tr_concept_time_3"
 		textureFile = "gfx/interface/icons/traditions/tr_concept_time_3.dds"
 	}
+	spriteType = {
+		name = "GFX_relic_bts_relic_concept_time"
+		texturefile = "gfx/interface/icons/relics/r_bts_relic_concept_time.dds"			
+		effectFile = "gfx/FX/buttonstate.shader"
+		animation = {
+			animationmaskfile = "gfx/interface/icons/relics/r_bts_relic_concept_time_shine.dds"			
+			animationtexturefile = "gfx/interface/icons/relics/crystal_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 5
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "pulsing"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
 
 	# Concept: Space
 	spriteType = {
@@ -126,6 +144,24 @@ spriteTypes = {
 		name = "GFX_tr_concept_space_3"
 		textureFile = "gfx/interface/icons/traditions/tr_concept_space_3.dds"
 	}
+	spriteType = {
+		name = "GFX_relic_bts_relic_concept_space"
+		texturefile = "gfx/interface/icons/relics/r_bts_relic_concept_space.dds"			
+		effectFile = "gfx/FX/buttonstate.shader"
+		animation = {
+			animationmaskfile = "gfx/interface/icons/relics/r_bts_relic_concept_space_shine.dds"			
+			animationtexturefile = "gfx/interface/icons/relics/crystal_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 5
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "pulsing"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
 
 	# Concept: Energy
 	spriteType = {
@@ -165,6 +201,24 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_tr_concept_energy_3"
 		textureFile = "gfx/interface/icons/traditions/tr_concept_energy_3.dds"
+	}
+	spriteType = {
+		name = "GFX_relic_bts_relic_concept_energy"
+		texturefile = "gfx/interface/icons/relics/r_bts_relic_concept_energy.dds"			
+		effectFile = "gfx/FX/buttonstate.shader"
+		animation = {
+			animationmaskfile = "gfx/interface/icons/relics/r_bts_relic_concept_energy_shine.dds"			
+			animationtexturefile = "gfx/interface/icons/relics/crystal_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 5
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "pulsing"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
 	}
 
 	# Components
