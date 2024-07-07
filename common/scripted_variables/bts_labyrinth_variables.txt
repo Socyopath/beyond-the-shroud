@@ -6,13 +6,13 @@
 @bts_labyrinth_of_abstraction_megastructure_cost_energy = 2000
 
 @bts_labyrinth_shroud_inter_unlock_level = 1
-@bts_labyrinth_shroud_inter_pop_cooldown = 1080
+@bts_labyrinth_shroud_inter_pop_cooldown = 1800
 
 @bts_labyrinth_shroud_inter_choose_boon_unlock_level = 2
 @bts_labyrinth_shroud_inter_choose_boon_favor_cost_low = 50
 @bts_labyrinth_shroud_inter_choose_boon_favor_cost_medium = 75
 @bts_labyrinth_shroud_inter_choose_boon_favor_cost_high = 100
-@bts_labyrinth_shroud_inter_choose_boon_cooldown = 2520
+@bts_labyrinth_shroud_inter_choose_boon_cooldown = 3600
 
 @bts_labyrinth_shroud_inter_mega_powers_unlock_level = 3
 
@@ -21,7 +21,7 @@
 
 @bts_labyrinth_shroud_inter_choose_effect_unlock_level = 4
 @bts_labyrinth_shroud_inter_choose_effect_favor_cost = 250
-@bts_labyrinth_shroud_inter_choose_effect_cooldown = 2880
+@bts_labyrinth_shroud_inter_choose_effect_cooldown = 5400
 
 ## Capital
 @bts_conceptual_architect_unity = 12
@@ -77,22 +77,25 @@
 @bts_labyrinth_of_abstraction_building_cost_sr = 200
 @bts_labyrinth_of_abstraction_building_cost = 1200
 @bts_labyrinth_of_abstraction_building_time = 720
-### Arcanic Council
-@bts_building_arcanic_council_research_speed = 0.15
 ### Dimensional Converger
 @bts_building_dimensional_converger_shroud_cooldown = -0.05
-### Divergence Regulator
-@bts_building_divergence_regulator_crime = -0.15
-### Eternal Archive
-@bts_building_eternal_archive_leader_skill = 1
-@bts_building_eternal_archive_leader_lifespan = 15
-### Ethical Manipulator
-@bts_building_ethical_manipulator_ethics_shift = 0.25
-@bts_building_ethical_manipulator_ethic_attraction = 0.25
 ### Greed Restrictor
 @bts_building_greed_restrictor_amenities_usage = -0.10
-### Thoughts Stabilizer
-@bts_building_thoughts_stabilizer_empire_size_pops = -0.20
-### Utopia DIstiller
+### Utopia Distiller
 @bts_building_utopia_distiller_happiness = 0.05
+### Arcanic Council
+@bts_building_arcanic_council_research_speed = 0.05
+### Divergence Regulator
+@bts_building_divergence_regulator_crime = -0.10
+### Thoughts Stabilizer
+@bts_building_thoughts_stabilizer_empire_size_pops = -0.125
+### Eternal Archive
+@bts_building_eternal_archive_leader_skill = 0.5
+@bts_building_eternal_archive_leader_lifespan = 5
+### Ethical Manipulator
+@bts_building_ethical_manipulator_ethics_shift = 0.15
+@bts_building_ethical_manipulator_ethic_attraction = 0.20
+
+
+
 
