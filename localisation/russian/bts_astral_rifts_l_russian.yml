@@ -1,38 +1,38 @@
-﻿l_english:
-
-# Decisions
-decision_bts_zroni_astral_spliting: "Архео-Расщепление" 
-decision_bts_zroni_astral_spliting_desc: "Из древних знаний мы узнали, как открыть эту брешь в пространстве и времени, но мы не знаем, что произойдет дальше."  
-
-# Tradition 
-tradition_astral_studies: "Астральные исследования"  
-tradition_astral_studies_desc: "Мы почувствовали присутствие неизмеримой силы в этих разломах пространства и времени, и нам нужно узнать о них больше." 
-
-tr_astral_studies_adopt: "$tradition_astral_studies$ Традиции" 
-
-tr_astral_studies_finish: "$tr_astral_studies_adopt$ Готово"  
-tr_astral_studies_finish_desc: "Разблокируйте §Yрешение $decision_bts_zroni_astral_spliting$§! (§RМОЖНО ИСПОЛЬЗОВАТЬ ТОЛЬКО ОДИН РАЗ§!), которое может быть использовано для преобразования §Yзведного рубца§! в §Yастральный разлом§!.\nРазблокированы перк возвышения: §G+1§!"
-
-tr_astral_studies_rift_analyser: "Анализатор разломов"  
-tr_astral_studies_rift_analyser_delayed: "По мере продвижения нашего анализа мы все лучше понимаем энергию, текущую через эти трещины."  
-
-tr_astral_studies_astral_excavators: "Астральные экскаваторы"  
-tr_astral_studies_astral_excavators_delayed: "Наши методы раскопок достигают космического уровня, позволяя нам извлекать информацию из разломов с невероятной скоростью."  
-
-tr_astral_studies_quantum_storage: "Квантовое хранилище" 
-tr_astral_studies_quantum_storage_delayed: "Мы можем сжимать ткань пространства-времени так, как никогда раньше, увеличивая объем наших хранилищ."  
-
-tr_astral_studies_causality_reverser: "Преобразователь причинно-следственной связи"  
-tr_astral_studies_causality_reverser_delayed: "Мы обнаружили, что временные линии других реальностей за пределами этих разломов могут быть синхронизированы с нашей собственной, чтобы влиять на прошлое."  
-
-tr_astral_studies_rift_collapser: "Разрушитель разлома" 
-tr_astral_studies_rift_collapser_delayed: "Каждый раз, когда мы черпаем энергию из разлома, мы заставляем его слегка сжиматься, чтобы ограничить потери энергии." 
-
-# Modifiers
-bts_astral_action_cost: "Стоимость астральных действий" 
-mod_bts_astral_action_cost: "$bts_astral_action_cost$" 
-bts_astral_rift_spawn_mult: "Шанс появления [ 'concept_astral_rift', $ASTRAL_RIFTS$ ] в системах, которые вы контролируете:"
-mod_bts_astral_rift_spawn_mult: "$bts_astral_rift_spawn_mult$" 
-
-# UI Text
-bts_no_astral_rift_scar_in_system: "$TRIGGER_FAIL$В принадлежащей системе должен присутствовать §Yастральный разлом§! или §Yастральный рубец§!"  
+﻿l_russian:
+  
+ # Decisions 
+ decision_bts_zroni_astral_spliting: "Архео-Расщепление"
+ decision_bts_zroni_astral_spliting_desc: "Из древних знаний мы узнали, как открыть эту брешь в пространстве и времени, но мы не знаем, что произойдет дальше."
+  
+ # Tradition 
+ tradition_astral_studies: "Астральные исследования"
+ tradition_astral_studies_desc: "Мы почувствовали присутствие неизмеримой силы в этих разломах пространства и времени, и нам нужно узнать о них больше."
+  
+ tr_astral_studies_adopt: "$tradition_astral_studies$ Традиции"
+  
+ tr_astral_studies_finish: "$tr_astral_studies_adopt$ Готово"
+ tr_astral_studies_finish_desc: "Разблокируйте решение астрального шрама §Y$decision_bts_zroni_astral_spliting$§! (§RТОЛЬКО ОДНО ИСПОЛЬЗОВАНИЕ§!)\nРазблокировка перков вознесения: §G+1§!"
+  
+ tr_astral_studies_rift_analyser: "Анализатор разломов"
+ tr_astral_studies_rift_analyser_delayed: "По мере продвижения нашего анализа мы все лучше понимаем энергию, текущую через эти трещины."
+  
+ tr_astral_studies_astral_excavators: "Астральные экскаваторы"
+ tr_astral_studies_astral_excavators_delayed: "Наши методы раскопок достигают космического уровня, позволяя нам извлекать информацию из разломов с невероятной скоростью."
+  
+ tr_astral_studies_quantum_storage: "Квантовое хранилище"
+ tr_astral_studies_quantum_storage_delayed: "Мы можем сжимать ткань пространства-времени так, как никогда раньше, увеличивая объем наших хранилищ."
+  
+ tr_astral_studies_causality_reverser: "Преобразователь причинно-следственной связи"
+ tr_astral_studies_causality_reverser_delayed: "Мы обнаружили, что временные линии других реальностей за пределами этих разломов могут быть синхронизированы с нашей собственной, чтобы влиять на прошлое."
+  
+ tr_astral_studies_rift_collapser: "Разрушитель разлома"
+ tr_astral_studies_rift_collapser_delayed: "Каждый раз, когда мы черпаем энергию из разлома, мы заставляем его слегка сжиматься, чтобы ограничить потери энергии."
+  
+ # Modifiers 
+ bts_astral_action_cost: "Стоимость астральных действий"
+ mod_bts_astral_action_cost: "$bts_astral_action_cost$"
+ bts_astral_rift_spawn_mult: "Шанс появления [ 'concept_astral_rift', $ASTRAL_RIFTS$ ] в системах, которые вы контролируете:"
+ mod_bts_astral_rift_spawn_mult: "$bts_astral_rift_spawn_mult$"
+  
+ # UI Text 
+ bts_no_astral_rift_scar_in_system: "$TRIGGER_FAIL$В принадлежащей системе должен присутствовать §Yастральный разлом§! или §Yастральный рубец§!"
