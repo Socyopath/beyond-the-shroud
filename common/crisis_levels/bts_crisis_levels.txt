@@ -1,0 +1,96 @@
+# CRISIS LEVELS
+# Levels can be unlocked in the order they are written in this file. A later listed level with lower requirements will not be unlocked until the previous levels have been unlocked.
+#
+# level_name = {
+#	perks = {
+#		menp_undertaker		# The menace perks that will be applied when the level is unlocked.
+#		menp_ship_chipper
+#	}
+#	required_crisis_currency = 0		# The required amount of Menace to unlock the level
+#	allow = { has_completed_special_project_in_log = CRISIS_SPECIAL_PROJECT_1 }	# You can only unlock this level when this trigger returns true
+#																			# scope COUNTRY, This = country trying to unlock the level
+#	on_unlock = { set_country_flag = CRISIS_LEVEL_FLAG }	# an effect that is triggered when you unlock the level
+#															# scope COUNTRY, This = country the level is being unlocked for
+# }
+
+
+bts_crisis_level_1 = {
+	required_crisis_currency = 0
+
+	perks = {
+		bts_menp_mega
+		bts_menp_weapons_policy
+		bts_menp_zro_tech
+	}
+}
+
+bts_crisis_level_2 = {
+	required_crisis_currency = 100
+
+	allow = {
+		# has_megastructure = bts_mega_aetherophasic_collapser_3
+	}
+
+	perks = {
+		bts_menp_mega_summon_1
+		bts_menp_shroud_weapon
+		bts_menp_labyrinth_power
+	}
+
+	on_unlock = { 
+		
+	}
+}
+
+bts_crisis_level_3 = {
+	required_crisis_currency = 200
+
+	allow = {
+		# bts_has_any_covenant_favor = { FAVOR_AMOUNT = 150 }
+	}
+
+	perks = {
+		bts_menp_mega_summon_2
+		bts_menp_shieds
+		bts_menp_edicts
+	}
+
+	on_unlock = { 
+		
+	}
+}
+
+bts_crisis_level_4 = {
+	required_crisis_currency = 300
+
+	allow = {
+		# has_country_flag = bts_situation_bts_conceptual_mastery_completed
+	}
+
+	perks = {
+		bts_menp_mega_summon_3
+		bts_menp_starbase
+		bts_menp_cooldown
+	}
+
+	on_unlock = { 
+		
+	}
+}
+
+bts_crisis_level_5 = {
+	required_crisis_currency = 400
+
+	allow = {
+
+	}
+
+	perks = {
+		bts_menp_mega_summon_4
+		bts_menp_godhood
+	}
+
+	on_unlock = { 
+		
+	}
+}

@@ -1,0 +1,79 @@
+# menp_name = {
+#	portrait = "GFX_crisis_1_perk_1"	# Icon that will be used to display the perk
+#	modifier = {						# static modifier added to the country for as long as they have the perk
+#		pop_purge_mult = 5.0
+#	}
+#	on_unlock = {						# Effect that will be executed when the country receives perk
+#		log = "Country [This.GetName] received menace perk 'menp_name'"
+#	}
+#	resources = {						# resources for the country that has the perk. Only upkeep and produces are hooked in
+#		category = menace_perks
+#		produces = {
+#			alloys = 1
+#		}
+#		upkeep = {
+#			energy = 1
+#		}
+#	}
+# }
+
+# Level 1
+bts_menp_mega = {
+	portrait = "GFX_crisis_icon_megastructure"
+}
+
+bts_menp_weapons_policy = {
+	portrait = "GFX_crisis_icon_flyswatter"
+}
+
+bts_menp_zro_tech = {
+	portrait = "GFX_crisis_icon_paidinambition"
+}
+
+# Level 2
+bts_menp_mega_summon_1 = {
+	portrait = "GFX_crisis_icon_relentlessaggression"
+}
+
+bts_menp_shroud_weapon = {
+	portrait = "GFX_crisis_icon_shipchipper"
+}
+
+bts_menp_labyrinth_power = {
+	portrait = "GFX_crisis_icon_stareater"
+}
+
+# Level 3
+bts_menp_mega_summon_2 = {
+	portrait = "GFX_crisis_icon_relentlessaggression"
+}
+
+bts_menp_shieds = {
+	portrait = "GFX_crisis_icon_mobilebulwark"
+}
+
+bts_menp_edicts = {
+	portrait = "GFX_crisis_icon_objectives"
+}
+
+# Level 4
+bts_menp_mega_summon_3 = {
+	portrait = "GFX_crisis_icon_relentlessaggression"
+}
+
+bts_menp_starbase = {
+	portrait = "GFX_crisis_icon_basebreaker"
+}
+
+bts_menp_cooldown = {
+	portrait = "GFX_crisis_icon_easilyreplaced"
+}
+
+# Level 5
+bts_menp_mega_summon_4 = {
+	portrait = "GFX_crisis_icon_relentlessaggression"
+}
+
+bts_menp_godhood = {
+	portrait = "GFX_crisis_icon_undertaker"
+}
