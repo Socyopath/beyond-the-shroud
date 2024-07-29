@@ -62,8 +62,6 @@ bts_is_aetherophasic_collapser = {
         is_megastructure_type = bts_mega_aetherophasic_collapser_1
         is_megastructure_type = bts_mega_aetherophasic_collapser_2
         is_megastructure_type = bts_mega_aetherophasic_collapser_3
-        is_megastructure_type = bts_mega_aetherophasic_collapser_4
-        is_megastructure_type = bts_mega_aetherophasic_collapser_5
     }
 }
 
