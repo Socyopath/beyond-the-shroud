@@ -1,5 +1,5 @@
 particle={
-	name="bts_shroud_portal_system_core_file"
+	name="bts_aetherophasic_collapser_energy_system_core_file"
 	subsystem={
 		name="Glow_flare"
 		max_amount=20
