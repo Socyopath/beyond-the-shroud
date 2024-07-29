@@ -1,0 +1,37 @@
+﻿l_english:
+
+# Levels
+bts_crisis_level_1: "§UConcern§!"
+bts_crisis_level_2: "§URisk§!"
+bts_crisis_level_3: "§UDanger§!"
+bts_crisis_level_4: "§UCalamity§!"
+bts_crisis_level_5: "§UExistential Threat§!"
+bts_crisis_level_1_desc: "Crisis Level 1"
+bts_crisis_level_2_desc: "Crisis Level 2"
+bts_crisis_level_3_desc: "Crisis Level 3"
+bts_crisis_level_4_desc: "Crisis Level 4"
+bts_crisis_level_5_desc: "Crisis Level 5"
+
+# Ascension
+ap_bts_crisis: "Crisis BTS"
+
+
+# Resource
+# bts_crisis_currency: "Advanced Logic"
+# bts_crisis_currency_name: "$bts_crisis_currency$:"
+# bts_crisis_currency_value: "£advanced_logic£ $VAL|0$"
+# bts_crisis_currency_gaining: "Complete §HCrisis Objectives§! to gain more £advanced_logic£ §YAdvanced Logic§!."
+# bts_crisis_currency_desc: "Advanced Logic measures our understanding of the universe's deepest secrets."
+# bts_crisis_currency_crisis_objective: "Crisis Objectives"
+# bts_crisis_currency_crisis_objective_gained: "Advanced Logic gained"
+# bts_crisis_currency_crisis_objective_reward: "$REWARD$"
+# bts_crisis_currency_crisis_objective_progress: "We have gained £advanced_logic£ $AMOUNT$ from this Crisis Objective."
+# bts_crisis_currency_crisis_level_locked: "Required to unlock this level:\n"
+# bts_crisis_currency_crisis_level_unlocked: "At $LEVEL$, you get the rewards:\n"
+# bts_crisis_currency_crisis_level_desc: "To advance through the Crisis levels, accumulate Advanced Logic and research the Special Crisis Technologies"
+# bts_crisis_currency_crisis_level_unlock: "Has £advanced_logic£ §Y$CURRENCY$§! Advanced Logic"
+# bts_crisis_currency_current_value: "Current Value: §Y$VALUE|0$§!"
+# bts_crisis_currency_crisis_description_title: "Cosmogenesis"
+# bts_crisis_currency_crisis_description: "$menace_crisis_description_intro$\n\nFallen Empires possess the knowledge we seek, but they have grown dull and complacent. It is our right to surpass them, by any means necessary. "
+# bts_crisis_currency_crisis_howto_title: "Logic and Theses"
+# bts_crisis_currency_crisis_howto: "Pursuing §HCrisis Objectives§! generates £advanced_logic£ §HAdvanced Logic§!, unlocking the technological potential of our Empire. In our quest to surpass the Fallen Empires, we must eventually research §HTheses§! and rewrite the laws of the universe."
