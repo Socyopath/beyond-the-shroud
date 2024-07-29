@@ -1,25 +1,18 @@
 bts_mega_aetherophasic_collapser_0 = {
-	entity = "quantum_catapult_stage_1_entity"
-	construction_entity = "construction_platform_entity"
-	portrait = "GFX_megastructure_construction_background"
-    build_time = @bts_mega_aetherophasic_collapser_0_build_time
+	entity = "bts_mega_aetherophasic_collapser_entity"
+	portrait = "GFX_megastructure_bts_aetherophasic_collapser"
+	construction_entity = "quantum_catapult_stage_1_entity"
+    build_time = 1800
     resources = {
         category = megastructures
         cost = {
-            astral_threads = @bts_mega_aetherophasic_collapser_0_cost
+
         }
-        produces = {
-			sr_zro = @bts_mega_aetherophasic_collapser_0_zro
-		}
     }
 
-	country_modifier = {
-		
-	}
-
 	potential = { 
-        has_country_flag = bts_can_build_aetherophasic_collapser
-        bts_has_any_covenant_confirmed = yes
+        # has_country_flag = bts_can_build_aetherophasic_collapser
+        # bts_has_any_covenant_confirmed = yes
         NOT = { 
             any_owned_megastructure = {
                 bts_is_aetherophasic_collapser = yes
@@ -85,40 +78,35 @@ bts_mega_aetherophasic_collapser_0 = {
 			}
 		}
 	}
+
+    on_build_complete = {
+        star = {
+			if = {
+				limit = { has_orbital_station = yes }
+				orbital_station = {
+					dismantle = yes
+				}
+			}
+		}
+    }
 }
 
 bts_mega_aetherophasic_collapser_1 = {
-	entity = "quantum_catapult_stage_1_entity"
-	construction_entity = "quantum_catapult_stage_1_entity"
+	entity = "bts_mega_aetherophasic_collapser_entity"
 	portrait = "GFX_megastructure_bts_aetherophasic_collapser"
-    build_time = @bts_mega_aetherophasic_collapser_1_build_time
+    build_time = 1800
     resources = {
         category = megastructures
         cost = {
-            astral_threads = @bts_mega_aetherophasic_collapser_1_cost
+            
         }
-        produces = {
-			sr_zro = @bts_mega_aetherophasic_collapser_1_zro
-		}
     }
-
-	country_modifier = {
-	}
 
     upgrade_from = {
 		bts_mega_aetherophasic_collapser_0
 	}
 
-    possible = {
-        custom_tooltip = {
-            fail_text = bts_mega_aetherophasic_collapser_1_missing_favor
-            from = {
-                bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_mega_aetherophasic_collapser_1_favor_cost }
-            }
-        }
-    }
-
-	on_build_complete = {
+    on_build_complete = {
         set_star_class = sc_black_hole
         star = {
             change_pc = pc_black_hole
@@ -136,48 +124,31 @@ bts_mega_aetherophasic_collapser_1 = {
             }
         }
 	}
-
 }
 
 bts_mega_aetherophasic_collapser_2 = {
 	entity = "bts_mega_aetherophasic_collapser_entity"
 	portrait = "GFX_megastructure_bts_aetherophasic_collapser"
-    build_time = @bts_mega_aetherophasic_collapser_2_build_time
+    build_time = 1800
     resources = {
         category = megastructures
         cost = {
-            astral_threads = @bts_mega_aetherophasic_collapser_2_cost
-        }
-        produces = {
-			sr_zro = @bts_mega_aetherophasic_collapser_2_zro 
-		}
-    }
 
-	country_modifier = {
-        country_resource_max_astral_threads_add = @bts_mega_aetherophasic_collapser_2_astral_thread_storage
-	}
+        }
+    }
 
     upgrade_from = {
 		bts_mega_aetherophasic_collapser_1
 	}
 
-    possible = {
-        custom_tooltip = {
-            fail_text = bts_mega_aetherophasic_collapser_2_missing_favor
-            from = {
-                bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_mega_aetherophasic_collapser_2_favor_cost }
-            }
-        }
-    }
-
     on_build_complete = {
         star = {
             create_ambient_object = {
-                type = "bts_shroud_portal_1"
+                type = "bts_aetherophasic_collapser_energy_effect"
                 location = this
             }
             last_created_ambient_object = {
-                set_ambient_object_flag = bts_shroud_portal_1_system_effect
+                set_ambient_object_flag = bts_aetherophasic_collapser_energy_system_effect
                 set_location = {
                     target = prev
                     distance = 0
@@ -191,149 +162,41 @@ bts_mega_aetherophasic_collapser_2 = {
 bts_mega_aetherophasic_collapser_3 = {
 	entity = "bts_mega_aetherophasic_collapser_entity"
 	portrait = "GFX_megastructure_bts_aetherophasic_collapser"
-    build_time = @bts_mega_aetherophasic_collapser_3_build_time
+    build_time = 1800
+    use_planet_resource = yes
+
     resources = {
         category = megastructures
         cost = {
-            astral_threads = @bts_mega_aetherophasic_collapser_3_cost
-        }
-        produces = {
-			sr_zro = @bts_mega_aetherophasic_collapser_3_zro 
-		}
-    }
 
-	country_modifier = {
-        country_resource_max_astral_threads_add = @bts_mega_aetherophasic_collapser_3_astral_thread_storage
-	}
+        }
+    }
 
     upgrade_from = {
 		bts_mega_aetherophasic_collapser_2
 	}
 
-    possible = {
-        custom_tooltip = {
-            fail_text = bts_mega_aetherophasic_collapser_3_missing_favor
-            from = {
-                bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_mega_aetherophasic_collapser_3_favor_cost }
-            }
-        }
-    }
-
     on_build_complete = {
         every_system_ambient_object = {
-            limit = { has_ambient_object_flag = bts_shroud_portal_1_system_effect }
-            destroy_ambient_object = this
-        }
-        star = {
-            create_ambient_object = {
-                type = "bts_shroud_portal_2"
-                location = this
-            }
-            last_created_ambient_object = {
-                set_ambient_object_flag = bts_shroud_portal_2_system_effect
-                set_location = {
-                    target = prev
-                    distance = 0
-                    angle = random
-                }
-            }
-        }
-    }
-}
-
-bts_mega_aetherophasic_collapser_4 = {
-	entity = "bts_mega_aetherophasic_collapser_entity"
-	portrait = "GFX_megastructure_bts_aetherophasic_collapser"
-    build_time = @bts_mega_aetherophasic_collapser_4_build_time
-    resources = {
-        category = megastructures
-        cost = {
-            astral_threads = @bts_mega_aetherophasic_collapser_4_cost
-        }
-        produces = {
-			sr_zro = @bts_mega_aetherophasic_collapser_4_zro 
-		}
-    }
-
-	country_modifier = {
-        country_resource_max_astral_threads_add = @bts_mega_aetherophasic_collapser_4_astral_thread_storage
-	}
-
-    upgrade_from = {
-		bts_mega_aetherophasic_collapser_3
-	}
-
-    possible = {
-        custom_tooltip = {
-            fail_text = bts_mega_aetherophasic_collapser_4_missing_favor
-            from = {
-                bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_mega_aetherophasic_collapser_4_favor_cost }
-            }
-        }
-    }
-
-    on_build_complete = {
-        every_system_ambient_object = {
-            limit = { has_ambient_object_flag = bts_shroud_portal_2_system_effect }
-            destroy_ambient_object = this
-        }
-        star = {
-            create_ambient_object = {
-                type = "bts_shroud_portal_3"
-                location = this
-            }
-            last_created_ambient_object = {
-                set_ambient_object_flag = bts_shroud_portal_3_system_effect
-                set_location = {
-                    target = prev
-                    distance = 0
-                    angle = random
-                }
-            }
-        }
-    }
-}
-
-bts_mega_aetherophasic_collapser_5 = {
-	entity = "bts_mega_aetherophasic_collapser_entity"
-	portrait = "GFX_megastructure_bts_aetherophasic_collapser"
-    build_time = @bts_mega_aetherophasic_collapser_5_build_time
-    resources = {
-        category = megastructures
-        cost = {
-            astral_threads = @bts_mega_aetherophasic_collapser_5_cost
-        }
-        produces = {
-			sr_zro = @bts_mega_aetherophasic_collapser_5_zro 
-		}
-    }
-
-	country_modifier = {
-        country_resource_max_astral_threads_add = @bts_mega_aetherophasic_collapser_5_astral_thread_storage
-	}
-
-    upgrade_from = {
-		bts_mega_aetherophasic_collapser_4
-	}
-
-    possible = {
-        custom_tooltip = {
-            fail_text = bts_mega_aetherophasic_collapser_5_missing_favor
-            from = {
-                bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_mega_aetherophasic_collapser_5_favor_cost }
-            }
-        }
-    }
-
-    on_build_complete = {
-        every_system_ambient_object = {
-            limit = { has_ambient_object_flag = bts_shroud_portal_3_system_effect }
+            limit = { has_ambient_object_flag = bts_aetherophasic_collapser_energy_system_effect }
             destroy_ambient_object = this
         }
         set_star_class = sc_rift_star
         star = {
             change_pc = pc_bts_shroud_rift
             clear_deposits = yes
+            add_deposit = d_zro_deposit_5
+            add_deposit = d_zro_deposit_5
+            add_deposit = d_zro_deposit_5
+            add_deposit = d_zro_deposit_5
+            add_deposit = d_zro_deposit_5
+            add_deposit = d_zro_deposit_5
+            add_deposit = d_zro_deposit_5
+            add_deposit = d_zro_deposit_5
+            add_deposit = d_zro_deposit_5
+            add_deposit = d_zro_deposit_5
+            add_deposit = d_astral_threads_deposit_3
+            add_deposit = d_astral_threads_deposit_2
             set_name = pc_bts_shroud_rift
             create_ambient_object = {
                 type = "bts_psionic_wave"
