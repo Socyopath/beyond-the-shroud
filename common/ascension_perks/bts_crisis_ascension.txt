@@ -1,0 +1,18 @@
+ap_bts_crisis = {
+	potential = {
+		NOR = {
+			has_ascension_perk = ap_become_the_crisis
+			has_ascension_perk = ap_cosmogenesis
+			has_ascension_perk = ap_defender_of_the_galaxy
+			has_origin = origin_slavers
+		}
+	}
+
+	possible = {
+
+	}
+
+	on_enabled = {
+        activate_crisis_progression = bts_crisis_path
+	}
+}
