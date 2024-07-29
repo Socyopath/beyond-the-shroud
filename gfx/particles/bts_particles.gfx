@@ -9,8 +9,8 @@ objectTypes = {
 	}
 		
 	pdxparticle = {
-		name = "bts_shroud_portal_system_core_effect"
-		type = "bts_shroud_portal_system_core_file"
+		name = "bts_aetherophasic_collapser_energy_system_core_effect"
+		type = "bts_aetherophasic_collapser_energy_system_core_file"
 		
 		scale = 1
 	}
