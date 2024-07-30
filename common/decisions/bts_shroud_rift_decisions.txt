@@ -15,10 +15,7 @@ decision_bts_shroud_rift_summon_1 = {
         is_planet_class = pc_bts_shroud_rift
 		exists = solar_system.owner
         solar_system.owner = {
-            # has_tradition = tr_astral_studies_finish
-            # NOT = { 
-            #     has_country_flag = bts_zroni_astral_spliting
-            # }
+            has_crisis_perk = bts_menp_mega_summon_1
         }
 	}
 
@@ -65,10 +62,7 @@ decision_bts_shroud_rift_summon_2 = {
         is_planet_class = pc_bts_shroud_rift
 		exists = solar_system.owner
         solar_system.owner = {
-            # has_tradition = tr_astral_studies_finish
-            # NOT = { 
-            #     has_country_flag = bts_zroni_astral_spliting
-            # }
+            has_crisis_perk = bts_menp_mega_summon_2
         }
 	}
 
@@ -122,10 +116,7 @@ decision_bts_shroud_rift_summon_3 = {
         is_planet_class = pc_bts_shroud_rift
 		exists = solar_system.owner
         solar_system.owner = {
-            # has_tradition = tr_astral_studies_finish
-            # NOT = { 
-            #     has_country_flag = bts_zroni_astral_spliting
-            # }
+            has_crisis_perk = bts_menp_mega_summon_3
         }
 	}
 
@@ -179,10 +170,7 @@ decision_bts_shroud_rift_summon_4 = {
         is_planet_class = pc_bts_shroud_rift
 		exists = solar_system.owner
         solar_system.owner = {
-            # has_tradition = tr_astral_studies_finish
-            # NOT = { 
-            #     has_country_flag = bts_zroni_astral_spliting
-            # }
+            has_crisis_perk = bts_menp_mega_summon_4
         }
 	}
 
@@ -216,30 +204,5 @@ decision_bts_shroud_rift_summon_4 = {
                 country_event = { id = bts.340 }
             }
         }
-	}
-}
-
-decision_bts_shroud_test = {
-	sound = event_energy_field
-	icon = decision_wormhole
-    owned_planets_only = no
-
-	resources = {
-		category = decisions
-		cost = {
-
-		}
-	}
-
-	potential = {
-
-	}
-
-    allow = {
-
-    }
-
-	effect = {
-
 	}
 }
