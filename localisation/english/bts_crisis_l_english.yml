@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 
 # Perks and Levels
 ## Level 1
@@ -117,8 +117,8 @@ pc_bts_shroud_rift: "Shroud Rift"
 pc_bts_shroud_rift_desc: ""
 
 # Labyrinth Powers
-bts.100.power: "§R$bts_menp_labyrinth_power$§!"
-bts.100.power.desc: "TEST"
+bts.100.power: "§R$bts_menp_labyrinth_power$§! Lvl. [root.bts_crisis_power_telepath_killed]"
+bts.100.power.desc: "§RKill 1 £job_telepath£ $job_telepath$§!"
 
 # Shroud Rift Decision
 decision_bts_shroud_rift_summon_cooldown: "$TRIGGER_FAIL$§Y$shroud_cooldown$§! modifier must not be active"
@@ -180,6 +180,7 @@ bts_shroud_destabilizer_aura_component_desc: "$bts_tech_shroud_destabilizer_desc
 # Modifiers
 absorbed_consciousness_0: "$absorbed_consciousness_1$"
 mod_bts_conceptual_effect_cooldown: "Conceptual Effect Cooldown"
+bts_menp_labyrinth_power_modifier: "$bts_menp_labyrinth_power$"
 
 # UI Text
 bts_reckoning_info: "§M$NAME_Reckoning$§! : §Y[root.bts_planet_killer_end_pop_killed]§! organic pops §Rkilled§!"
