@@ -100,6 +100,9 @@ bts_menp_starbase = {
 
 bts_menp_cooldown = {
 	portrait = "GFX_crisis_icon_easilyreplaced"
+	modifier = {
+		bts_conceptual_effect_cooldown = -0.25
+	}
 }
 
 # Level 5
