@@ -59,6 +59,9 @@ bts_menp_shroud_weapon = {
 
 bts_menp_labyrinth_power = {
 	portrait = "GFX_crisis_icon_objectives"
+	on_unlock = {
+		custom_tooltip = bts_menp_labyrinth_power_effect
+	}
 }
 
 # Level 3
