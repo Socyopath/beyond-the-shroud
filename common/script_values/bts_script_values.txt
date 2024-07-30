@@ -466,3 +466,7 @@ bts_conceptual_effect_cooldown_date = {
 	mult = value:scripted_modifier_mult|MODIFIER|bts_conceptual_effect_cooldown|
 }
 
+bts_crisis_power_telepath_killed_text = {
+    base = 1
+    add = root.bts_crisis_power_telepath_killed
+}

@@ -61,6 +61,12 @@ bts_menp_labyrinth_power = {
 	portrait = "GFX_crisis_icon_objectives"
 	on_unlock = {
 		custom_tooltip = bts_menp_labyrinth_power_effect
+		hidden_effect = {
+			set_variable = {
+				which = bts_crisis_power_telepath_killed
+				value = 0
+			}
+		}
 	}
 }
 
