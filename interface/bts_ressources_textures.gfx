@@ -271,6 +271,11 @@ spriteTypes = {
 	# Crisis
 
 	spriteType = {
+		name = "GFX_resource_bts_crisis_currency"
+		texturefile = "gfx/interface/icons/resources/bts_crisis_currency.dds"
+	}
+
+	spriteType = {
 		name = "GFX_bts_crisis_level_1_btn"
 		texturefile = "gfx/interface/icons/crisis/Crisis_Lvl1_btn.dds"
 		noOfFrames = 2			
