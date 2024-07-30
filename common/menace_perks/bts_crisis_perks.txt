@@ -40,7 +40,7 @@ bts_menp_shroud_weapon = {
 }
 
 bts_menp_labyrinth_power = {
-	portrait = "GFX_crisis_icon_stareater"
+	portrait = "GFX_crisis_icon_objectives"
 }
 
 # Level 3
@@ -53,7 +53,7 @@ bts_menp_shieds = {
 }
 
 bts_menp_edicts = {
-	portrait = "GFX_crisis_icon_objectives"
+	portrait = "GFX_crisis_icon_stareater"
 }
 
 # Level 4

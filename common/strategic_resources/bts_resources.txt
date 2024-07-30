@@ -1,0 +1,8 @@
+bts_crisis_currency = {
+	tradable = no
+	category = other
+
+	ai_weight = {
+		weight = 1
+	}
+}
