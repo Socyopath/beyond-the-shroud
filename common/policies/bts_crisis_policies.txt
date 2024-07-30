@@ -4,6 +4,15 @@ bts_crisis_menp_weapons_policy = {
 	}
 
 	option = {
+		name = bts_crisis_menp_weapons_policy_no
+
+
+		policy_flags = {
+			bts_crisis_menp_weapons_policy_no_flag
+		}
+	}
+
+	option = {
 		name = bts_crisis_menp_weapons_policy_shield_dmg
 
 
@@ -48,6 +57,13 @@ bts_crisis_menp_shieds_policy = {
 		has_crisis_perk = bts_menp_shieds_policy
 	}
 
+	option = {
+		name = bts_crisis_menp_shieds_policy_no
+
+		policy_flags = {
+			bts_crisis_menp_shieds_policy_no_flag
+		}
+	}
 
 	option = {
 		name = bts_crisis_menp_shieds_policy_shield
