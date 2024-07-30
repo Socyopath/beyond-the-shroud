@@ -460,3 +460,9 @@ bts_num_conceptual_architects = {
         mode = add
     }
 }
+
+bts_conceptual_effect_cooldown_date = {
+	base = $COOLDOWN$
+	mult = value:scripted_modifier_mult|MODIFIER|bts_conceptual_effect_cooldown|
+}
+
