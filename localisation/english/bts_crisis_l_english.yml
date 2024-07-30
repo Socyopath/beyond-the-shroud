@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 
 # Perks and Levels
 ## Level 1
@@ -24,7 +24,8 @@ bts_crisis_level_3_favor_pass: "$TRIGGER_PASS$ Has §Y$@bts_crisis_level_3_favor
 bts_crisis_level_3_favor_fail: "$TRIGGER_FAIL$ Has §Y$@bts_crisis_level_3_favor_cost|*0$§! favor with §Y[root.BtsGetShroudPatron]§!"
 bts_menp_mega_summon_2: "$decision_bts_shroud_rift_summon_2$"
 bts_menp_mega_summon_2_effect: "Unlock §Y$decision_bts_shroud_rift_summon_2$§! decision in the §Y$pc_bts_shroud_rift$§!"
-bts_menp_shieds: "Ethereal Shield Mastery"
+bts_menp_shieds_policy: "$policy_bts_crisis_menp_shieds_policy$"
+bts_menp_shieds_policy_effect: "Unlock §Y$policy_bts_crisis_menp_shieds_policy$§! policy"
 bts_menp_edicts: "Supernatural Deal"
 ## Level 4
 bts_crisis_level_4: "§UCalamity§!"
@@ -67,14 +68,22 @@ bts_crisis_currency_crisis_howto_title: "Rituals"
 bts_crisis_currency_crisis_howto: "Pursuing §HCrisis Objectives§! generates £bts_crisis_currency£ §H$bts_crisis_currency$§!, unleashing the psionic potential of our Empire. In our quest to overcome the metaphysical barriers of our minds, we'll have to perform occult rituals in order to evolve into a higher form of consciousness."
 
 # Policies
-policy_bts_crisis_menp_weapons_policy: "$bts_menp_weapons_policy$"
+policy_bts_crisis_menp_weapons_policy: "Otherworldy Weapons"
 policy_bts_crisis_menp_weapons_policy_desc: "By drawing on the energy of the shroud, we've managed to alter the properties of our weapons."
 bts_crisis_menp_weapons_policy_shield_dmg: "Surge"
-bts_crisis_menp_weapons_policy_shield_dmg_desc: "Trade armor damage for shield damage"
+bts_crisis_menp_weapons_policy_shield_dmg_desc: ""
 bts_crisis_menp_weapons_policy_shield_pen: "Bypass"
-bts_crisis_menp_weapons_policy_shield_pen_desc: "Trade armor damage for shield penetration"
+bts_crisis_menp_weapons_policy_shield_pen_desc: ""
 bts_crisis_menp_weapons_policy_dmg: "Overclock"
-bts_crisis_menp_weapons_policy_dmg_desc: "Trade weapon range for weapon damage"
+bts_crisis_menp_weapons_policy_dmg_desc: ""
+policy_bts_crisis_menp_shieds_policy: "Ethereal Shield Mastery"
+policy_bts_crisis_menp_shieds_policy_desc: "By drawing on the energy of the shroud, we've managed to alter the properties of our shields."
+bts_crisis_menp_shieds_policy_shield: "Amplify"
+bts_crisis_menp_shieds_policy_shield_desc: ""
+bts_crisis_menp_shieds_policy_regen: "Sustain"
+bts_crisis_menp_shieds_policy_regen_desc: ""
+bts_crisis_menp_shieds_policy_hard: "Block"
+bts_crisis_menp_shieds_policy_hard_desc: ""
 
 # Aetherophasic Collapser
 bts_mega_aetherophasic_collapser_unlocked: "Aetherophasic Collapser"

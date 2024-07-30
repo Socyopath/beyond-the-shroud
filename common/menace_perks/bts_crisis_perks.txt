@@ -72,8 +72,11 @@ bts_menp_mega_summon_2 = {
 	}
 }
 
-bts_menp_shieds = {
+bts_menp_shieds_policy = {
 	portrait = "GFX_crisis_icon_mobilebulwark"
+	on_unlock = {
+		custom_tooltip = bts_menp_shieds_policy_effect
+	}
 }
 
 bts_menp_edicts = {

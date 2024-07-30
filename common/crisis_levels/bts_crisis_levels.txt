@@ -55,7 +55,7 @@ bts_crisis_level_3 = {
 
 	perks = {
 		bts_menp_mega_summon_2
-		bts_menp_shieds
+		bts_menp_shieds_policy
 		bts_menp_edicts
 	}
 
