@@ -200,12 +200,12 @@ country_event = {
 			}
 		}
 	}
-	option = { # BTS Custom covenant special powers
-		name = bts.100.powers
+	option = { # BTS Crisis power
+		name = bts.100.power
 		trigger = {
-			bts_has_labyrinth_of_abstraction_level = { LEVEL = @bts_labyrinth_shroud_inter_powers_unlock_level }
-			bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_shroud_inter_powers_favor_cost }
+			has_crisis_perk = bts_menp_labyrinth_power
 		}
+		custom_tooltip = bts.100.power.desc
 		hidden_effect = {
 			country_event = { id =  bts.301 }
 		}

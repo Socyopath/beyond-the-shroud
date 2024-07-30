@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 
 # Perks and Levels
 ## Level 1
@@ -16,6 +16,7 @@ bts_menp_mega_summon_1: "Ritual: Psonic Resurgence"
 bts_menp_mega_summon_1_effect: "Unlock §Y$decision_bts_shroud_rift_summon_1$§! decision in the §Y$pc_bts_shroud_rift$§!"
 bts_menp_shroud_weapon: "$bts_tech_shroud_blast$"
 bts_menp_labyrinth_power: "Forbidden Law"
+bts_menp_labyrinth_power_effect: "Unlock §Y$bts_menp_labyrinth_power$§! power inside the §Y$pc_bts_labyrinth_of_abstraction$§!"
 ## Level 3
 bts_crisis_level_3: "§UDanger§!"
 bts_crisis_level_3_desc: "Crisis Level 3"
@@ -90,6 +91,10 @@ bts_mega_aetherophasic_collapser_3: "Shrouded Aetherophasic Collapser"
 bts_mega_aetherophasic_collapser_3_DESC: "The Aetherophasic Collapser sent too much psionic energy into the black hole. The central singularity resonated with the shroud itself, creating a zero dimensional zone that converted the black hole's energy into a psionic wave. Near the Aetherophasic Collapser, two realities merge, defying all rationality."
 pc_bts_shroud_rift: "Shroud Rift"
 pc_bts_shroud_rift_desc: ""
+
+# Labyrinth Powers
+bts.100.power: "§R$bts_menp_labyrinth_power$§!"
+bts.100.power.desc: "TEST"
 
 # Shroud Rift Decision
 decision_bts_shroud_rift_summon_cooldown: "$TRIGGER_FAIL$§Y$shroud_cooldown$§! modifier must not be active"
