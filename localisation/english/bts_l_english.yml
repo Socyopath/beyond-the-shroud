@@ -64,39 +64,14 @@ bts_district_psi_arcology_psionic_plural: "Psi Arcologies"
 bts_district_psi_arcology_psionic_desc: "A true testament to our devotion to a shroud entity, these spires may hold the key to the spiritual well-being of our empire."
 
 # Components
-## Planet Killers
-BTS_PLANET_KILLER_END: "Consciousness Assimilator"
-BTS_PLANET_KILLER_END_DESC: "Assimilate the consciousness of all living beings on a planet and increase your power as you kill more."
-BTS_PLANET_KILLER_END_ACTION: "Assimilate all the consciousnesses"
-FLEETORDER_DESTROY_PLANET_WITH_BTS_PLANET_KILLER_END: "Preparing to assimilate all consciousnesses of $PLANET|Y$."
-MESSAGE_DESC_FOR_BTS_PLANET_KILLER_END: "had all of its life forms consciousness being absorbed by"
-bts_planet_destruction_name: "Consciousness assimilated"
-bts_planet_destruction_desc: "The psionic power from [From.From.GetName]'s fades, and for a moment all is quiet. Down on [From.GetName] the people stand slack-jawed (or local physiognomic equivalent), enraptured by the powerful and personal truths the psionic ray unfetters from the tangled web of their minds.\n\nIf they did not understand before, they know now viscerally: we are all part of something greater."
-bts_planet_destruction_tooltip: "Any §Y$trait_mechanical$§!, §Y$trait_machine_unit$§! or §Y$trait_hive_mind$§! pops are §Rdestroyed§! by the psionic resonance.\n\nAll remaining §Ybiological§! pops consciousness have been absorbed to strengthen the §M$NAME_Reckoning$§!"
 ## Shields
 ZRONI_SHIELD: "$bts_tech_zroni_shield$"
 ZRONI_SHIELD_DESC: "$bts_tech_zroni_shield_desc$"
 bts_small_zroni_shield: "$ZRONI_SHIELD$"
 bts_medium_zroni_shield: "$ZRONI_SHIELD$"
 bts_large_zroni_shield: "$ZRONI_SHIELD$"
-## Starbase Buildings
-sm_bts_shroud_destabilizer: "$bts_tech_shroud_destabilizer$"
-sm_bts_shroud_destabilizer_desc: "$bts_tech_shroud_destabilizer_desc$"
-sm_bts_shroud_destabilizer_effects: ""
-bts_shroud_destabilizer_aura_component: "$bts_tech_shroud_destabilizer$"
-bts_shroud_destabilizer_aura_component_desc: "$bts_tech_shroud_destabilizer_desc$"
-## Section Templates
-bts_shroud_avatar: "$NAME_Shroud_Avatar$"
-bts_shroud_avatar_zroni: "Zroni $bts_shroud_avatar$"
-bts_shroud_manifestation: "$NAME_Shroud_Manifestation$"
-bts_shroud_manifestation_zroni: "Zroni $bts_shroud_manifestation$"
-bts_warped_consciousness: "$NAME_Warped_Consciousness$"
-bts_warped_consciousness_zroni: "Zroni $bts_warped_consciousness$"
-bts_dimensional_horror: "$NAME_Dimensional_Horror$"
-bts_dimensional_horror_zroni: "Zroni $bts_dimensional_horror$"
-## Weapons
-BTS_SHROUD_BLAST: "Shroud Blast"
-BTS_SHROUD_BLAST_DESC: ""
+
+
 
 # Techs
 bts_tech_occultism: "Occultism"
@@ -117,27 +92,7 @@ bts_tech_shrouded_shields: "Shrouded Shields"
 bts_tech_shrouded_shields_desc: "We learned to enhance our shields with psychic energy."
 bts_tech_zroni_shield: "Zroni Shield"
 bts_tech_zroni_shield_desc: "The shroud revealed an ancient artifact, the shield used by the Zroni empire. It provides immeasurable shield power and is impervious to Zroni storms."
-bts_tech_zro_infusion: "Zro Infusion"
-bts_tech_zro_infusion_desc: "As we're more connected to the shroud itself, we've found a way to infuse our bodies with zro in order to fuel ourselves with psionic energy instead of food."
-bts_tech_zro_infusion_effect: "£food£ $food$ upkeep cost from £pops£ Pops: §G-100%§!\n£sr_zro£ $sr_zro$ upkeep cost from £pops£ Pops: §R+$@bts_tech_zro_infusion_zro_upkeep_cost$§!"
-bts_tech_shroud_destabilizer: "Shroud Destabilizer"
-bts_tech_shroud_destabilizer_desc: "We've managed to infuse the pure psionic energy of the shroud into our starbase. Due to the unstable nature of this energy, violent psionic waves emanate from it, disrupting enemy systems."
 
-# Aetherophasic Collapser
-bts_mega_aetherophasic_collapser_unlocked: "Aetherophasic Collapser"
-bts_mega_aetherophasic_collapser_unlocked_desc: "Your dedication to the §Y[root.BtsGetShroudPatron]§! is beginning to give you visions of unimaginable concepts. The entity has §Yrevealed plans for the construction of a megastructure§! designed to merge the shroud with our reality. This is the §MAetherophase Collapser§!."
-bts_requires_no_existing_aetherophasic_collapser: "$TRIGGER_FAIL$Cannot build more than one Aetherophasic Collapser."
-bts_mega_aetherophasic_collapser_0_MEGASTRUCTURE_DETAILS: "The Aetherophasic Collapser, which will rip apart the barriers that exist between this world and the Shroud and §Menable powerful psionic beings to be summoned§!."
-bts_mega_aetherophasic_collapser_0: "Aetherophasic Collapser Frame"
-bts_mega_aetherophasic_collapser_0_DESC: "The framework that surrounds the star is the basis for the future Aetherophasic Collapser"
-bts_mega_aetherophasic_collapser_1: "Aetherophasic Collapser"
-bts_mega_aetherophasic_collapser_1_DESC: "The Aetherophasic Collapser compresses matter to extreme density, creating a black hole."
-bts_mega_aetherophasic_collapser_2: "Unstable Aetherophasic Collapser"
-bts_mega_aetherophasic_collapser_2_DESC: "By infusing psionic energy within the black hole, the Aetherophasic Collapser allow the summoning of psionic beings directly into this reality."
-bts_mega_aetherophasic_collapser_3: "Shrouded Aetherophasic Collapser"
-bts_mega_aetherophasic_collapser_3_DESC: "The Aetherophasic Collapser sent too much psionic energy into the black hole. The central singularity resonated with the shroud itself, creating a zero dimensional zone that converted the black hole's energy into a psionic wave. Near the Aetherophasic Collapser, two realities merge, defying all rationality."
-pc_bts_shroud_rift: "Shroud Rift"
-pc_bts_shroud_rift_desc: ""
 
 # Covenants Events
 utopia.2658.desc: "Time has passed since we established the foundation of a covenant with the §Y[BtsGetShroudPatron]§!. Our bond is still weak, and we still have a chance to break it - or alternatively, strengthen our connection."
@@ -173,29 +128,7 @@ origin_bts_zroni_effects: "- Technology §Y$tech_archaeostudies$§! researched\n
 # Ascension
 bts_shrouded_covenant_arcology_project: "§Y$pc_city$§! can be turned into a §Mpsionic variant§!, providing special districts with £job_telepath£ $job_telepath_plural$"
 
-# Powers
-decision_bts_shroud_rift_summon_cooldown: "$TRIGGER_FAIL$§Y$shroud_cooldown$§! modifier must not be active"
-decision_bts_shroud_rift_summon_1: "Summoning Ritual"
-decision_bts_shroud_rift_summon_1_desc: "A warrior from the Shroud that has been forged out of pure psionic energy."
-decision_bts_shroud_rift_summon_1_effect: "Summon §M$NAME_Shroud_Avatar$§!."
-decision_bts_shroud_rift_summon_2: "Summoning Ritual"
-decision_bts_shroud_rift_summon_2_desc: "A greater Shroud entity that represents an unspeakable concept of all thoughts."
-decision_bts_shroud_rift_summon_2_effect: "Summon §M$NAME_Shroud_Manifestation$§!."
-decision_bts_shroud_rift_summon_2_invalid_number: "Less than §Y$@bts_power_summon_2_max_number|0*$§! §Y$NAME_Shroud_Manifestation$§! are summoned"
-decision_bts_shroud_rift_summon_3: "Summoning Ritual"
-decision_bts_shroud_rift_summon_3_desc: "It is a creature of pure malice, born in a dimension that bears more than a striking resemblance to the realm of Hell as described by many galactic religions."
-decision_bts_shroud_rift_summon_3_effect: "Summon §M$NAME_Dimensional_Horror$§!."
-decision_bts_shroud_rift_summon_3_invalid_number: "Less than §Y$@bts_power_summon_3_max_number|0*$§! §Y$NAME_Dimensional_Horror$§! are summoned"
-decision_bts_shroud_rift_summon_4: "Summoning Ritual"
-decision_bts_shroud_rift_summon_4_desc: "A massive paranormal being of pure energy that seeks to devour the consciousness of other life forms."
-decision_bts_shroud_rift_summon_4_effect: "Summon §M$NAME_Reckoning$§!."
-decision_bts_shroud_rift_summon_4_invalid_number: "Less than §Y$@bts_power_summon_4_max_number|0*$§! §Y$NAME_Reckoning$§! are summoned"
-
 # Modifiers
-absorbed_consciousness_0: "$absorbed_consciousness_1$"
 mod_planet_telepaths_sr_zro_produces_add: "£sr_zro£ $sr_zro$ from £job_telepath£ $job_telepath_plural$"
 mod_planet_telepaths_produces_mult: "£job_telepath£ $job_telepath$ Output"
 mod_country_sr_zro_cost_mult: "£sr_zro£ $sr_zro$ Cost"
-
-# UI Text
-bts_reckoning_info: "§M$NAME_Reckoning$§! : §Y[root.bts_planet_killer_end_pop_killed]§! organic pops §Rkilled§!"
