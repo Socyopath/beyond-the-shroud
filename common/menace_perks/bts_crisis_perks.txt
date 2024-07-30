@@ -22,6 +22,9 @@ bts_menp_mega = {
 	portrait = "GFX_crisis_icon_megastructure"
 	on_unlock = {
 		custom_tooltip = bts_menp_mega_effect
+		hidden_effect = {
+			country_event = { id = bts.300 }  
+		}
 	}
 }
 
