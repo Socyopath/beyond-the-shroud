@@ -149,3 +149,18 @@ defined_text = {
     }
     default = BLANK_STRING
 }
+
+defined_text = {
+    name = bts_conceptual_effect_time_cooldown_text
+    value = root.value:bts_conceptual_effect_cooldown_date|COOLDOWN|@bts_conceptual_effect_time_cooldown|
+}
+
+defined_text = {
+    name = bts_conceptual_effect_space_cooldown_text
+    value = root.value:bts_conceptual_effect_cooldown_date|COOLDOWN|@bts_conceptual_effect_space_cooldown|
+}
+
+defined_text = {
+    name = bts_conceptual_effect_energy_cooldown_text
+    value = root.value:bts_conceptual_effect_cooldown_date|COOLDOWN|@bts_conceptual_effect_energy_cooldown|
+}
