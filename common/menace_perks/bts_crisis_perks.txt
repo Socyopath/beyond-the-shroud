@@ -34,6 +34,9 @@ bts_menp_weapons_policy = {
 
 bts_menp_zro_tech = {
 	portrait = "GFX_crisis_icon_paidinambition"
+	on_unlock = {
+		add_research_option = bts_tech_zro_infusion
+	}
 }
 
 # Level 2
@@ -46,6 +49,9 @@ bts_menp_mega_summon_1 = {
 
 bts_menp_shroud_weapon = {
 	portrait = "GFX_crisis_icon_shipchipper"
+	on_unlock = {
+		add_research_option = bts_tech_shroud_blast
+	}
 }
 
 bts_menp_labyrinth_power = {
