@@ -12,7 +12,7 @@ bts_menp_zro_tech: "$bts_tech_zro_infusion$"
 ## Level 2
 bts_crisis_level_2: "§URisk§!"
 bts_crisis_level_2_desc: "Crisis Level 2"
-bts_menp_mega_summon_1: $decision_bts_shroud_rift_summon_1$""
+bts_menp_mega_summon_1: "$decision_bts_shroud_rift_summon_1$"
 bts_menp_mega_summon_1_effect: "Unlock §Y$decision_bts_shroud_rift_summon_1$§! decision in the §Y$pc_bts_shroud_rift$§!"
 bts_menp_shroud_weapon: "$bts_tech_shroud_blast$"
 bts_menp_labyrinth_power: "Forbidden Law"
@@ -27,6 +27,7 @@ bts_menp_mega_summon_2_effect: "Unlock §Y$decision_bts_shroud_rift_summon_2$§!
 bts_menp_shieds_policy: "$policy_bts_crisis_menp_shieds_policy$"
 bts_menp_shieds_policy_effect: "Unlock §Y$policy_bts_crisis_menp_shieds_policy$§! policy"
 bts_menp_edicts: "Supernatural Deal"
+bts_menp_edicts_effect: "Unlock §Y$bts_menp_edicts$§! edicts"
 ## Level 4
 bts_crisis_level_4: "§UCalamity§!"
 bts_crisis_level_4_desc: "Crisis Level 4"
@@ -88,6 +89,16 @@ bts_crisis_menp_shieds_policy_regen: "Sustain"
 bts_crisis_menp_shieds_policy_regen_desc: ""
 bts_crisis_menp_shieds_policy_hard: "Block"
 bts_crisis_menp_shieds_policy_hard_desc: ""
+
+# Edicts
+edict_bts_menp_edicts_energy_1: "$bts_menp_edicts$: $@bts_menp_edicts_energy_1_unity|*0$ Energy"
+edict_bts_menp_edicts_energy_1_desc: ""
+edict_bts_menp_edicts_energy_2: "$bts_menp_edicts$: $@bts_menp_edicts_energy_2_unity|*0$ Energy"
+edict_bts_menp_edicts_energy_2_desc: ""
+edict_bts_menp_edicts_energy_3: "$bts_menp_edicts$: $@bts_menp_edicts_energy_3_unity|*0$ Energy"
+edict_bts_menp_edicts_energy_3_desc: ""
+edict_bts_menp_edicts_energy_4: "$bts_menp_edicts$: $@bts_menp_edicts_energy_4_unity|*0$ Energy"
+edict_bts_menp_edicts_energy_4_desc: ""
 
 # Aetherophasic Collapser
 bts_mega_aetherophasic_collapser_unlocked: "Aetherophasic Collapser"
