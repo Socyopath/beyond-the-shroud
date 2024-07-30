@@ -1,0 +1,50 @@
+bts_crisis_menp_weapons_policy = {
+	potential = {
+		has_crisis_perk = bts_menp_weapons_policy
+	}
+
+	option = {
+		name = bts_crisis_menp_weapons_policy_shield_dmg
+
+
+		policy_flags = {
+			bts_crisis_menp_weapons_policy_shield_dmg_flag
+		}
+
+		modifier = {
+            ship_armor_damage_mult = -0.25
+            ship_shield_damage_mult = 0.50
+		}
+	}
+	option = {
+		name = bts_crisis_menp_weapons_policy_shield_pen
+
+		policy_flags = {
+			bts_crisis_menp_weapons_policy_shield_pen_flag
+		}
+
+		modifier = {
+            ship_armor_damage_mult = -0.25
+            ship_shield_penetration_add = 0.25
+		}
+	}
+	option = {
+		name = bts_crisis_menp_weapons_policy_dmg
+
+		policy_flags = {
+			bts_crisis_menp_weapons_policy_dmg_flag
+		}
+
+		modifier = {
+            ship_weapon_range_mult = -0.25
+            ship_weapon_damage = 0.25
+		}
+	}
+}
+
+
+
+
+
+
+
