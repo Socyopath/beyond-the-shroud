@@ -96,6 +96,9 @@ bts_menp_mega_summon_3 = {
 
 bts_menp_starbase = {
 	portrait = "GFX_crisis_icon_basebreaker"
+	on_unlock = {
+		add_research_option = bts_tech_shroud_destabilizer
+	}
 }
 
 bts_menp_cooldown = {
