@@ -1,2 +1,13 @@
 # Levels Requirements
 @bts_crisis_level_3_favor_cost = 150
+
+
+# Edicts
+@bts_menp_edicts_energy_1_unity = 100
+@bts_menp_edicts_energy_1_energy = 100
+@bts_menp_edicts_energy_2_unity = 250
+@bts_menp_edicts_energy_2_energy = 250
+@bts_menp_edicts_energy_3_unity = 500
+@bts_menp_edicts_energy_3_energy = 500
+@bts_menp_edicts_energy_4_unity = 1000
+@bts_menp_edicts_energy_4_energy = 1000

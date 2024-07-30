@@ -81,6 +81,9 @@ bts_menp_shieds_policy = {
 
 bts_menp_edicts = {
 	portrait = "GFX_crisis_icon_stareater"
+	on_unlock = {
+		custom_tooltip = bts_menp_edicts_effect
+	}
 }
 
 # Level 4
