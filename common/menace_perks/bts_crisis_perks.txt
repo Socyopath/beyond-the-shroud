@@ -20,10 +20,16 @@
 # Level 1
 bts_menp_mega = {
 	portrait = "GFX_crisis_icon_megastructure"
+	on_unlock = {
+		custom_tooltip = bts_menp_mega_effect
+	}
 }
 
 bts_menp_weapons_policy = {
 	portrait = "GFX_crisis_icon_flyswatter"
+	on_unlock = {
+		custom_tooltip = bts_menp_weapons_policy_effect
+	}
 }
 
 bts_menp_zro_tech = {
@@ -33,6 +39,9 @@ bts_menp_zro_tech = {
 # Level 2
 bts_menp_mega_summon_1 = {
 	portrait = "GFX_crisis_icon_relentlessaggression"
+	on_unlock = {
+		custom_tooltip = bts_menp_mega_summon_1_effect
+	}
 }
 
 bts_menp_shroud_weapon = {
@@ -46,6 +55,9 @@ bts_menp_labyrinth_power = {
 # Level 3
 bts_menp_mega_summon_2 = {
 	portrait = "GFX_crisis_icon_relentlessaggression"
+	on_unlock = {
+		custom_tooltip = bts_menp_mega_summon_2_effect
+	}
 }
 
 bts_menp_shieds = {
@@ -59,6 +71,9 @@ bts_menp_edicts = {
 # Level 4
 bts_menp_mega_summon_3 = {
 	portrait = "GFX_crisis_icon_relentlessaggression"
+	on_unlock = {
+		custom_tooltip = bts_menp_mega_summon_3_effect
+	}
 }
 
 bts_menp_starbase = {
@@ -72,6 +87,9 @@ bts_menp_cooldown = {
 # Level 5
 bts_menp_mega_summon_4 = {
 	portrait = "GFX_crisis_icon_relentlessaggression"
+	on_unlock = {
+		custom_tooltip = bts_menp_mega_summon_4_effect
+	}
 }
 
 bts_menp_godhood = {
