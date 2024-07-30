@@ -1,0 +1,2 @@
+# Levels Requirements
+@bts_crisis_level_3_favor_cost = 150
