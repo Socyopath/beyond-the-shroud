@@ -10,6 +10,10 @@ scaled_astral_action_cost = {
 	max = $MAX$
 }
 
+bts_conceptual_effect_cooldown_date = {
+	base = $COOLDOWN$
+	mult = value:scripted_modifier_mult|MODIFIER|bts_conceptual_effect_cooldown|
+}
 
 progressive_rifts_additional_weight = {
 	base = 1

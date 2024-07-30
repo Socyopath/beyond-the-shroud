@@ -201,12 +201,12 @@ ship_event = {
 			root.owner = {
 				set_timed_country_flag = {
 					flag = bts_conceptual_effect_cooldown
-					days = @bts_conceptual_effect_time_cooldown
+					days = value:bts_conceptual_effect_cooldown_date|COOLDOWN|@bts_conceptual_effect_time_cooldown|
 				}
 				set_saved_date = {
 					key = bts_conceptual_effect_date
-					days_from_present = @bts_conceptual_effect_time_cooldown
-					expires = @bts_conceptual_effect_time_cooldown
+					days_from_present = value:bts_conceptual_effect_cooldown_date|COOLDOWN|@bts_conceptual_effect_time_cooldown|
+					expires = value:bts_conceptual_effect_cooldown_date|COOLDOWN|@bts_conceptual_effect_time_cooldown|
 				}
 			}
 		}
@@ -231,12 +231,12 @@ ship_event = {
 			root.owner = {
 				set_timed_country_flag = {
 					flag = bts_conceptual_effect_cooldown
-					days = @bts_conceptual_effect_space_cooldown
+					days = value:bts_conceptual_effect_cooldown_date|COOLDOWN|@bts_conceptual_effect_space_cooldown|
 				}
 				set_saved_date = {
 					key = bts_conceptual_effect_date
-					days_from_present = @bts_conceptual_effect_space_cooldown
-					expires = @bts_conceptual_effect_space_cooldown
+					days_from_present = value:bts_conceptual_effect_cooldown_date|COOLDOWN|@bts_conceptual_effect_space_cooldown|
+					expires = value:bts_conceptual_effect_cooldown_date|COOLDOWN|@bts_conceptual_effect_space_cooldown|
 				}
 			}
 		}
@@ -257,12 +257,12 @@ ship_event = {
 			root.owner = {
 				set_timed_country_flag = {
 					flag = bts_conceptual_effect_cooldown
-					days = @bts_conceptual_effect_energy_cooldown
+					days = value:bts_conceptual_effect_cooldown_date|COOLDOWN|@bts_conceptual_effect_energy_cooldown|
 				}
 				set_saved_date = {
 					key = bts_conceptual_effect_date
-					days_from_present = @bts_conceptual_effect_energy_cooldown
-					expires = @bts_conceptual_effect_energy_cooldown
+					days_from_present = value:bts_conceptual_effect_cooldown_date|COOLDOWN|@bts_conceptual_effect_energy_cooldown|
+					expires = value:bts_conceptual_effect_cooldown_date|COOLDOWN|@bts_conceptual_effect_energy_cooldown|
 				}
 			}
 		}

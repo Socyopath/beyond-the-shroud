@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 
 # Perks and Levels
 ## Level 1
@@ -179,6 +179,7 @@ bts_shroud_destabilizer_aura_component_desc: "$bts_tech_shroud_destabilizer_desc
 
 # Modifiers
 absorbed_consciousness_0: "$absorbed_consciousness_1$"
+mod_bts_conceptual_effect_cooldown: "Conceptual Effect Cooldown"
 
 # UI Text
 bts_reckoning_info: "§M$NAME_Reckoning$§! : §Y[root.bts_planet_killer_end_pop_killed]§! organic pops §Rkilled§!"
