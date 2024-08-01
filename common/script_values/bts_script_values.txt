@@ -386,6 +386,7 @@ covenant_favor_year_estimation = {
         add = value:covenant_favor_year_estimation_delta|FAVOR|$FAVOR$| # Only one operation is allowed
     }
     divide = value:current_covenant_favor_per_year
+    round_to = 0.01
 }
 
 # Use extra script value because only one operation is allowed in script value modifier
