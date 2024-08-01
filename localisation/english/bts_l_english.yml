@@ -116,8 +116,16 @@ text_covenant_favor_per_year: "Favor per year  : §Y[root.covenant_favor_per_yea
 text_covenant_estimated_years_20_favor:  "§Y20§!  Favor : §Y[root.covenant_estimated_years_20_favor]§! years\n"
 text_covenant_estimated_years_50_favor:  "§Y50§!  Favor : §Y[root.covenant_estimated_years_50_favor]§! years\n"
 text_covenant_estimated_years_90_favor:  "§Y90§!  Favor : §Y[root.covenant_estimated_years_90_favor]§! years\n"
+text_covenant_estimated_years_100_favor: "§Y100§! Favor : §Y[root.covenant_estimated_years_100_favor]§! years\n"
 text_covenant_estimated_years_150_favor: "§Y150§! Favor : §Y[root.covenant_estimated_years_150_favor]§! years\n"
-text_covenant_estimated_years_favor: "[root.scripted_text_covenant_estimated_years_20_favor][root.scripted_text_covenant_estimated_years_50_favor][root.scripted_text_covenant_estimated_years_90_favor][root.scripted_text_covenant_estimated_years_150_favor]"
+text_covenant_estimated_years_200_favor: "§Y200§! Favor : §Y[root.covenant_estimated_years_200_favor]§! years\n"
+text_covenant_estimated_years_250_favor: "§Y250§! Favor : §Y[root.covenant_estimated_years_250_favor]§! years\n"
+text_covenant_estimated_years_300_favor: "§Y300§! Favor : §Y[root.covenant_estimated_years_300_favor]§! years\n"
+text_covenant_estimated_years_350_favor: "§Y350§! Favor : §Y[root.covenant_estimated_years_350_favor]§! years\n"
+text_covenant_estimated_years_400_favor: "§Y400§! Favor : §Y[root.covenant_estimated_years_400_favor]§! years\n"
+text_covenant_estimated_years_450_favor: "§Y450§! Favor : §Y[root.covenant_estimated_years_450_favor]§! years\n"
+text_covenant_estimated_years_500_favor: "§Y500§! Favor : §Y[root.covenant_estimated_years_500_favor]§! years\n"
+text_covenant_estimated_years_favor: "[root.scripted_text_covenant_estimated_years_20_favor][root.scripted_text_covenant_estimated_years_50_favor][root.scripted_text_covenant_estimated_years_90_favor][root.scripted_text_covenant_estimated_years_100_favor][root.scripted_text_covenant_estimated_years_150_favor][root.scripted_text_covenant_estimated_years_200_favor][root.scripted_text_covenant_estimated_years_250_favor][root.scripted_text_covenant_estimated_years_300_favor][root.scripted_text_covenant_estimated_years_350_favor][root.scripted_text_covenant_estimated_years_400_favor][root.scripted_text_covenant_estimated_years_450_favor][root.scripted_text_covenant_estimated_years_500_favor]"
 text_covenant_favor_info: "$text_covenant_total_favor$\n$text_covenant_favor_per_month$\n$text_covenant_favor_per_year$\n\nYears before reaching each following favor ranks:\n$text_covenant_estimated_years_favor$"
 
 # Origin
