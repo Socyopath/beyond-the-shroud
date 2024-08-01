@@ -25,6 +25,43 @@ country_event = {
 	}
 }
 
+# Zro Infusion Event
+country_event = { 
+	id = bts.1001
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = bts_zro_infusion_unlocked }
+		bts_has_any_covenant_confirmed = yes
+		bts_has_any_covenant_favor = { FAVOR_AMOUNT = @edict_bts_zro_infusion_favor_cost }
+	}
+
+	immediate = {
+		set_country_flag = bts_zro_infusion_unlocked
+	}
+}
+
+# Shroud Destabilizer Tech Event
+country_event = { 
+	id = bts.1002
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		NOR = {
+			has_tech_option = bts_tech_shroud_destabilizer
+			has_technology = bts_tech_shroud_destabilizer
+		}
+		bts_has_any_covenant_confirmed = yes
+		bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_tech_shroud_destabilizer_favor_cost }
+	}
+
+	immediate = {
+		add_research_option = bts_tech_shroud_destabilizer
+	}
+}
+
 # The Shroud Lobby
 # FROM = Labyrinth of abstraction
 country_event = {

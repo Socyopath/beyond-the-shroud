@@ -139,9 +139,9 @@ decision_bts_shroud_rift_summon_4_effect: "Summon §M$NAME_Reckoning$§!."
 decision_bts_shroud_rift_summon_4_invalid_number: "Less than §Y$@bts_power_summon_4_max_number|0*$§! §Y$NAME_Reckoning$§! are summoned"
 
 # Techs
-bts_tech_zro_infusion: "Zro Infusion"
-bts_tech_zro_infusion_desc: "As we're more connected to the shroud itself, we've found a way to infuse our bodies with zro in order to fuel ourselves with psionic energy instead of food."
-bts_tech_zro_infusion_effect: "£food£ $food$ upkeep cost from £pops£ Pops: §G-100%§!\n£sr_zro£ $sr_zro$ upkeep cost from £pops£ Pops: §R+$@bts_tech_zro_infusion_zro_upkeep_cost$§!"
+edict_bts_zro_infusion: "Zro Infusion"
+edict_bts_zro_infusion_desc: "As we're more connected to the shroud itself, we've found a way to infuse our bodies with zro in order to fuel ourselves with psionic energy instead of food."
+edict_bts_zro_infusion_effect: "£food£ $food$ upkeep cost from £pops£ Pops: §G-100%§!\n£sr_zro£ $sr_zro$ upkeep cost from £pops£ Pops: §R+$@edict_bts_zro_infusion_zro_upkeep_cost$§!"
 bts_tech_shroud_destabilizer: "Shroud Destabilizer"
 bts_tech_shroud_destabilizer_desc: "We've managed to infuse the pure psionic energy of the shroud into our starbase. Due to the unstable nature of this energy, violent psionic waves emanate from it, disrupting enemy systems."
 bts_tech_shroud_blast: "Shroud Blast"
