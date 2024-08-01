@@ -1,0 +1,23 @@
+
+bts_zro_infusion = {
+	length = -1
+	icon = "GFX_resource_energy"
+
+    modifier = {
+		custom_tooltip = "edict_bts_zro_infusion_effect"
+		show_only_custom_tooltip = yes
+
+		planet_pops_unemployed_sr_zro_upkeep_add = @edict_bts_zro_infusion_zro_upkeep_cost
+		pop_category_workers_sr_zro_upkeep_add = @edict_bts_zro_infusion_zro_upkeep_cost
+		pop_category_specialists_sr_zro_upkeep_add = @edict_bts_zro_infusion_zro_upkeep_cost
+		pop_category_rulers_sr_zro_upkeep_add = @edict_bts_zro_infusion_zro_upkeep_cost
+		planet_pops_food_upkeep_mult = -1.00
+		pop_category_workers_food_upkeep_add = -1
+		pop_category_specialists_food_upkeep_add = -1
+		pop_category_rulers_food_upkeep_add = -1
+    }
+
+	potential = {
+		has_country_flag = bts_zro_infusion_unlocked
+	}
+}
