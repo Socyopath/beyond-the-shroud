@@ -23,6 +23,7 @@ weapon_component_template = {
 	entity = "large_space_cloud_weapon_entity"
 	icon = "GFX_ship_part_bts_shroud_blast"
 	icon_frame = 1
+	hidden = yes
 	projectile_gfx = "arc_emitter"
 	tags = { weapon_type_energy weapon_type_space_fauna m_slot }
 	ai_tags = { weapon_role_anti_armor }
@@ -42,6 +43,4 @@ weapon_component_template = {
 	tracking = 1.00
 
 	component_set = "BTS_SHROUD_BLAST"
-
-	prerequisites = { bts_tech_shroud_blast }
 }

@@ -14,7 +14,7 @@ bts_crisis_level_2: "§URisk§!"
 bts_crisis_level_2_desc: "Crisis Level 2"
 bts_menp_mega_summon_1: "$decision_bts_shroud_rift_summon_1$"
 bts_menp_mega_summon_1_effect: "Unlock §Y$decision_bts_shroud_rift_summon_1$§! decision in the §Y$pc_bts_shroud_rift$§!"
-bts_menp_shroud_weapon: "$bts_tech_shroud_blast$"
+bts_menp_shroud_weapon: "s"
 bts_menp_labyrinth_power: "Forbidden Law"
 bts_menp_labyrinth_power_effect: "Unlock §Y$bts_menp_labyrinth_power$§! power inside the §Y$pc_bts_labyrinth_of_abstraction$§!"
 ## Level 3
@@ -144,8 +144,6 @@ edict_bts_zro_infusion_desc: "As we're more connected to the shroud itself, we'v
 edict_bts_zro_infusion_effect: "£food£ $food$ upkeep cost from £pops£ Pops: §G-100%§!\n£sr_zro£ $sr_zro$ upkeep cost from £pops£ Pops: §R+$@edict_bts_zro_infusion_zro_upkeep_cost$§!"
 bts_tech_shroud_destabilizer: "Shroud Destabilizer"
 bts_tech_shroud_destabilizer_desc: "We've managed to infuse the pure psionic energy of the shroud into our starbase. Due to the unstable nature of this energy, violent psionic waves emanate from it, disrupting enemy systems."
-bts_tech_shroud_blast: "Shroud Blast"
-bts_tech_shroud_blast_desc: "DESC"
 
 
 # Components
@@ -168,8 +166,8 @@ bts_warped_consciousness_zroni: "Zroni $bts_warped_consciousness$"
 bts_dimensional_horror: "$NAME_Dimensional_Horror$"
 bts_dimensional_horror_zroni: "Zroni $bts_dimensional_horror$"
 ## Weapons
-BTS_SHROUD_BLAST: "$bts_tech_shroud_blast$"
-BTS_SHROUD_BLAST_DESC: "$bts_tech_shroud_blast_desc$"
+BTS_SHROUD_BLAST: "Shroud Blast"
+BTS_SHROUD_BLAST_DESC: ""
 ## Starbase Buildings
 sm_bts_shroud_destabilizer: "$bts_tech_shroud_destabilizer$"
 sm_bts_shroud_destabilizer_desc: "$bts_tech_shroud_destabilizer_desc$"

@@ -53,7 +53,7 @@ bts_menp_mega_summon_1 = {
 bts_menp_shroud_weapon = {
 	portrait = "GFX_crisis_icon_shipchipper"
 	on_unlock = {
-		add_research_option = bts_tech_shroud_blast
+		
 	}
 }
 
