@@ -249,41 +249,6 @@ country_event = {
 			}
 		}
 	}
-	option = { # BTS Crisis power
-		name = bts.100.power
-		trigger = {
-			has_crisis_perk = bts_menp_labyrinth_power
-		}
-		allow = {
-			any_owned_pop = {
-				has_job = telepath
-			}
-		}
-		custom_tooltip = bts.100.power.desc
-		tooltip = {
-			add_modifier = {
-				modifier = bts_menp_labyrinth_power_modifier
-				multiplier =value:bts_crisis_power_telepath_killed_text
-			}
-		}
-		hidden_effect = {
-			random_owned_pop = {
-				limit = { 
-					has_job = telepath
-				}
-				kill_pop = yes
-			}
-			change_variable = {
-				which = bts_crisis_power_telepath_killed
-				value = 1
-			}
-			remove_modifier = bts_menp_labyrinth_power_modifier
-			add_modifier = {
-				modifier = bts_menp_labyrinth_power_modifier
-				multiplier = bts_crisis_power_telepath_killed
-			}
-		}
-	}
 
 	option = { # Shroud effects
 		name = bts.100.effects

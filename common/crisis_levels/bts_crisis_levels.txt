@@ -19,8 +19,8 @@ bts_crisis_level_1 = {
 
 	perks = {
 		bts_menp_mega
-		bts_menp_weapons_policy
-		bts_menp_zro_tech
+		bts_menp_building
+		bts_menp_spy_op
 	}
 }
 
@@ -32,9 +32,9 @@ bts_crisis_level_2 = {
 	}
 
 	perks = {
-		bts_menp_mega_summon_1
-		bts_menp_shroud_weapon
-		bts_menp_labyrinth_power
+		bts_menp_agendas
+		bts_menp_cult_1
+		bts_menp_spec_rights
 	}
 
 	on_unlock = { 
@@ -54,9 +54,9 @@ bts_crisis_level_3 = {
 	}
 
 	perks = {
-		bts_menp_mega_summon_2
-		bts_menp_shieds_policy
-		bts_menp_edicts
+		bts_menp_dreamlike
+		bts_menp_energy
+		bts_menp_new_trait
 	}
 
 	on_unlock = { 
@@ -76,9 +76,8 @@ bts_crisis_level_4 = {
 	}
 
 	perks = {
-		bts_menp_mega_summon_3
-		bts_menp_starbase
-		bts_menp_cooldown
+		bts_menp_old_ones
+		bts_menp_cult_2
 	}
 
 	on_unlock = { 

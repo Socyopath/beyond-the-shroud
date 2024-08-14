@@ -19,7 +19,7 @@
 
 # Level 1
 bts_menp_mega = {
-	portrait = "GFX_crisis_icon_megastructure"
+	portrait = "GFX_crisis_icon_bts_mega"
 	on_unlock = {
 		custom_tooltip = bts_menp_mega_effect
 		hidden_effect = {
@@ -28,91 +28,82 @@ bts_menp_mega = {
 	}
 }
 
-bts_menp_weapons_policy = {
-	portrait = "GFX_crisis_icon_flyswatter"
+bts_menp_building = {
+	portrait = "GFX_crisis_icon_bts_building"
 	on_unlock = {
-		custom_tooltip = bts_menp_weapons_policy_effect
+		custom_tooltip = bts_menp_building_effect
 	}
 }
 
-bts_menp_zro_tech = {
-	portrait = "GFX_crisis_icon_paidinambition"
+bts_menp_spy_op = {
+	portrait = "GFX_crisis_icon_bts_spy_op"
+	modifier = {
+		
+	}
 	on_unlock = {
-		add_research_option = bts_tech_zro_infusion
+		custom_tooltip = bts_menp_spy_op_effect
 	}
 }
 
 # Level 2
-bts_menp_mega_summon_1 = {
-	portrait = "GFX_crisis_icon_relentlessaggression"
+bts_menp_agendas = {
+	portrait = "GFX_crisis_icon_bts_agendas"
 	on_unlock = {
-		custom_tooltip = bts_menp_mega_summon_1_effect
+		custom_tooltip = bts_menp_agendas_effect
 	}
 }
 
-bts_menp_shroud_weapon = {
-	portrait = "GFX_crisis_icon_shipchipper"
+bts_menp_cult_1 = {
+	portrait = "GFX_crisis_icon_bts_cult_1"
 	on_unlock = {
-		
+		custom_tooltip = bts_menp_cult_1_effect
 	}
 }
 
-bts_menp_labyrinth_power = {
-	portrait = "GFX_crisis_icon_objectives"
+bts_menp_spec_rights = {
+	portrait = "GFX_crisis_icon_bts_spec_rights"
 	on_unlock = {
-		custom_tooltip = bts_menp_labyrinth_power_effect
-		hidden_effect = {
-			set_variable = {
-				which = bts_crisis_power_telepath_killed
-				value = 0
-			}
-		}
+		custom_tooltip = bts_menp_spec_rights_effect
 	}
 }
 
 # Level 3
-bts_menp_mega_summon_2 = {
-	portrait = "GFX_crisis_icon_relentlessaggression"
+bts_menp_dreamlike = {
+	portrait = "GFX_crisis_icon_bts_dreamlike"
 	on_unlock = {
-		custom_tooltip = bts_menp_mega_summon_2_effect
+		custom_tooltip = bts_menp_dreamlike_effect
 	}
 }
 
-bts_menp_shieds_policy = {
-	portrait = "GFX_crisis_icon_mobilebulwark"
+bts_menp_energy = {
+	portrait = "GFX_crisis_icon_bts_energy"
 	on_unlock = {
-		custom_tooltip = bts_menp_shieds_policy_effect
+		custom_tooltip = bts_menp_energy_effect
 	}
 }
 
-bts_menp_edicts = {
-	portrait = "GFX_crisis_icon_stareater"
+bts_menp_new_trait = {
+	portrait = "GFX_crisis_icon_bts_new_trait"
 	on_unlock = {
-		custom_tooltip = bts_menp_edicts_effect
+		custom_tooltip = bts_menp_new_trait_effect
 	}
 }
 
 # Level 4
-bts_menp_mega_summon_3 = {
-	portrait = "GFX_crisis_icon_relentlessaggression"
+bts_menp_old_ones = {
+	portrait = "GFX_crisis_icon_bts_old_ones"
 	on_unlock = {
-		custom_tooltip = bts_menp_mega_summon_3_effect
+		custom_tooltip = bts_menp_old_ones_effect
 	}
 }
 
-bts_menp_starbase = {
-	portrait = "GFX_crisis_icon_basebreaker"
+bts_menp_cult_2 = {
+	portrait = "GFX_crisis_icon_bts_cult_2"
 	on_unlock = {
-		add_research_option = bts_tech_shroud_destabilizer
+		custom_tooltip = bts_menp_cult_2_effect
 	}
 }
 
-bts_menp_cooldown = {
-	portrait = "GFX_crisis_icon_easilyreplaced"
-	modifier = {
-		bts_conceptual_effect_cooldown = -0.25
-	}
-}
 
 # Level 5
 bts_menp_mega_summon_4 = {
