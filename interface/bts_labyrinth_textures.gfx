@@ -1,52 +1,5 @@
 spriteTypes = {
 
-	# Origin
-	spriteType = {
-		name = "GFX_origin_bts_zroni"
-		texturefile = "gfx/event_pictures/origins/origin_bts_zroni.dds"
-		alwaystransparent = yes
-	}
-
-	# Traditions
-	spriteType = {
-		name = "GFX_tradition_hex_bg_tradition_astral_studies"
-		textureFile = "gfx/interface/traditions/tradition_hex_bg_astral_studies.dds"
-	}
-	spriteType = {
-		name = "GFX_tradition_category_bg_tradition_astral_studies"
-		textureFile = "gfx/interface/tiles/tradition_category_tile_astral_studies.dds"
-	}
-	corneredTileSpriteType = {
-		name = "GFX_tradition_category_tile_tradition_astral_studies"
-		textureFile = "gfx/interface/tiles/tradition_category_tile_astral_studies.dds"
-		borderSize = { x=140 y=140 }
-		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
-	}
-	spriteType = {
-		name = "GFX_tradition_category_icon_tradition_astral_studies"
-		textureFile = "gfx/interface/icons/resources/astral_threads_large.dds"
-	}
-	spriteType = {
-		name = "GFX_tr_astral_studies_quantum_storage"
-		textureFile = "gfx/interface/icons/traditions/tradition_astral_studies_quantum_storage.dds"
-	}
-	spriteType = {
-		name = "GFX_tr_astral_studies_rift_analyser"
-		textureFile = "gfx/interface/icons/traditions/tradition_astral_studies_rift_analyser.dds"
-	}
-	spriteType = {
-		name = "GFX_tr_astral_studies_astral_excavators"
-		textureFile = "gfx/interface/icons/traditions/tradition_astral_studies_astral_excavators.dds"
-	}
-	spriteType = {
-		name = "GFX_tr_astral_studies_rift_collapser"
-		textureFile = "gfx/interface/icons/traditions/tradition_astral_studies_rift_collapser.dds"
-	}
-	spriteType = {
-		name = "GFX_tr_astral_studies_causality_reverser"
-		textureFile = "gfx/interface/icons/traditions/tradition_astral_studies_causality_reverser.dds"
-	}
-
 	# Concept: Time
 	spriteType = {
 		name = "GFX_tradition_hex_bg_tradition_concept_time"
@@ -221,85 +174,10 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	# Components
-	spriteType = {
-		name = "GFX_ship_part_bts_covenant_aux"
-		textureFile = "gfx/interface/icons/ship_parts/bts_mark_covenant.dds"
-	}
-	spriteType = {
-		name = "GFX_ship_part_zroni_shield"
-		textureFile = "gfx/interface/icons/ship_parts/bts_zroni_shield.dds"
-	}
-	spriteType = {
-		name = "GFX_ship_part_killer_bts_covenant"
-		textureFile = "gfx/interface/icons/ship_parts/bts_planet_killer.dds"
-	}
-
-	# Starbase Module
-	spriteType = {
-		name = "GFX_starbase_shroud_destabilizer"
-		textureFile = "gfx/interface/icons/modules/bts_shroud_destabilizer.dds"
-	}
-
-	# Agendas
-	spriteType = {
-		name = "GFX_council_agenda_icon_bts_agenda_psionic_supremacy_covenant"
-		texturefile = "gfx/interface/icons/agenda_icons/agenda_psionic_supremacy.dds"
-	}
-
 	# Megastructure
-	spriteType = {
-		name = "GFX_megastructure_bts_aetherophasic_collapser"
-		texturefile = "gfx/interface/planetview/aetherophasic_collapser.dds"
-	}
 	spriteType = {
 		name = "GFX_type_pc_bts_labyrinth_of_abstraction"
 		texturefile = "gfx/interface/icons/planets/bts_labyrinth_of_abstraction.dds"
 	}
-	spriteType = {
-		name = "GFX_megastructure_bts_shroud_portal"
-		texturefile = "gfx/interface/planetview/bts_shroud_portal.dds"
-	}
 
-	# Weapons
-	spriteType = {
-		name = "GFX_ship_part_bts_shroud_blast"
-		texturefile = "gfx/interface/icons/ship_parts/ship_part_bts_shroud_blast.dds"
-	}
-
-
-	# Crisis
-
-	spriteType = {
-		name = "GFX_resource_bts_crisis_currency"
-		texturefile = "gfx/interface/icons/resources/bts_crisis_currency.dds"
-	}
-
-	spriteType = {
-		name = "GFX_bts_crisis_level_1_btn"
-		texturefile = "gfx/interface/icons/crisis/Crisis_Lvl1_btn.dds"
-		noOfFrames = 2			
-	}
-	spriteType = {
-		name = "GFX_bts_crisis_level_2_btn"
-		texturefile = "gfx/interface/icons/crisis/Crisis_Lvl2_btn.dds"
-		noOfFrames = 2			
-	}
-
-	spriteType = {
-		name = "GFX_bts_crisis_level_3_btn"
-		texturefile = "gfx/interface/icons/crisis/Crisis_Lvl3_btn.dds"
-		noOfFrames = 2			
-	}
-
-	spriteType = {
-		name = "GFX_bts_crisis_level_4_btn"
-		texturefile = "gfx/interface/icons/crisis/Crisis_Lvl4_btn.dds"
-		noOfFrames = 2			
-	}
-	spriteType = {
-		name = "GFX_bts_crisis_level_5_btn"
-		texturefile = "gfx/interface/icons/crisis/Crisis_Lvl5_btn.dds"
-		noOfFrames = 2			
-	}
 }
