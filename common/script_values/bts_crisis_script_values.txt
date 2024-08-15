@@ -1,0 +1,24 @@
+
+bts_num_crisis_sacrifical_thrall = {
+    base = 0
+    complex_trigger_modifier = {
+        trigger = num_assigned_jobs
+        parameters = {
+            job = bts_crisis_sacrifical_thrall
+        }
+        mode = add
+    }
+}
+
+
+bts_trait_crisis_main_thrall_bonus = {
+    base = 0
+    complex_trigger_modifier = {
+        trigger = num_assigned_jobs
+        parameters = {
+            job = bts_crisis_sacrifical_thrall
+        }
+        mode = add
+    }
+    max = 25
+}
