@@ -1,0 +1,79 @@
+bts_trait_crisis_main_1 = {
+	cost = 0
+	potential_crossbreeding_chance = 0
+	icon = "gfx/interface/icons/traits/trait_psionic_species.dds"
+	initial = no
+	randomized = no
+	advanced_trait = no
+	infertile = yes
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	leader_potential_add = {
+		always = no
+	}
+
+bts_trait_crisis_main_2 = {
+	cost = 0
+	potential_crossbreeding_chance = 0
+	icon = "gfx/interface/icons/traits/trait_psionic_species.dds"
+	initial = no
+	randomized = no
+	advanced_trait = no
+	infertile = yes
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	leader_potential_add = {
+		always = no
+	}
+
+}
+
+bts_trait_crisis_thrall = {
+	cost = 0
+	potential_crossbreeding_chance = 0
+	icon = "gfx/interface/icons/traits/trait_psionic_species.dds"
+	initial = no
+	randomized = no
+	advanced_trait = no
+	infertile = yes
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	leader_potential_add = {
+		always = no
+	}
+    
+	modifier = {
+		pop_resettlement_cost_mult = -1.00
+		pop_environment_tolerance = 0.50
+	}
+}
