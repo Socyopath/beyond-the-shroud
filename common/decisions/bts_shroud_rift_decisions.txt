@@ -1,101 +1,101 @@
-decision_bts_shroud_rift_summon_1 = {
-	sound = event_energy_field
-	icon = decision_wormhole
-    owned_planets_only = no
+# decision_bts_shroud_rift_summon_1 = {
+# 	sound = event_energy_field
+# 	icon = decision_wormhole
+#     owned_planets_only = no
 
-	resources = {
-		category = decisions
-		cost = {
-			# astral_threads = @decision_bts_zroni_astral_spliting_astral_threads_cost
-            # energy = 100
-		}
-	}
+# 	resources = {
+# 		category = decisions
+# 		cost = {
+# 			# astral_threads = @decision_bts_zroni_astral_spliting_astral_threads_cost
+#             # energy = 100
+# 		}
+# 	}
 
-	potential = {
-        is_planet_class = pc_bts_shroud_rift
-		exists = solar_system.owner
-        solar_system.owner = {
-            has_crisis_perk = bts_menp_mega_summon_1
-        }
-	}
+# 	potential = {
+#         is_planet_class = pc_bts_shroud_rift
+# 		exists = solar_system.owner
+#         solar_system.owner = {
+#             has_crisis_perk = bts_menp_mega_summon_1
+#         }
+# 	}
 
-    allow = {
-        custom_tooltip = {
-            fail_text = decision_bts_shroud_rift_summon_cooldown
-            solar_system.owner = {
-                NOT = {
-                    has_modifier = shroud_cooldown
-                }
-            }
-        }
-    }
+#     allow = {
+#         custom_tooltip = {
+#             fail_text = decision_bts_shroud_rift_summon_cooldown
+#             solar_system.owner = {
+#                 NOT = {
+#                     has_modifier = shroud_cooldown
+#                 }
+#             }
+#         }
+#     }
 
-	effect = {
-        custom_tooltip = decision_bts_shroud_rift_summon_1_effect
-        solar_system.owner = {
-            add_modifier = {
-                modifier = "shroud_cooldown"
-                days = @bts_power_summon_1_shroud_delve_cooldown
-                time_multiplier = value:scripted_modifier_mult|MODIFIER|shroud_delve_cooldown|
-            }
-            hidden_effect = {
-                country_event = { id = bts.310 }
-            }
-        }
-	}
-}
+# 	effect = {
+#         custom_tooltip = decision_bts_shroud_rift_summon_1_effect
+#         solar_system.owner = {
+#             add_modifier = {
+#                 modifier = "shroud_cooldown"
+#                 days = @bts_power_summon_1_shroud_delve_cooldown
+#                 time_multiplier = value:scripted_modifier_mult|MODIFIER|shroud_delve_cooldown|
+#             }
+#             hidden_effect = {
+#                 country_event = { id = bts.310 }
+#             }
+#         }
+# 	}
+# }
 
 
-decision_bts_shroud_rift_summon_4 = {
-	sound = event_energy_field
-	icon = decision_wormhole
-    owned_planets_only = no
+# decision_bts_shroud_rift_summon_4 = {
+# 	sound = event_energy_field
+# 	icon = decision_wormhole
+#     owned_planets_only = no
 
-	resources = {
-		category = decisions
-		cost = {
-			# astral_threads = @decision_bts_zroni_astral_spliting_astral_threads_cost
-            # energy = 100
-		}
-	}
+# 	resources = {
+# 		category = decisions
+# 		cost = {
+# 			# astral_threads = @decision_bts_zroni_astral_spliting_astral_threads_cost
+#             # energy = 100
+# 		}
+# 	}
 
-	potential = {
-        is_planet_class = pc_bts_shroud_rift
-		exists = solar_system.owner
-        solar_system.owner = {
-            has_crisis_perk = bts_menp_mega_summon_4
-        }
-	}
+# 	potential = {
+#         is_planet_class = pc_bts_shroud_rift
+# 		exists = solar_system.owner
+#         solar_system.owner = {
+#             has_crisis_perk = bts_menp_mega_summon_4
+#         }
+# 	}
 
-    allow = {
-        custom_tooltip = {
-            fail_text = decision_bts_shroud_rift_summon_cooldown
-            solar_system.owner = {
-                NOT = {
-                    has_modifier = shroud_cooldown
-                }
-            }
-        }
-        custom_tooltip = { 
-            fail_text = decision_bts_shroud_rift_summon_4_invalid_number 
-            count_owned_ship = { 
-                count < @bts_power_summon_4_max_number 
-                limit = { is_ship_size = warped_consciousness } 
-            } 
-        }
-    }
+#     allow = {
+#         custom_tooltip = {
+#             fail_text = decision_bts_shroud_rift_summon_cooldown
+#             solar_system.owner = {
+#                 NOT = {
+#                     has_modifier = shroud_cooldown
+#                 }
+#             }
+#         }
+#         custom_tooltip = { 
+#             fail_text = decision_bts_shroud_rift_summon_4_invalid_number 
+#             count_owned_ship = { 
+#                 count < @bts_power_summon_4_max_number 
+#                 limit = { is_ship_size = warped_consciousness } 
+#             } 
+#         }
+#     }
 
-	effect = {
-        custom_tooltip = decision_bts_shroud_rift_summon_4_effect
-        solar_system.owner = {
-            add_modifier = {
-                modifier = "shroud_cooldown"
-                days = @bts_power_summon_4_shroud_delve_cooldown
-                time_multiplier = value:scripted_modifier_mult|MODIFIER|shroud_delve_cooldown|
-            }
-            hidden_effect = {
-                country_event = { id = bts.340 }
-            }
-        }
-	}
-}
+# 	effect = {
+#         custom_tooltip = decision_bts_shroud_rift_summon_4_effect
+#         solar_system.owner = {
+#             add_modifier = {
+#                 modifier = "shroud_cooldown"
+#                 days = @bts_power_summon_4_shroud_delve_cooldown
+#                 time_multiplier = value:scripted_modifier_mult|MODIFIER|shroud_delve_cooldown|
+#             }
+#             hidden_effect = {
+#                 country_event = { id = bts.340 }
+#             }
+#         }
+# 	}
+# }
