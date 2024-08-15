@@ -1,0 +1,37 @@
+bts_crisis_sacrifical_thrall = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	building_icon = building_psi_corps
+	clothes_texture_index = 5
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_worker_job
+	possible = {
+        has_trait = bts_trait_crisis_thrall
+	}
+
+	resources = {
+		category = planet_bts_crisis_sacrifical_thrall
+		produces = {
+			unity = 9
+            society_research = 3
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+
+    weight = {
+		weight = 1
+		modifier = {
+			factor = 1000
+			has_trait = bts_trait_crisis_thrall
+		}
+	}
+}

@@ -1,6 +1,12 @@
 # Levels Requirements
 @bts_crisis_level_3_favor_cost = 150
 
+# Traits
+@bts_trait_crisis_main_1_ethics = 0.01
+@bts_trait_crisis_main_1_happiness = 0.01
+@bts_trait_crisis_main_2_ethics = 0.02
+@bts_trait_crisis_main_2_happiness = 0.02
+@bts_trait_crisis_main_2_habitability = 0.01
 
 # Council
 @bts_councilor_concept_crisis_conceptual_cooldown = -0.05

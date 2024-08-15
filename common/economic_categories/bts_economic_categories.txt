@@ -10,3 +10,16 @@ planet_bts_conceptual_architect = {
 	}
 	modifier_category = pop
 }
+
+planet_bts_crisis_sacrifical_thrall = {
+	parent = planet_administrators
+	generate_add_modifiers = {
+		produces
+        upkeep
+	}
+    generate_mult_modifiers = {
+		produces
+        upkeep
+	}
+	modifier_category = pop
+}
