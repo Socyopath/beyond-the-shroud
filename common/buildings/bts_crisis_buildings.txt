@@ -1,0 +1,100 @@
+
+bts_crisis_building_thrall_1 = {
+	base_buildtime = @bts_crisis_building_thrall_build_time
+	category = government
+	
+    potential = {
+        owner = {
+            has_crisis_perk = bts_menp_building
+        }
+	}
+
+	planet_modifier = {
+		planet_housing_add = @bts_crisis_building_thrall_1_jobs
+		job_bts_crisis_sacrifical_thrall_add = @bts_crisis_building_thrall_1_jobs
+	}
+    
+    upgrades = {
+		"bts_crisis_building_thrall_2"
+	}
+
+	# resources = {
+	# 	category = planet_buildings
+	# 	cost = {
+	# 		minerals = 1
+	# 		sr_zro = 0
+	# 	}
+	# 	upkeep = {
+	# 		energy = @bts_labyrinth_of_abstraction_building_upkeep_energy
+	# 		sr_zro = @bts_labyrinth_of_abstraction_building_upkeep_sr
+	# 	}
+	# }
+}
+
+bts_crisis_building_thrall_2 = {
+	base_buildtime = @bts_crisis_building_thrall_build_time
+    can_build = no
+	category = government
+	
+    potential = {
+        owner = {
+            has_crisis_perk = bts_menp_building
+        }
+	}
+    allow = {
+		has_upgraded_capital = yes
+	}
+
+	planet_modifier = {
+		planet_housing_add = @bts_crisis_building_thrall_2_jobs
+		job_bts_crisis_sacrifical_thrall_add = @bts_crisis_building_thrall_2_jobs
+	}
+
+    upgrades = {
+		"bts_crisis_building_thrall_3"
+	}
+
+	# resources = {
+	# 	category = planet_buildings
+	# 	cost = {
+	# 		minerals = 1
+	# 		sr_zro = 0
+	# 	}
+	# 	upkeep = {
+	# 		energy = @bts_labyrinth_of_abstraction_building_upkeep_energy
+	# 		sr_zro = @bts_labyrinth_of_abstraction_building_upkeep_sr
+	# 	}
+	# }
+}
+
+bts_crisis_building_thrall_3 = {
+	base_buildtime = @bts_crisis_building_thrall_build_time
+    can_build = no
+	category = government
+	
+    potential = {
+        owner = {
+            has_crisis_perk = bts_menp_building
+        }
+	}
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+
+	planet_modifier = {
+		planet_housing_add = @bts_crisis_building_thrall_3_jobs
+		job_bts_crisis_sacrifical_thrall_add = @bts_crisis_building_thrall_3_jobs
+	}
+
+	# resources = {
+	# 	category = planet_buildings
+	# 	cost = {
+	# 		minerals = 1
+	# 		sr_zro = 0
+	# 	}
+	# 	upkeep = {
+	# 		energy = @bts_labyrinth_of_abstraction_building_upkeep_energy
+	# 		sr_zro = @bts_labyrinth_of_abstraction_building_upkeep_sr
+	# 	}
+	# }
+}
