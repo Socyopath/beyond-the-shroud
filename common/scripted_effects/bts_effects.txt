@@ -176,3 +176,15 @@ bts_spawn_conceptual_system_effect = {
 	}
 }
 
+
+bts_effect_consume_thrall = {
+	while = {
+		count = $COUNT$
+		random_owned_pop = {
+			limit = {
+				has_job = bts_crisis_sacrifical_thrall
+			}
+			kill_pop = yes
+		}
+	}
+}

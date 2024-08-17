@@ -86,3 +86,12 @@ on_relic_activated = {
 		bts.14
 	}
 }
+
+
+# This = Country
+# From = Shroud Rift (Planet)
+on_bts_ritual = {
+	events = {
+
+	}
+}

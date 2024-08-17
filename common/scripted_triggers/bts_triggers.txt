@@ -156,3 +156,14 @@ bts_have_spec_point = {
 		value >= 1
 	}
 }
+
+
+bts_crisis_has_thrall = {
+	custom_tooltip = {
+		fail_text = bts_crisis_has_thrall_$COST$
+		check_variable_arithmetic = {
+			which = value:bts_num_crisis_sacrifical_thrall
+			value >= $COST$
+		}
+	}
+}

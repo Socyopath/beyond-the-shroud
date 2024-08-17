@@ -45,6 +45,18 @@
 # 	}
 # }
 
+inline_script = {
+    script = bts_crisis_ritual
+    NAME = bts_ritual_pop_trade
+    ICON = decision_wormhole
+    DESC = bts_ritual_pop_trade_effect
+    SHROUD_RIFT_EVENT = bts.32
+    COUNTRY_POTENTIAL = "always = yes"
+    THRALL_COST = 2
+    CUSTOM_COST_TRIGGER = "always = no"
+    CUSTOM_THRALL_COST = 1
+    COOLDOWN = 10
+}
 
 # decision_bts_shroud_rift_summon_4 = {
 # 	sound = event_energy_field
