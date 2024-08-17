@@ -54,3 +54,10 @@ bts_conceptual_effect_cooldown = {
 	category = country
 	percentage = yes
 }
+
+bts_crisis_ritual_coolodwn_mult = {
+	icon = mod_relic_cooldown
+	good = no
+	category = country
+	percentage = yes
+}
