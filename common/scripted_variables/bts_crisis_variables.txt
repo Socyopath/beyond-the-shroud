@@ -7,6 +7,13 @@
 @bts_crisis_building_thrall_2_jobs = 4
 @bts_crisis_building_thrall_3_jobs = 6
 
+# Rituals
+@bts_ritual_pop_trade_cooldown = 10
+@bts_ritual_pop_trade_thrall_cost = 2
+@bts_ritual_pop_trade_custom_thrall_cost = 1
+@bts_ritual_pop_trade_boost_produces = 0.25
+@bts_ritual_pop_trade_boost_duration = 360
+
 # Traits
 @bts_trait_crisis_main_1_ethics = 0.01
 @bts_trait_crisis_main_1_happiness = 0.01
@@ -17,3 +24,7 @@
 # Council
 @bts_crisis_councilor_power_level = 5
 @bts_crisis_councilor_ulimate_power_level = 10
+
+@bts_crisis_councilor_operation_speed_per_level = 0.10
+@bts_crisis_councilor_pact_cost_per_level = -0.05
+@bts_crisis_councilor_ritual_cooldown_per_level = -0.025

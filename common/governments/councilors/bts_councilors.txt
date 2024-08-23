@@ -1,0 +1,26 @@
+bts_crisis_councilor_ritual = {
+	leader_class = { official }
+	possible = { always = yes }
+	modifier = {
+		bts_crisis_ritual_coolodwn_mult = @bts_crisis_councilor_ritual_cooldown_per_level
+	}
+	icon = "GFX_icon_bts_crisis_councilor_ritual"
+}
+
+bts_crisis_councilor_pact = {
+	leader_class = { official }
+	possible = { always = yes }
+	modifier = {
+		bts_crisis_pact_cost_mult = @bts_crisis_councilor_pact_cost_per_level
+	}
+	icon = "GFX_icon_bts_crisis_councilor_pact"
+}
+
+bts_crisis_councilor_operation = {
+	leader_class = { official }
+	possible = { always = yes }
+	modifier = {
+		espionage_operation_speed_mult = @bts_crisis_councilor_operation_speed_per_level
+	}
+	icon = "GFX_icon_bts_crisis_councilor_operation"
+}

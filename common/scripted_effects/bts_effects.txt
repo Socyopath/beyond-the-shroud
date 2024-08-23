@@ -188,3 +188,30 @@ bts_effect_consume_thrall = {
 		}
 	}
 }
+
+# Root : Shroud Rift (Planet)
+# This : Country
+bts_crisis_ritual_setup = {
+	custom_tooltip_with_params = {
+		description = "bts_crisis_ritual_cost_tooltip"
+		description_parameters = {
+			"COST" = $COST$
+		}
+	}
+	hidden_effect = {
+		bts_effect_consume_thrall = { COUNT = $COST$ }
+	}
+	add_modifier = {
+		modifier = "bts_crisis_ritual_coolodwn"
+		days = $COOLDOWN$
+		time_multiplier = value:scripted_modifier_mult|MODIFIER|bts_crisis_ritual_coolodwn_mult|
+	}
+	hidden_effect = {
+		fire_on_action = { 
+			on_action = on_bts_ritual
+			scopes = { 
+				from = root
+			} 
+		}
+	}
+}
