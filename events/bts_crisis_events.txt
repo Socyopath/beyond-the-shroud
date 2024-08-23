@@ -1,0 +1,165 @@
+namespace = bts
+
+# bts.50X -> Crisis Global Events
+# bts.51X -> Crisis Lvl 1 Events
+# bts.52X -> Crisis Lvl 2 Events
+# bts.53X -> Crisis Lvl 3 Events
+# bts.54X -> Crisis Lvl 4 Events
+# bts.55X -> Crisis Lvl 5 Events
+
+# DEBUG : Gives Devoured Mind Pop
+country_event = {
+	id = bts.5000
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		capital_scope = {
+			create_pop = {
+				species = root
+			}
+			last_created_pop = {
+				bts_effect_devour_mind = yes
+			}
+		}
+	}
+}
+
+# DEBUG : Steal a pop
+country_event = {
+	id = bts.5001
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		random_country = {
+			limit = {
+				NOT = {
+					is_same_value = root
+				}
+				any_owned_pop = {
+					is_robot_pop = no
+				}
+				has_country_flag = bts_debug
+			}
+			random_owned_pop = {
+				limit = {
+					is_robot_pop = no
+					NOT = { 
+						has_trait = bts_trait_crisis_thrall
+					}
+				}
+				bts_effect_devour_mind = yes
+				resettle_pop = {
+					pop = this
+					planet = root.capital_scope
+				}
+			}
+		}
+	}
+}
+
+
+# Crisis Objective: Performs a Ritual
+country_event = {
+	id = bts.500
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		complete_crisis_objective = bts_crisis_obj_test
+	}
+}
+
+# this = operation; from = target (country)
+espionage_operation_event = {
+	id = bts.522
+	title = operation_bts_crisis_devour_mind_event_title
+	desc = operation_bts_crisis_devour_mind_event_desc
+
+	picture = GFX_evt_alien_abduction
+	show_sound = event_espionage_concluded
+	espionage_operation = yes
+	is_triggered_only = yes
+
+	trigger = {
+		exists = from
+	}
+
+	option = {
+		name = OK
+
+		from = {
+			random_owned_pop = {
+				limit = {
+					is_robot_pop = no
+					NOT = { 
+						has_trait = bts_trait_crisis_thrall
+					}
+				}
+				custom_tooltip = operation_bts_crisis_devour_mind_tooltip_effect
+				hidden_effect = {
+					bts_effect_devour_mind = yes
+					resettle_pop = {
+						pop = this
+						planet = root.owner.capital_scope
+					}
+				}
+				
+			}
+		}
+
+		if = {
+			limit = {
+				owner = {
+					bts_can_use_councilor_ultimate_power = { COUNCILOR = bts_crisis_councilor_operation }
+				}
+			}
+			from = {
+				random_owned_pop = {
+					limit = {
+						is_robot_pop = no
+						NOT = { 
+							has_trait = bts_trait_crisis_thrall
+						}
+					}
+					custom_tooltip = operation_bts_crisis_devour_mind_tooltip_effect
+					hidden_effect = {
+						bts_effect_devour_mind = yes
+						resettle_pop = {
+							pop = this
+							planet = root.owner.capital_scope
+						}
+					}
+				}
+			}
+		}
+		
+	}
+
+	after = {
+		spynetwork = {
+			add_spy_network_level_on_success_effect = { VALUE = -5 }
+		}
+		destroy_espionage_operation = this
+	}
+}
+
+
+# country_event = {
+# 	id = bts.30
+# 	is_triggered_only = yes
+# 	hide_window = yes
+	
+# 	immediate = {
+# 		owner_main_species = {
+# 			change_species_characteristics = {
+# 				remove_trait = bts_trait_crisis_main_1
+# 				add_trait = bts_trait_crisis_main_2
+# 			}
+# 		}
+# 	}
+# }
+
+
+

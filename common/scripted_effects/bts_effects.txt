@@ -177,6 +177,36 @@ bts_spawn_conceptual_system_effect = {
 }
 
 
+# Scope: Pop
+bts_effect_devour_mind = {
+	if = {
+		limit = {
+			NOT = {
+				exists = event_target:bts_species_devoured_mind_@species
+			}
+		}
+		species = {
+			create_species = {
+				name = this
+				plural = this
+				class = this
+				portrait = this
+				namelist = this
+				sapient = no
+				can_be_modified = no
+				traits = {
+					ideal_planet_class = this
+					trait = bts_trait_crisis_thrall
+				}
+			}
+		}
+		last_created_species = {
+			save_global_event_target_as = bts_species_devoured_mind_@prev.species
+		}
+	}
+	change_species = event_target:bts_species_devoured_mind_@species
+}
+
 bts_effect_consume_thrall = {
 	while = {
 		count = $COUNT$

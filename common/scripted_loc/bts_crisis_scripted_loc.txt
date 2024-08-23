@@ -1,0 +1,11 @@
+defined_text = {
+    name = operation_bts_crisis_devour_mind_effect
+    text = {
+		trigger = { 
+            bts_can_use_councilor_ultimate_power = { COUNCILOR = bts_crisis_councilor_operation }
+         }
+        localization_key = operation_bts_crisis_devour_mind_effect_upgrade
+    }
+    default = operation_bts_crisis_devour_mind_effect_base
+}
+
