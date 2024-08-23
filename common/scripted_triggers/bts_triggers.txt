@@ -167,3 +167,19 @@ bts_crisis_has_thrall = {
 		}
 	}
 }
+
+bts_can_use_councilor_power = {
+	any_owned_leader = {
+		is_councilor = yes
+		is_councilor_type = $COUNCILOR$
+		has_level >= @bts_crisis_councilor_power_level
+	}
+}
+
+bts_can_use_councilor_ultimate_power = {
+	any_owned_leader = {
+		is_councilor = yes
+		is_councilor_type = $COUNCILOR$
+		has_level >= @bts_crisis_councilor_ulimate_power_level
+	}
+}
