@@ -109,14 +109,20 @@ spriteTypes = {
 
     # Councilor
 	spriteType = {
-		name = "GFX_bts_icon_bts_councilor_ritual_crisis"
-		texturefile = "gfx/interface/council_view/icon_bts_councilor_ritual_crisis.dds"
+		name = "GFX_icon_bts_crisis_councilor_ritual"
+		texturefile = "gfx/interface/council_view/icon_bts_crisis_councilor_ritual.dds"
 	}
 
 	spriteType = {
-		name = "GFX_bts_icon_bts_councilor_concept_crisis"
-		texturefile = "gfx/interface/council_view/icon_bts_councilor_concept_crisis.dds"
+		name = "GFX_icon_bts_crisis_councilor_pact"
+		texturefile = "gfx/interface/council_view/icon_bts_crisis_councilor_pact.dds"
 	}
+
+	spriteType = {
+		name = "GFX_icon_bts_crisis_councilor_operation"
+		texturefile = "gfx/interface/council_view/icon_bts_crisis_councilor_operation.dds"
+	}
+
 
     # Traits
 
