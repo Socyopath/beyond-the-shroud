@@ -15,4 +15,5 @@
 @bts_trait_crisis_main_2_habitability = 0.01
 
 # Council
-@bts_councilor_concept_crisis_conceptual_cooldown = -0.05
+@bts_crisis_councilor_power_level = 5
+@bts_crisis_councilor_ulimate_power_level = 10
