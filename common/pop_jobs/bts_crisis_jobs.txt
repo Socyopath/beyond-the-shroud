@@ -3,12 +3,12 @@ bts_crisis_sacrifical_thrall = {
 	condition_string = WORKER_JOB_TRIGGER
 	building_icon = building_psi_corps
 	clothes_texture_index = 5
+	ignores_sapience = yes
 
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
-		is_sapient = yes
 	}
 
 	possible_precalc = can_fill_worker_job
@@ -28,10 +28,6 @@ bts_crisis_sacrifical_thrall = {
 	}
 
     weight = {
-		weight = 1
-		modifier = {
-			factor = 1000
-			has_trait = bts_trait_crisis_thrall
-		}
+		weight = 10000
 	}
 }

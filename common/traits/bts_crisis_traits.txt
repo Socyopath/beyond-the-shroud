@@ -1,7 +1,7 @@
 bts_trait_crisis_main_1 = {
 	cost = 0
 	potential_crossbreeding_chance = 0
-	icon = "gfx/interface/icons/traits/trait_psionic_species.dds"
+	icon = "gfx/interface/icons/traits/bts_trait_crisis_main_1.dds"
 	initial = no
 	randomized = no
 	advanced_trait = no
@@ -36,7 +36,7 @@ bts_trait_crisis_main_1 = {
 bts_trait_crisis_main_2 = {
 	cost = 0
 	potential_crossbreeding_chance = 0
-	icon = "gfx/interface/icons/traits/trait_psionic_species.dds"
+	icon = "gfx/interface/icons/traits/bts_trait_crisis_main_2.dds"
 	initial = no
 	randomized = no
 	advanced_trait = no
@@ -75,11 +75,12 @@ bts_trait_crisis_main_2 = {
 bts_trait_crisis_thrall = {
 	cost = 0
 	potential_crossbreeding_chance = 0
-	icon = "gfx/interface/icons/traits/trait_psionic_species.dds"
+	icon = "gfx/interface/icons/traits/bts_trait_crisis_thrall.dds"
 	initial = no
 	randomized = no
 	advanced_trait = no
 	infertile = yes
+	sapient = no
 
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 
@@ -98,6 +99,5 @@ bts_trait_crisis_thrall = {
     
 	modifier = {
 		pop_resettlement_cost_mult = -1.00
-		pop_environment_tolerance = 0.50
 	}
 }
