@@ -1,0 +1,173 @@
+
+@operationTargetedByTimer = 10800
+@diff_t0 = 4
+@diff_t1 = 5
+@diff_t2 = 6
+@diff_t3 = 7
+@diff_t4 = 8
+@diff_t5 = 9
+@diff_t6 = 10
+@diff_t7 = 11
+@diff_t8 = 12
+@diff_t9 = 13
+# this = operation
+# from = operation target
+
+operation_bts_crisis_devour_mind = {
+	target = none
+	categories = { op_cat_provocation }
+	picture = GFX_evt_alien_abduction
+	desc = operation_bts_crisis_devour_mind_desc
+	stages = 1
+
+	resources = {
+		category = operations
+		cost = {
+			influence = 20
+		}
+		upkeep = {
+			energy = 4
+		}
+	}
+
+	spy_power_cost = 10
+
+	potential = {
+		target = { is_primitive = no }
+	}
+
+	allow = {
+		custom_tooltip = {
+			is_running_espionage_operation = no
+			fail_text = operation_one_at_a_time
+		}
+        owner = {
+            bts_can_use_councilor_power = { COUNCILOR = bts_crisis_councilor_operation }
+        } 
+	}
+
+	stage = {
+		difficulty = @diff_t4
+		icon = GFX_espionage_chapter_icon_success
+		event = bts.522
+	}
+
+	on_roll_failed = {
+		standard_espionage_operation_on_roll_failed = {
+			RANDOM_EVENTS = operation_random_events_low_stakes
+		}
+	}
+	on_create = {
+		target = {
+			set_timed_country_flag = {
+				flag = espionage_operation_targeted_by@root.owner #Used in random Spy Network events
+				days = @operationTargetedByTimer
+			}
+		}
+	}
+}
+
+
+
+
+operation_bts_crisis_devour_mind_preftl = {
+	target = none
+	categories = { op_cat_provocation }
+	picture = GFX_evt_alien_abduction
+	desc = operation_bts_crisis_devour_mind_desc
+	stages = 1
+
+	resources = {
+		category = operations
+		cost = {
+			trigger = {
+				owner = {
+					has_appearance_modding_technology = no
+				}
+			}
+			influence = 45
+		}
+		cost = {
+			trigger = {
+				owner = {
+					has_appearance_modding_technology = yes
+				}
+			}
+			influence = 25
+		}
+		upkeep = {
+			energy = 6
+		}
+	}
+	spy_power_cost = 10
+
+	potential = {
+		target = {
+			is_primitive = yes
+		}
+	}
+
+	allow = {
+		custom_tooltip = {
+			is_running_espionage_operation = no
+			fail_text = operation_one_at_a_time
+		}
+
+		custom_tooltip = {
+			owner = {
+				OR = {
+					has_policy_flag = interference_subtle
+					has_policy_flag = interference_active
+				}
+			}
+			fail_text = operation_wrong_interference_policy
+		}
+
+		custom_tooltip = {
+			target = {
+				capital_scope = {
+					has_observation_outpost = yes
+					observation_outpost_owner = { is_same_value = root.owner }
+				}
+			}
+			fail_text = operation_requires_observation_outpost
+		}
+	}
+
+	abort = {
+		OR = {
+			target = {
+				OR = {
+					is_primitive = no
+					capital_scope = {
+						has_observation_outpost = no
+					}
+				}
+			}
+			owner = {
+				NOR = {
+					has_policy_flag = interference_subtle
+					has_policy_flag = interference_active
+				}
+			}
+		}
+	}
+
+	stage = {
+		difficulty = @diff_t2
+		icon = GFX_espionage_chapter_icon_success
+		event = bts.522
+	}
+
+	on_roll_failed = {
+		pre_ftl_espionage_operation_on_roll_failed = { RANDOM_EVENTS = operation_random_events_pre_ftl }
+	}
+	on_create = {
+		target = {
+			set_timed_country_flag = {
+				flag = preftl_espionage_operation_targeted_by@root.owner #Used in random Spy Network events
+				days = @operationTargetedByTimer
+			}
+		}
+	}
+}

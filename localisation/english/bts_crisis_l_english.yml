@@ -211,6 +211,18 @@ job_bts_crisis_sacrifical_thrall_effect_desc: "$job_bts_crisis_sacrifical_thrall
 mod_job_bts_crisis_sacrifical_thrall_add: "$job_bts_crisis_sacrifical_thrall$ Jobs"
 planet_bts_crisis_sacrifical_thrall: "$job_bts_crisis_sacrifical_thrall$ Jobs"
 
+# Operations
+operation_bts_crisis_devour_mind: "Devour Mind"
+operation_bts_crisis_devour_mind_preftl: "$operation_bts_crisis_devour_mind$"
+operation_bts_crisis_devour_mind_desc: "Our psionic powers enable us to break the free will of weaker minds and thus bend them to our will."
+operation_bts_crisis_devour_mind_effect_base: "Steals 1 pop and adds §Y$bts_trait_crisis_thrall$§! trait"
+operation_bts_crisis_devour_mind_effect_upgrade: "Steal 2 pops and give them §Y$bts_trait_crisis_thrall$§! trait"
+operation_bts_crisis_devour_mind_on_success: "$IF_SUCCESSFUL|E$\n[owner.operation_bts_crisis_devour_mind_effect]."
+operation_bts_crisis_devour_mind_preftl_on_success: "$operation_bts_crisis_devour_mind_on_success$\n\n[owner.GetDisguiseState]"
+operation_bts_crisis_devour_mind_tooltip_effect: "Converted into a §Rdevoured mind§! species and is resettled to §Y[root.owner.Capital.GetName]§!"
+operation_bts_crisis_devour_mind_event_title: "$operation_bts_crisis_devour_mind$"
+operation_bts_crisis_devour_mind_event_desc: "A final thought emanates from the target, who ends up being devoured by our empire."
+
 # UI Text
 bts_reckoning_info: "§M$NAME_Reckoning$§! : §Y[root.bts_planet_killer_end_pop_killed]§! organic pops §Rkilled§!"
 bts_crisis_ritual_cost_tooltip: "Kills §Y$COST|*0$§! §R$job_bts_crisis_sacrifical_thrall_plural$§!"
