@@ -17,8 +17,3 @@ bts_time_dilation = {
 bts_energy_surge = {
     ship_shield_penetration_add = @r_bts_relic_concept_energy_effect_shield_penetration
 }
-
-bts_menp_labyrinth_power_modifier = {
-    pop_growth_speed = 0.10
-    country_unity_produces_mult = 0.05
-}
