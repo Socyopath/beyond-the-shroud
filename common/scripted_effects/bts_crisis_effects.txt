@@ -1,0 +1,80 @@
+
+# This : Pop
+# CASTER : country
+bts_effect_devour_mind = {
+	if = {
+		limit = {
+			NOT = {
+				exists = event_target:bts_species_devoured_mind_@species
+			}
+		}
+		species = {
+			create_species = {
+				name = this
+				plural = this
+				class = this
+				portrait = this
+				namelist = this
+				sapient = no
+				can_be_modified = no
+				traits = {
+					ideal_planet_class = this
+					trait = bts_trait_crisis_thrall
+				}
+			}
+		}
+		last_created_species = {
+			save_global_event_target_as = bts_species_devoured_mind_@prev.species
+		}
+	}
+	change_species = event_target:bts_species_devoured_mind_@species
+    [[CASTER] $CASTER$ = {
+        fire_on_action = { 
+			on_action = on_bts_devour_mind
+			scopes = { 
+				from = prev
+			} 
+		}
+    }]
+}
+
+bts_effect_consume_thrall = {
+	while = {
+		count = $COUNT$
+		random_owned_pop = {
+			limit = {
+				has_job = bts_crisis_sacrifical_thrall
+			}
+			kill_pop = yes
+		}
+	}
+}
+
+bts_crisis_ritual_setup = {
+	solar_system.owner = {
+		custom_tooltip_with_params = {
+			description = "bts_crisis_ritual_info_tooltip"
+			description_parameters = {
+				"COST" = $COST$
+				"COOLDOWN" = $COOLDOWN$
+			}
+		}
+
+		hidden_effect = {
+			bts_effect_consume_thrall = { COUNT = $COST$ }
+			set_saved_date = {
+				key = bts_crisis_ritual_cooldown
+				days_from_present = value:bts_crisis_cooldown_value|COOLDOWN|$COOLDOWN$|MODIFIER|bts_crisis_ritual_coolodwn_mult|
+				expires = value:bts_crisis_cooldown_value|COOLDOWN|$COOLDOWN$|MODIFIER|bts_crisis_ritual_coolodwn_mult|
+			}
+			fire_on_action = { 
+				on_action = on_bts_ritual
+				scopes = { 
+					from = root
+				} 
+			}
+		}
+	}
+}
+
+

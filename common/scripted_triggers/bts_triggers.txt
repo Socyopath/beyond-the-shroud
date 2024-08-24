@@ -157,29 +157,3 @@ bts_have_spec_point = {
 	}
 }
 
-
-bts_crisis_has_thrall = {
-	custom_tooltip = {
-		fail_text = bts_crisis_has_thrall_$COST$
-		check_variable_arithmetic = {
-			which = value:bts_num_crisis_sacrifical_thrall
-			value >= $COST$
-		}
-	}
-}
-
-bts_can_use_councilor_power = {
-	any_owned_leader = {
-		is_councilor = yes
-		is_councilor_type = $COUNCILOR$
-		has_level >= @bts_crisis_councilor_power_level
-	}
-}
-
-bts_can_use_councilor_ultimate_power = {
-	any_owned_leader = {
-		is_councilor = yes
-		is_councilor_type = $COUNCILOR$
-		has_level >= @bts_crisis_councilor_ulimate_power_level
-	}
-}

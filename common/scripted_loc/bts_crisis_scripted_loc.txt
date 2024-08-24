@@ -2,10 +2,60 @@ defined_text = {
     name = operation_bts_crisis_devour_mind_effect
     text = {
 		trigger = { 
-            bts_can_use_councilor_ultimate_power = { COUNCILOR = bts_crisis_councilor_operation }
+            bts_can_use_councilor_power = { COUNCILOR = bts_crisis_councilor_operation }
          }
         localization_key = operation_bts_crisis_devour_mind_effect_upgrade
     }
     default = operation_bts_crisis_devour_mind_effect_base
 }
 
+
+defined_text = {
+    name = bts_crisis_ritual_cooldown_value_360
+    value = value:bts_crisis_cooldown_value|COOLDOWN|360|MODIFIER|bts_crisis_ritual_coolodwn_mult|
+}
+
+defined_text = {
+    name = bts_crisis_ritual_cooldown_value_720
+    value = value:bts_crisis_cooldown_value|COOLDOWN|720|MODIFIER|bts_crisis_ritual_coolodwn_mult|
+}
+
+defined_text = {
+    name = bts_crisis_ritual_cooldown_value_1080
+    value = value:bts_crisis_cooldown_value|COOLDOWN|1080|MODIFIER|bts_crisis_ritual_coolodwn_mult|
+}
+
+defined_text = {
+    name = bts_crisis_ritual_cooldown_value_1440
+    value = value:bts_crisis_cooldown_value|COOLDOWN|1440|MODIFIER|bts_crisis_ritual_coolodwn_mult|
+}
+
+defined_text = {
+    name = bts_crisis_ritual_cooldown_value_1800
+    value = value:bts_crisis_cooldown_value|COOLDOWN|1800|MODIFIER|bts_crisis_ritual_coolodwn_mult|
+}
+
+defined_text = {
+    name = bts_crisis_ritual_cooldown_value_2160
+    value = value:bts_crisis_cooldown_value|COOLDOWN|2160|MODIFIER|bts_crisis_ritual_coolodwn_mult|
+}
+
+defined_text = {
+    name = bts_crisis_ritual_cooldown_value_2520
+    value = value:bts_crisis_cooldown_value|COOLDOWN|2520|MODIFIER|bts_crisis_ritual_coolodwn_mult|
+}
+
+defined_text = {
+    name = bts_crisis_ritual_cooldown_value_2880
+    value = value:bts_crisis_cooldown_value|COOLDOWN|2880|MODIFIER|bts_crisis_ritual_coolodwn_mult|
+}
+
+defined_text = {
+    name = bts_crisis_ritual_cooldown_value_3240
+    value = value:bts_crisis_cooldown_value|COOLDOWN|3240|MODIFIER|bts_crisis_ritual_coolodwn_mult|
+}
+
+defined_text = {
+    name = bts_crisis_ritual_cooldown_value_3600
+    value = value:bts_crisis_cooldown_value|COOLDOWN|3600|MODIFIER|bts_crisis_ritual_coolodwn_mult|
+}

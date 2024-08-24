@@ -1,0 +1,43 @@
+bts_crisis_has_thrall = {
+    check_variable_arithmetic = {
+        which = value:bts_num_crisis_sacrifical_thrall
+        value >= $COST$
+    }
+}
+
+bts_can_use_councilor_power = {
+	any_owned_leader = {
+		is_councilor = yes
+		is_councilor_type = $COUNCILOR$
+		has_level >= @bts_crisis_councilor_power_level
+	}
+}
+
+bts_can_use_councilor_ultimate_power = {
+	any_owned_leader = {
+		is_councilor = yes
+		is_councilor_type = $COUNCILOR$
+		has_level >= @bts_crisis_councilor_ulimate_power_level
+	}
+}
+
+
+bts_crisis_ritual_can_use_cost = {
+	custom_tooltip = {
+		fail_text = bts_crisis_ritual_no_thrall
+		solar_system.owner = {
+            bts_crisis_has_thrall = { COST = $COST$ }
+        }
+	}
+}
+
+bts_crisis_ritual_can_use_cooldown = {
+    custom_tooltip = {
+        fail_text = bts_crisis_ritual_on_cooldown
+        solar_system.owner = {
+            NOT = { has_country_flag = bts_crisis_ritual_cooldown }
+        }
+    }
+}
+
+    

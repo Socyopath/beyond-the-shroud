@@ -99,7 +99,9 @@ espionage_operation_event = {
 				}
 				custom_tooltip = operation_bts_crisis_devour_mind_tooltip_effect
 				hidden_effect = {
-					bts_effect_devour_mind = yes
+					bts_effect_devour_mind = {
+						CASTER = root.owner
+					}
 					resettle_pop = {
 						pop = this
 						planet = root.owner.capital_scope
@@ -112,7 +114,7 @@ espionage_operation_event = {
 		if = {
 			limit = {
 				owner = {
-					bts_can_use_councilor_ultimate_power = { COUNCILOR = bts_crisis_councilor_operation }
+					bts_can_use_councilor_power = { COUNCILOR = bts_crisis_councilor_operation }
 				}
 			}
 			from = {
@@ -125,7 +127,9 @@ espionage_operation_event = {
 					}
 					custom_tooltip = operation_bts_crisis_devour_mind_tooltip_effect
 					hidden_effect = {
-						bts_effect_devour_mind = yes
+						bts_effect_devour_mind = {
+							CASTER = root.owner
+						}
 						resettle_pop = {
 							pop = this
 							planet = root.owner.capital_scope
