@@ -66,57 +66,63 @@ bts_ritual_pop_trade = {
 	}
 
     allow = {
-        solar_system = {
-            owner = {
-                NOT = {
-                    has_modifier = bts_crisis_ritual_coolodwn
-                }
-                if = {
-                    limit = { bts_can_use_councilor_ultimate_power = { COUNCILOR = bts_crisis_councilor_ritual } }
-                    bts_crisis_has_thrall = {
-                        COST = @bts_ritual_pop_trade_custom_thrall_cost
-                    }
-                }
-                else = {
-                    bts_crisis_has_thrall = {
-                        COST = @bts_ritual_pop_trade_thrall_cost
-                    }
+        bts_crisis_ritual_can_use_cooldown = yes
+
+        if = {
+            limit = { 
+                solar_system.owner = {
+                    bts_can_use_councilor_ultimate_power = { COUNCILOR = bts_crisis_councilor_ritual } 
                 }
             }
+            bts_crisis_ritual_can_use_cost = {
+                COST = @bts_ritual_pop_trade_custom_thrall_cost
+            }
         }
+        else = {
+            bts_crisis_ritual_can_use_cost = {
+                COST = @bts_ritual_pop_trade_thrall_cost
+            }
+        }
+
     }
 
 	effect = {
-        solar_system.owner = {
-            custom_tooltip = bts_ritual_pop_trade_effect
-            hidden_effect = {
-                capital_scope = {
-                    create_pop = {
-                        species = owner_main_species
-                    }
+        custom_tooltip = bts_ritual_pop_trade_effects
+
+        hidden_effect = {
+            solar_system.owner.capital_scope = {
+                create_pop = {
+                    species = owner_main_species
                 }
             }
-            if = {
-                limit = {
+        }
+        if = {
+            limit = {
+                solar_system.owner = {
                     bts_can_use_councilor_power = { COUNCILOR = bts_crisis_councilor_ritual }
                 }
-                add_modifier = {
-                    modifier = bts_ritual_pop_trade_boost
-                    days = @bts_ritual_pop_trade_boost_duration
+            }
+            add_modifier = {
+                modifier = bts_ritual_pop_trade_boost
+                days = @bts_ritual_pop_trade_boost_duration
+            }
+        }
+
+        if = {
+            limit = { 
+                solar_system.owner = {
+                    bts_can_use_councilor_ultimate_power = { COUNCILOR = bts_crisis_councilor_ritual } 
                 }
             }
-            if = {
-                limit = { bts_can_use_councilor_ultimate_power = { COUNCILOR = bts_crisis_councilor_ritual } }
-                bts_crisis_ritual_setup = {
-                    COST = @bts_ritual_pop_trade_custom_thrall_cost
-                    COOLDOWN = @bts_ritual_pop_trade_cooldown
-                }
+            bts_crisis_ritual_setup = {
+                COST = @bts_ritual_pop_trade_custom_thrall_cost
+                COOLDOWN = @bts_ritual_pop_trade_cooldown
             }
-            else = {
-                bts_crisis_ritual_setup = {
-                    COST = @bts_ritual_pop_trade_thrall_cost
-                    COOLDOWN = @bts_ritual_pop_trade_cooldown
-                }
+        }
+        else = {
+            bts_crisis_ritual_setup = {
+                COST = @bts_ritual_pop_trade_thrall_cost
+                COOLDOWN = @bts_ritual_pop_trade_cooldown
             }
         }
 	}
