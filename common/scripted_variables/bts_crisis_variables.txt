@@ -1,6 +1,11 @@
 # Levels Requirements
 @bts_crisis_level_3_favor_cost = 150
 
+# Objectives
+@bts_crisis_obj_devour_mind_currency = 25
+@bts_crisis_obj_ritual_currency = 100
+@bts_crisis_obj_pact_currency = 1000
+
 # Buildings
 @bts_crisis_building_thrall_build_time = 0
 @bts_crisis_building_thrall_1_jobs = 2

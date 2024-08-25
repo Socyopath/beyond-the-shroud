@@ -33,7 +33,12 @@ operation_bts_crisis_devour_mind = {
 	spy_power_cost = 10
 
 	potential = {
-		target = { is_primitive = no }
+        owner = {
+            has_crisis_perk = bts_menp_spy_op
+        }
+		target = { 
+            is_primitive = no
+        }
 	}
 
 	allow = {
@@ -42,7 +47,7 @@ operation_bts_crisis_devour_mind = {
 			fail_text = operation_one_at_a_time
 		}
         owner = {
-            bts_can_use_councilor_power = { COUNCILOR = bts_crisis_councilor_operation }
+            bts_can_use_councilor_ultimate_power = { COUNCILOR = bts_crisis_councilor_operation }
         } 
 	}
 
@@ -102,6 +107,9 @@ operation_bts_crisis_devour_mind_preftl = {
 	spy_power_cost = 10
 
 	potential = {
+        owner = {
+            has_crisis_perk = bts_menp_spy_op
+        }
 		target = {
 			is_primitive = yes
 		}
