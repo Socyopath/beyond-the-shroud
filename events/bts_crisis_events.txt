@@ -67,7 +67,18 @@ country_event = {
 	hide_window = yes
 	
 	immediate = {
-		complete_crisis_objective = bts_crisis_obj_test
+		complete_crisis_objective = bts_crisis_obj_ritual
+	}
+}
+
+# Crisis Objective: Devours Mind
+country_event = {
+	id = bts.501
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		complete_crisis_objective = bts_crisis_obj_devour_mind
 	}
 }
 
