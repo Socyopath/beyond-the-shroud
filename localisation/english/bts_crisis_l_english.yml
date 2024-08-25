@@ -241,7 +241,7 @@ operation_bts_crisis_devour_mind_event_desc: "A final thought emanates from the 
 # Species Rights
 citizenship_bts_crisis: "Devour Mind"
 citizenship_bts_crisis_tooltip: "All owned Pops of this species will turn into a §Rdevoured mind§! variant."
-citizenship_bts_crisis_tooltip_delayed: "Inferior creatures do not deserve free will."
+citizenship_bts_crisis_tooltip_delayed: "§LInferior creatures do not deserve free will.§!"
 
 # UI Text
 bts_reckoning_info: "§M$NAME_Reckoning$§! : §Y[root.bts_planet_killer_end_pop_killed]§! organic pops §Rkilled§!"
