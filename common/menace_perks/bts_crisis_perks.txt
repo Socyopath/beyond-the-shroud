@@ -35,7 +35,8 @@ bts_menp_building = {
 bts_menp_spy_op = {
 	portrait = "GFX_crisis_icon_bts_spy_op"
 	modifier = {
-		
+		intel_decryption_add = 2
+		envoys_add = 1
 	}
 	on_unlock = {
 		custom_tooltip = bts_menp_spy_op_effect

@@ -1,25 +1,34 @@
 l_english:
 
 # Perks and Levels
+# Objectives
+bts_crisis_obj_ritual_name: "Perform Eldritch Rituals"
+bts_crisis_obj_ritual_desc: "Death releases an immense amount of energy into the shroud, disturbing the minds of the living."
+bts_crisis_obj_devour_mind_name: "Devour minds"
+bts_crisis_obj_devour_mind_desc: "The weak don't deserve free will, their miserable lives are doomed to slavery."
+bts_crisis_obj_pact_name: "Conclude Eldritch Pacts"
+bts_crisis_obj_pact_desc: "The Great Old Ones are beyond imagination and anyone who comes into contact with them is taken by madness."
 ## Level 1
 bts_crisis_level_1: "§UConcern§!"
 bts_crisis_level_1_desc: "Crisis Level 1"
-bts_menp_mega: "Shroud Rituals"
-bts_menp_mega_effect: "Unlock §Y$bts_mega_aetherophasic_collapser_unlocked$§! megastructure"
-bts_menp_building: ""
-bts_menp_building_effect: ""
-bts_menp_spy_op: ""
-bts_menp_spy_op_effect: ""
+bts_menp_mega: "Delve Into Madness"
+bts_menp_mega_effect: "§YUnlocks Megastructure:§! $bts_mega_aetherophasic_collapser_unlocked$"
+bts_menp_building: "Enslave the weak"
+bts_menp_building_effect: "§YUnlocks Buildings:§!\n- $bts_crisis_building_thrall_1$ §Y(Tier 1)§!\n- $bts_crisis_building_thrall_2$ §Y(Tier 2)§!\n- $bts_crisis_building_thrall_3$ §Y(Tier 3)§!"
+bts_menp_spy_op: "Mental Horror"
+bts_menp_spy_op_effect: "§YUnlocks Espionage Operation:§! $operation_bts_crisis_devour_mind$ (§RPre-FTL only§! unless you have a §YLvl $@bts_crisis_councilor_ulimate_power_level|*0$ $bts_crisis_councilor_operation$§! councilor)\n"
 
 ## Level 2
 bts_crisis_level_2: "§URisk§!"
 bts_crisis_level_2_desc: "Crisis Level 2"
-bts_menp_agendas: ""
-bts_menp_agendas_effect: ""
-bts_menp_cult_1: ""
-bts_menp_cult_1_effect: ""
-bts_menp_spec_rights: ""
-bts_menp_spec_rights_effect: ""
+bts_menp_agendas: "Dark Rites"
+bts_menp_agendas_effect: "§YUnlocks Agendas:§!\n- $council_agenda_bts_crisis_agenda_1_name$\n- $council_agenda_bts_crisis_agenda_2_name$"
+bts_menp_cult_1: "Nameless Zealots"
+bts_menp_cult_1_effect_councilor_power: "§YLevel $@bts_crisis_councilor_power_level|*0$:§! "
+bts_menp_cult_1_effect_councilor_power_ultimate: "§YLevel $@bts_crisis_councilor_ulimate_power_level|*0$:§! "
+bts_menp_cult_1_effect_councilor_1: "§H$t$$bts_crisis_councilor_operation$§!\n$tt$$COUNCIL_POSITION_MODIFIER_BASE$\n$ttt$$MOD_ESPIONAGE_OPERATION_SPEED_MULT$: §G$@bts_crisis_councilor_operation_speed_per_level|%0$§!\n$tt$$bts_menp_cult_1_effect_councilor_power$Operation §Y$operation_bts_crisis_devour_mind$§! steals §G+1§! pop\n$tt$$bts_menp_cult_1_effect_councilor_power_ultimate$Operation §Y$operation_bts_crisis_devour_mind$§! works on FTL empires"
+bts_menp_cult_1_effect_councilor_2: "§H$t$$bts_crisis_councilor_ritual$§!\n$tt$$COUNCIL_POSITION_MODIFIER_BASE$\n$ttt$$mod_bts_crisis_ritual_coolodwn_mult$: §G$@bts_crisis_councilor_ritual_cooldown_per_level|%1$§!\n$tt$$bts_menp_cult_1_effect_councilor_power$Ritual §YUmbral Trade§! grants $mod_planet_jobs_produces_mult$\n$tt$$bts_menp_cult_1_effect_councilor_power_ultimate$Ritual §YUmbral Trade's§! cost is reduced by §G1§!"
+bts_menp_cult_1_effect: "§YUnlocks Councilors:§!\n$bts_menp_cult_1_effect_councilor_1$\n$bts_menp_cult_1_effect_councilor_2$"
 
 ## Level 3
 bts_crisis_level_3: "§UDanger§!"
@@ -58,8 +67,8 @@ bts_crisis_currency: "Madness"
 bts_crisis_currency_name: "$bts_crisis_currency$:"
 bts_crisis_currency_value: "£bts_crisis_currency£ $VAL|0$"
 bts_crisis_currency_gaining: "Complete §HCrisis Objectives§! to gain more £bts_crisis_currency£ §Y$bts_crisis_currency$§!."
-bts_crisis_currency_desc: "$bts_crisis_currency$ measures our sanity level"
-bts_crisis_currency_crisis_level_desc: "To advance through the Crisis levels, accumulate $bts_crisis_currency$ and progress through §Y$pc_bts_labyrinth_of_abstraction$§! and your §YCovenant§!"
+bts_crisis_currency_desc: "$bts_crisis_currency$ measures our level of insanity"
+bts_crisis_currency_crisis_level_desc: "To advance through the crisis levels, accumulate §Y$bts_crisis_currency$§! by performing §YEldritch Actions§! that will decrease your sanity such as §Yrituals§!, §Ypacts§! or by §Ydevouring the mind§! of other species"
 bts_crisis_currency_crisis_level_unlock: "Has £bts_crisis_currency£ §Y$CURRENCY$§! $bts_crisis_currency$"
 bts_crisis_currency_crisis_level_locked: "Required to unlock this level:\n"
 bts_crisis_currency_crisis_level_unlocked: "At $LEVEL$, you get the rewards:\n"
@@ -71,7 +80,7 @@ bts_crisis_currency_crisis_objective_progress: "We have gained £bts_crisis_curr
 bts_crisis_currency_crisis_description_title: "$ap_bts_crisis$"
 bts_crisis_currency_crisis_description: "$menace_crisis_description_intro$\n\nOur sanity is an obstacle to our evolution. It prevents our minds from exploring the strangest and darkest concepts of existence. We must break down these barriers by any means necessary."
 bts_crisis_currency_crisis_howto_title: "Rituals"
-bts_crisis_currency_crisis_howto: "Pursuing §HCrisis Objectives§! generates £bts_crisis_currency£ §H$bts_crisis_currency$§!, unleashing the psionic potential of our Empire. In our quest to overcome the metaphysical barriers of our minds, we'll have to perform occult rituals in order to evolve into a higher form of consciousness."
+bts_crisis_currency_crisis_howto: "Pursuing §HCrisis Objectives§! generates £bts_crisis_currency£ §H$bts_crisis_currency$§!, unleashing the psionic potential of our Empire. In our quest to overcome the metaphysical barriers of our minds, we'll have to sacrifice weak in order to perform occult rituals and make pacts with eldritch entities."
 
 # Policies
 policy_bts_crisis_menp_weapons_policy: "Otherworldy Weapons"

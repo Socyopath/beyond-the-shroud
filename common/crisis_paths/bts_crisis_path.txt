@@ -11,6 +11,8 @@ bts_crisis_path = {
     }
 
     objectives = {
-        bts_crisis_obj_conceptual_architects
+        bts_crisis_obj_ritual
+        bts_crisis_obj_devour_mind
+        bts_crisis_obj_pact
     }
 }

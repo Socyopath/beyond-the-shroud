@@ -1,6 +1,8 @@
 bts_crisis_councilor_ritual = {
 	leader_class = { official }
-	possible = { always = yes }
+	possible = { 
+		has_crisis_perk = bts_menp_cult_1
+	}
 	modifier = {
 		bts_crisis_ritual_coolodwn_mult = @bts_crisis_councilor_ritual_cooldown_per_level
 	}
@@ -9,7 +11,9 @@ bts_crisis_councilor_ritual = {
 
 bts_crisis_councilor_pact = {
 	leader_class = { official }
-	possible = { always = yes }
+	possible = { 
+		has_crisis_perk = bts_menp_cult_2
+	}
 	modifier = {
 		bts_crisis_pact_cost_mult = @bts_crisis_councilor_pact_cost_per_level
 	}
@@ -18,7 +22,9 @@ bts_crisis_councilor_pact = {
 
 bts_crisis_councilor_operation = {
 	leader_class = { official }
-	possible = { always = yes }
+	possible = { 
+		has_crisis_perk = bts_menp_cult_1
+	}
 	modifier = {
 		espionage_operation_speed_mult = @bts_crisis_councilor_operation_speed_per_level
 	}
