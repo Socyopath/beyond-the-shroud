@@ -73,7 +73,7 @@ country_event = {
 
 # this = operation; from = target (country)
 espionage_operation_event = {
-	id = bts.522
+	id = bts.513
 	title = operation_bts_crisis_devour_mind_event_title
 	desc = operation_bts_crisis_devour_mind_event_desc
 
@@ -149,6 +149,76 @@ espionage_operation_event = {
 	}
 }
 
+# Devour Mind species rights
+country_event = {
+	id = bts.523
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		any_owned_species = {
+			has_citizenship_type = {
+				type = citizenship_bts_crisis
+				country = root
+			}
+		}
+	}
+
+	immediate = {
+		random_list = {
+			1 = { # 3 pops
+				while = {
+					count = 3
+					random_owned_pop = {
+						limit = {
+							has_citizenship_type = {
+								type = citizenship_bts_crisis
+								country = root
+							}
+						}
+						bts_effect_devour_mind = { 
+							CASTER = root
+						}
+					}
+				}
+			}
+
+			1 = { # 6 pops
+				while = {
+					count = 6
+					random_owned_pop = {
+						limit = {
+							has_citizenship_type = {
+								type = citizenship_bts_crisis
+								country = root
+							}
+						}
+						bts_effect_devour_mind = { 
+							CASTER = root
+						}
+					}
+				}
+			}
+
+			1 = { # 12 pops
+				while = {
+					count = 12
+					random_owned_pop = {
+						limit = {
+							has_citizenship_type = {
+								type = citizenship_bts_crisis
+								country = root
+							}
+						}
+						bts_effect_devour_mind = { 
+							CASTER = root
+						}
+					}
+				}
+			}
+		}
+	}
+}
 
 # country_event = {
 # 	id = bts.30

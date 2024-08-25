@@ -29,6 +29,8 @@ bts_menp_cult_1_effect_councilor_power_ultimate: "§YLevel $@bts_crisis_councilo
 bts_menp_cult_1_effect_councilor_1: "§H$t$$bts_crisis_councilor_operation$§!\n$tt$$COUNCIL_POSITION_MODIFIER_BASE$\n$ttt$$MOD_ESPIONAGE_OPERATION_SPEED_MULT$: §G$@bts_crisis_councilor_operation_speed_per_level|%0$§!\n$tt$$bts_menp_cult_1_effect_councilor_power$Operation §Y$operation_bts_crisis_devour_mind$§! steals §G+1§! pop\n$tt$$bts_menp_cult_1_effect_councilor_power_ultimate$Operation §Y$operation_bts_crisis_devour_mind$§! works on FTL empires"
 bts_menp_cult_1_effect_councilor_2: "§H$t$$bts_crisis_councilor_ritual$§!\n$tt$$COUNCIL_POSITION_MODIFIER_BASE$\n$ttt$$mod_bts_crisis_ritual_coolodwn_mult$: §G$@bts_crisis_councilor_ritual_cooldown_per_level|%1$§!\n$tt$$bts_menp_cult_1_effect_councilor_power$Ritual §YUmbral Trade§! grants $mod_planet_jobs_produces_mult$\n$tt$$bts_menp_cult_1_effect_councilor_power_ultimate$Ritual §YUmbral Trade's§! cost is reduced by §G1§!"
 bts_menp_cult_1_effect: "§YUnlocks Councilors:§!\n$bts_menp_cult_1_effect_councilor_1$\n$bts_menp_cult_1_effect_councilor_2$"
+bts_menp_spec_rights: "Mind Feast"
+bts_menp_spec_rights_effect: "§YUnlocks Species Rights:§! $citizenship_bts_crisis$"
 
 ## Level 3
 bts_crisis_level_3: "§UDanger§!"
@@ -235,6 +237,11 @@ operation_bts_crisis_devour_mind_preftl_on_success: "$operation_bts_crisis_devou
 operation_bts_crisis_devour_mind_tooltip_effect: "Converted into a §Rdevoured mind§! species and is resettled to §Y[root.owner.Capital.GetName]§!"
 operation_bts_crisis_devour_mind_event_title: "$operation_bts_crisis_devour_mind$"
 operation_bts_crisis_devour_mind_event_desc: "A final thought emanates from the target, who ends up being devoured by our empire."
+
+# Species Rights
+citizenship_bts_crisis: "Devour Mind"
+citizenship_bts_crisis_tooltip: "All owned Pops of this species will turn into a §Rdevoured mind§! variant."
+citizenship_bts_crisis_tooltip_delayed: "Inferior creatures do not deserve free will."
 
 # UI Text
 bts_reckoning_info: "§M$NAME_Reckoning$§! : §Y[root.bts_planet_killer_end_pop_killed]§! organic pops §Rkilled§!"

@@ -54,7 +54,7 @@ operation_bts_crisis_devour_mind = {
 	stage = {
 		difficulty = @diff_t4
 		icon = GFX_espionage_chapter_icon_success
-		event = bts.522
+		event = bts.513
 	}
 
 	on_roll_failed = {
@@ -164,7 +164,7 @@ operation_bts_crisis_devour_mind_preftl = {
 	stage = {
 		difficulty = @diff_t2
 		icon = GFX_espionage_chapter_icon_success
-		event = bts.522
+		event = bts.513
 	}
 
 	on_roll_failed = {
