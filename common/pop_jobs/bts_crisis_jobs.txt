@@ -19,11 +19,8 @@ bts_crisis_sacrifical_thrall = {
 	resources = {
 		category = planet_bts_crisis_sacrifical_thrall
 		produces = {
-			unity = 9
-            society_research = 3
-		}
-		upkeep = {
-			energy = 1
+			unity = @bts_crisis_sacrifical_thrall_unity
+			society_research = @bts_crisis_sacrifical_thrall_society_research
 		}
 	}
 

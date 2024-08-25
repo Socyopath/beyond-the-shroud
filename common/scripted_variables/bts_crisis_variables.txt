@@ -7,10 +7,13 @@
 @bts_crisis_obj_pact_currency = 1000
 
 # Buildings
-@bts_crisis_building_thrall_build_time = 0
 @bts_crisis_building_thrall_1_jobs = 2
 @bts_crisis_building_thrall_2_jobs = 4
 @bts_crisis_building_thrall_3_jobs = 6
+
+# Jobs
+@bts_crisis_sacrifical_thrall_unity = 3
+@bts_crisis_sacrifical_thrall_society_research = 1
 
 # Rituals
 @bts_ritual_pop_trade_cooldown = 360

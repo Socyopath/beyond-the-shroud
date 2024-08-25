@@ -210,14 +210,17 @@ bts_trait_crisis_thrall_desc: ""
 
 # Buildings
 bts_crisis_building_thrall_1: "Sacrificial Altar"
+bts_crisis_building_thrall_1_desc: ""
 bts_crisis_building_thrall_2: "Sacrificial Santcum"
+bts_crisis_building_thrall_2_desc: ""
 bts_crisis_building_thrall_3: "Abyssal Sanctum"
+bts_crisis_building_thrall_3_desc: ""
 
 # Jobs
 job_bts_crisis_sacrifical_thrall: "Sacrificial Thrall"
 job_bts_crisis_sacrifical_thrall_plural: "Sacrificial Thralls"
-job_bts_crisis_sacrifical_thrall_desc: "A highly skilled telepath able to materialize certain concepts locally from his mind. He also excels in the art of controlling the thoughts of other entities."
-job_bts_crisis_sacrifical_thrall_effect_desc: "$job_bts_crisis_sacrifical_thrall_plural$ produce only unity by default, you need to specialize them by building districts on $pc_bts_labyrinth_of_abstraction$."
+job_bts_crisis_sacrifical_thrall_desc: "An enslaved creature whose mind has been devoured. Its sole purpose is to serve as a sacrifice to increase our power."
+job_bts_crisis_sacrifical_thrall_effect_desc: "£job_bts_crisis_sacrifical_thrall£ $job_bts_crisis_sacrifical_thrall_plural$ produce £unity£ §Y$unity$§!, £society£ §Y$society_research$§! and they are used as §Rsacrifices§! for §YEldritch Abilities§!"
 mod_job_bts_crisis_sacrifical_thrall_add: "$job_bts_crisis_sacrifical_thrall$ Jobs"
 planet_bts_crisis_sacrifical_thrall: "$job_bts_crisis_sacrifical_thrall$ Jobs"
 
