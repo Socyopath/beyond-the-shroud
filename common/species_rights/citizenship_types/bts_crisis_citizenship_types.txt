@@ -1,0 +1,30 @@
+# from = country
+# this = species
+
+citizenship_bts_crisis = {
+	is_assimilation = yes
+
+	potential = {
+		exists = from
+		from = {
+			has_crisis_perk = bts_menp_spec_rights
+		}
+	}
+
+	allow = {
+		hidden_trigger = { exists = from }
+		custom_tooltip = {
+			fail_text = MUST_NOT_BE_DOMINANT_SPECIES
+			NOT = { is_exact_same_species = from }
+		}
+		custom_tooltip = {
+			fail_text = pre_sapients_citizenship
+			is_sapient = yes
+		}
+		custom_tooltip = {
+			fail_text = species_is_not_organic
+			is_robotic_species = no
+		}
+	}
+}
+

@@ -21,6 +21,13 @@ on_monthly_pulse_country = {
     }
 }
 
+# this = country
+on_yearly_pulse_country = {
+	events = {
+		bts.523			# Devour Mind species rights
+	}
+}
+
 # Scope:
 # this/root = planet that have been fired upon
 # from = fleet that fired
