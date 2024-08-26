@@ -2,6 +2,13 @@
 
 spriteTypes = {
 
+	# Ascension
+	spriteType = {
+		name = "GFX_ap_bts_crisis"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_bts_crisis.dds"
+		alwaystransparent = yes
+	}
+
     # Currency
 	spriteType = {
 		name = "GFX_resource_bts_crisis_currency"

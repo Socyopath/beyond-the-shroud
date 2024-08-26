@@ -1,5 +1,10 @@
 l_english:
 
+# Ascension
+ap_bts_crisis: "Eldritch Pursuit"
+ap_bts_crisis_desc: "From chaos comes order, then matter and finally mind, the pinnacle of evolution. But mind seems to be limited by an unfathomable barrier that we must break down."
+ap_bts_crisis_effect: "§Y[this.GetName]§! shifts its ethics towards §Y$ethic_fanatic_spiritualist$§! and §Y$ethic_authoritarian$§!\n§Y[owner_main_species.GetName]§! species gains §Y$bts_trait_crisis_main_1$§! trait."
+
 # Perks and Levels
 # Objectives
 bts_crisis_obj_ritual_name: "Perform Eldritch Rituals"
@@ -59,10 +64,6 @@ bts_crisis_level_5_desc: "Crisis Level 5"
 bts_menp_mega_summon_4: "$decision_bts_shroud_rift_summon_4$"
 bts_menp_mega_summon_4_effect: "Unlock §Y$decision_bts_shroud_rift_summon_4$§! decision in the §Y$pc_bts_shroud_rift$§!"
 bts_menp_godhood: "Beyond The Shroud"
-
-# Ascension
-ap_bts_crisis: "Eldritch Pursuit"
-ap_bts_crisis_desc: "From chaos comes order, then matter and finally mind, the pinnacle of evolution. But mind seems to be limited by an unfathomable barrier that we must break down."
 
 # UI
 bts_crisis_currency: "Madness"

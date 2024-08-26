@@ -1,6 +1,8 @@
 ap_bts_crisis = {
 	potential = {
+		has_country_flag = bts_crisis_unlocked
 		NOR = {
+			has_ascension_perk = ap_bts_crisis
 			has_ascension_perk = ap_become_the_crisis
 			has_ascension_perk = ap_cosmogenesis
 			has_ascension_perk = ap_defender_of_the_galaxy
@@ -8,11 +10,32 @@ ap_bts_crisis = {
 		}
 	}
 
-	possible = {
-
+	modifier = {
+		planet_stability_add = @ap_bts_crisis_stability
 	}
 
-	on_enabled = {
-        activate_crisis_progression = bts_crisis_path
+	on_enabled = {	
+		custom_tooltip = ap_bts_crisis_effect
+		hidden_effect = {
+			shift_ethic = "ethic_fanatic_spiritualist"
+			shift_ethic = "ethic_authoritarian"
+			change_government = {
+				authority = auth_imperial
+				cooldown = no
+				remove_invalid_civics = yes
+			}
+			set_government_cooldown = no
+			owner_main_species = {
+				change_species_characteristics = {
+					add_trait = bts_trait_crisis_main_1
+				}
+			}
+		}
+
+		activate_crisis_progression = bts_crisis_path
+
+		hidden_effect = {
+			set_country_flag = chosen_one_ruler_event # Prevent chosen one rule event event
+		}
 	}
 }

@@ -1,5 +1,6 @@
 # Levels Requirements
 @bts_crisis_level_3_favor_cost = 150
+@ap_bts_crisis_stability = -10
 
 # Objectives
 @bts_crisis_obj_devour_mind_currency = 25
