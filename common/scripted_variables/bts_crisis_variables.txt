@@ -17,7 +17,7 @@
 @bts_crisis_sacrifical_thrall_society_research = 1
 
 # Rituals
-@bts_ritual_pop_trade_cooldown = 360
+@bts_ritual_pop_trade_cooldown = 720
 @bts_ritual_pop_trade_thrall_cost = 2
 @bts_ritual_pop_trade_custom_thrall_cost = 1
 @bts_ritual_pop_trade_boost_produces = 0.25
