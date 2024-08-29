@@ -133,5 +133,13 @@ spriteTypes = {
 
     # Traits
 
-    # 
+    # Agendas
+	spriteType = {
+		name = "GFX_council_agenda_icon_bts_crisis_agenda_1"
+		texturefile = "gfx/interface/icons/agenda_icons/icon_bts_crisis_agenda.dds"
+	}
+	spriteType = {
+		name = "GFX_council_agenda_icon_bts_crisis_agenda_2"
+		texturefile = "gfx/interface/icons/agenda_icons/icon_bts_crisis_agenda.dds"
+	}
 }

@@ -1,0 +1,28 @@
+@base_agenda_cost = 7000
+
+bts_crisis_agenda_1 = {
+	agenda_cost = @base_agenda_cost
+	potential = {
+        has_crisis_perk = bts_menp_agendas
+    }
+    modifier = {
+        planet_stability_add = @bts_crisis_agenda_1_stability_base
+        all_technology_research_speed = @bts_crisis_agenda_1_tech_base
+    }
+
+    finish_modifier = bts_crisis_agenda_1_finish
+}
+
+bts_crisis_agenda_2 = {
+	agenda_cost = @base_agenda_cost
+	potential = {
+        has_crisis_perk = bts_menp_agendas
+    }
+    modifier = {
+        planet_stability_add = @bts_crisis_agenda_2_stability_base
+        planet_jobs_upkeep_mult = @bts_crisis_agenda_2_jobs_upkeep_base
+    }
+
+    finish_modifier = bts_crisis_agenda_2_finish
+}
+

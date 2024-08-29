@@ -1,3 +1,13 @@
 bts_ritual_pop_trade_boost = {
     planet_jobs_produces_mult = @bts_ritual_pop_trade_boost_produces
 }
+
+bts_crisis_agenda_1_finish = {
+    planet_stability_add = @bts_crisis_agenda_1_stability_finish
+    all_technology_research_speed = @bts_crisis_agenda_1_tech_finish
+}
+
+bts_crisis_agenda_2_finish = {
+    planet_stability_add = @bts_crisis_agenda_2_stability_finish
+    planet_jobs_upkeep_mult = @bts_crisis_agenda_2_jobs_upkeep_finish
+}
