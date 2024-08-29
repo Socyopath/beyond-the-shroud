@@ -82,6 +82,67 @@ country_event = {
 	}
 }
 
+# Ritual: Mindset Shift
+country_event = {
+	id = bts.502
+	picture = GFX_evt_alien_abduction
+	title = bts_ritual_reset_leader
+	desc = bts_ritual_reset_leader_effects
+
+	is_triggered_only = yes
+
+	immediate = {
+		bts_event_target_list_clear = yes
+		every_owned_leader = {
+			limit = {
+				has_skill > 1
+			}
+			bts_event_target_list_save = yes
+		}
+	}
+
+	inline_script = {
+		script = bts_option_list_hidden
+		ACTION = "leader_event = { id = bts.503 }"
+	}
+
+	option = {
+		name = OK
+		default_hide_option = yes
+	}
+}
+
+leader_event = {
+	id = bts.503
+	picture = GFX_evt_alien_abduction
+	title = bts_ritual_reset_leader
+	desc = bts_ritual_reset_leader_choose_spec
+
+	is_triggered_only = yes
+
+	option = {
+		name = official_with_icon
+		hidden_effect = {
+			bts_reset_leader = { CLASS = official }
+		}
+	} 
+	
+	option = {
+		name = commander_with_icon
+		hidden_effect = {
+			bts_reset_leader = { CLASS = commander }
+		}
+	}
+
+	option = {
+		name = scientist_with_icon
+		hidden_effect = {
+			bts_reset_leader = { CLASS = scientist }
+		}
+	}
+}
+
+
 # this = operation; from = target (country)
 espionage_operation_event = {
 	id = bts.513

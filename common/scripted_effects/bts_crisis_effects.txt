@@ -77,4 +77,85 @@ bts_crisis_ritual_setup = {
 	}
 }
 
+bts_save_leader_trait_flag = {
+	if = {
+		limit = {
+			has_trait = $TRAIT$
+		}
+		set_leader_flag = bts_had_trait_$TRAIT$
+	}
+}
+
+bts_restore_leader_trait_flag = {
+	if = {
+		limit = {
+			has_leader_flag = bts_had_trait_$TRAIT$
+		}
+		add_trait = $TRAIT$
+		remove_leader_flag = bts_had_trait_$TRAIT$
+	}
+}
+
+
+# bts_save_leader_trait_flag = { TRAIT = }
+# bts_restore_leader_trait_flag = { TRAIT = }
+bts_reset_leader_trait = {
+	bts_save_leader_trait_flag = { TRAIT = leader_trait_psionic }
+	bts_save_leader_trait_flag = { TRAIT = leader_trait_chosen }
+	bts_save_leader_trait_flag = { TRAIT = leader_trait_composer_chosen }
+	bts_save_leader_trait_flag = { TRAIT = leader_trait_instrument_chosen }
+	bts_save_leader_trait_flag = { TRAIT = leader_trait_eater_chosen }
+	bts_save_leader_trait_flag = { TRAIT = leader_trait_whisperers_chosen }
+	bts_save_leader_trait_flag = { TRAIT = leader_trait_admiral_warform }
+	bts_save_leader_trait_flag = { TRAIT = bts_leader_trait_covenant_chosen }
+	remove_all_traits = yes
+	bts_restore_leader_trait_flag = { TRAIT = leader_trait_psionic }
+	bts_restore_leader_trait_flag = { TRAIT = leader_trait_chosen }
+	bts_restore_leader_trait_flag = { TRAIT = leader_trait_composer_chosen }
+	bts_restore_leader_trait_flag = { TRAIT = leader_trait_instrument_chosen }
+	bts_restore_leader_trait_flag = { TRAIT = leader_trait_eater_chosen }
+	bts_restore_leader_trait_flag = { TRAIT = leader_trait_whisperers_chosen }
+	bts_restore_leader_trait_flag = { TRAIT = leader_trait_admiral_warform }
+	bts_restore_leader_trait_flag = { TRAIT = bts_leader_trait_covenant_chosen }
+}
+
+# Scope: Leader
+bts_reset_leader = {
+	unassign_leader = this 
+	change_leader_class = $CLASS$
+
+	# Reset XP
+	export_trigger_value_to_variable = {
+		trigger = has_experience
+		variable = bts_leader_xp
+	}
+	add_experience = value:bts_leader_xp_neg
+
+	# Reset Level
+	export_trigger_value_to_variable = {
+		trigger = has_level
+		variable = bts_leader_level
+	}
+	subtract_variable = {
+		which = bts_leader_level
+		value = 1
+	}
+	set_skill = 1
+
+	# Reset traits
+	bts_reset_leader_trait  = yes
+
+	# Add bonus traits from modifier
+	while = {
+		count = owner.modifier:leader_initial_skill
+		add_trait_no_notify = random_common
+	}
+
+	# Restore XP
+	# Restore Level
+	add_skill_without_trait_selection = bts_leader_level
+	add_experience = value:bts_leader_raw_experience|XP|bts_leader_xp|
+	clear_variable = bts_leader_level
+	clear_variable = bts_leader_xp
+}
 
