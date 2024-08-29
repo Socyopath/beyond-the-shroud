@@ -37,3 +37,16 @@
 @bts_crisis_councilor_operation_speed_per_level = 0.10
 @bts_crisis_councilor_pact_cost_per_level = -0.05
 @bts_crisis_councilor_ritual_cooldown_per_level = -0.025
+
+# Agendas
+@bts_crisis_agenda_1_tech_base = 0.20
+@bts_crisis_agenda_1_stability_base = -5
+@bts_crisis_agenda_1_tech_finish = 0.80
+@bts_crisis_agenda_1_stability_finish = -10
+
+@bts_crisis_agenda_2_jobs_upkeep_base = -0.15
+@bts_crisis_agenda_2_stability_base = -5
+@bts_crisis_agenda_2_jobs_upkeep_finish = -0.60
+@bts_crisis_agenda_2_stability_finish = -10
+
+
