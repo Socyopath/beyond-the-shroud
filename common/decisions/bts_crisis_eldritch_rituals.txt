@@ -128,6 +128,103 @@ bts_ritual_pop_trade = {
 	}
 }
 
+bts_ritual_remove_trait = {
+	sound = event_energy_field
+	icon = decision_wormhole
+    owned_planets_only = no
+
+	potential = {
+        is_planet_class = pc_bts_shroud_rift
+		exists = solar_system.owner
+        solar_system.owner = {
+            always = yes
+        }
+	}
+
+    allow = {
+        bts_crisis_ritual_can_use_cooldown = yes
+        bts_crisis_ritual_can_use_cost = {
+            COST = @bts_ritual_remove_trait_thrall_cost
+        }
+        solar_system = {
+            owner = {
+                any_owned_leader = {
+                    num_leader_traits = {
+                        value > 0
+                        negative = yes
+                    }
+                }
+            }
+        }
+    }
+
+	effect = {
+        custom_tooltip = bts_ritual_remove_trait_effects
+        bts_crisis_ritual_setup = {
+            COST = @bts_ritual_remove_trait_thrall_cost
+            COOLDOWN = @bts_ritual_remove_trait_cooldown
+        }
+
+        hidden_effect = {
+            solar_system.owner = {
+                random_owned_leader = {
+                    limit = {
+                        num_leader_traits = {
+                            value > 0
+                            negative = yes
+                        }
+                    }
+                    remove_trait = all_negative
+                }
+            }
+        }
+
+	}
+}
+
+bts_ritual_reset_leader = {
+	sound = event_energy_field
+	icon = decision_wormhole
+    owned_planets_only = no
+
+	potential = {
+        is_planet_class = pc_bts_shroud_rift
+		exists = solar_system.owner
+        solar_system.owner = {
+            always = yes
+        }
+	}
+
+    allow = {
+        bts_crisis_ritual_can_use_cooldown = yes
+        bts_crisis_ritual_can_use_cost = {
+            COST = @bts_ritual_reset_leader_thrall_cost
+        }
+        solar_system = {
+            owner = {
+                any_owned_leader = {
+                    has_skill > 1
+                }
+            }
+        }
+    }
+
+	effect = {
+        custom_tooltip = bts_ritual_reset_leader_effects
+        bts_crisis_ritual_setup = {
+            COST = @bts_ritual_reset_leader_thrall_cost
+            COOLDOWN = @bts_ritual_reset_leader_cooldown
+        }
+
+        hidden_effect = {
+            solar_system.owner = {
+                country_event = { id = bts.502 }
+            }
+        }
+
+	}
+}
+
 # # Ritual: Umbral Trade
 # country_event = {
 # 	id = bts.510

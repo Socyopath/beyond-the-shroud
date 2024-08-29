@@ -28,3 +28,13 @@ bts_crisis_cooldown_value = {
     mult = value:scripted_modifier_mult|MODIFIER|$MODIFIER$|
 }
 
+
+bts_leader_xp_neg = {
+	add = trigger:has_experience
+	mult = -1
+}
+
+bts_leader_raw_experience = {
+    set = $XP$
+    divide = value:scripted_modifier_mult|MODIFIER|species_leader_exp_gain|
+}

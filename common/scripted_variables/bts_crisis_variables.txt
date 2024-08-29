@@ -23,6 +23,12 @@
 @bts_ritual_pop_trade_boost_produces = 0.25
 @bts_ritual_pop_trade_boost_duration = 360
 
+@bts_ritual_remove_trait_cooldown = 1440
+@bts_ritual_remove_trait_thrall_cost = 2
+
+@bts_ritual_reset_leader_cooldown = 1800
+@bts_ritual_reset_leader_thrall_cost = 5
+
 # Traits
 @bts_trait_crisis_main_1_ethics = 0.01
 @bts_trait_crisis_main_1_happiness = 0.01
