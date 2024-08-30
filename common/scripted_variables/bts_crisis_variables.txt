@@ -55,4 +55,20 @@
 @bts_crisis_agenda_2_jobs_upkeep_finish = -0.60
 @bts_crisis_agenda_2_stability_finish = -10
 
+# Megastructure
+@bts_mega_aetherophasic_collapser_0_cost_energy = 500
+@bts_mega_aetherophasic_collapser_0_cost_alloys = 1000
+@bts_mega_aetherophasic_collapser_0_build_time = 1800
+
+@bts_mega_aetherophasic_collapser_1_cost_energy = 1000
+@bts_mega_aetherophasic_collapser_1_cost_alloys = 2000
+@bts_mega_aetherophasic_collapser_1_build_time = 1800
+
+@bts_mega_aetherophasic_collapser_2_cost_energy = 2000
+@bts_mega_aetherophasic_collapser_2_cost_astral_threads = 500
+@bts_mega_aetherophasic_collapser_2_build_time = 1800
+
+@bts_mega_aetherophasic_collapser_3_cost_energy = 2500
+@bts_mega_aetherophasic_collapser_3_cost_astral_threads = 1000
+@bts_mega_aetherophasic_collapser_3_build_time = 1800
 
