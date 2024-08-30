@@ -216,6 +216,56 @@ bts_ritual_reset_leader = {
 }
 
 
+bts_shroud_rift_harvest = {
+    sound = event_energy_field
+	icon = decision_wormhole
+    owned_planets_only = no
+
+	resources = {
+		category = decisions
+		cost = {
+            energy = @bts_shroud_rift_harvest_cost_energy
+			astral_threads = @bts_shroud_rift_harvest_cost_astral_threads
+		}
+	}
+
+	potential = {
+        is_planet_class = pc_bts_shroud_rift
+		exists = solar_system.owner
+        solar_system.owner = {
+            has_crisis_perk = bts_menp_energy
+        }
+	}
+
+	effect = {
+        custom_tooltip = bts_shroud_rift_harvest_effects
+        hidden_effect = {
+            random_list = {
+                1 = {
+                    bts_add_random_deposit = {
+                        BASIC_COUNT = @bts_shroud_rift_harvest_high_basic
+                        TECH_COUNT = @bts_shroud_rift_harvest_high_tech
+                        SR_COUNT = @bts_shroud_rift_harvest_high_sr
+                    }
+                }
+                2 = {
+                    bts_add_random_deposit = {
+                        BASIC_COUNT = @bts_shroud_rift_harvest_medium_basic
+                        TECH_COUNT = @bts_shroud_rift_harvest_medium_tech
+                        SR_COUNT = @bts_shroud_rift_harvest_medium_sr
+                    }
+                }
+                3 = {
+                    bts_add_random_deposit = {
+                        BASIC_COUNT = @bts_shroud_rift_harvest_low_basic
+                        TECH_COUNT = @bts_shroud_rift_harvest_low_tech
+                        SR_COUNT = @bts_shroud_rift_harvest_low_sr
+                    }
+                }
+            }
+        }
+	}
+}
 
 
 
