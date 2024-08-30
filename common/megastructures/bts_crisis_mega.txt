@@ -2,11 +2,13 @@ bts_mega_aetherophasic_collapser_0 = {
 	entity = "bts_mega_aetherophasic_collapser_entity"
 	portrait = "GFX_megastructure_bts_aetherophasic_collapser"
 	construction_entity = "quantum_catapult_stage_1_entity"
-    build_time = 1800
-    resources = {
-        category = megastructures
-        cost = {
+    build_time = @bts_mega_aetherophasic_collapser_0_build_time
 
+    resources = {
+        category = decisions
+        cost = {
+            energy = @bts_mega_aetherophasic_collapser_0_cost_energy
+            alloys = @bts_mega_aetherophasic_collapser_0_cost_alloys
         }
     }
 
@@ -93,11 +95,13 @@ bts_mega_aetherophasic_collapser_0 = {
 bts_mega_aetherophasic_collapser_1 = {
 	entity = "bts_mega_aetherophasic_collapser_entity"
 	portrait = "GFX_megastructure_bts_aetherophasic_collapser"
-    build_time = 1800
+    build_time = @bts_mega_aetherophasic_collapser_1_build_time
+
     resources = {
-        category = megastructures
+        category = decisions
         cost = {
-            
+            energy = @bts_mega_aetherophasic_collapser_1_cost_energy
+            alloys = @bts_mega_aetherophasic_collapser_1_cost_alloys
         }
     }
 
@@ -128,11 +132,13 @@ bts_mega_aetherophasic_collapser_1 = {
 bts_mega_aetherophasic_collapser_2 = {
 	entity = "bts_mega_aetherophasic_collapser_entity"
 	portrait = "GFX_megastructure_bts_aetherophasic_collapser"
-    build_time = 1800
-    resources = {
-        category = megastructures
-        cost = {
+    build_time = @bts_mega_aetherophasic_collapser_2_build_time
 
+    resources = {
+        category = decisions
+        cost = {
+            energy = @bts_mega_aetherophasic_collapser_2_cost_energy
+            astral_threads = @bts_mega_aetherophasic_collapser_2_cost_astral_threads
         }
     }
 
@@ -161,13 +167,14 @@ bts_mega_aetherophasic_collapser_2 = {
 bts_mega_aetherophasic_collapser_3 = {
 	entity = "bts_mega_aetherophasic_collapser_entity"
 	portrait = "GFX_megastructure_bts_aetherophasic_collapser"
-    build_time = 1800
+    build_time = @bts_mega_aetherophasic_collapser_3_build_time
     use_planet_resource = yes
 
     resources = {
-        category = megastructures
+        category = decisions
         cost = {
-
+            energy = @bts_mega_aetherophasic_collapser_3_cost_energy
+            astral_threads = @bts_mega_aetherophasic_collapser_3_cost_astral_threads
         }
     }
 
