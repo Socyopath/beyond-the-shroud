@@ -45,23 +45,17 @@
 # 	}
 # }
 
+# Rituals
 bts_ritual_pop_trade = {
 	sound = event_energy_field
 	icon = decision_wormhole
     owned_planets_only = no
 
-	resources = {
-		category = decisions
-		cost = {
-
-		}
-	}
-
 	potential = {
         is_planet_class = pc_bts_shroud_rift
 		exists = solar_system.owner
         solar_system.owner = {
-            always = yes
+            has_crisis_perk = bts_menp_mega
         }
 	}
 
@@ -102,9 +96,12 @@ bts_ritual_pop_trade = {
                     bts_can_use_councilor_power = { COUNCILOR = bts_crisis_councilor_ritual }
                 }
             }
-            add_modifier = {
-                modifier = bts_ritual_pop_trade_boost
-                days = @bts_ritual_pop_trade_boost_duration
+            custom_tooltip = bts_ritual_pop_trade_bonus_effect
+            hidden_effect = {
+                add_modifier = {
+                    modifier = bts_ritual_pop_trade_boost
+                    days = @bts_ritual_pop_trade_boost_duration
+                }
             }
         }
 
@@ -137,7 +134,7 @@ bts_ritual_remove_trait = {
         is_planet_class = pc_bts_shroud_rift
 		exists = solar_system.owner
         solar_system.owner = {
-            always = yes
+            has_crisis_perk = bts_menp_mega
         }
 	}
 
@@ -191,7 +188,7 @@ bts_ritual_reset_leader = {
         is_planet_class = pc_bts_shroud_rift
 		exists = solar_system.owner
         solar_system.owner = {
-            always = yes
+            has_crisis_perk = bts_menp_mega
         }
 	}
 
@@ -199,13 +196,6 @@ bts_ritual_reset_leader = {
         bts_crisis_ritual_can_use_cooldown = yes
         bts_crisis_ritual_can_use_cost = {
             COST = @bts_ritual_reset_leader_thrall_cost
-        }
-        solar_system = {
-            owner = {
-                any_owned_leader = {
-                    has_skill > 1
-                }
-            }
         }
     }
 
@@ -225,43 +215,9 @@ bts_ritual_reset_leader = {
 	}
 }
 
-# # Ritual: Umbral Trade
-# country_event = {
-# 	id = bts.510
-# 	is_triggered_only = yes
-# 	hide_window = yes
-	
-# 	immediate = {
-# 		capital_scope = {
-# 			create_pop = {
-# 				species = owner_main_species
-# 			}
-# 		}
-# 		if = {
-# 			limit = {
-# 				bts_can_use_councilor_power = { COUNCILOR = bts_crisis_councilor_ritual }
-# 			}
-# 			add_modifier = {
-# 				modifier = bts_ritual_pop_trade_boost
-# 				days = @bts_ritual_pop_trade_boost_duration
-# 			}
-# 		}
-# 	}
-# }
 
 
-# inline_script = {
-#     script = bts_crisis_ritual
-#     NAME = bts_ritual_pop_trade
-#     ICON = decision_wormhole
-#     DESC = bts_ritual_pop_trade_effect
-#     SHROUD_RIFT_EVENT = bts.510
-#     COUNTRY_POTENTIAL = "always = yes"
-#     THRALL_COST = @bts_ritual_pop_trade_thrall_cost
-#     CUSTOM_COST_TRIGGER = "bts_can_use_councilor_ultimate_power = { COUNCILOR = bts_crisis_councilor_ritual }"
-#     CUSTOM_THRALL_COST = @bts_ritual_pop_trade_custom_thrall_cost
-#     COOLDOWN = @bts_ritual_pop_trade_cooldown
-# }
+
 
 # decision_bts_shroud_rift_summon_4 = {
 # 	sound = event_energy_field
