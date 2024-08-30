@@ -44,8 +44,8 @@ bts_crisis_level_3_favor_pass: "$TRIGGER_PASS$ Has §Y$@bts_crisis_level_3_favor
 bts_crisis_level_3_favor_fail: "$TRIGGER_FAIL$ Has §Y$@bts_crisis_level_3_favor_cost|*0$§! favor with §Y[root.BtsGetShroudPatron]§!"
 bts_menp_dreamlike: ""
 bts_menp_dreamlike_effect: ""
-bts_menp_energy: ""
-bts_menp_energy_effect: ""
+bts_menp_energy: "$bts_shroud_rift_harvest$"
+bts_menp_energy_effect: "§YUnlocks $pc_bts_shroud_rift$ Decision:§! $bts_shroud_rift_harvest$"
 bts_menp_new_trait: ""
 bts_menp_new_trait_effect: ""
 ## Level 4
@@ -147,6 +147,10 @@ bts_ritual_reset_leader: "Ritual: Mind Warp"
 bts_ritual_reset_leader_desc: ""
 bts_ritual_reset_leader_effects: "Changes a leader class and resets all of its traits"
 bts_ritual_reset_leader_choose_spec: "Choose a §Yclass§! for leader §Y[this.GetName]§!. All of its traits will be converted back to unspent trait points."
+
+bts_shroud_rift_harvest: "Supernatural Harvest"
+bts_shroud_rift_harvest_desc: ""
+bts_shroud_rift_harvest_effects: "Adds a random deposit between £energy£ £minerals£ £alloys£ £physics£ £society£ £engineering£ £rare_crystals£ £volatile_motes£ £exotic_gases£ £sr_zro£ £sr_dark_matter£ £astral_threads£\n\n§RDangerous events may occur...§!"
 
 decision_bts_shroud_rift_summon_cooldown: "$TRIGGER_FAIL$§Y$shroud_cooldown$§! modifier must not be active"
 decision_bts_shroud_rift_summon_1: "Ritual: Psonic Resurgence"
