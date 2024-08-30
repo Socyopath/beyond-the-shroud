@@ -17,17 +17,18 @@
 @bts_crisis_sacrifical_thrall_unity = 3
 @bts_crisis_sacrifical_thrall_society_research = 1
 
-# Rituals
+# Shroud Rift Decisions 
+## Rituals
 @bts_ritual_pop_trade_cooldown = 720
 @bts_ritual_pop_trade_thrall_cost = 2
 @bts_ritual_pop_trade_custom_thrall_cost = 1
 @bts_ritual_pop_trade_boost_produces = 0.25
 @bts_ritual_pop_trade_boost_duration = 360
 
-@bts_ritual_remove_trait_cooldown = 1440
+@bts_ritual_remove_trait_cooldown = 2160
 @bts_ritual_remove_trait_thrall_cost = 2
 
-@bts_ritual_reset_leader_cooldown = 1800
+@bts_ritual_reset_leader_cooldown = 3600
 @bts_ritual_reset_leader_thrall_cost = 5
 
 # Traits
