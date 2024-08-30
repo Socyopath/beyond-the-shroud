@@ -8,6 +8,7 @@
 @bts_crisis_obj_pact_currency = 1000
 
 # Buildings
+@bts_crisis_building_thrall_limit = 1
 @bts_crisis_building_thrall_1_jobs = 2
 @bts_crisis_building_thrall_2_jobs = 4
 @bts_crisis_building_thrall_3_jobs = 6

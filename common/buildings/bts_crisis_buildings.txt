@@ -3,7 +3,8 @@ bts_crisis_building_thrall_1 = {
 	base_buildtime = @b1_time
 	category = unity
 	icon = building_galactic_memorial_1
-
+	base_cap_amount = @bts_crisis_building_thrall_limit
+	
     potential = {
         owner = {
             has_crisis_perk = bts_menp_building
@@ -36,6 +37,7 @@ bts_crisis_building_thrall_2 = {
     can_build = no
 	category = unity
 	icon = building_galactic_memorial_2
+	base_cap_amount = @bts_crisis_building_thrall_limit
 
     potential = {
         owner = {
@@ -74,7 +76,8 @@ bts_crisis_building_thrall_3 = {
     can_build = no
 	category = unity
 	icon = building_galactic_memorial_3
-	
+	base_cap_amount = @bts_crisis_building_thrall_limit
+
     potential = {
         owner = {
             has_crisis_perk = bts_menp_building
