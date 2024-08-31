@@ -82,8 +82,17 @@ bts_menp_energy = {
 
 bts_menp_new_trait = {
 	portrait = "GFX_crisis_icon_bts_new_trait"
+	modifier = {
+		planet_stability_add = @bts_menp_new_trait_stability
+	}
 	on_unlock = {
 		custom_tooltip = bts_menp_new_trait_effect
+		owner_main_species = {
+			change_species_characteristics = {
+				remove_trait = bts_trait_crisis_main_1
+				add_trait = bts_trait_crisis_main_2
+			}
+		}
 	}
 }
 
