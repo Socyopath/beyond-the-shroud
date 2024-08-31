@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 
 # Ascension
 ap_bts_crisis: "Eldritch Pursuit"
@@ -46,8 +46,9 @@ bts_menp_dreamlike: ""
 bts_menp_dreamlike_effect: ""
 bts_menp_energy: "$bts_shroud_rift_harvest$"
 bts_menp_energy_effect: "§YUnlocks $pc_bts_shroud_rift$ Decision:§! $bts_shroud_rift_harvest$"
-bts_menp_new_trait: ""
-bts_menp_new_trait_effect: ""
+bts_menp_new_trait: "Embrace Deviance"
+bts_menp_new_trait_effect: "§YUnlocks Species trait§!: $bts_trait_crisis_main_2$ (Replaces §Y$bts_trait_crisis_main_1$§!)\n"
+
 ## Level 4
 bts_crisis_level_4: "§UCalamity§!"
 bts_crisis_level_4_desc: "Crisis Level 4"
