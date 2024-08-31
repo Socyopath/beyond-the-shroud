@@ -142,6 +142,51 @@ leader_event = {
 	}
 }
 
+# Create Game Country
+country_event = {
+	id = bts.504
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		create_country = {
+			name = "NAME_Creatures_of_the_Shroud"
+			type = shroud_spirits
+			flag = {
+				icon = {
+					category = "special"
+					file = "the_shroud.dds"
+				}
+				background= {
+					category = "backgrounds"
+					file = "00_solid.dds"
+				}
+				colors={
+					"dark_purple"
+					"black"
+					"null"
+					"null"
+				}
+			}
+		}
+		last_created_country = {
+			establish_communications_no_message = root
+			save_global_event_target_as = bts_shroud_rift_creatures
+		}
+	}
+}
+
+# Kill a fleet
+fleet_event = {
+	id = bts.505
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		destroy_fleet = this
+	}
+}
 
 # this = operation; from = target (country)
 espionage_operation_event = {

@@ -43,6 +43,7 @@
 @bts_shroud_rift_harvest_low_basic = 4
 @bts_shroud_rift_harvest_low_tech = 2
 @bts_shroud_rift_harvest_low_sr = 1
+@bts_shroud_rift_harvest_days_before_invasion_end = 720
 
 # Traits
 @bts_trait_crisis_main_1_ethics = 0.01

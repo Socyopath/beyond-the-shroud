@@ -264,10 +264,71 @@ bts_shroud_rift_harvest = {
                 }
             }
         }
-	}
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = { exists = event_target:bts_shroud_rift_creatures }
+                }
+                solar_system.owner = {
+                    country_event = { 
+                        id = bts.504
+                    }
+                }
+            }
+            random_list = {
+                10 = {
+                    create_fleet = {
+                        name = "NAME_Shroud_Manifestation"
+                        settings = {
+                            spawn_debris = no
+                            is_boss = yes
+                        }
+                        effect = {
+                            set_owner = event_target:bts_shroud_rift_creatures
+                            create_ship = {
+                                name = "NAME_Fragment"
+                                design = "NAME_Shroud_Manifestation"
+                            }
+                            set_location = prev
+                            set_fleet_stance = aggressive
+                            set_aggro_range_measure_from = return_point
+                            set_aggro_range = 3000
+                        }
+                    }
+                    last_created_fleet = {
+                        fleet_event = { id = bts.505 days = @bts_shroud_rift_harvest_days_before_invasion_end }
+                    }
+                }
+                30 = {
+                    create_fleet = {
+                        name = "NAME_Corrupted_Avatar"
+                        settings = {
+                            spawn_debris = no
+                            is_boss = yes
+                        }
+                        effect = {
+                            set_owner = event_target:bts_shroud_rift_creatures
+                            create_ship = {
+                                name = "NAME_Corrupted_Avatar"
+                                design = "NAME_Corrupted_Avatar"
+                            }
+                            set_location = prev
+                            set_fleet_stance = aggressive
+                            set_aggro_range_measure_from = return_point
+                            set_aggro_range = 300
+                        }
+                    }
+                    last_created_fleet = {
+                        fleet_event = { id = bts.505 days = @bts_shroud_rift_harvest_days_before_invasion_end }
+                    }
+                }
+                60 = {
+                    # Nothing 
+                }
+            }
+	    }   
+    }
 }
-
-
 
 # decision_bts_shroud_rift_summon_4 = {
 # 	sound = event_energy_field
