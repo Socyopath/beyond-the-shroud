@@ -60,7 +60,7 @@ bts_ritual_pop_trade = {
 	}
 
     allow = {
-        bts_crisis_ritual_can_use_cooldown = yes
+        bts_crisis_ritual_can_use_cooldown = { RITUAL = bts_ritual_pop_trade }
 
         if = {
             limit = { 
@@ -113,13 +113,13 @@ bts_ritual_pop_trade = {
             }
             bts_crisis_ritual_setup = {
                 COST = @bts_ritual_pop_trade_custom_thrall_cost
-                COOLDOWN = @bts_ritual_pop_trade_cooldown
+                RITUAL = bts_ritual_pop_trade
             }
         }
         else = {
             bts_crisis_ritual_setup = {
                 COST = @bts_ritual_pop_trade_thrall_cost
-                COOLDOWN = @bts_ritual_pop_trade_cooldown
+                RITUAL = bts_ritual_pop_trade
             }
         }
 	}
@@ -139,7 +139,7 @@ bts_ritual_remove_trait = {
 	}
 
     allow = {
-        bts_crisis_ritual_can_use_cooldown = yes
+        bts_crisis_ritual_can_use_cooldown = { RITUAL = bts_ritual_remove_trait }
         bts_crisis_ritual_can_use_cost = {
             COST = @bts_ritual_remove_trait_thrall_cost
         }
@@ -159,7 +159,7 @@ bts_ritual_remove_trait = {
         custom_tooltip = bts_ritual_remove_trait_effects
         bts_crisis_ritual_setup = {
             COST = @bts_ritual_remove_trait_thrall_cost
-            COOLDOWN = @bts_ritual_remove_trait_cooldown
+            RITUAL = bts_ritual_remove_trait
         }
 
         hidden_effect = {
@@ -193,7 +193,7 @@ bts_ritual_reset_leader = {
 	}
 
     allow = {
-        bts_crisis_ritual_can_use_cooldown = yes
+        bts_crisis_ritual_can_use_cooldown = { RITUAL = bts_ritual_reset_leader }
         bts_crisis_ritual_can_use_cost = {
             COST = @bts_ritual_reset_leader_thrall_cost
         }
@@ -203,7 +203,7 @@ bts_ritual_reset_leader = {
         custom_tooltip = bts_ritual_reset_leader_effects
         bts_crisis_ritual_setup = {
             COST = @bts_ritual_reset_leader_thrall_cost
-            COOLDOWN = @bts_ritual_reset_leader_cooldown
+            RITUAL = bts_ritual_reset_leader
         }
 
         hidden_effect = {
@@ -216,18 +216,10 @@ bts_ritual_reset_leader = {
 }
 
 
-bts_shroud_rift_harvest = {
+bts_ritual_harvest = {
     sound = event_energy_field
 	icon = decision_wormhole
     owned_planets_only = no
-
-	resources = {
-		category = decisions
-		cost = {
-            energy = @bts_shroud_rift_harvest_cost_energy
-			astral_threads = @bts_shroud_rift_harvest_cost_astral_threads
-		}
-	}
 
 	potential = {
         is_planet_class = pc_bts_shroud_rift
@@ -237,29 +229,40 @@ bts_shroud_rift_harvest = {
         }
 	}
 
+    allow = {
+        bts_crisis_ritual_can_use_cooldown = { RITUAL = bts_ritual_harvest }
+        bts_crisis_ritual_can_use_cost = {
+            COST = @bts_ritual_harvest_thrall_cost
+        }
+    }
+
 	effect = {
-        custom_tooltip = bts_shroud_rift_harvest_effects
+        custom_tooltip = bts_ritual_harvest_effects
+        bts_crisis_ritual_setup = {
+            COST = @bts_ritual_harvest_thrall_cost
+            RITUAL = bts_ritual_harvest
+        }
         hidden_effect = {
             random_list = {
                 1 = {
                     bts_add_random_deposit = {
-                        BASIC_COUNT = @bts_shroud_rift_harvest_high_basic
-                        TECH_COUNT = @bts_shroud_rift_harvest_high_tech
-                        SR_COUNT = @bts_shroud_rift_harvest_high_sr
+                        BASIC_COUNT = @bts_ritual_harvest_high_basic
+                        TECH_COUNT = @bts_ritual_harvest_high_tech
+                        SR_COUNT = @bts_ritual_harvest_high_sr
                     }
                 }
                 2 = {
                     bts_add_random_deposit = {
-                        BASIC_COUNT = @bts_shroud_rift_harvest_medium_basic
-                        TECH_COUNT = @bts_shroud_rift_harvest_medium_tech
-                        SR_COUNT = @bts_shroud_rift_harvest_medium_sr
+                        BASIC_COUNT = @bts_ritual_harvest_medium_basic
+                        TECH_COUNT = @bts_ritual_harvest_medium_tech
+                        SR_COUNT = @bts_ritual_harvest_medium_sr
                     }
                 }
                 3 = {
                     bts_add_random_deposit = {
-                        BASIC_COUNT = @bts_shroud_rift_harvest_low_basic
-                        TECH_COUNT = @bts_shroud_rift_harvest_low_tech
-                        SR_COUNT = @bts_shroud_rift_harvest_low_sr
+                        BASIC_COUNT = @bts_ritual_harvest_low_basic
+                        TECH_COUNT = @bts_ritual_harvest_low_tech
+                        SR_COUNT = @bts_ritual_harvest_low_sr
                     }
                 }
             }
@@ -296,7 +299,7 @@ bts_shroud_rift_harvest = {
                         }
                     }
                     last_created_fleet = {
-                        fleet_event = { id = bts.505 days = @bts_shroud_rift_harvest_days_before_invasion_end }
+                        fleet_event = { id = bts.505 days = @bts_ritual_harvest_days_before_invasion_end }
                     }
                 }
                 30 = {
@@ -319,7 +322,7 @@ bts_shroud_rift_harvest = {
                         }
                     }
                     last_created_fleet = {
-                        fleet_event = { id = bts.505 days = @bts_shroud_rift_harvest_days_before_invasion_end }
+                        fleet_event = { id = bts.505 days = @bts_ritual_harvest_days_before_invasion_end }
                     }
                 }
                 60 = {

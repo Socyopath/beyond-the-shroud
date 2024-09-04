@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 
 # Ascension
 ap_bts_crisis: "Eldritch Pursuit"
@@ -44,8 +44,8 @@ bts_crisis_level_3_favor_pass: "$TRIGGER_PASS$ Has §Y$@bts_crisis_level_3_favor
 bts_crisis_level_3_favor_fail: "$TRIGGER_FAIL$ Has §Y$@bts_crisis_level_3_favor_cost|*0$§! favor with §Y[root.BtsGetShroudPatron]§!"
 bts_menp_dreamlike: ""
 bts_menp_dreamlike_effect: ""
-bts_menp_energy: "$bts_shroud_rift_harvest$"
-bts_menp_energy_effect: "§YUnlocks $pc_bts_shroud_rift$ Decision:§! $bts_shroud_rift_harvest$"
+bts_menp_energy: "$bts_ritual_harvest$"
+bts_menp_energy_effect: "§YUnlocks $pc_bts_shroud_rift$ Decision:§! $bts_ritual_harvest$"
 bts_menp_new_trait: "Embrace Deviance"
 bts_menp_new_trait_effect: "§YUnlocks Species trait§!: $bts_trait_crisis_main_2$ (Replaces §Y$bts_trait_crisis_main_1$§!)\n"
 
@@ -139,19 +139,23 @@ bts_ritual_pop_trade: "Ritual: Umbral Trade"
 bts_ritual_pop_trade_desc: ""
 bts_ritual_pop_trade_bonus_effect: "§G+$@bts_ritual_pop_trade_boost_produces|%0$§! $mod_planet_jobs_produces_mult$ for §Y$@bts_ritual_pop_trade_boost_duration|0$§! days"
 bts_ritual_pop_trade_effects: "Adds §Y1 [solar_system.owner.GetSpeciesName]§! pop on §Y[solar_system.owner.Capital.GetName]§!"
+bts_crisis_ritual_on_cooldown_bts_ritual_pop_trade: "§RCan't use this ritual until§! §Y[solar_system.owner.bts_crisis_ritual_cooldown_bts_ritual_pop_trade]§!"
 
 bts_ritual_remove_trait: "Ritual: Exorcism"
 bts_ritual_remove_trait_desc: ""
 bts_ritual_remove_trait_effects: "Removes all §Rnegative§! traits from a random leader"
+bts_crisis_ritual_on_cooldown_bts_ritual_remove_trait: "§RCan't use this ritual until§! §Y[solar_system.owner.bts_crisis_ritual_cooldown_bts_ritual_remove_trait]§!"
 
 bts_ritual_reset_leader: "Ritual: Mind Warp"
 bts_ritual_reset_leader_desc: ""
 bts_ritual_reset_leader_effects: "Changes a leader class and resets all of its traits"
 bts_ritual_reset_leader_choose_spec: "Choose a §Yclass§! for leader §Y[this.GetName]§!. All of its traits will be converted back to unspent trait points."
+bts_crisis_ritual_on_cooldown_bts_ritual_reset_leader: "§RCan't use this ritual until§! §Y[solar_system.owner.bts_crisis_ritual_cooldown_bts_ritual_reset_leader]§!"
 
-bts_shroud_rift_harvest: "Supernatural Harvest"
-bts_shroud_rift_harvest_desc: ""
-bts_shroud_rift_harvest_effects: "Adds a random deposit between £energy£ £minerals£ £alloys£ £physics£ £society£ £engineering£ £rare_crystals£ £volatile_motes£ £exotic_gases£ £sr_zro£ £sr_dark_matter£ £astral_threads£\n\n§RDangerous events may occur...§!"
+bts_ritual_harvest: "Supernatural Harvest"
+bts_ritual_harvest_desc: ""
+bts_ritual_harvest_effects: "Adds a random deposit between £energy£ £minerals£ £alloys£ £physics£ £society£ £engineering£ £rare_crystals£ £volatile_motes£ £exotic_gases£ £sr_zro£ £sr_dark_matter£ £astral_threads£\n§RDangerous events may occur...§!"
+bts_crisis_ritual_on_cooldown_bts_ritual_harvest: "§RCan't use this ritual until§! §Y[solar_system.owner.bts_crisis_ritual_cooldown_bts_ritual_harvest]§!"
 
 decision_bts_shroud_rift_summon_cooldown: "$TRIGGER_FAIL$§Y$shroud_cooldown$§! modifier must not be active"
 decision_bts_shroud_rift_summon_1: "Ritual: Psonic Resurgence"
@@ -265,6 +269,6 @@ citizenship_bts_crisis_tooltip_delayed: "§LInferior creatures do not deserve fr
 
 # UI Text
 bts_reckoning_info: "§M$NAME_Reckoning$§! : §Y[root.bts_planet_killer_end_pop_killed]§! organic pops §Rkilled§!"
-bts_crisis_ritual_info_tooltip: "\n§EEldritch Ritual:§!\nCost: §R$COST|*0$§! £job_bts_crisis_sacrifical_thrall£ $job_bts_crisis_sacrifical_thrall_plural$\nCooldown: §Y[this.bts_crisis_ritual_cooldown_value_$COOLDOWN|0$]§! days"
-bts_crisis_ritual_on_cooldown: "§RNo ritual can be used until§! §Y[solar_system.owner.bts_crisis_ritual_cooldown]§!"
+bts_crisis_ritual_info_tooltip: "\n§EEldritch Ritual:§!\nCost: §R$COST|0$§! £job_bts_crisis_sacrifical_thrall£ $job_bts_crisis_sacrifical_thrall_plural$\nCooldown: §Y[this.bts_crisis_ritual_cooldown_$RITUAL$_text]§! days"
+
 bts_crisis_ritual_no_thrall: "§RNot enough§! §Y$job_bts_crisis_sacrifical_thrall_plural$§!"

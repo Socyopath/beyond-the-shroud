@@ -56,16 +56,16 @@ bts_crisis_ritual_setup = {
 			description = "bts_crisis_ritual_info_tooltip"
 			description_parameters = {
 				"COST" = $COST$
-				"COOLDOWN" = $COOLDOWN$
+				"RITUAL" = $RITUAL$
 			}
 		}
 
 		hidden_effect = {
 			bts_effect_consume_thrall = { COUNT = $COST$ }
 			set_saved_date = {
-				key = bts_crisis_ritual_cooldown
-				days_from_present = value:bts_crisis_cooldown_value|COOLDOWN|$COOLDOWN$|MODIFIER|bts_crisis_ritual_coolodwn_mult|
-				expires = value:bts_crisis_cooldown_value|COOLDOWN|$COOLDOWN$|MODIFIER|bts_crisis_ritual_coolodwn_mult|
+				key = bts_crisis_ritual_cooldown_$RITUAL$
+				days_from_present = value:bts_crisis_cooldown_value|COOLDOWN|@$RITUAL$_cooldown|
+				expires = value:bts_crisis_cooldown_value|COOLDOWN|@$RITUAL$_cooldown|
 			}
 			fire_on_action = { 
 				on_action = on_bts_ritual

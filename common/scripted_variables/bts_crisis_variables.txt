@@ -32,19 +32,20 @@
 @bts_ritual_reset_leader_cooldown = 3600
 @bts_ritual_reset_leader_thrall_cost = 5
 
+@bts_ritual_harvest_cooldown = 10
+@bts_ritual_harvest_thrall_cost = 1
+
 ## Decisions
-@bts_shroud_rift_harvest_cost_energy = 1250
-@bts_shroud_rift_harvest_cost_astral_threads = 500
-@bts_shroud_rift_harvest_high_basic = 12
-@bts_shroud_rift_harvest_high_tech = 6
-@bts_shroud_rift_harvest_high_sr = 3
-@bts_shroud_rift_harvest_medium_basic = 8
-@bts_shroud_rift_harvest_medium_tech = 4
-@bts_shroud_rift_harvest_medium_sr = 2
-@bts_shroud_rift_harvest_low_basic = 4
-@bts_shroud_rift_harvest_low_tech = 2
-@bts_shroud_rift_harvest_low_sr = 1
-@bts_shroud_rift_harvest_days_before_invasion_end = 720
+@bts_ritual_harvest_high_basic = 12
+@bts_ritual_harvest_high_tech = 6
+@bts_ritual_harvest_high_sr = 3
+@bts_ritual_harvest_medium_basic = 8
+@bts_ritual_harvest_medium_tech = 4
+@bts_ritual_harvest_medium_sr = 2
+@bts_ritual_harvest_low_basic = 4
+@bts_ritual_harvest_low_tech = 2
+@bts_ritual_harvest_low_sr = 1
+@bts_ritual_harvest_days_before_invasion_end = 720
 
 # Traits
 @bts_trait_crisis_main_1_ethics = 0.01
