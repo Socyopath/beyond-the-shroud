@@ -18,7 +18,7 @@ bts_crisis_building_thrall_1 = {
 	triggered_desc = { text = job_bts_crisis_sacrifical_thrall_effect_desc }
 	
     upgrades = {
-		"bts_crisis_building_thrall_2"
+		bts_crisis_building_thrall_2
 	}
 
 	resources = {
@@ -37,7 +37,6 @@ bts_crisis_building_thrall_2 = {
     can_build = no
 	category = unity
 	icon = building_galactic_memorial_2
-	base_cap_amount = @bts_crisis_building_thrall_limit
 
     potential = {
         owner = {
@@ -55,7 +54,7 @@ bts_crisis_building_thrall_2 = {
 	triggered_desc = { text = job_bts_crisis_sacrifical_thrall_effect_desc }
 
     upgrades = {
-		"bts_crisis_building_thrall_3"
+		bts_crisis_building_thrall_3
 	}
 
 	resources = {
@@ -76,7 +75,6 @@ bts_crisis_building_thrall_3 = {
     can_build = no
 	category = unity
 	icon = building_galactic_memorial_3
-	base_cap_amount = @bts_crisis_building_thrall_limit
 
     potential = {
         owner = {
