@@ -9,53 +9,22 @@ defined_text = {
     default = operation_bts_crisis_devour_mind_effect_base
 }
 
-
 defined_text = {
-    name = bts_crisis_ritual_cooldown_value_360
-    value = value:bts_crisis_cooldown_value|COOLDOWN|360|MODIFIER|bts_crisis_ritual_coolodwn_mult|
+    name = bts_crisis_ritual_cooldown_bts_ritual_pop_trade_text
+    value = value:bts_crisis_cooldown_value|COOLDOWN|@bts_ritual_pop_trade_cooldown|
 }
 
 defined_text = {
-    name = bts_crisis_ritual_cooldown_value_720
-    value = value:bts_crisis_cooldown_value|COOLDOWN|720|MODIFIER|bts_crisis_ritual_coolodwn_mult|
+    name = bts_crisis_ritual_cooldown_bts_ritual_remove_trait_text
+    value = value:bts_crisis_cooldown_value|COOLDOWN|@bts_ritual_remove_trait_cooldown|
 }
 
 defined_text = {
-    name = bts_crisis_ritual_cooldown_value_1080
-    value = value:bts_crisis_cooldown_value|COOLDOWN|1080|MODIFIER|bts_crisis_ritual_coolodwn_mult|
+    name = bts_crisis_ritual_cooldown_bts_ritual_reset_leader_text
+    value = value:bts_crisis_cooldown_value|COOLDOWN|@bts_ritual_reset_leader_cooldown|
 }
 
 defined_text = {
-    name = bts_crisis_ritual_cooldown_value_1440
-    value = value:bts_crisis_cooldown_value|COOLDOWN|1440|MODIFIER|bts_crisis_ritual_coolodwn_mult|
-}
-
-defined_text = {
-    name = bts_crisis_ritual_cooldown_value_1800
-    value = value:bts_crisis_cooldown_value|COOLDOWN|1800|MODIFIER|bts_crisis_ritual_coolodwn_mult|
-}
-
-defined_text = {
-    name = bts_crisis_ritual_cooldown_value_2160
-    value = value:bts_crisis_cooldown_value|COOLDOWN|2160|MODIFIER|bts_crisis_ritual_coolodwn_mult|
-}
-
-defined_text = {
-    name = bts_crisis_ritual_cooldown_value_2520
-    value = value:bts_crisis_cooldown_value|COOLDOWN|2520|MODIFIER|bts_crisis_ritual_coolodwn_mult|
-}
-
-defined_text = {
-    name = bts_crisis_ritual_cooldown_value_2880
-    value = value:bts_crisis_cooldown_value|COOLDOWN|2880|MODIFIER|bts_crisis_ritual_coolodwn_mult|
-}
-
-defined_text = {
-    name = bts_crisis_ritual_cooldown_value_3240
-    value = value:bts_crisis_cooldown_value|COOLDOWN|3240|MODIFIER|bts_crisis_ritual_coolodwn_mult|
-}
-
-defined_text = {
-    name = bts_crisis_ritual_cooldown_value_3600
-    value = value:bts_crisis_cooldown_value|COOLDOWN|3600|MODIFIER|bts_crisis_ritual_coolodwn_mult|
+    name = bts_crisis_ritual_cooldown_bts_ritual_harvest_text
+    value = value:bts_crisis_cooldown_value|COOLDOWN|@bts_ritual_harvest_cooldown|
 }

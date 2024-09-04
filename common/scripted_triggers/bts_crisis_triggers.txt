@@ -33,9 +33,9 @@ bts_crisis_ritual_can_use_cost = {
 
 bts_crisis_ritual_can_use_cooldown = {
     custom_tooltip = {
-        fail_text = bts_crisis_ritual_on_cooldown
+        fail_text = bts_crisis_ritual_on_cooldown_$RITUAL$
         solar_system.owner = {
-            NOT = { has_country_flag = bts_crisis_ritual_cooldown }
+            NOT = { has_country_flag = bts_crisis_ritual_cooldown_$RITUAL$ }
         }
     }
 }

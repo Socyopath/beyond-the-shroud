@@ -25,7 +25,7 @@ bts_trait_crisis_main_thrall_bonus = {
 
 bts_crisis_cooldown_value = {
     base = $COOLDOWN$
-    mult = value:scripted_modifier_mult|MODIFIER|$MODIFIER$|
+    mult = value:scripted_modifier_mult|MODIFIER|bts_crisis_ritual_coolodwn_mult|
 }
 
 
