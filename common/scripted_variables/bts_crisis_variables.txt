@@ -35,6 +35,11 @@
 @bts_ritual_harvest_cooldown = 10
 @bts_ritual_harvest_thrall_cost = 1
 
+@bts_ritual_dreamlike_thrall_cost = 10
+@bts_ritual_dreamlike_cooldown = 7200
+
+
+
 ## Decisions
 @bts_ritual_harvest_high_basic = 12
 @bts_ritual_harvest_high_tech = 6

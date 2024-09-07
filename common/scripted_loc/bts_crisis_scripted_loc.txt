@@ -28,3 +28,9 @@ defined_text = {
     name = bts_crisis_ritual_cooldown_bts_ritual_harvest_text
     value = value:bts_crisis_cooldown_value|COOLDOWN|@bts_ritual_harvest_cooldown|
 }
+
+defined_text = {
+    name = bts_crisis_ritual_cooldown_bts_ritual_dreamlike_text
+    value = value:bts_crisis_cooldown_value|COOLDOWN|@bts_ritual_dreamlike_cooldown|
+}
+

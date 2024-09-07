@@ -333,6 +333,56 @@ bts_ritual_harvest = {
     }
 }
 
+bts_ritual_dreamlike = {
+	sound = event_energy_field
+	icon = decision_wormhole
+    owned_planets_only = no
+
+	potential = {
+        is_planet_class = pc_bts_shroud_rift
+		exists = solar_system.owner
+        solar_system.owner = {
+            has_crisis_perk = bts_menp_dreamlike
+        }
+	}
+
+    allow = {
+        bts_crisis_ritual_can_use_cooldown = { RITUAL = bts_ritual_dreamlike }
+        bts_crisis_ritual_can_use_cost = {
+            COST = @bts_ritual_dreamlike_thrall_cost
+        }
+    }
+
+	effect = {
+        custom_tooltip = bts_ritual_dreamlike_effects
+        bts_crisis_ritual_setup = {
+            COST = @bts_ritual_dreamlike_thrall_cost
+            RITUAL = bts_ritual_dreamlike
+        }
+
+        hidden_effect = {
+            create_fleet = {
+                name = "bts_ship_crisis_dreamlike"
+                settings = {
+                    can_upgrade = no
+                    can_change_composition = no
+                    can_change_leader = no
+                    uses_naval_capacity = no
+                    spawn_debris = no
+                }
+                effect = {
+                    set_owner = root.solar_system.owner
+                    create_ship = {
+                        name = "bts_ship_crisis_dreamlike"
+                        design = "bts_crisis_dreamlike_design"
+                    }
+                    set_location = root
+                }
+            }
+        }
+
+	}
+}
 # decision_bts_shroud_rift_summon_4 = {
 # 	sound = event_energy_field
 # 	icon = decision_wormhole

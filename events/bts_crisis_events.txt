@@ -19,7 +19,9 @@ country_event = {
 				species = root
 			}
 			last_created_pop = {
-				bts_effect_devour_mind = yes
+				bts_effect_devour_mind = {
+					CASTER = root
+				}
 			}
 		}
 	}
@@ -40,7 +42,6 @@ country_event = {
 				any_owned_pop = {
 					is_robot_pop = no
 				}
-				has_country_flag = bts_debug
 			}
 			random_owned_pop = {
 				limit = {
@@ -49,13 +50,26 @@ country_event = {
 						has_trait = bts_trait_crisis_thrall
 					}
 				}
-				bts_effect_devour_mind = yes
+				bts_effect_devour_mind = {
+					CASTER = root
+				}
 				resettle_pop = {
 					pop = this
 					planet = root.capital_scope
 				}
 			}
 		}
+	}
+}
+
+# DEBUG : Gives crisis currency
+country_event = {
+	id = bts.5002
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		complete_crisis_objective = bts_crisis_obj_debug
 	}
 }
 
