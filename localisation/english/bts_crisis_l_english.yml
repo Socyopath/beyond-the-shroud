@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 
 # Ascension
 ap_bts_crisis: "Eldritch Pursuit"
@@ -157,6 +157,11 @@ bts_ritual_harvest_desc: ""
 bts_ritual_harvest_effects: "Adds a random deposit between £energy£ £minerals£ £alloys£ £physics£ £society£ £engineering£ £rare_crystals£ £volatile_motes£ £exotic_gases£ £sr_zro£ £sr_dark_matter£ £astral_threads£\n§RDangerous events may occur...§!"
 bts_crisis_ritual_on_cooldown_bts_ritual_harvest: "§RCan't use this ritual until§! §Y[solar_system.owner.bts_crisis_ritual_cooldown_bts_ritual_harvest]§!"
 
+bts_ritual_dreamlike: "Ritual: Dreamlike Terror"
+bts_ritual_dreamlike_desc: ""
+bts_ritual_dreamlike_effects: "Summons an eldritch entities that corrupt ennemies fleet while in combat"
+bts_crisis_ritual_on_cooldown_bts_ritual_dreamlike: "§RCan't use this ritual until§! §Y[solar_system.owner.bts_crisis_ritual_cooldown_bts_ritual_dreamlike]§!"
+
 decision_bts_shroud_rift_summon_cooldown: "$TRIGGER_FAIL$§Y$shroud_cooldown$§! modifier must not be active"
 decision_bts_shroud_rift_summon_1: "Ritual: Psonic Resurgence"
 decision_bts_shroud_rift_summon_1_desc: "A warrior from the Shroud that has been forged out of pure psionic energy."
@@ -266,6 +271,12 @@ council_agenda_bts_crisis_agenda_2_desc: "We sacrifice part of our sanity to imp
 citizenship_bts_crisis: "Devour Mind"
 citizenship_bts_crisis_tooltip: "All owned Pops of this species will turn into a §Rdevoured mind§! variant."
 citizenship_bts_crisis_tooltip_delayed: "§LInferior creatures do not deserve free will.§!"
+
+# Ships
+bts_ship_crisis_dreamlike: "Dreamlike Terror"
+bts_crisis_dreamlike_design: "Dreamlike Terror"
+
+
 
 # UI Text
 bts_reckoning_info: "§M$NAME_Reckoning$§! : §Y[root.bts_planet_killer_end_pop_killed]§! organic pops §Rkilled§!"

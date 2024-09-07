@@ -1,0 +1,40 @@
+
+ship_design = {
+	name = "bts_crisis_dreamlike_design"
+	ship_size = bts_ship_crisis_dreamlike
+	is_event_design = yes
+	hide_size = yes
+
+	section = {
+		template = "bts_crisis_dreamlike_template"
+		slot = "mid"
+
+		component = {
+			slot = "TITAN_01"
+			template = "ELDER_SPACE_WHALE_WEAPON"
+		}
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "ELDER_SPACE_WHALE_SPIKE"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_3"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_4"
+			template = "AUTO_REPAIR"
+		}
+	}
+	required_component="BIO_DRIVE"
+	required_component="BIO_PROPULSION"
+	required_component="BIO_SENSORS"
+}
