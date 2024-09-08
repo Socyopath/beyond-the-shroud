@@ -186,10 +186,21 @@ bts_add_random_deposit = {
 }
 
 bts_crisis_establish_pact = {
+	add_modifier = {
+		modifier = $PACT$
+		years = 1
+		time_multiplier = value:bts_crisis_pact_duration_value|DURATION|@bts_crisis_pact_duration|
+	}
 	custom_tooltip_with_params = {
 		description = "bts_crisis_pact_info_tooltip"
 		description_parameters = {
-			"COST" = $YEARLY_COST$
+			"PACT" = $PACT$
+		}
+	}
+	hidden_effect = {
+		change_variable = {
+			which = bts_crisis_pact_count
+			value = 1
 		}
 	}
 }

@@ -64,7 +64,7 @@
 @bts_crisis_councilor_ulimate_power_level = 10
 
 @bts_crisis_councilor_operation_speed_per_level = 0.10
-@bts_crisis_councilor_pact_cost_per_level = -0.05
+@bts_crisis_councilor_pact_duration_per_level = 1
 @bts_crisis_councilor_ritual_cooldown_per_level = -0.025
 
 # Agendas
@@ -98,3 +98,8 @@
 
 # Pacts
 @bts_crisis_pact_duration = 5
+@bts_crisis_pact_1_cost = 2
+@bts_crisis_pact_2_cost = 3
+@bts_crisis_pact_3_cost = 4
+@bts_crisis_pact_4_cost = 5
+@bts_crisis_pact_5_cost = 6

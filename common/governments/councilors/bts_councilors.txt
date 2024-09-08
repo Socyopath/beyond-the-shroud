@@ -1,3 +1,4 @@
+
 bts_crisis_councilor_ritual = {
 	leader_class = { official }
 	possible = { 
@@ -15,7 +16,7 @@ bts_crisis_councilor_pact = {
 		has_crisis_perk = bts_menp_cult_2
 	}
 	modifier = {
-		bts_crisis_pact_cost_mult = @bts_crisis_councilor_pact_cost_per_level
+		bts_crisis_pact_duration_add = @bts_crisis_councilor_pact_duration_per_level
 	}
 	icon = "GFX_icon_bts_crisis_councilor_pact"
 }

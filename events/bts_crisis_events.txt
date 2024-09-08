@@ -420,7 +420,27 @@ country_event = {
 	option = {
 		name = bts.540.option.4
 		custom_tooltip = bts.540.option.4.desc
-
+		allow = {
+			if = {
+				limit = { bts_can_use_councilor_ultimate_power = { COUNCILOR = bts_crisis_councilor_pact } }
+				custom_tooltip = {
+					fail_text = bts_crisis_pact_only_2
+					check_variable = {
+						which = bts_crisis_pact_count
+						value < 2
+					}
+				}
+			}
+			else = {
+				custom_tooltip = {
+					fail_text = bts_crisis_pact_only_1
+					check_variable = {
+						which = bts_crisis_pact_count
+						value < 1
+					}
+				}
+			}
+		}
 		hidden_effect = {
 			random_list = {
 				1 = {
@@ -503,7 +523,6 @@ country_event = {
 		custom_tooltip = bts.541.tooltip
 		bts_crisis_establish_pact = {
 			PACT = bts_crisis_pact_1
-			YEARLY_COST = 1
 		}
 	}
 
@@ -548,7 +567,6 @@ country_event = {
 		custom_tooltip = bts.542.tooltip
 		bts_crisis_establish_pact = {
 			PACT = bts_crisis_pact_2
-			YEARLY_COST = 1
 		}
 	}
 
@@ -593,7 +611,6 @@ country_event = {
 		custom_tooltip = bts.543.tooltip
 		bts_crisis_establish_pact = {
 			PACT = bts_crisis_pact_3
-			YEARLY_COST = 1
 		}
 	}
 
@@ -638,7 +655,6 @@ country_event = {
 		custom_tooltip = bts.544.tooltip
 		bts_crisis_establish_pact = {
 			PACT = bts_crisis_pact_4
-			YEARLY_COST = 1
 		}
 	}
 
@@ -683,7 +699,6 @@ country_event = {
 		custom_tooltip = bts.545.tooltip
 		bts_crisis_establish_pact = {
 			PACT = bts_crisis_pact_5
-			YEARLY_COST = 1
 		}
 	}
 

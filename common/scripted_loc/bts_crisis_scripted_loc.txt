@@ -34,3 +34,29 @@ defined_text = {
     value = value:bts_crisis_ritual_cooldown_value|COOLDOWN|@bts_ritual_dreamlike_cooldown|
 }
 
+
+defined_text = {
+    name = bts_crisis_pact_cost_bts_crisis_pact_1_text
+    value = value:bts_crisis_pact_cost_value|COST|@bts_crisis_pact_1_cost|
+}
+
+defined_text = {
+    name = bts_crisis_pact_cost_bts_crisis_pact_2_text
+    value = value:bts_crisis_pact_cost_value|COST|@bts_crisis_pact_2_cost|
+}
+
+defined_text = {
+    name = bts_crisis_pact_cost_bts_crisis_pact_3_text
+    value = value:bts_crisis_pact_cost_value|COST|@bts_crisis_pact_3_cost|
+}
+
+defined_text = {
+    name = bts_crisis_pact_cost_bts_crisis_pact_4_text
+    value = value:bts_crisis_pact_cost_value|COST|@bts_crisis_pact_4_cost|
+}
+
+defined_text = {
+    name = bts_crisis_pact_cost_bts_crisis_pact_5_text
+    value = value:bts_crisis_pact_cost_value|COST|@bts_crisis_pact_5_cost|
+}
+
