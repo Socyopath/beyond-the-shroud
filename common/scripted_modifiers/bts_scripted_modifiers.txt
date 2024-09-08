@@ -61,3 +61,10 @@ bts_crisis_ritual_coolodwn_mult = {
 	category = country
 	percentage = yes
 }
+
+bts_crisis_pact_duration_add = {
+	icon = mod_relic_cooldown
+	percentage = no
+	good = yes
+	category = country
+}

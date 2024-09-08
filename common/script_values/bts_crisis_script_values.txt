@@ -29,6 +29,22 @@ bts_crisis_ritual_cooldown_value = {
 }
 
 
+bts_crisis_pact_duration_value = {
+    base = $DURATION$
+    add = value:scripted_modifier_add|MODIFIER|bts_crisis_pact_duration_add|
+    add = -1 # Couniclor seems to add an extra level
+    min = $DURATION$
+}
+
+bts_crisis_pact_cost_value = {
+    base = $COST$
+    modifier = {
+        add = -1
+        bts_can_use_councilor_power = { COUNCILOR = bts_crisis_councilor_pact }
+    }
+    min = 1
+}
+
 bts_leader_xp_neg = {
 	add = trigger:has_experience
 	mult = -1

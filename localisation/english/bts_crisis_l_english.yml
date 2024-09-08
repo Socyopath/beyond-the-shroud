@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 
 # Ascension
 ap_bts_crisis: "Eldritch Pursuit"
@@ -219,7 +219,7 @@ bts_shroud_destabilizer_aura_component_desc: "$bts_tech_shroud_destabilizer_desc
 # Modifiers
 absorbed_consciousness_0: "$absorbed_consciousness_1$"
 mod_bts_crisis_ritual_coolodwn_mult: "Eldritch Ritual Cooldown"
-mod_bts_crisis_pact_cost_mult: "Eldritch Pact Cost"
+mod_bts_crisis_pact_duration_add: "Eldritch Pact Duration (in years)"
 bts_ritual_pop_trade_boost: "$bts_ritual_pop_trade$"
 bts_ritual_pop_trade_boost_desc: "$bts_ritual_pop_trade_desc$"
 
@@ -281,9 +281,10 @@ bts_crisis_dreamlike_design: "Dreamlike Terror"
 # UI Text
 bts_reckoning_info: "§M$NAME_Reckoning$§! : §Y[root.bts_planet_killer_end_pop_killed]§! organic pops §Rkilled§!"
 bts_crisis_ritual_info_tooltip: "\n§EEldritch Ritual:§!\nCost: §R$COST|0$§! £job_bts_crisis_sacrifical_thrall£ $job_bts_crisis_sacrifical_thrall_plural$\nCooldown: §Y[this.bts_crisis_ritual_cooldown_$RITUAL$_text]§! days"
-bts_crisis_pact_info_tooltip: "\n§EEldritch Pact:§!\nYearly Cost: §R$COST|0$§! £job_bts_crisis_sacrifical_thrall£ $job_bts_crisis_sacrifical_thrall_plural$"
+bts_crisis_pact_info_tooltip: "\n§EEldritch Pact:§!\nYearly Cost: §R[this.bts_crisis_pact_cost_$PACT$_text]§! £job_bts_crisis_sacrifical_thrall£ $job_bts_crisis_sacrifical_thrall_plural$"
 bts_crisis_ritual_no_thrall: "§RNot enough§! §Y$job_bts_crisis_sacrifical_thrall_plural$§!"
-
+bts_crisis_pact_only_1: "§RCannot have more than §Y1§! active Eldricth Pact§!"
+bts_crisis_pact_only_2: "§RCannot have more than §Y2§! active Eldricth Pact§!"
 
 # Elder Gods
 bts_elder_gods_country_name: "Elder Gods"
@@ -319,3 +320,4 @@ bts_crisis_pact_2: "Eldritch Pact: $bts.542.name$"
 bts_crisis_pact_3: "Eldritch Pact: $bts.543.name$"
 bts_crisis_pact_4: "Eldritch Pact: $bts.544.name$"
 bts_crisis_pact_5: "Eldritch Pact: $bts.545.name$"
+
