@@ -110,3 +110,13 @@ on_bts_devour_mind = {
 		bts.501 # Crisis Objective: Devour Mind
 	}
 }
+
+# Triggers when trying to open the diplomacy view for countries with custom diplomacy.
+# Country scope
+# This = target country (player)
+# From = source country
+on_custom_diplomacy = {
+	events = {
+		bts.540
+	}
+}

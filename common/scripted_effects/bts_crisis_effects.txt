@@ -184,3 +184,12 @@ bts_add_random_deposit = {
 		1 = { bts_add_deposit = { DEPOSIT = d_astral_threads_deposit_1 COUNT = $SR_COUNT$ } }
 	}
 }
+
+bts_crisis_establish_pact = {
+	custom_tooltip_with_params = {
+		description = "bts_crisis_pact_info_tooltip"
+		description_parameters = {
+			"COST" = $YEARLY_COST$
+		}
+	}
+}

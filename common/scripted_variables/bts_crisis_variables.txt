@@ -95,3 +95,6 @@
 @bts_mega_aetherophasic_collapser_3_cost_astral_threads = 1000
 @bts_mega_aetherophasic_collapser_3_build_time = 1800
 
+
+# Pacts
+@bts_crisis_pact_duration = 5

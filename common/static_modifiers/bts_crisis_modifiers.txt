@@ -11,3 +11,23 @@ bts_crisis_agenda_2_finish = {
     planet_stability_add = @bts_crisis_agenda_2_stability_finish
     planet_jobs_upkeep_mult = @bts_crisis_agenda_2_jobs_upkeep_finish
 }
+
+bts_crisis_pact_1 = {
+    icon = "gfx/interface/icons/modifiers/mod_pop_robot_upkeep_mult.dds"
+}
+
+bts_crisis_pact_2 = {
+    icon = "gfx/interface/icons/modifiers/mod_pop_robot_upkeep_mult.dds"
+}
+
+bts_crisis_pact_3 = {
+    icon = "gfx/interface/icons/modifiers/mod_pop_robot_upkeep_mult.dds"
+}
+
+bts_crisis_pact_4 = {
+    icon = "gfx/interface/icons/modifiers/mod_pop_robot_upkeep_mult.dds"
+}
+
+bts_crisis_pact_5 = {
+    icon = "gfx/interface/icons/modifiers/mod_pop_robot_upkeep_mult.dds"
+}
