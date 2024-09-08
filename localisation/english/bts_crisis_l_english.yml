@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 
 # Ascension
 ap_bts_crisis: "Eldritch Pursuit"
@@ -281,5 +281,41 @@ bts_crisis_dreamlike_design: "Dreamlike Terror"
 # UI Text
 bts_reckoning_info: "§M$NAME_Reckoning$§! : §Y[root.bts_planet_killer_end_pop_killed]§! organic pops §Rkilled§!"
 bts_crisis_ritual_info_tooltip: "\n§EEldritch Ritual:§!\nCost: §R$COST|0$§! £job_bts_crisis_sacrifical_thrall£ $job_bts_crisis_sacrifical_thrall_plural$\nCooldown: §Y[this.bts_crisis_ritual_cooldown_$RITUAL$_text]§! days"
-
+bts_crisis_pact_info_tooltip: "\n§EEldritch Pact:§!\nYearly Cost: §R$COST|0$§! £job_bts_crisis_sacrifical_thrall£ $job_bts_crisis_sacrifical_thrall_plural$"
 bts_crisis_ritual_no_thrall: "§RNot enough§! §Y$job_bts_crisis_sacrifical_thrall_plural$§!"
+
+
+# Elder Gods
+bts_elder_gods_country_name: "Elder Gods"
+bts.540.name: "MAIN NAME"
+bts.540.desc: "MAIN DESC"
+bts.540.option.1: "Who are you ?"
+bts.540.resp.1: "I am but a servant of the §YOld Ones§!, a humble guide on the path to greater understanding. My name is unimportant, for I am merely a vessel for their will. I am here to reveal the forgotten truths of the cosmos, to offer a glimpse into the vast and chaotic forces that govern all existence. You may call me what you wish, but know that I am here to lead you toward enlightenment... or destruction.\n\nThe choice, as always, lies with you."
+bts.540.option.2: "Who are the §YGreat Old Ones§!"
+bts.540.resp.2: "The §YGreat Old Ones§! are ancient, primordial beings, much older than this world. They exist beyond the limits of understanding, beyond time and space as we conceive them. Their motivations and desires are alien, impenetrable. To look at them is to risk madness, for their mere presence shatters the fragile illusions of reality to which we cling.\n\nWould you like to know their names? Then you need to form an §YEldritch Pact§! with one of them."
+bts.540.option.3: "What are §YEldrict Pacts§! ?"
+bts.540.resp.3: "§YEldritch Pacts§! are forbidden agreements between mortals and the Great Old Ones or other ancient entities, granting power, knowledge, or influence in exchange for servitude, sanity, or one's very soul. These pacts often twist reality itself, drawing the mortal deeper into madness and chaos.\n\nIf you wish to conclude such a pact, I can offer my services as a mediator. I can call forth the attention of an Old One, bridging the gap between you and the ancient forces that dwell beyond.\n\nBut know this, what you offer in return will be demanded without mercy. Shall I begin the ritual?"
+bts.540.option.4: "§RPerform the ritual§!"
+bts.540.option.4.desc: "Attempt to contact a Great Old One."
+
+bts.541.name: "Ghatanothoa - The Guardian of Darkness"
+bts.541.desc: "Ghatanothoa ll'nghll n'gha ph'nglui, ftaghn ng'gha nnn'ylle wgah'n stellarnak. Llll'yar sgn'wahl nnnk'han ll'ftagn"
+bts.541.tooltip: "TOOLTIP"
+bts.542.name: "Hastur - The King in Yellow"
+bts.542.desc: "Hastur f'taghn ll'nglui ph'nglui r'luh, wgah'n uh'e mglw'nafh, f'taghu oggn llll'yog syha'h l'glui nog"
+bts.542.tooltip: "TOOLTIP"
+bts.543.name: "Yig - The Father of Serpents"
+bts.543.desc: "Yig sh'glua ph'nglui ll'nktal tharanak wgah'n, syha'h sgn'wahl mglw'nafh oggn. L'lugh ilyaa syha'h s'ghal'na f'tagn"
+bts.543.tooltip: "TOOLTIP"
+bts.544.name: "Dagon - Lord of the Depths"
+bts.544.desc: "Dagon wgah'n gl'nath f'taghn, r'luh syha'h mglw'nafh stellarnak. L'luggll n'ghft, ph'yar fhtagn nnnn'ilf stell"
+bts.544.tooltip: "TOOLTIP"
+bts.545.name: "Cthulhu - The Sleeper of R'lyeh"
+bts.545.desc: "Ftaghu g'llha Cthulhu, wgah'n tharanak uln'h Oggtul, ilyaa n'ghft nglui phr'taa ph'nglui f'yar. Ftagn llll'voth n'gha uugha nnn'ghlui'yi"
+bts.545.tooltip: "TOOLTIP"
+
+bts_crisis_pact_1: "Eldritch Pact: $bts.541.name$"
+bts_crisis_pact_2: "Eldritch Pact: $bts.542.name$"
+bts_crisis_pact_3: "Eldritch Pact: $bts.543.name$"
+bts_crisis_pact_4: "Eldritch Pact: $bts.544.name$"
+bts_crisis_pact_5: "Eldritch Pact: $bts.545.name$"

@@ -367,4 +367,329 @@ country_event = {
 # }
 
 
+# This = target country (player)
+# From = source country
+country_event = {
+	id = bts.540
+	title = "bts.540.name"
+	desc = bts.540.desc
+	is_triggered_only = yes
+
+	force_open = yes
+	diplomatic = yes
+	custom_gui = "bts_elder_gods_window"
+	custom_gui_option = "bts_elder_gods_option"
+	picture_event_data = {
+		portrait = par_renown_15
+		room = shroud_room
+	}
+
+	trigger = {
+		from = { is_country_type = bts_elder_gods }
+		NOT = { has_country_flag = bts_elder_gods_diplomacy_engaged } 
+	}
+
+	immediate = {
+		set_country_flag = bts_elder_gods_diplomacy_engaged
+	}
+
+	after = {
+		hidden_effect = {
+			remove_country_flag = bts_elder_gods_diplomacy_engaged
+		}
+	}
+
+	option = {
+		name =  bts.540.option.1
+		is_dialog_only = yes
+		response_text = bts.540.resp.1
+	}
+
+	option = {
+		name =  bts.540.option.2
+		is_dialog_only = yes
+		response_text = bts.540.resp.2
+	}
+
+	option = {
+		name =  bts.540.option.3
+		is_dialog_only = yes
+		response_text = bts.540.resp.3
+	}
+
+	option = {
+		name = bts.540.option.4
+		custom_tooltip = bts.540.option.4.desc
+
+		hidden_effect = {
+			random_list = {
+				1 = {
+					modifier = {
+						factor = 0
+						has_modifier = bts_crisis_pact_1
+					}
+					country_event = { id = bts.541 days = 1 }
+				}
+				1 = {
+					modifier = {
+						factor = 0
+						has_modifier = bts_crisis_pact_2
+					}
+					country_event = { id = bts.542 days = 1 }
+				}
+				1 = {
+					modifier = {
+						factor = 0
+						has_modifier = bts_crisis_pact_3
+					}
+					country_event = { id = bts.543 days = 1 }
+				}
+				1 = {
+					modifier = {
+						factor = 0
+						has_modifier = bts_crisis_pact_4
+					}
+					country_event = { id = bts.544 days = 1 }
+				}
+				1 = {
+					modifier = {
+						factor = 0
+						has_modifier = bts_crisis_pact_5
+					}
+					country_event = { id = bts.545 days = 1 }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EXIT
+		default_hide_option = yes
+	}
+}
+
+# Elder God 1
+country_event = {
+	id = bts.541
+	title = "bts.541.name"
+	desc = bts.541.desc
+	is_triggered_only = yes
+
+	force_open = yes
+	diplomatic = yes
+	show_sound = event_screams
+	custom_gui = "bts_elder_gods_window"
+	custom_gui_option = "bts_elder_gods_option"
+	picture_event_data = {
+		room = bts_gods_1_room
+	}
+
+	trigger = {
+		NOT = { has_country_flag = bts_elder_gods_diplomacy_engaged } 
+	}
+
+	immediate = {
+		set_country_flag = bts_elder_gods_diplomacy_engaged
+	}
+
+	after = {
+		hidden_effect = {
+			remove_country_flag = bts_elder_gods_diplomacy_engaged
+		}
+	}
+
+	option = {
+		name = OK
+		custom_tooltip = bts.541.tooltip
+		bts_crisis_establish_pact = {
+			PACT = bts_crisis_pact_1
+			YEARLY_COST = 1
+		}
+	}
+
+	option = {
+		name = EXIT
+		default_hide_option = yes
+	}
+}
+
+# Elder God 2
+country_event = {
+	id = bts.542
+	title = "bts.542.name"
+	desc = bts.542.desc
+	is_triggered_only = yes
+
+	force_open = yes
+	diplomatic = yes
+	show_sound = event_screams
+	custom_gui = "bts_elder_gods_window"
+	custom_gui_option = "bts_elder_gods_option"
+	picture_event_data = {
+		room = bts_gods_2_room
+	}
+
+	trigger = {
+		NOT = { has_country_flag = bts_elder_gods_diplomacy_engaged } 
+	}
+
+	immediate = {
+		set_country_flag = bts_elder_gods_diplomacy_engaged
+	}
+
+	after = {
+		hidden_effect = {
+			remove_country_flag = bts_elder_gods_diplomacy_engaged
+		}
+	}
+
+	option = {
+		name = OK
+		custom_tooltip = bts.542.tooltip
+		bts_crisis_establish_pact = {
+			PACT = bts_crisis_pact_2
+			YEARLY_COST = 1
+		}
+	}
+
+	option = {
+		name = EXIT
+		default_hide_option = yes
+	}
+}
+
+# Elder God 3
+country_event = {
+	id = bts.543
+	title = "bts.543.name"
+	desc = bts.543.desc
+	is_triggered_only = yes
+
+	force_open = yes
+	diplomatic = yes
+	show_sound = event_screams
+	custom_gui = "bts_elder_gods_window"
+	custom_gui_option = "bts_elder_gods_option"
+	picture_event_data = {
+		room = bts_gods_3_room
+	}
+
+	trigger = {
+		NOT = { has_country_flag = bts_elder_gods_diplomacy_engaged } 
+	}
+
+	immediate = {
+		set_country_flag = bts_elder_gods_diplomacy_engaged
+	}
+
+	after = {
+		hidden_effect = {
+			remove_country_flag = bts_elder_gods_diplomacy_engaged
+		}
+	}
+
+	option = {
+		name = OK
+		custom_tooltip = bts.543.tooltip
+		bts_crisis_establish_pact = {
+			PACT = bts_crisis_pact_3
+			YEARLY_COST = 1
+		}
+	}
+
+	option = {
+		name = EXIT
+		default_hide_option = yes
+	}
+}
+
+# Elder God 4
+country_event = {
+	id = bts.544
+	title = "bts.544.name"
+	desc = bts.544.desc
+	is_triggered_only = yes
+
+	force_open = yes
+	diplomatic = yes
+	show_sound = event_screams
+	custom_gui = "bts_elder_gods_window"
+	custom_gui_option = "bts_elder_gods_option"
+	picture_event_data = {
+		room = bts_gods_4_room
+	}
+
+	trigger = {
+		NOT = { has_country_flag = bts_elder_gods_diplomacy_engaged } 
+	}
+
+	immediate = {
+		set_country_flag = bts_elder_gods_diplomacy_engaged
+	}
+
+	after = {
+		hidden_effect = {
+			remove_country_flag = bts_elder_gods_diplomacy_engaged
+		}
+	}
+
+	option = {
+		name = OK
+		custom_tooltip = bts.544.tooltip
+		bts_crisis_establish_pact = {
+			PACT = bts_crisis_pact_4
+			YEARLY_COST = 1
+		}
+	}
+
+	option = {
+		name = EXIT
+		default_hide_option = yes
+	}
+}
+
+# Elder God 5
+country_event = {
+	id = bts.545
+	title = "bts.545.name"
+	desc = bts.545.desc
+	is_triggered_only = yes
+
+	force_open = yes
+	diplomatic = yes
+	show_sound = event_screams
+	custom_gui = "bts_elder_gods_window"
+	custom_gui_option = "bts_elder_gods_option"
+	picture_event_data = {
+		room = bts_gods_5_room
+	}
+
+	trigger = {
+		NOT = { has_country_flag = bts_elder_gods_diplomacy_engaged } 
+	}
+
+	immediate = {
+		set_country_flag = bts_elder_gods_diplomacy_engaged
+	}
+
+	after = {
+		hidden_effect = {
+			remove_country_flag = bts_elder_gods_diplomacy_engaged
+		}
+	}
+
+	option = {
+		name = OK
+		custom_tooltip = bts.545.tooltip
+		bts_crisis_establish_pact = {
+			PACT = bts_crisis_pact_5
+			YEARLY_COST = 1
+		}
+	}
+
+	option = {
+		name = EXIT
+		default_hide_option = yes
+	}
+}
 
