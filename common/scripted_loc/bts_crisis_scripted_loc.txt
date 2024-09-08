@@ -11,26 +11,26 @@ defined_text = {
 
 defined_text = {
     name = bts_crisis_ritual_cooldown_bts_ritual_pop_trade_text
-    value = value:bts_crisis_cooldown_value|COOLDOWN|@bts_ritual_pop_trade_cooldown|
+    value = value:bts_crisis_ritual_cooldown_value|COOLDOWN|@bts_ritual_pop_trade_cooldown|
 }
 
 defined_text = {
     name = bts_crisis_ritual_cooldown_bts_ritual_remove_trait_text
-    value = value:bts_crisis_cooldown_value|COOLDOWN|@bts_ritual_remove_trait_cooldown|
+    value = value:bts_crisis_ritual_cooldown_value|COOLDOWN|@bts_ritual_remove_trait_cooldown|
 }
 
 defined_text = {
     name = bts_crisis_ritual_cooldown_bts_ritual_reset_leader_text
-    value = value:bts_crisis_cooldown_value|COOLDOWN|@bts_ritual_reset_leader_cooldown|
+    value = value:bts_crisis_ritual_cooldown_value|COOLDOWN|@bts_ritual_reset_leader_cooldown|
 }
 
 defined_text = {
     name = bts_crisis_ritual_cooldown_bts_ritual_harvest_text
-    value = value:bts_crisis_cooldown_value|COOLDOWN|@bts_ritual_harvest_cooldown|
+    value = value:bts_crisis_ritual_cooldown_value|COOLDOWN|@bts_ritual_harvest_cooldown|
 }
 
 defined_text = {
     name = bts_crisis_ritual_cooldown_bts_ritual_dreamlike_text
-    value = value:bts_crisis_cooldown_value|COOLDOWN|@bts_ritual_dreamlike_cooldown|
+    value = value:bts_crisis_ritual_cooldown_value|COOLDOWN|@bts_ritual_dreamlike_cooldown|
 }
 

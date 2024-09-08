@@ -64,8 +64,8 @@ bts_crisis_ritual_setup = {
 			bts_effect_consume_thrall = { COUNT = $COST$ }
 			set_saved_date = {
 				key = bts_crisis_ritual_cooldown_$RITUAL$
-				days_from_present = value:bts_crisis_cooldown_value|COOLDOWN|@$RITUAL$_cooldown|
-				expires = value:bts_crisis_cooldown_value|COOLDOWN|@$RITUAL$_cooldown|
+				days_from_present = value:bts_crisis_ritual_cooldown_value|COOLDOWN|@$RITUAL$_cooldown|
+				expires = value:bts_crisis_ritual_cooldown_value|COOLDOWN|@$RITUAL$_cooldown|
 			}
 			fire_on_action = { 
 				on_action = on_bts_ritual
