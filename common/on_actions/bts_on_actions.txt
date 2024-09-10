@@ -95,22 +95,6 @@ on_relic_activated = {
 }
 
 
-# This = Country
-# From = Shroud Rift (Planet)
-on_bts_ritual = {
-	events = {
-		bts.500 # Crisis Objective: Performs a Ritual
-	}
-}
-
-# This = Country
-# From = Pop
-on_bts_devour_mind = {
-	events = {
-		bts.501 # Crisis Objective: Devour Mind
-	}
-}
-
 # Triggers when trying to open the diplomacy view for countries with custom diplomacy.
 # Country scope
 # This = target country (player)

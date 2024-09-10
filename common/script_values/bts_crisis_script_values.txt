@@ -29,13 +29,6 @@ bts_crisis_ritual_cooldown_value = {
 }
 
 
-bts_crisis_pact_duration_value = {
-    base = $DURATION$
-    add = value:scripted_modifier_add|MODIFIER|bts_crisis_pact_duration_add|
-    add = -1 # Couniclor seems to add an extra level
-    min = $DURATION$
-}
-
 bts_crisis_pact_cost_value = {
     base = $COST$
     modifier = {
