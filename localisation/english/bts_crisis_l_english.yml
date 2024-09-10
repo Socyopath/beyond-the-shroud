@@ -219,7 +219,6 @@ bts_shroud_destabilizer_aura_component_desc: "$bts_tech_shroud_destabilizer_desc
 # Modifiers
 absorbed_consciousness_0: "$absorbed_consciousness_1$"
 mod_bts_crisis_ritual_coolodwn_mult: "Eldritch Ritual Cooldown"
-mod_bts_crisis_pact_duration_add: "Eldritch Pact Duration (in years)"
 bts_ritual_pop_trade_boost: "$bts_ritual_pop_trade$"
 bts_ritual_pop_trade_boost_desc: "$bts_ritual_pop_trade_desc$"
 

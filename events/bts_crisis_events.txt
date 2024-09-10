@@ -73,26 +73,46 @@ country_event = {
 	}
 }
 
-
-# Crisis Objective: Performs a Ritual
+# DEBUG : Establish communication with elder gods
 country_event = {
-	id = bts.500
+	id = bts.5003
 	is_triggered_only = yes
 	hide_window = yes
 	
 	immediate = {
-		complete_crisis_objective = bts_crisis_obj_ritual
-	}
-}
+		if = {
+			limit = {
+				NOT = {
+					exists = event_target:bts_elder_gods_country
+				}
+			}
+			### SPAWN SPECIAL COUNTRIES
+			create_country = {
+				name = bts_elder_gods_country_name
+				type = bts_elder_gods
+				flag = {
+					icon = {
+						category = "special"
+						file = "the_shroud.dds"
+					}
+					background= {
+						category = "backgrounds"
+						file = "00_solid.dds"
+					}
+					colors={
+						"red"
+						"black"
+						"null"
+						"null"
+					}
+				}
+				effect = {
+					save_global_event_target_as = bts_elder_gods_country
+				}
+			}
+		}
 
-# Crisis Objective: Devours Mind
-country_event = {
-	id = bts.501
-	is_triggered_only = yes
-	hide_window = yes
-	
-	immediate = {
-		complete_crisis_objective = bts_crisis_obj_devour_mind
+		establish_communications_no_message = event_target:bts_elder_gods_country
 	}
 }
 

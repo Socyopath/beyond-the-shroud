@@ -97,9 +97,22 @@
 
 
 # Pacts
-@bts_crisis_pact_duration = 5
 @bts_crisis_pact_1_cost = 2
+@bts_crisis_pact_1_cost_delay = 360
+@bts_crisis_pact_1_duration = 1800
+
 @bts_crisis_pact_2_cost = 3
+@bts_crisis_pact_2_cost_delay = 360
+@bts_crisis_pact_2_duration = 1800
+
 @bts_crisis_pact_3_cost = 4
+@bts_crisis_pact_3_cost_delay = 360
+@bts_crisis_pact_3_duration = 1800
+
 @bts_crisis_pact_4_cost = 5
+@bts_crisis_pact_5_cost_delay = 360
+@bts_crisis_pact_4_duration = 1800
+
 @bts_crisis_pact_5_cost = 6
+@bts_crisis_pact_5_cost_delay = 360
+@bts_crisis_pact_5_duration = 1800

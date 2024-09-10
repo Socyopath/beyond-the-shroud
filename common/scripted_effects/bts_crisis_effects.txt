@@ -29,12 +29,7 @@ bts_effect_devour_mind = {
 	}
 	change_species = event_target:bts_species_devoured_mind_@species
     [[CASTER] $CASTER$ = {
-        fire_on_action = { 
-			on_action = on_bts_devour_mind
-			scopes = { 
-				from = prev
-			} 
-		}
+        complete_crisis_objective = bts_crisis_obj_devour_mind
     }]
 }
 
@@ -67,12 +62,7 @@ bts_crisis_ritual_setup = {
 				days_from_present = value:bts_crisis_ritual_cooldown_value|COOLDOWN|@$RITUAL$_cooldown|
 				expires = value:bts_crisis_ritual_cooldown_value|COOLDOWN|@$RITUAL$_cooldown|
 			}
-			fire_on_action = { 
-				on_action = on_bts_ritual
-				scopes = { 
-					from = root
-				} 
-			}
+			complete_crisis_objective = bts_crisis_obj_ritual
 		}
 	}
 }
@@ -188,8 +178,7 @@ bts_add_random_deposit = {
 bts_crisis_establish_pact = {
 	add_modifier = {
 		modifier = $PACT$
-		years = 1
-		time_multiplier = value:bts_crisis_pact_duration_value|DURATION|@bts_crisis_pact_duration|
+		days = @$PACT$_duration
 	}
 	custom_tooltip_with_params = {
 		description = "bts_crisis_pact_info_tooltip"
