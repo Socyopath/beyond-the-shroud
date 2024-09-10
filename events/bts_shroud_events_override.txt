@@ -89,7 +89,7 @@ country_event = {
 				}
 			}
 			save_event_target_as = leader_3
-			set_leader_flag = high_psi 
+			set_leader_flag = high_psi
 		}
 	}
 
