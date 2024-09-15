@@ -441,6 +441,9 @@ country_event = {
 		name = bts.540.option.4
 		custom_tooltip = bts.540.option.4.desc
 		allow = {
+			NOT = {
+				has_modifier = bts_crisis_pact_cooldown
+			}
 			if = {
 				limit = { bts_can_use_councilor_ultimate_power = { COUNCILOR = bts_crisis_councilor_pact } }
 				custom_tooltip = {
@@ -460,6 +463,11 @@ country_event = {
 					}
 				}
 			}
+		}
+		add_modifier = {
+			modifier = bts_crisis_pact_cooldown
+			days = @bts_crisis_pact_cooldown
+			time_multiplier = value:scripted_modifier_mult|MODIFIER|bts_crisis_pact_cooldown_mult|
 		}
 		hidden_effect = {
 			random_list = {
