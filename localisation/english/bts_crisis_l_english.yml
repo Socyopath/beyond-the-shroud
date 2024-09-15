@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 
 # Ascension
 ap_bts_crisis: "Eldritch Pursuit"
@@ -54,7 +54,7 @@ bts_crisis_level_4: "§UCalamity§!"
 bts_crisis_level_4_desc: "Crisis Level 4"
 bts_crisis_level_4_situation_pass: "$TRIGGER_PASS$ Has finished situation §Y$situation_bts_conceptual_mastery$§!"
 bts_crisis_level_4_situation_fail: "$TRIGGER_FAIL$ Has finished situation §Y$situation_bts_conceptual_mastery$§!"
-bts_menp_old_ones: ""
+bts_menp_old_ones: "The Great Old Ones"
 bts_menp_old_ones_effect: ""
 bts_menp_cult_2: "The Nameless Cult"
 bts_menp_cult_2_effect: "§H$t$$bts_crisis_councilor_pact$§!\n$tt$$COUNCIL_POSITION_MODIFIER_BASE$\n$ttt$$mod_bts_crisis_pact_cooldown_mult$: §G$@bts_crisis_councilor_pact_cooldown_per_level|%0$§!\n$tt$$bts_menp_cult_1_effect_councilor_power$Eldritch Pact Yearly Cost: §G-1§!\n$tt$$bts_menp_cult_1_effect_councilor_power_ultimate$Eldritch Pact Limit: §G+1§!"
@@ -64,9 +64,8 @@ bts_menp_immortals_effect: "Leaders become §Yimmortal§!"
 ## Level 5
 bts_crisis_level_5: "§UExistential Threat§!"
 bts_crisis_level_5_desc: "Crisis Level 5"
-bts_menp_mega_summon_4: "$decision_bts_shroud_rift_summon_4$"
-bts_menp_mega_summon_4_effect: "Unlock §Y$decision_bts_shroud_rift_summon_4$§! decision in the §Y$pc_bts_shroud_rift$§!"
-bts_menp_godhood: "Beyond The Shroud"
+bts_menp_outer_gods: "Beyond The Shroud"
+bts_menp_outer_gods_effect: ""
 
 # UI
 bts_crisis_currency: "Madness"
