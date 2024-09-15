@@ -78,6 +78,7 @@ bts_crisis_level_4 = {
 	perks = {
 		bts_menp_old_ones
 		bts_menp_cult_2
+		bts_menp_immortals
 	}
 
 	on_unlock = { 

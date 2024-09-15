@@ -111,6 +111,18 @@ bts_menp_cult_2 = {
 	}
 }
 
+bts_menp_immortals = {
+	portrait = "GFX_crisis_icon_bts_immortals"
+	on_unlock = {
+		custom_tooltip = bts_menp_immortals_effect
+		owner_main_species = {
+			change_species_characteristics = {
+				immortal = yes
+			}
+		}
+	}
+}
+
 
 # Level 5
 bts_menp_mega_summon_4 = {

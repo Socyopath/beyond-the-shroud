@@ -114,6 +114,13 @@ spriteTypes = {
 		noOfFrames = 2			
 	}
 
+    spriteType = {
+		name = "GFX_crisis_icon_bts_immortals"
+		texturefile = "gfx/interface/icons/crisis/crisis_icon_bts_cult_2.dds"
+		noOfFrames = 2			
+	}
+
+
     # Councilor
 	spriteType = {
 		name = "GFX_icon_bts_crisis_councilor_ritual"
