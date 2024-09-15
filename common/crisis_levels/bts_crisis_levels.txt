@@ -94,8 +94,7 @@ bts_crisis_level_5 = {
 	}
 
 	perks = {
-		bts_menp_mega_summon_4
-		bts_menp_godhood
+		bts_menp_outer_gods
 	}
 
 	on_unlock = { 

@@ -120,6 +120,12 @@ spriteTypes = {
 		noOfFrames = 2			
 	}
 
+	## Level 5
+	spriteType = {
+		name = "GFX_crisis_icon_bts_outer_gods"
+		texturefile = "gfx/interface/icons/crisis/crisis_icon_bts_outer_gods.dds"
+		noOfFrames = 2			
+	}
 
     # Councilor
 	spriteType = {

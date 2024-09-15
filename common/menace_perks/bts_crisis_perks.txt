@@ -125,13 +125,9 @@ bts_menp_immortals = {
 
 
 # Level 5
-bts_menp_mega_summon_4 = {
-	portrait = "GFX_crisis_icon_relentlessaggression"
+bts_menp_outer_gods = {
+	portrait = "GFX_crisis_icon_bts_outer_gods"
 	on_unlock = {
-		custom_tooltip = bts_menp_mega_summon_4_effect
+		custom_tooltip = bts_menp_outer_gods_effect
 	}
-}
-
-bts_menp_godhood = {
-	portrait = "GFX_crisis_icon_undertaker"
 }
