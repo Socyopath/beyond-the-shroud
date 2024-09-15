@@ -31,3 +31,7 @@ bts_crisis_pact_4 = {
 bts_crisis_pact_5 = {
     icon = "gfx/interface/icons/modifiers/mod_pop_robot_upkeep_mult.dds"
 }
+
+bts_crisis_pact_cooldown = {
+    custom_tooltip = bts_crisis_pact_cooldown_tooltip
+}
