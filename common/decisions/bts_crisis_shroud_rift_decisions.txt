@@ -340,7 +340,7 @@ bts_ritual_dreamlike = {
         is_planet_class = pc_bts_shroud_rift
 		exists = from
         from = {
-            has_crisis_perk = bts_menp_dreamlike
+            has_crisis_perk = bts_menp_war_terror
         }
 	}
 
@@ -375,6 +375,57 @@ bts_ritual_dreamlike = {
                         design = "bts_crisis_dreamlike_design"
                     }
                     set_location = root
+                }
+            }
+        }
+
+	}
+}
+
+bts_ritual_war_terror = {
+	sound = event_energy_field
+	icon = decision_wormhole
+    owned_planets_only = no
+
+	potential = {
+        is_planet_class = pc_bts_shroud_rift
+		exists = from
+        from = {
+            has_crisis_perk = bts_menp_war_terror
+        }
+	}
+
+    allow = {
+        bts_crisis_ritual_can_use_cooldown = { RITUAL = bts_ritual_war_terror }
+        bts_crisis_ritual_can_use_cost = {
+            COST = @bts_ritual_war_terror_thrall_cost
+        }
+
+        from = {
+            is_at_war = yes
+        }
+    }
+
+	effect = {
+        custom_tooltip = bts_ritual_war_terror_effects
+        bts_crisis_ritual_setup = {
+            COST = @bts_ritual_war_terror_thrall_cost
+            RITUAL = bts_ritual_war_terror
+        }
+
+        hidden_effect = {
+            from = {
+                every_war = {
+                    every_war_participant = {
+                        limit = {
+                            NOT = { is_same_value = prevprev }
+                            is_hostile = prevprev
+                        }
+                        add_modifier = {
+                            modifier = bts_crisis_war_exhaust
+                            days = @bts_ritual_war_terror_duration
+                        }
+                    }
                 }
             }
         }
