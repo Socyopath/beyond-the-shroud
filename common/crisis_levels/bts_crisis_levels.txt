@@ -54,7 +54,7 @@ bts_crisis_level_3 = {
 	}
 
 	perks = {
-		bts_menp_dreamlike
+		bts_menp_war_terror
 		bts_menp_energy
 		bts_menp_new_trait
 	}
