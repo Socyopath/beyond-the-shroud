@@ -38,6 +38,10 @@
 @bts_ritual_dreamlike_thrall_cost = 10
 @bts_ritual_dreamlike_cooldown = 7200
 
+@bts_ritual_war_terror_thrall_cost = 4
+@bts_ritual_war_terror_cooldown = 3600
+@bts_ritual_war_terror_duration = 720
+@bts_crisis_war_exhaust_value = 5.0
 
 
 ## Decisions

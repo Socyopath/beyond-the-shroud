@@ -35,3 +35,7 @@ bts_crisis_pact_5 = {
 bts_crisis_pact_cooldown = {
     custom_tooltip = bts_crisis_pact_cooldown_tooltip
 }
+
+bts_crisis_war_exhaust = {
+    country_war_exhaustion_mult = @bts_crisis_war_exhaust_value
+}

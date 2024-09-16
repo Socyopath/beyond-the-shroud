@@ -35,6 +35,11 @@ defined_text = {
     value = value:bts_crisis_ritual_cooldown_value|COOLDOWN|@bts_ritual_dreamlike_cooldown|
 }
 
+defined_text = {
+    name = bts_crisis_ritual_cooldown_bts_ritual_war_terror_text
+    value = value:bts_crisis_ritual_cooldown_value|COOLDOWN|@bts_ritual_war_terror_cooldown|
+}
+
 
 # Pacts
 defined_text = {
