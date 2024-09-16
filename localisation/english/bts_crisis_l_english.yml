@@ -300,13 +300,13 @@ bts_crisis_pact_only_2: "§RCannot have more than §Y2§! active Eldricth Pact§
 BTS_ELDER_GODS_PROJECT: ""
 BTS_ELDER_GODS_PROJECT_DESC: ""
 
-bts.5400.name: ""
-bts.5400.desc: ""
-bts.5400.option: ""
+bts.5400.name: "$TRANSMISSION$"
+bts.5400.desc: "Can you feel it... this subtle trembling beneath the facade of reality, calling out to you?\n\nThere are forces at play, hidden dimensions that reveal themselves only to those who dare to look beyond the obvious. You, who have eyes that see what others don't, are on the brink of a profound revelation.\n\nEmbrace the unknown and unveil the secrets that lie dormant in the depths. The answers you seek await you, if only you're willing to descend further into the abyss."
+bts.5400.option: "Dive deeper"
 
 bts_elder_gods_country_name: "Elder Gods"
-bts.540.name: "MAIN NAME"
-bts.540.desc: "MAIN DESC"
+bts.540.name: "Deep Shroud"
+bts.540.desc: "Seeker of the forbidden truth.\n\nThe veil between worlds is thinning, and opportunities like this are few and far between.\n\nAre you ready to explore the hidden truths that lie beneath the surface of reality ?"
 bts.540.option.1: "Who are you ?"
 bts.540.resp.1: "I am but a servant of the §YOld Ones§!, a humble guide on the path to greater understanding. My name is unimportant, for I am merely a vessel for their will. I am here to reveal the forgotten truths of the cosmos, to offer a glimpse into the vast and chaotic forces that govern all existence. You may call me what you wish, but know that I am here to lead you toward enlightenment... or destruction.\n\nThe choice, as always, lies with you."
 bts.540.option.2: "Who are the §YGreat Old Ones§!"
