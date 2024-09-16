@@ -191,5 +191,6 @@ bts_crisis_establish_pact = {
 			which = bts_crisis_pact_count
 			value = 1
 		}
+		complete_crisis_objective = bts_crisis_obj_pact
 	}
 }

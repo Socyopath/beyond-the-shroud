@@ -101,6 +101,17 @@ bts_menp_old_ones = {
 	portrait = "GFX_crisis_icon_bts_old_ones"
 	on_unlock = {
 		custom_tooltip = bts_menp_old_ones_effect
+
+		hidden_effect = {
+			random_planet_within_border = {
+				limit = { is_planet_class = pc_bts_shroud_rift }
+				enable_special_project = { 
+					name = BTS_ELDER_GODS_PROJECT
+					owner = root
+					location = this
+				}
+			}
+		}
 	}
 }
 

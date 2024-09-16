@@ -377,15 +377,24 @@ country_event = {
 # 	hide_window = yes
 	
 # 	immediate = {
-# 		owner_main_species = {
-# 			change_species_characteristics = {
-# 				remove_trait = bts_trait_crisis_main_1
-# 				add_trait = bts_trait_crisis_main_2
-# 			}
-# 		}
-# 	}
-# }
+country_event = {
+	id = bts.5400
+	title = bts.5400.name
+	desc = bts.5400.desc
 
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "bts_elder_gods_window"
+	custom_gui_option = "bts_elder_gods_option"
+	picture_event_data = {
+		room = no_video_feed_room
+	}
+
+	option = {
+		name = bts.5400.option
+		default_hide_option = yes
+	}
+}
 
 # This = target country (player)
 # From = source country

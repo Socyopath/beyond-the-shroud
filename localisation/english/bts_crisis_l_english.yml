@@ -55,7 +55,7 @@ bts_crisis_level_4_desc: "Crisis Level 4"
 bts_crisis_level_4_situation_pass: "$TRIGGER_PASS$ Has finished situation §Y$situation_bts_conceptual_mastery$§!"
 bts_crisis_level_4_situation_fail: "$TRIGGER_FAIL$ Has finished situation §Y$situation_bts_conceptual_mastery$§!"
 bts_menp_old_ones: "The Great Old Ones"
-bts_menp_old_ones_effect: ""
+bts_menp_old_ones_effect: "§YStarts Special Project:§! $BTS_ELDER_GODS_PROJECT$"
 bts_menp_cult_2: "The Nameless Cult"
 bts_menp_cult_2_effect: "§YUnlocks Councilor:§!\n§H$t$$bts_crisis_councilor_pact$§!\n$tt$$COUNCIL_POSITION_MODIFIER_BASE$\n$ttt$$mod_bts_crisis_pact_cooldown_mult$: §G$@bts_crisis_councilor_pact_cooldown_per_level|%0$§!\n$tt$$bts_menp_cult_1_effect_councilor_power$Eldritch Pact Yearly Cost: §G-1§!\n$tt$$bts_menp_cult_1_effect_councilor_power_ultimate$Eldritch Pact Limit: §G+1§!"
 bts_menp_immortals: "Endless Madness"
@@ -297,6 +297,13 @@ bts_crisis_pact_only_1: "§RCannot have more than §Y1§! active Eldricth Pact§
 bts_crisis_pact_only_2: "§RCannot have more than §Y2§! active Eldricth Pact§!"
 
 # Elder Gods
+BTS_ELDER_GODS_PROJECT: ""
+BTS_ELDER_GODS_PROJECT_DESC: ""
+
+bts.5400.name: ""
+bts.5400.desc: ""
+bts.5400.option: ""
+
 bts_elder_gods_country_name: "Elder Gods"
 bts.540.name: "MAIN NAME"
 bts.540.desc: "MAIN DESC"
