@@ -53,8 +53,8 @@ bts_ritual_pop_trade = {
 
 	potential = {
         is_planet_class = pc_bts_shroud_rift
-		exists = solar_system.owner
-        solar_system.owner = {
+		exists = from
+        from = {
             has_crisis_perk = bts_menp_mega
         }
 	}
@@ -64,7 +64,7 @@ bts_ritual_pop_trade = {
 
         if = {
             limit = { 
-                solar_system.owner = {
+                from = {
                     bts_can_use_councilor_ultimate_power = { COUNCILOR = bts_crisis_councilor_ritual } 
                 }
             }
@@ -84,7 +84,7 @@ bts_ritual_pop_trade = {
         custom_tooltip = bts_ritual_pop_trade_effects
 
         hidden_effect = {
-            solar_system.owner.capital_scope = {
+            from.capital_scope = {
                 create_pop = {
                     species = owner_main_species
                 }
@@ -92,7 +92,7 @@ bts_ritual_pop_trade = {
         }
         if = {
             limit = {
-                solar_system.owner = {
+                from = {
                     bts_can_use_councilor_power = { COUNCILOR = bts_crisis_councilor_ritual }
                 }
             }
@@ -107,7 +107,7 @@ bts_ritual_pop_trade = {
 
         if = {
             limit = { 
-                solar_system.owner = {
+                from = {
                     bts_can_use_councilor_ultimate_power = { COUNCILOR = bts_crisis_councilor_ritual } 
                 }
             }
@@ -132,8 +132,8 @@ bts_ritual_remove_trait = {
 
 	potential = {
         is_planet_class = pc_bts_shroud_rift
-		exists = solar_system.owner
-        solar_system.owner = {
+		exists = from
+        from = {
             has_crisis_perk = bts_menp_mega
         }
 	}
@@ -143,13 +143,11 @@ bts_ritual_remove_trait = {
         bts_crisis_ritual_can_use_cost = {
             COST = @bts_ritual_remove_trait_thrall_cost
         }
-        solar_system = {
-            owner = {
-                any_owned_leader = {
-                    num_leader_traits = {
-                        value > 0
-                        negative = yes
-                    }
+        from = {
+            any_owned_leader = {
+                num_leader_traits = {
+                    value > 0
+                    negative = yes
                 }
             }
         }
@@ -163,7 +161,7 @@ bts_ritual_remove_trait = {
         }
 
         hidden_effect = {
-            solar_system.owner = {
+            from = {
                 random_owned_leader = {
                     limit = {
                         num_leader_traits = {
@@ -186,8 +184,8 @@ bts_ritual_reset_leader = {
 
 	potential = {
         is_planet_class = pc_bts_shroud_rift
-		exists = solar_system.owner
-        solar_system.owner = {
+		exists = from
+        from = {
             has_crisis_perk = bts_menp_mega
         }
 	}
@@ -207,7 +205,7 @@ bts_ritual_reset_leader = {
         }
 
         hidden_effect = {
-            solar_system.owner = {
+            from = {
                 country_event = { id = bts.502 }
             }
         }
@@ -223,8 +221,8 @@ bts_ritual_harvest = {
 
 	potential = {
         is_planet_class = pc_bts_shroud_rift
-		exists = solar_system.owner
-        solar_system.owner = {
+		exists = from
+        from = {
             has_crisis_perk = bts_menp_energy
         }
 	}
@@ -272,7 +270,7 @@ bts_ritual_harvest = {
                 limit = {
                     NOT = { exists = event_target:bts_shroud_rift_creatures }
                 }
-                solar_system.owner = {
+                from = {
                     country_event = { 
                         id = bts.504
                     }
@@ -340,8 +338,8 @@ bts_ritual_dreamlike = {
 
 	potential = {
         is_planet_class = pc_bts_shroud_rift
-		exists = solar_system.owner
-        solar_system.owner = {
+		exists = from
+        from = {
             has_crisis_perk = bts_menp_dreamlike
         }
 	}
@@ -371,7 +369,7 @@ bts_ritual_dreamlike = {
                     spawn_debris = no
                 }
                 effect = {
-                    set_owner = root.solar_system.owner
+                    set_owner = from
                     create_ship = {
                         name = "bts_ship_crisis_dreamlike"
                         design = "bts_crisis_dreamlike_design"

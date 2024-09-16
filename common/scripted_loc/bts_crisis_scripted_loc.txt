@@ -9,6 +9,7 @@ defined_text = {
     default = operation_bts_crisis_devour_mind_effect_base
 }
 
+# Rituals 
 defined_text = {
     name = bts_crisis_ritual_cooldown_bts_ritual_pop_trade_text
     value = value:bts_crisis_ritual_cooldown_value|COOLDOWN|@bts_ritual_pop_trade_cooldown|
@@ -35,6 +36,7 @@ defined_text = {
 }
 
 
+# Pacts
 defined_text = {
     name = bts_crisis_pact_cost_bts_crisis_pact_1_text
     value = value:bts_crisis_pact_cost_value|COST|@bts_crisis_pact_1_cost|

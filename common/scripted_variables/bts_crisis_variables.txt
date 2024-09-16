@@ -32,7 +32,7 @@
 @bts_ritual_reset_leader_cooldown = 3600
 @bts_ritual_reset_leader_thrall_cost = 5
 
-@bts_ritual_harvest_cooldown = 10
+@bts_ritual_harvest_cooldown = 180
 @bts_ritual_harvest_thrall_cost = 1
 
 @bts_ritual_dreamlike_thrall_cost = 10

@@ -46,7 +46,7 @@ bts_effect_consume_thrall = {
 }
 
 bts_crisis_ritual_setup = {
-	solar_system.owner = {
+	from = {
 		custom_tooltip_with_params = {
 			description = "bts_crisis_ritual_info_tooltip"
 			description_parameters = {
