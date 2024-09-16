@@ -101,6 +101,7 @@
 
 
 # Pacts
+@bts_elder_gods_project_days = 180
 @bts_crisis_pact_cooldown = 1800
 
 @bts_crisis_pact_1_cost = 2

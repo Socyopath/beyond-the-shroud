@@ -1,0 +1,95 @@
+special_project = {
+	key = "BTS_ELDER_GODS_PROJECT"
+    icon = "gfx/interface/icons/situation_log/situation_log_extradimensional.dds"
+    picture = GFX_evt_psionics
+    sound = yes
+
+    cost = 0
+	days_to_research = @bts_elder_gods_project_days
+	tech_department = society_technology
+	location = no
+	event_scope = country_event
+
+    # Scopes:
+    #	THIS = project scope (matches setting in "event_scope" i.e. ship/planet/country)
+    #	FROM = location scope, if set (usually a planet)
+    #	PREV = country
+	on_success = {
+		if = {
+			limit = {
+				NOT = {
+					exists = event_target:bts_elder_gods_country
+				}
+			}
+			### SPAWN SPECIAL COUNTRIES
+			create_country = {
+				name = bts_elder_gods_country_name
+				type = bts_elder_gods
+				flag = {
+					icon = {
+						category = "special"
+						file = "the_shroud.dds"
+					}
+					background= {
+						category = "backgrounds"
+						file = "00_solid.dds"
+					}
+					colors={
+						"red"
+						"black"
+						"null"
+						"null"
+					}
+				}
+				effect = {
+					save_global_event_target_as = bts_elder_gods_country
+				}
+			}
+		}
+
+		establish_communications_no_message = event_target:bts_elder_gods_country
+        country_event = {
+            id = bts.540
+            scopes = {
+                from = event_target:bts_elder_gods_country
+            }
+        }
+	}
+
+    # Scopes: see on_success
+	on_start = {
+	}
+
+    # Scopes: see on_success
+    on_progress_25 = {
+	}
+
+    # Scopes: see on_success
+    on_progress_50 = {
+        country_event = { id = bts.5400 }
+	}
+
+    # Scopes: see on_success
+    on_progress_75 = {
+	}
+
+    # Scopes:
+    #	THIS = country
+    #	FROM = project scope (matches setting in "event_scope" i.e. ship/planet/country). Might not exist!
+    #	FROMFROM = location scope, if set (usually a planet)
+	on_fail = {
+
+	}
+
+    # Scopes: See on_fail
+	on_cancel = {					# Effect happens if you choose to stop researching or if the abort_trigger returns true
+	}
+
+    # Scopes: See on_fail
+	abort_trigger = {				# Trigger for aborting the project and removing it from the situation log. Fires on_cancel effect
+	}
+
+    # Scopes: See on_fail
+	fail_trigger = {				# Trigger for failing the project and removing it from the situation log. Fires on_fail effect
+	}
+}
