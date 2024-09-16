@@ -25,7 +25,7 @@ bts_can_use_councilor_ultimate_power = {
 bts_crisis_ritual_can_use_cost = {
 	custom_tooltip = {
 		fail_text = bts_crisis_ritual_no_thrall
-		solar_system.owner = {
+		from = {
             bts_crisis_has_thrall = { COST = $COST$ }
         }
 	}
@@ -34,7 +34,7 @@ bts_crisis_ritual_can_use_cost = {
 bts_crisis_ritual_can_use_cooldown = {
     custom_tooltip = {
         fail_text = bts_crisis_ritual_on_cooldown_$RITUAL$
-        solar_system.owner = {
+        from = {
             NOT = { has_country_flag = bts_crisis_ritual_cooldown_$RITUAL$ }
         }
     }

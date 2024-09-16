@@ -13,8 +13,8 @@ decision_bts_zroni_astral_spliting = {
 
 	potential = {
 		is_astral_scar = yes
-		exists = solar_system.owner
-        solar_system.owner = {
+		exists = from
+        from = {
             has_tradition = tr_astral_studies_finish
             NOT = { 
                 has_country_flag = bts_zroni_astral_spliting
@@ -23,13 +23,13 @@ decision_bts_zroni_astral_spliting = {
 	}
 
     allow = {
-        solar_system.owner = {
+        from = {
             has_technology = tech_astral_harvesting
         }
     }
 
 	effect = {
-        solar_system.owner = {
+        from = {
             set_country_flag = bts_zroni_astral_spliting
         }
 		split_astral_scar = yes

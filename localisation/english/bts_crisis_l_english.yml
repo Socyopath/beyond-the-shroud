@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 
 # Ascension
 ap_bts_crisis: "Eldritch Pursuit"
@@ -139,29 +139,29 @@ pc_bts_shroud_rift_desc: ""
 bts_ritual_pop_trade: "Ritual: Umbral Trade"
 bts_ritual_pop_trade_desc: ""
 bts_ritual_pop_trade_bonus_effect: "§G+$@bts_ritual_pop_trade_boost_produces|%0$§! $mod_planet_jobs_produces_mult$ for §Y$@bts_ritual_pop_trade_boost_duration|0$§! days"
-bts_ritual_pop_trade_effects: "Adds §Y1 [solar_system.owner.GetSpeciesName]§! pop on §Y[solar_system.owner.Capital.GetName]§!"
-bts_crisis_ritual_on_cooldown_bts_ritual_pop_trade: "§RCan't use this ritual until§! §Y[solar_system.owner.bts_crisis_ritual_cooldown_bts_ritual_pop_trade]§!"
+bts_ritual_pop_trade_effects: "Adds §Y1 [from.GetSpeciesName]§! pop on §Y[from.Capital.GetName]§!"
+bts_crisis_ritual_on_cooldown_bts_ritual_pop_trade: "§RCan't use this ritual until§! §Y[from.bts_crisis_ritual_cooldown_bts_ritual_pop_trade]§!"
 
 bts_ritual_remove_trait: "Ritual: Exorcism"
 bts_ritual_remove_trait_desc: ""
 bts_ritual_remove_trait_effects: "Removes all §Rnegative§! traits from a random leader"
-bts_crisis_ritual_on_cooldown_bts_ritual_remove_trait: "§RCan't use this ritual until§! §Y[solar_system.owner.bts_crisis_ritual_cooldown_bts_ritual_remove_trait]§!"
+bts_crisis_ritual_on_cooldown_bts_ritual_remove_trait: "§RCan't use this ritual until§! §Y[from.bts_crisis_ritual_cooldown_bts_ritual_remove_trait]§!"
 
 bts_ritual_reset_leader: "Ritual: Mind Warp"
 bts_ritual_reset_leader_desc: ""
 bts_ritual_reset_leader_effects: "Changes a leader class and resets all of its traits"
 bts_ritual_reset_leader_choose_spec: "Choose a §Yclass§! for leader §Y[this.GetName]§!. All of its traits will be converted back to unspent trait points."
-bts_crisis_ritual_on_cooldown_bts_ritual_reset_leader: "§RCan't use this ritual until§! §Y[solar_system.owner.bts_crisis_ritual_cooldown_bts_ritual_reset_leader]§!"
+bts_crisis_ritual_on_cooldown_bts_ritual_reset_leader: "§RCan't use this ritual until§! §Y[from.bts_crisis_ritual_cooldown_bts_ritual_reset_leader]§!"
 
 bts_ritual_harvest: "Supernatural Harvest"
 bts_ritual_harvest_desc: ""
 bts_ritual_harvest_effects: "Adds a random deposit between £energy£ £minerals£ £alloys£ £physics£ £society£ £engineering£ £rare_crystals£ £volatile_motes£ £exotic_gases£ £sr_zro£ £sr_dark_matter£ £astral_threads£\n§RDangerous events may occur...§!"
-bts_crisis_ritual_on_cooldown_bts_ritual_harvest: "§RCan't use this ritual until§! §Y[solar_system.owner.bts_crisis_ritual_cooldown_bts_ritual_harvest]§!"
+bts_crisis_ritual_on_cooldown_bts_ritual_harvest: "§RCan't use this ritual until§! §Y[from.bts_crisis_ritual_cooldown_bts_ritual_harvest]§!"
 
 bts_ritual_dreamlike: "Ritual: Dreamlike Terror"
 bts_ritual_dreamlike_desc: ""
 bts_ritual_dreamlike_effects: "Summons an eldritch entities that corrupt ennemies fleet while in combat"
-bts_crisis_ritual_on_cooldown_bts_ritual_dreamlike: "§RCan't use this ritual until§! §Y[solar_system.owner.bts_crisis_ritual_cooldown_bts_ritual_dreamlike]§!"
+bts_crisis_ritual_on_cooldown_bts_ritual_dreamlike: "§RCan't use this ritual until§! §Y[from.bts_crisis_ritual_cooldown_bts_ritual_dreamlike]§!"
 
 decision_bts_shroud_rift_summon_cooldown: "$TRIGGER_FAIL$§Y$shroud_cooldown$§! modifier must not be active"
 decision_bts_shroud_rift_summon_1: "Ritual: Psonic Resurgence"
