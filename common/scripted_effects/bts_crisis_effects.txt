@@ -192,5 +192,6 @@ bts_crisis_establish_pact = {
 			value = 1
 		}
 		complete_crisis_objective = bts_crisis_obj_pact
+		country_event = { id = $EVENT_COST_CHECK_ID$ days = 1 }
 	}
 }
