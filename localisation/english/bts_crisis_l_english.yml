@@ -332,6 +332,13 @@ bts.545.name: "Cthulhu - The Sleeper of R'lyeh"
 bts.545.desc: "Ftaghu g'llha Cthulhu, wgah'n tharanak uln'h Oggtul, ilyaa n'ghft nglui phr'taa ph'nglui f'yar. Ftagn llll'voth n'gha uugha nnn'ghlui'yi"
 bts.545.tooltip: "TOOLTIP"
 
+bts_crisis_pact_check_cost_name: "Preist"
+bts_crisis_pact_check_cost_desc: "You have to pay"
+bts_crisis_pact_pay_cost: "payy the cost"
+bts_crisis_pact_no_pay_cost: "Refuse to pay"
+bts_crisis_pact_no_pay_cost_tooltip: "Terrible things..."
+bts_crisis_pact_no_pay_event_option: "Have mercy"
+
 bts_crisis_pact_1: "Eldritch Pact: $bts.541.name$"
 bts_crisis_pact_2: "Eldritch Pact: $bts.542.name$"
 bts_crisis_pact_3: "Eldritch Pact: $bts.543.name$"
