@@ -1,0 +1,23 @@
+
+
+
+opinion_bts_crisis_pact_good = {
+	opinion = {
+		base = @opinion_bts_crisis_pact_good_value
+	}
+	accumulative = yes
+}
+
+opinion_bts_crisis_pact_bad = {
+	opinion = {
+		base = @opinion_bts_crisis_pact_bad_value
+	}
+    accumulative = yes
+}
+
+opinion_bts_crisis_pact_fail = {
+	opinion = {
+		base = @opinion_bts_crisis_pact_fail_value
+	}
+    accumulative = yes
+}

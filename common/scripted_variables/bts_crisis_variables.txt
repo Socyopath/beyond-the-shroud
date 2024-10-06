@@ -123,3 +123,8 @@
 @bts_crisis_pact_5_cost = 6
 @bts_crisis_pact_5_cost_delay = 360
 @bts_crisis_pact_5_duration = 1800
+
+
+@opinion_bts_crisis_pact_good_value = 100
+@opinion_bts_crisis_pact_bad_value = -100
+@opinion_bts_crisis_pact_fail_value = -250
