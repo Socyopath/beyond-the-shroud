@@ -560,12 +560,45 @@ country_event = {
 		custom_tooltip = bts.541.tooltip
 		bts_crisis_establish_pact = {
 			PACT = bts_crisis_pact_1
+			EVENT_COST_CHECK_ID = bts.5410
 		}
 	}
 
 	option = {
 		name = EXIT
 		default_hide_option = yes
+	}
+}
+country_event = {
+	id = bts.5410
+	inline_script = {
+		script = bts_crisis_pact_cost_event
+		EVENT_COST_CHECK_ID = bts.5410
+		NO_COST_EVENT_ID = bts.5411
+		PACT_ID = 1
+	}
+}
+country_event = {
+	id = bts.5411
+	title = "bts.541.name"
+	desc = bts.541.desc
+	is_triggered_only = yes
+
+	force_open = yes
+	diplomatic = yes
+	show_sound = event_screams
+	custom_gui = "bts_elder_gods_window"
+	custom_gui_option = "bts_elder_gods_option"
+	picture_event_data = {
+		room = bts_gods_1_room
+	}
+
+	option = {
+		name = bts_crisis_pact_no_pay_event_option
+		default_hide_option = yes
+		hidden_effect = {
+
+		}
 	}
 }
 
@@ -604,11 +637,41 @@ country_event = {
 		custom_tooltip = bts.542.tooltip
 		bts_crisis_establish_pact = {
 			PACT = bts_crisis_pact_2
+			EVENT_COST_CHECK_ID = bts.5420
 		}
 	}
 
 	option = {
 		name = EXIT
+		default_hide_option = yes
+	}
+}
+country_event = {
+	id = bts.5420
+	inline_script = {
+		script = bts_crisis_pact_cost_event
+		EVENT_COST_CHECK_ID = bts.5420
+		NO_COST_EVENT_ID = bts.5421
+		PACT_ID = 2
+	}
+}
+country_event = {
+	id = bts.5421
+	title = "bts.542.name"
+	desc = bts.542.desc
+	is_triggered_only = yes
+
+	force_open = yes
+	diplomatic = yes
+	show_sound = event_screams
+	custom_gui = "bts_elder_gods_window"
+	custom_gui_option = "bts_elder_gods_option"
+	picture_event_data = {
+		room = bts_gods_2_room
+	}
+
+	option = {
+		name = bts_crisis_pact_no_pay_event_option
 		default_hide_option = yes
 	}
 }
@@ -648,12 +711,45 @@ country_event = {
 		custom_tooltip = bts.543.tooltip
 		bts_crisis_establish_pact = {
 			PACT = bts_crisis_pact_3
+			EVENT_COST_CHECK_ID = bts.5430
 		}
 	}
 
 	option = {
 		name = EXIT
 		default_hide_option = yes
+	}
+}
+country_event = {
+	id = bts.5430
+	inline_script = {
+		script = bts_crisis_pact_cost_event
+		EVENT_COST_CHECK_ID = bts.5430
+		NO_COST_EVENT_ID = bts.5431
+		PACT_ID = 3
+	}
+}
+country_event = {
+	id = bts.5431
+	title = "bts.543.name"
+	desc = bts.543.desc
+	is_triggered_only = yes
+
+	force_open = yes
+	diplomatic = yes
+	show_sound = event_screams
+	custom_gui = "bts_elder_gods_window"
+	custom_gui_option = "bts_elder_gods_option"
+	picture_event_data = {
+		room = bts_gods_3_room
+	}
+
+	option = {
+		name = bts_crisis_pact_no_pay_event_option
+		default_hide_option = yes
+		hidden_effect = {
+
+		}
 	}
 }
 
@@ -692,6 +788,7 @@ country_event = {
 		custom_tooltip = bts.544.tooltip
 		bts_crisis_establish_pact = {
 			PACT = bts_crisis_pact_4
+			EVENT_COST_CHECK_ID = bts.5440
 		}
 	}
 
@@ -700,6 +797,39 @@ country_event = {
 		default_hide_option = yes
 	}
 }
+country_event = {
+	id = bts.5440
+	inline_script = {
+		script = bts_crisis_pact_cost_event
+		EVENT_COST_CHECK_ID = bts.5440
+		NO_COST_EVENT_ID = bts.5441
+		PACT_ID = 4
+	}
+}
+country_event = {
+	id = bts.5441
+	title = "bts.544.name"
+	desc = bts.544.desc
+	is_triggered_only = yes
+
+	force_open = yes
+	diplomatic = yes
+	show_sound = event_screams
+	custom_gui = "bts_elder_gods_window"
+	custom_gui_option = "bts_elder_gods_option"
+	picture_event_data = {
+		room = bts_gods_4_room
+	}
+
+	option = {
+		name = bts_crisis_pact_no_pay_event_option
+		default_hide_option = yes
+		hidden_effect = {
+
+		}
+	}
+}
+
 
 # Elder God 5
 country_event = {
@@ -736,6 +866,7 @@ country_event = {
 		custom_tooltip = bts.545.tooltip
 		bts_crisis_establish_pact = {
 			PACT = bts_crisis_pact_5
+			EVENT_COST_CHECK_ID = bts.5450
 		}
 	}
 
@@ -744,4 +875,37 @@ country_event = {
 		default_hide_option = yes
 	}
 }
+country_event = {
+	id = bts.5450
+	inline_script = {
+		script = bts_crisis_pact_cost_event
+		EVENT_COST_CHECK_ID = bts.5450
+		NO_COST_EVENT_ID = bts.5451
+		PACT_ID = 5
+	}
+}
+country_event = {
+	id = bts.5451
+	title = "bts.545.name"
+	desc = bts.545.desc
+	is_triggered_only = yes
+
+	force_open = yes
+	diplomatic = yes
+	show_sound = event_screams
+	custom_gui = "bts_elder_gods_window"
+	custom_gui_option = "bts_elder_gods_option"
+	picture_event_data = {
+		room = bts_gods_5_room
+	}
+
+	option = {
+		name = bts_crisis_pact_no_pay_event_option
+		default_hide_option = yes
+		hidden_effect = {
+
+		}
+	}
+}
+
 
