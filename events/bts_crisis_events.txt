@@ -525,7 +525,7 @@ country_event = {
 	}
 }
 
-# Elder God 1
+# Elder God 1 : Ghatanothoa
 country_event = {
 	id = bts.541
 	title = "bts.541.name"
@@ -573,9 +573,9 @@ country_event = {
 	id = bts.5410
 	inline_script = {
 		script = bts_crisis_pact_cost_event
+		PACT = bts_crisis_pact_1
 		EVENT_COST_CHECK_ID = bts.5410
 		NO_COST_EVENT_ID = bts.5411
-		PACT_ID = 1
 	}
 }
 country_event = {
@@ -602,7 +602,7 @@ country_event = {
 	}
 }
 
-# Elder God 2
+# Elder God 2 : Hastur
 country_event = {
 	id = bts.542
 	title = "bts.542.name"
@@ -650,9 +650,9 @@ country_event = {
 	id = bts.5420
 	inline_script = {
 		script = bts_crisis_pact_cost_event
+		PACT = bts_crisis_pact_2
 		EVENT_COST_CHECK_ID = bts.5420
 		NO_COST_EVENT_ID = bts.5421
-		PACT_ID = 2
 	}
 }
 country_event = {
@@ -675,8 +675,7 @@ country_event = {
 		default_hide_option = yes
 	}
 }
-
-# Elder God 3
+# Elder God 3 : Yig
 country_event = {
 	id = bts.543
 	title = "bts.543.name"
@@ -711,7 +710,7 @@ country_event = {
 		custom_tooltip = bts.543.tooltip
 		bts_crisis_establish_pact = {
 			PACT = bts_crisis_pact_3
-			EVENT_COST_CHECK_ID = bts.5430
+			EVENT_COST_CHECK_ID = bts.5431
 		}
 	}
 
@@ -722,15 +721,22 @@ country_event = {
 }
 country_event = {
 	id = bts.5430
-	inline_script = {
-		script = bts_crisis_pact_cost_event
-		EVENT_COST_CHECK_ID = bts.5430
-		NO_COST_EVENT_ID = bts.5431
-		PACT_ID = 3
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
 	}
 }
 country_event = {
 	id = bts.5431
+	inline_script = {
+		script = bts_crisis_pact_cost_event
+		PACT = bts_crisis_pact_3
+		EVENT_COST_CHECK_ID = bts.5431
+		NO_COST_EVENT_ID = bts.5432
+	}
+}
+country_event = {
+	id = bts.5432
 	title = "bts.543.name"
 	desc = bts.543.desc
 	is_triggered_only = yes
@@ -754,6 +760,7 @@ country_event = {
 }
 
 # Elder God 4
+# Elder God 4 : Dagon
 country_event = {
 	id = bts.544
 	title = "bts.544.name"
@@ -801,9 +808,9 @@ country_event = {
 	id = bts.5440
 	inline_script = {
 		script = bts_crisis_pact_cost_event
+		PACT = bts_crisis_pact_4
 		EVENT_COST_CHECK_ID = bts.5440
 		NO_COST_EVENT_ID = bts.5441
-		PACT_ID = 4
 	}
 }
 country_event = {
@@ -831,7 +838,7 @@ country_event = {
 }
 
 
-# Elder God 5
+# Elder God 5 : Cthulhu
 country_event = {
 	id = bts.545
 	title = "bts.545.name"
@@ -866,7 +873,7 @@ country_event = {
 		custom_tooltip = bts.545.tooltip
 		bts_crisis_establish_pact = {
 			PACT = bts_crisis_pact_5
-			EVENT_COST_CHECK_ID = bts.5450
+			EVENT_COST_CHECK_ID = bts.5451
 		}
 	}
 
@@ -877,11 +884,19 @@ country_event = {
 }
 country_event = {
 	id = bts.5450
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		# Spawn deamweaver fleet (start and on death after 1 year)
+	}
+}
+country_event = {
+	id = bts.5451
 	inline_script = {
 		script = bts_crisis_pact_cost_event
-		EVENT_COST_CHECK_ID = bts.5450
-		NO_COST_EVENT_ID = bts.5451
-		PACT_ID = 5
+		PACT = bts_crisis_pact_5
+		EVENT_COST_CHECK_ID = bts.5451
+		NO_COST_EVENT_ID = bts.5452
 	}
 }
 country_event = {

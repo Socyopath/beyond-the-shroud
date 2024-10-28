@@ -13,7 +13,7 @@ picture_event_data = {
     room = shroud_room
 }
 trigger = {
-    has_modifier = bts_crisis_pact_$PACT_ID$
+    has_modifier = $PACT$
 }
 
 
@@ -21,7 +21,7 @@ after = {
     hidden_effect = {
         country_event = {
             id = $EVENT_COST_CHECK_ID$
-            days = @bts_crisis_pact_$PACT_ID$_cost_delay
+            days = @$PACT$_cost_delay
         }
     }
 }
@@ -30,11 +30,11 @@ option = {
     name = bts_crisis_pact_pay_cost
     allow = {
         bts_crisis_has_thrall = {
-            COST = value:bts_crisis_pact_cost_value|COST|@bts_crisis_pact_$PACT_ID$_cost|
+            COST = value:bts_crisis_pact_cost_value|COST|@$PACT$_cost|
         }
     }
     bts_effect_consume_thrall = {
-        COUNT = value:bts_crisis_pact_cost_value|COST|@bts_crisis_pact_$PACT_ID$_cost|
+        COUNT = value:bts_crisis_pact_cost_value|COST|@$PACT$_cost|
     }
 
 }
