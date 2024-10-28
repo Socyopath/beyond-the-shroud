@@ -119,6 +119,11 @@
 @bts_crisis_pact_3_cost = 4
 @bts_crisis_pact_3_cost_delay = 360
 @bts_crisis_pact_3_duration = 1800
+@bts_crisis_pact_3_natural_worlds_society = 5
+@bts_crisis_pact_3_natural_worlds_growth = 0.35
+@bts_crisis_pact_3_natural_worlds_produces = 1.50
+@bts_crisis_pact_3_natural_worlds_upkeep = -0.25
+@bts_crisis_pact_3_natural_worlds_happiness = 0.15
 
 @bts_crisis_pact_4_cost = 5
 @bts_crisis_pact_5_cost_delay = 360

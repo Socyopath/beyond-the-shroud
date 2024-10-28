@@ -34,6 +34,13 @@ bts_crisis_pact_2 = {
 bts_crisis_pact_3 = {
     icon = "gfx/interface/icons/modifiers/mod_pop_robot_upkeep_mult.dds"
 }
+bts_crisis_pact_3_natural_worlds = {
+    pop_category_workers_society_research_produces_add = @bts_crisis_pact_3_natural_worlds_society
+    pop_growth_speed = @bts_crisis_pact_3_natural_worlds_growth
+    planet_jobs_produces_mult = @bts_crisis_pact_3_natural_worlds_produces
+    planet_jobs_upkeep_mult = @bts_crisis_pact_3_natural_worlds_upkeep
+    pop_happiness = @bts_crisis_pact_3_natural_worlds_happiness
+}
 
 bts_crisis_pact_4 = {
     icon = "gfx/interface/icons/modifiers/mod_pop_robot_upkeep_mult.dds"

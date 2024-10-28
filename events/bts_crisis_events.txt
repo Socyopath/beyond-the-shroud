@@ -785,7 +785,9 @@ country_event = {
 		custom_tooltip = bts.543.tooltip
 		bts_crisis_establish_pact = {
 			PACT = bts_crisis_pact_3
+			EVENT_START_ID = bts.5430
 			EVENT_COST_CHECK_ID = bts.5431
+			EVENT_END_ID = bts.5433
 		}
 	}
 
@@ -798,7 +800,32 @@ country_event = {
 	id = bts.5430
 	hide_window = yes
 	is_triggered_only = yes
+
+	trigger = {
+		has_modifier = bts_crisis_pact_3
+	}
+
 	immediate = {
+		every_owned_planet = {
+			limit = {
+				habitable_planet_not_urban = yes
+				NOT = { has_modifier = bts_crisis_pact_3_natural_worlds }
+			}
+			if = {
+				limit = { is_planet_class = pc_gaia }
+				add_modifier = {
+					modifier = bts_crisis_pact_3_natural_worlds
+					multiplier = 2
+					days = -1
+				}
+			}
+			else = {
+				add_modifier = {
+					modifier = bts_crisis_pact_3_natural_worlds
+					days = -1
+				}
+			}
+		}
 	}
 }
 country_event = {
@@ -829,12 +856,98 @@ country_event = {
 		name = bts_crisis_pact_no_pay_event_option
 		default_hide_option = yes
 		hidden_effect = {
+			every_owned_planet = {
+				limit = {
+					habitable_planet_not_urban = yes
+				}
+				if = {
+					limit = {
+						is_dry = yes
+					}
+					random_list = {
+						1 = {
+							add_deposit = d_deep_sinkhole
 
+						}
+						1 = {
+							add_deposit = d_quicksand_basin
+						}
+						1 = {
+							add_deposit = d_active_volcano
+						}
+						1 = {
+							add_deposit = d_mountain_range
+						}
+						1 = {
+							add_deposit = d_dangerous_wildlife_blocker
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						is_wet = yes
+					}
+					random_list = {
+						1 = {
+							add_deposit = d_dense_jungle
+						}
+						1 = {
+							add_deposit = d_toxic_kelp
+						}
+						1 = {
+							add_deposit = d_active_volcano
+						}
+						1 = {
+							add_deposit = d_mountain_range
+						}
+						1 = {
+							add_deposit = d_dangerous_wildlife_blocker
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						is_cold = yes
+					}
+					random_list = {
+						1 = {
+							add_deposit = d_noxious_swamp
+						}
+						1 = {
+							add_deposit = d_massive_glacier
+						}
+						1 = {
+							add_deposit = d_active_volcano
+						}
+						1 = {
+							add_deposit = d_mountain_range
+						}
+						1 = {
+							add_deposit = d_dangerous_wildlife_blocker
+						}
+					}
+				}
+				else = {
+					add_deposit = d_dense_jungle
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = bts.5433
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_planet_within_border = {
+			limit = {
+				has_modifier = bts_crisis_pact_3_natural_worlds
+			}
+			remove_modifier = bts_crisis_pact_3_natural_worlds
 		}
 	}
 }
 
-# Elder God 4
 # Elder God 4 : Dagon
 country_event = {
 	id = bts.544
