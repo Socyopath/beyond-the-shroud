@@ -14,6 +14,17 @@ bts_crisis_agenda_2_finish = {
 
 bts_crisis_pact_1 = {
     icon = "gfx/interface/icons/modifiers/mod_pop_robot_upkeep_mult.dds"
+    ship_cloaking_detection_add = 10
+}
+bts_crisis_pact_1_ship_debuff = {
+    icon = "gfx/interface/icons/modifiers/mod_pop_robot_upkeep_mult.dds"
+    ship_accuracy_mult = @bts_crisis_pact_1_ship_debuff_accuracy
+    ship_fire_rate_mult = @bts_crisis_pact_1_ship_debuff_fire_rate
+    ship_speed_reduction = @bts_crisis_pact_1_ship_debuff_speed_reduction
+}
+bts_crisis_pact_1_stabase_debuff_no_cost = {
+    icon = "gfx/interface/icons/modifiers/mod_pop_robot_upkeep_mult.dds"
+    ship_fire_rate_mult = -5.00
 }
 
 bts_crisis_pact_2 = {

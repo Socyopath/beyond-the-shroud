@@ -561,6 +561,7 @@ country_event = {
 		bts_crisis_establish_pact = {
 			PACT = bts_crisis_pact_1
 			EVENT_COST_CHECK_ID = bts.5410
+			EVENT_END_ID = bts.5413
 		}
 	}
 
@@ -597,7 +598,81 @@ country_event = {
 		name = bts_crisis_pact_no_pay_event_option
 		default_hide_option = yes
 		hidden_effect = {
+			every_owned_starbase = {
+				fleet = {
+					add_modifier = {
+						modifier = bts_crisis_pact_1_stabase_debuff_no_cost
+						days = @bts_crisis_pact_1_stabase_debuff_no_cost_duration
+					}
+				}
+			}
+		}
+	}
+}
+ship_event = {
+	id = bts.5412
+	hide_window = yes
+	is_triggered_only = yes
+	trigger {
+		OR = {
+			AND = { # System owner hasn't pact and ship has debuff
+				has_modifier = bts_crisis_pact_1_ship_debuff
+				OR = {
+					NOT = { exists = from.owner }
+					from.owner = {
+						NOT = { has_modifier = bts_crisis_pact_1 }
+					}
+				}
+			}
 
+			AND = { # System owner has pact and ship has no debuff
+				NOT = { has_modifier = bts_crisis_pact_1_ship_debuff } 
+				exists = from.owner
+				from.owner = {
+					NOT = { is_same_value = root.owner }
+					has_modifier = bts_crisis_pact_1
+				}
+			}
+			
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				has_modifier = bts_crisis_pact_1_ship_debuff
+			}
+			remove_modifier = bts_crisis_pact_1_ship_debuff
+		}
+		else = {
+			add_modifier = {
+				modifier = bts_crisis_pact_1_ship_debuff
+				days = -1
+			}
+		}
+	}
+}
+country_event = {
+	id = bts.5413
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_starbase = {
+			limit = {
+				fleet = {
+					has_modifier =  bts_crisis_pact_1_stabase_debuff_no_cost	
+				}
+			}
+			fleet = {
+				remove_modifier = bts_crisis_pact_1_stabase_debuff_no_cost
+			}
+		}
+		every_system_within_border = {
+			every_ship_in_system = {
+				limit = {
+					has_modifier =  bts_crisis_pact_1_ship_debuff	
+				}
+				remove_modifier = bts_crisis_pact_1_ship_debuff
+			}
 		}
 	}
 }
