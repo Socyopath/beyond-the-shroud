@@ -175,32 +175,3 @@ bts_add_random_deposit = {
 	}
 }
 
-bts_crisis_establish_pact = {
-	add_modifier = {
-		modifier = $PACT$
-		days = @$PACT$_duration
-	}
-	custom_tooltip_with_params = {
-		description = "bts_crisis_pact_info_tooltip"
-		description_parameters = {
-			"PACT" = $PACT$
-		}
-	}
-	hidden_effect = {
-		change_variable = {
-			which = bts_crisis_pact_count
-			value = 1
-		}
-		complete_crisis_objective = bts_crisis_obj_pact
-	
-		[[EVENT_START_ID]
-			country_event = { id = $EVENT_START_ID$ }
-		]
-	
-		country_event = { id = $EVENT_COST_CHECK_ID$ days = 1 }
-		
-		[[EVENT_END_ID]
-			country_event = { id = $EVENT_END_ID$ days = @$PACT$_duration }
-		]
-	}
-}

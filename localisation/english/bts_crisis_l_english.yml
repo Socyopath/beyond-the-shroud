@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 
 # Ascension
 ap_bts_crisis: "Eldritch Pursuit"
@@ -322,6 +322,14 @@ bts.541.tooltip: "TOOLTIP"
 bts.542.name: "Hastur - The King in Yellow"
 bts.542.desc: "Hastur f'taghn ll'nglui ph'nglui r'luh, wgah'n uh'e mglw'nafh, f'taghu oggn llll'yog syha'h l'glui nog"
 bts.542.tooltip: "TOOLTIP"
+bts.5422.menu.option.title: "§YThe King in Yellow§!"
+bts.5422.menu.option.desc: "Use §YHastur§! abilities"
+bts.5422.menu.boon: "Whispers of the Unspeakable"
+bts.5422.menu.boon.cooldown: "§RUnable to perform this action until§! §Y[root.bts_crisis_pact_2_boon_cooldown]§!"
+bts.5422.menu.boon.tooltip: "§YEach empire (except yours)§! will change their opinion of the §Ytarget empire§! by §G+$@opinion_bts_crisis_pact_good_value|0$§! £opinion£"
+bts.5422.menu.curse: "Mark of the King in Yellow"
+bts.5422.menu.curse.tooltip: "§YEach empire (except yours)§! will change their opinion of the §Ytarget empire§! by §R$@opinion_bts_crisis_pact_bad_value|0$§! £opinion£"
+bts.5422.menu.curse.cooldown: "§RUnable to perform this action until§! §Y[root.bts_crisis_pact_2_curse_cooldown]§!"
 bts.543.name: "Yig - The Father of Serpents"
 bts.543.desc: "Yig sh'glua ph'nglui ll'nktal tharanak wgah'n, syha'h sgn'wahl mglw'nafh oggn. L'lugh ilyaa syha'h s'ghal'na f'tagn"
 bts.543.tooltip: "TOOLTIP"

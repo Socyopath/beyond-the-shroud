@@ -520,97 +520,75 @@ country_event = {
 	}
 
 	option = {
+		trigger = {
+			has_modifier = bts_crisis_pact_2
+		}
+		name = bts.5422.menu.option.title
+		custom_tooltip = bts.5422.menu.option.desc
+		hidden_effect = {
+			country_event = {
+				id = bts.5422
+			}
+		}
+	}
+	option = {
 		name = EXIT
 		default_hide_option = yes
 	}
 }
 
 # Elder God 1 : Ghatanothoa
-country_event = {
-	id = bts.541
-	title = "bts.541.name"
-	desc = bts.541.desc
-	is_triggered_only = yes
-
-	force_open = yes
-	diplomatic = yes
-	show_sound = event_screams
-	custom_gui = "bts_elder_gods_window"
-	custom_gui_option = "bts_elder_gods_option"
-	picture_event_data = {
-		room = bts_gods_1_room
-	}
-
-	trigger = {
-		NOT = { has_country_flag = bts_elder_gods_diplomacy_engaged } 
-	}
-
-	immediate = {
-		set_country_flag = bts_elder_gods_diplomacy_engaged
-	}
-
-	after = {
-		hidden_effect = {
-			remove_country_flag = bts_elder_gods_diplomacy_engaged
-		}
-	}
-
-	option = {
-		name = OK
-		custom_tooltip = bts.541.tooltip
-		bts_crisis_establish_pact = {
-			PACT = bts_crisis_pact_1
-			EVENT_COST_CHECK_ID = bts.5410
-			EVENT_END_ID = bts.5413
-		}
-	}
-
-	option = {
-		name = EXIT
-		default_hide_option = yes
-	}
-}
-country_event = {
-	id = bts.5410
-	inline_script = {
-		script = bts_crisis_pact_cost_event
-		PACT = bts_crisis_pact_1
-		EVENT_COST_CHECK_ID = bts.5410
-		NO_COST_EVENT_ID = bts.5411
-	}
+inline_script = {
+    script = bts_crisis_pact_event_end
+    EVENT_ID = bts.541
+    ROOM = bts_gods_1_room
+    PACT = bts_crisis_pact_1
+	EVENT_NO_COST_ID = bts.5411
+    EVENT_END_ID = bts.5412
 }
 country_event = {
 	id = bts.5411
-	title = "bts.541.name"
-	desc = bts.541.desc
+	hide_window = yes
 	is_triggered_only = yes
 
-	force_open = yes
-	diplomatic = yes
-	show_sound = event_screams
-	custom_gui = "bts_elder_gods_window"
-	custom_gui_option = "bts_elder_gods_option"
-	picture_event_data = {
-		room = bts_gods_1_room
-	}
-
-	option = {
-		name = bts_crisis_pact_no_pay_event_option
-		default_hide_option = yes
-		hidden_effect = {
-			every_owned_starbase = {
-				fleet = {
-					add_modifier = {
-						modifier = bts_crisis_pact_1_stabase_debuff_no_cost
-						days = @bts_crisis_pact_1_stabase_debuff_no_cost_duration
-					}
+	immediate = {
+		every_owned_starbase = {
+			fleet = {
+				add_modifier = {
+					modifier = bts_crisis_pact_1_stabase_debuff_no_cost
+					days = @bts_crisis_pact_1_stabase_debuff_no_cost_duration
 				}
 			}
 		}
 	}
 }
-ship_event = {
+country_event = {
 	id = bts.5412
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_starbase = {
+			limit = {
+				fleet = {
+					has_modifier =  bts_crisis_pact_1_stabase_debuff_no_cost	
+				}
+			}
+			fleet = {
+				remove_modifier = bts_crisis_pact_1_stabase_debuff_no_cost
+			}
+		}
+		every_system_within_border = {
+			every_ship_in_system = {
+				limit = {
+					has_modifier =  bts_crisis_pact_1_ship_debuff	
+				}
+				remove_modifier = bts_crisis_pact_1_ship_debuff
+			}
+		}
+	}
+}
+ship_event = {
+	id = bts.5413
 	hide_window = yes
 	is_triggered_only = yes
 	trigger {
@@ -651,88 +629,32 @@ ship_event = {
 		}
 	}
 }
-country_event = {
-	id = bts.5413
-	hide_window = yes
-	is_triggered_only = yes
-	immediate = {
-		every_owned_starbase = {
-			limit = {
-				fleet = {
-					has_modifier =  bts_crisis_pact_1_stabase_debuff_no_cost	
-				}
-			}
-			fleet = {
-				remove_modifier = bts_crisis_pact_1_stabase_debuff_no_cost
-			}
-		}
-		every_system_within_border = {
-			every_ship_in_system = {
-				limit = {
-					has_modifier =  bts_crisis_pact_1_ship_debuff	
-				}
-				remove_modifier = bts_crisis_pact_1_ship_debuff
-			}
-		}
-	}
-}
 
 # Elder God 2 : Hastur
-country_event = {
-	id = bts.542
-	title = "bts.542.name"
-	desc = bts.542.desc
-	is_triggered_only = yes
-
-	force_open = yes
-	diplomatic = yes
-	show_sound = event_screams
-	custom_gui = "bts_elder_gods_window"
-	custom_gui_option = "bts_elder_gods_option"
-	picture_event_data = {
-		room = bts_gods_2_room
-	}
-
-	trigger = {
-		NOT = { has_country_flag = bts_elder_gods_diplomacy_engaged } 
-	}
-
-	immediate = {
-		set_country_flag = bts_elder_gods_diplomacy_engaged
-	}
-
-	after = {
-		hidden_effect = {
-			remove_country_flag = bts_elder_gods_diplomacy_engaged
-		}
-	}
-
-	option = {
-		name = OK
-		custom_tooltip = bts.542.tooltip
-		bts_crisis_establish_pact = {
-			PACT = bts_crisis_pact_2
-			EVENT_COST_CHECK_ID = bts.5420
-		}
-	}
-
-	option = {
-		name = EXIT
-		default_hide_option = yes
-	}
-}
-country_event = {
-	id = bts.5420
-	inline_script = {
-		script = bts_crisis_pact_cost_event
-		PACT = bts_crisis_pact_2
-		EVENT_COST_CHECK_ID = bts.5420
-		NO_COST_EVENT_ID = bts.5421
-	}
+inline_script = {
+    script = bts_crisis_pact_event
+    EVENT_ID = bts.542
+    ROOM = bts_gods_2_room
+    PACT = bts_crisis_pact_2
+	EVENT_NO_COST_ID = bts.5421
 }
 country_event = {
 	id = bts.5421
-	title = "bts.542.name"
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_playable_country = {
+			limit = {
+				NOT = { is_same_value = root }
+			}
+			add_opinion_modifier = { modifier = opinion_bts_crisis_pact_fail who = root }
+		}
+	}
+}
+country_event = {
+	id = bts.5422
+	title = bts.542.name
 	desc = bts.542.desc
 	is_triggered_only = yes
 
@@ -746,48 +668,30 @@ country_event = {
 	}
 
 	option = {
-		name = bts_crisis_pact_no_pay_event_option
-		default_hide_option = yes
-	}
-}
-# Elder God 3 : Yig
-country_event = {
-	id = bts.543
-	title = "bts.543.name"
-	desc = bts.543.desc
-	is_triggered_only = yes
-
-	force_open = yes
-	diplomatic = yes
-	show_sound = event_screams
-	custom_gui = "bts_elder_gods_window"
-	custom_gui_option = "bts_elder_gods_option"
-	picture_event_data = {
-		room = bts_gods_3_room
-	}
-
-	trigger = {
-		NOT = { has_country_flag = bts_elder_gods_diplomacy_engaged } 
-	}
-
-	immediate = {
-		set_country_flag = bts_elder_gods_diplomacy_engaged
-	}
-
-	after = {
+		name = bts.5422.menu.boon
+		custom_tooltip = bts.5422.menu.boon.tooltip
+		allow = {
+			custom_tooltip = {
+				fail_text = bts.5422.menu.boon.cooldown
+				NOT = { has_country_flag = bts_crisis_pact_2_boon_cooldown }
+			}
+		}
 		hidden_effect = {
-			remove_country_flag = bts_elder_gods_diplomacy_engaged
+			country_event = { id = bts.5423 }
 		}
 	}
 
 	option = {
-		name = OK
-		custom_tooltip = bts.543.tooltip
-		bts_crisis_establish_pact = {
-			PACT = bts_crisis_pact_3
-			EVENT_START_ID = bts.5430
-			EVENT_COST_CHECK_ID = bts.5431
-			EVENT_END_ID = bts.5433
+		name = bts.5422.menu.curse
+		custom_tooltip = bts.5422.menu.curse.tooltip
+		allow = {
+			custom_tooltip = {
+				fail_text = bts.5422.menu.curse.cooldown
+				NOT = { has_country_flag = bts_crisis_pact_2_curse_cooldown }
+			}
+		}
+		hidden_effect = {
+			country_event = { id = bts.5424 }
 		}
 	}
 
@@ -797,7 +701,168 @@ country_event = {
 	}
 }
 country_event = {
-	id = bts.5430
+	id = bts.5423
+	title = bts.542.name
+	desc = bts.542.desc
+	is_triggered_only = yes
+
+	force_open = yes
+	diplomatic = yes
+	show_sound = event_screams
+	custom_gui = "bts_elder_gods_window"
+	custom_gui_option = "bts_elder_gods_option"
+	picture_event_data = {
+		room = bts_gods_2_room
+	}
+	immediate = {
+		bts_event_target_list_clear = yes
+		every_playable_country = {
+			bts_event_target_list_save = yes
+		}
+	}
+	inline_script = {
+		script = bts_option_list_hidden
+		ACTION = "every_playable_country = { limit = { NOT = { is_same_value = root } } add_opinion_modifier = { modifier = opinion_bts_crisis_pact_good who = prev } }"
+	}
+
+	after = {
+		set_saved_date = {
+			key = bts_crisis_pact_2_boon_cooldown
+			days_from_present = @bts_crisis_pact_2_boon_cooldown
+			expires = @bts_crisis_pact_2_boon_cooldown
+		}
+	}
+}
+country_event = {
+	id = bts.5424
+	title = bts.542.name
+	desc = bts.542.desc
+	is_triggered_only = yes
+
+	force_open = yes
+	diplomatic = yes
+	show_sound = event_screams
+	custom_gui = "bts_elder_gods_window"
+	custom_gui_option = "bts_elder_gods_option"
+	picture_event_data = {
+		room = bts_gods_2_room
+	}
+	immediate = {
+		bts_event_target_list_clear = yes
+		every_playable_country = {
+			bts_event_target_list_save = yes
+		}
+	}
+	inline_script = {
+		script = bts_option_list_hidden
+		ACTION = "every_playable_country = { limit = { NOT = { is_same_value = root } } add_opinion_modifier = { modifier = opinion_bts_crisis_pact_bad who = prev } }"
+	}
+
+	after = {
+		set_saved_date = {
+			key = bts_crisis_pact_2_curse_cooldown
+			days_from_present = @bts_crisis_pact_2_curse_cooldown
+			expires = @bts_crisis_pact_2_curse_cooldown
+		}
+	}
+}
+
+# Elder God 3 : Yig
+inline_script = {
+    script = bts_crisis_pact_event_all
+    EVENT_ID = bts.543
+    ROOM = bts_gods_3_room
+    PACT = bts_crisis_pact_3
+	EVENT_NO_COST_ID = bts.5431
+    EVENT_START_ID = bts.5432
+    EVENT_END_ID = bts.5433
+	
+}
+country_event = {
+	id = bts.5431
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_owned_planet = {
+			limit = {
+				habitable_planet_not_urban = yes
+			}
+			if = {
+				limit = {
+					is_dry = yes
+				}
+				random_list = {
+					1 = {
+						add_deposit = d_deep_sinkhole
+
+					}
+					1 = {
+						add_deposit = d_quicksand_basin
+					}
+					1 = {
+						add_deposit = d_active_volcano
+					}
+					1 = {
+						add_deposit = d_mountain_range
+					}
+					1 = {
+						add_deposit = d_dangerous_wildlife_blocker
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_wet = yes
+				}
+				random_list = {
+					1 = {
+						add_deposit = d_dense_jungle
+					}
+					1 = {
+						add_deposit = d_toxic_kelp
+					}
+					1 = {
+						add_deposit = d_active_volcano
+					}
+					1 = {
+						add_deposit = d_mountain_range
+					}
+					1 = {
+						add_deposit = d_dangerous_wildlife_blocker
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_cold = yes
+				}
+				random_list = {
+					1 = {
+						add_deposit = d_noxious_swamp
+					}
+					1 = {
+						add_deposit = d_massive_glacier
+					}
+					1 = {
+						add_deposit = d_active_volcano
+					}
+					1 = {
+						add_deposit = d_mountain_range
+					}
+					1 = {
+						add_deposit = d_dangerous_wildlife_blocker
+					}
+				}
+			}
+			else = {
+				add_deposit = d_dense_jungle
+			}
+		}	
+	}
+}
+country_event = {
+	id = bts.5432
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -829,112 +894,6 @@ country_event = {
 	}
 }
 country_event = {
-	id = bts.5431
-	inline_script = {
-		script = bts_crisis_pact_cost_event
-		PACT = bts_crisis_pact_3
-		EVENT_COST_CHECK_ID = bts.5431
-		NO_COST_EVENT_ID = bts.5432
-	}
-}
-country_event = {
-	id = bts.5432
-	title = "bts.543.name"
-	desc = bts.543.desc
-	is_triggered_only = yes
-
-	force_open = yes
-	diplomatic = yes
-	show_sound = event_screams
-	custom_gui = "bts_elder_gods_window"
-	custom_gui_option = "bts_elder_gods_option"
-	picture_event_data = {
-		room = bts_gods_3_room
-	}
-
-	option = {
-		name = bts_crisis_pact_no_pay_event_option
-		default_hide_option = yes
-		hidden_effect = {
-			every_owned_planet = {
-				limit = {
-					habitable_planet_not_urban = yes
-				}
-				if = {
-					limit = {
-						is_dry = yes
-					}
-					random_list = {
-						1 = {
-							add_deposit = d_deep_sinkhole
-
-						}
-						1 = {
-							add_deposit = d_quicksand_basin
-						}
-						1 = {
-							add_deposit = d_active_volcano
-						}
-						1 = {
-							add_deposit = d_mountain_range
-						}
-						1 = {
-							add_deposit = d_dangerous_wildlife_blocker
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						is_wet = yes
-					}
-					random_list = {
-						1 = {
-							add_deposit = d_dense_jungle
-						}
-						1 = {
-							add_deposit = d_toxic_kelp
-						}
-						1 = {
-							add_deposit = d_active_volcano
-						}
-						1 = {
-							add_deposit = d_mountain_range
-						}
-						1 = {
-							add_deposit = d_dangerous_wildlife_blocker
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						is_cold = yes
-					}
-					random_list = {
-						1 = {
-							add_deposit = d_noxious_swamp
-						}
-						1 = {
-							add_deposit = d_massive_glacier
-						}
-						1 = {
-							add_deposit = d_active_volcano
-						}
-						1 = {
-							add_deposit = d_mountain_range
-						}
-						1 = {
-							add_deposit = d_dangerous_wildlife_blocker
-						}
-					}
-				}
-				else = {
-					add_deposit = d_dense_jungle
-				}
-			}
-		}
-	}
-}
-country_event = {
 	id = bts.5433
 	hide_window = yes
 	is_triggered_only = yes
@@ -949,129 +908,51 @@ country_event = {
 }
 
 # Elder God 4 : Dagon
-country_event = {
-	id = bts.544
-	title = "bts.544.name"
-	desc = bts.544.desc
-	is_triggered_only = yes
-
-	force_open = yes
-	diplomatic = yes
-	show_sound = event_screams
-	custom_gui = "bts_elder_gods_window"
-	custom_gui_option = "bts_elder_gods_option"
-	picture_event_data = {
-		room = bts_gods_4_room
-	}
-
-	trigger = {
-		NOT = { has_country_flag = bts_elder_gods_diplomacy_engaged } 
-	}
-
-	immediate = {
-		set_country_flag = bts_elder_gods_diplomacy_engaged
-	}
-
-	after = {
-		hidden_effect = {
-			remove_country_flag = bts_elder_gods_diplomacy_engaged
-		}
-	}
-
-	option = {
-		name = OK
-		custom_tooltip = bts.544.tooltip
-		bts_crisis_establish_pact = {
-			PACT = bts_crisis_pact_4
-			EVENT_COST_CHECK_ID = bts.5440
-		}
-	}
-
-	option = {
-		name = EXIT
-		default_hide_option = yes
-	}
-}
-country_event = {
-	id = bts.5440
-	inline_script = {
-		script = bts_crisis_pact_cost_event
-		PACT = bts_crisis_pact_4
-		EVENT_COST_CHECK_ID = bts.5440
-		NO_COST_EVENT_ID = bts.5441
-	}
+inline_script = {
+    script = bts_crisis_pact_event_end
+    EVENT_ID = bts.544
+    ROOM = bts_gods_4_room
+    PACT = bts_crisis_pact_4
+	EVENT_NO_COST_ID = bts.5441
+	EVENT_END_ID = bts.5442
 }
 country_event = {
 	id = bts.5441
-	title = "bts.544.name"
-	desc = bts.544.desc
+	hide_window = yes
 	is_triggered_only = yes
-
-	force_open = yes
-	diplomatic = yes
-	show_sound = event_screams
-	custom_gui = "bts_elder_gods_window"
-	custom_gui_option = "bts_elder_gods_option"
-	picture_event_data = {
-		room = bts_gods_4_room
-	}
-
-	option = {
-		name = bts_crisis_pact_no_pay_event_option
-		default_hide_option = yes
-		hidden_effect = {
-
-		}
+	immediate = {
+		# Destroy random building on ocean worlds
 	}
 }
-
+country_event = {
+	id = bts.5442
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		# Kill all leviathans
+	}
+}
 
 # Elder God 5 : Cthulhu
+inline_script = {
+    script = bts_crisis_pact_event_all
+    EVENT_ID = bts.545
+    ROOM = bts_gods_5_room
+    PACT = bts_crisis_pact_5
+	EVENT_NO_COST_ID = bts.5451
+	EVENT_START_ID = bts.5452
+	EVENT_END_ID = bts.5453
+}
 country_event = {
-	id = bts.545
-	title = "bts.545.name"
-	desc = bts.545.desc
+	id = bts.5451
+	hide_window = yes
 	is_triggered_only = yes
-
-	force_open = yes
-	diplomatic = yes
-	show_sound = event_screams
-	custom_gui = "bts_elder_gods_window"
-	custom_gui_option = "bts_elder_gods_option"
-	picture_event_data = {
-		room = bts_gods_5_room
-	}
-
-	trigger = {
-		NOT = { has_country_flag = bts_elder_gods_diplomacy_engaged } 
-	}
-
 	immediate = {
-		set_country_flag = bts_elder_gods_diplomacy_engaged
-	}
-
-	after = {
-		hidden_effect = {
-			remove_country_flag = bts_elder_gods_diplomacy_engaged
-		}
-	}
-
-	option = {
-		name = OK
-		custom_tooltip = bts.545.tooltip
-		bts_crisis_establish_pact = {
-			PACT = bts_crisis_pact_5
-			EVENT_COST_CHECK_ID = bts.5451
-		}
-	}
-
-	option = {
-		name = EXIT
-		default_hide_option = yes
+		# Apply devastation on colonies
 	}
 }
 country_event = {
-	id = bts.5450
+	id = bts.5452
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
@@ -1079,35 +960,19 @@ country_event = {
 	}
 }
 country_event = {
-	id = bts.5451
-	inline_script = {
-		script = bts_crisis_pact_cost_event
-		PACT = bts_crisis_pact_5
-		EVENT_COST_CHECK_ID = bts.5451
-		NO_COST_EVENT_ID = bts.5452
+	id = bts.5453
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		# Destroy dreamweaver
 	}
 }
 country_event = {
-	id = bts.5451
-	title = "bts.545.name"
-	desc = bts.545.desc
+	id = bts.5454
+	hide_window = yes
 	is_triggered_only = yes
-
-	force_open = yes
-	diplomatic = yes
-	show_sound = event_screams
-	custom_gui = "bts_elder_gods_window"
-	custom_gui_option = "bts_elder_gods_option"
-	picture_event_data = {
-		room = bts_gods_5_room
-	}
-
-	option = {
-		name = bts_crisis_pact_no_pay_event_option
-		default_hide_option = yes
-		hidden_effect = {
-
-		}
+	immediate = {
+		# Monthly add devastation to planet in the fleet system
 	}
 }
 

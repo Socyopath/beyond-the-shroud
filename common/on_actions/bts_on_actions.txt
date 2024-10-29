@@ -18,7 +18,7 @@ on_monthly_pulse_country = {
 		bts.1000		# Labyrinth Check
 		bts.1001		# Zro Infusion Check
 		bts.1002		# Shroud Destabilizer Tech Event
-		bts.5430		# Apply Yig pact modifier
+		bts.5432		# Apply Yig pact modifier
     }
 }
 
@@ -57,7 +57,7 @@ on_entering_system = {
 		bts.15 # Trigger concept effect
 		bts.16 # Freeze time effect
 		bts.18 # Nullify shield check
-		bts.5412 # Add crisis pact Ghatanothoa debuff
+		bts.5413 # Add crisis pact Ghatanothoa debuff
 	}
 }
 
