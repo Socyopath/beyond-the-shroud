@@ -67,7 +67,7 @@ bts_menp_spec_rights = {
 
 # Level 3
 bts_menp_war_terror = {
-	portrait = "GFX_crisis_icon_bts_dreamlike"
+	portrait = "GFX_crisis_icon_bts_terror"
 	on_unlock = {
 		custom_tooltip = bts_menp_war_terror_effect
 	}

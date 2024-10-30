@@ -35,9 +35,6 @@
 @bts_ritual_harvest_cooldown = 180
 @bts_ritual_harvest_thrall_cost = 1
 
-@bts_ritual_dreamlike_thrall_cost = 10
-@bts_ritual_dreamlike_cooldown = 7200
-
 @bts_ritual_war_terror_thrall_cost = 4
 @bts_ritual_war_terror_cooldown = 3600
 @bts_ritual_war_terror_duration = 720

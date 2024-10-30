@@ -158,11 +158,6 @@ bts_ritual_harvest_desc: ""
 bts_ritual_harvest_effects: "Adds a random deposit between £energy£ £minerals£ £alloys£ £physics£ £society£ £engineering£ £rare_crystals£ £volatile_motes£ £exotic_gases£ £sr_zro£ £sr_dark_matter£ £astral_threads£\n§RDangerous events may occur...§!"
 bts_crisis_ritual_on_cooldown_bts_ritual_harvest: "§RCan't use this ritual until§! §Y[from.bts_crisis_ritual_cooldown_bts_ritual_harvest]§!"
 
-bts_ritual_dreamlike: "Ritual: Dreamlike Terror"
-bts_ritual_dreamlike_desc: ""
-bts_ritual_dreamlike_effects: "Summons an eldritch entities that corrupt ennemies fleet while in combat"
-bts_crisis_ritual_on_cooldown_bts_ritual_dreamlike: "§RCan't use this ritual until§! §Y[from.bts_crisis_ritual_cooldown_bts_ritual_dreamlike]§!"
-
 bts_ritual_war_terror: "Ritual: Lost Hope"
 bts_ritual_war_terror_desc: ""
 bts_ritual_war_terror_effects: "Every §Rwar enemies§! gain §YWar Exhaustion§! §R$@bts_crisis_war_exhaust_value|%0$§! faster for §Y$@bts_ritual_war_terror_duration|0$§! days"

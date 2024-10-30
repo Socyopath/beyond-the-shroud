@@ -84,8 +84,8 @@ spriteTypes = {
 
     ## Level 3
     spriteType = {
-		name = "GFX_crisis_icon_bts_dreamlike"
-		texturefile = "gfx/interface/icons/crisis/crisis_icon_bts_dreamlike.dds"
+		name = "GFX_crisis_icon_bts_terror"
+		texturefile = "gfx/interface/icons/crisis/crisis_icon_bts_terror.dds"
 		noOfFrames = 2			
 	}
 
