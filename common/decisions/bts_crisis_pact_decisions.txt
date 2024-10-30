@@ -1,0 +1,43 @@
+bts_crisis_pact_4_decision = {
+	sound = event_energy_field
+	icon = decision_wormhole
+    owned_planets_only = yes
+
+	potential = {
+        is_planet_class = pc_ocean
+        exists = owner
+        owner = {
+            has_modifier = bts_crisis_pact_4
+        }
+        NOT = { has_planet_flag = leviathan_summoned_by_@owner }
+	}
+
+	effect = {
+        set_planet_flag = leviathan_summoned_by_@owner
+        create_fleet = {
+            name = bts_crisis_dagon_fleet_name
+            settings = {
+                can_upgrade = no
+				can_change_composition = no
+				can_change_leader = no
+				uses_naval_capacity = no
+				spawn_debris = no
+                is_boss = yes
+            }
+            effect = {
+                set_owner = root.owner
+                create_ship = {
+                    name = bts_crisis_dagon_ship_name
+                    design = "bts_crisis_dagon_design"
+                    effect = {
+                        set_ship_flag = bts_dagon_pact_@owner
+                    }
+                }
+                set_location = {
+                    target = root
+                }
+            }
+        }
+	}
+}
+

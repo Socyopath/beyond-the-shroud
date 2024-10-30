@@ -371,12 +371,6 @@ country_event = {
 	}
 }
 
-# country_event = {
-# 	id = bts.30
-# 	is_triggered_only = yes
-# 	hide_window = yes
-	
-# 	immediate = {
 country_event = {
 	id = bts.5400
 	title = bts.5400.name
@@ -591,7 +585,7 @@ ship_event = {
 	id = bts.5413
 	hide_window = yes
 	is_triggered_only = yes
-	trigger {
+	trigger = {
 		OR = {
 			AND = { # System owner hasn't pact and ship has debuff
 				has_modifier = bts_crisis_pact_1_ship_debuff
@@ -920,8 +914,30 @@ country_event = {
 	id = bts.5441
 	hide_window = yes
 	is_triggered_only = yes
+
+	trigger = {
+		any_owned_ship = {
+			has_ship_flag = bts_dagon_pact_@root
+		}
+	}
 	immediate = {
-		# Destroy random building on ocean worlds
+		random_owned_ship = {
+			limit = {
+				has_ship_flag = bts_dagon_pact_@root
+			}
+			fleet = {
+				set_owner = event_target:bts_elder_gods_country
+				set_fleet_stance = aggressive
+				save_event_target_as = dagon_hostile
+			}
+		}
+		country_event = {
+			id = bts.5443
+			days = @bts_crisis_pact_4_hostile_duration
+			scopes = {
+				from = event_target:dagon_hostile
+			}
+		}
 	}
 }
 country_event = {
@@ -929,7 +945,38 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
-		# Kill all leviathans
+		every_system = {
+			every_system_planet = {
+				limit = {
+					has_planet_flag = leviathan_summoned_by_@root
+				}
+				remove_planet_flag = leviathan_summoned_by_@root
+			}
+			every_ship_in_system = { 
+				limit = { 
+					has_ship_flag = bts_dagon_pact_@root 
+				} 
+				destroy_ship = this
+			}
+		}
+	}
+}
+country_event = {
+	id = bts.5443
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		exists = from
+		from = { 
+			is_scope_type = fleet
+		}
+	}
+
+	immediate = {
+		from = {
+			set_owner = root
+		}
 	}
 }
 

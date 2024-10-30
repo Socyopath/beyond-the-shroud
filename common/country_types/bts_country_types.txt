@@ -10,7 +10,7 @@ bts_elder_gods = {
 		enabled = no
 	}
 	faction = {
-		hostile = no
+		hostile = yes
 		needs_border_access = no
 		generate_borders = no
 		needs_colony = no
