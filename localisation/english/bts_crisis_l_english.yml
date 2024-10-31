@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 
 # Ascension
 ap_bts_crisis: "Eldritch Pursuit"
@@ -277,12 +277,6 @@ citizenship_bts_crisis: "Devour Mind"
 citizenship_bts_crisis_tooltip: "All owned Pops of this species will turn into a §Rdevoured mind§! variant."
 citizenship_bts_crisis_tooltip_delayed: "§LInferior creatures do not deserve free will.§!"
 
-# Ships
-bts_ship_crisis_dreamlike: "Dreamlike Terror"
-bts_crisis_dreamlike_design: "Dreamlike Terror"
-
-
-
 # UI Text
 bts_reckoning_info: "§M$NAME_Reckoning$§! : §Y[root.bts_planet_killer_end_pop_killed]§! organic pops §Rkilled§!"
 bts_crisis_ritual_info_tooltip: "\n§EEldritch Ritual:§!\nCost: §R$COST|0$§! £job_bts_crisis_sacrifical_thrall£ $job_bts_crisis_sacrifical_thrall_plural$\nCooldown: §Y[this.bts_crisis_ritual_cooldown_$RITUAL$_text]§! days"
@@ -351,6 +345,13 @@ bts.545.name: "Cthulhu - The Sleeper of R'lyeh"
 bts.545.desc: "Ftaghu g'llha Cthulhu, wgah'n tharanak uln'h Oggtul, ilyaa n'ghft nglui phr'taa ph'nglui f'yar. Ftagn llll'voth n'gha uugha nnn'ghlui'yi"
 bts.545.tooltip: "TOOLTIP"
 bts_crisis_pact_5: "Eldritch Pact: $bts.545.name$"
+bts_crisis_dreamlike_fleet_name: "Dreamlike Terror"
+bts_crisis_dreamlike_ship_name: "Dreamlike Terror"
+bts_crisis_dreamlike_ship: "Cthulhu Manifestation"
+bts_crisis_dreamlike_design: "Dreamlike Terror"
+
+bts_ship_crisis_dreamlike: "Dreamlike Terror"
+bts_crisis_dreamlike_design: "Dreamlike Terror"
 
 bts_crisis_pact_check_cost_name: "Preist"
 bts_crisis_pact_check_cost_desc: "You have to pay"

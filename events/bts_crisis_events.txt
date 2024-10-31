@@ -995,32 +995,191 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
-		# Apply devastation on colonies
+		every_owned_planet = {
+			limit = {
+				is_colony = yes
+			}
+			add_planet_devastation = @bts_crisis_pact_5_devastation_fail
+		}
 	}
 }
 country_event = {
 	id = bts.5452
 	hide_window = yes
 	is_triggered_only = yes
+
 	immediate = {
-		# Spawn deamweaver fleet (start and on death after 1 year)
+		create_fleet = {
+            name = bts_crisis_dreamlike_fleet_name
+            settings = {
+                can_upgrade = no
+				can_change_composition = no
+				can_change_leader = no
+				uses_naval_capacity = no
+				spawn_debris = no
+                is_boss = yes
+            }
+            effect = {
+                set_owner = root.owner
+                create_ship = {
+                    name = bts_crisis_dreamlike_ship_name
+                    design = "bts_crisis_dreamlike_design"
+					effect = {
+						set_ship_flag = bts_crisis_dreamlike_ship_effect_ready
+					}
+                }
+                set_location = {
+                    target = root.capital_scope
+                }
+            }
+        }
 	}
 }
 country_event = {
 	id = bts.5453
 	hide_window = yes
 	is_triggered_only = yes
+
+	trigger = {
+		any_owned_ship = {
+			is_ship_size = bts_crisis_dreamlike_ship
+		}
+	}
+
 	immediate = {
-		# Destroy dreamweaver
+		every_owned_ship = {
+			limit = { is_ship_size = bts_crisis_dreamlike_ship }
+			destroy_ship = this
+		}
 	}
 }
 country_event = {
 	id = bts.5454
 	hide_window = yes
 	is_triggered_only = yes
+
+	trigger = {
+		has_modifier = bts_crisis_pact_5
+		any_owned_ship = {
+			is_ship_size = bts_crisis_dreamlike_ship
+		}
+	}
+
 	immediate = {
-		# Monthly add devastation to planet in the fleet system
+		random_owned_ship = {
+			limit = { is_ship_size = bts_crisis_dreamlike_ship }
+			fleet.solar_system = {
+				every_system_colony = {
+					add_planet_devastation = @bts_crisis_pact_5_devastation_system
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = bts.5455
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		fromfrom = {
+			is_ship_size = bts_crisis_dreamlike_ship
+		}
+		has_country_flag = bts_crisis_pact_5
+		timed_flag_days_left = { 
+			flag = bts_crisis_pact_5 
+			value > @bts_crisis_pact_5_respawn_delay 
+		}
+	}
+
+	immediate = {
+		country_event = {
+			id = bts.5452
+		}
+	}
+}
+country_event = {
+	id = bts.5456
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		from = {
+			is_ship_size = bts_crisis_dreamlike_ship
+		}
+		has_modifier = bts_crisis_pact_5
+	}
+
+	immediate = {
+		country_event = {
+			id = bts.5452
+		}
 	}
 }
 
+ship_event = {
+	id = bts.5457
+	hide_window = yes
+	mean_time_to_happen = { days = 1 }
+	trigger = {
+		is_ship_size = bts_crisis_dreamlike_ship
+		is_in_combat = yes
+		has_ship_flag = bts_crisis_dreamlike_ship_effect_ready
+	}
+
+	immediate = {
+		remove_ship_flag = bts_crisis_dreamlike_ship_effect_ready
+		set_ship_flag = bts_crisis_dreamlike_ship_effect_running
+		ship_event = {
+			id = bts.5458
+			days = @bts_crisis_pact_5_control_delay
+		}
+	}
+}
+
+ship_event = {
+	id = bts.5458
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_ship_size = bts_crisis_dreamlike_ship
+		has_ship_flag = bts_crisis_dreamlike_ship_effect_running 
+	}
+
+	immediate = {
+		if = {
+			limit = { is_in_combat = yes }
+			fleet = {
+				random_combatant_fleet = {
+					random_owned_ship = {
+						create_fleet = {
+							name = fleet
+							effect = {
+								set_owner = root.owner
+								set_location = prev.fleet
+								create_ship = {
+									name = random
+									design = prev
+									graphical_culture = prev
+									graphical_culture_fallback = prev.controller
+									upgradable = no
+								}
+							}
+						}
+						delete_ship = this
+					}
+				}
+			}
+			ship_event = {
+				id = bts.5458
+				days = @bts_crisis_pact_5_control_delay
+			}
+		}
+		else = {
+			remove_ship_flag = bts_crisis_dreamlike_ship_effect_running
+			set_ship_flag = bts_crisis_dreamlike_ship_effect_ready
+		}
+	}
+}
 

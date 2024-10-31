@@ -140,3 +140,7 @@
 @bts_crisis_pact_5_cost = 6
 @bts_crisis_pact_5_cost_delay = 360
 @bts_crisis_pact_5_duration = 1800
+@bts_crisis_pact_5_respawn_delay = 360
+@bts_crisis_pact_5_control_delay = 30
+@bts_crisis_pact_5_devastation_fail = 25
+@bts_crisis_pact_5_devastation_system = 2

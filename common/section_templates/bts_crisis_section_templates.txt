@@ -1,6 +1,6 @@
 ship_section_template = {
 	key = "bts_crisis_dreamlike_template"
-	ship_size = bts_ship_crisis_dreamlike
+	ship_size = bts_crisis_dreamlike_ship
 	fits_on_slot = mid
 	entity = "leviathan_01_elder_tiyanki_section_entity"
 	icon = "GFX_ship_part_core_mid"

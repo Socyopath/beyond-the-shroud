@@ -1,9 +1,8 @@
 
 ship_design = {
 	name = "bts_crisis_dreamlike_design"
-	ship_size = bts_ship_crisis_dreamlike
+	ship_size = bts_crisis_dreamlike_ship
 	is_event_design = yes
-	hide_size = yes
 
 	section = {
 		template = "bts_crisis_dreamlike_template"
@@ -42,7 +41,8 @@ ship_design = {
 ship_design = {
 	name = "bts_crisis_dagon_design"
 	ship_size = bts_crisis_dagon_ship
-
+	is_event_design = yes
+	
 	section = {
 		template = "bts_crisis_dagon_template"
 		slot = "mid"

@@ -41,6 +41,10 @@ country_event = {
             }
         }
         hidden_effect = {
+			set_timed_country_flag = { 
+				flag = $PACT$
+				days = @$PACT$_duration
+			}
             change_variable = {
                 which = bts_crisis_pact_count
                 value = 1

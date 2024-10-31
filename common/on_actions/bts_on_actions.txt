@@ -19,6 +19,7 @@ on_monthly_pulse_country = {
 		bts.1001		# Zro Infusion Check
 		bts.1002		# Shroud Destabilizer Tech Event
 		bts.5432		# Apply Yig pact modifier
+		bts.5454		# Add devastation where dreamlike terror is
     }
 }
 
@@ -104,5 +105,31 @@ on_relic_activated = {
 on_custom_diplomacy = {
 	events = {
 		bts.540
+	}
+}
+
+# This = owner of fleet
+# From = disbanded fleet
+on_fleet_disbanded = {
+	events = {
+		bts.5456 # Respawn Dreamlike Terror ship
+	}
+}
+
+# This = owner of ship
+# From = disbanded ship
+on_ship_disbanded = {
+	events = {
+		bts.5456 # Respawn Dreamlike Terror ship
+	}
+}
+
+# This = owner of ship 1 (destroyed)
+# From = owner of ship 2 (combatant)
+# FromFrom = ship 1
+# FromFromFrom = ship 2
+on_ship_destroyed_victim = {
+	events = {
+		bts.5455 # Respawn Dreamlike Terror ship
 	}
 }
