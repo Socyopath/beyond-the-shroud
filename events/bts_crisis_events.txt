@@ -1062,6 +1062,15 @@ country_event = {
 		has_modifier = bts_crisis_pact_5
 		any_owned_ship = {
 			is_ship_size = bts_crisis_dreamlike_ship
+			solar_system = {
+				OR = {
+					NOT = { exists = owner }
+					AND = {
+						exists = owner
+						owner = { NOT = { is_same_value = root } }
+					}
+				}
+			}
 		}
 	}
 
