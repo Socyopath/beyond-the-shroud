@@ -13,6 +13,7 @@ bts_crisis_dreamlike_ship = {
         ship_shield_add = 50000
         ship_cloaking_detection_add = 10
         ship_cloaking_strength_add = 10
+		ship_emergency_ftl_mult = -1.00
 	}
 	max_hitpoints = 100000
 	fleet_slot_size = 32

@@ -142,5 +142,6 @@
 @bts_crisis_pact_5_duration = 1800
 @bts_crisis_pact_5_respawn_delay = 360
 @bts_crisis_pact_5_control_delay = 30
+@bts_crisis_pact_5_control_ship_size_mult = 7
 @bts_crisis_pact_5_devastation_fail = 25
 @bts_crisis_pact_5_devastation_system = 2

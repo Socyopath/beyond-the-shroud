@@ -1095,6 +1095,7 @@ country_event = {
 	immediate = {
 		country_event = {
 			id = bts.5452
+			days = @bts_crisis_pact_5_respawn_delay 
 		}
 	}
 }
@@ -1152,7 +1153,9 @@ ship_event = {
 			limit = { is_in_combat = yes }
 			fleet = {
 				random_combatant_fleet = {
+					limit = { any_owned_ship = { ship_size_multiplier <= @bts_crisis_pact_5_control_ship_size_mult } }
 					random_owned_ship = {
+						limit = { ship_size_multiplier <= @bts_crisis_pact_5_control_ship_size_mult }
 						create_fleet = {
 							name = fleet
 							effect = {
