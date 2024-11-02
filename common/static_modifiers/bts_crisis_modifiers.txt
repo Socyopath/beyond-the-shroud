@@ -14,7 +14,7 @@ bts_crisis_agenda_2_finish = {
 
 bts_crisis_pact_1 = {
     icon = "gfx/interface/icons/modifiers/mod_pop_robot_upkeep_mult.dds"
-    ship_cloaking_detection_add = 10
+    ship_cloaking_detection_add = @bts_crisis_pact_1_cloaking_detection
 }
 bts_crisis_pact_1_ship_debuff = {
     icon = "gfx/interface/icons/modifiers/mod_pop_robot_upkeep_mult.dds"

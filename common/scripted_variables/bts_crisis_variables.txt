@@ -105,6 +105,7 @@
 @bts_crisis_pact_1_cost = 2
 @bts_crisis_pact_1_cost_delay = 360
 @bts_crisis_pact_1_duration = 1800
+@bts_crisis_pact_1_cloaking_detection = 10
 @bts_crisis_pact_1_ship_debuff_accuracy = -0.50
 @bts_crisis_pact_1_ship_debuff_fire_rate = -0.25
 @bts_crisis_pact_1_ship_debuff_speed_reduction = 0.35
@@ -142,6 +143,6 @@
 @bts_crisis_pact_5_duration = 1800
 @bts_crisis_pact_5_respawn_delay = 360
 @bts_crisis_pact_5_control_delay = 30
-@bts_crisis_pact_5_control_ship_size_mult = 7
+@bts_crisis_pact_5_control_ship_size_mult = 8
 @bts_crisis_pact_5_devastation_fail = 25
 @bts_crisis_pact_5_devastation_system = 2
