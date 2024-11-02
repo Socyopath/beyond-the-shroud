@@ -28,8 +28,7 @@ country_event = {
 	}
 
 	option = {
-		name = OK
-		custom_tooltip = $EVENT_ID$.tooltip
+		name = bts_crisis_pact_perform_pact
     	add_modifier = {
             modifier = $PACT$
             days = @$PACT$_duration
@@ -41,6 +40,10 @@ country_event = {
             }
         }
         hidden_effect = {
+			set_timed_country_flag = { 
+				flag = $PACT$
+				days = @$PACT$_duration
+			}
             change_variable = {
                 which = bts_crisis_pact_count
                 value = 1
@@ -51,7 +54,7 @@ country_event = {
 	}
 
 	option = {
-		name = EXIT
+		name = bts_crisis_pact_refuse_pact
 		default_hide_option = yes
 	}
 }
@@ -126,6 +129,7 @@ country_event = {
 
 	option = {
 		name = bts_crisis_pact_no_pay_event_option
+		custom_tooltip = $PACT$_not_paid
 		default_hide_option = yes
 		hidden_effect = {
 			country_event = {
