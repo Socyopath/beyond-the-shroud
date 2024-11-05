@@ -55,6 +55,17 @@ bts_menp_cult_1 = {
 	portrait = "GFX_crisis_icon_bts_cult_1"
 	on_unlock = {
 		custom_tooltip = bts_menp_cult_1_effect
+		hidden_effect = {
+			change_government = {
+				cooldown = no
+				remove_invalid_civics = yes
+				civics = {
+					civic = bts_civic_council_ritual
+					civic = bts_civic_council_operation
+					civic = bts_civic_council_pact_locked
+				}
+			}
+		}
 	}
 }
 
@@ -119,6 +130,17 @@ bts_menp_cult_2 = {
 	portrait = "GFX_crisis_icon_bts_cult_2"
 	on_unlock = {
 		custom_tooltip = bts_menp_cult_2_effect
+		hidden_effect = {
+			change_government = {
+				cooldown = no
+				remove_invalid_civics = yes
+				civics = {
+					civic = bts_civic_council_ritual
+					civic = bts_civic_council_operation
+					civic = bts_civic_council_pact
+				}
+			}
+		}
 	}
 }
 

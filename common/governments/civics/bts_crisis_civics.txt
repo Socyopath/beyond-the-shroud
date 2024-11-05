@@ -1,0 +1,56 @@
+bts_civic_council_ritual_locked = {
+    pickable_at_start = no
+    playable = { always = no }
+	potential = {
+		has_crisis_level = bts_crisis_level_1
+	}
+    modification = no
+}
+
+bts_civic_council_operation_locked = {
+    pickable_at_start = no
+    playable = { always = no }
+	potential = {
+		has_crisis_level = bts_crisis_level_1
+	}
+    modification = no
+}
+
+bts_civic_council_pact_locked = {
+    pickable_at_start = no
+    playable = { always = no }
+	potential = {
+		has_crisis_level = bts_crisis_level_1
+	}
+    modification = no
+}
+
+bts_civic_council_ritual = {
+    icon = "gfx/interface/council_view/icon_bts_crisis_councilor_ritual.dds"
+    pickable_at_start = no
+    playable = { always = no }
+	potential = {
+		has_crisis_perk = bts_menp_cult_1
+	}
+    modification = no
+}
+
+bts_civic_council_operation = {
+    icon = "gfx/interface/council_view/icon_bts_crisis_councilor_operation.dds"
+    pickable_at_start = no
+    playable = { always = no }
+	potential = {
+		has_crisis_perk = bts_menp_cult_1
+	}
+    modification = no
+}
+
+bts_civic_council_pact = {
+    icon = "gfx/interface/council_view/icon_bts_crisis_councilor_pact.dds"
+    pickable_at_start = no
+    playable = { always = no }
+	potential = {
+		has_crisis_perk = bts_menp_cult_2
+	}
+    modification = no
+}

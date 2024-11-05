@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 
 # Ascension
 ap_bts_crisis: "Eldritch Pursuit"
@@ -33,7 +33,7 @@ bts_menp_cult_1_effect_councilor_power: "§YLevel $@bts_crisis_councilor_power_l
 bts_menp_cult_1_effect_councilor_power_ultimate: "§YLevel $@bts_crisis_councilor_ulimate_power_level|*0$:§! "
 bts_menp_cult_1_effect_councilor_1: "§H$t$$bts_crisis_councilor_operation$§!\n$tt$$COUNCIL_POSITION_MODIFIER_BASE$\n$ttt$$MOD_ESPIONAGE_OPERATION_SPEED_MULT$: §G$@bts_crisis_councilor_operation_speed_per_level|%0$§!\n$tt$$bts_menp_cult_1_effect_councilor_power$Operation §Y$operation_bts_crisis_devour_mind$§! steals §G+1§! pop\n$tt$$bts_menp_cult_1_effect_councilor_power_ultimate$Operation §Y$operation_bts_crisis_devour_mind$§! works on FTL empires"
 bts_menp_cult_1_effect_councilor_2: "§H$t$$bts_crisis_councilor_ritual$§!\n$tt$$COUNCIL_POSITION_MODIFIER_BASE$\n$ttt$$mod_bts_crisis_ritual_coolodwn_mult$: §G$@bts_crisis_councilor_ritual_cooldown_per_level|%1$§!\n$tt$$bts_menp_cult_1_effect_councilor_power$Ritual §YUmbral Trade§! grants $mod_planet_jobs_produces_mult$\n$tt$$bts_menp_cult_1_effect_councilor_power_ultimate$Ritual §YUmbral Trade's§! cost is reduced by §G1§!"
-bts_menp_cult_1_effect: "§YUnlocks Councilors:§!\n$bts_menp_cult_1_effect_councilor_1$\n$bts_menp_cult_1_effect_councilor_2$"
+bts_menp_cult_1_effect: "$UNLOCK_COUNCIL_SELECTION$\n§YUnlocks Councilors:§!\n$bts_menp_cult_1_effect_councilor_1$\n$bts_menp_cult_1_effect_councilor_2$"
 bts_menp_spec_rights: "Mind Feast"
 bts_menp_spec_rights_effect: "§YUnlocks Species Rights:§! $citizenship_bts_crisis$"
 
@@ -57,7 +57,7 @@ bts_crisis_level_4_situation_fail: "$TRIGGER_FAIL$ Has finished situation §Y$si
 bts_menp_old_ones: "The Great Old Ones"
 bts_menp_old_ones_effect: "§YStarts Special Project:§! $BTS_ELDER_GODS_PROJECT$"
 bts_menp_cult_2: "The Nameless Cult"
-bts_menp_cult_2_effect: "§YUnlocks Councilor:§!\n§H$t$$bts_crisis_councilor_pact$§!\n$tt$$COUNCIL_POSITION_MODIFIER_BASE$\n$ttt$$mod_bts_crisis_pact_cooldown_mult$: §G$@bts_crisis_councilor_pact_cooldown_per_level|%0$§!\n$tt$$bts_menp_cult_1_effect_councilor_power$Eldritch Pact Yearly Cost: §G-1§!\n$tt$$bts_menp_cult_1_effect_councilor_power_ultimate$Eldritch Pact Limit: §G+1§!"
+bts_menp_cult_2_effect: "$UNLOCK_COUNCIL_SELECTION$\n§YUnlocks Councilor:§!\n§H$t$$bts_crisis_councilor_pact$§!\n$tt$$COUNCIL_POSITION_MODIFIER_BASE$\n$ttt$$mod_bts_crisis_pact_cooldown_mult$: §G$@bts_crisis_councilor_pact_cooldown_per_level|%0$§!\n$tt$$bts_menp_cult_1_effect_councilor_power$Eldritch Pact Yearly Cost: §G-1§!\n$tt$$bts_menp_cult_1_effect_councilor_power_ultimate$Eldritch Pact Limit: §G+1§!"
 bts_menp_immortals: "Endless Madness"
 bts_menp_immortals_effect: "Leaders of the main species become §Yimmortal§!"
 
@@ -361,3 +361,16 @@ bts_crisis_pact_no_pay_cost_tooltip: "Terrible things..."
 bts_crisis_pact_no_pay_event_option: "Have mercy"
 
 
+# Civics
+bts_civic_council_ritual: "Cultist"
+bts_civic_council_operation: "Executioner"
+bts_civic_council_pact: "Apostle"
+bts_crisis_councilor_ritual_effect: "- $mod_bts_crisis_ritual_coolodwn_mult$: §G$@bts_crisis_councilor_ritual_cooldown_per_level|%1$§!\n- $bts_menp_cult_1_effect_councilor_power$Ritual §YUmbral Trade§! grants $mod_planet_jobs_produces_mult$\n- $bts_menp_cult_1_effect_councilor_power_ultimate$Ritual §YUmbral Trade's§! cost is reduced by §G1§!"
+bts_crisis_councilor_operation_effect: "- $MOD_ESPIONAGE_OPERATION_SPEED_MULT$: §G$@bts_crisis_councilor_operation_speed_per_level|%0$§!\n- $bts_menp_cult_1_effect_councilor_power$Operation §Y$operation_bts_crisis_devour_mind$§! steals §G+1§! pop\n- $bts_menp_cult_1_effect_councilor_power_ultimate$Operation §Y$operation_bts_crisis_devour_mind$§! works on FTL empires"
+bts_crisis_councilor_pact_effect: "- $mod_bts_crisis_pact_cooldown_mult$: §G$@bts_crisis_councilor_pact_cooldown_per_level|%0$§!\n- $bts_menp_cult_1_effect_councilor_power$Eldritch Pact Yearly Cost: §G-1§!\n- $bts_menp_cult_1_effect_councilor_power_ultimate$Eldritch Pact Limit: §G+1§!"
+bts_civic_council_ritual_locked: "Locked"
+bts_civic_council_ritual_locked_desc: "Progress through the crisis to unlock"
+bts_civic_council_operation_locked: "$bts_civic_council_ritual_locked$"
+bts_civic_council_operation_locked_desc: "$bts_civic_council_ritual_locked_desc$"
+bts_civic_council_pact_locked: "$bts_civic_council_ritual_locked$"
+bts_civic_council_pact_locked_desc: "$bts_civic_council_ritual_locked_desc$"

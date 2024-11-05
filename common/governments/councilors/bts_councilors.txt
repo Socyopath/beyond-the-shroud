@@ -4,6 +4,8 @@ bts_crisis_councilor_ritual = {
 	possible = { 
 		has_crisis_perk = bts_menp_cult_1
 	}
+	custom_tooltip = bts_crisis_councilor_ritual_effect
+	civic = bts_civic_council_ritual
 	modifier = {
 		bts_crisis_ritual_coolodwn_mult = @bts_crisis_councilor_ritual_cooldown_per_level
 	}
@@ -15,6 +17,8 @@ bts_crisis_councilor_pact = {
 	possible = { 
 		has_crisis_perk = bts_menp_cult_2
 	}
+	custom_tooltip = bts_crisis_councilor_pact_effect
+	civic = bts_civic_council_pact
 	modifier = {
 		bts_crisis_pact_cooldown_mult = @bts_crisis_councilor_pact_cooldown_per_level
 	}
@@ -26,6 +30,8 @@ bts_crisis_councilor_operation = {
 	possible = { 
 		has_crisis_perk = bts_menp_cult_1
 	}
+	custom_tooltip = bts_crisis_councilor_operation_effect
+	civic = bts_civic_council_operation
 	modifier = {
 		espionage_operation_speed_mult = @bts_crisis_councilor_operation_speed_per_level
 	}
