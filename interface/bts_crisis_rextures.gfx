@@ -155,4 +155,13 @@ spriteTypes = {
 		name = "GFX_council_agenda_icon_bts_crisis_agenda_2"
 		texturefile = "gfx/interface/icons/agenda_icons/icon_bts_crisis_agenda.dds"
 	}
+
+
+	# Events
+	spriteType = {
+		name = "GFX_bts_dagon_rain"
+		texturefile = "gfx/event_pictures/bts_dagon_rain.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
 }

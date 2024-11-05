@@ -1,10 +1,15 @@
-bts_crisis_pact_4_decision = {
+bts_crisis_pact_4_decision_summon = {
 	sound = event_energy_field
-	icon = decision_wormhole
+	icon = bts_decision_crisis_dagon_summon
     owned_planets_only = yes
 
 	potential = {
-        is_planet_class = pc_ocean
+        OR = {
+            is_planet_class = pc_ocean
+            is_planet_class = pc_tropical
+            is_planet_class = pc_continental
+        }
+        
         exists = owner
         owner = {
             has_modifier = bts_crisis_pact_4
@@ -41,3 +46,29 @@ bts_crisis_pact_4_decision = {
 	}
 }
 
+bts_crisis_pact_4_decision_convert = {
+	sound = event_energy_field
+	icon = bts_decision_crisis_dagon_rain
+    owned_planets_only = yes
+
+	potential = {
+        NOR = { 
+            is_planet_class = pc_ocean
+            is_planet_class = pc_tropical
+            is_planet_class = pc_continental
+        }
+        exists = owner
+        owner = {
+            has_modifier = bts_crisis_pact_4
+        }
+	}
+
+	effect = {
+        owner = {
+            start_situation = {
+                type = situation_bts_crisis_dagon_convert
+                target = root
+            }
+        }
+	}
+}
