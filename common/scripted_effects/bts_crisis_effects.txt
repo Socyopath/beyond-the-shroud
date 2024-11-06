@@ -33,6 +33,54 @@ bts_effect_devour_mind = {
     }]
 }
 
+# This : Pop
+# CASTER : country
+bts_auto_resettle_thrall = {
+	$CASTER$ = {
+		if = {
+			limit = { 
+				any_owned_planet = {
+					free_jobs_of_type = {
+						job = bts_crisis_sacrifical_thrall
+						value >= 1
+					}
+				}
+			}
+			random_owned_planet = {
+				limit = {
+					free_jobs_of_type = {
+						job = bts_crisis_sacrifical_thrall
+						value >= 1
+					}
+				}
+				save_event_target_as = thrall_resettle_planet
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_planet = {
+					bts_crisis_has_thrall_building = yes
+				}
+			}
+			random_owned_planet = {
+				limit = {
+					bts_crisis_has_thrall_building = yes
+				}
+				save_event_target_as = thrall_resettle_planet
+			}
+		}
+		else = {
+			capital_scope = {
+				save_event_target_as = thrall_resettle_planet
+			}
+		}
+	}
+	resettle_pop = {
+		pop = this
+		planet = event_target:thrall_resettle_planet
+	}
+}
+
 bts_effect_consume_thrall = {
 	while = {
 		count = $COUNT$

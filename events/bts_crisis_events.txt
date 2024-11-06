@@ -22,6 +22,9 @@ country_event = {
 				bts_effect_devour_mind = {
 					CASTER = root
 				}
+				bts_auto_resettle_thrall = {
+					CASTER = root
+				}
 			}
 		}
 	}
@@ -53,9 +56,8 @@ country_event = {
 				bts_effect_devour_mind = {
 					CASTER = root
 				}
-				resettle_pop = {
-					pop = this
-					planet = root.capital_scope
+				bts_auto_resettle_thrall = {
+					CASTER = root
 				}
 			}
 		}
@@ -113,6 +115,33 @@ country_event = {
 		}
 
 		establish_communications_no_message = event_target:bts_elder_gods_country
+	}
+}
+
+# Auto resetlle thralls (monthly)
+country_event = {
+	id = bts.501
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		any_owned_planet = {
+			free_jobs_of_type = {
+				job = bts_crisis_sacrifical_thrall
+				value >= 1
+			}
+		}
+	}
+
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				has_trait = bts_trait_crisis_thrall
+				NOT = { has_job = bts_crisis_sacrifical_thrall }
+			}
+			bts_auto_resettle_thrall = {
+				CASTER = root
+			}
+		}
 	}
 }
 
@@ -253,9 +282,8 @@ espionage_operation_event = {
 					bts_effect_devour_mind = {
 						CASTER = root.owner
 					}
-					resettle_pop = {
-						pop = this
-						planet = root.owner.capital_scope
+					bts_auto_resettle_thrall = {
+						CASTER = root.owner
 					}
 				}
 				
@@ -281,9 +309,8 @@ espionage_operation_event = {
 						bts_effect_devour_mind = {
 							CASTER = root.owner
 						}
-						resettle_pop = {
-							pop = this
-							planet = root.owner.capital_scope
+						bts_auto_resettle_thrall = {
+							CASTER = root.owner
 						}
 					}
 				}
@@ -330,6 +357,9 @@ country_event = {
 						bts_effect_devour_mind = { 
 							CASTER = root
 						}
+						bts_auto_resettle_thrall = {
+							CASTER = root
+						}
 					}
 				}
 			}
@@ -347,6 +377,9 @@ country_event = {
 						bts_effect_devour_mind = { 
 							CASTER = root
 						}
+						bts_auto_resettle_thrall = {
+							CASTER = root
+						}
 					}
 				}
 			}
@@ -362,6 +395,9 @@ country_event = {
 							}
 						}
 						bts_effect_devour_mind = { 
+							CASTER = root
+						}
+						bts_auto_resettle_thrall = {
 							CASTER = root
 						}
 					}

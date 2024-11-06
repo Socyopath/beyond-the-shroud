@@ -5,6 +5,14 @@ bts_crisis_has_thrall = {
     }
 }
 
+bts_crisis_has_thrall_building = {
+	OR = {
+		has_building = bts_crisis_building_thrall_1
+		has_building = bts_crisis_building_thrall_2
+		has_building = bts_crisis_building_thrall_3
+	}
+}
+
 bts_can_use_councilor_power = {
 	any_owned_leader = {
 		is_councilor = yes

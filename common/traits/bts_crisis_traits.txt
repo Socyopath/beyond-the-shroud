@@ -98,6 +98,6 @@ bts_trait_crisis_thrall = {
 	}
     
 	modifier = {
-		pop_resettlement_cost_mult = -1.00
+		
 	}
 }
