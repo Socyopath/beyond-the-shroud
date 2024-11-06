@@ -916,11 +916,22 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		any_owned_ship = {
-			has_ship_flag = bts_dagon_pact_@root
+		OR = {
+			any_owned_ship = {
+				has_ship_flag = bts_dagon_pact_@root
+			}
+			any_situation = {
+				is_situation_type = situation_bts_crisis_dagon_convert
+			}
 		}
 	}
 	immediate = {
+		every_situation = { 
+			limit = { 
+				is_situation_type = situation_bts_crisis_dagon_convert
+			} 
+			add_situation_progress = @bts_crisis_pact_4_situation_progress_lose
+		}
 		random_owned_ship = {
 			limit = {
 				has_ship_flag = bts_dagon_pact_@root
@@ -928,14 +939,15 @@ country_event = {
 			fleet = {
 				set_owner = event_target:bts_elder_gods_country
 				set_fleet_stance = aggressive
-				save_event_target_as = dagon_hostile
-			}
-		}
-		country_event = {
-			id = bts.5443
-			days = @bts_crisis_pact_4_hostile_duration
-			scopes = {
-				from = event_target:dagon_hostile
+				root = {
+					country_event = {
+						id = bts.5443
+						days = @bts_crisis_pact_4_hostile_duration
+						scopes = {
+							from = prev
+						}
+					}
+				}
 			}
 		}
 	}

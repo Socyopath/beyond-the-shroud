@@ -18,31 +18,35 @@ bts_crisis_pact_4_decision_summon = {
 	}
 
 	effect = {
-        set_planet_flag = leviathan_summoned_by_@owner
-        create_fleet = {
-            name = bts_crisis_dagon_fleet_name
-            settings = {
-                can_upgrade = no
-				can_change_composition = no
-				can_change_leader = no
-				uses_naval_capacity = no
-				spawn_debris = no
-                is_boss = yes
-            }
-            effect = {
-                set_owner = root.owner
-                create_ship = {
-                    name = bts_crisis_dagon_ship_name
-                    design = "bts_crisis_dagon_design"
-                    effect = {
-                        set_ship_flag = bts_dagon_pact_@owner
-                    }
+        custom_tooltip = bts_crisis_pact_4_decision_summon_effects
+        hidden_effect = {
+            set_planet_flag = leviathan_summoned_by_@owner
+            create_fleet = {
+                name = bts_crisis_dagon_fleet_name
+                settings = {
+                    can_upgrade = no
+                    can_change_composition = no
+                    can_change_leader = no
+                    uses_naval_capacity = no
+                    spawn_debris = no
+                    is_boss = yes
                 }
-                set_location = {
-                    target = root
+                effect = {
+                    set_owner = root.owner
+                    create_ship = {
+                        name = bts_crisis_dagon_ship_name
+                        design = "bts_crisis_dagon_design"
+                        effect = {
+                            set_ship_flag = bts_dagon_pact_@owner
+                        }
+                    }
+                    set_location = {
+                        target = root
+                    }
                 }
             }
         }
+
 	}
 }
 
@@ -60,6 +64,11 @@ bts_crisis_pact_4_decision_convert = {
         exists = owner
         owner = {
             has_modifier = bts_crisis_pact_4
+        }
+        NOT = {
+            any_targeting_situation = {
+                is_situation_type = situation_bts_crisis_dagon_convert
+            }
         }
 	}
 

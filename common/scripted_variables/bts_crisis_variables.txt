@@ -136,6 +136,8 @@
 @bts_crisis_pact_4_cost_delay = 360
 @bts_crisis_pact_4_duration = 1800
 @bts_crisis_pact_4_hostile_duration = 180
+@bts_crisis_pact_4_situation_duration_ocean_month = 12
+@bts_crisis_pact_4_situation_progress_lose = -6
 
 # Cthulhu
 @bts_crisis_pact_5_cost = 6

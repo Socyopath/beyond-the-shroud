@@ -18,11 +18,11 @@ situation_bts_crisis_dagon_convert = {
 			icon = GFX_situation_stage_1
 			icon_background = GFX_situation_stage_frame_blue
             custom_tooltip = situation_bts_crisis_dagon_convert_stage_init_effect
-            end = @bts_crisis_pact_4_situation_duration_ocean
+            end = @bts_crisis_pact_4_situation_duration_ocean_month
         }
     }
 
     monthly_progress = { 
-		base = @bts_crisis_pact_4_situation_duration_progress
+		base = 1
 	}
 }
