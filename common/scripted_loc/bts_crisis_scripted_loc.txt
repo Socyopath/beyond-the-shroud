@@ -62,3 +62,31 @@ defined_text = {
     value = value:bts_crisis_pact_cost_value|COST|@bts_crisis_pact_5_cost|
 }
 
+
+
+defined_text = {
+    name = bts_crisis_pact_4_not_paid_text
+    text = {
+		trigger = { 
+            any_owned_ship = { has_ship_flag = bts_dagon_pact_@root }
+            any_situation = { is_situation_type = situation_bts_crisis_dagon_convert }
+         }
+        localization_key = bts_crisis_pact_4_not_paid_all
+    }
+    text = {
+		trigger = { 
+            NOT = { any_owned_ship = { has_ship_flag = bts_dagon_pact_@root } }
+            any_situation = { is_situation_type = situation_bts_crisis_dagon_convert }
+         }
+        localization_key = bts_crisis_pact_4_not_paid_situation
+    }
+    text = {
+		trigger = { 
+            any_owned_ship = { has_ship_flag = bts_dagon_pact_@root }
+            NOT = { any_situation = { is_situation_type = situation_bts_crisis_dagon_convert } }
+         }
+        localization_key = bts_crisis_pact_4_not_paid_fleet
+    }
+
+    default = bts_crisis_pact_4_not_paid_nothing
+}

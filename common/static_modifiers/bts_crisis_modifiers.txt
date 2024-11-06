@@ -14,6 +14,7 @@ bts_crisis_agenda_2_finish = {
 
 bts_crisis_pact_1 = {
     icon = "gfx/interface/icons/modifiers/mod_pop_robot_upkeep_mult.dds"
+    custom_tooltip = bts_crisis_pact_1_tooltip
     ship_cloaking_detection_add = @bts_crisis_pact_1_cloaking_detection
 }
 bts_crisis_pact_1_ship_debuff = {
@@ -29,10 +30,12 @@ bts_crisis_pact_1_stabase_debuff_no_cost = {
 
 bts_crisis_pact_2 = {
     icon = "gfx/interface/icons/modifiers/mod_pop_robot_upkeep_mult.dds"
+    custom_tooltip = bts_crisis_pact_2_tooltip
 }
 
 bts_crisis_pact_3 = {
     icon = "gfx/interface/icons/modifiers/mod_pop_robot_upkeep_mult.dds"
+    custom_tooltip = bts_crisis_pact_3_tooltip
 }
 bts_crisis_pact_3_natural_worlds = {
     pop_category_workers_society_research_produces_add = @bts_crisis_pact_3_natural_worlds_society
@@ -44,10 +47,12 @@ bts_crisis_pact_3_natural_worlds = {
 
 bts_crisis_pact_4 = {
     icon = "gfx/interface/icons/modifiers/mod_pop_robot_upkeep_mult.dds"
+    custom_tooltip = bts_crisis_pact_4_tooltip
 }
 
 bts_crisis_pact_5 = {
     icon = "gfx/interface/icons/modifiers/mod_pop_robot_upkeep_mult.dds"
+    custom_tooltip = bts_crisis_pact_5_tooltip
 }
 
 bts_crisis_pact_cooldown = {
