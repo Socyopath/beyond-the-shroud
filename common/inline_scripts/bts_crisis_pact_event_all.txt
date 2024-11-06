@@ -82,7 +82,7 @@ country_event = {
 	}
 
 
-	after = {
+	immediate = {
 		hidden_effect = {
 			country_event = {
 				id = $EVENT_ID$0
@@ -94,14 +94,24 @@ country_event = {
 	option = {
 		name = bts_crisis_pact_pay_cost
 		allow = {
-			bts_crisis_has_thrall = {
-				COST = value:bts_crisis_pact_cost_value|COST|@$PACT$_cost|
+			custom_tooltip = {
+				fail_text = $PACT$_not_enough_thrall
+				bts_crisis_has_thrall = {
+					COST = value:bts_crisis_pact_cost_value|COST|@$PACT$_cost|
+				}
 			}
 		}
-		bts_effect_consume_thrall = {
-			COUNT = value:bts_crisis_pact_cost_value|COST|@$PACT$_cost|
+		hidden_effect = {
+			custom_tooltip_with_params = {
+				description = "bts_crisis_pact_pay_cost_tooltip"
+				description_parameters = {
+					"PACT" = $PACT$
+				}
+			}
+			bts_effect_consume_thrall = {
+				COUNT = value:bts_crisis_pact_cost_value|COST|@$PACT$_cost|
+			}
 		}
-
 	}
 
 	option = {
