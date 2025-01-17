@@ -339,7 +339,7 @@ bts.544.desc: "Uthal'Kaar wgah'n gl'nath f'taghn, r'luh syha'h mglw'nafh stellar
 bts_crisis_pact_4: "Eldritch Pact: $bts.544.name$"
 bts_crisis_pact_4_not_enough_thrall: "Have §Y[root.bts_crisis_pact_cost_bts_crisis_pact_4_text]§! or more $job_bts_crisis_sacrifical_thrall_plural$"
 bts_crisis_pact_4_not_paid_nothing: "Nothing will happen yet..."
-bts_crisis_pact_4_not_paid_situation: "Situation §Y$situation_bts_crisis_pact_4_convert$§! will lose §R$@bts_crisis_pact_4_situation_progress_lose|0$§! progress (total: §Y$@bts_crisis_pact_4_situation_duration_ocean_month|0$§!)"
+bts_crisis_pact_4_not_paid_situation: "Situation §Y$situation_bts_crisis_pact_4_convert$§! will lose §R$@bts_crisis_pact_4_situation_progress_lose|0$§! progress (total: §Y$@bts_crisis_pact_4_situation_duration_ocean_month|0$§! months)"
 bts_crisis_pact_4_not_paid_fleet: "A summoned §Y$bts_crisis_pact_4_ship_name$§! becomes §Rhostile§! for §Y$@bts_crisis_pact_4_hostile_duration|0$§! days."
 bts_crisis_pact_4_not_paid_all: "$bts_crisis_pact_4_not_paid_situation$\n$bts_crisis_pact_4_not_paid_fleet$"
 bts_crisis_pact_4_not_paid: "[root.bts_crisis_pact_4_not_paid_text]"
