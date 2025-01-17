@@ -1,6 +1,6 @@
 bts_crisis_pact_4_decision_summon = {
 	sound = event_energy_field
-	icon = bts_decision_crisis_dagon_summon
+	icon = bts_decision_crisis_pact_4_summon
     owned_planets_only = yes
 
 	potential = {
@@ -22,7 +22,7 @@ bts_crisis_pact_4_decision_summon = {
         hidden_effect = {
             set_planet_flag = leviathan_summoned_by_@owner
             create_fleet = {
-                name = bts_crisis_dagon_fleet_name
+                name = bts_crisis_pact_4_fleet_name
                 settings = {
                     can_upgrade = no
                     can_change_composition = no
@@ -34,10 +34,10 @@ bts_crisis_pact_4_decision_summon = {
                 effect = {
                     set_owner = root.owner
                     create_ship = {
-                        name = bts_crisis_dagon_ship_name
-                        design = "bts_crisis_dagon_design"
+                        name = bts_crisis_pact_4_ship_name
+                        design = "bts_crisis_pact_4_design"
                         effect = {
-                            set_ship_flag = bts_dagon_pact_@owner
+                            set_ship_flag = bts_pact_4_god_@owner
                         }
                     }
                     set_location = {
@@ -52,7 +52,7 @@ bts_crisis_pact_4_decision_summon = {
 
 bts_crisis_pact_4_decision_convert = {
 	sound = event_energy_field
-	icon = bts_decision_crisis_dagon_rain
+	icon = bts_decision_crisis_pact_4_rain
     owned_planets_only = yes
 
 	potential = {
@@ -67,7 +67,7 @@ bts_crisis_pact_4_decision_convert = {
         }
         NOT = {
             any_targeting_situation = {
-                is_situation_type = situation_bts_crisis_dagon_convert
+                is_situation_type = situation_bts_crisis_pact_4_convert
             }
         }
 	}
@@ -75,7 +75,7 @@ bts_crisis_pact_4_decision_convert = {
 	effect = {
         owner = {
             start_situation = {
-                type = situation_bts_crisis_dagon_convert
+                type = situation_bts_crisis_pact_4_convert
                 target = root
             }
         }

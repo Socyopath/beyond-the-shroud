@@ -159,8 +159,8 @@ spriteTypes = {
 
 	# Events
 	spriteType = {
-		name = "GFX_bts_dagon_rain"
-		texturefile = "gfx/event_pictures/bts_dagon_rain.dds"
+		name = "GFX_bts_crisis_pact_4_rain"
+		texturefile = "gfx/event_pictures/bts_crisis_pact_4_rain.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes
 	}

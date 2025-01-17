@@ -39,12 +39,12 @@ ship_design = {
 }
 
 ship_design = {
-	name = "bts_crisis_dagon_design"
-	ship_size = bts_crisis_dagon_ship
+	name = "bts_crisis_pact_4_design"
+	ship_size = bts_crisis_pact_4_ship
 	is_event_design = yes
 	
 	section = {
-		template = "bts_crisis_dagon_template"
+		template = "bts_crisis_pact_4_template"
 		slot = "mid"
 
 		component = {

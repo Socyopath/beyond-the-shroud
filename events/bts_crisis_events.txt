@@ -567,7 +567,7 @@ country_event = {
 	}
 }
 
-# Elder God 1 : Ghatanothoa
+# Elder God 1 : Krahn’Gath
 inline_script = {
     script = bts_crisis_pact_event_end
     EVENT_ID = bts.541
@@ -660,7 +660,7 @@ ship_event = {
 	}
 }
 
-# Elder God 2 : Hastur
+# Elder God 2 : Omirkos
 inline_script = {
     script = bts_crisis_pact_event
     EVENT_ID = bts.542
@@ -797,7 +797,7 @@ country_event = {
 	}
 }
 
-# Elder God 3 : Yig
+# Elder God 3 : Zyralea
 inline_script = {
     script = bts_crisis_pact_event_all
     EVENT_ID = bts.543
@@ -937,7 +937,7 @@ country_event = {
 	}
 }
 
-# Elder God 4 : Dagon
+# Elder God 4 : Uthal'Kaar
 inline_script = {
     script = bts_crisis_pact_event_end
     EVENT_ID = bts.544
@@ -954,23 +954,23 @@ country_event = {
 	trigger = {
 		OR = {
 			any_owned_ship = {
-				has_ship_flag = bts_dagon_pact_@root
+				has_ship_flag = bts_pact_4_god_@root
 			}
 			any_situation = {
-				is_situation_type = situation_bts_crisis_dagon_convert
+				is_situation_type = situation_bts_crisis_pact_4_convert
 			}
 		}
 	}
 	immediate = {
 		every_situation = { 
 			limit = { 
-				is_situation_type = situation_bts_crisis_dagon_convert
+				is_situation_type = situation_bts_crisis_pact_4_convert
 			} 
 			add_situation_progress = @bts_crisis_pact_4_situation_progress_lose
 		}
 		random_owned_ship = {
 			limit = {
-				has_ship_flag = bts_dagon_pact_@root
+				has_ship_flag = bts_pact_4_god_@root
 			}
 			fleet = {
 				set_owner = event_target:bts_elder_gods_country
@@ -1002,7 +1002,7 @@ country_event = {
 			}
 			every_ship_in_system = { 
 				limit = { 
-					has_ship_flag = bts_dagon_pact_@root 
+					has_ship_flag = bts_pact_4_god_@root 
 				} 
 				destroy_ship = this
 			}
@@ -1028,7 +1028,7 @@ country_event = {
 	}
 }
 
-# Elder God 5 : Cthulhu
+# Elder God 5 : Zhul’tharoth
 inline_script = {
     script = bts_crisis_pact_event_all
     EVENT_ID = bts.545

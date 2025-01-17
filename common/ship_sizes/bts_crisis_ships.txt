@@ -27,7 +27,7 @@ bts_crisis_dreamlike_ship = {
 }
 
 # Leviathan
-bts_crisis_dagon_ship = {
+bts_crisis_pact_4_ship = {
 	entity = aquatic_dragon_entity
 	is_space_object = yes
 	graphical_culture = no

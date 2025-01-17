@@ -101,7 +101,7 @@
 @bts_elder_gods_project_days = 180
 @bts_crisis_pact_cooldown = 1800
 
-# Ghatanothoa
+# Krahn’Gath
 @bts_crisis_pact_1_cost = 2
 @bts_crisis_pact_1_cost_delay = 360
 @bts_crisis_pact_1_duration = 1800
@@ -111,7 +111,7 @@
 @bts_crisis_pact_1_ship_debuff_speed_reduction = 0.35
 @bts_crisis_pact_1_stabase_debuff_no_cost_duration = 180
 
-# Hastur
+# Omirkos
 @bts_crisis_pact_2_cost = 3
 @bts_crisis_pact_2_cost_delay = 360
 @bts_crisis_pact_2_duration = 1800
@@ -121,7 +121,7 @@
 @opinion_bts_crisis_pact_bad_value = -100
 @opinion_bts_crisis_pact_fail_value = -250
 
-# Yig
+# Zyralea
 @bts_crisis_pact_3_cost = 4
 @bts_crisis_pact_3_cost_delay = 360
 @bts_crisis_pact_3_duration = 1800
@@ -131,7 +131,7 @@
 @bts_crisis_pact_3_natural_worlds_upkeep = -0.25
 @bts_crisis_pact_3_natural_worlds_happiness = 0.15
 
-# Dagon
+# Uthal'Kaar
 @bts_crisis_pact_4_cost = 5
 @bts_crisis_pact_4_cost_delay = 360
 @bts_crisis_pact_4_duration = 1800
@@ -139,7 +139,7 @@
 @bts_crisis_pact_4_situation_duration_ocean_month = 12
 @bts_crisis_pact_4_situation_progress_lose = -6
 
-# Cthulhu
+# Zhul’tharoth
 @bts_crisis_pact_5_cost = 6
 @bts_crisis_pact_5_cost_delay = 360
 @bts_crisis_pact_5_duration = 1800

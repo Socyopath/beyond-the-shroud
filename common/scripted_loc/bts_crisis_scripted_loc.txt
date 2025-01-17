@@ -68,22 +68,22 @@ defined_text = {
     name = bts_crisis_pact_4_not_paid_text
     text = {
 		trigger = { 
-            any_owned_ship = { has_ship_flag = bts_dagon_pact_@root }
-            any_situation = { is_situation_type = situation_bts_crisis_dagon_convert }
+            any_owned_ship = { has_ship_flag = bts_pact_4_god_@root }
+            any_situation = { is_situation_type = situation_bts_crisis_pact_4_convert }
          }
         localization_key = bts_crisis_pact_4_not_paid_all
     }
     text = {
 		trigger = { 
-            NOT = { any_owned_ship = { has_ship_flag = bts_dagon_pact_@root } }
-            any_situation = { is_situation_type = situation_bts_crisis_dagon_convert }
+            NOT = { any_owned_ship = { has_ship_flag = bts_pact_4_god_@root } }
+            any_situation = { is_situation_type = situation_bts_crisis_pact_4_convert }
          }
         localization_key = bts_crisis_pact_4_not_paid_situation
     }
     text = {
 		trigger = { 
-            any_owned_ship = { has_ship_flag = bts_dagon_pact_@root }
-            NOT = { any_situation = { is_situation_type = situation_bts_crisis_dagon_convert } }
+            any_owned_ship = { has_ship_flag = bts_pact_4_god_@root }
+            NOT = { any_situation = { is_situation_type = situation_bts_crisis_pact_4_convert } }
          }
         localization_key = bts_crisis_pact_4_not_paid_fleet
     }

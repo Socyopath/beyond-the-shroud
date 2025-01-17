@@ -1,6 +1,6 @@
-situation_bts_crisis_dagon_convert = {
+situation_bts_crisis_pact_4_convert = {
 	category = neutral
-	picture = GFX_bts_dagon_rain
+	picture = GFX_bts_crisis_pact_4_rain
 	complete_icon_frame = GFX_situation_outcome_frame_green
 	complete_icon = GFX_situation_outcome_ascension
 
@@ -14,10 +14,10 @@ situation_bts_crisis_dagon_convert = {
 
 	stages = {
         # Start Raining
-        situation_bts_crisis_dagon_convert_stage_init = { 
+        situation_bts_crisis_pact_4_convert_stage_init = { 
 			icon = GFX_situation_stage_1
 			icon_background = GFX_situation_stage_frame_blue
-            custom_tooltip = situation_bts_crisis_dagon_convert_stage_init_effect
+            custom_tooltip = situation_bts_crisis_pact_4_convert_stage_init_effect
             end = @bts_crisis_pact_4_situation_duration_ocean_month
         }
     }
