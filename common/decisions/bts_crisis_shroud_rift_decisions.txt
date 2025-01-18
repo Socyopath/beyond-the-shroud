@@ -381,6 +381,86 @@ bts_ritual_war_terror = {
 
 	}
 }
+
+
+bts_ritual_summon_patron = {
+	sound = event_energy_field
+	icon = decision_wormhole
+    owned_planets_only = no
+
+	potential = {
+        is_planet_class = pc_bts_shroud_rift
+		exists = from
+        from = {
+            has_country_flag = bts_crisis_can_summon_patron
+        }
+	}
+
+    allow = {
+
+    }
+
+	effect = {
+        custom_tooltip = bts_ritual_summon_patron_effects
+
+        hidden_effect = {
+            from = {
+                remove_country_flag = bts_crisis_can_summon_patron
+            }
+        
+            create_fleet = {
+                name = bts_ritual_summon_patron_ship_name
+                settings = {
+                    spawn_debris = no
+                }
+                effect = {
+                    set_owner = event_target:bts_elder_gods_country
+                    create_ship = {
+                        name = bts_ritual_summon_patron_ship_name
+                        design = "bts_shroud_avatar"
+                        effect = {
+                            set_ship_flag = bts_shroud_patron
+                        }
+                    }
+                    set_location = root
+                }
+            }
+
+            last_created_ship = {
+                save_event_target_as = bts_ritual_summon_patron_ship
+                if = {
+                    limit = { from = { has_country_flag = composer_covenant_confirmed } }
+                    set_name = name_composer
+                    fleet = { set_name = name_composer }
+                }
+                else_if = {
+                    limit = { from = { has_country_flag = eater_covenant_confirmed } }
+                    set_name = name_eater
+                    fleet = { set_name = name_eater }
+                }
+                else_if = {
+                    limit = { from = { has_country_flag = instrument_covenant_confirmed } }
+                    set_name = name_instrument
+                    fleet = { set_name = name_instrument }
+                }
+                else_if = {
+                    limit = { from = { has_country_flag = whisperers_covenant_confirmed } }
+                    set_name = name_whisperers
+                    fleet = { set_name = name_whisperers }
+                }
+                else_if = {
+                    limit = { from = { has_country_flag = bts_covenant_confirmed } }
+                    set_name = bts_covenant_name_full
+                    fleet = { set_name = bts_covenant_name_full }
+                }
+            }
+    
+            from = {
+                set_country_flag = bts_shroud_patron_summoned_@event_target:bts_ritual_summon_patron_ship
+            }
+		}
+	}
+}
 # decision_bts_shroud_rift_summon_4 = {
 # 	sound = event_energy_field
 # 	icon = decision_wormhole

@@ -416,6 +416,11 @@ BTS_OUTER_GODS_RITUAL_3_DESC: ""
 bts_outer_gods_ritual_steps: "Ritual Steps"
 
 
+bts_ritual_summon_patron: "§R$BTS_OUTER_GODS_RITUAL_1$§!"
+bts_ritual_summon_patron_desc: ""
+bts_ritual_summon_patron_ship_name: "Shroud Patron"
+bts_ritual_summon_patron_effects: "§YSummons§! a manifestation of your shroud patron\n\n§RThis will trigger a battle§!"
+
 bts.550.name: "Deep Shroud"
 bts.550.desc: "The veil is thin, and the echoes of the §YPrimordial Chaos§! reach even you.\n\nDo you hear it, mortal ? The pulse of §YZhotharak§! stirs, and I am its whisper.\n\nShall you tread deeper, or let the abyss consume you whole ?"
 

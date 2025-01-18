@@ -1412,3 +1412,31 @@ country_event = {
 		default_hide_option = yes
 	}
 }
+
+# FromFrom = ship
+country_event = {
+	id = bts.551
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		exists = fromfrom
+		fromfrom = {
+			has_ship_flag = bts_shroud_patron
+		}
+	}
+
+	immediate = {
+		random_country = {
+			limit = { 
+				has_country_flag = bts_shroud_patron_summoned_@fromfrom
+			}
+			remove_point_of_interest = bts_crisis_final_ritual_chain.1
+			enable_special_project = { 
+				name = BTS_OUTER_GODS_RITUAL_1
+				owner = this
+				location = this
+			}
+		}
+	}
+}

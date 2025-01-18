@@ -132,5 +132,6 @@ on_ship_disbanded = {
 on_ship_destroyed_victim = {
 	events = {
 		bts.5455 # Respawn Dreamlike Terror ship
+		bts.551 # Shroud patron destroyed
 	}
 }
