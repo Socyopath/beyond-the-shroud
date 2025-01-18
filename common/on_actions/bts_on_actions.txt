@@ -106,6 +106,7 @@ on_relic_activated = {
 on_custom_diplomacy = {
 	events = {
 		bts.540
+		bts.550
 	}
 }
 

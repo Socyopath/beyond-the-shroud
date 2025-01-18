@@ -49,7 +49,13 @@ country_event = {
                 value = 1
             }
             complete_crisis_objective = bts_crisis_obj_pact
-            country_event = { id = $EVENT_ID$0 days = 1 }
+			if = {
+				limit = { has_country_flag = bts_crisis_outer_gods }
+				country_event = { id = $EVENT_ID$02 days = 1 }
+			}
+			else = {
+				country_event = { id = $EVENT_ID$00 days = 1 }
+			}
             country_event = { id = $EVENT_END_ID$ days = @$PACT$_duration }
         }
 	}
@@ -61,7 +67,7 @@ country_event = {
 }
 
 country_event = {
-	id = $EVENT_ID$0
+	id = $EVENT_ID$00
 	title = bts_crisis_pact_check_cost_name
 	desc = bts_crisis_pact_check_cost_desc
 
@@ -84,7 +90,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			country_event = {
-				id = $EVENT_ID$0
+				id = $EVENT_ID$00
 				days = @$PACT$_cost_delay
 			}
 		}
@@ -117,14 +123,14 @@ country_event = {
 		name = bts_crisis_pact_no_pay_cost
 		custom_tooltip = bts_crisis_pact_no_pay_cost_tooltip
 		hidden_effect = {
-			country_event = { id = $EVENT_ID$00 days = 4 }
+			country_event = { id = $EVENT_ID$01 days = 4 }
 		}
 		default_hide_option = yes
 	}
 }
 
 country_event = {
-	id = $EVENT_ID$00
+	id = $EVENT_ID$01
 	title = $EVENT_ID$.name
 	desc = $EVENT_ID$.desc
 	is_triggered_only = yes
@@ -147,5 +153,67 @@ country_event = {
 				id = $EVENT_NO_COST_ID$
 			}
 		}
+	}
+}
+
+country_event = {
+	id = $EVENT_ID$02
+	title = bts_crisis_pact_check_cost_name
+	desc = bts_crisis_pact_check_cost_desc
+
+	is_triggered_only = yes
+
+	force_open = yes
+	diplomatic = yes
+	custom_gui = "bts_elder_gods_window"
+	custom_gui_option = "bts_elder_gods_option"
+	show_sound = voidspawn_death
+	picture_event_data = {
+		room = bts_crisis_elder_gods_extra_room
+	}
+	trigger = {
+		has_modifier = $PACT$
+	}
+
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = $EVENT_ID$02
+				days = @$PACT$_cost_delay
+			}
+		}
+	}
+
+	option = {
+		name = bts_crisis_pact_pay_cost
+		allow = {
+			custom_tooltip = {
+				fail_text = $PACT$_not_enough_thrall
+				bts_crisis_has_thrall = {
+					COST = value:bts_crisis_pact_cost_value|COST|@$PACT$_cost|
+				}
+			}
+		}
+		hidden_effect = {
+			custom_tooltip_with_params = {
+				description = "bts_crisis_pact_pay_cost_tooltip"
+				description_parameters = {
+					"PACT" = $PACT$
+				}
+			}
+			bts_effect_consume_thrall = {
+				COUNT = value:bts_crisis_pact_cost_value|COST|@$PACT$_cost|
+			}
+		}
+	}
+
+	option = {
+		name = bts_crisis_pact_no_pay_cost
+		custom_tooltip = bts_crisis_pact_no_pay_cost_tooltip
+		hidden_effect = {
+			country_event = { id = $EVENT_ID$01 days = 4 }
+		}
+		default_hide_option = yes
 	}
 }
