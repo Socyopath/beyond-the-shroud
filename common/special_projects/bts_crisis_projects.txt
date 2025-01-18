@@ -93,3 +93,129 @@ special_project = {
 	fail_trigger = {				# Trigger for failing the project and removing it from the situation log. Fires on_fail effect
 	}
 }
+
+
+special_project = {
+	key = "BTS_OUTER_GODS_RITUAL_1"
+	event_chain = "bts_crisis_final_ritual_chain"
+    icon = "gfx/interface/icons/situation_log/situation_log_extradimensional.dds"
+    picture = GFX_bts_outer_gods_patron
+    sound = yes
+
+    cost = 0
+	days_to_research = 10
+	tech_department = society_technology
+	location = no
+	event_scope = country_event
+
+    # Scopes:
+    #	THIS = project scope (matches setting in "event_scope" i.e. ship/planet/country)
+    #	FROM = location scope, if set (usually a planet)
+    #	PREV = country
+	on_success = {
+
+	}
+
+	abort_trigger = {
+		NOT = { has_country_flag = bts_outer_gods_ritual_step_1 }
+		# custom_tooltip = {
+		# 	has_country_flag = bts_outer_gods_ritual_step_1
+		# 	fail_text = bts_outer_gods_ritual_step_1_trigger
+		# }
+	}
+
+    # # Scopes: see on_success
+	# on_start = {
+	# }
+
+    # # Scopes: see on_success
+    # on_progress_25 = {
+	# }
+
+    # # Scopes: see on_success
+    # on_progress_50 = {
+	# }
+
+    # # Scopes: see on_success
+    # on_progress_75 = {
+	# }
+
+}
+
+special_project = {
+	key = "BTS_OUTER_GODS_RITUAL_2"
+	event_chain = "bts_crisis_final_ritual_chain"
+    icon = "gfx/interface/icons/situation_log/situation_log_extradimensional.dds"
+    picture = GFX_bts_outer_gods_sacrifice
+    sound = yes
+
+    cost = 0
+	days_to_research = 10
+	tech_department = society_technology
+	location = no
+	event_scope = country_event
+
+    # Scopes:
+    #	THIS = project scope (matches setting in "event_scope" i.e. ship/planet/country)
+    #	FROM = location scope, if set (usually a planet)
+    #	PREV = country
+	on_success = {
+
+	}
+
+    # # Scopes: see on_success
+	# on_start = {
+	# }
+
+    # # Scopes: see on_success
+    # on_progress_25 = {
+	# }
+
+    # # Scopes: see on_success
+    # on_progress_50 = {
+	# }
+
+    # # Scopes: see on_success
+    # on_progress_75 = {
+	# }
+
+}
+
+special_project = {
+	key = "BTS_OUTER_GODS_RITUAL_3"
+	event_chain = "bts_crisis_final_ritual_chain"
+    icon = "gfx/interface/icons/situation_log/situation_log_extradimensional.dds"
+    picture = GFX_bts_outer_gods_planet
+    sound = yes
+
+    cost = 0
+	days_to_research = 10
+	tech_department = society_technology
+	location = no
+	event_scope = country_event
+
+    # Scopes:
+    #	THIS = project scope (matches setting in "event_scope" i.e. ship/planet/country)
+    #	FROM = location scope, if set (usually a planet)
+    #	PREV = country
+	on_success = {
+
+	}
+
+    # # Scopes: see on_success
+	# on_start = {
+	# }
+
+    # # Scopes: see on_success
+    # on_progress_25 = {
+	# }
+
+    # # Scopes: see on_success
+    # on_progress_50 = {
+	# }
+
+    # # Scopes: see on_success
+    # on_progress_75 = {
+	# }
+
+}

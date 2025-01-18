@@ -164,4 +164,32 @@ spriteTypes = {
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes
 	}
+
+	spriteType = {
+		name = "GFX_bts_outer_gods_ritual"
+		texturefile = "gfx/event_pictures/bts_outer_gods_ritual.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_bts_outer_gods_patron"
+		texturefile = "gfx/event_pictures/bts_outer_gods_patron.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_bts_outer_gods_sacrifice"
+		texturefile = "gfx/event_pictures/bts_outer_gods_sacrifice.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_bts_outer_gods_planet"
+		texturefile = "gfx/event_pictures/bts_outer_gods_planet.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
 }

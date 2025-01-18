@@ -1243,3 +1243,172 @@ ship_event = {
 	}
 }
 
+# This = target country (player)
+# From = source country
+country_event = {
+	id = bts.550
+	title = "bts.550.name"
+	desc = bts.550.desc
+	is_triggered_only = yes
+
+	force_open = yes
+	diplomatic = yes
+	custom_gui = "bts_elder_gods_window"
+	custom_gui_option = "bts_elder_gods_option"
+	show_sound = voidspawn_death
+	picture_event_data = {
+		room = bts_crisis_elder_gods_extra_room
+	}
+
+	trigger = {
+		from = { is_country_type = bts_elder_gods }
+		NOT = { has_country_flag = bts_elder_gods_diplomacy_engaged } 
+		has_country_flag = bts_crisis_outer_gods
+	}
+
+	immediate = {
+		set_country_flag = bts_elder_gods_diplomacy_engaged
+	}
+
+	after = {
+		hidden_effect = {
+			remove_country_flag = bts_elder_gods_diplomacy_engaged
+		}
+	}
+
+	option = {
+		name =  bts.550.option.1
+		is_dialog_only = yes
+		response_text = bts.550.resp.1
+	}
+
+	option = {
+		name =  bts.550.option.2
+		is_dialog_only = yes
+		response_text = bts.550.resp.2
+	}
+
+	option = {
+		name =  bts.550.option.3
+		is_dialog_only = yes
+		response_text = bts.550.resp.3
+	}
+
+	option = {
+		name = bts.550.option.4
+		custom_tooltip = bts.550.option.4.desc
+		allow = {
+			NOT = {
+				has_modifier = bts_crisis_pact_cooldown
+			}
+			if = {
+				limit = { bts_can_use_councilor_ultimate_power = { COUNCILOR = bts_crisis_councilor_pact } }
+				custom_tooltip = {
+					fail_text = bts_crisis_pact_only_2
+					check_variable = {
+						which = bts_crisis_pact_count
+						value < 2
+					}
+				}
+			}
+			else = {
+				custom_tooltip = {
+					fail_text = bts_crisis_pact_only_1
+					check_variable = {
+						which = bts_crisis_pact_count
+						value < 1
+					}
+				}
+			}
+		}
+		add_modifier = {
+			modifier = bts_crisis_pact_cooldown
+			days = @bts_crisis_pact_cooldown
+			time_multiplier = value:scripted_modifier_mult|MODIFIER|bts_crisis_pact_cooldown_mult|
+		}
+		hidden_effect = {
+			random_list = {
+				1 = {
+					modifier = {
+						factor = 0
+						has_modifier = bts_crisis_pact_1
+					}
+					country_event = { id = bts.541 days = 1 }
+				}
+				1 = {
+					modifier = {
+						factor = 0
+						has_modifier = bts_crisis_pact_2
+					}
+					country_event = { id = bts.542 days = 1 }
+				}
+				1 = {
+					modifier = {
+						factor = 0
+						has_modifier = bts_crisis_pact_3
+					}
+					country_event = { id = bts.543 days = 1 }
+				}
+				1 = {
+					modifier = {
+						factor = 0
+						has_modifier = bts_crisis_pact_4
+					}
+					country_event = { id = bts.544 days = 1 }
+				}
+				1 = {
+					modifier = {
+						factor = 0
+						has_modifier = bts_crisis_pact_5
+					}
+					country_event = { id = bts.545 days = 1 }
+				}
+			}
+		}
+	}
+
+	option = {
+		trigger = {
+			has_modifier = bts_crisis_pact_2
+		}
+		name = bts.5422.menu.option.title
+		custom_tooltip = bts.5422.menu.option.desc
+		hidden_effect = {
+			country_event = {
+				id = bts.5422
+			}
+		}
+	}
+
+	option = {
+		trigger = {
+			NOT = { has_event_chain = bts_crisis_final_ritual_chain }
+		}
+		name = bts.550.option.5
+
+		begin_event_chain = {
+			event_chain = bts_crisis_final_ritual_chain
+			target = this
+		}
+		random_planet_within_border = {
+			limit = { is_planet_class = pc_bts_shroud_rift }
+			root = {
+				create_point_of_interest = { 
+					id = bts_crisis_final_ritual_chain.1
+					name = BTS_OUTER_GODS_RITUAL_1 
+					desc = BTS_OUTER_GODS_RITUAL_1_POI_DESC
+					event_chain = bts_crisis_final_ritual_chain
+					location = prev
+				}
+			}
+		}
+		hidden_effect = {
+			set_country_flag = bts_crisis_can_summon_patron
+		}
+	}
+
+	option = {
+		name = EXIT
+		default_hide_option = yes
+	}
+}

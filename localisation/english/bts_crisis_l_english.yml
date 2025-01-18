@@ -401,3 +401,34 @@ bts_civic_council_operation_locked: "$bts_civic_council_ritual_locked$"
 bts_civic_council_operation_locked_desc: "$bts_civic_council_ritual_locked_desc$"
 bts_civic_council_pact_locked: "$bts_civic_council_ritual_locked$"
 bts_civic_council_pact_locked_desc: "$bts_civic_council_ritual_locked_desc$"
+
+# Outer Gods Ritual event chain
+bts_crisis_final_ritual_chain_title: "The Last Ritual"
+bts_crisis_final_ritual_chain_desc: ""
+BTS_OUTER_GODS_RITUAL_1: "Cardinal Sin"
+BTS_OUTER_GODS_RITUAL_1_POI_DESC: "Kill your patron"
+BTS_OUTER_GODS_RITUAL_1_DESC: ""
+BTS_OUTER_GODS_RITUAL_2: "Final Offering"
+BTS_OUTER_GODS_RITUAL_2_DESC: ""
+BTS_OUTER_GODS_RITUAL_3: "Great Gathering"
+BTS_OUTER_GODS_RITUAL_3_DESC: ""
+
+bts_outer_gods_ritual_steps: "Ritual Steps"
+
+
+bts.550.name: "Deep Shroud"
+bts.550.desc: "The veil is thin, and the echoes of the §YPrimordial Chaos§! reach even you.\n\nDo you hear it, mortal ? The pulse of §YZhotharak§! stirs, and I am its whisper.\n\nShall you tread deeper, or let the abyss consume you whole ?"
+
+bts.550.option.1: "Who are you ?"
+bts.550.resp.1: "I am §YShaar'thal, The Whispering Chaos§!, the voice of the infinite void and the embodied will of §YZhotharak, The Primordial Chaos§!.\n\nIn my presence, truth and illusion intertwine, and the path you take will annihilate your logic. Shall we unravel the threads of your reality together ?"
+
+bts.550.option.2: "Who is §YZhotharak§! ?"
+bts.550.resp.2: "An §YOuter God§!, the origin of existence itself. §YZhotharak§! resides beyond time and space, at the center of all creation in a place called §YAbyssal Shroud§! or §YBarathrum§!.\n\nIt's §Ydreams§! weave the fabric of existence, shaping the §YUniversal Timeline§! and the cycles it contains. The cosmos persists only because when §YZhotharak§! sleeps, its §Yunconscious will§! holds the delicate threads of reality together."
+
+bts.550.option.3: "What happens if it §Ywakes up§! ?"
+bts.550.resp.3: "When §YZhotharak§! awakens, the §RUnravelling§! begins. The Deep Shroud stretches to infinity, tearing apart time, space and everything that exists.\n\nThe §YUniversal Timeline§! collapses into a singularity as §YZhotharak§! momentarily awakens, its incomprehensible form obliterating all sense of logic and order. Then, as abruptly as it had awakened, §YZhotharak§! sinks back into his eternal sleep. From its chaotic essence, the singularity bursts forth again, and a new §YUniversal Cycle§! begins.\n\nReality resets itself, shaped by the echoes of its past iterations, but still subject to §YZhotharak's dreams§! and the inevitability of its next awakening."
+
+bts.550.option.4: "§REstablish Eldritch Pact§!"
+bts.550.option.4.desc: "Attempt to contact a Great Old One."
+
+bts.550.option.5: "§RStart the Awakening Ritual§!"

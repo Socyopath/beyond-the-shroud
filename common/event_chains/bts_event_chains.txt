@@ -22,3 +22,13 @@ bts_instrument_covenant_chain = {
 	picture = GFX_evt_shroudwalker_enclave
 	icon = "gfx/interface/icons/situation_log/situation_log_extradimensional.dds"
 }
+
+bts_crisis_final_ritual_chain = {
+	picture = GFX_bts_outer_gods_ritual
+	icon = "gfx/interface/icons/situation_log/situation_log_extradimensional.dds"
+	counter = {
+		bts_outer_gods_ritual_steps = {
+			max = 3
+		}
+	}
+}
