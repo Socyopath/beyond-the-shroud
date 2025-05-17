@@ -31,42 +31,6 @@ bts_has_labyrinth_of_abstraction_level = {
 	}
 }
 
-bts_can_use_power_summon_1 = {
-    OR = {
-        has_megastructure = bts_mega_aetherophasic_collapser_2
-        bts_can_use_power_summon_2 = yes
-    }
-}
-
-bts_can_use_power_summon_2 = {
-    OR = {
-        has_megastructure = bts_mega_aetherophasic_collapser_3
-        bts_can_use_power_summon_3 = yes
-    }
-}
-
-bts_can_use_power_summon_3 = {
-    OR = {
-        has_megastructure = bts_mega_aetherophasic_collapser_4
-        bts_can_use_power_summon_4 = yes
-    }
-}
-
-bts_can_use_power_summon_4 = {
-    has_megastructure = bts_mega_aetherophasic_collapser_5
-}
-
-bts_is_aetherophasic_collapser = {
-    OR = {
-        is_megastructure_type = bts_mega_aetherophasic_collapser_0
-        is_megastructure_type = bts_mega_aetherophasic_collapser_1
-        is_megastructure_type = bts_mega_aetherophasic_collapser_2
-        is_megastructure_type = bts_mega_aetherophasic_collapser_3
-        is_megastructure_type = bts_mega_aetherophasic_collapser_4
-        is_megastructure_type = bts_mega_aetherophasic_collapser_5
-    }
-}
-
 bts_has_zroni_shield = {
     OR = {
         has_component = bts_small_zroni_shield

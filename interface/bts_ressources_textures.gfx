@@ -249,10 +249,6 @@ spriteTypes = {
 
 	# Megastructure
 	spriteType = {
-		name = "GFX_megastructure_bts_aetherophasic_collapser"
-		texturefile = "gfx/interface/planetview/aetherophasic_collapser.dds"
-	}
-	spriteType = {
 		name = "GFX_type_pc_bts_labyrinth_of_abstraction"
 		texturefile = "gfx/interface/icons/planets/bts_labyrinth_of_abstraction.dds"
 	}

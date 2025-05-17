@@ -26,38 +26,6 @@ bts_update_ship_shield_reduction_zroni_shield = {
 	}
 }
 
-bts_summon_power = {
-	random_owned_megastructure = {
-		limit = {
-			bts_is_aetherophasic_collapser = yes
-		}
-		save_event_target_as = bts_aetherophasic_collapser_summon
-	}
-	create_fleet = {
-		name = $FLEET_NAME$
-		settings = {
-			spawn_debris = no
-		}
-		effect = {
-			set_owner = root
-			create_ship = {
-				name = $SHIP_NAME$
-				design = $SHIP_DESIGN$
-			}
-			if = {
-				limit = { root = { has_technology = bts_tech_zroni_shield } }
-				last_created_ship = {
-					set_ship_design = {
-						design = $SHIP_DESIGN_ZRONI$
-					}
-					bts_update_ship_shield_reduction_zroni_shield = { SYSTEM = event_target:bts_aetherophasic_collapser_summon.solar_system }
-				}
-			}
-			set_location = event_target:bts_aetherophasic_collapser_summon
-		}
-	}
-}
-
 bts_arcology_swap_planet = {
 	[[CITY]
 	export_trigger_value_to_variable = {

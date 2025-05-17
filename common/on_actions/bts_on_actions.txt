@@ -15,8 +15,9 @@ on_monthly_pulse_country = {
 		bts.220			# Covenant Rank 2 check
 		bts.230			# Covenant Rank 3 check
 		bts.240			# Covenant Rank 4 check
-		bts.300 		# Megastructure Info event
 		bts.1000		# Labyrinth Check
+		bts.1001		# Zro Infusion Check
+		bts.1002		# Shroud Destabilizer Tech Event
     }
 }
 
