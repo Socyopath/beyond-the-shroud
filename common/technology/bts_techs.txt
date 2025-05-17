@@ -182,8 +182,6 @@ bts_tech_psychic_coalition = {
 	area = society
 	category = { psionics }
 	cost = @bts_tech_psychic_coalition_cost
-	cost_per_level = @repeatableTechLevelCost
-	levels = @bts_tech_psychic_coalition_levels
 	tier = 4
 	is_rare = yes
 	is_reverse_engineerable = no
@@ -192,11 +190,10 @@ bts_tech_psychic_coalition = {
 	prerequisites = { "tech_telepathy" }
 	
 	modifier = {
-		planet_telepaths_produces_mult = @bts_tech_psychic_coalition_telepaths_produces_mult
+		description = bts_tech_psychic_coalition_effect
 	}
 
 	weight_modifier = {
-		factor = @repatableTechFactor
 		modifier = {
 			factor = 0
 			NOT = {
@@ -257,8 +254,6 @@ bts_tech_shrouded_shields = {
 	area = society
 	category = { psionics }
 	cost = @bts_tech_shrouded_shields_cost
-	cost_per_level = @repeatableTechLevelCost
-	levels = @bts_tech_shrouded_shields_levels
 	tier = 5
 	is_rare = yes
 	is_reverse_engineerable = no
@@ -267,12 +262,11 @@ bts_tech_shrouded_shields = {
 	prerequisites = { "tech_psionic_shield" }
 	
 	modifier = {
-		ship_shield_hardening_add = @bts_tech_shrouded_shields_hardening
+		ship_shield_regen_add_perc = @bts_tech_shrouded_shields_regen_perc
 		ship_shield_mult = @bts_tech_shrouded_shields_hit_point
 	}
 
 	weight_modifier = {
-		factor = @repatableTechFactor
 		modifier = {
 			factor = @bts_tech_zro_crystal_factor
 			has_relic = r_zro_crystal
@@ -325,7 +319,7 @@ bts_tech_zro_infusion = {
 	is_rare = yes
 	is_dangerous = yes
 	is_reverse_engineerable = no
-	weight = @tier5weight1
+	weight = 0
 
 	prerequisites = { "tech_mine_zro" }
 
@@ -342,24 +336,7 @@ bts_tech_zro_infusion = {
 	}
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_tech_zro_infusion_favor_cost }
-			}
-		}
-		modifier = {
-			factor = @bts_tech_zro_crystal_factor
-			has_relic = r_zro_crystal
-		}
-		inline_script = {
-			script = technologies/rare_technologies_weight_modifiers
-			TECHNOLOGY = bts_tech_zro_infusion
-		}
-		modifier = {
-			factor = 2
-			has_tier1or2or3_in_council = { TRAIT = leader_trait_expertise_psionics }
-		}
+		factor = 0
 	}
 }
 
@@ -389,29 +366,11 @@ bts_tech_shroud_destabilizer = {
 	is_rare = yes
 	is_dangerous = yes
 	is_reverse_engineerable = no
-	weight = @tier5weight3
+	weight = 0
 
 	prerequisites = { "tech_psionic_theory" }
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_tech_shroud_destabilizer_favor_cost }
-			}
-		}
-		modifier = {
-			factor = @bts_tech_zro_crystal_factor
-			has_relic = r_zro_crystal
-		}
-		inline_script = {
-			script = technologies/rare_technologies_weight_modifiers
-			TECHNOLOGY = bts_tech_shroud_destabilizer
-		}
-		modifier = {
-			factor = 2
-			has_tier1or2or3_in_council = { TRAIT = leader_trait_expertise_psionics }
-		}
+		factor = 0
 	}
 }
-

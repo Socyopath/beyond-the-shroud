@@ -19,8 +19,7 @@
 @bts_tech_mind_evocation_2_encryption_add = 2
 
 @bts_tech_psychic_coalition_cost = 20000
-@bts_tech_psychic_coalition_levels = 10
-@bts_tech_psychic_coalition_telepaths_produces_mult = 0.25
+@bts_tech_psychic_coalition_planet_jobs_produces_mult = 0.05
 
 @bts_tech_prescience_cost = 48000
 @bts_tech_prescience_ftl_cooldown = -1.00
@@ -28,9 +27,8 @@
 @bts_tech_prescience_mia_time = -0.75
 
 @bts_tech_shrouded_shields_cost = 48000
-@bts_tech_shrouded_shields_levels = 10
-@bts_tech_shrouded_shields_hardening = 0.10
-@bts_tech_shrouded_shields_hit_point = 0.05
+@bts_tech_shrouded_shields_regen_perc = 0.15
+@bts_tech_shrouded_shields_hit_point = 0.25
 
 @bts_small_zroni_shield_point = 500
 @bts_small_zroni_shield_regen = 5
