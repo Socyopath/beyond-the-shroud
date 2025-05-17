@@ -13,6 +13,9 @@ agenda_psionic_supremacy = {
 			has_synthetic_ascension = yes
 			is_natural_design_empire = yes
 			is_individual_machine = yes
+			has_purity_ascension = yes
+			has_cloning_ascension = yes
+			has_mutation_ascension = yes
 		}
 		NOR = {
 			has_country_flag = composer_covenant_confirmed
@@ -23,7 +26,7 @@ agenda_psionic_supremacy = {
 		}
 	}
 	modifier = {
-		planet_psionic_jobs_produces_mult = 0.05
+		pop_bonus_workforce_mult = 0.05
 		category_psionics_research_speed_mult = 0.1
 	}
 	finish_modifier = agenda_psionic_supremacy_finish_no_covenant
@@ -39,7 +42,7 @@ bts_agenda_psionic_supremacy_covenant = {
 		has_country_flag = bts_covenant_confirmed
 	}
 	modifier = {
-		planet_psionic_jobs_produces_mult = 0.05
+		pop_bonus_workforce_mult = 0.05
 		category_psionics_research_speed_mult = 0.1
 	}
 	finish_modifier = agenda_psionic_supremacy_finish_bts_covenant

@@ -106,13 +106,19 @@ country_event = {
 				}
 				modifier = {
 					factor = 1.6
-					num_buildings = {
-						type = building_clinic
-						value = 0
-					}
-					num_buildings = {
-						type = building_hospital
-						value = 0
+					OR = {
+						num_buildings = {
+							type = building_medical_1
+							value = 0
+						}
+						num_buildings = {
+							type = building_medical_2
+							value = 0
+						}
+						num_buildings = {
+							type = building_medical_3
+							value = 0
+						}
 					}
 				}
 				modifier = {
@@ -496,17 +502,17 @@ country_event = {
 			random_owned_planet = { #OM NOM NOM NOM
 				limit = {
 					is_capital = no
-					any_owned_pop = {
+					any_owned_pop_group = {
 						is_sapient = yes
-						is_robot_pop = no
+						is_robot_pop_group = no
 					}
 				}
-				random_owned_pop = {
+				random_owned_pop_group = {
 					limit = {
 						is_sapient = yes
-						is_robot_pop = no
+						is_robot_pop_group = no
 					}
-					kill_pop = yes
+					kill_single_pop = yes
 				}
 			}
 			set_variable = {

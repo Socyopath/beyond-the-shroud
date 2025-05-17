@@ -41,6 +41,15 @@ ap_mind_over_matter = {
 			fail_text = "requires_free_tradition_tree"
 			num_tradition_categories < @max_tradition_trees
 		}
+		if = {
+			limit = {
+				has_origin = origin_unplugged
+			}
+			custom_tooltip = {
+				fail_text = "requires_unplugged_decyberized"
+				has_country_flag = is_decyberized
+			}
+		}
 	}
 
 	potential = {
@@ -51,13 +60,20 @@ ap_mind_over_matter = {
 			has_origin = origin_shroudwalker_apprentice
 			has_origin = origin_cybernetic_creed
 			has_origin = origin_synthetic_fertility
+			has_origin = origin_evolutionary_predators
+			has_valid_civic = civic_augmentation_bazaars
 		}
 		is_gestalt = no
 		is_mechanical_empire = no
-		is_cyborg_empire = no
+		OR = {
+			is_cyborg_empire = no
+			AND = {
+				has_origin = origin_unplugged
+				NOT = { has_country_flag = is_cyberized }
+			}
+		}
 		is_natural_design_empire = no
 		is_individual_machine = no
-		NOT = { has_valid_civic = civic_augmentation_bazaars }
 	}
 
 	ai_weight = {

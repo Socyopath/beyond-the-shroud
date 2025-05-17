@@ -13,7 +13,6 @@ bts_covenant_modifier_1 = {
 }
 
 agenda_psionic_supremacy_finish_bts_covenant = {
-	planet_psionic_jobs_produces_mult = 0.2
 	category_psionics_research_speed_mult = 0.4
 	category_psionics_draw_chance_mult = @bts_agenda_psionic_supremacy_covenant_psionic_draw
 }
