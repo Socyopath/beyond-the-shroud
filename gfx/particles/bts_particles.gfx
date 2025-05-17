@@ -30,13 +30,6 @@ objectTypes = {
 	}
 
 	pdxparticle = {
-		name = "bts_shroud_rift_particle"
-		type = "bts_shroud_rift_file"
-		
-		scale = 1.0
-	}
-
-	pdxparticle = {
 		name = "bts_assimilate_nano_effect_psionic"
 		type = "bts_assimilate_nano_effect_psionic_file"
 		
