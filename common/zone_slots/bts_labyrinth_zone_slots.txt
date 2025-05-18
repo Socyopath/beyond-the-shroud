@@ -1,0 +1,71 @@
+slot_bts_labyrinth_main = {
+	start = zone_bts_labyrinth_main
+
+	include = {
+		zone_bts_labyrinth_main
+	}
+
+	unlock = { # planet scope
+		always = yes
+	}
+}
+
+slot_bts_labyrinth_mastery = {
+	start = zone_bts_labyrinth_mastery
+
+	include = {
+		zone_bts_labyrinth_mastery
+	}
+
+	unlock = { # planet scope
+		always = no
+	}
+}
+
+slot_bts_labyrinth_summon = {
+	start = zone_bts_labyrinth_summon
+
+	include = {
+		zone_bts_labyrinth_summon
+	}
+
+	unlock = { # planet scope
+		always = no
+	}
+}
+
+slot_bts_labyrinth_observer = {
+	start = zone_bts_labyrinth_observer
+
+	include = {
+		zone_bts_labyrinth_observer
+	}
+
+	unlock = { # planet scope
+		always = no
+	}
+}
+
+slot_bts_labyrinth_control = {
+	start = zone_bts_labyrinth_control
+
+	include = {
+		zone_bts_labyrinth_control
+	}
+
+	unlock = { # planet scope
+		always = no
+	}
+}
+
+slot_bts_labyrinth_ressources = {
+	start = zone_bts_labyrinth_ressources
+
+	include = {
+		zone_bts_labyrinth_ressources
+	}
+
+	unlock = { # planet scope
+		always = no
+	}
+}

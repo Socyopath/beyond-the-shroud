@@ -400,7 +400,20 @@ covenant_favor_year_estimation_delta = {
     add = $FAVOR$
     subtract = value:current_covenant_total_favor
 }
-# Scope Country / Planet
+# Scope Planet
+bts_get_building_level_mult = {
+    set = value:num_active_buildings|BUILDING|$BUILDING$|
+    mult = $MULT$
+}
+
+bts_get_total_building_level_mult = {
+    base = 0
+    add = value:bts_get_building_level_mult|BUILDING|$BUILDING$_1|MULT|1|
+    add = value:bts_get_building_level_mult|BUILDING|$BUILDING$_2|MULT|2|
+    add = value:bts_get_building_level_mult|BUILDING|$BUILDING$_3|MULT|3|
+    add = value:bts_get_building_level_mult|BUILDING|$BUILDING$_4|MULT|4|
+}
+
 bts_district_third_eye_observatory_count = {
     base = 0
     complex_trigger_modifier = {

@@ -1,14 +1,35 @@
-bts_district_third_eye_observatory = {
+bts_district_labyrinth_main = {
 	base_buildtime = @bts_labyrinth_of_abstraction_district_time
 	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
+	default_starting_district = yes
 
-	show_on_uncolonized = {
-		uses_district_set = bts_labyrinth_of_abstraction_set
+	zone_slots = {
+		slot_bts_labyrinth_main
+		slot_bts_labyrinth_mastery
+		slot_bts_labyrinth_summon
 	}
 
     potential = {
-		is_planet_class = pc_bts_labyrinth_of_abstraction
-		uses_district_set = bts_labyrinth_of_abstraction_set
+		uses_district_set = bts_labyrinth_of_abstraction_district_set
+		exists = owner
+	}
+
+	planet_modifier = {
+		planet_housing_add = 1000
+	}
+}
+
+bts_district_third_eye_observatory = {
+	base_buildtime = @bts_labyrinth_of_abstraction_district_time
+	is_capped_by_modifier = yes
+
+	zone_slots = {
+		slot_bts_labyrinth_observer
+	}
+
+    potential = {
+		uses_district_set = bts_labyrinth_of_abstraction_district_set
 		exists = owner
 	}
 
@@ -24,26 +45,21 @@ bts_district_third_eye_observatory = {
 		}
 	}
 
-    planet_modifier = {
-		pc_bts_labyrinth_of_abstraction_max_buildings_add = 1
-    }
-
-    triggered_desc = {
-		text = bts_district_third_eye_observatory_effects
-	}
+    # triggered_desc = {
+	# 	text = bts_district_third_eye_observatory_effects
+	# }
 }
 
 bts_district_influence_control_complex = {
 	base_buildtime = @bts_labyrinth_of_abstraction_district_time
-	is_capped_by_modifier = no
-
-	show_on_uncolonized = {
-		uses_district_set = bts_labyrinth_of_abstraction_set
-	}
+	is_capped_by_modifier = yes
 	
+	zone_slots = {
+		slot_bts_labyrinth_control
+	}
+
     potential = {
-		is_planet_class = pc_bts_labyrinth_of_abstraction
-		uses_district_set = bts_labyrinth_of_abstraction_set
+		uses_district_set = bts_labyrinth_of_abstraction_district_set
 		exists = owner
 	}
 
@@ -58,12 +74,38 @@ bts_district_influence_control_complex = {
 			sr_zro = @bts_labyrinth_of_abstraction_district_upkeep_sr
 		}
 	}
-
-    planet_modifier = {
-		pc_bts_labyrinth_of_abstraction_max_buildings_add = 1
-    }
     
-    triggered_desc = {
-		text = bts_district_influence_control_complex_effects
+    # triggered_desc = {
+	# 	text = bts_district_influence_control_complex_effects
+	# }
+}
+
+bts_district_ressources = {
+	base_buildtime = @bts_labyrinth_of_abstraction_district_time
+	is_capped_by_modifier = yes
+	
+	zone_slots = {
+		slot_bts_labyrinth_ressources
 	}
+
+    potential = {
+		uses_district_set = bts_labyrinth_of_abstraction_district_set
+		exists = owner
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @bts_labyrinth_of_abstraction_district_cost
+			sr_zro = @bts_labyrinth_of_abstraction_district_cost_sr
+		}
+		upkeep = {
+			energy = @bts_labyrinth_of_abstraction_district_upkeep_energy
+			sr_zro = @bts_labyrinth_of_abstraction_district_upkeep_sr
+		}
+	}
+    
+    # triggered_desc = {
+	# 	text = bts_district_influence_control_complex_effects
+	# }
 }

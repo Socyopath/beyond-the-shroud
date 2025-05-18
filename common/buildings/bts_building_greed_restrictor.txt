@@ -2,7 +2,7 @@ bts_building_greed_restrictor = {
 	base_buildtime = @bts_labyrinth_of_abstraction_building_time
 	category = government
 	base_cap_amount = 1
-	building_sets = { bts_labyrinth_of_abstraction_set }
+	building_sets = { bts_labyrinth_of_abstraction_main_building_set }
 	
     potential = {
 		is_planet_class = pc_bts_labyrinth_of_abstraction

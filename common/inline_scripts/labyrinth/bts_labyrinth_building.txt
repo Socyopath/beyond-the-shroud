@@ -1,0 +1,114 @@
+$NAME$_1 = {
+	base_buildtime = $BUILD_TIME$
+	category = government
+	building_sets = { $BUILDING_SET$ }
+	
+    potential = {
+		is_planet_class = pc_bts_labyrinth_of_abstraction
+	}
+
+	upgrades = {
+		$NAME$_2
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @bts_labyrinth_of_abstraction_building_cost
+			sr_zro = @bts_labyrinth_of_abstraction_building_cost_sr
+		}
+		upkeep = {
+			energy = @bts_labyrinth_of_abstraction_building_upkeep_energy
+			sr_zro = @bts_labyrinth_of_abstraction_building_upkeep_sr
+		}
+	}
+}
+
+$NAME$_2 = {
+	base_buildtime = $BUILD_TIME$
+	category = government
+	building_sets = { $BUILDING_SET$ }
+	can_build = no
+
+    potential = {
+		is_planet_class = pc_bts_labyrinth_of_abstraction
+	}
+
+	convert_to = {
+		$NAME$_1
+	}
+
+	upgrades = {
+		$NAME$_3
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @bts_labyrinth_of_abstraction_building_cost
+			sr_zro = @bts_labyrinth_of_abstraction_building_cost_sr
+		}
+		upkeep = {
+			energy = @bts_labyrinth_of_abstraction_building_upkeep_energy
+			sr_zro = @bts_labyrinth_of_abstraction_building_upkeep_sr
+		}
+	}
+}
+
+$NAME$_3 = {
+	base_buildtime = $BUILD_TIME$
+	category = government
+	building_sets = { $BUILDING_SET$ }
+	can_build = no
+
+    potential = {
+		is_planet_class = pc_bts_labyrinth_of_abstraction
+	}
+
+	convert_to = {
+		$NAME$_2
+	}
+
+	upgrades = {
+		$NAME$_4
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @bts_labyrinth_of_abstraction_building_cost
+			sr_zro = @bts_labyrinth_of_abstraction_building_cost_sr
+		}
+		upkeep = {
+			energy = @bts_labyrinth_of_abstraction_building_upkeep_energy
+			sr_zro = @bts_labyrinth_of_abstraction_building_upkeep_sr
+		}
+	}
+}
+
+$NAME$_4 = {
+	base_buildtime = $BUILD_TIME$
+	category = government
+	building_sets = { $BUILDING_SET$ }
+	can_build = no
+
+    potential = {
+		is_planet_class = pc_bts_labyrinth_of_abstraction
+	}
+
+	convert_to = {
+		$NAME$_3
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @bts_labyrinth_of_abstraction_building_cost
+			sr_zro = @bts_labyrinth_of_abstraction_building_cost_sr
+		}
+		upkeep = {
+			energy = @bts_labyrinth_of_abstraction_building_upkeep_energy
+			sr_zro = @bts_labyrinth_of_abstraction_building_upkeep_sr
+		}
+	}
+}

@@ -1,0 +1,20 @@
+inline_script = {
+    script = labyrinth/bts_labyrinth_building
+    NAME = bts_building_labyrinth_mindshapers_trust_cap
+    BUILD_TIME = @bts_labyrinth_of_abstraction_building_time
+    BUILDING_SET = bts_labyrinth_of_abstraction_mindshapers_set
+}
+
+inline_script = {
+    script = labyrinth/bts_labyrinth_building
+    NAME = bts_building_labyrinth_mindshapers_trust_growth
+    BUILD_TIME = @bts_labyrinth_of_abstraction_building_time
+    BUILDING_SET = bts_labyrinth_of_abstraction_mindshapers_set
+}
+
+inline_script = {
+    script = labyrinth/bts_labyrinth_building
+    NAME = bts_building_labyrinth_mindshapers_influence
+    BUILD_TIME = @bts_labyrinth_of_abstraction_building_time
+    BUILDING_SET = bts_labyrinth_of_abstraction_mindshapers_set
+}

@@ -104,8 +104,7 @@ bts_labyrinth_of_abstraction_megastructure = {
                 from = {
 					room_name_override = ""
 				}
-
-                remove_all_buildings = yes
+       
                 add_building = bts_labyrinth_of_abstraction_core_1
                 
                 owner = {

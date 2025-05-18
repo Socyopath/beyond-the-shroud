@@ -1,0 +1,20 @@
+inline_script = {
+    script = labyrinth/bts_labyrinth_building
+    NAME = bts_building_labyrinth_veilwatchers_intel
+    BUILD_TIME = @bts_labyrinth_of_abstraction_building_time
+    BUILDING_SET = bts_labyrinth_of_abstraction_veilwatchers_set
+}
+
+inline_script = {
+    script = labyrinth/bts_labyrinth_building
+    NAME = bts_building_labyrinth_veilwatchers_sensor
+    BUILD_TIME = @bts_labyrinth_of_abstraction_building_time
+    BUILDING_SET = bts_labyrinth_of_abstraction_veilwatchers_set
+}
+
+inline_script = {
+    script = labyrinth/bts_labyrinth_building
+    NAME = bts_building_labyrinth_veilwatchers_hyperlane
+    BUILD_TIME = @bts_labyrinth_of_abstraction_building_time
+    BUILDING_SET = bts_labyrinth_of_abstraction_veilwatchers_set
+}

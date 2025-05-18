@@ -1,0 +1,95 @@
+zone_bts_labyrinth_main = {
+	icon = GFX_diplomatic_weight_large
+	base_buildtime = @zone_buildtime
+
+	max_buildings = 6
+
+    included_building_sets = {
+        bts_labyrinth_of_abstraction_main_building_set                            
+    }
+}
+
+zone_bts_labyrinth_mastery = {
+	icon = GFX_diplomatic_weight_large
+	base_buildtime = @zone_buildtime
+
+	max_buildings = 3
+
+    included_building_sets = {
+                                    
+    }
+
+    planet_modifier = {
+		zone_building_slots_add = 3
+	}
+}
+
+zone_bts_labyrinth_summon = {
+	icon = GFX_diplomatic_weight_large
+	base_buildtime = @zone_buildtime
+
+	max_buildings = 3
+
+    included_building_sets = {
+                                    
+    }
+
+    planet_modifier = {
+		zone_building_slots_add = 3
+	}
+}
+
+zone_bts_labyrinth_observer = {
+	icon = GFX_diplomatic_weight_large
+	base_buildtime = @zone_buildtime
+
+	max_buildings = 3
+
+    included_building_sets = {
+        bts_labyrinth_of_abstraction_veilwatchers_set                            
+    }
+
+    planet_modifier = {
+		zone_building_slots_add = 3
+	}
+
+    triggered_district_planet_modifier = {
+        job_bts_veilwatcher_add = 100
+    }
+
+}
+
+zone_bts_labyrinth_control = {
+	icon = GFX_diplomatic_weight_large
+	base_buildtime = @zone_buildtime
+
+	max_buildings = 3
+
+    included_building_sets = {
+        bts_labyrinth_of_abstraction_mindshapers_set                            
+    }
+
+    planet_modifier = {
+		zone_building_slots_add = 3
+	}
+
+    triggered_district_planet_modifier = {
+        job_bts_mindshaper_add = 100
+    }
+    
+}
+
+zone_bts_labyrinth_ressources = {
+	icon = GFX_diplomatic_weight_large
+	base_buildtime = @zone_buildtime
+
+	max_buildings = 3
+
+    included_building_sets = {
+        bts_labyrinth_of_abstraction_ressources_set                            
+    }
+
+    planet_modifier = {
+		zone_building_slots_add = 3
+	}
+}
