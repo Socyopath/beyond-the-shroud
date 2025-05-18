@@ -1,5 +1,5 @@
 planet_bts_conceptual_architect = {
-	parent = planet_administrators
+	parent = planet_jobs
 	generate_add_modifiers = {
 		produces
         upkeep
@@ -8,5 +8,5 @@ planet_bts_conceptual_architect = {
 		produces
         upkeep
 	}
-	modifier_category = pop
+	modifier_category = pop_job
 }

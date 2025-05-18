@@ -3,6 +3,11 @@ bts_building_covenant_sanctum = {
 
 	category = government
 
+	building_sets = {
+		government
+		unity
+	}
+
 	empire_limit = {
 		base = 1
 	}
@@ -28,7 +33,7 @@ bts_building_covenant_sanctum = {
 	}
 
 	planet_modifier = {
-		job_telepath_add = @bts_covenant_sanctum_telepath_jobs
+		job_enforcer_add = @bts_covenant_sanctum_telepath_jobs
 	}
 
 	country_modifier = {
