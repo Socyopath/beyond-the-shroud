@@ -1,8 +1,0 @@
-inline_script = {
-    script = labyrinth/bts_labyrinth_building_country_modifier_1
-    NAME = bts_building_divergence_regulator
-    BUILD_TIME = @bts_labyrinth_of_abstraction_building_time
-    BUILDING_SET = bts_labyrinth_of_abstraction_main_building_set
-    MODIFIER_1 = planet_crime_mult
-    VALUE_1 = @bts_building_divergence_regulator_crime
-}

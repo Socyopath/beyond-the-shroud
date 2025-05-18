@@ -1,0 +1,83 @@
+# Arcanic Council
+inline_script = {
+    script = labyrinth/bts_labyrinth_building_country_modifier_1
+    NAME = bts_building_arcanic_council
+    BUILD_TIME = @bts_labyrinth_of_abstraction_building_time
+    BUILDING_SET = bts_labyrinth_of_abstraction_main_building_set
+    MODIFIER_1 = all_technology_research_speed
+    VALUE_1 = @bts_building_arcanic_council_research_speed
+}
+
+# Dimensional Converger
+inline_script = {
+    script = labyrinth/bts_labyrinth_building_country_modifier_1
+    NAME = bts_building_dimensional_converger
+    BUILD_TIME = @bts_labyrinth_of_abstraction_building_time
+    BUILDING_SET = bts_labyrinth_of_abstraction_main_building_set
+    MODIFIER_1 = shroud_delve_cooldown
+    VALUE_1 = @bts_building_dimensional_converger_shroud_cooldown
+}
+
+# Divergence Regulator
+inline_script = {
+    script = labyrinth/bts_labyrinth_building_country_modifier_1
+    NAME = bts_building_divergence_regulator
+    BUILD_TIME = @bts_labyrinth_of_abstraction_building_time
+    BUILDING_SET = bts_labyrinth_of_abstraction_main_building_set
+    MODIFIER_1 = planet_crime_mult
+    VALUE_1 = @bts_building_divergence_regulator_crime
+}
+
+# Eternal Archive
+inline_script = {
+    script = labyrinth/bts_labyrinth_building_country_modifier_2
+    NAME = bts_building_eternal_archive
+    BUILD_TIME = @bts_labyrinth_of_abstraction_building_time
+    BUILDING_SET = bts_labyrinth_of_abstraction_main_building_set
+    MODIFIER_1 = leader_initial_skill
+    VALUE_1 = @bts_building_eternal_archive_leader_skill
+	MODIFIER_2 = leader_lifespan_add
+    VALUE_2 = @bts_building_eternal_archive_leader_lifespan
+}
+
+# Ethiclal Manipulator
+inline_script = {
+    script = labyrinth/bts_labyrinth_building_country_modifier_2
+    NAME = bts_building_ethical_manipulator
+    BUILD_TIME = @bts_labyrinth_of_abstraction_building_time
+    BUILDING_SET = bts_labyrinth_of_abstraction_main_building_set
+    MODIFIER_1 = pop_ethics_shift_speed_mult
+    VALUE_1 = @bts_building_ethical_manipulator_ethics_shift
+	MODIFIER_2 = pop_government_ethic_attraction
+    VALUE_2 = @bts_building_ethical_manipulator_ethic_attraction
+}
+
+# Greed Restrictor
+inline_script = {
+    script = labyrinth/bts_labyrinth_building_country_modifier_1
+    NAME = bts_building_greed_restrictor
+    BUILD_TIME = @bts_labyrinth_of_abstraction_building_time
+    BUILDING_SET = bts_labyrinth_of_abstraction_main_building_set
+    MODIFIER_1 = pop_amenities_usage_mult
+    VALUE_1 = @bts_building_greed_restrictor_amenities_usage
+}
+
+# Thoughts Stabilizer
+inline_script = {
+    script = labyrinth/bts_labyrinth_building_country_modifier_1
+    NAME = bts_building_thoughts_stabilizer
+    BUILD_TIME = @bts_labyrinth_of_abstraction_building_time
+    BUILDING_SET = bts_labyrinth_of_abstraction_main_building_set
+    MODIFIER_1 = empire_size_pops_mult
+    VALUE_1 = @bts_building_thoughts_stabilizer_empire_size_pops
+}
+
+# Utopia Distiller
+inline_script = {
+    script = labyrinth/bts_labyrinth_building_country_modifier_1
+    NAME = bts_building_utopia_distiller
+    BUILD_TIME = @bts_labyrinth_of_abstraction_building_time
+    BUILDING_SET = bts_labyrinth_of_abstraction_main_building_set
+    MODIFIER_1 = pop_happiness
+    VALUE_1 = @bts_building_utopia_distiller_happiness
+}

@@ -1,8 +1,0 @@
-inline_script = {
-    script = labyrinth/bts_labyrinth_building_country_modifier_1
-    NAME = bts_building_arcanic_council
-    BUILD_TIME = @bts_labyrinth_of_abstraction_building_time
-    BUILDING_SET = bts_labyrinth_of_abstraction_main_building_set
-    MODIFIER_1 = all_technology_research_speed
-    VALUE_1 = @bts_building_arcanic_council_research_speed
-}
