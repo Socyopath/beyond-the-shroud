@@ -1,4 +1,3 @@
-
 # Colony
 bts_labyrinth_of_abstraction_core_1 = {
 	icon = building_temple_of_whispers
@@ -22,10 +21,6 @@ bts_labyrinth_of_abstraction_core_1 = {
 		planet_housing_add = 1000
 	}
 
-	# planet_modifier = {
-	# 	planet_housing_add = @bts_labyrinth_of_abstraction_core_1_job
-	# 	job_bts_conceptual_architect_add = @bts_labyrinth_of_abstraction_core_1_job
-	# }
 	resources = {
 		category = planet_buildings
 		upkeep = {
@@ -48,28 +43,24 @@ bts_labyrinth_of_abstraction_core_2 = {
 	category = government
 	building_sets = { bts_labyrinth_of_abstraction_main_building_set }
 
-	destroy_trigger = {
-		count_owned_pop = { limit = { has_job = bts_conceptual_architect } count < @bts_labyrinth_of_abstraction_core_1_job }
-	}
-
-	convert_to = {
-		bts_labyrinth_of_abstraction_core_1
-	}
-
 	potential = {
 		is_planet_class = pc_bts_labyrinth_of_abstraction
 	}
 	allow = {
-		count_owned_pop = { limit = { has_job = bts_conceptual_architect } count >= @bts_labyrinth_of_abstraction_core_1_job }
+		
+	}
+	convert_to = {
+		bts_labyrinth_of_abstraction_core_1
 	}
 	upgrades = {
 		bts_labyrinth_of_abstraction_core_3
 	}
 
 	planet_modifier = {
-		planet_housing_add = @bts_labyrinth_of_abstraction_core_2_job
-		job_bts_conceptual_architect_add = @bts_labyrinth_of_abstraction_core_2_job
+		# planet_housing_add = @bts_labyrinth_of_abstraction_core_2_job
+		# job_bts_conceptual_architect_add = @bts_labyrinth_of_abstraction_core_2_job
 	}
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -83,14 +74,6 @@ bts_labyrinth_of_abstraction_core_2 = {
 
 	triggered_desc = {
 		text = bts_labyrinth_of_abstraction_core_2_effects
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-		}
-		planet_max_districts_add = -1
-		mult = owner.modifier:planet_max_districts_add
 	}
 }
 
@@ -106,28 +89,24 @@ bts_labyrinth_of_abstraction_core_3 = {
 	category = government
 	building_sets = { bts_labyrinth_of_abstraction_main_building_set }
 
-	destroy_trigger = {
-		count_owned_pop = { limit = { has_job = bts_conceptual_architect } count < @bts_labyrinth_of_abstraction_core_2_job }
-	}
-
-	convert_to = {
-		bts_labyrinth_of_abstraction_core_2
-	}
-
 	potential = {
 		is_planet_class = pc_bts_labyrinth_of_abstraction
 	}
 	allow = {
-		count_owned_pop = { limit = { has_job = bts_conceptual_architect } count >= @bts_labyrinth_of_abstraction_core_2_job }
+		
+	}
+	convert_to = {
+		bts_labyrinth_of_abstraction_core_2
 	}
 	upgrades = {
 		bts_labyrinth_of_abstraction_core_4
 	}
 
 	planet_modifier = {
-		planet_housing_add = @bts_labyrinth_of_abstraction_core_3_job
-		job_bts_conceptual_architect_add = @bts_labyrinth_of_abstraction_core_3_job
+		# planet_housing_add = @bts_labyrinth_of_abstraction_core_2_job
+		# job_bts_conceptual_architect_add = @bts_labyrinth_of_abstraction_core_2_job
 	}
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -141,14 +120,6 @@ bts_labyrinth_of_abstraction_core_3 = {
 
 	triggered_desc = {
 		text = bts_labyrinth_of_abstraction_core_3_effects
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-		}
-		planet_max_districts_add = -1
-		mult = owner.modifier:planet_max_districts_add
 	}
 }
 
@@ -164,26 +135,21 @@ bts_labyrinth_of_abstraction_core_4 = {
 	category = government
 	building_sets = { bts_labyrinth_of_abstraction_main_building_set }
 	
-	destroy_trigger = {
-		count_owned_pop = { limit = { has_job = bts_conceptual_architect } count < @bts_labyrinth_of_abstraction_core_3_job }
-	}
-
-	convert_to = {
-		bts_labyrinth_of_abstraction_core_3
-	}
-
-
 	potential = {
 		is_planet_class = pc_bts_labyrinth_of_abstraction
 	}
 	allow = {
-		count_owned_pop = { limit = { has_job = bts_conceptual_architect } count >= @bts_labyrinth_of_abstraction_core_3_job }
+		
+	}
+	convert_to = {
+		bts_labyrinth_of_abstraction_core_4
 	}
 
 	planet_modifier = {
-		planet_housing_add = @bts_labyrinth_of_abstraction_core_4_job
-		job_bts_conceptual_architect_add = @bts_labyrinth_of_abstraction_core_4_job
+		# planet_housing_add = @bts_labyrinth_of_abstraction_core_2_job
+		# job_bts_conceptual_architect_add = @bts_labyrinth_of_abstraction_core_2_job
 	}
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -197,13 +163,5 @@ bts_labyrinth_of_abstraction_core_4 = {
 
 	triggered_desc = {
 		text = bts_labyrinth_of_abstraction_core_4_effects
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-		}
-		planet_max_districts_add = -1
-		mult = owner.modifier:planet_max_districts_add
 	}
 }

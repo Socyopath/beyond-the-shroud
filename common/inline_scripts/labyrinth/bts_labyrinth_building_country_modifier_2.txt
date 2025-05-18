@@ -12,6 +12,13 @@ $NAME$_1 = {
 		$NAME$_2
 	}
 
+	triggered_country_modifier = {
+		potential = { always = yes }
+		$MODIFIER_1$ = $VALUE_1$
+		$MODIFIER_2$ = $VALUE_2$
+		mult = 1
+	}
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -42,6 +49,13 @@ $NAME$_2 = {
 
 	upgrades = {
 		$NAME$_3
+	}
+
+	triggered_country_modifier = {
+		potential = { always = yes }
+		$MODIFIER_1$ = $VALUE_1$
+		$MODIFIER_2$ = $VALUE_2$
+		mult = 2
 	}
 
 	resources = {
@@ -76,6 +90,13 @@ $NAME$_3 = {
 		$NAME$_4
 	}
 
+	triggered_country_modifier = {
+		potential = { always = yes }
+		$MODIFIER_1$ = $VALUE_1$
+		$MODIFIER_2$ = $VALUE_2$
+		mult = 3
+	}
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -102,6 +123,13 @@ $NAME$_4 = {
 
 	convert_to = {
 		$NAME$_3
+	}
+
+	triggered_country_modifier = {
+		potential = { always = yes }
+		$MODIFIER_1$ = $VALUE_1$
+		$MODIFIER_2$ = $VALUE_2$
+		mult = 4
 	}
 
 	resources = {

@@ -1,29 +1,8 @@
-bts_building_divergence_regulator = {
-	icon = building_psi_corps
-	base_buildtime = @bts_labyrinth_of_abstraction_building_time
-	category = government
-	base_cap_amount = 1
-	building_sets = { bts_labyrinth_of_abstraction_main_building_set }
-	
-    potential = {
-		is_planet_class = pc_bts_labyrinth_of_abstraction
-	}
-
-	triggered_country_modifier = {
-		potential = { always = yes }
-		mult = owner.value:bts_labyrinth_of_abstraction_level
-		planet_crime_mult = @bts_building_divergence_regulator_crime
-	}
-
-	resources = {
-		category = planet_buildings
-		cost = {
-			minerals = @bts_labyrinth_of_abstraction_building_cost
-			sr_zro = @bts_labyrinth_of_abstraction_building_cost_sr
-		}
-		upkeep = {
-			energy = @bts_labyrinth_of_abstraction_building_upkeep_energy
-			sr_zro = @bts_labyrinth_of_abstraction_building_upkeep_sr
-		}
-	}
+inline_script = {
+    script = labyrinth/bts_labyrinth_building_country_modifier_1
+    NAME = bts_building_divergence_regulator
+    BUILD_TIME = @bts_labyrinth_of_abstraction_building_time
+    BUILDING_SET = bts_labyrinth_of_abstraction_main_building_set
+    MODIFIER_1 = planet_crime_mult
+    VALUE_1 = @bts_building_divergence_regulator_crime
 }
