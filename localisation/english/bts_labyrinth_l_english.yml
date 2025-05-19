@@ -164,12 +164,12 @@ bts_building_labyrinth_mindshapers_influence_4: "$bts_building_labyrinth_mindsha
 bts_building_labyrinth_mindshapers_influence_4_desc: "$bts_building_labyrinth_mindshapers_influence_1_desc$"
 
 ## Modifiers
-mod_bts_veilwatchers_planet_sensor_range_add: "£mod_planet_sensor_range_add£ $MOD_PLANET_SENSOR_RANGE_ADD$ per $pop_group_unit$ $job_bts_conceptual_architect_plural_with_icon$"
-mod_bts_veilwatchers_planet_hyperlane_range_add: "£mod_planet_hyperlane_range_add£ $MOD_PLANET_HYPERLANE_RANGE_ADD$ per $pop_group_unit$ $job_bts_conceptual_architect_plural_with_icon$"
-mod_bts_veilwatchers_planet_add_base_country_intel: "£mod_add_base_country_intel£ $MOD_ADD_BASE_COUNTRY_INTEL$ per $pop_group_unit$ $job_bts_conceptual_architect_plural_with_icon$"
-mod_bts_mindshapers_planet_trust_cap_add: "£mod_country_trust_cap_add£ $MOD_COUNTRY_TRUST_CAP_ADD$ per $pop_group_unit$ $job_bts_conceptual_architect_plural_with_icon$"
-mod_bts_mindshapers_planet_trust_growth: "£mod_country_trust_growth£ $MOD_COUNTRY_TRUST_GROWTH$ per $pop_group_unit$ $job_bts_conceptual_architect_plural_with_icon$"
-mod_bts_mindshapers_planet_base_influence_produces_add: "£mod_influence_produces_add£ $mod_country_base_influence_produces_add$ per $pop_group_unit$ $job_bts_conceptual_architect_plural_with_icon$"
+mod_bts_veilwatchers_planet_sensor_range_add: "£mod_planet_sensor_range_add£ $MOD_PLANET_SENSOR_RANGE_ADD$ per $pop_group_unit$ $job_bts_veilwatcher_plural_with_icon$"
+mod_bts_veilwatchers_planet_hyperlane_range_add: "£mod_planet_hyperlane_range_add£ $MOD_PLANET_HYPERLANE_RANGE_ADD$ per $pop_group_unit$ $job_bts_veilwatcher_plural_with_icon$"
+mod_bts_veilwatchers_planet_add_base_country_intel: "£mod_add_base_country_intel£ $MOD_ADD_BASE_COUNTRY_INTEL$ per $pop_group_unit$ $job_bts_veilwatcher_plural_with_icon$"
+mod_bts_mindshapers_planet_trust_cap_add: "£mod_country_trust_cap_add£ $MOD_COUNTRY_TRUST_CAP_ADD$ per $pop_group_unit$ $job_bts_mindshaper_plural_with_icon$"
+mod_bts_mindshapers_planet_trust_growth: "£mod_country_trust_growth£ $MOD_COUNTRY_TRUST_GROWTH$ per $pop_group_unit$ $job_bts_mindshaper_plural_with_icon$"
+mod_bts_mindshapers_planet_base_influence_produces_add: "£mod_influence_produces_add£ $mod_country_base_influence_produces_add$ per $pop_group_unit$ $job_bts_mindshaper_plural_with_icon$"
 
 ## Districts
 bts_district_third_eye_observatory: "Third Eye Observatory"
@@ -186,11 +186,20 @@ mod_pc_bts_labyrinth_of_abstraction_max_buildings_add: "Additional Building Slot
 job_bts_conceptual_architect: "Conceptual Architect"
 job_bts_conceptual_architect_plural: "Conceptual Architects"
 job_bts_conceptual_architect_desc: "A highly skilled telepath able to materialize certain concepts locally from his mind. He also excels in the art of controlling the thoughts of other entities."
-job_bts_conceptual_architect_effect_desc: "$job_bts_conceptual_architect_plural$ produce only unity by default, you need to specialize them by building districts on $pc_bts_labyrinth_of_abstraction$."
-mod_job_bts_conceptual_architect_add: "$job_bts_conceptual_architect$ Jobs"
-planet_bts_conceptual_architect: "$job_bts_conceptual_architect$ Jobs"
-
 job_bts_conceptual_architect_plural_with_icon: "[bts_conceptual_architect.GetIcon] [bts_conceptual_architect.GetNamePlural]"
+# mod_job_bts_conceptual_architect_add: "$job_bts_conceptual_architect$ Jobs"
+# planet_bts_conceptual_architect: "$job_bts_conceptual_architect$ Jobs"
+
+job_bts_veilwatcher: "Veilwatcher"
+job_bts_veilwatcher_plural: "Veilwatchers"
+job_bts_veilwatcher_desc: "DESC"
+job_bts_veilwatcher_plural_with_icon: "[bts_veilwatcher.GetIcon] [bts_veilwatcher.GetNamePlural]"
+
+job_bts_mindshaper: "Mindshaper"
+job_bts_mindshaper_plural: "Mindshapers"
+job_bts_mindshaper_desc: "DESC"
+job_bts_mindshaper_plural_with_icon: "[bts_mindshaper.GetIcon] [bts_mindshaper.GetNamePlural]"
+
 
 
 # Bypass
