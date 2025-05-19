@@ -29,42 +29,6 @@ bts_conceptual_architect = {
 		}
 	}
 
-	triggered_country_modifier = {
-		potential = {
-			exists = planet
-			planet = {
-				num_districts = { type = bts_district_third_eye_observatory value > 0 }
-			}
-		}
-		add_base_country_intel = @bts_district_third_eye_observatory_intel
-		mult = planet.value:bts_district_third_eye_observatory_count
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = planet
-			planet = {
-				num_districts = { type = bts_district_third_eye_observatory value > 0 }
-			}
-		}
-		planet_sensor_range_add = @bts_district_third_eye_observatory_sensor_range
-		planet_hyperlane_range_add = @bts_district_third_eye_observatory_hyperlane_range
-		mult = planet.value:bts_district_third_eye_observatory_count
-	}
-
-	triggered_country_modifier = {
-		potential = {
-			exists = planet
-			planet = {
-				num_districts = { type = bts_district_influence_control_complex value > 0 }
-			}
-		}
-		country_trust_cap_add = @bts_district_influence_control_complex_trust_cap
-		country_trust_growth = @bts_district_influence_control_complex_trust_growth
-		country_base_influence_produces_add = @bts_district_influence_control_complex_influence
-		mult = planet.value:bts_district_influence_control_complex_count
-	}
-
 	# Concept: Time
 	triggered_country_modifier = {
 		potential = {

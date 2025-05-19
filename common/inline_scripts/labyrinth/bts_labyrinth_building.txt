@@ -12,6 +12,11 @@ $NAME$_1 = {
 		$NAME$_2
 	}
 
+	triggered_planet_modifier = {
+		modifier = { $MODIFIER$ = $VALUE$ }
+		mult = 1
+	}
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -42,6 +47,11 @@ $NAME$_2 = {
 
 	upgrades = {
 		$NAME$_3
+	}
+
+	triggered_planet_modifier = {
+		modifier = { $MODIFIER$ = $VALUE$ }
+		mult = 2
 	}
 
 	resources = {
@@ -76,6 +86,11 @@ $NAME$_3 = {
 		$NAME$_4
 	}
 
+	triggered_planet_modifier = {
+		modifier = { $MODIFIER$ = $VALUE$ }
+		mult = 3
+	}
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -102,6 +117,11 @@ $NAME$_4 = {
 
 	convert_to = {
 		$NAME$_3
+	}
+
+	triggered_planet_modifier = {
+		modifier = { $MODIFIER$ = $VALUE$ }
+		mult = 4
 	}
 
 	resources = {

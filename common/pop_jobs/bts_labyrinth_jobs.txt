@@ -27,18 +27,18 @@ bts_veilwatcher = {
 	}
 
 	triggered_planet_modifier = {
-        planet_sensor_range_add = @bts_district_third_eye_observatory_sensor_range
-        mult = value:bts_get_total_building_level_mult|BUILDING|bts_building_labyrinth_veilwatchers_sensor|
+        planet_sensor_range_add = 1
+        mult = planet.modifier:bts_veilwatchers_planet_sensor_range_add
 	}
 
 	triggered_planet_modifier = {
-        planet_hyperlane_range_add = @bts_district_third_eye_observatory_hyperlane_range
-		mult = value:bts_get_total_building_level_mult|BUILDING|bts_building_labyrinth_veilwatchers_hyperlane|
+        planet_hyperlane_range_add = 1
+		mult = planet.modifier:bts_veilwatchers_planet_hyperlane_range_add
 	}
 
 	triggered_country_modifier = {
-        add_base_country_intel = @bts_district_third_eye_observatory_intel
-        mult = value:bts_get_total_building_level_mult|BUILDING|bts_building_labyrinth_veilwatchers_intel|
+        add_base_country_intel = 1
+        mult = planet.modifier:bts_veilwatchers_planet_add_base_country_intel
 	}	
 }
 
@@ -71,17 +71,17 @@ bts_mindshaper = {
 	}
 
 	triggered_country_modifier = {
-        country_trust_cap_add = @bts_district_influence_control_complex_trust_cap
-        mult = value:bts_get_total_building_level_mult|BUILDING|bts_building_labyrinth_mindshapers_trust_cap|
+        country_trust_cap_add = 1
+        mult = planet.modifier:bts_mindshapers_planet_trust_cap_add
 	}
 
 	triggered_country_modifier = {
-        country_trust_growth = @bts_district_influence_control_complex_trust_growth
-		mult = value:bts_get_total_building_level_mult|BUILDING|bts_building_labyrinth_mindshapers_trust_growth|
+        country_trust_growth = 1
+		mult = planet.modifier:bts_mindshapers_planet_trust_growth
 	}
 
 	triggered_country_modifier = {
-        country_base_influence_produces_add = @bts_district_influence_control_complex_influence
-        mult = value:bts_get_total_building_level_mult|BUILDING|bts_building_labyrinth_mindshapers_influence|
+        country_base_influence_produces_add = 1
+        mult = planet.modifier:bts_mindshapers_planet_base_influence_produces_add
 	}	
 }
