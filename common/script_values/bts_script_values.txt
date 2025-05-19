@@ -414,28 +414,6 @@ bts_get_total_building_level_mult = {
     add = value:bts_get_building_level_mult|BUILDING|$BUILDING$_4|MULT|4|
 }
 
-bts_district_third_eye_observatory_count = {
-    base = 0
-    complex_trigger_modifier = {
-        trigger = num_districts
-        parameters = {
-            type = bts_district_third_eye_observatory
-        }
-        mode = add
-    }
-}
-
-# Scope Country / Planet
-bts_district_influence_control_complex_count = {
-    base = 0
-    complex_trigger_modifier = {
-        trigger = num_districts
-        parameters = {
-            type = bts_district_influence_control_complex
-        }
-        mode = add
-    }
-}
 # Scope = country
 bts_labyrinth_of_abstraction_level = {
     base = 0

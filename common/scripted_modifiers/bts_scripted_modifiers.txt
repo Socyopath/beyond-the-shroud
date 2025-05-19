@@ -47,3 +47,51 @@ bts_relic_cooldown = {
 	category = country
 	percentage = yes
 }
+
+bts_veilwatchers_planet_sensor_range_add = {
+	icon = mod_planet_sensor_range_add
+	max_decimals = 2
+	good = yes
+	category = planet
+	percentage = no
+}
+
+bts_veilwatchers_planet_hyperlane_range_add = {
+	icon = mod_planet_hyperlane_range_add
+	max_decimals = 2
+	good = yes
+	category = planet
+	percentage = no
+}
+
+bts_veilwatchers_planet_add_base_country_intel = {
+	icon = mod_add_base_country_intel
+	max_decimals = 2
+	good = yes
+	category = planet
+	percentage = no
+}
+
+bts_mindshapers_planet_trust_cap_add = {
+	icon = mod_country_trust_cap_add
+	max_decimals = 2
+	good = yes
+	category = planet
+	percentage = no
+}
+
+bts_mindshapers_planet_trust_growth = {
+	icon = mod_country_trust_growth
+	max_decimals = 2
+	good = yes
+	category = planet
+	percentage = no
+}
+
+bts_mindshapers_planet_base_influence_produces_add = {
+	icon = mod_influence_produces_add
+	max_decimals = 2
+	good = yes
+	category = planet
+	percentage = no
+}
