@@ -1,8 +1,5 @@
 bts_veilwatcher = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_temple_of_whispers
-	clothes_texture_index = 5
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -20,7 +17,7 @@ bts_veilwatcher = {
 	}
 
 	resources = {
-		category = planet_bts_conceptual_architect
+		category = planet_bts_veilwatchers
 		upkeep = {
 			unity = 1
 		}
@@ -28,25 +25,22 @@ bts_veilwatcher = {
 
 	triggered_planet_modifier = {
         planet_sensor_range_add = 1
-        mult = planet.modifier:bts_veilwatchers_planet_sensor_range_add
+        mult = planet.modifier:planet_bts_veilwatchers_sensor_range_add
 	}
 
 	triggered_planet_modifier = {
         planet_hyperlane_range_add = 1
-		mult = planet.modifier:bts_veilwatchers_planet_hyperlane_range_add
+		mult = planet.modifier:planet_bts_veilwatchers_hyperlane_range_add
 	}
 
 	triggered_country_modifier = {
         add_base_country_intel = 1
-        mult = planet.modifier:bts_veilwatchers_planet_add_base_country_intel
+        mult = planet.modifier:planet_bts_veilwatchers_add_base_country_intel
 	}	
 }
 
 bts_mindshaper = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_temple_of_whispers
-	clothes_texture_index = 5
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -64,7 +58,7 @@ bts_mindshaper = {
 	}
 
 	resources = {
-		category = planet_bts_conceptual_architect
+		category = planet_bts_mindshapers
 		upkeep = {
 			unity = 1
 		}
@@ -72,16 +66,42 @@ bts_mindshaper = {
 
 	triggered_country_modifier = {
         country_trust_cap_add = 1
-        mult = planet.modifier:bts_mindshapers_planet_trust_cap_add
+        mult = planet.modifier:planet_bts_mindshapers_trust_cap_add
 	}
 
 	triggered_country_modifier = {
         country_trust_growth = 1
-		mult = planet.modifier:bts_mindshapers_planet_trust_growth
+		mult = planet.modifier:planet_bts_mindshapers_trust_growth
 	}
 
 	triggered_country_modifier = {
         country_base_influence_produces_add = 1
-        mult = planet.modifier:bts_mindshapers_planet_base_influence_produces_add
+        mult = planet.modifier:planet_bts_mindshapers_base_influence_produces_add
 	}	
+}
+
+bts_materializer = {
+	category = specialist
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		OR = {
+			has_trait = trait_latent_psionic
+			has_trait = trait_psionic
+		}
+	}
+
+	resources = {
+		category = planet_bts_materializers
+		upkeep = {
+			unity = 1
+		}
+	}
 }

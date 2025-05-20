@@ -1,0 +1,35 @@
+inline_script = {
+    script = labyrinth/bts_labyrinth_building_modifier_3
+    NAME = bts_building_labyrinth_materializers_specials
+    BUILD_TIME = @bts_labyrinth_of_abstraction_building_time
+    BUILDING_SET = bts_labyrinth_of_abstraction_materializers_set
+    MODIFIER_1 = planet_bts_materializers_volatile_motes_produces_add
+    VALUE_1 = @bts_building_labyrinth_materializers_specials_volatile_motes
+    MODIFIER_2 = planet_bts_materializers_exotic_gases_produces_add
+    VALUE_2 = @bts_building_labyrinth_materializers_specials_exotic_gases
+    MODIFIER_3 = planet_bts_materializers_rare_crystals_produces_add
+    VALUE_3 = @bts_building_labyrinth_materializers_specials_rare_crystals
+}
+
+inline_script = {
+    script = labyrinth/bts_labyrinth_building_modifier_3
+    NAME = bts_building_labyrinth_materializers_basic
+    BUILD_TIME = @bts_labyrinth_of_abstraction_building_time
+    BUILDING_SET = bts_labyrinth_of_abstraction_materializers_set
+    MODIFIER_1 = planet_bts_materializers_energy_produces_add
+    VALUE_1 = @bts_building_labyrinth_materializers_basic_energy
+    MODIFIER_2 = planet_bts_materializers_minerals_produces_add
+    VALUE_2 = @bts_building_labyrinth_materializers_basic_minerals
+    MODIFIER_3 = planet_bts_materializers_alloys_produces_add
+    VALUE_3 = @bts_building_labyrinth_materializers_basic_alloys
+}
+
+inline_script = {
+    script = labyrinth/bts_labyrinth_building_modifier_1
+    NAME = bts_building_labyrinth_materializers_zro
+    BUILD_TIME = @bts_labyrinth_of_abstraction_building_time
+    BUILDING_SET = bts_labyrinth_of_abstraction_materializers_set
+    MODIFIER = planet_bts_materializers_sr_zro_produces_add
+    VALUE = @bts_building_labyrinth_materializers_zro
+}
+

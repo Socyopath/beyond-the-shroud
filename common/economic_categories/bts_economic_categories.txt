@@ -1,12 +1,55 @@
 planet_bts_conceptual_architect = {
-	parent = planet_jobs
+	icon = "job_bts_conceptual_architect"
+	parent = planet_jobs_specialist
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
 	generate_add_modifiers = {
 		produces
-        upkeep
+		upkeep
 	}
-    generate_mult_modifiers = {
+	modifier_category = pop_job
+}
+
+planet_bts_veilwatchers = {
+	icon = "job_bts_veilwatcher"
+	parent = planet_jobs_specialist
+	generate_mult_modifiers = {
 		produces
-        upkeep
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop_job
+}
+
+planet_bts_mindshapers = {
+	icon = "job_bts_mindshaper"
+	parent = planet_jobs_specialist
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop_job
+}
+
+planet_bts_materializers = {
+	icon = "job_bts_materializer"
+	parent = planet_jobs_specialist
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
 	}
 	modifier_category = pop_job
 }

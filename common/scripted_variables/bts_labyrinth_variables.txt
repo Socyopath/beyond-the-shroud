@@ -61,15 +61,21 @@
 @bts_labyrinth_of_abstraction_district_cost_sr = 100
 @bts_labyrinth_of_abstraction_district_cost = 600
 @bts_labyrinth_of_abstraction_district_time = 360
-# Third Eye Observatory
-@bts_district_third_eye_observatory_intel = 0.10
-@bts_district_third_eye_observatory_sensor_range = 0.10
-@bts_district_third_eye_observatory_hyperlane_range = 0.15
-# Influence Control Complex
-@bts_district_influence_control_complex_trust_cap = 0.15
-@bts_district_influence_control_complex_trust_growth = 0.004
-@bts_district_influence_control_complex_trust_growth_text = 0.4 # x100 for percentage display
-@bts_district_influence_control_complex_influence = 0.01
+# Buildings
+@bts_building_labyrinth_veilwatchers_intel = 10
+@bts_building_labyrinth_veilwatchers_sensor_range = 10
+@bts_building_labyrinth_veilwatchers_hyperlane_range = 15
+@bts_building_labyrinth_mindshapers_trust_cap = 15
+@bts_building_labyrinth_mindshapers_trust_growth = 0.004
+@bts_building_labyrinth_mindshapers_trade = 10
+@bts_building_labyrinth_mindshapers_influence = 1
+@bts_building_labyrinth_materializers_specials_volatile_motes = 10
+@bts_building_labyrinth_materializers_specials_exotic_gases = 10
+@bts_building_labyrinth_materializers_specials_rare_crystals = 10
+@bts_building_labyrinth_materializers_basic_energy = 10
+@bts_building_labyrinth_materializers_basic_minerals = 10
+@bts_building_labyrinth_materializers_basic_alloys = 10
+@bts_building_labyrinth_materializers_zro = 10
 
 ## Buildings
 @bts_labyrinth_of_abstraction_building_upkeep_sr = 1

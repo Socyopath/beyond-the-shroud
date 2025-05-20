@@ -34,11 +34,11 @@ slot_bts_labyrinth_summon = {
 	}
 }
 
-slot_bts_labyrinth_observer = {
-	start = zone_bts_labyrinth_observer
+slot_bts_labyrinth_observatory = {
+	start = zone_bts_labyrinth_observatory
 
 	include = {
-		zone_bts_labyrinth_observer
+		zone_bts_labyrinth_observatory
 	}
 
 	unlock = { # planet scope

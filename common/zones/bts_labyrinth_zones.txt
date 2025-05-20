@@ -39,7 +39,7 @@ zone_bts_labyrinth_summon = {
 	}
 }
 
-zone_bts_labyrinth_observer = {
+zone_bts_labyrinth_observatory = {
 	icon = GFX_diplomatic_weight_large
 	base_buildtime = @zone_buildtime
 
@@ -86,7 +86,7 @@ zone_bts_labyrinth_ressources = {
 	max_buildings = 3
 
     included_building_sets = {
-        bts_labyrinth_of_abstraction_ressources_set                            
+        bts_labyrinth_of_abstraction_materializers_set                            
     }
 
     planet_modifier = {
