@@ -144,3 +144,13 @@ bts_spawn_conceptual_system_effect = {
 	}
 }
 
+# Scope = Country
+bts_conceptual_effect_cooldown_start = {
+	add_modifier = {
+		modifier = bts_conceptual_effect_cooldown
+		days = @bts_conceptual_effect_$CONCEPT$_cooldown
+		multiplier = value:scripted_modifier_mult|MODIFIER|bts_conceptual_effect_cost_mult|
+		time_multiplier = value:scripted_modifier_mult|MODIFIER|bts_conceptual_effect_cooldown_mult|
+	}
+}
+
