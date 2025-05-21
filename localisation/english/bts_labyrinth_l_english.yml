@@ -237,6 +237,7 @@ bts_building_labyrinth_materializers_zro_4_desc: "$bts_building_labyrinth_materi
 mod_job_bts_veilwatcher_add: "[bts_veilwatcher.GetName] Jobs"
 mod_job_bts_mindshaper_add: "[bts_mindshaper.GetName] Jobs"
 mod_job_bts_materializer_add: "[bts_materializer.GetName] Jobs"
+mod_job_bts_conceptual_architect_add: "[bts_conceptual_architect.GetName] Jobs"
 mod_planet_bts_veilwatchers_sensor_range_add: "£mod_planet_sensor_range_add£ $MOD_PLANET_SENSOR_RANGE_ADD$ per $pop_group_unit$ $job_bts_veilwatcher_plural_with_icon$"
 mod_planet_bts_veilwatchers_hyperlane_range_add: "£mod_planet_hyperlane_range_add£ $MOD_PLANET_HYPERLANE_RANGE_ADD$ per $pop_group_unit$ $job_bts_veilwatcher_plural_with_icon$"
 mod_planet_bts_veilwatchers_add_base_country_intel: "£mod_add_base_country_intel£ $MOD_ADD_BASE_COUNTRY_INTEL$ per $pop_group_unit$ $job_bts_veilwatcher_plural_with_icon$"
@@ -251,6 +252,7 @@ mod_planet_bts_materializers_energy_produces_add: "£energy£ $energy$ per $pop_
 mod_planet_bts_materializers_minerals_produces_add: "£minerals£ $minerals$ per $pop_group_unit$ $job_bts_materializer_plural_with_icon$"
 mod_planet_bts_materializers_alloys_produces_add: "£alloys£ $alloys$ per $pop_group_unit$ $job_bts_materializer_plural_with_icon$"
 mod_planet_bts_materializers_sr_zro_produces_add: "£sr_zro£ $sr_zro$ per $pop_group_unit$ $job_bts_materializer_plural_with_icon$"
+mod_planet_bts_conceptual_architect_conceptual_research: "§Y$situation_bts_conceptual_mastery$§! progress per $pop_group_unit$ $job_bts_conceptual_architect_plural_with_icon$"
 
 ## Districts & Zones
 bts_district_labyrinth_main: "MAIN"
@@ -405,7 +407,7 @@ bts_conceptual_effect_cooldown: "Conceptual effect is on cooldown until §Y[this
 situation_bts_conceptual_mastery: "Conceptual Mastery"
 situation_bts_conceptual_mastery_type: "$situation_bts_conceptual_mastery$"
 situation_bts_conceptual_mastery_desc: "After the construction of the labyrinth, visions began to manifest themselves in our $job_bts_conceptual_architect_plural$, where a strange voice evoked a mysterious power linked to abstraction...\nWe'll be concentrating our research on exploring the shroud to find out more."
-situation_bts_conceptual_mastery_monthly_change_tooltip: "Grants §Y+1§! monthly progress per §Y$job_bts_conceptual_architect$§!"
+situation_bts_conceptual_mastery_monthly_change_tooltip: "£mod_acceptlesson£ $situation_bts_conceptual_mastery$ progress is achieved by recruiting $job_bts_conceptual_architect_plural_with_icon$"
 situation_bts_conceptual_mastery_outcome: "Unlock a new §Yrelic§! according to the path you've chosen."
 situation_bts_conceptual_mastery_add_point: "Progress throught the §Ytradition tree§!"
 
@@ -432,8 +434,11 @@ bts.21.desc.1: "When...\n\n§RA river that flows linearly through your perceptio
 bts.21.desc.2: "Where...\n\n§RA canvas on which physical existence is based, from which the concepts 'near' and 'far' are derived.§!"
 bts.21.desc.3: "What...\n\n§RIn the beginning, it was there, sleeping in the void in its purest form, from which the concepts of 'force' and 'matter' are derived.§!"
 bts.21.time: "Time"
+bts.21.time.tt: "Adopts Tradition Tree: ['tradition_category:tradition_concept_time']"
 bts.21.space: "Space"
+bts.21.space.tt: "Adopts Tradition Tree: ['tradition_category:tradition_concept_space']"
 bts.21.energy: "Energy"
+bts.21.energy.tt: "Adopts Tradition Tree: ['tradition_category:tradition_concept_energy']"
 
 ### Stage 3
 situation_bts_conceptual_mastery_stage_first_points: "Experimentation"
@@ -501,7 +506,7 @@ r_bts_relic_concept_energy_active.0: "$MOD_SHIP_SHIELD_PENETRATION_ADD$: §G+$@r
 mod_bts_relic_cooldown: "Relic Activation Cooldown"
 
 # UI Text
-bts_tr_concept_jobs_msg: "by §Y$job_bts_conceptual_architect$§!"
+bts_tr_concept_jobs_msg: "per $pop_group_unit$ $job_bts_conceptual_architect_plural_with_icon$"
 bts_req_spec_time: "$TRIGGER_FAIL$Choose §Y$bts.21.time$§! during §Y$situation_bts_conceptual_mastery$§! Situation"
 bts_req_spec_space: "$TRIGGER_FAIL$Choose §Y$bts.21.space$§! during §Y$situation_bts_conceptual_mastery$§! Situation"
 bts_req_spec_energy: "$TRIGGER_FAIL$Choose §Y$bts.21.energy$§! during §Y$situation_bts_conceptual_mastery$§! Situation"

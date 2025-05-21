@@ -63,9 +63,9 @@ bts_district_labyrinth_mastery = {
 		exists = owner
 	}
 
-	# planet_modifier = {
-	# 	planet_housing_add = 1000
-	# }
+	planet_modifier = {
+		job_bts_conceptual_architect_add = 100
+	}
 }
 
 bts_district_labyrinth_summon = {

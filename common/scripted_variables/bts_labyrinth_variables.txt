@@ -76,6 +76,8 @@
 @bts_building_labyrinth_materializers_basic_minerals = 10
 @bts_building_labyrinth_materializers_basic_alloys = 10
 @bts_building_labyrinth_materializers_zro = 10
+# Jobs
+@bts_conceptual_architect_conceptual_research = 100
 
 ## Buildings
 @bts_labyrinth_of_abstraction_building_upkeep_sr = 1

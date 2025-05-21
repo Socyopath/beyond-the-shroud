@@ -95,3 +95,11 @@ planet_bts_mindshapers_base_influence_produces_add = {
 	category = planet
 	percentage = no
 }
+
+planet_bts_conceptual_architect_conceptual_research = {
+	icon = mod_acceptlesson
+	max_decimals = 2
+	good = yes
+	category = planet
+	percentage = no
+}

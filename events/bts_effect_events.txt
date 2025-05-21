@@ -389,13 +389,15 @@ situation_event = {
 
 	option = {
 		name = "bts.21.time"
+		custom_tooltip = "bts.21.time.tt"
 		owner = {
-			add_tradition = tr_concept_time_adopt
+			add_tradition = tr_concept_time_adopt	
 		}
 	}
 
 	option = {
 		name = "bts.21.space"
+		custom_tooltip = "bts.21.space.tt"
 		owner = {
 			add_tradition = tr_concept_space_adopt
 		}
@@ -403,6 +405,7 @@ situation_event = {
 
 	option = {
 		name = "bts.21.energy"
+		custom_tooltip = "bts.21.energy.tt"
 		owner = {
 			add_tradition = tr_concept_energy_adopt
 		}

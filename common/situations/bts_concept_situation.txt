@@ -66,9 +66,8 @@ situation_bts_conceptual_mastery = {
 
     monthly_progress = { 
 		base = 0
-		modifier = {
-			add = owner.value:bts_num_conceptual_architects
-            desc = situation_doomclock_difficulty_modifier
-		}
+        modifier = {
+            add = owner.modifier:planet_bts_conceptual_architect_conceptual_research
+        }
 	}
 }
