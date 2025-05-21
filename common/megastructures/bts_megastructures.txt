@@ -73,7 +73,7 @@ bts_labyrinth_of_abstraction_megastructure = {
 			has_ring = no
 			init_effect = {
                 set_name = {
-                    key = pc_bts_labyrinth_of_abstraction
+                    key = pc_bts_labyrinth_of_abstraction_full
                 }
 				set_surveyed = {
 					surveyed = yes

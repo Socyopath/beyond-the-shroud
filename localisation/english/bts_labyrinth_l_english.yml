@@ -1,8 +1,8 @@
 ﻿l_english:
 
 # Laybrinth of Abstraction
-bts.1000.title: "$pc_bts_labyrinth_of_abstraction$"
-bts.1000.desc: "Our divinity offered us a vision in which we could see strange patterns for a §Ymegastructure§!.\n\n§PFORBIDDEN KNOWLEDGE : $pc_bts_labyrinth_of_abstraction$§!"
+bts.1000.title: "$pc_bts_labyrinth_of_abstraction_full$"
+bts.1000.desc: "Our divinity offered us a vision in which we could see strange patterns for a §Ymegastructure§!.\n\n§PFORBIDDEN KNOWLEDGE : $pc_bts_labyrinth_of_abstraction_full$§!"
 
 bts.100.pop: "Create a §Yliving being§! of our own kind"
 bts.100.boon: "Choose §Yboon§! of the shroud"
@@ -14,9 +14,10 @@ decision_bts_labyrinth_of_abstraction_shroud_interraction: "Enter Shroud"
 decision_bts_labyrinth_of_abstraction_shroud_interraction_desc: ""
 decision_bts_labyrinth_of_abstraction_shroud_interraction_effects: "Ask your §Y$job_bts_conceptual_architect_plural$§! to commune with the shroud to alter the reality."
 
-pc_bts_labyrinth_of_abstraction: "Laybrinth of Abstraction"
+pc_bts_labyrinth_of_abstraction_full: "Laybrinth of Abstraction"
+pc_bts_labyrinth_of_abstraction: "Laybrinth"
 pc_bts_labyrinth_of_abstraction_desc: "An enigmatic construction that allows our telepaths to reach a higher state of consciousness, enabling them to influence the thoughts of other entities and rewrite reality thanks to their deep connection with the shroud."
-bts_labyrinth_of_abstraction_megastructure: "$pc_bts_labyrinth_of_abstraction$"
+bts_labyrinth_of_abstraction_megastructure: "$pc_bts_labyrinth_of_abstraction_full$"
 bts_labyrinth_of_abstraction_megastructure_DESC: "Our telepaths' visions have revealed some kind of megastructure construction project which seems to provide access to forbidden knowledge about the true nature of consciousness..."
 bts_labyrinth_of_abstraction_megastructure_MEGASTRUCTURE_DETAILS: "$bts_labyrinth_of_abstraction_megastructure_DESC$"
 
@@ -28,12 +29,12 @@ bts_tier_2: "II"
 bts_tier_3: "III"
 bts_tier_4: "IV"
 
-bts_labyrinth_of_abstraction_core_1: "$pc_bts_labyrinth_of_abstraction$ $bts_tier_1$"
-bts_labyrinth_of_abstraction_core_2: "$pc_bts_labyrinth_of_abstraction$ $bts_tier_2$"
+bts_labyrinth_of_abstraction_core_1: "$pc_bts_labyrinth_of_abstraction_full$ $bts_tier_1$"
+bts_labyrinth_of_abstraction_core_2: "$pc_bts_labyrinth_of_abstraction_full$ $bts_tier_2$"
 bts_labyrinth_of_abstraction_core_2_effects: "Monthly §YCovenant Favor§!: §G+$@bts_labyrinth_of_abstraction_favor_boost$§!"
-bts_labyrinth_of_abstraction_core_3: "$pc_bts_labyrinth_of_abstraction$ $bts_tier_3$"
+bts_labyrinth_of_abstraction_core_3: "$pc_bts_labyrinth_of_abstraction_full$ $bts_tier_3$"
 bts_labyrinth_of_abstraction_core_3_effects: "$bts_labyrinth_of_abstraction_core_2_effects$\nUnlock §Y$bts_shroud_portal_megastructure$§! megastructure"
-bts_labyrinth_of_abstraction_core_4: "$pc_bts_labyrinth_of_abstraction$ $bts_tier_4$"
+bts_labyrinth_of_abstraction_core_4: "$pc_bts_labyrinth_of_abstraction_full$ $bts_tier_4$"
 bts_labyrinth_of_abstraction_core_4_effects: "$bts_labyrinth_of_abstraction_core_3_effects$\nUnlock §Y$r_bts_relic_shroud_nexus$§! relic"
 bts_labyrinth_of_abstraction_core_1_desc: "$pc_bts_labyrinth_of_abstraction_desc$"
 bts_labyrinth_of_abstraction_core_2_desc: "$pc_bts_labyrinth_of_abstraction_desc$"
@@ -304,7 +305,7 @@ tradition_concept_space_desc: "Space is simply a concept that we can shape to ou
 
 tr_concept_space_adopt: "$tradition_concept_space$ Traditions"
 tr_concept_space_finish: "$tr_concept_space_adopt$ Finished"
-tr_concept_space_finish_effect: "Unlock the §Y$bts_conceptual_effect_space$§! power in the §Y$pc_bts_labyrinth_of_abstraction$§!\nAscension Perks Unlocked: §G+1§!"
+tr_concept_space_finish_effect: "Unlock the §Y$bts_conceptual_effect_space$§! power in the §Y$pc_bts_labyrinth_of_abstraction_full$§!\nAscension Perks Unlocked: §G+1§!"
 
 tr_concept_space_11: "Structural Expansion"
 tr_concept_space_11_effect: "$MOD_STARBASE_DEFENSE_PLATFORM_CAPACITY_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_11_defense_plat_cap|%1$§!\n$MOD_COUNTRY_STARBASE_CAPACITY_ADD$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_11_starbase_cap$§!"
@@ -335,7 +336,7 @@ tradition_concept_time_desc: "Past, present and future are concepts that no long
 
 tr_concept_time_adopt: "$tradition_concept_time$ Traditions"
 tr_concept_time_finish: "$tr_concept_time_adopt$ Finished"
-tr_concept_time_finish_effect: "Unlock the §Y$bts_conceptual_effect_time$§! power in the §Y$pc_bts_labyrinth_of_abstraction$§!\nAscension Perks Unlocked: §G+1§!"
+tr_concept_time_finish_effect: "Unlock the §Y$bts_conceptual_effect_time$§! power in the §Y$pc_bts_labyrinth_of_abstraction_full$§!\nAscension Perks Unlocked: §G+1§!"
 
 tr_concept_time_11: "Structural Acceleration"
 tr_concept_time_11_effect: "$MOD_STARBASE_SHIPYARD_BUILD_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_11_ship_build_speed|%0$§!\n$MOD_STARBASE_UPGRADE_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_11_starbase_upgrade_speed|%0$§!\n$MOD_STARBASE_MODULE_BUILD_SPEED_MULT$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_time_11_starbase_module_build_speed|%0$§!"
@@ -366,7 +367,7 @@ tradition_concept_energy_desc: "The concept of energy derives from a higher-leve
 
 tr_concept_energy_adopt: "$tradition_concept_energy$ Traditions"
 tr_concept_energy_finish: "$tr_concept_energy_adopt$ Finished"
-tr_concept_energy_finish_effect: "Unlock the §Y$bts_conceptual_effect_energy$§! power in the §Y$pc_bts_labyrinth_of_abstraction$§!\nAscension Perks Unlocked: §G+1§!"
+tr_concept_energy_finish_effect: "Unlock the §Y$bts_conceptual_effect_energy$§! power in the §Y$pc_bts_labyrinth_of_abstraction_full$§!\nAscension Perks Unlocked: §G+1§!"
 
 tr_concept_energy_11: "Structural Optimization"
 tr_concept_energy_11_effect: "$mod_ships_upkeep_mult$ $bts_tr_concept_jobs_msg$: §G$@bts_concept_energy_11_ship_upkeep|%2$§!\n$mod_starbases_upkeep_mult$ $bts_tr_concept_jobs_msg$: §G$@bts_concept_energy_11_starbase_upkeep|%2$§!"
@@ -479,7 +480,7 @@ bts.25.ok.2: "WHAT"
 r_bts_relic_shroud_nexus: "Shroud Nexus"
 r_bts_relic_shroud_nexus_desc: "All our §Y$job_bts_conceptual_architect_plural$§! manage to establish a link between each of our ships."
 r_bts_relic_shroud_nexus_active: "A §Y$bts_shroud_portal_megastructure$§! will appear next to your fleets for §Y$@bts_shroud_portal_expiration_days|*0$§! days"
-r_bts_relic_shroud_nexus_needed_level: "$TRIGGER_FAIL$$pc_bts_labyrinth_of_abstraction$ level §Ygreater or equal than $@bts_labyrinth_of_abstraction_relic_level|*0$§! is required"
+r_bts_relic_shroud_nexus_needed_level: "$TRIGGER_FAIL$$pc_bts_labyrinth_of_abstraction_full$ level §Ygreater or equal than $@bts_labyrinth_of_abstraction_relic_level|*0$§! is required"
 
 r_bts_relic_concept_time: "Conceptual Cube: Time"
 r_bts_relic_concept_time_desc: ""
