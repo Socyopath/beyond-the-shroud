@@ -199,14 +199,9 @@ ship_event = {
 				bts_spawn_conceptual_system_effect = { DAYS = @bts_conceptual_effect_time_duration }
 			}
 			root.owner = {
-				set_timed_country_flag = {
-					flag = bts_conceptual_effect_cooldown
+				add_modifier = {
+					modifier = bts_conceptual_effect_cooldown
 					days = @bts_conceptual_effect_time_cooldown
-				}
-				set_saved_date = {
-					key = bts_conceptual_effect_date
-					days_from_present = @bts_conceptual_effect_time_cooldown
-					expires = @bts_conceptual_effect_time_cooldown
 				}
 			}
 		}
@@ -229,14 +224,9 @@ ship_event = {
 				bts_spawn_conceptual_system_effect = { DAYS = @bts_conceptual_effect_space_duration }
 			}
 			root.owner = {
-				set_timed_country_flag = {
-					flag = bts_conceptual_effect_cooldown
+				add_modifier = {
+					modifier = bts_conceptual_effect_cooldown
 					days = @bts_conceptual_effect_space_cooldown
-				}
-				set_saved_date = {
-					key = bts_conceptual_effect_date
-					days_from_present = @bts_conceptual_effect_space_cooldown
-					expires = @bts_conceptual_effect_space_cooldown
 				}
 			}
 		}
@@ -255,14 +245,9 @@ ship_event = {
 				bts_spawn_conceptual_system_effect = { DAYS = @bts_conceptual_effect_time_duration }
 			}
 			root.owner = {
-				set_timed_country_flag = {
-					flag = bts_conceptual_effect_cooldown
+				add_modifier = {
+					modifier = bts_conceptual_effect_cooldown
 					days = @bts_conceptual_effect_energy_cooldown
-				}
-				set_saved_date = {
-					key = bts_conceptual_effect_date
-					days_from_present = @bts_conceptual_effect_energy_cooldown
-					expires = @bts_conceptual_effect_energy_cooldown
 				}
 			}
 		}

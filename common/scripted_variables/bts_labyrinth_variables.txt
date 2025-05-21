@@ -105,5 +105,5 @@
 @bts_building_ethical_manipulator_ethic_attraction = 0.20
 
 
-
-
+# Conceptual Mastery
+@bts_conceptual_effect_cooldown_planet_jobs_upkeep_mult = 5.0

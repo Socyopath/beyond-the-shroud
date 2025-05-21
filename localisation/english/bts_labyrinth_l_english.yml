@@ -328,10 +328,6 @@ tr_concept_space_22_delayed: "By manipulating the gravitational fields of nearby
 tr_concept_space_3: "Hyperspace Distortion"
 tr_concept_space_3_delayed: "By folding space, we can cover vast interstellar distances in the blink of an eye."
 
-bts_conceptual_effect_space: "Dimensional Lock"
-bts_conceptual_effect_space_power: "$bts_conceptual_effect_power$§Y$bts_conceptual_effect_space$§!"
-bts_conceptual_effect_space_desc: "$bts_conceptual_ship_effect$§YLock all bypass§! in the system for §Y$@bts_conceptual_effect_space_duration|*0$§! days.\n\nCooldown: §Y$@bts_conceptual_effect_space_cooldown|0$§! days"
-
 ## Tradition Concept: Time
 tradition_concept_time: "Concept: Time"
 tradition_concept_time_desc: "Past, present and future are concepts that no longer hold any secrets for us."
@@ -358,10 +354,6 @@ tr_concept_time_22_delayed: "Infiltration operations no longer take as long, as 
 
 tr_concept_time_3: "Ancient Times"
 tr_concept_time_3_delayed: "We can sense the time accumulated by relics over time and exploit it to increase their frequency of use."
-
-bts_conceptual_effect_time: "Chronostasis"
-bts_conceptual_effect_time_power: "$bts_conceptual_effect_power$§Y$bts_conceptual_effect_time$§!"
-bts_conceptual_effect_time_desc: "$bts_conceptual_ship_effect$§YStops Time§! for §Rall ships§! in the system for §Y$@bts_conceptual_effect_time_duration|*0$§! days.\n\nCooldown: §Y$@bts_conceptual_effect_time_cooldown|0$§! days"
 
 ## Tradition Concept: Energy
 tradition_concept_energy: "Concept: Energy"
@@ -392,15 +384,23 @@ tr_concept_energy_3_delayed: "Energy can be used in its purest form, enhancing t
 
 
 ## Conceptual Effect (Tradition Finished abilities)
+bts_conceptual_effect_space: "Dimensional Lock"
+bts_conceptual_effect_space_power: "$bts_conceptual_effect_power$§Y$bts_conceptual_effect_space$§!"
+bts_conceptual_effect_space_desc: "$bts_conceptual_ship_effect$§YLock all bypass§! in the system for §Y$@bts_conceptual_effect_space_duration|*0$§! days.\n\n"
+
+bts_conceptual_effect_time: "Chronostasis"
+bts_conceptual_effect_time_power: "$bts_conceptual_effect_power$§Y$bts_conceptual_effect_time$§!"
+bts_conceptual_effect_time_desc: "$bts_conceptual_ship_effect$§YStops Time§! for §Rall ships§! in the system for §Y$@bts_conceptual_effect_time_duration|*0$§! days.\n\n"
+
 bts_conceptual_effect_energy: "Zero-Point Energy"
 bts_conceptual_effect_energy_power: "$bts_conceptual_effect_power$§Y$bts_conceptual_effect_energy$§!"
-bts_conceptual_effect_energy_desc: "$bts_conceptual_ship_effect$§YNullifies the shield§! of §Rall enemies§! in the system for §Y$@bts_conceptual_effect_energy_duration|*0$§! days.\n\nCooldown: §Y$@bts_conceptual_effect_energy_cooldown|0$§! days"
+bts_conceptual_effect_energy_desc: "$bts_conceptual_ship_effect$§YNullifies the shield§! of §Rall enemies§! in the system for §Y$@bts_conceptual_effect_energy_duration|*0$§! days.\n\n"
 
 bts_conceptual_effect_power: "Conceptual Effect: "
 bts_conceptual_ship_effect: "Summons a vessel that §Ytriggers§! the following effect when it §Yjumps into a system§!:\n"
-bts_conceptual_ship_already_use: "A conceptual ship is already in use"
-bts_conceptual_effect_cooldown: "Conceptual effect is on cooldown until §Y[this.bts_conceptual_effect_date]§!"
-
+bts_conceptual_ship_already_use: "Does NOT have a §YConceptual Ship§! already in use"
+bts_conceptual_effect_cooldown: "Conceptual Exhaustion"
+bts_conceptual_effect_cooldown_tooltip: "§RNo longer able to use conceptual ships§!\n$mod_planet_jobs_upkeep_mult$: $@bts_conceptual_effect_cooldown_planet_jobs_upkeep_mult|R%0$!"
 
 ## Situation
 ### Stage 0

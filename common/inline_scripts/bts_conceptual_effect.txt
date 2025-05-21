@@ -16,22 +16,24 @@ option = {
                 }
             }
         }
-        custom_tooltip = {
-            fail_text = "bts_conceptual_effect_cooldown"
-            NOT = {
-                has_country_flag = bts_conceptual_effect_cooldown
-            }
+        NOT = {
+            has_modifier = bts_conceptual_effect_cooldown
+        }
+    }
+
+    tooltip = {
+        add_modifier = {
+            modifier = bts_conceptual_effect_cooldown
+            days = @bts_conceptual_effect_$CONCEPT$_cooldown
         }
     }
 
     hidden_effect = {
-		hidden_effect = {
-            bts_create_concept_ship = {
-                NAME = bts_conceptual_effect_$CONCEPT$
-                OWNER = root
-                FLAG = bts_concept_$CONCEPT$
-                LOC = from
-            }
+        bts_create_concept_ship = {
+            NAME = bts_conceptual_effect_$CONCEPT$
+            OWNER = root
+            FLAG = bts_concept_$CONCEPT$
+            LOC = from
         }
     }
 }
