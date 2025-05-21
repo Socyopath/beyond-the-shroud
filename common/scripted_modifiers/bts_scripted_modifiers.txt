@@ -113,7 +113,7 @@ bts_conceptual_effect_cooldown_no_ship = {
 }
 
 bts_conceptual_effect_cost_mult = {
-	# icon = mod_acceptlesson
+	icon = mod_bts_conceptual_effect_cost_mult
 	max_decimals = 2
 	good = no
 	category = country
@@ -121,7 +121,7 @@ bts_conceptual_effect_cost_mult = {
 }
 
 bts_conceptual_effect_cooldown_mult = {
-	# icon = mod_acceptlesson
+	icon = mod_pop_promotion_time_mult
 	max_decimals = 2
 	good = no
 	category = country

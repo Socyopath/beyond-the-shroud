@@ -107,3 +107,7 @@
 
 # Conceptual Mastery
 @bts_conceptual_effect_cooldown_planet_jobs_upkeep_mult = 5.0
+@bts_building_labyrinth_conceptual_architects_cost_cost = -0.25
+@bts_building_labyrinth_conceptual_architects_duration_cooldown = -0.15
+@bts_building_labyrinth_conceptual_architects_hybrid_cooldown = -0.30
+@bts_building_labyrinth_conceptual_architects_hybrid_cost = 0.5

@@ -46,6 +46,11 @@ bts_district_labyrinth_ressources = {
 	triggered_name = {
 		text = bts_district_labyrinth_ressources_name
 	}
+
+	triggered_desc = {
+		text = job_bts_materializer_effect_desc
+	}
+
 }
 
 bts_district_labyrinth_mastery = {
@@ -66,6 +71,16 @@ bts_district_labyrinth_mastery = {
 	planet_modifier = {
 		job_bts_conceptual_architect_add = 100
 	}
+
+	triggered_name = {
+		text = bts_district_labyrinth_mastery_name
+	}
+
+	triggered_desc = {
+		text = job_bts_conceptual_architect_effect_desc
+	}
+
+	
 }
 
 bts_district_labyrinth_summon = {

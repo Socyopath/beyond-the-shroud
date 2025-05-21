@@ -232,6 +232,14 @@ bts_building_labyrinth_materializers_zro_3_desc: "$bts_building_labyrinth_materi
 bts_building_labyrinth_materializers_zro_4: "$bts_building_labyrinth_materializers_zro$ $bts_tier_4$"
 bts_building_labyrinth_materializers_zro_4_desc: "$bts_building_labyrinth_materializers_zro_desc$"
 
+# Conceptual Architects Buildings
+bts_building_labyrinth_conceptual_architects_cost: "Abstraction Stabilizer"
+bts_building_labyrinth_conceptual_architects_cost_desc: ""
+bts_building_labyrinth_conceptual_architects_duration: "Thought Optimizer"
+bts_building_labyrinth_conceptual_architects_duration_desc: ""
+bts_building_labyrinth_conceptual_architects_hybrid: "Precognitive Overload Core"
+bts_building_labyrinth_conceptual_architects_hybrid_desc: ""
+
 
 ## Modifiers
 mod_job_bts_veilwatcher_add: "[bts_veilwatcher.GetName] Jobs"
@@ -256,13 +264,21 @@ mod_planet_bts_conceptual_architect_conceptual_research: "§Y$situation_bts_conc
 
 ## Districts & Zones
 bts_district_labyrinth_main: "MAIN"
+bts_district_labyrinth_main_desc: ""
 bts_district_labyrinth_main_plural: "PLURAL"
 bts_district_labyrinth_main_name: "NAME"
-bts_district_labyrinth_main_desc: ""
-bts_district_labyrinth_ressources: "RESS"
+
+bts_district_labyrinth_ressources: "MAIN"
+bts_district_labyrinth_ressources_desc: ""
 bts_district_labyrinth_ressources_plural: "PLURAL"
 bts_district_labyrinth_ressources_name: "NAME"
-bts_district_labyrinth_ressources_desc: ""
+
+bts_district_labyrinth_mastery: "MAIN"
+bts_district_labyrinth_mastery_desc: ""
+bts_district_labyrinth_mastery_plural: "PLURAL"
+bts_district_labyrinth_mastery_name: "NAME"
+# bts_district_labyrinth_mastery_effects: "EFFECTS"
+
 zone_bts_labyrinth_observatory: "Third Eye Observatory"
 zone_bts_labyrinth_observatory_desc: ""
 zone_bts_labyrinth_control: "Altered Perception Complex"
@@ -274,24 +290,25 @@ job_bts_conceptual_architect: "Conceptual Architect"
 job_bts_conceptual_architect_plural: "Conceptual Architects"
 job_bts_conceptual_architect_desc: "A highly skilled telepath able to materialize certain concepts locally from his mind. He also excels in the art of controlling the thoughts of other entities."
 job_bts_conceptual_architect_plural_with_icon: "[bts_conceptual_architect.GetIcon] [bts_conceptual_architect.GetNamePlural]"
-# mod_job_bts_conceptual_architect_add: "$job_bts_conceptual_architect$ Jobs"
-# planet_bts_conceptual_architect: "$job_bts_conceptual_architect$ Jobs"
+job_bts_conceptual_architect_effect_desc: "[bts_conceptual_architect.GetIcon] [bts_conceptual_architect.GetNamePlural] make §Y$situation_bts_conceptual_mastery$§! Situation progress and provide additional §Ybonuses§!"
 
 job_bts_veilwatcher: "Veilwatcher"
 job_bts_veilwatcher_plural: "Veilwatchers"
 job_bts_veilwatcher_desc: "DESC"
 job_bts_veilwatcher_plural_with_icon: "[bts_veilwatcher.GetIcon] [bts_veilwatcher.GetNamePlural]"
+job_bts_veilwatcher_effect_desc: "[bts_veilwatcher.GetIcon] [bts_veilwatcher.GetNamePlural] give a §Ybetter view§! of the galaxy"
 
 job_bts_mindshaper: "Mindshaper"
 job_bts_mindshaper_plural: "Mindshapers"
 job_bts_mindshaper_desc: "DESC"
 job_bts_mindshaper_plural_with_icon: "[bts_mindshaper.GetIcon] [bts_mindshaper.GetNamePlural]"
+job_bts_mindshaper_effect_desc: "[bts_mindshaper.GetIcon] [bts_mindshaper.GetNamePlural] make §Ydiplomatic relations§! easier"
 
 job_bts_materializer: "Materializer"
 job_bts_materializer_plural: "Materializers"
 job_bts_materializer_desc: "DESC"
 job_bts_materializer_plural_with_icon: "[bts_materializer.GetIcon] [bts_materializer.GetNamePlural]"
-
+job_bts_materializer_effect_desc: "[bts_materializer.GetIcon] [bts_materializer.GetNamePlural] produce §Yvarious resources§!"
 
 
 # Bypass

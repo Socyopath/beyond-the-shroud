@@ -57,6 +57,10 @@ zone_bts_labyrinth_observatory = {
         job_bts_veilwatcher_add = 100
     }
 
+	triggered_desc = {
+		text = job_bts_veilwatcher_effect_desc
+	}
+
 }
 
 zone_bts_labyrinth_control = {
@@ -77,6 +81,10 @@ zone_bts_labyrinth_control = {
         job_bts_mindshaper_add = 100
     }
     
+	triggered_desc = {
+		text = job_bts_mindshaper_effect_desc
+	}
+
 }
 
 zone_bts_labyrinth_ressources = {

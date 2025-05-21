@@ -1,0 +1,84 @@
+bts_building_labyrinth_conceptual_architects_cost = {
+	icon = bts_building_labyrinth_conceptual_architects_cost
+	base_buildtime = @bts_labyrinth_of_abstraction_building_time
+	category = government
+	building_sets = { bts_labyrinth_of_abstraction_conceptual_architects_set }
+	planet_limit = 3
+	
+    potential = {
+		is_planet_class = pc_bts_labyrinth_of_abstraction
+	}
+
+	triggered_country_modifier = {
+        bts_conceptual_effect_cost_mult = @bts_building_labyrinth_conceptual_architects_cost_cost
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @bts_labyrinth_of_abstraction_building_cost
+			sr_zro = @bts_labyrinth_of_abstraction_building_cost_sr
+		}
+		upkeep = {
+			energy = @bts_labyrinth_of_abstraction_building_upkeep_energy
+			sr_zro = @bts_labyrinth_of_abstraction_building_upkeep_sr
+		}
+	}
+}
+
+bts_building_labyrinth_conceptual_architects_duration = {
+	icon = bts_building_labyrinth_conceptual_architects_duration
+	base_buildtime = @bts_labyrinth_of_abstraction_building_time
+	category = government
+	building_sets = { bts_labyrinth_of_abstraction_conceptual_architects_set }
+	planet_limit = 3
+	
+    potential = {
+		is_planet_class = pc_bts_labyrinth_of_abstraction
+	}
+
+	triggered_country_modifier = {
+        bts_conceptual_effect_cooldown_mult = @bts_building_labyrinth_conceptual_architects_duration_cooldown
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @bts_labyrinth_of_abstraction_building_cost
+			sr_zro = @bts_labyrinth_of_abstraction_building_cost_sr
+		}
+		upkeep = {
+			energy = @bts_labyrinth_of_abstraction_building_upkeep_energy
+			sr_zro = @bts_labyrinth_of_abstraction_building_upkeep_sr
+		}
+	}
+}
+
+bts_building_labyrinth_conceptual_architects_hybrid = {
+	icon = bts_building_labyrinth_conceptual_architects_hybrid
+	base_buildtime = @bts_labyrinth_of_abstraction_building_time
+	category = government
+	building_sets = { bts_labyrinth_of_abstraction_conceptual_architects_set }
+	planet_limit = 3
+	
+    potential = {
+		is_planet_class = pc_bts_labyrinth_of_abstraction
+	}
+
+	triggered_country_modifier = {
+        bts_conceptual_effect_cost_mult = @bts_building_labyrinth_conceptual_architects_hybrid_cost
+        bts_conceptual_effect_cooldown_mult = @bts_building_labyrinth_conceptual_architects_hybrid_cooldown
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @bts_labyrinth_of_abstraction_building_cost
+			sr_zro = @bts_labyrinth_of_abstraction_building_cost_sr
+		}
+		upkeep = {
+			energy = @bts_labyrinth_of_abstraction_building_upkeep_energy
+			sr_zro = @bts_labyrinth_of_abstraction_building_upkeep_sr
+		}
+	}
+}
