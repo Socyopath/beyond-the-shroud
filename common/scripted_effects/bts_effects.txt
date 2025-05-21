@@ -85,7 +85,7 @@ bts_create_concept_ship = {
 	create_fleet = {
 		name = $NAME$
 		effect = {
-			set_owner = root.owner
+			set_owner = $OWNER$
 			create_ship = {
 				name = "NAME_Conceptual_Ship"
 				design = "NAME_From_Beyond_Ship"
@@ -97,7 +97,7 @@ bts_create_concept_ship = {
 					add_modifier = { modifier = bts_conceptual_ship }
 				}
 			}
-			set_location = root
+			set_location = $LOC$
 		}
 	}
 }

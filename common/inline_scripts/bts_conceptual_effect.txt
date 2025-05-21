@@ -26,24 +26,15 @@ option = {
 
     hidden_effect = {
 		hidden_effect = {
-            create_fleet = {
-                name = bts_conceptual_effect_$CONCEPT$
-                effect = {
-                    set_owner = root
-                    create_ship = {
-                        name = "NAME_Conceptual_Ship"
-                        design = "NAME_From_Beyond_Ship"
-                        graphical_culture = "extra_dimensional_01"
-                        prefix = no
-                        upgradable = no
-                        effect = {
-                            set_ship_flag = bts_concept_$CONCEPT$
-                            add_modifier = { modifier = bts_conceptual_ship }
-                        }
-                    }
-                    set_location = from
-                }
+            bts_create_concept_ship = {
+                NAME = bts_conceptual_effect_$CONCEPT$
+                OWNER = root
+                FLAG = bts_concept_$CONCEPT$
+                LOC = from
             }
         }
     }
 }
+
+
+
