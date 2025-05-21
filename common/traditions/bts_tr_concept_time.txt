@@ -6,7 +6,7 @@ tr_concept_time_adopt = {
 		}
 	}
 	modifier = {
-		pop_growth_speed = @bts_concept_time_adopt_pop_growth
+		bonus_pop_growth_mult = @bts_concept_time_adopt_pop_growth
 	}
 }
 
