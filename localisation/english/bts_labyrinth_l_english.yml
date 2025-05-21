@@ -251,13 +251,20 @@ mod_planet_bts_materializers_minerals_produces_add: "£minerals£ $minerals$ per
 mod_planet_bts_materializers_alloys_produces_add: "£alloys£ $alloys$ per $pop_group_unit$ $job_bts_materializer_plural_with_icon$"
 mod_planet_bts_materializers_sr_zro_produces_add: "£sr_zro£ $sr_zro$ per $pop_group_unit$ $job_bts_materializer_plural_with_icon$"
 
-## Districts
-bts_district_third_eye_observatory: "Third Eye Observatory"
-bts_district_influence_control_complex: "Influence Control Complex"
-bts_district_third_eye_observatory_plural: "Third Eye Observatories"
-bts_district_influence_control_complex_plural: "Influence Control Complexes"
-bts_district_third_eye_observatory_desc: ""
-bts_district_influence_control_complex_desc: ""
+## Districts & Zones
+bts_district_labyrinth_main: "MAIN"
+bts_district_labyrinth_main_plural: "PLURAL"
+bts_district_labyrinth_main_name: "NAME"
+bts_district_labyrinth_main_desc: ""
+bts_district_labyrinth_ressources: "RESS"
+bts_district_labyrinth_ressources_plural: "PLURAL"
+bts_district_labyrinth_ressources_name: "NAME"
+bts_district_labyrinth_ressources_desc: ""
+zone_bts_labyrinth_observatory: "Third Eye Observatory"
+zone_bts_labyrinth_observatory_desc: ""
+zone_bts_labyrinth_control: "Altered Perception Complex"
+zone_bts_labyrinth_control_desc: ""
+
 
 ## Jobs
 job_bts_conceptual_architect: "Conceptual Architect"

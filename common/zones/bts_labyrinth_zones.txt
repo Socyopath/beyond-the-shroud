@@ -40,7 +40,7 @@ zone_bts_labyrinth_summon = {
 }
 
 zone_bts_labyrinth_observatory = {
-	icon = GFX_diplomatic_weight_large
+	icon = GFX_zone_bts_labyrinth_observatory
 	base_buildtime = @zone_buildtime
 
 	max_buildings = 3
@@ -60,7 +60,7 @@ zone_bts_labyrinth_observatory = {
 }
 
 zone_bts_labyrinth_control = {
-	icon = GFX_diplomatic_weight_large
+	icon = GFX_zone_bts_labyrinth_control
 	base_buildtime = @zone_buildtime
 
 	max_buildings = 3

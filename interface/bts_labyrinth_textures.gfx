@@ -1,0 +1,203 @@
+spriteTypes = {
+    # Traditions
+    # Concept: Time
+	spriteType = {
+		name = "GFX_tradition_hex_bg_tradition_concept_time"
+		textureFile = "gfx/interface/traditions/tradition_hex_bg_expansion.dds"
+	}
+	spriteType = {
+		name = "GFX_tradition_category_bg_tradition_concept_time"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_concept_time.dds"
+	}
+	corneredTileSpriteType = {
+		name = "GFX_tradition_category_tile_tradition_concept_time"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_concept_time.dds"
+		borderSize = { x=140 y=140 }
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_tradition_category_icon_tradition_concept_time"
+		textureFile = "gfx/interface/icons/traditions/tree_icons/tradition_icon_concept_time.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_concept_time_11"
+		textureFile = "gfx/interface/icons/traditions/tr_concept_time_11.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_concept_time_12"
+		textureFile = "gfx/interface/icons/traditions/tr_concept_time_12.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_concept_time_21"
+		textureFile = "gfx/interface/icons/traditions/tr_concept_time_21.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_concept_time_22"
+		textureFile = "gfx/interface/icons/traditions/tr_concept_time_22.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_concept_time_3"
+		textureFile = "gfx/interface/icons/traditions/tr_concept_time_3.dds"
+	}
+	spriteType = {
+		name = "GFX_relic_bts_relic_concept_time"
+		texturefile = "gfx/interface/icons/relics/r_bts_relic_concept_time.dds"			
+		effectFile = "gfx/FX/buttonstate.shader"
+		animation = {
+			animationmaskfile = "gfx/interface/icons/relics/r_bts_relic_concept_time_shine.dds"			
+			animationtexturefile = "gfx/interface/icons/relics/crystal_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 5
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "pulsing"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	# Concept: Space
+	spriteType = {
+		name = "GFX_tradition_hex_bg_tradition_concept_space"
+		textureFile = "gfx/interface/traditions/tradition_hex_bg_discovery.dds"
+	}
+	spriteType = {
+		name = "GFX_tradition_category_bg_tradition_concept_space"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_concept_space.dds"
+	}
+	corneredTileSpriteType = {
+		name = "GFX_tradition_category_tile_tradition_concept_space"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_concept_space.dds"
+		borderSize = { x=140 y=140 }
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_tradition_category_icon_tradition_concept_space"
+		textureFile = "gfx/interface/icons/traditions/tree_icons/tradition_icon_concept_space.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_concept_space_11"
+		textureFile = "gfx/interface/icons/traditions/tr_concept_space_11.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_concept_space_12"
+		textureFile = "gfx/interface/icons/traditions/tr_concept_space_12.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_concept_space_21"
+		textureFile = "gfx/interface/icons/traditions/tr_concept_space_21.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_concept_space_22"
+		textureFile = "gfx/interface/icons/traditions/tr_concept_space_22.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_concept_space_3"
+		textureFile = "gfx/interface/icons/traditions/tr_concept_space_3.dds"
+	}
+	spriteType = {
+		name = "GFX_relic_bts_relic_concept_space"
+		texturefile = "gfx/interface/icons/relics/r_bts_relic_concept_space.dds"			
+		effectFile = "gfx/FX/buttonstate.shader"
+		animation = {
+			animationmaskfile = "gfx/interface/icons/relics/r_bts_relic_concept_space_shine.dds"			
+			animationtexturefile = "gfx/interface/icons/relics/crystal_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 5
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "pulsing"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	# Concept: Energy
+	spriteType = {
+		name = "GFX_tradition_hex_bg_tradition_concept_energy"
+		textureFile = "gfx/interface/traditions/tradition_hex_bg_psionics.dds"
+	}
+	spriteType = {
+		name = "GFX_tradition_category_bg_tradition_concept_energy"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_concept_energy.dds"
+	}
+	corneredTileSpriteType = {
+		name = "GFX_tradition_category_tile_tradition_concept_energy"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_concept_energy.dds"
+		borderSize = { x=140 y=140 }
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_tradition_category_icon_tradition_concept_energy"
+		textureFile = "gfx/interface/icons/traditions/tree_icons/tradition_icon_concept_energy.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_concept_energy_11"
+		textureFile = "gfx/interface/icons/traditions/tr_concept_energy_11.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_concept_energy_12"
+		textureFile = "gfx/interface/icons/traditions/tr_concept_energy_12.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_concept_energy_21"
+		textureFile = "gfx/interface/icons/traditions/tr_concept_energy_21.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_concept_energy_22"
+		textureFile = "gfx/interface/icons/traditions/tr_concept_energy_22.dds"
+	}
+	spriteType = {
+		name = "GFX_tr_concept_energy_3"
+		textureFile = "gfx/interface/icons/traditions/tr_concept_energy_3.dds"
+	}
+	spriteType = {
+		name = "GFX_relic_bts_relic_concept_energy"
+		texturefile = "gfx/interface/icons/relics/r_bts_relic_concept_energy.dds"			
+		effectFile = "gfx/FX/buttonstate.shader"
+		animation = {
+			animationmaskfile = "gfx/interface/icons/relics/r_bts_relic_concept_energy_shine.dds"			
+			animationtexturefile = "gfx/interface/icons/relics/crystal_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 5
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "pulsing"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+    # Megastructure
+	spriteType = {
+		name = "GFX_type_pc_bts_labyrinth_of_abstraction"
+		texturefile = "gfx/interface/icons/planets/bts_labyrinth_of_abstraction.dds"
+	}
+	spriteType = {
+		name = "GFX_megastructure_bts_shroud_portal"
+		texturefile = "gfx/interface/planetview/bts_shroud_portal.dds"
+	}
+
+	# Weapons
+	spriteType = {
+		name = "GFX_ship_part_bts_shroud_blast"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_bts_shroud_blast.dds"
+	}
+
+    # Zones
+	spriteType = {
+		name = "GFX_zone_bts_labyrinth_observatory"
+		texturefile = "gfx/interface/icons/zones/zone_bts_labyrinth_observatory.dds"
+	}
+
+    spriteType = {
+		name = "GFX_zone_bts_labyrinth_control"
+		texturefile = "gfx/interface/icons/zones/zone_bts_labyrinth_control.dds"
+	}
+}
