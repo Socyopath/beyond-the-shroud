@@ -103,3 +103,27 @@ planet_bts_conceptual_architect_conceptual_research = {
 	category = planet
 	percentage = no
 }
+
+bts_conceptual_effect_cooldown_no_ship = {
+	icon = mod_acceptlesson
+	good = no
+	category = country
+	localize_with_value_key = yes
+	percentage = no
+}
+
+bts_conceptual_effect_cost_mult = {
+	# icon = mod_acceptlesson
+	max_decimals = 2
+	good = no
+	category = country
+	percentage = yes
+}
+
+bts_conceptual_effect_cooldown_mult = {
+	# icon = mod_acceptlesson
+	max_decimals = 2
+	good = no
+	category = country
+	percentage = yes
+}

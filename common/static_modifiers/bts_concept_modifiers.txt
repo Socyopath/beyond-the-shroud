@@ -19,6 +19,6 @@ bts_energy_surge = {
 }
 
 bts_conceptual_effect_cooldown = {
+    bts_conceptual_effect_cooldown_no_ship = 1 # Only for tooltip
     planet_jobs_upkeep_mult = @bts_conceptual_effect_cooldown_planet_jobs_upkeep_mult
-    custom_tooltip = bts_conceptual_effect_cooldown_tooltip
 }

@@ -202,6 +202,8 @@ ship_event = {
 				add_modifier = {
 					modifier = bts_conceptual_effect_cooldown
 					days = @bts_conceptual_effect_time_cooldown
+					multiplier = value:scripted_modifier_mult|MODIFIER|bts_conceptual_effect_cost_mult|
+					time_multiplier = value:scripted_modifier_mult|MODIFIER|bts_conceptual_effect_cooldown_mult|
 				}
 			}
 		}
@@ -227,6 +229,8 @@ ship_event = {
 				add_modifier = {
 					modifier = bts_conceptual_effect_cooldown
 					days = @bts_conceptual_effect_space_cooldown
+					multiplier = value:scripted_modifier_mult|MODIFIER|bts_conceptual_effect_cost_mult|
+					time_multiplier = value:scripted_modifier_mult|MODIFIER|bts_conceptual_effect_cooldown_mult|
 				}
 			}
 		}
@@ -241,13 +245,15 @@ ship_event = {
 					}
 					ship_event = { id = bts.18 scopes = { FROM = prev } } # Nullify check
 				}
-				system_event = { id = bts.19 days = @bts_conceptual_effect_time_duration } #  Nullify end
-				bts_spawn_conceptual_system_effect = { DAYS = @bts_conceptual_effect_time_duration }
+				system_event = { id = bts.19 days = @bts_conceptual_effect_energy_duration } #  Nullify end
+				bts_spawn_conceptual_system_effect = { DAYS = @bts_conceptual_effect_energy_duration }
 			}
 			root.owner = {
 				add_modifier = {
 					modifier = bts_conceptual_effect_cooldown
 					days = @bts_conceptual_effect_energy_cooldown
+					multiplier = value:scripted_modifier_mult|MODIFIER|bts_conceptual_effect_cost_mult|
+					time_multiplier = value:scripted_modifier_mult|MODIFIER|bts_conceptual_effect_cooldown_mult|
 				}
 			}
 		}

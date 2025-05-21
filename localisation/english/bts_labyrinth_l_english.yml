@@ -400,7 +400,9 @@ bts_conceptual_effect_power: "Conceptual Effect: "
 bts_conceptual_ship_effect: "Summons a vessel that §Ytriggers§! the following effect when it §Yjumps into a system§!:\n"
 bts_conceptual_ship_already_use: "Does NOT have a §YConceptual Ship§! already in use"
 bts_conceptual_effect_cooldown: "Conceptual Exhaustion"
-bts_conceptual_effect_cooldown_tooltip: "§RNo longer able to use conceptual ships§!\n$mod_planet_jobs_upkeep_mult$: $@bts_conceptual_effect_cooldown_planet_jobs_upkeep_mult|R%0$!"
+mod_bts_conceptual_effect_cooldown_no_ship: "§RNo longer able to use conceptual ships§!"
+mod_bts_conceptual_effect_cooldown_mult: "§Y$bts_conceptual_effect_cooldown$§! Duration"
+mod_bts_conceptual_effect_cost_mult: "$mod_planet_jobs_upkeep_mult$ Penalty with §Y$bts_conceptual_effect_cooldown$§!"
 
 ## Situation
 ### Stage 0
