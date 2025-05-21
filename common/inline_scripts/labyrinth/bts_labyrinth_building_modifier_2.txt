@@ -3,6 +3,7 @@ $NAME$_1 = {
 	base_buildtime = $BUILD_TIME$
 	category = government
 	building_sets = { $BUILDING_SET$ }
+	planet_limit = $LIMIT$
 	
     potential = {
 		is_planet_class = pc_bts_labyrinth_of_abstraction

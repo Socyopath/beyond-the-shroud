@@ -3,6 +3,7 @@ inline_script = {
     NAME = bts_building_labyrinth_mindshapers_trust
     BUILD_TIME = @bts_labyrinth_of_abstraction_building_time
     BUILDING_SET = bts_labyrinth_of_abstraction_mindshapers_set
+    LIMIT = 3
     MODIFIER_1 = planet_bts_mindshapers_trust_cap_add
     VALUE_1 = @bts_building_labyrinth_mindshapers_trust_cap
     MODIFIER_2 = planet_bts_mindshapers_trust_growth
@@ -14,6 +15,7 @@ inline_script = {
     NAME = bts_building_labyrinth_mindshapers_trade
     BUILD_TIME = @bts_labyrinth_of_abstraction_building_time
     BUILDING_SET = bts_labyrinth_of_abstraction_mindshapers_set
+    LIMIT = 3
     MODIFIER = planet_bts_mindshapers_trade_produces_add
     VALUE = @bts_building_labyrinth_mindshapers_trade
 }
@@ -23,6 +25,7 @@ inline_script = {
     NAME = bts_building_labyrinth_mindshapers_influence
     BUILD_TIME = @bts_labyrinth_of_abstraction_building_time
     BUILDING_SET = bts_labyrinth_of_abstraction_mindshapers_set
+    LIMIT = 3
     MODIFIER = planet_bts_mindshapers_base_influence_produces_add
     VALUE = @bts_building_labyrinth_mindshapers_influence
 }
