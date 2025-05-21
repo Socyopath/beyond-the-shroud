@@ -198,7 +198,7 @@ bts_building_labyrinth_mindshapers_influence_3_desc: "$bts_building_labyrinth_mi
 bts_building_labyrinth_mindshapers_influence_4: "$bts_building_labyrinth_mindshapers_influence$ $bts_tier_4$"
 bts_building_labyrinth_mindshapers_influence_4_desc: "$bts_building_labyrinth_mindshapers_influence_desc$"
 
-bts_building_labyrinth_materializers_specials: ""
+bts_building_labyrinth_materializers_specials: "Otherworldly Converter"
 bts_building_labyrinth_materializers_specials_desc: ""
 bts_building_labyrinth_materializers_specials_1: "$bts_building_labyrinth_materializers_specials$ $bts_tier_1$"
 bts_building_labyrinth_materializers_specials_1_desc: "$bts_building_labyrinth_materializers_specials_desc$"
@@ -209,7 +209,7 @@ bts_building_labyrinth_materializers_specials_3_desc: "$bts_building_labyrinth_m
 bts_building_labyrinth_materializers_specials_4: "$bts_building_labyrinth_materializers_specials$ $bts_tier_4$"
 bts_building_labyrinth_materializers_specials_4_desc: "$bts_building_labyrinth_materializers_specials_desc$"
 
-bts_building_labyrinth_materializers_basic: ""
+bts_building_labyrinth_materializers_basic: "Spiritual Forge"
 bts_building_labyrinth_materializers_basic_desc: ""
 bts_building_labyrinth_materializers_basic_1: "$bts_building_labyrinth_materializers_basic$ $bts_tier_1$"
 bts_building_labyrinth_materializers_basic_1_desc: "$bts_building_labyrinth_materializers_basic_desc$"
@@ -220,7 +220,7 @@ bts_building_labyrinth_materializers_basic_3_desc: "$bts_building_labyrinth_mate
 bts_building_labyrinth_materializers_basic_4: "$bts_building_labyrinth_materializers_basic$ $bts_tier_4$"
 bts_building_labyrinth_materializers_basic_4_desc: "$bts_building_labyrinth_materializers_basic_desc$"
 
-bts_building_labyrinth_materializers_zro: ""
+bts_building_labyrinth_materializers_zro: "Psionic Synthesizer"
 bts_building_labyrinth_materializers_zro_desc: ""
 bts_building_labyrinth_materializers_zro_1: "$bts_building_labyrinth_materializers_zro$ $bts_tier_1$"
 bts_building_labyrinth_materializers_zro_1_desc: "$bts_building_labyrinth_materializers_zro_desc$"
