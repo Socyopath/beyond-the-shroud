@@ -16,7 +16,7 @@ zone_bts_labyrinth_mastery = {
 	max_buildings = 3
 
     included_building_sets = {
-                                    
+		bts_labyrinth_of_abstraction_conceptual_architects_set
     }
 
     planet_modifier = {

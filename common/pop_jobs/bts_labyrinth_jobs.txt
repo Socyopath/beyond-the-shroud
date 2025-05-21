@@ -1,6 +1,5 @@
 bts_veilwatcher = {
 	category = specialist
-	tags = { bts_veilwatcher }
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -42,7 +41,6 @@ bts_veilwatcher = {
 
 bts_mindshaper = {
 	category = specialist
-	tags = { bts_mindshaper }
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -84,7 +82,6 @@ bts_mindshaper = {
 
 bts_materializer = {
 	category = specialist
-	tags = { bts_materializer }
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -112,7 +109,6 @@ bts_materializer = {
 
 bts_conceptual_architect = {
 	category = specialist
-	tags = { bts_conceptual_architect }
 
 	possible_pre_triggers = {
 		has_owner = yes
