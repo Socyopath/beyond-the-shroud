@@ -1,34 +1,5 @@
 namespace = bts
 
-# Megastructure Info event
-country_event = { 
-	id = bts.300
-	title = bts_mega_aetherophasic_collapser_unlocked
-	picture = GFX_evt_unspeakable_horror
-	show_sound = event_red_alert
-	location = root
-
-	is_triggered_only = yes
-
-	desc = bts_mega_aetherophasic_collapser_unlocked_desc
-
-	trigger = {
-		NOT = { has_country_flag = bts_can_build_aetherophasic_collapser }
-		bts_has_any_covenant_confirmed = yes
-		bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_mega_aetherophasic_collapser_0_favor_cost }
-		bts_has_labyrinth_of_abstraction_level = {
-			LEVEL = @bts_labyrinth_shroud_inter_mega_powers_unlock_level
-		}
-	}
-
-	option = {
-		name = OK
-		hidden_effect = {
-			set_country_flag = bts_can_build_aetherophasic_collapser
-		}
-	}
-}
-
 # BTS covenant powers
 country_event = {
 	id = bts.301
