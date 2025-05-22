@@ -47,7 +47,9 @@ bts_labyrinth_of_abstraction_core_2 = {
 		is_planet_class = pc_bts_labyrinth_of_abstraction
 	}
 	allow = {
-		
+		owner = {
+			bts_has_any_covenant_favor_with_tooltip = { FAVOR_AMOUNT = @bts_labyrinth_building_tier_2_favor }
+		}
 	}
 	convert_to = {
 		bts_labyrinth_of_abstraction_core_1
@@ -93,7 +95,9 @@ bts_labyrinth_of_abstraction_core_3 = {
 		is_planet_class = pc_bts_labyrinth_of_abstraction
 	}
 	allow = {
-		
+		owner = {
+			bts_has_any_covenant_favor_with_tooltip = { FAVOR_AMOUNT = @bts_labyrinth_building_tier_3_favor }
+		}
 	}
 	convert_to = {
 		bts_labyrinth_of_abstraction_core_2
@@ -139,7 +143,9 @@ bts_labyrinth_of_abstraction_core_4 = {
 		is_planet_class = pc_bts_labyrinth_of_abstraction
 	}
 	allow = {
-		
+		owner = {
+			bts_has_any_covenant_favor_with_tooltip = { FAVOR_AMOUNT = @bts_labyrinth_building_tier_4_favor }
+		}
 	}
 	convert_to = {
 		bts_labyrinth_of_abstraction_core_4

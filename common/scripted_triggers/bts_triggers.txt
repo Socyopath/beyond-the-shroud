@@ -8,6 +8,19 @@ bts_has_any_covenant_favor = {
 	}
 }
 
+bts_has_any_covenant_favor_with_tooltip = {
+	custom_tooltip = {
+		OR = {
+			check_variable = { which = composer_covenant_rank value >= $FAVOR_AMOUNT$ }
+			check_variable = { which = eater_covenant_rank value >= $FAVOR_AMOUNT$ }
+			check_variable = { which = instrument_covenant_rank value >= $FAVOR_AMOUNT$ }
+			check_variable = { which = whisperers_covenant_rank value >= $FAVOR_AMOUNT$ }
+			check_variable = { which = bts_covenant_rank value >= $FAVOR_AMOUNT$ }
+		}
+		fail_text = bts_requires_favor_$FAVOR_AMOUNT$
+	}
+}
+
 bts_has_any_covenant_confirmed = {
 	OR = {
 		has_country_flag = composer_covenant_confirmed

@@ -45,6 +45,12 @@ $NAME$_2 = {
 		is_planet_class = pc_bts_labyrinth_of_abstraction
 	}
 
+	allow = {
+		owner = {
+			bts_has_any_covenant_favor_with_tooltip = { FAVOR_AMOUNT = @bts_labyrinth_building_tier_2_favor }
+		}
+	}
+
 	convert_to = {
 		$NAME$_1
 	}
@@ -83,6 +89,12 @@ $NAME$_3 = {
 
     potential = {
 		is_planet_class = pc_bts_labyrinth_of_abstraction
+	}
+
+	allow = {
+		owner = {
+			bts_has_any_covenant_favor_with_tooltip = { FAVOR_AMOUNT = @bts_labyrinth_building_tier_3_favor }
+		}
 	}
 
 	convert_to = {
@@ -125,6 +137,12 @@ $NAME$_4 = {
 		is_planet_class = pc_bts_labyrinth_of_abstraction
 	}
 
+	allow = {
+		owner = {
+			bts_has_any_covenant_favor_with_tooltip = { FAVOR_AMOUNT = @bts_labyrinth_building_tier_4_favor }
+		}
+	}
+	
 	convert_to = {
 		$NAME$_3
 	}

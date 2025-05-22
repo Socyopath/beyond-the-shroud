@@ -23,6 +23,9 @@
 @bts_labyrinth_shroud_inter_choose_effect_favor_cost = 250
 @bts_labyrinth_shroud_inter_choose_effect_cooldown = 5400
 
+@bts_labyrinth_building_tier_2_favor = 100
+@bts_labyrinth_building_tier_3_favor = 200
+@bts_labyrinth_building_tier_4_favor = 300
 ## Capital
 @bts_conceptual_architect_unity = 12
 ### Level 1
