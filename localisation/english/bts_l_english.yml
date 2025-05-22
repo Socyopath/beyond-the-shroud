@@ -181,9 +181,6 @@ bts_power_summon_4_invalid_number: "Less than §Y$@bts_power_summon_4_max_number
 
 # Modifiers
 absorbed_consciousness_0: "$absorbed_consciousness_1$"
-mod_planet_telepaths_sr_zro_produces_add: "£sr_zro£ $sr_zro$ from £job_telepath£ $job_telepath_plural$"
-mod_planet_telepaths_produces_mult: "£job_telepath£ $job_telepath$ Output"
-mod_country_sr_zro_cost_mult: "£sr_zro£ $sr_zro$ Cost"
 
 # UI Text
 bts_reckoning_info: "§M$NAME_Reckoning$§! : §Y[root.bts_planet_killer_end_pop_killed]§! organic pops §Rkilled§!"

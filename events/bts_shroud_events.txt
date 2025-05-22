@@ -149,10 +149,6 @@ country_event = {
 
 		name = bts.100.boon.low
 
-		trigger = {
-			bts_has_labyrinth_of_abstraction_level = { LEVEL = @bts_labyrinth_shroud_inter_choose_boon_unlock_level }
-		}
-
 		allow = {
 			resource_stockpile_compare = {
 				resource = energy

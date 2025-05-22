@@ -24,7 +24,6 @@
 @bts_concept_space_11_starbase_cap = 0.1
 @bts_concept_space_12_naval_cap = 0.01
 @bts_concept_space_12_fleet_cmd = 0.01
-@bts_concept_space_21_building_slot = 0.05
 @bts_concept_space_21_district_slot = 0.10
 @bts_concept_space_21_housing_usage = -0.005
 @bts_concept_space_22_max_storage = 1000
