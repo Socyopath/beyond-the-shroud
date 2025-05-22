@@ -28,6 +28,9 @@ bts_labyrinth_of_abstraction_core_1 = {
 		}
 	}
 
+	triggered_desc = {
+		text = bts_labyrinth_of_abstraction_core_1_effects
+	}
 }
 
 # Planetary Administration

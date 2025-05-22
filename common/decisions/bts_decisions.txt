@@ -167,6 +167,7 @@ decision_bts_labyrinth_of_abstraction_shroud_interraction = {
 		is_planet_class = pc_bts_labyrinth_of_abstraction
 		exists = owner
 		owner = {
+			bts_has_labyrinth_of_abstraction_level = { LEVEL = 1 }
 			NOT = { has_country_flag = shroud_diplomacy_engaged }
 		}
 	}
