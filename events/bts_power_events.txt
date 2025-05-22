@@ -35,13 +35,13 @@ country_event = {
         allow = {
             resource_stockpile_compare = {
                 resource = sr_zro
-                value >= @bts_power_summon_1_zro_cost
+                value >= 1000
                 mult = value:scripted_modifier_mult|MODIFIER|country_sr_zro_cost_mult|
             }
         }
 
         add_resource = {
-            sr_zro = -@bts_power_summon_1_zro_cost
+            sr_zro = -1000
             mult = value:scripted_modifier_mult|MODIFIER|country_sr_zro_cost_mult|
         }
         
@@ -66,19 +66,19 @@ country_event = {
             custom_tooltip = { 
                 fail_text = bts_power_summon_2_invalid_number 
                 count_owned_ship = { 
-                    count < @bts_power_summon_2_max_number
+                    count < root.value:bts_scripted_modifier_add|BASE|@bts_power_summon_2_max_number|MODIFIER|bts_power_summon_2_capacity_add|
                     limit = { is_ship_size = shroud_manifestation }
                 } 
             }
             resource_stockpile_compare = {
                 resource = sr_zro
-                value >= @bts_power_summon_2_zro_cost
+                value >= 2000
                 mult = value:scripted_modifier_mult|MODIFIER|country_sr_zro_cost_mult|
             }
         }
 
         add_resource = {
-            sr_zro = -@bts_power_summon_2_zro_cost
+            sr_zro = -2000
             mult = value:scripted_modifier_mult|MODIFIER|country_sr_zro_cost_mult|
         }
         
@@ -101,21 +101,21 @@ country_event = {
         }
         allow = {
             custom_tooltip = { 
-                fail_text = bts_power_summon_3_max_number 
+                fail_text = bts_power_summon_3_invalid_number 
                 count_owned_ship = { 
-                    count < @bts_power_summon_3_max_number
+                    count < 1
                     limit = { is_ship_size = warped_consciousness }
                 } 
             }
             resource_stockpile_compare = {
                 resource = sr_zro
-                value >= @bts_power_summon_3_zro_cost
+                value >= 20000
                 mult = value:scripted_modifier_mult|MODIFIER|country_sr_zro_cost_mult|
             }
         }
 
         add_resource = {
-            sr_zro = -@bts_power_summon_3_zro_cost
+            sr_zro = -20000
             mult = value:scripted_modifier_mult|MODIFIER|country_sr_zro_cost_mult|
         }
         

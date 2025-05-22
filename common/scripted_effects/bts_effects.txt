@@ -154,3 +154,38 @@ bts_conceptual_effect_cooldown_start = {
 	}
 }
 
+bts_summon_power = {
+	random_owned_planet = {
+		limit = {
+			is_planet_class = pc_bts_labyrinth_of_abstraction
+		}
+		save_event_target_as = bts_labyrinth_summon_target
+	}
+	create_fleet = {
+		name = $FLEET_NAME$
+		settings = {
+			spawn_debris = no
+		}
+		effect = {
+			set_owner = root
+			create_ship = {
+				name = $SHIP_NAME$
+				design = $SHIP_DESIGN$
+			}
+			if = {
+				limit = { 
+					event_target:bts_labyrinth_summon_target = { 
+						always = no 
+					} 
+				}
+				last_created_ship = {
+					set_ship_design = {
+						design = $SHIP_DESIGN_ZRONI$
+					}
+					bts_update_ship_shield_reduction_zroni_shield = { SYSTEM = event_target:bts_labyrinth_summon_target.solar_system }
+				}
+			}
+			set_location = event_target:bts_labyrinth_summon_target
+		}
+	}
+}

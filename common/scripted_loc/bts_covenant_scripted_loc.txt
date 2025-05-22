@@ -301,3 +301,8 @@ defined_text = {
     }
     default = BLANK_STRING
 }
+
+defined_text = {
+    name = bts_power_summon_2_capacity
+    value =  value:bts_scripted_modifier_add|BASE|@bts_power_summon_2_max_number|MODIFIER|bts_power_summon_2_capacity_add|
+}

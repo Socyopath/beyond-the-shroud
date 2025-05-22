@@ -401,46 +401,7 @@ covenant_favor_year_estimation_delta = {
     subtract = value:current_covenant_total_favor
 }
 
-# Scope = country
-bts_labyrinth_of_abstraction_level = {
-    base = 0
-    modifier = {
-        any_owned_planet = {
-            is_planet_class = pc_bts_labyrinth_of_abstraction
-            has_building = bts_labyrinth_of_abstraction_core_1
-        }
-        add = 1
-    }
-    modifier = {
-        any_owned_planet = {
-            is_planet_class = pc_bts_labyrinth_of_abstraction
-            has_building = bts_labyrinth_of_abstraction_core_2
-        }
-        add = 2
-    }
-    modifier = {
-        any_owned_planet = {
-            is_planet_class = pc_bts_labyrinth_of_abstraction
-            has_building = bts_labyrinth_of_abstraction_core_3
-        }
-        add = 3
-    }
-    modifier = {
-        any_owned_planet = {
-            is_planet_class = pc_bts_labyrinth_of_abstraction
-            has_building = bts_labyrinth_of_abstraction_core_4
-        }
-        add = 4
-    }
-}
-
-bts_num_conceptual_architects = {
-    base = 0
-    complex_trigger_modifier = {
-        trigger = num_assigned_jobs
-        parameters = {
-            job = bts_conceptual_architect
-        }
-        mode = add
-    }
+bts_scripted_modifier_add = {
+	base = $BASE$
+	add = modifier:$MODIFIER$
 }
