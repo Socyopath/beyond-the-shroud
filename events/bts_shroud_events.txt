@@ -198,7 +198,6 @@ country_event = {
 	option = { # Shroud effects
 		name = bts.100.effects
 		trigger = {
-			bts_has_labyrinth_of_abstraction_level = { LEVEL = @bts_labyrinth_shroud_inter_choose_effect_unlock_level }
 			bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_shroud_inter_choose_effect_favor_cost }
 		}
 
