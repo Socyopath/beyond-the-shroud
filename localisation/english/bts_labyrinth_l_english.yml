@@ -4,9 +4,12 @@
 bts.1000.title: "$pc_bts_labyrinth_of_abstraction_full$"
 bts.1000.desc: "Our divinity offered us a vision in which we could see strange patterns for a §Ymegastructure§!.\n\n§PFORBIDDEN KNOWLEDGE : $pc_bts_labyrinth_of_abstraction_full$§!"
 
-bts.100.pop: "Create a §Yliving being§! of our own kind"
-bts.100.boon: "Choose §Yboon§! of the shroud"
-bts.100.effects: "Choose §Yspecial effect§! from the shroud"
+bts.100.boon: "Choose §Yboon§! of the Shroud"
+bts.100.boon.low: "$bts.100.boon$ - $shroud.chances.low$"
+bts.100.boon.medium: "$bts.100.boon$ - $shroud.chances.medium$"
+bts.100.boon.high: "$bts.100.boon$ - $shroud.chances.high$"
+
+bts.100.effects: "Choose §Yspecial effect§! from the Shroud"
 bts.100.effects.chosen: "Promote a leader to be a §YChosen One§!"
 bts.100.effects.steal: "Steal §Ytechnology§! from a Fallen Empire"
 

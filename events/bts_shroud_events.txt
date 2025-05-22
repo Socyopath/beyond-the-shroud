@@ -132,41 +132,25 @@ country_event = {
 		}
 	}
 
-	option = {
-		name = bts.100.pop
-		trigger = {
-			bts_has_labyrinth_of_abstraction_level = { LEVEL = @bts_labyrinth_shroud_inter_unlock_level }
-		}
-		allow = {
-			resource_stockpile_compare = {
-				resource = energy
-				value >= 1000
-				mult = value:scripted_modifier_mult|MODIFIER|shroud_delve_cost|
-			}
-		}
-
-		add_resource = {
-			energy = -1000
-			mult = value:scripted_modifier_mult|MODIFIER|shroud_delve_cost|
-		}
-		add_modifier = {
-			modifier = "shroud_cooldown"
-			days = @bts_labyrinth_shroud_inter_pop_cooldown
-			time_multiplier = value:scripted_modifier_mult|MODIFIER|shroud_delve_cooldown|
-		}
-
-		from = {
-			create_pop = {
-				species = root
-				ethos = root
-			}
-		}
-	}
 	option = { # Shroud Boons
-		name = bts.100.boon
+		name = {
+			exclusive_trigger = {
+				bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_shroud_inter_choose_boon_favor_cost_high }
+			}
+			text = bts.100.boon.high
+		}
+
+		name = {
+			exclusive_trigger = {
+				bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_shroud_inter_choose_boon_favor_cost_medium }
+			}
+			text = bts.100.boon.medium
+		}
+
+		name = bts.100.boon.low
+
 		trigger = {
 			bts_has_labyrinth_of_abstraction_level = { LEVEL = @bts_labyrinth_shroud_inter_choose_boon_unlock_level }
-			bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_shroud_inter_choose_boon_favor_cost_low }
 		}
 
 		allow = {
