@@ -215,7 +215,6 @@ bts_conceptual_architect = {
 				has_tradition = tr_concept_space_21
 			}
 		}
-		planet_max_buildings_add = @bts_concept_space_21_building_slot
 		planet_max_districts_add = @bts_concept_space_21_district_slot
 		pop_housing_usage_mult = @bts_concept_space_21_housing_usage
 	}

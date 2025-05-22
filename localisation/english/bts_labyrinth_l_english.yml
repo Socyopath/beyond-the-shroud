@@ -338,7 +338,7 @@ tr_concept_space_12_effect: "$MOD_COUNTRY_NAVAL_CAP_MULT$ $bts_tr_concept_jobs_m
 tr_concept_space_12_delayed: "We manage to phase-shift part of our fleet to carry more ships at a time."
 
 tr_concept_space_21: "Dimensional Construction"
-tr_concept_space_21_effect: "$MOD_PLANET_MAX_BUILDINGS_ADD$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_21_building_slot$§!\n$MOD_PLANET_MAX_DISTRICTS_ADD$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_21_district_slot$§!\n$MOD_POP_HOUSING_USAGE_MULT$ $bts_tr_concept_jobs_msg$: §G$@bts_concept_space_21_housing_usage|%1$§!"
+tr_concept_space_21_effect: "$MOD_PLANET_MAX_DISTRICTS_ADD$ $bts_tr_concept_jobs_msg$: §G+$@bts_concept_space_21_district_slot$§!\n$MOD_POP_HOUSING_USAGE_MULT$ $bts_tr_concept_jobs_msg$: §G$@bts_concept_space_21_housing_usage|%1$§!"
 tr_concept_space_21_delayed: "Our mastery of spatial dimensions enables us to optimize the use of space on our planets."
 
 tr_concept_space_22: "Gravitational Convergence"
