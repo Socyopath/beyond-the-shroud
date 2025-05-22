@@ -24,11 +24,48 @@ bts_has_labyrinth_of_abstraction = {
 	}
 }
 
-bts_has_labyrinth_of_abstraction_level = {
-	check_variable_arithmetic = {
-		which = value:bts_labyrinth_of_abstraction_level
-		value >= $LEVEL$
+bts_has_labyrinth_of_abstraction_level_1 = {
+	any_owned_planet = {
+		is_planet_class = pc_bts_labyrinth_of_abstraction
+		OR = {
+			has_building = bts_labyrinth_of_abstraction_core_1
+			has_building = bts_labyrinth_of_abstraction_core_2
+			has_building = bts_labyrinth_of_abstraction_core_3
+			has_building = bts_labyrinth_of_abstraction_core_4
+		}
 	}
+}
+
+bts_has_labyrinth_of_abstraction_level_2 = {
+	any_owned_planet = {
+		is_planet_class = pc_bts_labyrinth_of_abstraction
+		OR = {
+			has_building = bts_labyrinth_of_abstraction_core_2
+			has_building = bts_labyrinth_of_abstraction_core_3
+			has_building = bts_labyrinth_of_abstraction_core_4
+		}
+	}
+}
+
+bts_has_labyrinth_of_abstraction_level_3 = {
+	any_owned_planet = {
+		is_planet_class = pc_bts_labyrinth_of_abstraction
+		OR = {
+			has_building = bts_labyrinth_of_abstraction_core_3
+			has_building = bts_labyrinth_of_abstraction_core_4
+		}
+	}
+}
+
+bts_has_labyrinth_of_abstraction_level_4 = {
+	any_owned_planet = {
+		is_planet_class = pc_bts_labyrinth_of_abstraction
+		has_building = bts_labyrinth_of_abstraction_core_4
+	}
+}
+
+bts_has_labyrinth_of_abstraction_level = {
+	bts_has_labyrinth_of_abstraction_level_$LEVEL$ = yes
 }
 
 bts_has_zroni_shield = {
