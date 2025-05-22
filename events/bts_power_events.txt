@@ -26,43 +26,108 @@ country_event = {
 		}
 	}
 
-    inline_script = {
-        script = bts_shroud_power_option
-        NAME = bts_power_summon_1
-        TRIGGER = "bts_can_use_power_summon_1 = yes"
-		ALLOW = ""
-        RESOURCE = sr_zro
-		USE_COST = @bts_power_summon_1_zro_cost
-		RESOURCE_2 = astral_threads
-		USE_COST_2 = @bts_power_summon_1_astral_threads_cost
-        SHROUD_DELVE_COOLDOWN = @bts_power_summon_1_shroud_delve_cooldown
-        EVENT_ID = bts.310
+    option = {
+        name = bts_power_summon_1
+        custom_tooltip = bts_power_summon_1_desc
+        trigger = {
+            
+        }
+        allow = {
+            resource_stockpile_compare = {
+                resource = sr_zro
+                value >= @bts_power_summon_1_zro_cost
+                mult = value:scripted_modifier_mult|MODIFIER|country_sr_zro_cost_mult|
+            }
+        }
+
+        add_resource = {
+            sr_zro = -@bts_power_summon_1_zro_cost
+            mult = value:scripted_modifier_mult|MODIFIER|country_sr_zro_cost_mult|
+        }
+        
+        add_modifier = {
+            modifier = "shroud_cooldown"
+            days = @bts_power_summon_1_shroud_delve_cooldown
+            time_multiplier = value:scripted_modifier_mult|MODIFIER|shroud_delve_cooldown|
+        }
+
+        hidden_effect = {
+            country_event = { id = bts.310 }
+        }
     }
 
-    inline_script = {
-        script = bts_shroud_power_option
-        NAME = bts_power_summon_2
-		TRIGGER = "bts_can_use_power_summon_2 = yes"
-        ALLOW = "custom_tooltip = { fail_text = bts_power_summon_2_invalid_number count_owned_ship = { count < @bts_power_summon_2_max_number limit = { is_ship_size = shroud_manifestation } } }"
-        RESOURCE = sr_zro
-		USE_COST = @bts_power_summon_2_zro_cost
-		RESOURCE_2 = astral_threads
-		USE_COST_2 = @bts_power_summon_2_astral_threads_cost
-        SHROUD_DELVE_COOLDOWN = @bts_power_summon_2_shroud_delve_cooldown
-        EVENT_ID = bts.320
+    option = {
+        name = bts_power_summon_2
+        custom_tooltip = bts_power_summon_2_desc
+        trigger = {
+
+        }
+        allow = {
+            custom_tooltip = { 
+                fail_text = bts_power_summon_2_invalid_number 
+                count_owned_ship = { 
+                    count < @bts_power_summon_2_max_number
+                    limit = { is_ship_size = shroud_manifestation }
+                } 
+            }
+            resource_stockpile_compare = {
+                resource = sr_zro
+                value >= @bts_power_summon_2_zro_cost
+                mult = value:scripted_modifier_mult|MODIFIER|country_sr_zro_cost_mult|
+            }
+        }
+
+        add_resource = {
+            sr_zro = -@bts_power_summon_2_zro_cost
+            mult = value:scripted_modifier_mult|MODIFIER|country_sr_zro_cost_mult|
+        }
+        
+        add_modifier = {
+            modifier = "shroud_cooldown"
+            days = @bts_power_summon_2_shroud_delve_cooldown
+            time_multiplier = value:scripted_modifier_mult|MODIFIER|shroud_delve_cooldown|
+        }
+
+        hidden_effect = {
+            country_event = { id = bts.320 }
+        }
     }
 
-    inline_script = {
-        script = bts_shroud_power_option
-        NAME = bts_power_summon_4
-		TRIGGER = "bts_can_use_power_summon_4 = yes"
-        ALLOW = "custom_tooltip = { fail_text = bts_power_summon_4_invalid_number count_owned_ship = { count < @bts_power_summon_4_max_number limit = { is_ship_size = warped_consciousness } } }"
-        RESOURCE = sr_zro
-		USE_COST = @bts_power_summon_4_zro_cost
-		RESOURCE_2 = astral_threads
-		USE_COST_2 = @bts_power_summon_4_astral_threads_cost
-        SHROUD_DELVE_COOLDOWN = @bts_power_summon_4_shroud_delve_cooldown
-        EVENT_ID = bts.340
+    option = {
+        name = bts_power_summon_3
+        custom_tooltip = bts_power_summon_3_desc
+        trigger = {
+            
+        }
+        allow = {
+            custom_tooltip = { 
+                fail_text = bts_power_summon_3_max_number 
+                count_owned_ship = { 
+                    count < @bts_power_summon_3_max_number
+                    limit = { is_ship_size = warped_consciousness }
+                } 
+            }
+            resource_stockpile_compare = {
+                resource = sr_zro
+                value >= @bts_power_summon_3_zro_cost
+                mult = value:scripted_modifier_mult|MODIFIER|country_sr_zro_cost_mult|
+            }
+        }
+
+        add_resource = {
+            sr_zro = -@bts_power_summon_3_zro_cost
+            mult = value:scripted_modifier_mult|MODIFIER|country_sr_zro_cost_mult|
+        }
+        
+        add_modifier = {
+            modifier = "shroud_cooldown"
+            days = @bts_power_summon_3_shroud_delve_cooldown
+            time_multiplier = value:scripted_modifier_mult|MODIFIER|shroud_delve_cooldown|
+        }
+
+        hidden_effect = {
+            country_event = { id = bts.330 }
+        }
     }
 
 	option = {
@@ -103,18 +168,9 @@ country_event = {
     }
 }
 
+
 country_event = {
 	id = bts.330
-    hide_window = yes
-	is_triggered_only = yes
-
-    immediate = {
-
-    }
-}
-
-country_event = {
-	id = bts.340
     hide_window = yes
 	is_triggered_only = yes
 
@@ -126,7 +182,7 @@ country_event = {
 			SHIP_DESIGN_ZRONI = "bts_warped_consciousness_zroni"
 		}
 		last_created_ship = {
-			ship_event = { id = bts.343 } # Update modifiers
+			ship_event = { id = bts.333 } # Update modifiers
 		}
 		set_variable = {
 			which = "bts_planet_killer_end_pop_killed"
@@ -138,7 +194,7 @@ country_event = {
 
 # God Ray
 planet_event = {
-	id = bts.341
+	id = bts.331
 	hide_window = yes
 
 	is_triggered_only = yes
@@ -160,7 +216,7 @@ planet_event = {
 				owner = { NOT = { is_same_value = from.owner } }
 			}
 			from.owner = {
-				country_event = { id = bts.342 }
+				country_event = { id = bts.332 }
 			}
 		}
 
@@ -281,14 +337,14 @@ planet_event = {
 				limit = {
 					is_ship_size = warped_consciousness
 				}
-				ship_event = { id = bts.343 }
+				ship_event = { id = bts.333 }
 			}
 		}
 	}
 }
 
 country_event = {
-	id = bts.342
+	id = bts.332
 	title = bts_planet_destruction_name
 	desc = bts_planet_destruction_desc
 	picture = GFX_evt_planet_beam
@@ -307,7 +363,7 @@ country_event = {
 
 # Updated Reckoning modifier
 ship_event = {
-	id = bts.343
+	id = bts.333
 	hide_window = yes
 	is_triggered_only = yes
 
