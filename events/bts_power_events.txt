@@ -83,19 +83,6 @@ country_event = {
 
     inline_script = {
         script = bts_shroud_power_option
-        NAME = bts_power_summon_3
-		TRIGGER = "bts_can_use_power_summon_3 = yes"
-        ALLOW = "custom_tooltip = { fail_text = bts_power_summon_3_invalid_number count_owned_ship = { count < @bts_power_summon_3_max_number limit = { is_ship_size = bts_dimensional_horror } } }"
-        RESOURCE = sr_zro
-		USE_COST = @bts_power_summon_3_zro_cost
-		RESOURCE_2 = astral_threads
-		USE_COST_2 = @bts_power_summon_3_astral_threads_cost
-        SHROUD_DELVE_COOLDOWN = @bts_power_summon_3_shroud_delve_cooldown
-        EVENT_ID = bts.330
-    }
-
-    inline_script = {
-        script = bts_shroud_power_option
         NAME = bts_power_summon_4
 		TRIGGER = "bts_can_use_power_summon_4 = yes"
         ALLOW = "custom_tooltip = { fail_text = bts_power_summon_4_invalid_number count_owned_ship = { count < @bts_power_summon_4_max_number limit = { is_ship_size = warped_consciousness } } }"
@@ -151,12 +138,7 @@ country_event = {
 	is_triggered_only = yes
 
     immediate = {
-		bts_summon_power = {
-			FLEET_NAME = "NAME_Dimensional_Horror"
-			SHIP_NAME = "NAME_Dimensional_Horror"
-			SHIP_DESIGN = "bts_dimensional_horror"
-			SHIP_DESIGN_ZRONI = "bts_dimensional_horror_zroni"
-		}
+
     }
 }
 
