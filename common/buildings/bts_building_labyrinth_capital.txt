@@ -17,10 +17,6 @@ bts_labyrinth_of_abstraction_core_1 = {
 		bts_labyrinth_of_abstraction_core_2
 	}
 
-	planet_modifier = {
-		planet_housing_add = 1000
-	}
-
 	resources = {
 		category = planet_buildings
 		upkeep = {
@@ -59,11 +55,6 @@ bts_labyrinth_of_abstraction_core_2 = {
 	}
 	upgrades = {
 		bts_labyrinth_of_abstraction_core_3
-	}
-
-	planet_modifier = {
-		# planet_housing_add = @bts_labyrinth_of_abstraction_core_2_job
-		# job_bts_conceptual_architect_add = @bts_labyrinth_of_abstraction_core_2_job
 	}
 
 	resources = {
@@ -109,11 +100,6 @@ bts_labyrinth_of_abstraction_core_3 = {
 		bts_labyrinth_of_abstraction_core_4
 	}
 
-	planet_modifier = {
-		# planet_housing_add = @bts_labyrinth_of_abstraction_core_2_job
-		# job_bts_conceptual_architect_add = @bts_labyrinth_of_abstraction_core_2_job
-	}
-
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -152,11 +138,6 @@ bts_labyrinth_of_abstraction_core_4 = {
 	}
 	convert_to = {
 		bts_labyrinth_of_abstraction_core_4
-	}
-
-	planet_modifier = {
-		# planet_housing_add = @bts_labyrinth_of_abstraction_core_2_job
-		# job_bts_conceptual_architect_add = @bts_labyrinth_of_abstraction_core_2_job
 	}
 
 	resources = {

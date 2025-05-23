@@ -251,6 +251,7 @@ bts_building_labyrinth_reality_reapers_capacity: "Abstract Rift"
 bts_building_labyrinth_reality_reapers_capacity_desc: "This rift draws energy from the deepest layers of abstraction, expanding the Shroud's reach into the physical realm. Though unstable, it allows more conceptual entities to exist at once at a steep energetic cost."
 bts_building_labyrinth_reality_reapers_zroni: "Zroni Phase Shifter"
 bts_building_labyrinth_reality_reapers_zroni_desc: "By embedding conceptual entities in a psionic envelope derived from Zroni relics, this structure allows them to become partially desynchronized from real space, making them immune to Zroni storms."
+bts_building_labyrinth_reality_reapers_zroni_effects: "All summoned entities gain §Y$ZRONI_SHIELD$§! which prevent shield nullificaiton during §YZroni Storm§!"
 
 
 ## Modifiers

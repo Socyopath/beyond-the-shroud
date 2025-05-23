@@ -175,7 +175,7 @@ bts_summon_power = {
 			if = {
 				limit = { 
 					event_target:bts_labyrinth_summon_target = { 
-						always = no 
+						has_building = bts_building_labyrinth_reality_reapers_zroni 
 					} 
 				}
 				last_created_ship = {

@@ -66,6 +66,10 @@ bts_building_labyrinth_reality_reapers_zroni = {
 		is_planet_class = pc_bts_labyrinth_of_abstraction
 	}
 
+	triggered_desc = {
+		text = bts_building_labyrinth_reality_reapers_zroni_effects
+	}
+
 	triggered_country_modifier = {
         bts_power_cost_mult = 2.00
 	}
