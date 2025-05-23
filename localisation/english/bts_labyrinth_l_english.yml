@@ -244,6 +244,14 @@ bts_building_labyrinth_conceptual_architects_duration_desc: ""
 bts_building_labyrinth_conceptual_architects_hybrid: "Precognitive Overload Core"
 bts_building_labyrinth_conceptual_architects_hybrid_desc: ""
 
+# Reality Reapers Buildings
+bts_building_labyrinth_reality_reapers_cost: "Concept Harmonizer"
+bts_building_labyrinth_reality_reapers_cost_desc: "By aligning the frequency of thought with the structure of unreality, this facility refines the invocation process, minimizing the energy required to give form to abstract entities."
+bts_building_labyrinth_reality_reapers_capacity: "Abstract Rift"
+bts_building_labyrinth_reality_reapers_capacity_desc: "This rift draws energy from the deepest layers of abstraction, expanding the Shroud's reach into the physical realm. Though unstable, it allows more conceptual entities to exist at once at a steep energetic cost."
+bts_building_labyrinth_reality_reapers_zroni: "Zroni Phase Shifter"
+bts_building_labyrinth_reality_reapers_zroni_desc: "By embedding conceptual entities in a psionic envelope derived from Zroni relics, this structure allows them to become partially desynchronized from real space, making them immune to Zroni storms."
+
 
 ## Modifiers
 mod_job_bts_veilwatcher_add: "[bts_veilwatcher.GetName] Jobs"
@@ -265,6 +273,8 @@ mod_planet_bts_materializers_minerals_produces_add: "£minerals£ $minerals$ per
 mod_planet_bts_materializers_alloys_produces_add: "£alloys£ $alloys$ per $pop_group_unit$ $job_bts_materializer_plural_with_icon$"
 mod_planet_bts_materializers_sr_zro_produces_add: "£sr_zro£ $sr_zro$ per $pop_group_unit$ $job_bts_materializer_plural_with_icon$"
 mod_planet_bts_conceptual_architect_conceptual_research: "§Y$situation_bts_conceptual_mastery$§! progress per $pop_group_unit$ $job_bts_conceptual_architect_plural_with_icon$"
+mod_bts_power_summon_2_capacity_add: "§Y$NAME_Shroud_Manifestation$§! Capacity"
+mod_bts_power_cost_mult: "§YShroud Creature§! Summoning cost "
 
 ## Districts & Zones
 bts_district_labyrinth_main: "Labyrinth District"
@@ -281,6 +291,12 @@ bts_district_labyrinth_mastery: "Abstraction District"
 bts_district_labyrinth_mastery_desc: "$job_bts_conceptual_architect_desc$"
 bts_district_labyrinth_mastery_plural: "Abstraction Districts"
 bts_district_labyrinth_mastery_name: "$zone_bts_labyrinth_mastery$"
+
+bts_district_labyrinth_summon: "Otherworldly District"
+bts_district_labyrinth_summon_desc: "$job_bts_reality_reaper_desc$"
+bts_district_labyrinth_summon_plural: "Otherworldly Districts"
+bts_district_labyrinth_summon_name: "$zone_bts_labyrinth_summon$"
+
 # bts_district_labyrinth_mastery_effects: "EFFECTS"
 
 zone_bts_labyrinth_observatory: "Third Eye Observatory"
@@ -291,6 +307,8 @@ zone_bts_labyrinth_ressources: "Matter Synthesis"
 zone_bts_labyrinth_ressources_desc: "$job_bts_materializer_desc$"
 zone_bts_labyrinth_mastery: "Conceptual Mastery"
 zone_bts_labyrinth_mastery_desc: "$job_bts_conceptual_architect_desc$"
+zone_bts_labyrinth_summon: "Paranormal Incubator"
+zone_bts_labyrinth_summon_desc: "$job_bts_reality_reaper_desc$"
 
 ## Jobs
 job_bts_conceptual_architect: "Conceptual Architect"
@@ -317,6 +335,12 @@ job_bts_materializer_desc: "Through disciplined abstraction and psionic resonanc
 job_bts_materializer_plural_with_icon: "[bts_materializer.GetIcon] [bts_materializer.GetNamePlural]"
 job_bts_materializer_effect_desc: "[bts_materializer.GetIcon] [bts_materializer.GetNamePlural] produce §Yvarious resources§!"
 
+
+job_bts_reality_reaper: "Reality Reaper"
+job_bts_reality_reaper_plural: "Reality Reapers"
+job_bts_reality_reaper_desc: "Harvesters of unstable abstraction, these psionic agents reap fragments of unreality and bind them into entities of pure annihilation."
+job_bts_reality_reaper_plural_with_icon: "[bts_reality_reaper.GetIcon] [bts_reality_reaper.GetNamePlural]"
+job_bts_reality_reaper_effect_desc: "[bts_reality_reaper.GetIcon] [bts_reality_reaper.GetNamePlural] summon §Yabstract entities§!"
 
 # Bypass
 bts_shroud_portal_megastructure_MEGASTRUCTURE_DETAILS: "$bts_shroud_portal_megastructure_DESC$"

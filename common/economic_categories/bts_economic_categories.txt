@@ -53,3 +53,17 @@ planet_bts_conceptual_architect = {
 	}
 	modifier_category = pop_job
 }
+
+planet_bts_reality_reapers = {
+	icon = "job_bts_materializer"
+	parent = planet_jobs_specialist
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop_job
+}

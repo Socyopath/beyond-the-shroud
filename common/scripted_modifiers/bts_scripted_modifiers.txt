@@ -129,9 +129,17 @@ bts_conceptual_effect_cooldown_mult = {
 }
 
 bts_power_summon_2_capacity_add = {
-	icon = mod_acceptlesson
+	icon = mod_bts_power_summon_2_capacity_add
 	max_decimals = 0
 	good = yes
 	category = country
 	percentage = no
+}
+
+bts_power_cost_mult = {
+	icon = mod_sr_zro_cost_mult
+	max_decimals = 2
+	good = no
+	category = country
+	percentage = yes
 }

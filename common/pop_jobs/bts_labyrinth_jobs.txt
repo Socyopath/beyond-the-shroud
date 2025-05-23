@@ -269,3 +269,29 @@ bts_conceptual_architect = {
 		planet_jobs_produces_mult = @bts_concept_energy_22_job_output
 	}	
 }
+
+bts_reality_reaper = {
+	category = specialist
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = {
+		OR = {
+			has_trait = trait_latent_psionic
+			has_trait = trait_psionic
+		}
+	}
+
+	resources = {
+		category = planet_bts_reality_reapers
+		upkeep = {
+			unity = 1
+		}
+	}
+}

@@ -36,13 +36,13 @@ country_event = {
             resource_stockpile_compare = {
                 resource = sr_zro
                 value >= 1000
-                mult = value:scripted_modifier_mult|MODIFIER|country_sr_zro_cost_mult|
+                mult = value:scripted_modifier_mult|MODIFIER|bts_power_cost_mult|
             }
         }
 
         add_resource = {
             sr_zro = -1000
-            mult = value:scripted_modifier_mult|MODIFIER|country_sr_zro_cost_mult|
+            mult = value:scripted_modifier_mult|MODIFIER|bts_power_cost_mult|
         }
         
         add_modifier = {
@@ -73,13 +73,13 @@ country_event = {
             resource_stockpile_compare = {
                 resource = sr_zro
                 value >= 2000
-                mult = value:scripted_modifier_mult|MODIFIER|country_sr_zro_cost_mult|
+                mult = value:scripted_modifier_mult|MODIFIER|bts_power_cost_mult|
             }
         }
 
         add_resource = {
             sr_zro = -2000
-            mult = value:scripted_modifier_mult|MODIFIER|country_sr_zro_cost_mult|
+            mult = value:scripted_modifier_mult|MODIFIER|bts_power_cost_mult|
         }
         
         add_modifier = {
@@ -110,13 +110,13 @@ country_event = {
             resource_stockpile_compare = {
                 resource = sr_zro
                 value >= 20000
-                mult = value:scripted_modifier_mult|MODIFIER|country_sr_zro_cost_mult|
+                mult = value:scripted_modifier_mult|MODIFIER|bts_power_cost_mult|
             }
         }
 
         add_resource = {
             sr_zro = -20000
-            mult = value:scripted_modifier_mult|MODIFIER|country_sr_zro_cost_mult|
+            mult = value:scripted_modifier_mult|MODIFIER|bts_power_cost_mult|
         }
         
         add_modifier = {
