@@ -85,7 +85,7 @@ ship_event = {
 
 # Trigger psionic wave pulse on enter battle
 country_event = {
-	id = bts.12
+	id = bts.11
 	hide_window = yes
 	is_triggered_only = yes
 	
@@ -99,14 +99,14 @@ country_event = {
 	}
     immediate = {
 		fromfrom.solar_system.starbase = {
-			starbase_event = { id = bts.13 }
+			starbase_event = { id = bts.12 }
 		}
     }
 }
 
 # Psionic wave pulse
 starbase_event = {
-	id = bts.13
+	id = bts.12
 	is_triggered_only = yes
 	hide_window = yes
 
@@ -134,7 +134,7 @@ starbase_event = {
 					}
 				}
 				root = {
-					starbase_event = { id = bts.13 days = 10 }
+					starbase_event = { id = bts.12 days = 10 }
 				}
 			}
 		}
@@ -144,7 +144,7 @@ starbase_event = {
 
 # Relic coodlown reduction
 country_event = {
-	id = bts.14
+	id = bts.13
 	is_triggered_only = yes
 	hide_window = yes
 
@@ -168,343 +168,46 @@ country_event = {
 
 }
 
-# From = System
-ship_event = {
-	id = bts.15
-	is_triggered_only = yes
-	hide_window = yes
-
-	trigger = {
-		OR = {
-			has_ship_flag = bts_concept_time
-			has_ship_flag = bts_concept_space
-			has_ship_flag = bts_concept_energy
-		}
-	}
-
-	immediate = {
-		if = {
-			limit = {
-				has_ship_flag = bts_concept_time
-			}
-			from = {
-				set_star_flag = bts_concept_time_frozen
-				every_ship_in_system = {
-					limit = {
-						NOT = { is_same_value = root }
-					}
-					ship_event = { id = bts.16 scopes = { FROM = prev } } # Freeze time
-				}
-				system_event = { id = bts.17 days = @bts_conceptual_effect_time_duration } # Freeze time end
-				bts_spawn_conceptual_system_effect = { DAYS = @bts_conceptual_effect_time_duration }
-			}
-			root.owner = {
-				bts_conceptual_effect_cooldown_start = {
-					CONCEPT = time
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				has_ship_flag = bts_concept_space
-			}
-			every_bypass = {
-				limit = {
-					solar_system = {
-						is_same_value = from
-					}
-				}
-				lock_bypass = {
-					country = root.owner
-					duration = @bts_conceptual_effect_space_duration
-				}
-			}
-			from = {
-				bts_spawn_conceptual_system_effect = { DAYS = @bts_conceptual_effect_space_duration }
-			}
-			root.owner = {
-				bts_conceptual_effect_cooldown_start = {
-					CONCEPT = space
-				}
-			}
-		}
-		else = {
-			from = {
-				root.owner = {
-					save_global_event_target_as = bts_concept_energy_nullify_caster@root.from
-				}
-				every_ship_in_system = {
-					limit = {
-						NOT = { is_same_value = root }
-					}
-					ship_event = { id = bts.18 scopes = { FROM = prev } } # Nullify check
-				}
-				system_event = { id = bts.19 days = @bts_conceptual_effect_energy_duration } #  Nullify end
-				bts_spawn_conceptual_system_effect = { DAYS = @bts_conceptual_effect_energy_duration }
-			}
-			root.owner = {
-				bts_conceptual_effect_cooldown_start = {
-					CONCEPT = energy
-				}
-			}
-		}
-		destroy_ship = root
-	}
-}
-
-# Time freeze for ship in system
-ship_event = {
-	id = bts.16
-	is_triggered_only = yes
-	hide_window = yes
-
-	trigger = {
-		from = {
-			has_star_flag = bts_concept_time_frozen
-		}
-	}
-	immediate = {
-		set_disabled = yes
-	}
-}
-
-# Stop Time freeze for every ship in system
-system_event = {
-	id = bts.17
-	is_triggered_only = yes
-	hide_window = yes
-
-	immediate = {
-		remove_star_flag = bts_concept_time_frozen
-		every_ship_in_system = {
-			set_disabled = no
-		}
-	}
-}
-
-
-# Nullify Shield check
-# From = system
-ship_event = {
-	id = bts.18
-	is_triggered_only = yes
-	hide_window = yes
-
-	trigger = {
-		OR = {
-			AND = {
-				exists = event_target:bts_concept_energy_nullify_caster@from
-				event_target:bts_concept_energy_nullify_caster@from = {
-					is_hostile = root.owner
-				}
-				NOT = { has_modifier = bts_concept_energy_nullify }
-			}
-			AND = {
-				NOT = {
-					exists = event_target:bts_concept_energy_nullify_caster@from
-				}
-				has_modifier = bts_concept_energy_nullify
-			}
-		}
-	}
-	immediate = {
-		if = {
-			limit = {
-				has_modifier = bts_concept_energy_nullify
-			}
-			remove_modifier = bts_concept_energy_nullify
-		}
-		else = {
-			add_modifier = { modifier = bts_concept_energy_nullify }
-		}
-	}
-}
-
-system_event = {
-	id = bts.19
-	is_triggered_only = yes
-	hide_window = yes
-
-	immediate = {
-		clear_global_event_target = bts_concept_energy_nullify_caster@root
-		every_ship_in_system = {
-			if = {
-				limit = {
-					has_modifier = bts_concept_energy_nullify
-				}
-				remove_modifier = bts_concept_energy_nullify
-			}
-		}
-	}
-}
-
-
-# Conceptual Mastery: Discovery
+# Zro Infusion Event
 country_event = { 
-	id = bts.20
-	title = "bts.20.title"
-	desc = "bts.20.desc"
-	picture = GFX_evt_surreal_visions
-	show_sound = event_mystic_reveal
-	location = root
+	id = bts.100
 	is_triggered_only = yes
+	title = "utopia.3000.name"
+	desc = utopia.3000.intro.desc
+
+	trigger = {
+		NOR = {
+			has_tech_option = bts_tech_zro_infusion
+			has_technology = bts_tech_zro_infusion
+		}
+		bts_has_any_covenant_confirmed = yes
+		bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_tech_zro_infusion_favor_cost }
+	}
 
 	option = {
-		name = bts.20.ok
-		start_situation = {
-			type = situation_bts_conceptual_mastery
-			target = from
-		}
+		name = OK
+		add_research_option = bts_tech_zro_infusion
 	}
 }
 
-# Conceptual Mastery: Specialization
-situation_event = { 
-	id = bts.21
-	title = "bts.21.title"
-	desc = "bts.21.desc"
-
-	picture = GFX_evt_surreal_visions
-	show_sound = event_mystic_reveal
-	situation = this
+# Shroud Destabilizer Tech Event
+country_event = { 
+	id = bts.101
 	is_triggered_only = yes
+	title = "utopia.3000.name"
+	desc = utopia.3000.intro.desc
 
-	option = {
-		name = "bts.21.time"
-		custom_tooltip = "bts.21.time.tt"
-		owner = {
-			add_tradition = tr_concept_time_adopt	
+	trigger = {
+		NOR = {
+			has_tech_option = bts_tech_shroud_destabilizer
+			has_technology = bts_tech_shroud_destabilizer
 		}
+		bts_has_any_covenant_confirmed = yes
+		bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_tech_shroud_destabilizer_favor_cost }
 	}
 
 	option = {
-		name = "bts.21.space"
-		custom_tooltip = "bts.21.space.tt"
-		owner = {
-			add_tradition = tr_concept_space_adopt
-		}
-	}
-
-	option = {
-		name = "bts.21.energy"
-		custom_tooltip = "bts.21.energy.tt"
-		owner = {
-			add_tradition = tr_concept_energy_adopt
-		}
-	}
-}
-
-# Conceptual Mastery: Experimentation
-situation_event = { 
-	id = bts.22
-	title = "bts.22.title"
-	desc = "bts.22.desc"
-
-	picture = GFX_evt_surreal_visions
-	show_sound = event_mystic_reveal
-	situation = this
-	is_triggered_only = yes
-
-	option = {
-		name = bts.22.ok
-		custom_tooltip = situation_bts_conceptual_mastery_add_point
-		hidden_effect = {
-			owner = {
-				bts_add_spec_point = yes
-				bts_add_spec_point = yes
-			}
-		}
-	}
-}
-
-# Conceptual Mastery: Implementation
-situation_event = { 
-	id = bts.23
-	title = "bts.23.title"
-	desc = "bts.23.desc"
-
-	picture = GFX_evt_surreal_visions
-	show_sound = event_mystic_reveal
-	situation = this
-	is_triggered_only = yes
-
-	option = {
-		name = bts.23.ok
-		custom_tooltip = situation_bts_conceptual_mastery_add_point
-		hidden_effect = {
-			owner = {
-				bts_add_spec_point = yes
-				bts_add_spec_point = yes
-			}
-		}
-	}
-}
-
-# Conceptual Mastery: Mastery
-situation_event = { 
-	id = bts.24
-	title = "bts.24.title"
-	desc = "bts.24.desc"
-
-	picture = GFX_evt_surreal_visions
-	show_sound = event_mystic_reveal
-	situation = this
-	is_triggered_only = yes
-
-	option = {
-		name = bts.24.ok
-		custom_tooltip = situation_bts_conceptual_mastery_add_point
-		hidden_effect = {
-			owner = {
-				bts_add_spec_point = yes
-			}
-		}
-	}
-}
-
-# Conceptual Mastery: Finished
-situation_event = { 
-	id = bts.25
-	title = "bts.25.title"
-	desc = "bts.25.desc"
-
-	picture = GFX_evt_surreal_visions
-	show_sound = event_mystic_reveal
-	situation = this
-	is_triggered_only = yes
-
-	option = {
-		name = bts.25.ok.0
-		trigger = {
-			owner = { has_tradition = tr_concept_time_adopt }
-		}
-		owner = {
-			add_relic = r_bts_relic_concept_time
-		}
-	}
-
-	option = {
-		name = bts.25.ok.1
-		trigger = {
-			owner = { has_tradition = tr_concept_space_adopt }
-		}
-		owner = {
-			add_relic = r_bts_relic_concept_space
-		}
-		
-	}
-
-	option = {
-		name = bts.25.ok.2
-		trigger = {
-			owner = { has_tradition = tr_concept_energy_adopt }
-		}
-		owner = {
-			add_relic = r_bts_relic_concept_energy
-		}
-	}
-
-	after = {
-		destroy_situation = this
+		name = OK
+		add_research_option = bts_tech_shroud_destabilizer
 	}
 }

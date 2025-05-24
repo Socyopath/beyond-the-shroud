@@ -7,7 +7,7 @@ situation_bts_conceptual_mastery = {
     # Unlock relic
 	on_progress_complete = {
 		hidden_effect = {
-            situation_event = { id = bts.25 }
+            situation_event = { id = bts.355 }
 		}
         custom_tooltip = situation_bts_conceptual_mastery_outcome
 	}
@@ -26,7 +26,7 @@ situation_bts_conceptual_mastery = {
             end = @situation_bts_conceptual_mastery_first_points_unlock
             custom_tooltip = situation_bts_conceptual_mastery_stage_tradition_effect
             on_first_enter = {
-                situation_event = { id = bts.21 }
+                situation_event = { id = bts.351 }
             }
         }
 
@@ -37,7 +37,7 @@ situation_bts_conceptual_mastery = {
             end = @situation_bts_conceptual_mastery_second_points_unlock
             custom_tooltip = situation_bts_conceptual_mastery_add_point
             on_first_enter = {
-                situation_event = { id = bts.22 }
+                situation_event = { id = bts.352 }
             }
         }
 
@@ -48,7 +48,7 @@ situation_bts_conceptual_mastery = {
             end = @situation_bts_conceptual_mastery_last_point_unlock
             custom_tooltip = situation_bts_conceptual_mastery_add_point
             on_first_enter = {
-                situation_event = { id = bts.23 }
+                situation_event = { id = bts.353 }
             }
         }
 
@@ -59,7 +59,7 @@ situation_bts_conceptual_mastery = {
             end = @situation_bts_conceptual_mastery_relic_unlock
             custom_tooltip = situation_bts_conceptual_mastery_add_point
             on_first_enter = {
-                situation_event = { id = bts.24 }
+                situation_event = { id = bts.354 }
             }
         }
     }

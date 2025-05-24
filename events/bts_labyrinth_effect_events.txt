@@ -3,9 +3,9 @@ namespace = bts
 
 # Megastructure Info event
 country_event = { 
-	id = bts.1000
-	title = "bts.1000.title"
-	desc = "bts.1000.desc"
+	id = bts.300
+	title = "bts.300.title"
+	desc = "bts.300.desc"
 	picture = GFX_evt_surreal_visions
 	show_sound = event_mystic_reveal
 	location = root
@@ -28,7 +28,7 @@ country_event = {
 # The Shroud Lobby
 # FROM = Labyrinth of abstraction
 country_event = {
-	id = bts.100
+	id = bts.301
 	title = "utopia.3000.name"
 	desc = {
 		text = utopia.3000.intro.desc
@@ -137,17 +137,17 @@ country_event = {
 			exclusive_trigger = {
 				bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_shroud_inter_choose_boon_favor_cost_high }
 			}
-			text = bts.100.boon.high
+			text = bts.301.boon.high
 		}
 
 		name = {
 			exclusive_trigger = {
 				bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_shroud_inter_choose_boon_favor_cost_medium }
 			}
-			text = bts.100.boon.medium
+			text = bts.301.boon.medium
 		}
 
-		name = bts.100.boon.low
+		name = bts.301.boon.low
 
 		allow = {
 			resource_stockpile_compare = {
@@ -169,26 +169,26 @@ country_event = {
 		hidden_effect = {
 			if = {
 				limit = { bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_shroud_inter_choose_boon_favor_cost_high } }
-				country_event = { id = bts.1022 }
+				country_event = { id = bts.312 }
 			}
 			else_if = {
 				limit = { bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_shroud_inter_choose_boon_favor_cost_medium } }
-				country_event = { id = bts.1021 }
+				country_event = { id = bts.311 }
 			}
 			else = {
-				country_event = { id = bts.1020 }
+				country_event = { id = bts.310 }
 			}
 		}
 	}
 	option = { # BTS Custom covenant special powers
-		name = bts.100.powers
+		name = bts.301.powers
 		trigger = {
-			bts_has_labyrinth_of_abstraction_level = { LEVEL = @bts_labyrinth_shroud_inter_powers_unlock_level }
-			bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_shroud_inter_powers_favor_cost }
+			# bts_has_labyrinth_of_abstraction_level = { LEVEL = @bts_labyrinth_shroud_inter_powers_unlock_level }
+			# bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_shroud_inter_powers_favor_cost }
 		}
 		hidden_effect = {
 			country_event = { 
-				id =  bts.301 
+				id =  bts.400 
 				scopes = { 
 					from = from
 				} 
@@ -197,7 +197,7 @@ country_event = {
 	}
 
 	option = { # Shroud effects
-		name = bts.100.effects
+		name = bts.301.effects
 		trigger = {
 			bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_shroud_inter_choose_effect_favor_cost }
 		}
@@ -221,7 +221,7 @@ country_event = {
 			time_multiplier = value:scripted_modifier_mult|MODIFIER|shroud_delve_cooldown|
 		}
 		hidden_effect = {
-			country_event = { id = bts.1040 }
+			country_event = { id = bts.320 }
 		}
 	}
 
@@ -249,7 +249,7 @@ country_event = {
 
 # Shroud Boon Low
 country_event = {
-	id = bts.1020
+	id = bts.310
 	title = "utopia.3000.name"
 	desc = { text = utopia.3200.1.desc }
 	desc = { text = utopia.3200.2.desc }
@@ -296,7 +296,7 @@ country_event = {
 
 # Shroud Boon Medium
 country_event = {
-	id = bts.1021
+	id = bts.311
 	title = "utopia.3000.name"
 	desc = { text = utopia.3200.1.desc }
 	desc = { text = utopia.3200.2.desc }
@@ -343,7 +343,7 @@ country_event = {
 
 # Shroud Boon High
 country_event = {
-	id = bts.1022
+	id = bts.312
 	title = "utopia.3000.name"
 	desc = { text = utopia.3200.1.desc }
 	desc = { text = utopia.3200.2.desc }
@@ -390,7 +390,7 @@ country_event = {
 
 # Shroud Effects
 country_event = {
-	id = bts.1040
+	id = bts.320
 	title = "utopia.3000.name"
 	desc = { text = utopia.3200.1.desc }
 	desc = { text = utopia.3200.2.desc }
@@ -497,7 +497,7 @@ country_event = {
 	}
 
 	option = {
-		name = "bts.100.effects.chosen"
+		name = "bts.301.effects.chosen"
 		trigger = {
 			NOT = {
 				any_owned_leader = {
@@ -511,7 +511,7 @@ country_event = {
 	}
 
 	option = {
-		name = "bts.100.effects.steal"
+		name = "bts.301.effects.steal"
 		trigger = {
 			any_country = {
 				is_country_type = fallen_empire
@@ -538,3 +538,81 @@ country_event = {
 		}
 	}
 }
+
+# Captial Upgrade - Gives relic
+planet_event = {
+	id = bts.330
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		is_planet_class = pc_bts_labyrinth_of_abstraction
+		exists = owner
+		owner = {
+			bts_has_labyrinth_of_abstraction_level = {
+				LEVEL = @bts_labyrinth_of_abstraction_relic_level
+			}
+		}
+	}
+
+	immediate = {
+		owner = { add_relic = r_bts_relic_shroud_nexus } 
+	}
+}
+
+# Spawn temporary shroud portal to every fleets
+country_event = {
+	id = bts.331
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		every_system = {
+			limit = {
+				any_ship_in_system = {
+					is_owned_by = root
+					is_ship_class = shipclass_military
+				}
+			}
+			random_ship_in_system = {
+				limit = {
+					is_owned_by = root
+					is_ship_class = shipclass_military
+				}
+				save_event_target_as = bts_temp_shroud_portal_target
+			}
+
+			spawn_megastructure = {
+				type = bts_shroud_portal_megastructure
+				owner = root
+				coords_from = event_target:bts_temp_shroud_portal_target
+				orbit_angle = 0
+				orbit_distance = 0
+				init_effect = {
+					set_megastructure_flag = bts_shroud_portal_megastructure_temp_of@root
+				}
+			}
+		}
+		country_event = {
+			id = bts.332
+			days = @bts_shroud_portal_expiration_days
+		}
+	}
+}
+
+# Remove all temporary shroud portals
+country_event = {
+	id = bts.332
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		every_megastructure = {
+			limit = { 
+				has_megastructure_flag = bts_shroud_portal_megastructure_temp_of@root
+			}
+			remove_megastructure = this
+		}
+	}
+}
+

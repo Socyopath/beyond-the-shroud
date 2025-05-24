@@ -1,0 +1,492 @@
+namespace = bts
+
+# Conceptual Mastery: Discovery
+country_event = { 
+	id = bts.350
+	title = "bts.350.title"
+	desc = "bts.350.desc"
+	picture = GFX_evt_surreal_visions
+	show_sound = event_mystic_reveal
+	location = root
+	is_triggered_only = yes
+
+	option = {
+		name = bts.350.ok
+		start_situation = {
+			type = situation_bts_conceptual_mastery
+		}
+	}
+}
+
+# Conceptual Mastery: Specialization
+situation_event = { 
+	id = bts.351
+	title = "bts.351.title"
+	desc = "bts.351.desc"
+
+	picture = GFX_evt_surreal_visions
+	show_sound = event_mystic_reveal
+	situation = this
+	is_triggered_only = yes
+
+	option = {
+		name = "bts.351.time"
+		custom_tooltip = "bts.351.time.tt"
+		owner = {
+			add_tradition = tr_concept_time_adopt	
+		}
+	}
+
+	option = {
+		name = "bts.351.space"
+		custom_tooltip = "bts.351.space.tt"
+		owner = {
+			add_tradition = tr_concept_space_adopt
+		}
+	}
+
+	option = {
+		name = "bts.351.energy"
+		custom_tooltip = "bts.351.energy.tt"
+		owner = {
+			add_tradition = tr_concept_energy_adopt
+		}
+	}
+}
+
+# Conceptual Mastery: Experimentation
+situation_event = { 
+	id = bts.352
+	title = "bts.352.title"
+	desc = "bts.352.desc"
+
+	picture = GFX_evt_surreal_visions
+	show_sound = event_mystic_reveal
+	situation = this
+	is_triggered_only = yes
+
+	option = {
+		name = bts.352.ok
+		custom_tooltip = situation_bts_conceptual_mastery_add_point
+		hidden_effect = {
+			owner = {
+				bts_add_spec_point = yes
+				bts_add_spec_point = yes
+			}
+		}
+	}
+}
+
+# Conceptual Mastery: Implementation
+situation_event = { 
+	id = bts.353
+	title = "bts.353.title"
+	desc = "bts.353.desc"
+
+	picture = GFX_evt_surreal_visions
+	show_sound = event_mystic_reveal
+	situation = this
+	is_triggered_only = yes
+
+	option = {
+		name = bts.353.ok
+		custom_tooltip = situation_bts_conceptual_mastery_add_point
+		hidden_effect = {
+			owner = {
+				bts_add_spec_point = yes
+				bts_add_spec_point = yes
+			}
+		}
+	}
+}
+
+# Conceptual Mastery: Mastery
+situation_event = { 
+	id = bts.354
+	title = "bts.354.title"
+	desc = "bts.354.desc"
+
+	picture = GFX_evt_surreal_visions
+	show_sound = event_mystic_reveal
+	situation = this
+	is_triggered_only = yes
+
+	option = {
+		name = bts.354.ok
+		custom_tooltip = situation_bts_conceptual_mastery_add_point
+		hidden_effect = {
+			owner = {
+				bts_add_spec_point = yes
+			}
+		}
+	}
+}
+
+# Conceptual Mastery: Finished
+situation_event = { 
+	id = bts.355
+	title = "bts.355.title"
+	desc = "bts.355.desc"
+
+	picture = GFX_evt_surreal_visions
+	show_sound = event_mystic_reveal
+	situation = this
+	is_triggered_only = yes
+
+	option = {
+		name = bts.355.ok.0
+		trigger = {
+			owner = { has_tradition = tr_concept_time_adopt }
+		}
+		owner = {
+			add_relic = r_bts_relic_concept_time
+		}
+	}
+
+	option = {
+		name = bts.355.ok.1
+		trigger = {
+			owner = { has_tradition = tr_concept_space_adopt }
+		}
+		owner = {
+			add_relic = r_bts_relic_concept_space
+		}
+		
+	}
+
+	option = {
+		name = bts.355.ok.2
+		trigger = {
+			owner = { has_tradition = tr_concept_energy_adopt }
+		}
+		owner = {
+			add_relic = r_bts_relic_concept_energy
+		}
+	}
+
+	after = {
+		destroy_situation = this
+	}
+}
+
+# Conceptual Ship enter system
+# From = System
+ship_event = {
+	id = bts.360
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		OR = {
+			has_ship_flag = bts_concept_time
+			has_ship_flag = bts_concept_space
+			has_ship_flag = bts_concept_energy
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_ship_flag = bts_concept_time
+			}
+			from = {
+				set_star_flag = bts_concept_time_frozen
+				every_ship_in_system = {
+					limit = {
+						NOT = { is_same_value = root }
+					}
+					ship_event = { id = bts.361 scopes = { FROM = prev } } # Freeze time
+				}
+				system_event = { id = bts.362 days = @bts_conceptual_effect_time_duration } # Freeze time end
+				bts_spawn_conceptual_system_effect = { DAYS = @bts_conceptual_effect_time_duration }
+			}
+			root.owner = {
+				bts_conceptual_effect_cooldown_start = {
+					CONCEPT = time
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_ship_flag = bts_concept_space
+			}
+			every_bypass = {
+				limit = {
+					solar_system = {
+						is_same_value = from
+					}
+				}
+				lock_bypass = {
+					country = root.owner
+					duration = @bts_conceptual_effect_space_duration
+				}
+			}
+			from = {
+				bts_spawn_conceptual_system_effect = { DAYS = @bts_conceptual_effect_space_duration }
+			}
+			root.owner = {
+				bts_conceptual_effect_cooldown_start = {
+					CONCEPT = space
+				}
+			}
+		}
+		else = {
+			from = {
+				root.owner = {
+					save_global_event_target_as = bts_concept_energy_nullify_caster@root.from
+				}
+				every_ship_in_system = {
+					limit = {
+						NOT = { is_same_value = root }
+					}
+					ship_event = { id = bts.363 scopes = { FROM = prev } } # Nullify check
+				}
+				system_event = { id = bts.364 days = @bts_conceptual_effect_energy_duration } #  Nullify end
+				bts_spawn_conceptual_system_effect = { DAYS = @bts_conceptual_effect_energy_duration }
+			}
+			root.owner = {
+				bts_conceptual_effect_cooldown_start = {
+					CONCEPT = energy
+				}
+			}
+		}
+		destroy_ship = root
+	}
+}
+
+# Time freeze for ship in system
+ship_event = {
+	id = bts.361
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		from = {
+			has_star_flag = bts_concept_time_frozen
+		}
+	}
+	immediate = {
+		set_disabled = yes
+	}
+}
+
+# Stop Time freeze for every ship in system
+system_event = {
+	id = bts.362
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		remove_star_flag = bts_concept_time_frozen
+		every_ship_in_system = {
+			set_disabled = no
+		}
+	}
+}
+
+
+# Nullify Shield check
+# From = system
+ship_event = {
+	id = bts.363
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		OR = {
+			AND = {
+				exists = event_target:bts_concept_energy_nullify_caster@from
+				event_target:bts_concept_energy_nullify_caster@from = {
+					is_hostile = root.owner
+				}
+				NOT = { has_modifier = bts_concept_energy_nullify }
+			}
+			AND = {
+				NOT = {
+					exists = event_target:bts_concept_energy_nullify_caster@from
+				}
+				has_modifier = bts_concept_energy_nullify
+			}
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				has_modifier = bts_concept_energy_nullify
+			}
+			remove_modifier = bts_concept_energy_nullify
+		}
+		else = {
+			add_modifier = { modifier = bts_concept_energy_nullify }
+		}
+	}
+}
+
+system_event = {
+	id = bts.364
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		clear_global_event_target = bts_concept_energy_nullify_caster@root
+		every_ship_in_system = {
+			if = {
+				limit = {
+					has_modifier = bts_concept_energy_nullify
+				}
+				remove_modifier = bts_concept_energy_nullify
+			}
+		}
+	}
+}
+
+# Concept: Time
+country_event = {
+	id = bts.370
+	is_triggered_only = yes
+
+	title = "utopia.3000.name"
+	desc = "utopia.3000.16.desc"
+	diplomatic_title = BLANK_STRING
+	diplomatic = yes
+	force_open = yes
+
+	picture_event_data = {
+		portrait = shroud1
+		room = shroud_room
+	}
+
+	immediate = {
+		bts_event_target_list_clear = yes
+		every_country = {
+			limit = {
+				has_communications = root
+				OR = {
+					count_owned_ship = {
+						count >= 1
+					}
+					count_system_within_border = {
+						count >= 1
+					}
+				}
+			}
+			bts_event_target_list_save = yes
+		}
+	}
+
+	inline_script = {
+		script = bts_option_list_hidden
+		ACTION = "add_modifier = { modifier = bts_time_dilation days = @r_bts_relic_concept_time_effect_duration }"
+	}
+
+	option = {
+		name = bts_option_cancel
+		default_hide_option = yes
+		hidden_effect = {
+			remove_modifier = relic_activation_cooldown
+		}
+	}
+}
+
+ 
+
+# Concept: Space
+country_event = {
+	id = bts.380
+	is_triggered_only = yes
+
+	title = "utopia.3000.name"
+	desc = "utopia.3000.16.desc"
+	diplomatic_title = BLANK_STRING
+	diplomatic = yes
+	force_open = yes
+
+	picture_event_data = {
+		portrait = shroud1
+		room = shroud_room
+	}
+
+	immediate = {
+		bts_event_target_list_clear = yes
+		every_country = {
+			limit = {
+				has_communications = root
+				count_system_within_border = {
+					count >= 1
+				}
+			}
+			bts_event_target_list_save = yes
+		}
+	}
+
+	inline_script = {
+		script = bts_option_list_hidden
+		ACTION = "country_event = { id = bts.381 }"
+	}
+
+	option = {
+		name = bts_option_cancel
+		default_hide_option = yes
+		hidden_effect = {
+			remove_modifier = relic_activation_cooldown
+		}
+	}
+}
+
+country_event = {
+	id = bts.381
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		every_system_within_border = {
+			limit = {
+				any_neighbor_system = { 
+					NOT = { 
+						is_within_borders_of = root
+					} 
+				}
+			}
+			# This system at borders of target empire
+			every_neighbor_system = {
+				limit = { 
+					NOT = { 
+						is_within_borders_of = root
+					}  
+				}
+				remove_hyperlane = { from = prev to = this }
+				system_event = { 
+					id = bts.382
+					days = @r_bts_relic_concept_space_effect_duration
+					scopes = { from = prev }
+				}
+			}
+		}
+	}
+}
+
+system_event = {
+	id = bts.382
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		add_hyperlane = { 
+			from = FROM 
+			to = root 
+		}
+	}
+}
+
+# Concept: Energy
+country_event = {
+	id = bts.390
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		add_modifier = { 
+			modifier = bts_energy_surge 
+			days = @r_bts_relic_concept_energy_effect_duration
+		}
+	}
+}
+

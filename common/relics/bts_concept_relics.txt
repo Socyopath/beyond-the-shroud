@@ -29,7 +29,7 @@ r_bts_relic_concept_time = {
 		custom_tooltip = r_bts_relic_concept_time_active
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
-			country_event = { id = bts.403 }
+			country_event = { id = bts.370 }
 			add_modifier = {
 				modifier = "relic_activation_cooldown"
 				days = @triumph_duration
@@ -74,7 +74,7 @@ r_bts_relic_concept_space = {
 		custom_tooltip = r_bts_relic_concept_space_active
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
-			country_event = { id = bts.404 }
+			country_event = { id = bts.380 }
 			add_modifier = {
 				modifier = "relic_activation_cooldown"
 				days = @triumph_duration
@@ -121,7 +121,7 @@ r_bts_relic_concept_energy = {
 		custom_tooltip = r_bts_relic_concept_energy_active
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
-			country_event = { id = bts.405 }
+			country_event = { id = bts.390 }
 			add_modifier = {
 				modifier = "relic_activation_cooldown"
 				days = @triumph_duration

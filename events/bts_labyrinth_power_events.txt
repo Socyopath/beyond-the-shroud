@@ -3,7 +3,7 @@ namespace = bts
 # BTS covenant powers
 # From : Labyrinth Of Abstraction
 country_event = {
-	id = bts.301
+	id = bts.400
 	title = "utopia.3000.name"
 	desc = "utopia.3190.desc"
 	diplomatic = yes
@@ -68,7 +68,7 @@ country_event = {
         }
 
         hidden_effect = {
-            country_event = { id = bts.310 }
+            country_event = { id = bts.410 }
         }
     }
 
@@ -120,7 +120,7 @@ country_event = {
         }
 
         hidden_effect = {
-            country_event = { id = bts.320 }
+            country_event = { id = bts.420 }
         }
     }
 
@@ -172,7 +172,7 @@ country_event = {
         }
 
         hidden_effect = {
-            country_event = { id = bts.330 }
+            country_event = { id = bts.430 }
         }
     }
 
@@ -185,7 +185,7 @@ country_event = {
 
 
 country_event = {
-	id = bts.310
+	id = bts.410
     hide_window = yes
 	is_triggered_only = yes
 
@@ -200,7 +200,7 @@ country_event = {
 }
 
 country_event = {
-	id = bts.320
+	id = bts.420
     hide_window = yes
 	is_triggered_only = yes
 
@@ -216,7 +216,7 @@ country_event = {
 
 
 country_event = {
-	id = bts.330
+	id = bts.430
     hide_window = yes
 	is_triggered_only = yes
 
@@ -228,7 +228,7 @@ country_event = {
 			SHIP_DESIGN_ZRONI = "bts_warped_consciousness_zroni"
 		}
 		last_created_ship = {
-			ship_event = { id = bts.333 } # Update modifiers
+			ship_event = { id = bts.433 } # Update modifiers
 		}
 		set_variable = {
 			which = "bts_planet_killer_end_pop_killed"
@@ -240,7 +240,7 @@ country_event = {
 
 # God Ray
 planet_event = {
-	id = bts.331
+	id = bts.431
 	hide_window = yes
 
 	is_triggered_only = yes
@@ -262,7 +262,7 @@ planet_event = {
 				owner = { NOT = { is_same_value = from.owner } }
 			}
 			from.owner = {
-				country_event = { id = bts.332 }
+				country_event = { id = bts.432 }
 			}
 		}
 
@@ -503,14 +503,14 @@ planet_event = {
 				limit = {
 					is_ship_size = warped_consciousness
 				}
-				ship_event = { id = bts.333 }
+				ship_event = { id = bts.433 }
 			}
 		}
 	}
 }
 
 country_event = {
-	id = bts.332
+	id = bts.432
 	title = bts_planet_destruction_name
 	desc = bts_planet_destruction_desc
 	picture = GFX_evt_planet_beam
@@ -529,7 +529,7 @@ country_event = {
 
 # Updated Reckoning modifier
 ship_event = {
-	id = bts.333
+	id = bts.433
 	hide_window = yes
 	is_triggered_only = yes
 

@@ -183,7 +183,7 @@ decision_bts_labyrinth_of_abstraction_shroud_interraction = {
 		hidden_effect = {
 			owner = {
 				country_event = {
-					id = bts.100
+					id = bts.301
 				}
 			}
 		}

@@ -29,7 +29,7 @@ r_bts_relic_shroud_nexus = {
 		custom_tooltip = r_bts_relic_shroud_nexus_active
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
-			country_event = { id = bts.400 }
+			country_event = { id = bts.331 }
 			add_modifier = {
 				modifier = "relic_activation_cooldown"
 				days = @triumph_duration
