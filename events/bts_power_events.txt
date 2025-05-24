@@ -1,6 +1,7 @@
 namespace = bts
 
 # BTS covenant powers
+# From : Labyrinth Of Abstraction
 country_event = {
 	id = bts.301
 	title = "utopia.3000.name"
@@ -40,6 +41,21 @@ country_event = {
             }
         }
 
+		if = { 
+			limit = { 
+				check_variable_arithmetic = {
+					which = from.value:bts_num_jobs|JOB|bts_reality_reaper|
+					value > 0
+				}
+			}
+			tooltip = {
+				add_modifier = {
+					modifier = bts_job_reality_reaper_summon_boost
+					multiplier = from.value:bts_num_jobs|JOB|bts_reality_reaper|
+				}
+			}
+		}
+		
         add_resource = {
             sr_zro = -1000
             mult = value:scripted_modifier_mult|MODIFIER|bts_power_cost_mult|
@@ -76,6 +92,21 @@ country_event = {
                 mult = value:scripted_modifier_mult|MODIFIER|bts_power_cost_mult|
             }
         }
+
+		if = { 
+			limit = { 
+				check_variable_arithmetic = {
+					which = from.value:bts_num_jobs|JOB|bts_reality_reaper|
+					value > 0
+				}
+			}
+			tooltip = {
+				add_modifier = {
+					modifier = bts_job_reality_reaper_summon_boost
+					multiplier = from.value:bts_num_jobs|JOB|bts_reality_reaper|
+				}
+			}
+		}
 
         add_resource = {
             sr_zro = -2000
@@ -114,6 +145,21 @@ country_event = {
             }
         }
 
+		if = { 
+			limit = { 
+				check_variable_arithmetic = {
+					which = from.value:bts_num_jobs|JOB|bts_reality_reaper|
+					value > 0
+				}
+			}
+			tooltip = {
+				add_modifier = {
+					modifier = bts_job_reality_reaper_summon_boost
+					multiplier = from.value:bts_num_jobs|JOB|bts_reality_reaper|
+				}
+			}
+		}
+		
         add_resource = {
             sr_zro = -20000
             mult = value:scripted_modifier_mult|MODIFIER|bts_power_cost_mult|

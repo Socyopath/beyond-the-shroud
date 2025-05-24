@@ -187,7 +187,12 @@ country_event = {
 			bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_shroud_inter_powers_favor_cost }
 		}
 		hidden_effect = {
-			country_event = { id =  bts.301 }
+			country_event = { 
+				id =  bts.301 
+				scopes = { 
+					from = from
+				} 
+			}
 		}
 	}
 

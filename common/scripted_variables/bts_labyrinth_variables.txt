@@ -102,3 +102,6 @@
 @bts_building_labyrinth_conceptual_architects_duration_cooldown = -0.15
 @bts_building_labyrinth_conceptual_architects_hybrid_cooldown = -0.30
 @bts_building_labyrinth_conceptual_architects_hybrid_cost = 0.5
+
+@bts_job_reality_reaper_summon_boost_hull_regen = 0.01
+@bts_job_reality_reaper_summon_boost_shield_regen = 0.01
