@@ -37,6 +37,8 @@ zone_bts_labyrinth_summon = {
     planet_modifier = {
 		zone_building_slots_add = 3
 	}
+
+	show_in_tech = bts_tech_labyrinth_summon_unlock
 }
 
 zone_bts_labyrinth_observatory = {

@@ -11,26 +11,38 @@ slot_bts_labyrinth_main = {
 }
 
 slot_bts_labyrinth_mastery = {
-	start = zone_bts_labyrinth_mastery
 
 	include = {
 		zone_bts_labyrinth_mastery
 	}
 
 	unlock = { # planet scope
-		always = no
+        custom_tooltip = {
+            owner = {
+                OR = {
+                    has_tradition = tr_concept_space_finish
+                    has_tradition = tr_concept_time_finish
+                    has_tradition = tr_concept_energy_finish
+                }
+            }   
+            fail_text = zone_unavailable_bts_conceptual_effect_unlock
+        }
 	}
 }
 
 slot_bts_labyrinth_summon = {
-	start = zone_bts_labyrinth_summon
 
 	include = {
 		zone_bts_labyrinth_summon
 	}
 
 	unlock = { # planet scope
-		always = no
+        custom_tooltip = {
+            owner = {
+                has_technology = bts_tech_labyrinth_summon_unlock
+            }
+            fail_text = zone_unavailable_bts_tech_labyrinth_summon_unlock
+        }
 	}
 }
 

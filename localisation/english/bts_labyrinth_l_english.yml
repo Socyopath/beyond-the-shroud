@@ -24,7 +24,9 @@ bts_labyrinth_of_abstraction_megastructure: "$pc_bts_labyrinth_of_abstraction_fu
 bts_labyrinth_of_abstraction_megastructure_DESC: "Our telepaths' visions have revealed some kind of megastructure construction project which seems to provide access to forbidden knowledge about the true nature of consciousness..."
 bts_labyrinth_of_abstraction_megastructure_MEGASTRUCTURE_DETAILS: "$bts_labyrinth_of_abstraction_megastructure_DESC$"
 
-
+# Techs
+bts_tech_labyrinth_summon_unlock: "Paranormal Containment Theory"
+bts_tech_labyrinth_summon_unlock_desc: "Lays the theoretical groundwork for stabilizing and hosting volatile abstract entities"
 
 ## Buildings
 bts_tier_1: "I"
@@ -311,6 +313,9 @@ zone_bts_labyrinth_mastery: "Conceptual Mastery"
 zone_bts_labyrinth_mastery_desc: "$job_bts_conceptual_architect_desc$"
 zone_bts_labyrinth_summon: "Paranormal Incubator"
 zone_bts_labyrinth_summon_desc: "$job_bts_reality_reaper_desc$"
+zone_unavailable_bts_conceptual_effect_unlock: "$zone_unavailable_tech$Complete the §YTradition Tree§! during §Y$situation_bts_conceptual_mastery$§! Situation"
+zone_unavailable_bts_tech_labyrinth_summon_unlock: "$zone_unavailable_tech$$society_research_icon_with_space$$bts_tech_labyrinth_summon_unlock$"
+
 
 ## Jobs
 job_bts_conceptual_architect: "Conceptual Architect"
