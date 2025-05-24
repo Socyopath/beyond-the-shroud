@@ -616,3 +616,184 @@ country_event = {
 	}
 }
 
+
+# Unlock Summon District - Warning
+country_event = { 
+	id = bts.340
+	is_triggered_only = yes
+	title = bts.340.name
+	desc = bts.340.desc
+
+	trigger = {
+		NOR = {
+			has_country_flag = bts_labyrinth_summon_district_unlocked
+			has_country_flag = bts_labyrinth_summon_district_event_pending
+		}
+		bts_has_labyrinth_of_abstraction = yes
+	}
+
+	option = {
+		name = OK
+
+		hidden_effect = {
+			set_country_flag = bts_labyrinth_summon_district_event_pending
+		}
+		
+		country_event = {
+			id = bts.341
+			days = 10
+		}
+	}
+}
+
+# Unlock Summon District - Summon Abstract Entity
+country_event = { 
+	id = bts.341
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		bts_has_labyrinth_of_abstraction = yes
+	}
+	immediate = {
+		random_owned_planet = {
+			limit = { is_planet_class = pc_bts_labyrinth_of_abstraction }
+			save_event_target_as = bts_abstract_entity_location
+		}
+
+		if = {
+			limit = { NOT = { exists = event_target:shroud_country } }
+			create_country = {
+				name = "NAME_Creatures_of_the_Shroud"
+				type = shroud_spirits
+				flag = {
+					icon = {
+						category = "special"
+						file = "the_shroud.dds"
+					}
+					background= {
+						category = "backgrounds"
+						file = "00_solid.dds"
+					}
+					colors={
+						"dark_purple"
+						"black"
+						"null"
+						"null"
+					}
+				}
+			}
+			last_created_country = {
+				establish_communications_no_message = root
+				save_global_event_target_as = shroud_country
+			}
+		}
+
+		create_fleet = {
+			name = NAME_Conceptual_Ship
+			settings = { spawn_debris = no }
+			effect = {
+				set_owner = event_target:shroud_country
+				create_ship = {
+					name = "NAME_Conceptual_Ship"
+					design = "bts_shroud_avatar"
+					effect = {
+						set_ship_flag = bts_labyrinth_abstract_entity
+					}
+				}
+				set_fleet_stance = aggressive
+				set_aggro_range_measure_from = return_point
+				set_aggro_range = 300
+				set_location = event_target:bts_abstract_entity_location
+			}
+		}
+
+		last_created_fleet = { # Despawn if enough time passes without being destroyed
+			fleet_event = { id = bts.342 days = 360 }
+		}
+	}
+}
+
+# Unlock Summon District - Kill remaining entity
+fleet_event = {
+	id = bts.342
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = {
+			country_event = { id = bts.343 }
+		}
+		destroy_fleet = this
+	}
+}
+
+# Unlock Summon District - Restart process on fail
+country_event = {
+	id = bts.343
+	title = "bts.343.name"
+	desc = "bts.343.desc"
+	picture = GFX_evt_psionics
+	show_sound = event_psionic
+
+	is_triggered_only = yes
+
+	option = {
+		name = OK
+		hidden_effect = {
+			remove_country_flag = bts_labyrinth_summon_district_event_pending
+			set_timed_country_flag = { 
+				flag = bts_labyrinth_summon_district_event_pending
+				days = 360
+			}
+		}
+	}
+}
+
+# Unlock Summon District - Abstract Entity Killed
+country_event = { 
+	id = bts.344
+	title = "bts.344.name"
+	desc = bts.344.desc
+
+	is_triggered_only = yes
+
+	trigger = {
+		fromfromfrom = {
+			has_ship_flag = bts_labyrinth_abstract_entity
+		}
+		NOT = {
+			has_country_flag = bts_labyrinth_summon_district_unlocked
+		}
+	}
+
+	option = {
+		name = OK
+		# Start special project
+		random_owned_planet = {
+			limit = { is_planet_class = pc_bts_labyrinth_of_abstraction }
+			enable_special_project = {
+				name = "BTS_LABYRINTH_UNLOCK_SUMMON_DISTRICT_PROJECT"
+				owner = root
+			}
+		}
+	}
+}
+
+# Unlock Summon District - Project Finished
+country_event = { 
+	id = bts.345
+	is_triggered_only = yes
+	title = "bts.345.name"
+	desc = bts.345.desc
+
+	immediate = {
+		set_country_flag = bts_labyrinth_summon_district_unlocked
+		remove_country_flag = bts_labyrinth_summon_district_event_pending
+	}
+
+	option = {
+		name = OK
+	}
+}
