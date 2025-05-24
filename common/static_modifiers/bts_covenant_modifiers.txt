@@ -16,18 +16,3 @@ agenda_psionic_supremacy_finish_bts_covenant = {
 	category_psionics_research_speed_mult = 0.4
 	category_psionics_draw_chance_mult = @bts_agenda_psionic_supremacy_covenant_psionic_draw
 }
-
-bts_zroni_shield_zroni_storm_protection = {
-	ship_shield_reduction = -1.0
-	ship_speed_reduction = -0.5
-	ship_accuracy_mult = 0.3
-	ship_fire_rate_mult = 0.3
-}
-
-absorbed_consciousness_0 = {
-	ship_shield_add = 50000
-	ship_hull_add = 25000
-	ship_shield_regen_add_static = 50
-	ship_weapon_damage = 1
-	ship_fire_rate_mult = 1
-}
