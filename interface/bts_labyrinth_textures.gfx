@@ -200,4 +200,19 @@ spriteTypes = {
 		name = "GFX_zone_bts_labyrinth_control"
 		texturefile = "gfx/interface/icons/zones/zone_bts_labyrinth_control.dds"
 	}
+
+	spriteType = {
+		name = "GFX_zone_bts_labyrinth_ressources"
+		texturefile = "gfx/interface/icons/zones/zone_bts_labyrinth_ressources.dds"
+	}
+
+	spriteType = {
+		name = "GFX_zone_bts_labyrinth_mastery"
+		texturefile = "gfx/interface/icons/zones/zone_bts_labyrinth_mastery.dds"
+	}
+
+	spriteType = {
+		name = "GFX_zone_bts_labyrinth_summon"
+		texturefile = "gfx/interface/icons/zones/zone_bts_labyrinth_summon.dds"
+	}
 }

@@ -2,7 +2,6 @@ bts_district_labyrinth_main = {
 	base_buildtime = @bts_labyrinth_of_abstraction_district_time
 	is_capped_by_modifier = no
 	exempt_from_ai_planet_specialization = yes
-	default_starting_district = yes
 
 	zone_slots = {
 		slot_bts_labyrinth_main
@@ -28,7 +27,6 @@ bts_district_labyrinth_ressources = {
 	base_buildtime = @bts_labyrinth_of_abstraction_district_time
 	is_capped_by_modifier = no
 	exempt_from_ai_planet_specialization = yes
-	default_starting_district = yes
 
 	zone_slots = {
 		slot_bts_labyrinth_ressources
@@ -57,7 +55,6 @@ bts_district_labyrinth_mastery = {
 	base_buildtime = @bts_labyrinth_of_abstraction_district_time
 	is_capped_by_modifier = no
 	exempt_from_ai_planet_specialization = yes
-	default_starting_district = yes
 
 	zone_slots = {
 		slot_bts_labyrinth_mastery
@@ -87,7 +84,6 @@ bts_district_labyrinth_summon = {
 	base_buildtime = @bts_labyrinth_of_abstraction_district_time
 	is_capped_by_modifier = no
 	exempt_from_ai_planet_specialization = yes
-	default_starting_district = yes
 
 	zone_slots = {
 		slot_bts_labyrinth_summon
