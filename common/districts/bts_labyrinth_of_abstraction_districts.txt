@@ -94,6 +94,10 @@ bts_district_labyrinth_summon = {
 		exists = owner
 	}
 
+	planet_modifier = {
+		job_bts_reality_reaper_add = 100
+	}
+
 	triggered_name = {
 		text = bts_district_labyrinth_summon_name
 	}
