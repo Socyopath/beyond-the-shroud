@@ -185,6 +185,13 @@ bts_summon_power = {
 					bts_update_ship_shield_reduction_zroni_shield = { SYSTEM = event_target:bts_labyrinth_summon_target.solar_system }
 				}
 			}
+			last_created_ship = {
+				add_modifier = {
+					modifier = bts_job_reality_reaper_summon_boost
+					multiplier = event_target:bts_labyrinth_summon_target.value:bts_num_jobs|JOB|bts_reality_reaper|
+				}
+			}
+
 			set_location = event_target:bts_labyrinth_summon_target
 		}
 	}
