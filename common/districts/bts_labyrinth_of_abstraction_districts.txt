@@ -15,7 +15,7 @@ bts_district_labyrinth_main = {
 	}
 
 	planet_modifier = {
-		planet_housing_add = 1000
+		planet_housing_add = @bts_district_labyrinth_main_housing
 	}
 
 	triggered_name = {
@@ -38,7 +38,7 @@ bts_district_labyrinth_ressources = {
 	}
 
 	planet_modifier = {
-		job_bts_materializer_add = 100
+		job_bts_materializer_add = @bts_materializer_job_per_district
 	}
 
 	triggered_name = {
@@ -66,7 +66,7 @@ bts_district_labyrinth_mastery = {
 	}
 
 	planet_modifier = {
-		job_bts_conceptual_architect_add = 100
+		job_bts_conceptual_architect_add = @bts_conceptual_architect_job_per_district
 	}
 
 	triggered_name = {
@@ -95,7 +95,7 @@ bts_district_labyrinth_summon = {
 	}
 
 	planet_modifier = {
-		job_bts_reality_reaper_add = 100
+		job_bts_reality_reaper_add = @bts_reality_reaper_job_per_district
 	}
 
 	triggered_name = {

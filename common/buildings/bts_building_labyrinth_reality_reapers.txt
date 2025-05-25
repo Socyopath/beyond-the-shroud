@@ -10,7 +10,7 @@ bts_building_labyrinth_reality_reapers_cost = {
 	}
 
 	triggered_country_modifier = {
-        bts_power_cost_mult = -0.25
+        bts_power_cost_mult = @bts_building_labyrinth_reality_reapers_cost_cost_mult
 	}
 
 	resources = {
@@ -38,8 +38,8 @@ bts_building_labyrinth_reality_reapers_capacity = {
 	}
 
 	triggered_country_modifier = {
-        bts_power_summon_2_capacity_add = 1
-        bts_power_cost_mult = 0.50
+        bts_power_summon_2_capacity_add = @bts_building_labyrinth_reality_reapers_capacity_summon_2_add
+        bts_power_cost_mult = @bts_building_labyrinth_reality_reapers_capacity_cost_mult
 	}
 
 	resources = {
@@ -71,7 +71,7 @@ bts_building_labyrinth_reality_reapers_zroni = {
 	}
 
 	triggered_country_modifier = {
-        bts_power_cost_mult = 2.00
+        bts_power_cost_mult = @bts_building_labyrinth_reality_reapers_zroni_cost
 	}
 
 	resources = {

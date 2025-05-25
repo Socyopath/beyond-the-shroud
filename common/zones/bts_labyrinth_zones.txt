@@ -56,7 +56,7 @@ zone_bts_labyrinth_observatory = {
 	}
 
     triggered_district_planet_modifier = {
-        job_bts_veilwatcher_add = 100
+        job_bts_veilwatcher_add = @bts_veilwatcher_job_per_district
     }
 
 	triggered_desc = {
@@ -80,7 +80,7 @@ zone_bts_labyrinth_control = {
 	}
 
     triggered_district_planet_modifier = {
-        job_bts_mindshaper_add = 100
+        job_bts_mindshaper_add = @bts_mindshaper_job_per_district
     }
     
 	triggered_desc = {

@@ -17,6 +17,19 @@
 @bts_labyrinth_shroud_inter_choose_effect_favor_cost = 250
 @bts_labyrinth_shroud_inter_choose_effect_cooldown = 5400
 
+# Jobs
+@bts_veilwatcher_unity_upkeep = 100
+@bts_mindshaper_unity_upkeep = 100
+@bts_materializer_unity_upkeep = 100
+@bts_conceptual_architect_unity_upkeep = 100
+@bts_reality_reaper_unity_upkeep = 100
+
+@bts_veilwatcher_job_per_district = 100
+@bts_mindshaper_job_per_district = 100
+@bts_materializer_job_per_district = 100
+@bts_conceptual_architect_job_per_district = 100
+@bts_reality_reaper_job_per_district = 100
+
 # Districts / Buildings
 # Costs
 @bts_labyrinth_of_abstraction_district_upkeep_sr = 0.5
@@ -31,8 +44,7 @@
 @bts_labyrinth_of_abstraction_building_time = 720
 
 ## Capital
-@bts_conceptual_architect_unity = 12
-
+@bts_district_labyrinth_main_housing = 1000
 @bts_labyrinth_of_abstraction_core_1_upkeep_energy = 2
 
 @bts_labyrinth_of_abstraction_core_2_upkeep_energy = 5
@@ -85,7 +97,6 @@
 @bts_building_labyrinth_mindshapers_influence = 1
 
 ## Materializers
-@bts_district_labyrinth_ressources_jobs = 100
 @bts_building_labyrinth_materializers_specials_volatile_motes = 10
 @bts_building_labyrinth_materializers_specials_exotic_gases = 10
 @bts_building_labyrinth_materializers_specials_rare_crystals = 10
@@ -97,6 +108,7 @@
 
 ## Conceptual Architects
 ### Jobs
+@bts_conceptual_architect_unity = 12
 @bts_conceptual_architect_conceptual_research = 100
 ### Buildings
 @bts_building_labyrinth_conceptual_architects_cost_cost = -0.25
@@ -181,9 +193,15 @@
 @bts_job_reality_reaper_summon_boost_hull_regen = 0.01
 @bts_job_reality_reaper_summon_boost_shield_regen = 0.01
 ### Buildings
+@bts_building_labyrinth_reality_reapers_cost_cost_mult = -0.25
+@bts_building_labyrinth_reality_reapers_capacity_summon_2_add = 2
+@bts_building_labyrinth_reality_reapers_capacity_cost_mult = 1.50
+@bts_building_labyrinth_reality_reapers_zroni_cost = 2.00
 ### Powers
 @bts_power_summon_1_shroud_delve_cooldown = 360
 @bts_power_summon_2_shroud_delve_cooldown = 720
 @bts_power_summon_2_max_number = 5
 @bts_power_summon_3_shroud_delve_cooldown = 3600
 @bts_power_summon_3_max_number = 1
+
+
