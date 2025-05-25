@@ -86,24 +86,24 @@
 @bts_building_ethical_manipulator_ethic_attraction = 0.20
 
 ## Veilwatchers
-@bts_building_labyrinth_veilwatchers_intel = 10
-@bts_building_labyrinth_veilwatchers_sensor_range = 10
+@bts_building_labyrinth_veilwatchers_intel = 2
+@bts_building_labyrinth_veilwatchers_sensor_range = 1
 @bts_building_labyrinth_veilwatchers_hyperlane_range = 10
 
 ## Mindshapers
-@bts_building_labyrinth_mindshapers_trust_cap = 15
-@bts_building_labyrinth_mindshapers_trust_growth = 0.004
+@bts_building_labyrinth_mindshapers_trust_cap = 2.5
+@bts_building_labyrinth_mindshapers_trust_growth = 0.10
 @bts_building_labyrinth_mindshapers_trade = 10
-@bts_building_labyrinth_mindshapers_influence = 1
+@bts_building_labyrinth_mindshapers_influence = 0.25
 
 ## Materializers
-@bts_building_labyrinth_materializers_specials_volatile_motes = 10
-@bts_building_labyrinth_materializers_specials_exotic_gases = 10
-@bts_building_labyrinth_materializers_specials_rare_crystals = 10
-@bts_building_labyrinth_materializers_basic_energy = 10
-@bts_building_labyrinth_materializers_basic_minerals = 10
-@bts_building_labyrinth_materializers_basic_alloys = 10
-@bts_building_labyrinth_materializers_zro = 10
+@bts_building_labyrinth_materializers_specials_volatile_motes = 1
+@bts_building_labyrinth_materializers_specials_exotic_gases = 1
+@bts_building_labyrinth_materializers_specials_rare_crystals = 1
+@bts_building_labyrinth_materializers_basic_energy = 3
+@bts_building_labyrinth_materializers_basic_minerals = 2
+@bts_building_labyrinth_materializers_basic_alloys = 1
+@bts_building_labyrinth_materializers_zro = 1
 
 
 ## Conceptual Architects
@@ -127,48 +127,68 @@
 @situation_bts_conceptual_mastery_last_point_unlock = 6000      # ~15 year
 @situation_bts_conceptual_mastery_relic_unlock = 10000          # ~15 year
 #### Tradition
+##### Time
 @bts_concept_time_adopt_pop_growth = 0.15
-@bts_concept_time_11_ship_build_speed = 0.01
-@bts_concept_time_11_starbase_upgrade_speed = 0.01
-@bts_concept_time_11_starbase_module_build_speed = 0.01
-@bts_concept_time_12_terraforming_speed = 0.01
-@bts_concept_time_12_colony_dev_speed = 0.01
-@bts_concept_time_12_clear_blocker_speed = 0.01
+
+@bts_concept_time_11_ship_build_speed = 0.05
+@bts_concept_time_11_starbase_upgrade_speed = 0.05
+@bts_concept_time_11_starbase_module_build_speed = 0.05
+
+@bts_concept_time_12_terraforming_speed = 0.05
+@bts_concept_time_12_colony_dev_speed = 0.05
+@bts_concept_time_12_clear_blocker_speed = 0.05
 @bts_concept_time_12_planet_build_speed = 0.01
-@bts_concept_time_21_agenda_duration = 0.01
-@bts_concept_time_21_agenda_speed = 0.01
-@bts_concept_time_21_leader_xp_gain = 0.01
-@bts_concept_time_22_intel_speed = 0.01
-@bts_concept_time_22_operation_speed = 0.01
-@bts_concept_time_22_spy_network_speed = 0.01
+
+@bts_concept_time_21_agenda_duration = 0.05
+@bts_concept_time_21_agenda_speed = 0.05
+@bts_concept_time_21_leader_xp_gain = 0.05
+
+@bts_concept_time_22_intel_speed = 0.05
+@bts_concept_time_22_operation_speed = 0.05
+@bts_concept_time_22_spy_network_speed = 0.05
+
 @bts_concept_time_3_relic_cd = -0.50
 @bts_conceptual_effect_time_cooldown = 3600
 @bts_conceptual_effect_time_duration = 360
 
+##### Space
 @bts_concept_space_adopt_megastructure_capacity = 1
-@bts_concept_space_11_defense_plat_cap = 0.005
-@bts_concept_space_11_starbase_cap = 0.1
-@bts_concept_space_12_naval_cap = 0.01
-@bts_concept_space_12_fleet_cmd = 0.01
-@bts_concept_space_21_district_slot = 0.10
-@bts_concept_space_21_housing_usage = -0.005
-@bts_concept_space_22_max_storage = 1000
+
+@bts_concept_space_11_defense_plat_cap = 0.025
+@bts_concept_space_11_starbase_cap = 0.5
+
+@bts_concept_space_12_naval_cap = 0.0125
+@bts_concept_space_12_fleet_cmd = 0.025
+
+@bts_concept_space_21_district_slot = 0.25
+@bts_concept_space_21_housing_usage = -0.025
+
+@bts_concept_space_22_max_storage = 5000
+
 @bts_concept_space_3_ftl_windup = -1.00
 @bts_concept_space_3_ftl_windown = -1.00
 @bts_concept_space_3_ftl_speed = 1.00
+
 @bts_conceptual_effect_space_cooldown = 3600
 @bts_conceptual_effect_space_duration = 360
 
+##### Energy
 @bts_concept_energy_adopt_shield = 0.15
-@bts_concept_energy_11_ship_upkeep = -0.0075
-@bts_concept_energy_11_starbase_upkeep = -0.0075
-@bts_concept_energy_12_mining_station_output = 0.01
-@bts_concept_energy_12_research_station_output = 0.01
-@bts_concept_energy_21_district_upkeep = -0.005
-@bts_concept_energy_21_building_upkeep = -0.005
-@bts_concept_energy_22_job_upkeep = -0.005
-@bts_concept_energy_22_job_output = 0.01
+
+@bts_concept_energy_11_ship_upkeep = -0.0375
+@bts_concept_energy_11_starbase_upkeep = -0.0375
+
+@bts_concept_energy_12_mining_station_output = 0.05
+@bts_concept_energy_12_research_station_output = 0.05
+
+@bts_concept_energy_21_district_upkeep = -0.025
+@bts_concept_energy_21_building_upkeep = -0.025
+
+@bts_concept_energy_22_job_upkeep = -0.025
+@bts_concept_energy_22_job_output = 0.05
+
 @bts_concept_energy_3_energy_damage = 0.35
+
 @bts_conceptual_effect_energy_cooldown = 3600
 @bts_conceptual_effect_energy_duration = 360
 #### Relic
@@ -209,6 +229,6 @@
 
 @bts_labyrinth_summon_district_event_delay_despawn = 360
 @bts_labyrinth_summon_district_event_delay = 360
-@bts_labyrinth_summon_district_event_job_count = 2000
+@bts_labyrinth_summon_district_event_job_count = 3000
 @bts_labyrinth_summon_district_event_spawn_delay_max = 360
 @bts_labyrinth_summon_district_event_spawn_delay_min = 180
