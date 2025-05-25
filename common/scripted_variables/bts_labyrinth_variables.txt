@@ -116,10 +116,10 @@
 @bts_conceptual_architect_unity = 12
 @bts_conceptual_architect_conceptual_research = 100
 ### Buildings
-@bts_building_labyrinth_conceptual_architects_cost_cost = -0.25
-@bts_building_labyrinth_conceptual_architects_duration_cooldown = -0.15
-@bts_building_labyrinth_conceptual_architects_hybrid_cooldown = -0.30
-@bts_building_labyrinth_conceptual_architects_hybrid_cost = 0.5
+@bts_building_labyrinth_conceptual_architects_cost_cost = -0.15
+@bts_building_labyrinth_conceptual_architects_duration_cooldown = -0.05
+@bts_building_labyrinth_conceptual_architects_hybrid_cooldown = -0.25
+@bts_building_labyrinth_conceptual_architects_hybrid_cost = 0.50
 
 
 ### Conceptual Mastery 
