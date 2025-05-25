@@ -1,5 +1,5 @@
-bts_tech_labyrinth_summon_unlock = {
-	icon = bts_tech_labyrinth_summon_unlock
+bts_tech_labyrinth_summon_upgrade = {
+	icon = bts_tech_labyrinth_summon_upgrade
 	area = society
 	category = { psionics }
 	cost = @bts_tech_covenant_mark_cost
@@ -10,6 +10,10 @@ bts_tech_labyrinth_summon_unlock = {
 	weight = 0
 	
 	prerequisites = { "tech_psionic_theory" }
+
+	modifier = {
+		description = bts_tech_labyrinth_summon_upgrade_effect
+	}
 
 	weight_modifier = {
 		factor = 0

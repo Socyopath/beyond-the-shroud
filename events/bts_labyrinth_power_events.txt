@@ -128,7 +128,7 @@ country_event = {
         name = bts_power_summon_3
         custom_tooltip = bts_power_summon_3_desc
         trigger = {
-            
+            has_technology = bts_tech_labyrinth_summon_upgrade
         }
         allow = {
             custom_tooltip = { 

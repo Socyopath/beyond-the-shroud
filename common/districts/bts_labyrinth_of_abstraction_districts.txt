@@ -65,6 +65,15 @@ bts_district_labyrinth_mastery = {
 		exists = owner
 	}
 
+	allow = {
+		custom_tooltip = {
+			owner = {
+				has_country_flag = situation_bts_conceptual_mastery_started
+			}
+			fail_text = bts_district_labyrinth_mastery_unlock
+		}
+	}
+
 	planet_modifier = {
 		job_bts_conceptual_architect_add = @bts_conceptual_architect_job_per_district
 	}
@@ -92,6 +101,15 @@ bts_district_labyrinth_summon = {
     potential = {
 		uses_district_set = bts_labyrinth_of_abstraction_district_set
 		exists = owner
+	}
+
+	allow = {
+		custom_tooltip = {
+			owner = {
+				has_country_flag = bts_labyrinth_summon_district_unlocked
+			}
+			fail_text = bts_district_labyrinth_summon_unlock
+		}
 	}
 
 	planet_modifier = {

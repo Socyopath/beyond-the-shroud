@@ -3,6 +3,7 @@
 # Events
 bts.300.title: "$pc_bts_labyrinth_of_abstraction_full$"
 bts.300.desc: "Our divinity offered us a vision in which we could see strange patterns for a §Ymegastructure§!.\n\n§PFORBIDDEN KNOWLEDGE : $pc_bts_labyrinth_of_abstraction_full$§!"
+bts.301.powers: "Summon an §MAbstract Entity§!"
 bts.301.boon: "Choose §Yboon§! of the Shroud"
 bts.301.boon.low: "$bts.301.boon$ - $shroud.chances.low$"
 bts.301.boon.medium: "$bts.301.boon$ - $shroud.chances.medium$"
@@ -78,8 +79,9 @@ bts_shroud_portal_megastructure_MEGASTRUCTURE_DETAILS: "$bts_shroud_portal_megas
 bts_shroud_portal_galactic_DESC: "This system contains a §Y$bts_shroud_portal_megastructure$§!"
 
 # Techs
-bts_tech_labyrinth_summon_unlock: "Paranormal Containment Theory"
-bts_tech_labyrinth_summon_unlock_desc: "Lays the theoretical groundwork for stabilizing and hosting volatile abstract entities"
+bts_tech_labyrinth_summon_upgrade: "Paranormal Containment Theory"
+bts_tech_labyrinth_summon_upgrade_desc: "Lays the theoretical groundwork for stabilizing and hosting volatile abstract entities"
+bts_tech_labyrinth_summon_upgrade_effect: "§HUnlocks Abstract Entity:§! $NAME_Reckoning$"
 
 # Special Projects
 BTS_LABYRINTH_UNLOCK_SUMMON_DISTRICT_PROJECT: "Diving into paranormal"
@@ -355,11 +357,13 @@ bts_district_labyrinth_mastery: "Abstraction District"
 bts_district_labyrinth_mastery_desc: "$job_bts_conceptual_architect_desc$"
 bts_district_labyrinth_mastery_plural: "Abstraction Districts"
 bts_district_labyrinth_mastery_name: "$zone_bts_labyrinth_mastery$"
+bts_district_labyrinth_mastery_unlock: "$TRIGGER_FAIL$Has started §Y$situation_bts_conceptual_mastery$§! Situation"
 
 bts_district_labyrinth_summon: "Otherworldly District"
 bts_district_labyrinth_summon_desc: "$job_bts_reality_reaper_desc$"
 bts_district_labyrinth_summon_plural: "Otherworldly Districts"
 bts_district_labyrinth_summon_name: "$zone_bts_labyrinth_summon$"
+bts_district_labyrinth_summon_unlock: "$TRIGGER_FAIL$Has completed §Y$BTS_LABYRINTH_UNLOCK_SUMMON_DISTRICT_PROJECT$§! Special Project"
 
 zone_bts_labyrinth_observatory: "Third Eye Observatory"
 zone_bts_labyrinth_observatory_desc: "$job_bts_veilwatcher_desc$"
@@ -372,7 +376,7 @@ zone_bts_labyrinth_mastery_desc: "$job_bts_conceptual_architect_desc$"
 zone_bts_labyrinth_summon: "Paranormal Incubator"
 zone_bts_labyrinth_summon_desc: "$job_bts_reality_reaper_desc$"
 zone_unavailable_bts_conceptual_effect_unlock: "$zone_unavailable_tech$Complete the §YTradition Tree§! during §Y$situation_bts_conceptual_mastery$§! Situation"
-zone_unavailable_bts_tech_labyrinth_summon_unlock: "$zone_unavailable_tech$$society_research_icon_with_space$$bts_tech_labyrinth_summon_unlock$"
+zone_unavailable_bts_tech_labyrinth_summon_upgrade: "$zone_unavailable_tech$$society_research_icon_with_space$$bts_tech_labyrinth_summon_upgrade$"
 
 
 ## Jobs

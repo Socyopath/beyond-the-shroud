@@ -15,6 +15,9 @@ country_event = {
 		start_situation = {
 			type = situation_bts_conceptual_mastery
 		}
+		hidden_effect = {
+			set_country_flag = situation_bts_conceptual_mastery_started
+		}
 	}
 }
 

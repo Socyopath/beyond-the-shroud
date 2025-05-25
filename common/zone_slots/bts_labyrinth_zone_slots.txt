@@ -39,9 +39,9 @@ slot_bts_labyrinth_summon = {
 	unlock = { # planet scope
         custom_tooltip = {
             owner = {
-                has_technology = bts_tech_labyrinth_summon_unlock
+                has_technology = bts_tech_labyrinth_summon_upgrade
             }
-            fail_text = zone_unavailable_bts_tech_labyrinth_summon_unlock
+            fail_text = zone_unavailable_bts_tech_labyrinth_summon_upgrade
         }
 	}
 }
