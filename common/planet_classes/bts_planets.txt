@@ -32,10 +32,10 @@ pc_bts_labyrinth_of_abstraction = {
 		planet_crime_mult = -1.00
 		planet_amenities_add = 1000
 		planet_stability_add = 100
-		bts_district_labyrinth_main_max = 5
-		bts_district_labyrinth_ressources_max = 5
-		bts_district_labyrinth_mastery_max = 10
-		bts_district_labyrinth_summon_max = 10
+		bts_district_labyrinth_main_max = @bts_veilwatcher_mindshaper_job_max_districts
+		bts_district_labyrinth_ressources_max = @bts_materializer_job_max_districts
+		bts_district_labyrinth_mastery_max = @bts_conceptual_architect_job_max_districts
+		bts_district_labyrinth_summon_max = @bts_reality_reaper_job_max_districts
 	}
 
 }

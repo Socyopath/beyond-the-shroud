@@ -31,6 +31,10 @@
 @bts_reality_reaper_job_per_district = 1000
 
 # Districts / Buildings
+@bts_veilwatcher_mindshaper_job_max_districts = 5
+@bts_materializer_job_max_districts = 5
+@bts_conceptual_architect_job_max_districts = 10
+@bts_reality_reaper_job_max_districts = 10
 # Costs
 @bts_labyrinth_of_abstraction_district_upkeep_sr = 0.5
 @bts_labyrinth_of_abstraction_district_upkeep_energy = 2
