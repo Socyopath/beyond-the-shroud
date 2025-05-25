@@ -1,32 +1,94 @@
 ﻿l_english:
 
-# Laybrinth of Abstraction
+# Events
 bts.300.title: "$pc_bts_labyrinth_of_abstraction_full$"
 bts.300.desc: "Our divinity offered us a vision in which we could see strange patterns for a §Ymegastructure§!.\n\n§PFORBIDDEN KNOWLEDGE : $pc_bts_labyrinth_of_abstraction_full$§!"
-
 bts.301.boon: "Choose §Yboon§! of the Shroud"
 bts.301.boon.low: "$bts.301.boon$ - $shroud.chances.low$"
 bts.301.boon.medium: "$bts.301.boon$ - $shroud.chances.medium$"
 bts.301.boon.high: "$bts.301.boon$ - $shroud.chances.high$"
-
 bts.301.effects: "Choose §Yspecial effect§! from the Shroud"
 bts.301.effects.chosen: "Promote a leader to be a §YChosen One§!"
 bts.301.effects.steal: "Steal §Ytechnology§! from a Fallen Empire"
 
+## Powers
+bts_power_summon_1: "Summon §M$NAME_Shroud_Avatar$§!."
+bts_power_summon_1_desc: "A warrior from the Shroud that has been forged out of pure psionic energy."
+bts_power_summon_2: "Summon §M$NAME_Shroud_Manifestation$§!."
+bts_power_summon_2_desc: "A greater Shroud entity that represents an unspeakable concept of all thoughts."
+bts_power_summon_2_invalid_number: "Less than §Y[root.bts_power_summon_2_capacity]§! §Y$NAME_Shroud_Manifestation$§! are summoned"
+bts_power_summon_3: "Summon §M$NAME_Reckoning$§!."
+bts_power_summon_3_desc: "A massive paranormal being of pure energy that seeks to devour the consciousness of other life forms."
+bts_power_summon_3_invalid_number: "Less than §Y$@bts_power_summon_3_max_number|0*$§! §Y$NAME_Reckoning$§! are summoned"
+
+# Components
+## Planet Killers
+BTS_PLANET_KILLER_END: "Consciousness Assimilator"
+BTS_PLANET_KILLER_END_DESC: "Assimilate the consciousness of all living beings on a planet and increase your power as you kill more."
+BTS_PLANET_KILLER_END_ACTION: "Assimilate all the consciousnesses"
+FLEETORDER_DESTROY_PLANET_WITH_BTS_PLANET_KILLER_END: "Preparing to assimilate all consciousnesses of $PLANET|Y$."
+MESSAGE_DESC_FOR_BTS_PLANET_KILLER_END: "had all of its life forms consciousness being absorbed by"
+bts_planet_destruction_name: "Consciousness assimilated"
+bts_planet_destruction_desc: "The psionic power from [From.From.GetName]'s fades, and for a moment all is quiet. Down on [From.GetName] the people stand slack-jawed (or local physiognomic equivalent), enraptured by the powerful and personal truths the psionic ray unfetters from the tangled web of their minds.\n\nIf they did not understand before, they know now viscerally: we are all part of something greater."
+bts_planet_destruction_tooltip: "Any §Y$trait_mechanical$§! and §Y$trait_machine_unit$§! pops are §Rdestroyed§! by the psionic resonance.\n\nAll remaining §Ybiological§! pops consciousness have been absorbed to strengthen the §M$NAME_Reckoning$§!"
+## Section Templates
+bts_shroud_avatar: "$NAME_Shroud_Avatar$"
+bts_shroud_avatar_zroni: "Zroni $bts_shroud_avatar$"
+bts_shroud_manifestation: "$NAME_Shroud_Manifestation$"
+bts_shroud_manifestation_zroni: "Zroni $bts_shroud_manifestation$"
+bts_warped_consciousness: "$NAME_Warped_Consciousness$"
+bts_warped_consciousness_zroni: "Zroni $bts_warped_consciousness$"
+## Weapons
+BTS_SHROUD_BLAST: "Shroud Blast"
+BTS_SHROUD_BLAST_DESC: ""
+
+# Decision
 decision_bts_labyrinth_of_abstraction_shroud_interraction: "Enter Shroud"
 decision_bts_labyrinth_of_abstraction_shroud_interraction_desc: ""
 decision_bts_labyrinth_of_abstraction_shroud_interraction_effects: "Ask your §Y$job_bts_conceptual_architect_plural$§! to commune with the shroud to alter the reality."
 
+# Planet
 pc_bts_labyrinth_of_abstraction_full: "Laybrinth of Abstraction"
 pc_bts_labyrinth_of_abstraction: "Laybrinth"
 pc_bts_labyrinth_of_abstraction_desc: "An enigmatic construction that allows our telepaths to reach a higher state of consciousness, enabling them to influence the thoughts of other entities and rewrite reality thanks to their deep connection with the shroud."
+
+# Megastructures
 bts_labyrinth_of_abstraction_megastructure: "$pc_bts_labyrinth_of_abstraction_full$"
 bts_labyrinth_of_abstraction_megastructure_DESC: "Our telepaths' visions have revealed some kind of megastructure construction project which seems to provide access to forbidden knowledge about the true nature of consciousness..."
 bts_labyrinth_of_abstraction_megastructure_MEGASTRUCTURE_DETAILS: "$bts_labyrinth_of_abstraction_megastructure_DESC$"
+bts_shroud_portal_megastructure: "Shroud Portal"
+bts_shroud_portal_megastructure_DESC: "Portal linking several locations in space. Any entity able to pass through it will be dematerialized in order to pass through the shroud, then rematerialized once on the other side."
+bts_shroud_portal_megastructure_MEGASTRUCTURE_DETAILS: "$bts_shroud_portal_megastructure_DESC$"
+bts_shroud_portal_galactic_DESC: "This system contains a §Y$bts_shroud_portal_megastructure$§!"
 
 # Techs
 bts_tech_labyrinth_summon_unlock: "Paranormal Containment Theory"
 bts_tech_labyrinth_summon_unlock_desc: "Lays the theoretical groundwork for stabilizing and hosting volatile abstract entities"
+
+
+# Modifiers
+mod_job_bts_veilwatcher_add: "[bts_veilwatcher.GetName] Jobs"
+mod_job_bts_mindshaper_add: "[bts_mindshaper.GetName] Jobs"
+mod_job_bts_materializer_add: "[bts_materializer.GetName] Jobs"
+mod_job_bts_conceptual_architect_add: "[bts_conceptual_architect.GetName] Jobs"
+mod_job_bts_reality_reaper_add: "[bts_reality_reaper.GetName] Jobs"
+mod_planet_bts_veilwatchers_sensor_range_add: "£mod_planet_sensor_range_add£ $MOD_PLANET_SENSOR_RANGE_ADD$ per $pop_group_unit$ $job_bts_veilwatcher_plural_with_icon$"
+mod_planet_bts_veilwatchers_hyperlane_range_add: "£mod_planet_hyperlane_range_add£ $MOD_PLANET_HYPERLANE_RANGE_ADD$ per $pop_group_unit$ $job_bts_veilwatcher_plural_with_icon$"
+mod_planet_bts_veilwatchers_add_base_country_intel: "£mod_add_base_country_intel£ $MOD_ADD_BASE_COUNTRY_INTEL$ per $pop_group_unit$ $job_bts_veilwatcher_plural_with_icon$"
+mod_planet_bts_mindshapers_trust_cap_add: "£mod_country_trust_cap_add£ $MOD_COUNTRY_TRUST_CAP_ADD$ per $pop_group_unit$ $job_bts_mindshaper_plural_with_icon$"
+mod_planet_bts_mindshapers_trust_growth: "£mod_country_trust_growth£ $MOD_COUNTRY_TRUST_GROWTH$ per $pop_group_unit$ $job_bts_mindshaper_plural_with_icon$"
+mod_planet_bts_mindshapers_trade_produces_add: "$trade_with_icon$ per $pop_group_unit$ $job_bts_mindshaper_plural_with_icon$"
+mod_planet_bts_mindshapers_base_influence_produces_add: "£mod_influence_produces_add£ $mod_country_base_influence_produces_add$ per $pop_group_unit$ $job_bts_mindshaper_plural_with_icon$"
+mod_planet_bts_materializers_volatile_motes_produces_add: "£volatile_motes£ $volatile_motes$ per $pop_group_unit$ $job_bts_materializer_plural_with_icon$"
+mod_planet_bts_materializers_exotic_gases_produces_add: "£exotic_gases£ $exotic_gases$ per $pop_group_unit$ $job_bts_materializer_plural_with_icon$"
+mod_planet_bts_materializers_rare_crystals_produces_add: "£rare_crystals£ $rare_crystals$ per $pop_group_unit$ $job_bts_materializer_plural_with_icon$"
+mod_planet_bts_materializers_energy_produces_add: "£energy£ $energy$ per $pop_group_unit$ $job_bts_materializer_plural_with_icon$"
+mod_planet_bts_materializers_minerals_produces_add: "£minerals£ $minerals$ per $pop_group_unit$ $job_bts_materializer_plural_with_icon$"
+mod_planet_bts_materializers_alloys_produces_add: "£alloys£ $alloys$ per $pop_group_unit$ $job_bts_materializer_plural_with_icon$"
+mod_planet_bts_materializers_sr_zro_produces_add: "£sr_zro£ $sr_zro$ per $pop_group_unit$ $job_bts_materializer_plural_with_icon$"
+mod_planet_bts_conceptual_architect_conceptual_research: "§Y$situation_bts_conceptual_mastery$§! progress per $pop_group_unit$ $job_bts_conceptual_architect_plural_with_icon$"
+mod_bts_power_summon_2_capacity_add: "§Y$NAME_Shroud_Manifestation$§! Capacity"
+mod_bts_power_cost_mult: "§YShroud Creature§! Summoning cost "
 
 ## Buildings
 bts_tier_1: "I"
@@ -205,6 +267,7 @@ bts_building_labyrinth_mindshapers_influence_3_desc: "$bts_building_labyrinth_mi
 bts_building_labyrinth_mindshapers_influence_4: "$bts_building_labyrinth_mindshapers_influence$ $bts_tier_4$"
 bts_building_labyrinth_mindshapers_influence_4_desc: "$bts_building_labyrinth_mindshapers_influence_desc$"
 
+# Materializers buildings
 bts_building_labyrinth_materializers_specials: "Otherworldly Converter"
 bts_building_labyrinth_materializers_specials_desc: ""
 bts_building_labyrinth_materializers_specials_1: "$bts_building_labyrinth_materializers_specials$ $bts_tier_1$"
@@ -256,29 +319,6 @@ bts_building_labyrinth_reality_reapers_zroni_desc: "By embedding conceptual enti
 bts_building_labyrinth_reality_reapers_zroni_effects: "All summoned entities gain §Y$ZRONI_SHIELD$§! which prevent shield nullificaiton during §YZroni Storm§!"
 
 
-## Modifiers
-mod_job_bts_veilwatcher_add: "[bts_veilwatcher.GetName] Jobs"
-mod_job_bts_mindshaper_add: "[bts_mindshaper.GetName] Jobs"
-mod_job_bts_materializer_add: "[bts_materializer.GetName] Jobs"
-mod_job_bts_conceptual_architect_add: "[bts_conceptual_architect.GetName] Jobs"
-mod_job_bts_reality_reaper_add: "[bts_reality_reaper.GetName] Jobs"
-mod_planet_bts_veilwatchers_sensor_range_add: "£mod_planet_sensor_range_add£ $MOD_PLANET_SENSOR_RANGE_ADD$ per $pop_group_unit$ $job_bts_veilwatcher_plural_with_icon$"
-mod_planet_bts_veilwatchers_hyperlane_range_add: "£mod_planet_hyperlane_range_add£ $MOD_PLANET_HYPERLANE_RANGE_ADD$ per $pop_group_unit$ $job_bts_veilwatcher_plural_with_icon$"
-mod_planet_bts_veilwatchers_add_base_country_intel: "£mod_add_base_country_intel£ $MOD_ADD_BASE_COUNTRY_INTEL$ per $pop_group_unit$ $job_bts_veilwatcher_plural_with_icon$"
-mod_planet_bts_mindshapers_trust_cap_add: "£mod_country_trust_cap_add£ $MOD_COUNTRY_TRUST_CAP_ADD$ per $pop_group_unit$ $job_bts_mindshaper_plural_with_icon$"
-mod_planet_bts_mindshapers_trust_growth: "£mod_country_trust_growth£ $MOD_COUNTRY_TRUST_GROWTH$ per $pop_group_unit$ $job_bts_mindshaper_plural_with_icon$"
-mod_planet_bts_mindshapers_trade_produces_add: "$trade_with_icon$ per $pop_group_unit$ $job_bts_mindshaper_plural_with_icon$"
-mod_planet_bts_mindshapers_base_influence_produces_add: "£mod_influence_produces_add£ $mod_country_base_influence_produces_add$ per $pop_group_unit$ $job_bts_mindshaper_plural_with_icon$"
-mod_planet_bts_materializers_volatile_motes_produces_add: "£volatile_motes£ $volatile_motes$ per $pop_group_unit$ $job_bts_materializer_plural_with_icon$"
-mod_planet_bts_materializers_exotic_gases_produces_add: "£exotic_gases£ $exotic_gases$ per $pop_group_unit$ $job_bts_materializer_plural_with_icon$"
-mod_planet_bts_materializers_rare_crystals_produces_add: "£rare_crystals£ $rare_crystals$ per $pop_group_unit$ $job_bts_materializer_plural_with_icon$"
-mod_planet_bts_materializers_energy_produces_add: "£energy£ $energy$ per $pop_group_unit$ $job_bts_materializer_plural_with_icon$"
-mod_planet_bts_materializers_minerals_produces_add: "£minerals£ $minerals$ per $pop_group_unit$ $job_bts_materializer_plural_with_icon$"
-mod_planet_bts_materializers_alloys_produces_add: "£alloys£ $alloys$ per $pop_group_unit$ $job_bts_materializer_plural_with_icon$"
-mod_planet_bts_materializers_sr_zro_produces_add: "£sr_zro£ $sr_zro$ per $pop_group_unit$ $job_bts_materializer_plural_with_icon$"
-mod_planet_bts_conceptual_architect_conceptual_research: "§Y$situation_bts_conceptual_mastery$§! progress per $pop_group_unit$ $job_bts_conceptual_architect_plural_with_icon$"
-mod_bts_power_summon_2_capacity_add: "§Y$NAME_Shroud_Manifestation$§! Capacity"
-mod_bts_power_cost_mult: "§YShroud Creature§! Summoning cost "
 
 ## Districts & Zones
 bts_district_labyrinth_main: "Labyrinth District"
@@ -300,8 +340,6 @@ bts_district_labyrinth_summon: "Otherworldly District"
 bts_district_labyrinth_summon_desc: "$job_bts_reality_reaper_desc$"
 bts_district_labyrinth_summon_plural: "Otherworldly Districts"
 bts_district_labyrinth_summon_name: "$zone_bts_labyrinth_summon$"
-
-# bts_district_labyrinth_mastery_effects: "EFFECTS"
 
 zone_bts_labyrinth_observatory: "Third Eye Observatory"
 zone_bts_labyrinth_observatory_desc: "$job_bts_veilwatcher_desc$"
@@ -350,11 +388,6 @@ job_bts_reality_reaper_plural_with_icon: "[bts_reality_reaper.GetIcon] [bts_real
 job_bts_reality_reaper_effect_desc: "[bts_reality_reaper.GetIcon] [bts_reality_reaper.GetNamePlural] summon §YAbstract Entities§!\n\n§YAbstract Entities§! gain:\n$t$$MOD_SHIP_HULL_REGEN_ADD_STATIC$: §G+$@bts_job_reality_reaper_summon_boost_hull_regen$§! per [bts_reality_reaper.GetIcon] [bts_reality_reaper.GetName]\n$t$$MOD_SHIP_SHIELD_REGEN_ADD_STATIC$: §G+$@bts_job_reality_reaper_summon_boost_shield_regen$§! per [bts_reality_reaper.GetIcon] [bts_reality_reaper.GetName]"
 bts_job_reality_reaper_summon_boost: "§YSummoned Enity§!"
 
-# Bypass
-bts_shroud_portal_megastructure_MEGASTRUCTURE_DETAILS: "$bts_shroud_portal_megastructure_DESC$"
-bts_shroud_portal_megastructure: "Shroud Portal"
-bts_shroud_portal_megastructure_DESC: "Portal linking several locations in space. Any entity able to pass through it will be dematerialized in order to pass through the shroud, then rematerialized once on the other side."
-bts_shroud_portal_galactic_DESC: "This system contains a §Y$bts_shroud_portal_megastructure$§!"
 
 # Concepts
 ## Tradition Concept: Space
@@ -559,9 +592,6 @@ r_bts_relic_concept_energy: "Conceptual Cube: Energy"
 r_bts_relic_concept_energy_desc: ""
 r_bts_relic_concept_energy_active: "Apply the §Yfollowing modifiers§! to §Yyour empire§! for §Y$@r_bts_relic_concept_energy_effect_duration|*0$§! days:\n- $r_bts_relic_concept_energy_active.0$"
 r_bts_relic_concept_energy_active.0: "$MOD_SHIP_SHIELD_PENETRATION_ADD$: §G+$@r_bts_relic_concept_energy_effect_shield_penetration|%0$§!"
-
-# Modifiers
-mod_bts_relic_cooldown: "Relic Activation Cooldown"
 
 # UI Text
 bts_tr_concept_jobs_msg: "per $pop_group_unit$ $job_bts_conceptual_architect_plural_with_icon$"

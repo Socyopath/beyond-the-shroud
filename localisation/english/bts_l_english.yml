@@ -64,15 +64,6 @@ bts_district_psi_arcology_psionic_plural: "Psi Arcologies"
 bts_district_psi_arcology_psionic_desc: "A true testament to our devotion to a shroud entity, these spires may hold the key to the spiritual well-being of our empire."
 
 # Components
-## Planet Killers
-BTS_PLANET_KILLER_END: "Consciousness Assimilator"
-BTS_PLANET_KILLER_END_DESC: "Assimilate the consciousness of all living beings on a planet and increase your power as you kill more."
-BTS_PLANET_KILLER_END_ACTION: "Assimilate all the consciousnesses"
-FLEETORDER_DESTROY_PLANET_WITH_BTS_PLANET_KILLER_END: "Preparing to assimilate all consciousnesses of $PLANET|Y$."
-MESSAGE_DESC_FOR_BTS_PLANET_KILLER_END: "had all of its life forms consciousness being absorbed by"
-bts_planet_destruction_name: "Consciousness assimilated"
-bts_planet_destruction_desc: "The psionic power from [From.From.GetName]'s fades, and for a moment all is quiet. Down on [From.GetName] the people stand slack-jawed (or local physiognomic equivalent), enraptured by the powerful and personal truths the psionic ray unfetters from the tangled web of their minds.\n\nIf they did not understand before, they know now viscerally: we are all part of something greater."
-bts_planet_destruction_tooltip: "Any §Y$trait_mechanical$§! and §Y$trait_machine_unit$§! pops are §Rdestroyed§! by the psionic resonance.\n\nAll remaining §Ybiological§! pops consciousness have been absorbed to strengthen the §M$NAME_Reckoning$§!"
 ## Shields
 ZRONI_SHIELD: "$bts_tech_zroni_shield$"
 ZRONI_SHIELD_DESC: "$bts_tech_zroni_shield_desc$"
@@ -85,16 +76,7 @@ sm_bts_shroud_destabilizer_desc: "$bts_tech_shroud_destabilizer_desc$"
 sm_bts_shroud_destabilizer_effects: ""
 bts_shroud_destabilizer_aura_component: "$bts_tech_shroud_destabilizer$"
 bts_shroud_destabilizer_aura_component_desc: "$bts_tech_shroud_destabilizer_desc$"
-## Section Templates
-bts_shroud_avatar: "$NAME_Shroud_Avatar$"
-bts_shroud_avatar_zroni: "Zroni $bts_shroud_avatar$"
-bts_shroud_manifestation: "$NAME_Shroud_Manifestation$"
-bts_shroud_manifestation_zroni: "Zroni $bts_shroud_manifestation$"
-bts_warped_consciousness: "$NAME_Warped_Consciousness$"
-bts_warped_consciousness_zroni: "Zroni $bts_warped_consciousness$"
-## Weapons
-BTS_SHROUD_BLAST: "Shroud Blast"
-BTS_SHROUD_BLAST_DESC: ""
+
 
 # Techs
 bts_tech_occultism: "Occultism"
@@ -164,18 +146,9 @@ origin_bts_zroni_effects: "- Technology §Y$tech_archaeostudies$§! researched\n
 # Ascension
 bts_shrouded_covenant_arcology_project: "§Y$pc_city$§! can be turned into a §Mpsionic variant§!, providing special districts with £job_telepath£ $job_telepath_plural$"
 
-# Powers
-bts_power_summon_1: "Summon §M$NAME_Shroud_Avatar$§!."
-bts_power_summon_1_desc: "A warrior from the Shroud that has been forged out of pure psionic energy."
-bts_power_summon_2: "Summon §M$NAME_Shroud_Manifestation$§!."
-bts_power_summon_2_desc: "A greater Shroud entity that represents an unspeakable concept of all thoughts."
-bts_power_summon_2_invalid_number: "Less than §Y[root.bts_power_summon_2_capacity]§! §Y$NAME_Shroud_Manifestation$§! are summoned"
-bts_power_summon_3: "Summon §M$NAME_Reckoning$§!."
-bts_power_summon_3_desc: "A massive paranormal being of pure energy that seeks to devour the consciousness of other life forms."
-bts_power_summon_3_invalid_number: "Less than §Y$@bts_power_summon_3_max_number|0*$§! §Y$NAME_Reckoning$§! are summoned"
-
 # Modifiers
 absorbed_consciousness_0: "$absorbed_consciousness_1$"
+mod_bts_relic_cooldown: "Relic Activation Cooldown"
 
 # UI Text
 bts_reckoning_info: "§M$NAME_Reckoning$§! : §Y[root.bts_planet_killer_end_pop_killed]§! organic pops §Rkilled§!"
