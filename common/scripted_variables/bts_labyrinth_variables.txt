@@ -18,11 +18,11 @@
 @bts_labyrinth_shroud_inter_choose_effect_cooldown = 5400
 
 # Jobs
-@bts_veilwatcher_unity_upkeep = 100
-@bts_mindshaper_unity_upkeep = 100
-@bts_materializer_unity_upkeep = 100
-@bts_conceptual_architect_unity_upkeep = 100
-@bts_reality_reaper_unity_upkeep = 100
+@bts_veilwatcher_unity_upkeep = 4
+@bts_mindshaper_unity_upkeep = 4
+@bts_materializer_unity_upkeep = 6
+@bts_conceptual_architect_unity_upkeep = 6
+@bts_reality_reaper_unity_upkeep = 8
 
 @bts_veilwatcher_job_per_district = 100
 @bts_mindshaper_job_per_district = 100
@@ -43,7 +43,7 @@
 @bts_labyrinth_of_abstraction_district_time = 360
 @bts_labyrinth_of_abstraction_building_upkeep_sr = 1
 @bts_labyrinth_of_abstraction_building_upkeep_energy = 4
-@bts_labyrinth_of_abstraction_building_cost_sr = 200
+@bts_labyrinth_of_abstraction_building_cost_sr = 400
 @bts_labyrinth_of_abstraction_building_cost = 1200
 @bts_labyrinth_of_abstraction_building_time = 720
 
@@ -220,13 +220,13 @@
 @bts_job_reality_reaper_summon_boost_shield_regen = 0.01
 ### Buildings
 @bts_building_labyrinth_reality_reapers_cost_cost_mult = -0.25
-@bts_building_labyrinth_reality_reapers_capacity_summon_2_add = 2
+@bts_building_labyrinth_reality_reapers_capacity_summon_2_add = 1
 @bts_building_labyrinth_reality_reapers_capacity_cost_mult = 1.50
 @bts_building_labyrinth_reality_reapers_zroni_cost = 2.00
 ### Powers
 @bts_power_summon_1_shroud_delve_cooldown = 360
 @bts_power_summon_2_shroud_delve_cooldown = 720
-@bts_power_summon_2_max_number = 5
+@bts_power_summon_2_max_number = 2
 @bts_power_summon_3_shroud_delve_cooldown = 3600
 @bts_power_summon_3_max_number = 1
 @bts_power_summon_3_job_cost = 10000
