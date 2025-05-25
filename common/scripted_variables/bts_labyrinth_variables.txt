@@ -27,8 +27,8 @@
 @bts_veilwatcher_job_per_district = 100
 @bts_mindshaper_job_per_district = 100
 @bts_materializer_job_per_district = 100
-@bts_conceptual_architect_job_per_district = 100
-@bts_reality_reaper_job_per_district = 100
+@bts_conceptual_architect_job_per_district = 200
+@bts_reality_reaper_job_per_district = 1000
 
 # Districts / Buildings
 # Costs
@@ -44,7 +44,7 @@
 @bts_labyrinth_of_abstraction_building_time = 720
 
 ## Capital
-@bts_district_labyrinth_main_housing = 1000
+@bts_district_labyrinth_main_housing = 2700
 @bts_labyrinth_of_abstraction_core_1_upkeep_energy = 2
 
 @bts_labyrinth_of_abstraction_core_2_upkeep_energy = 5
@@ -88,7 +88,7 @@
 ## Veilwatchers
 @bts_building_labyrinth_veilwatchers_intel = 10
 @bts_building_labyrinth_veilwatchers_sensor_range = 10
-@bts_building_labyrinth_veilwatchers_hyperlane_range = 15
+@bts_building_labyrinth_veilwatchers_hyperlane_range = 10
 
 ## Mindshapers
 @bts_building_labyrinth_mindshapers_trust_cap = 15
@@ -107,6 +107,7 @@
 
 
 ## Conceptual Architects
+@bts_conceptual_effect_cooldown_planet_jobs_upkeep_mult = 5.00
 ### Jobs
 @bts_conceptual_architect_unity = 12
 @bts_conceptual_architect_conceptual_research = 100
@@ -189,6 +190,7 @@
 
 
 ## Reality Reapers
+@bts_reality_reaper_unlock_project_pops_start = 2000
 ### Jobs
 @bts_job_reality_reaper_summon_boost_hull_regen = 0.01
 @bts_job_reality_reaper_summon_boost_shield_regen = 0.01
@@ -205,3 +207,8 @@
 @bts_power_summon_3_max_number = 1
 
 
+@bts_labyrinth_summon_district_event_delay_despawn = 360
+@bts_labyrinth_summon_district_event_delay = 360
+@bts_labyrinth_summon_district_event_job_count = 2000
+@bts_labyrinth_summon_district_event_spawn_delay_max = 360
+@bts_labyrinth_summon_district_event_spawn_delay_min = 180

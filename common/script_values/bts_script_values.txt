@@ -417,3 +417,11 @@ bts_num_jobs = {
 		mode = add
 	}
 }
+
+bts_labyrinth_total_jobs_for_summon_event = {
+    base = 0
+    add = value:bts_num_jobs|JOB|bts_veilwatcher|
+    add = value:bts_num_jobs|JOB|bts_mindshaper|
+    add = value:bts_num_jobs|JOB|bts_materializer|
+    add = value:bts_num_jobs|JOB|bts_conceptual_architect|
+}

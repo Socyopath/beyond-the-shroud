@@ -632,7 +632,13 @@ country_event = {
 			has_country_flag = bts_labyrinth_summon_district_unlocked
 			has_country_flag = bts_labyrinth_summon_district_event_pending
 		}
-		bts_has_labyrinth_of_abstraction = yes
+		any_owned_planet = {
+			is_planet_class = pc_bts_labyrinth_of_abstraction
+			check_variable_arithmetic = {
+				which = value:bts_labyrinth_total_jobs_for_summon_event
+				value >= @bts_labyrinth_summon_district_event_job_count
+			}
+		}
 	}
 
 	option = {
@@ -644,8 +650,8 @@ country_event = {
 		
 		country_event = {
 			id = bts.341
-			days = 10
-			random = 
+			days = @bts_labyrinth_summon_district_event_spawn_delay_max
+			random = @bts_labyrinth_summon_district_event_spawn_delay_min
 		}
 	}
 	option = {
@@ -654,14 +660,14 @@ country_event = {
 			limit = { is_planet_class = pc_bts_labyrinth_of_abstraction }
 			add_modifier = {
 				modifier = bts_summon_event_stabilize
-				days = 360
+				days = @bts_labyrinth_summon_district_event_delay
 			}
 		}
 
 		hidden_effect = {
 			set_timed_country_flag = { 
 				flag = bts_labyrinth_summon_district_event_pending
-				days = 360
+				days = @bts_labyrinth_summon_district_event_delay
 			}
 		}
 	}
@@ -735,7 +741,7 @@ country_event = {
 		}
 
 		last_created_fleet = { # Despawn if enough time passes without being destroyed
-			fleet_event = { id = bts.342 days = 360 }
+			fleet_event = { id = bts.342 days = @bts_labyrinth_summon_district_event_delay_despawn }
 		}
 	}
 
@@ -775,7 +781,7 @@ country_event = {
 			remove_country_flag = bts_labyrinth_summon_district_event_pending
 			set_timed_country_flag = { 
 				flag = bts_labyrinth_summon_district_event_pending
-				days = 360
+				days = @bts_labyrinth_summon_district_event_delay
 			}
 		}
 	}

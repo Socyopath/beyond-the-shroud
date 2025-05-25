@@ -19,7 +19,7 @@ bts_veilwatcher = {
 	resources = {
 		category = planet_bts_veilwatchers
 		upkeep = {
-			unity = 1
+			unity = @bts_veilwatcher_unity_upkeep
 		}
 	}
 
@@ -60,7 +60,7 @@ bts_mindshaper = {
 	resources = {
 		category = planet_bts_mindshapers
 		upkeep = {
-			unity = 1
+			unity = @bts_mindshaper_unity_upkeep
 		}
 	}
 
@@ -101,11 +101,10 @@ bts_materializer = {
 	resources = {
 		category = planet_bts_materializers
 		upkeep = {
-			unity = 1
+			unity = @bts_materializer_unity_upkeep
 		}
 	}
 }
-
 
 bts_conceptual_architect = {
 	category = specialist
@@ -127,11 +126,8 @@ bts_conceptual_architect = {
 
 	resources = {
 		category = planet_bts_conceptual_architect
-		produces = {
-			unity = @bts_conceptual_architect_unity
-		}
 		upkeep = {
-			energy = 1
+			unity = @bts_conceptual_architect_unity_upkeep
 		}
 	}
 
@@ -291,7 +287,7 @@ bts_reality_reaper = {
 	resources = {
 		category = planet_bts_reality_reapers
 		upkeep = {
-			unity = 1
+			unity = @bts_reality_reaper_unity_upkeep
 		}
 	}
 }
