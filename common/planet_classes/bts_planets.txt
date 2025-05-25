@@ -12,7 +12,7 @@ pc_bts_labyrinth_of_abstraction = {
 	extra_orbit_size = 0
 	extra_planet_count = 0
 	chance_of_ring = 0.0
-	planet_size = 6
+	planet_size = 30
 	moon_size = 0
 	colonizable = yes
 	district_set = bts_labyrinth_of_abstraction_district_set
@@ -27,14 +27,15 @@ pc_bts_labyrinth_of_abstraction = {
 	inherit_country_building_modifiers = no
 
 	modifier = {
-		pop_growth_speed_reduction = 1
-		planet_pops_consumer_goods_upkeep_mult = -1.00
-		planet_amenities_add = 100
-		planet_immigration_pull_mult = -1
+		logistic_growth_mult = -0.90
+		pop_amenities_usage_base = -1.0
 		planet_crime_mult = -1.00
+		planet_amenities_add = 1000
 		planet_stability_add = 100
-		bts_district_third_eye_observatory_max = 6
-		bts_district_influence_control_complex_max = 6
+		bts_district_labyrinth_main_max = 5
+		bts_district_labyrinth_ressources_max = 5
+		bts_district_labyrinth_mastery_max = 10
+		bts_district_labyrinth_summon_max = 10
 	}
 
 }

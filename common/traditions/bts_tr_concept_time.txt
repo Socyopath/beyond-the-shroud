@@ -6,7 +6,7 @@ tr_concept_time_adopt = {
 		}
 	}
 	modifier = {
-		bonus_pop_growth_mult = @bts_concept_time_adopt_pop_growth
+		logistic_growth_mult = @bts_concept_time_adopt_pop_growth
 	}
 }
 
