@@ -620,9 +620,12 @@ country_event = {
 # Unlock Summon District - Warning
 country_event = { 
 	id = bts.340
+	title = "bts.340.name"
+	desc = "bts.340.desc"
+	picture = GFX_evt_psionic_battle
+	show_sound = event_psionic
+
 	is_triggered_only = yes
-	title = bts.340.name
-	desc = bts.340.desc
 
 	trigger = {
 		NOR = {
@@ -633,7 +636,7 @@ country_event = {
 	}
 
 	option = {
-		name = OK
+		name = bts.340.yes
 
 		hidden_effect = {
 			set_country_flag = bts_labyrinth_summon_district_event_pending
@@ -642,6 +645,24 @@ country_event = {
 		country_event = {
 			id = bts.341
 			days = 10
+			random = 
+		}
+	}
+	option = {
+		name = bts.340.no
+		random_owned_planet = {
+			limit = { is_planet_class = pc_bts_labyrinth_of_abstraction }
+			add_modifier = {
+				modifier = bts_summon_event_stabilize
+				days = 360
+			}
+		}
+
+		hidden_effect = {
+			set_timed_country_flag = { 
+				flag = bts_labyrinth_summon_district_event_pending
+				days = 360
+			}
 		}
 	}
 }
@@ -649,8 +670,12 @@ country_event = {
 # Unlock Summon District - Summon Abstract Entity
 country_event = { 
 	id = bts.341
+	title = "bts.341.name"
+	desc = "bts.341.desc"
+	picture = GFX_evt_psionics
+	show_sound = event_psionic
+
 	is_triggered_only = yes
-	hide_window = yes
 
 	trigger = {
 		bts_has_labyrinth_of_abstraction = yes
@@ -699,6 +724,7 @@ country_event = {
 					design = "bts_shroud_avatar"
 					effect = {
 						set_ship_flag = bts_labyrinth_abstract_entity
+						set_ship_flag = bts_abstract_entity_summoned_by_@root
 					}
 				}
 				set_fleet_stance = aggressive
@@ -711,6 +737,10 @@ country_event = {
 		last_created_fleet = { # Despawn if enough time passes without being destroyed
 			fleet_event = { id = bts.342 days = 360 }
 		}
+	}
+
+	option = {
+		name = bts.341.ok
 	}
 }
 
@@ -740,7 +770,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = OK
+		name = bts.343.ok
 		hidden_effect = {
 			remove_country_flag = bts_labyrinth_summon_district_event_pending
 			set_timed_country_flag = { 
@@ -751,25 +781,61 @@ country_event = {
 	}
 }
 
-# Unlock Summon District - Abstract Entity Killed
+# Unlock Summon District - Abstract Entity Killed Check
 country_event = { 
 	id = bts.344
-	title = "bts.344.name"
-	desc = bts.344.desc
-
+	hide_window = yes
 	is_triggered_only = yes
 
 	trigger = {
 		fromfromfrom = {
 			has_ship_flag = bts_labyrinth_abstract_entity
 		}
+	}
+
+	immediate = {
+		print_scope_effect = yes
+		if = {
+			limit = { 
+				fromfromfrom = {
+					has_ship_flag = bts_abstract_entity_summoned_by_@root
+				}
+			}
+			country_event = { id = bts.345 }
+		}
+		else = {
+			random_country = {
+				limit = {
+					fromfromfrom = {
+						has_ship_flag = bts_abstract_entity_summoned_by_@prev
+					}
+				}
+				country_event = { id = bts.343 }
+			}
+		}
+	}
+
+
+}
+
+# Unlock Summon District - Abstract Entity Killed Start Project
+country_event = { 
+	id = bts.345
+	title = "bts.345.name"
+	desc = "bts.345.desc"
+	picture = GFX_evt_surreal_visions
+	show_sound = event_psionic
+
+	is_triggered_only = yes
+
+	trigger = {
 		NOT = {
 			has_country_flag = bts_labyrinth_summon_district_unlocked
 		}
 	}
 
 	option = {
-		name = OK
+		name = bts.345.ok
 		# Start special project
 		random_owned_planet = {
 			limit = { is_planet_class = pc_bts_labyrinth_of_abstraction }
@@ -783,10 +849,12 @@ country_event = {
 
 # Unlock Summon District - Project Finished
 country_event = { 
-	id = bts.345
+	id = bts.346
+	title = "bts.346.name"
+	desc = "bts.346.desc"
+	show_sound = event_psionic
+	picture = GFX_evt_bts_summon_project
 	is_triggered_only = yes
-	title = "bts.345.name"
-	desc = bts.345.desc
 
 	immediate = {
 		set_country_flag = bts_labyrinth_summon_district_unlocked
@@ -794,6 +862,6 @@ country_event = {
 	}
 
 	option = {
-		name = OK
+		name = bts.346.ok
 	}
 }

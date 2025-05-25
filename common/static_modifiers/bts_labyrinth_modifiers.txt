@@ -10,3 +10,8 @@ bts_job_reality_reaper_summon_boost = {
     ship_hull_regen_add_static = @bts_job_reality_reaper_summon_boost_hull_regen
     ship_shield_regen_add_static = @bts_job_reality_reaper_summon_boost_shield_regen
 }
+
+bts_summon_event_stabilize = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_unity_symbol.dds"
+	planet_jobs_unity_upkeep_mult = 1.00
+}

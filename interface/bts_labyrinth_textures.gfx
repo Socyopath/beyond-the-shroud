@@ -215,4 +215,11 @@ spriteTypes = {
 		name = "GFX_zone_bts_labyrinth_summon"
 		texturefile = "gfx/interface/icons/zones/zone_bts_labyrinth_summon.dds"
 	}
+
+	spriteType = {
+		name = "GFX_evt_bts_summon_project"
+		texturefile = "gfx/event_pictures/bts_labyrinth_summon_project.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
 }

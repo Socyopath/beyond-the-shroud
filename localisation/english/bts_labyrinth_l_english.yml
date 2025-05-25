@@ -10,6 +10,22 @@ bts.301.boon.high: "$bts.301.boon$ - $shroud.chances.high$"
 bts.301.effects: "Choose §Yspecial effect§! from the Shroud"
 bts.301.effects.chosen: "Promote a leader to be a §YChosen One§!"
 bts.301.effects.steal: "Steal §Ytechnology§! from a Fallen Empire"
+bts.340.name: "Entanglement Threshold Reached"
+bts.340.desc: "The collective minds of the Labyrinth of Abstraction have reached critical density. As thoughts multiply and resonate, boundaries blur. Some occupants report visions, fragmented identities... and thoughts that don't belong to them."
+bts.340.yes: "Let it unfold"
+bts.340.no: "Stabilize with unity"
+bts.341.name: "The Unformed Takes Shape"
+bts.341.desc: "A shapeless anomaly forms near the Labyrinth. It pulsates with changing intentions and disturbs our sensors. These are thoughts. Our thoughts, but it's not us."
+bts.341.ok: "So be it"
+bts.343.name: "The Echo Fades"
+bts.343.desc: "We were unable to intercept the entity. It lingered at the edge of perception before disappearing, leaving a scar on those who perceived it. The phenomenon could return... unless it's properly understood."
+bts.343.ok: "We must be prepared"
+bts.345.name: "Anomaly Stabilized"
+bts.345.desc: "The entity has been neutralized. Yet it left traces, not material, but conceptual. We could learn how it appeared... and how to control it."
+bts.345.ok: "Let's analyze this phenomenon"
+bts.346.name: "Containment Achieved"
+bts.346.desc: "We now understand how these entities are created. Thanks to appropriate containment and controlled synthesis, we can safely incubate abstract entities."
+bts.346.ok: "Physical realm is under our control"
 
 ## Powers
 bts_power_summon_1: "Summon §M$NAME_Shroud_Avatar$§!."
@@ -65,6 +81,9 @@ bts_shroud_portal_galactic_DESC: "This system contains a §Y$bts_shroud_portal_m
 bts_tech_labyrinth_summon_unlock: "Paranormal Containment Theory"
 bts_tech_labyrinth_summon_unlock_desc: "Lays the theoretical groundwork for stabilizing and hosting volatile abstract entities"
 
+# Special Projects
+BTS_LABYRINTH_UNLOCK_SUMMON_DISTRICT_PROJECT: "Diving into paranormal"
+BTS_LABYRINTH_UNLOCK_SUMMON_DISTRICT_PROJECT_DESC: "The destruction of the conceptual entity has left unstable psionic residues. By delving into its patterns, echoes and emergent thoughts, we can find a way to reproduce it safely and purposefully."
 
 # Modifiers
 mod_job_bts_veilwatcher_add: "[bts_veilwatcher.GetName] Jobs"
@@ -89,6 +108,7 @@ mod_planet_bts_materializers_sr_zro_produces_add: "£sr_zro£ $sr_zro$ per $pop_
 mod_planet_bts_conceptual_architect_conceptual_research: "§Y$situation_bts_conceptual_mastery$§! progress per $pop_group_unit$ $job_bts_conceptual_architect_plural_with_icon$"
 mod_bts_power_summon_2_capacity_add: "§Y$NAME_Shroud_Manifestation$§! Capacity"
 mod_bts_power_cost_mult: "§YShroud Creature§! Summoning cost "
+bts_summon_event_stabilize: "Untangling Thoughts"
 
 ## Buildings
 bts_tier_1: "I"
