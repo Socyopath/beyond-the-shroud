@@ -229,6 +229,7 @@
 @bts_power_summon_2_max_number = 5
 @bts_power_summon_3_shroud_delve_cooldown = 3600
 @bts_power_summon_3_max_number = 1
+@bts_power_summon_3_job_cost = 10000
 
 
 @bts_labyrinth_summon_district_event_delay_despawn = 360

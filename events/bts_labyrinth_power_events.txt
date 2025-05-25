@@ -131,6 +131,12 @@ country_event = {
             has_technology = bts_tech_labyrinth_summon_upgrade
         }
         allow = {
+			from = {
+				num_assigned_jobs = {
+					job = bts_reality_reaper
+					value >= @bts_power_summon_3_job_cost
+				}
+			}
             custom_tooltip = { 
                 fail_text = bts_power_summon_3_invalid_number 
                 count_owned_ship = { 
@@ -160,6 +166,17 @@ country_event = {
 			}
 		}
 		
+		from = {
+			random_owned_pop_job = {
+				limit = {
+					has_job_type = bts_reality_reaper
+				}
+				kill_assigned_pop_amount = {
+					amount = @bts_power_summon_3_job_cost
+				}
+			}
+		}
+
         add_resource = {
             sr_zro = -20000
             mult = value:scripted_modifier_mult|MODIFIER|bts_power_cost_mult|
