@@ -1,65 +1,91 @@
 
 # Labyrinth of Abstraction
+
+# Event unlcok + megastructure
 @bts_labyrinth_of_abstraction_favor_cost = 25
 @bts_labyrinth_of_abstraction_megastructure_time = 1800
 @bts_labyrinth_of_abstraction_megastructure_cost_alloys = 1200
 @bts_labyrinth_of_abstraction_megastructure_cost_energy = 2000
 
+# Favor related
+@bts_labyrinth_building_tier_2_favor = 100
+@bts_labyrinth_building_tier_3_favor = 200
+@bts_labyrinth_building_tier_4_favor = 300
 @bts_labyrinth_shroud_inter_choose_boon_favor_cost_medium = 75
 @bts_labyrinth_shroud_inter_choose_boon_favor_cost_high = 125
 @bts_labyrinth_shroud_inter_choose_boon_cooldown = 3600
 @bts_labyrinth_shroud_inter_choose_effect_favor_cost = 250
 @bts_labyrinth_shroud_inter_choose_effect_cooldown = 5400
 
-@bts_labyrinth_building_tier_2_favor = 100
-@bts_labyrinth_building_tier_3_favor = 200
-@bts_labyrinth_building_tier_4_favor = 300
-## Capital
-@bts_conceptual_architect_unity = 12
-### Level 1
-@bts_labyrinth_of_abstraction_core_1_upkeep_energy = 2
-@bts_labyrinth_of_abstraction_core_1_job = 10
-### Level 2
-@bts_labyrinth_of_abstraction_core_2_upkeep_energy = 5
-@bts_labyrinth_of_abstraction_core_2_cost_sr = 50
-@bts_labyrinth_of_abstraction_core_2_cost = 600
-@bts_labyrinth_of_abstraction_core_2_time = 480
-@bts_labyrinth_of_abstraction_core_2_job = 25
-@bts_labyrinth_of_abstraction_favor_boost_level = 2
-@bts_labyrinth_of_abstraction_favor_boost = 0.05
-### Level 3
-@bts_labyrinth_of_abstraction_core_3_upkeep_energy = 8
-@bts_labyrinth_of_abstraction_core_3_cost_sr = 100
-@bts_labyrinth_of_abstraction_core_3_cost = 800
-@bts_labyrinth_of_abstraction_core_3_time = 600
-@bts_labyrinth_of_abstraction_core_3_job = 50
-@bts_labyrinth_of_abstraction_shroud_portal_level = 3
-@bts_shroud_portal_time = 360
-@bts_shroud_portal_sr_zro = 100
-@bts_shroud_portal_energy = 400
-### Level 4
-@bts_labyrinth_of_abstraction_core_4_upkeep_energy = 10
-@bts_labyrinth_of_abstraction_core_4_cost_sr = 200
-@bts_labyrinth_of_abstraction_core_4_cost = 2000
-@bts_labyrinth_of_abstraction_core_4_time = 900
-@bts_labyrinth_of_abstraction_core_4_job = 100
-@bts_labyrinth_of_abstraction_relic_level = 4
-@bts_shroud_portal_expiration_days = 100
-
-## Districts
+# Districts / Buildings
+# Costs
 @bts_labyrinth_of_abstraction_district_upkeep_sr = 0.5
 @bts_labyrinth_of_abstraction_district_upkeep_energy = 2
 @bts_labyrinth_of_abstraction_district_cost_sr = 100
 @bts_labyrinth_of_abstraction_district_cost = 600
 @bts_labyrinth_of_abstraction_district_time = 360
-# Buildings
+@bts_labyrinth_of_abstraction_building_upkeep_sr = 1
+@bts_labyrinth_of_abstraction_building_upkeep_energy = 4
+@bts_labyrinth_of_abstraction_building_cost_sr = 200
+@bts_labyrinth_of_abstraction_building_cost = 1200
+@bts_labyrinth_of_abstraction_building_time = 720
+
+## Capital
+@bts_conceptual_architect_unity = 12
+
+@bts_labyrinth_of_abstraction_core_1_upkeep_energy = 2
+
+@bts_labyrinth_of_abstraction_core_2_upkeep_energy = 5
+@bts_labyrinth_of_abstraction_core_2_cost_sr = 50
+@bts_labyrinth_of_abstraction_core_2_cost = 600
+@bts_labyrinth_of_abstraction_core_2_time = 480
+
+@bts_labyrinth_of_abstraction_core_3_upkeep_energy = 8
+@bts_labyrinth_of_abstraction_core_3_cost_sr = 100
+@bts_labyrinth_of_abstraction_core_3_cost = 800
+@bts_labyrinth_of_abstraction_core_3_time = 600
+
+@bts_labyrinth_of_abstraction_core_4_upkeep_energy = 10
+@bts_labyrinth_of_abstraction_core_4_cost_sr = 200
+@bts_labyrinth_of_abstraction_core_4_cost = 2000
+@bts_labyrinth_of_abstraction_core_4_time = 900
+
+### Effects
+@bts_labyrinth_of_abstraction_favor_boost_level = 2
+@bts_labyrinth_of_abstraction_favor_boost = 0.05
+@bts_labyrinth_of_abstraction_shroud_portal_level = 3
+@bts_shroud_portal_time = 360
+@bts_shroud_portal_sr_zro = 100
+@bts_shroud_portal_energy = 400
+@bts_labyrinth_of_abstraction_relic_level = 4
+@bts_shroud_portal_expiration_days = 100
+
+
+## Buildings
+@bts_building_dimensional_converger_shroud_cooldown = -0.05
+@bts_building_greed_restrictor_amenities_usage = -0.10
+@bts_building_utopia_distiller_happiness = 0.05
+@bts_building_arcanic_council_research_speed = 0.05
+@bts_building_divergence_regulator_crime = -0.10
+@bts_building_thoughts_stabilizer_empire_size_pops = -0.125
+@bts_building_eternal_archive_leader_skill = 0.5
+@bts_building_eternal_archive_leader_lifespan = 5
+@bts_building_ethical_manipulator_ethics_shift = 0.15
+@bts_building_ethical_manipulator_ethic_attraction = 0.20
+
+## Veilwatchers
 @bts_building_labyrinth_veilwatchers_intel = 10
 @bts_building_labyrinth_veilwatchers_sensor_range = 10
 @bts_building_labyrinth_veilwatchers_hyperlane_range = 15
+
+## Mindshapers
 @bts_building_labyrinth_mindshapers_trust_cap = 15
 @bts_building_labyrinth_mindshapers_trust_growth = 0.004
 @bts_building_labyrinth_mindshapers_trade = 10
 @bts_building_labyrinth_mindshapers_influence = 1
+
+## Materializers
+@bts_district_labyrinth_ressources_jobs = 100
 @bts_building_labyrinth_materializers_specials_volatile_motes = 10
 @bts_building_labyrinth_materializers_specials_exotic_gases = 10
 @bts_building_labyrinth_materializers_specials_rare_crystals = 10
@@ -67,41 +93,97 @@
 @bts_building_labyrinth_materializers_basic_minerals = 10
 @bts_building_labyrinth_materializers_basic_alloys = 10
 @bts_building_labyrinth_materializers_zro = 10
-# Jobs
+
+
+## Conceptual Architects
+### Jobs
 @bts_conceptual_architect_conceptual_research = 100
-
-## Buildings
-@bts_labyrinth_of_abstraction_building_upkeep_sr = 1
-@bts_labyrinth_of_abstraction_building_upkeep_energy = 4
-@bts_labyrinth_of_abstraction_building_cost_sr = 200
-@bts_labyrinth_of_abstraction_building_cost = 1200
-@bts_labyrinth_of_abstraction_building_time = 720
-### Dimensional Converger
-@bts_building_dimensional_converger_shroud_cooldown = -0.05
-### Greed Restrictor
-@bts_building_greed_restrictor_amenities_usage = -0.10
-### Utopia Distiller
-@bts_building_utopia_distiller_happiness = 0.05
-### Arcanic Council
-@bts_building_arcanic_council_research_speed = 0.05
-### Divergence Regulator
-@bts_building_divergence_regulator_crime = -0.10
-### Thoughts Stabilizer
-@bts_building_thoughts_stabilizer_empire_size_pops = -0.125
-### Eternal Archive
-@bts_building_eternal_archive_leader_skill = 0.5
-@bts_building_eternal_archive_leader_lifespan = 5
-### Ethical Manipulator
-@bts_building_ethical_manipulator_ethics_shift = 0.15
-@bts_building_ethical_manipulator_ethic_attraction = 0.20
-
-
-# Conceptual Mastery
-@bts_conceptual_effect_cooldown_planet_jobs_upkeep_mult = 5.0
+### Buildings
 @bts_building_labyrinth_conceptual_architects_cost_cost = -0.25
 @bts_building_labyrinth_conceptual_architects_duration_cooldown = -0.15
 @bts_building_labyrinth_conceptual_architects_hybrid_cooldown = -0.30
 @bts_building_labyrinth_conceptual_architects_hybrid_cost = 0.5
 
+
+### Conceptual Mastery 
+#### Situation
+@bts_days_before_conceptual_mastery = 720
+@situation_bts_conceptual_mastery_tree_unlock = 300             # ~10 year
+@situation_bts_conceptual_mastery_first_points_unlock = 1000    # ~10 year
+@situation_bts_conceptual_mastery_second_points_unlock = 3000   # ~15 year
+@situation_bts_conceptual_mastery_last_point_unlock = 6000      # ~15 year
+@situation_bts_conceptual_mastery_relic_unlock = 10000          # ~15 year
+#### Tradition
+@bts_concept_time_adopt_pop_growth = 0.15
+@bts_concept_time_11_ship_build_speed = 0.01
+@bts_concept_time_11_starbase_upgrade_speed = 0.01
+@bts_concept_time_11_starbase_module_build_speed = 0.01
+@bts_concept_time_12_terraforming_speed = 0.01
+@bts_concept_time_12_colony_dev_speed = 0.01
+@bts_concept_time_12_clear_blocker_speed = 0.01
+@bts_concept_time_12_planet_build_speed = 0.01
+@bts_concept_time_21_agenda_duration = 0.01
+@bts_concept_time_21_agenda_speed = 0.01
+@bts_concept_time_21_leader_xp_gain = 0.01
+@bts_concept_time_22_intel_speed = 0.01
+@bts_concept_time_22_operation_speed = 0.01
+@bts_concept_time_22_spy_network_speed = 0.01
+@bts_concept_time_3_relic_cd = -0.50
+@bts_conceptual_effect_time_cooldown = 3600
+@bts_conceptual_effect_time_duration = 360
+
+@bts_concept_space_adopt_megastructure_capacity = 1
+@bts_concept_space_11_defense_plat_cap = 0.005
+@bts_concept_space_11_starbase_cap = 0.1
+@bts_concept_space_12_naval_cap = 0.01
+@bts_concept_space_12_fleet_cmd = 0.01
+@bts_concept_space_21_district_slot = 0.10
+@bts_concept_space_21_housing_usage = -0.005
+@bts_concept_space_22_max_storage = 1000
+@bts_concept_space_3_ftl_windup = -1.00
+@bts_concept_space_3_ftl_windown = -1.00
+@bts_concept_space_3_ftl_speed = 1.00
+@bts_conceptual_effect_space_cooldown = 3600
+@bts_conceptual_effect_space_duration = 360
+
+@bts_concept_energy_adopt_shield = 0.15
+@bts_concept_energy_11_ship_upkeep = -0.0075
+@bts_concept_energy_11_starbase_upkeep = -0.0075
+@bts_concept_energy_12_mining_station_output = 0.01
+@bts_concept_energy_12_research_station_output = 0.01
+@bts_concept_energy_21_district_upkeep = -0.005
+@bts_concept_energy_21_building_upkeep = -0.005
+@bts_concept_energy_22_job_upkeep = -0.005
+@bts_concept_energy_22_job_output = 0.01
+@bts_concept_energy_3_energy_damage = 0.35
+@bts_conceptual_effect_energy_cooldown = 3600
+@bts_conceptual_effect_energy_duration = 360
+#### Relic
+@r_bts_relic_concept_time_evasion = 50
+@r_bts_relic_concept_time_speed = 1.00
+@r_bts_relic_concept_time_effect_speed_reduction = 0.50
+@r_bts_relic_concept_time_effect_fire_rate = -0.50
+@r_bts_relic_concept_time_effect_duration = 360
+
+@r_bts_relic_concept_space_jump_range = 1.00
+@r_bts_relic_concept_space_jump_cd = -0.50
+@r_bts_relic_concept_space_effect_duration = 360
+
+@r_bts_relic_concept_energy_hull_regen = 0.10
+@r_bts_relic_concept_energy_armor_regen = 0.10
+@r_bts_relic_concept_energy_shield_regen = 0.10
+@r_bts_relic_concept_energy_effect_shield_penetration = 0.50
+@r_bts_relic_concept_energy_effect_duration = 360
+
+
+## Reality Reapers
+### Jobs
 @bts_job_reality_reaper_summon_boost_hull_regen = 0.01
 @bts_job_reality_reaper_summon_boost_shield_regen = 0.01
+### Buildings
+### Powers
+@bts_power_summon_1_shroud_delve_cooldown = 360
+@bts_power_summon_2_shroud_delve_cooldown = 720
+@bts_power_summon_2_max_number = 5
+@bts_power_summon_3_shroud_delve_cooldown = 3600
+@bts_power_summon_3_max_number = 1
