@@ -60,7 +60,7 @@ bts_building_labyrinth_reality_reapers_zroni = {
 	base_buildtime = @bts_labyrinth_of_abstraction_building_time
 	category = government
 	building_sets = { bts_labyrinth_of_abstraction_reality_reapers_set }
-	planet_limit = 3
+	planet_limit = 1
 	
     potential = {
 		is_planet_class = pc_bts_labyrinth_of_abstraction
