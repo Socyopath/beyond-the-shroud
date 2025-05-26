@@ -23,14 +23,18 @@ bts_veilwatcher = {
 		}
 	}
 
-	triggered_planet_modifier = {
-        planet_sensor_range_add = 1
+	triggered_country_modifier = {
+		shipsize_starbase_outpost_sensor_range_add = 1
+		shipsize_starbase_starport_sensor_range_add = 1
+		shipsize_starbase_starhold_sensor_range_add = 1
+		shipsize_starbase_starfortress_sensor_range_add = 1
+		shipsize_starbase_citadel_sensor_range_add = 1
         mult = planet.modifier:planet_bts_veilwatchers_sensor_range_add
 	}
 
-	triggered_planet_modifier = {
-        planet_hyperlane_range_add = 1
-		mult = planet.modifier:planet_bts_veilwatchers_hyperlane_range_add
+	triggered_country_modifier = {
+        ship_cloaking_detection_add = 1
+		mult = planet.modifier:planet_bts_veilwatchers_cloaking_detection_add
 	}
 
 	triggered_country_modifier = {

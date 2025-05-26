@@ -13,9 +13,9 @@ inline_script = {
     NAME = bts_building_labyrinth_veilwatchers_hyperlane
     BUILD_TIME = @bts_labyrinth_of_abstraction_building_time
     BUILDING_SET = bts_labyrinth_of_abstraction_veilwatchers_set
-    LIMIT = 3
-    MODIFIER = planet_bts_veilwatchers_hyperlane_range_add
-    VALUE = @bts_building_labyrinth_veilwatchers_hyperlane_range
+    LIMIT = 1
+    MODIFIER = planet_bts_veilwatchers_cloaking_detection_add
+    VALUE = @bts_building_labyrinth_veilwatchers_cloaking_detection
 }
 
 inline_script = {
@@ -23,7 +23,7 @@ inline_script = {
     NAME = bts_building_labyrinth_veilwatchers_intel
     BUILD_TIME = @bts_labyrinth_of_abstraction_building_time
     BUILDING_SET = bts_labyrinth_of_abstraction_veilwatchers_set
-    LIMIT = 3
+    LIMIT = 2
     MODIFIER = planet_bts_veilwatchers_add_base_country_intel
     VALUE = @bts_building_labyrinth_veilwatchers_intel
 }

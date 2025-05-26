@@ -92,7 +92,7 @@
 ## Veilwatchers
 @bts_building_labyrinth_veilwatchers_intel = 2
 @bts_building_labyrinth_veilwatchers_sensor_range = 1
-@bts_building_labyrinth_veilwatchers_hyperlane_range = 10
+@bts_building_labyrinth_veilwatchers_cloaking_detection = 0.5
 
 ## Mindshapers
 @bts_building_labyrinth_mindshapers_trust_cap = 2.5

@@ -49,15 +49,15 @@ bts_relic_cooldown = {
 }
 
 planet_bts_veilwatchers_sensor_range_add = {
-	icon = mod_planet_sensor_range_add
+	icon = mod_ship_sensor_range_add
 	max_decimals = 2
 	good = yes
 	category = planet
 	percentage = no
 }
 
-planet_bts_veilwatchers_hyperlane_range_add = {
-	icon = mod_planet_hyperlane_range_add
+planet_bts_veilwatchers_cloaking_detection_add = {
+	icon = mod_ship_cloaking_detection_add
 	max_decimals = 2
 	good = yes
 	category = planet
