@@ -31,7 +31,7 @@ zone_bts_labyrinth_summon = {
 	max_buildings = 3
 
     included_building_sets = {
-		bts_labyrinth_of_abstraction_reality_reapers_set          
+		bts_labyrinth_of_abstraction_unreality_shapers_set          
     }
 
     planet_modifier = {

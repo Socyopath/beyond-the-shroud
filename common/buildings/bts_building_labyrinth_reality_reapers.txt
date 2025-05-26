@@ -1,8 +1,8 @@
-bts_building_labyrinth_reality_reapers_cost = {
-	icon = bts_building_labyrinth_reality_reapers_cost
+bts_building_labyrinth_unreality_shapers_cost = {
+	icon = bts_building_labyrinth_unreality_shapers_cost
 	base_buildtime = @bts_labyrinth_of_abstraction_building_time
 	category = government
-	building_sets = { bts_labyrinth_of_abstraction_reality_reapers_set }
+	building_sets = { bts_labyrinth_of_abstraction_unreality_shapers_set }
 	planet_limit = 3
 	
     potential = {
@@ -10,7 +10,7 @@ bts_building_labyrinth_reality_reapers_cost = {
 	}
 
 	triggered_country_modifier = {
-        bts_power_cost_mult = @bts_building_labyrinth_reality_reapers_cost_cost_mult
+        bts_power_cost_mult = @bts_building_labyrinth_unreality_shapers_cost_cost_mult
 	}
 
 	resources = {
@@ -26,11 +26,11 @@ bts_building_labyrinth_reality_reapers_cost = {
 	}
 }
 
-bts_building_labyrinth_reality_reapers_capacity = {
-	icon = bts_building_labyrinth_reality_reapers_capacity
+bts_building_labyrinth_unreality_shapers_capacity = {
+	icon = bts_building_labyrinth_unreality_shapers_capacity
 	base_buildtime = @bts_labyrinth_of_abstraction_building_time
 	category = government
-	building_sets = { bts_labyrinth_of_abstraction_reality_reapers_set }
+	building_sets = { bts_labyrinth_of_abstraction_unreality_shapers_set }
 	planet_limit = 3
 	
     potential = {
@@ -38,8 +38,8 @@ bts_building_labyrinth_reality_reapers_capacity = {
 	}
 
 	triggered_country_modifier = {
-        bts_power_summon_2_capacity_add = @bts_building_labyrinth_reality_reapers_capacity_summon_2_add
-        bts_power_cost_mult = @bts_building_labyrinth_reality_reapers_capacity_cost_mult
+        bts_power_summon_2_capacity_add = @bts_building_labyrinth_unreality_shapers_capacity_summon_2_add
+        bts_power_cost_mult = @bts_building_labyrinth_unreality_shapers_capacity_cost_mult
 	}
 
 	resources = {
@@ -55,11 +55,11 @@ bts_building_labyrinth_reality_reapers_capacity = {
 	}
 }
 
-bts_building_labyrinth_reality_reapers_zroni = {
-	icon = bts_building_labyrinth_reality_reapers_zroni
+bts_building_labyrinth_unreality_shapers_zroni = {
+	icon = bts_building_labyrinth_unreality_shapers_zroni
 	base_buildtime = @bts_labyrinth_of_abstraction_building_time
 	category = government
-	building_sets = { bts_labyrinth_of_abstraction_reality_reapers_set }
+	building_sets = { bts_labyrinth_of_abstraction_unreality_shapers_set }
 	planet_limit = 1
 	
     potential = {
@@ -67,11 +67,11 @@ bts_building_labyrinth_reality_reapers_zroni = {
 	}
 
 	triggered_desc = {
-		text = bts_building_labyrinth_reality_reapers_zroni_effects
+		text = bts_building_labyrinth_unreality_shapers_zroni_effects
 	}
 
 	triggered_country_modifier = {
-        bts_power_cost_mult = @bts_building_labyrinth_reality_reapers_zroni_cost
+        bts_power_cost_mult = @bts_building_labyrinth_unreality_shapers_zroni_cost
 	}
 
 	resources = {

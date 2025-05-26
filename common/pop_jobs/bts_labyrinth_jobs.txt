@@ -266,7 +266,7 @@ bts_conceptual_architect = {
 	}	
 }
 
-bts_reality_reaper = {
+bts_unreality_shaper = {
 	category = specialist
 
 	possible_pre_triggers = {
@@ -285,9 +285,9 @@ bts_reality_reaper = {
 	}
 
 	resources = {
-		category = planet_bts_reality_reapers
+		category = planet_bts_unreality_shapers
 		upkeep = {
-			unity = @bts_reality_reaper_unity_upkeep
+			unity = @bts_unreality_shaper_unity_upkeep
 		}
 	}
 }

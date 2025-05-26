@@ -44,14 +44,14 @@ country_event = {
 		if = { 
 			limit = { 
 				check_variable_arithmetic = {
-					which = from.value:bts_num_jobs|JOB|bts_reality_reaper|
+					which = from.value:bts_num_jobs|JOB|bts_unreality_shaper|
 					value > 0
 				}
 			}
 			tooltip = {
 				add_modifier = {
-					modifier = bts_job_reality_reaper_summon_boost
-					multiplier = from.value:bts_num_jobs|JOB|bts_reality_reaper|
+					modifier = bts_job_unreality_shaper_summon_boost
+					multiplier = from.value:bts_num_jobs|JOB|bts_unreality_shaper|
 				}
 			}
 		}
@@ -96,14 +96,14 @@ country_event = {
 		if = { 
 			limit = { 
 				check_variable_arithmetic = {
-					which = from.value:bts_num_jobs|JOB|bts_reality_reaper|
+					which = from.value:bts_num_jobs|JOB|bts_unreality_shaper|
 					value > 0
 				}
 			}
 			tooltip = {
 				add_modifier = {
-					modifier = bts_job_reality_reaper_summon_boost
-					multiplier = from.value:bts_num_jobs|JOB|bts_reality_reaper|
+					modifier = bts_job_unreality_shaper_summon_boost
+					multiplier = from.value:bts_num_jobs|JOB|bts_unreality_shaper|
 				}
 			}
 		}
@@ -133,7 +133,7 @@ country_event = {
         allow = {
 			from = {
 				num_assigned_jobs = {
-					job = bts_reality_reaper
+					job = bts_unreality_shaper
 					value >= @bts_power_summon_3_job_cost
 				}
 			}
@@ -154,14 +154,14 @@ country_event = {
 		if = { 
 			limit = { 
 				check_variable_arithmetic = {
-					which = from.value:bts_num_jobs|JOB|bts_reality_reaper|
+					which = from.value:bts_num_jobs|JOB|bts_unreality_shaper|
 					value > 0
 				}
 			}
 			tooltip = {
 				add_modifier = {
-					modifier = bts_job_reality_reaper_summon_boost
-					multiplier = from.value:bts_num_jobs|JOB|bts_reality_reaper|
+					modifier = bts_job_unreality_shaper_summon_boost
+					multiplier = from.value:bts_num_jobs|JOB|bts_unreality_shaper|
 				}
 			}
 		}
@@ -169,7 +169,7 @@ country_event = {
 		from = {
 			random_owned_pop_job = {
 				limit = {
-					has_job_type = bts_reality_reaper
+					has_job_type = bts_unreality_shaper
 				}
 				kill_assigned_pop_amount = {
 					amount = @bts_power_summon_3_job_cost

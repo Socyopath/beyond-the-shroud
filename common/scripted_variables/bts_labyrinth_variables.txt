@@ -22,19 +22,19 @@
 @bts_mindshaper_unity_upkeep = 4
 @bts_materializer_unity_upkeep = 6
 @bts_conceptual_architect_unity_upkeep = 6
-@bts_reality_reaper_unity_upkeep = 8
+@bts_unreality_shaper_unity_upkeep = 8
 
 @bts_veilwatcher_job_per_district = 100
 @bts_mindshaper_job_per_district = 100
 @bts_materializer_job_per_district = 100
 @bts_conceptual_architect_job_per_district = 200
-@bts_reality_reaper_job_per_district = 1000
+@bts_unreality_shaper_job_per_district = 1000
 
 # Districts / Buildings
 @bts_veilwatcher_mindshaper_job_max_districts = 5
 @bts_materializer_job_max_districts = 5
 @bts_conceptual_architect_job_max_districts = 10
-@bts_reality_reaper_job_max_districts = 10
+@bts_unreality_shaper_job_max_districts = 10
 # Costs
 @bts_labyrinth_of_abstraction_district_upkeep_sr = 0.5
 @bts_labyrinth_of_abstraction_district_upkeep_energy = 2
@@ -213,16 +213,16 @@
 @r_bts_relic_concept_energy_effect_duration = 360
 
 
-## Reality Reapers
-@bts_reality_reaper_unlock_project_pops_start = 2000
+## Unreality Shapers
+@bts_unreality_shaper_unlock_project_pops_start = 2000
 ### Jobs
-@bts_job_reality_reaper_summon_boost_hull_regen = 0.01
-@bts_job_reality_reaper_summon_boost_shield_regen = 0.01
+@bts_job_unreality_shaper_summon_boost_hull_regen = 0.01
+@bts_job_unreality_shaper_summon_boost_shield_regen = 0.01
 ### Buildings
-@bts_building_labyrinth_reality_reapers_cost_cost_mult = -0.25
-@bts_building_labyrinth_reality_reapers_capacity_summon_2_add = 1
-@bts_building_labyrinth_reality_reapers_capacity_cost_mult = 1.50
-@bts_building_labyrinth_reality_reapers_zroni_cost = 2.00
+@bts_building_labyrinth_unreality_shapers_cost_cost_mult = -0.25
+@bts_building_labyrinth_unreality_shapers_capacity_summon_2_add = 1
+@bts_building_labyrinth_unreality_shapers_capacity_cost_mult = 1.50
+@bts_building_labyrinth_unreality_shapers_zroni_cost = 2.00
 ### Powers
 @bts_power_summon_1_shroud_delve_cooldown = 360
 @bts_power_summon_2_shroud_delve_cooldown = 720

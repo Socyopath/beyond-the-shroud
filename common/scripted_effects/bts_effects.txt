@@ -175,7 +175,7 @@ bts_summon_power = {
 			if = {
 				limit = { 
 					event_target:bts_labyrinth_summon_target = { 
-						has_building = bts_building_labyrinth_reality_reapers_zroni 
+						has_building = bts_building_labyrinth_unreality_shapers_zroni 
 					} 
 				}
 				last_created_ship = {
@@ -187,8 +187,8 @@ bts_summon_power = {
 			}
 			last_created_ship = {
 				add_modifier = {
-					modifier = bts_job_reality_reaper_summon_boost
-					multiplier = event_target:bts_labyrinth_summon_target.value:bts_num_jobs|JOB|bts_reality_reaper|
+					modifier = bts_job_unreality_shaper_summon_boost
+					multiplier = event_target:bts_labyrinth_summon_target.value:bts_num_jobs|JOB|bts_unreality_shaper|
 				}
 			}
 

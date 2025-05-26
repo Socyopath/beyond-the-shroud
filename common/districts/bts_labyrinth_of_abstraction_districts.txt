@@ -113,7 +113,7 @@ bts_district_labyrinth_summon = {
 	}
 
 	planet_modifier = {
-		job_bts_reality_reaper_add = @bts_reality_reaper_job_per_district
+		job_bts_unreality_shaper_add = @bts_unreality_shaper_job_per_district
 	}
 
 	triggered_name = {
@@ -121,6 +121,6 @@ bts_district_labyrinth_summon = {
 	}
 
 	triggered_desc = {
-		text = job_bts_reality_reaper_effect_desc
+		text = job_bts_unreality_shaper_effect_desc
 	}
 }
