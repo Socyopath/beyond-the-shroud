@@ -1,6 +1,13 @@
 bts_veilwatcher = {
 	category = specialist
 
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = bts_building_labyrinth_veilwatchers_sensor
+		}
+	}
+
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -46,6 +53,13 @@ bts_veilwatcher = {
 bts_mindshaper = {
 	category = specialist
 
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = bts_building_labyrinth_mindshapers_influence
+		}
+	}
+
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -87,6 +101,13 @@ bts_mindshaper = {
 bts_materializer = {
 	category = specialist
 
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = bts_building_labyrinth_materializers_basic
+		}
+	}
+
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -112,6 +133,13 @@ bts_materializer = {
 
 bts_conceptual_architect = {
 	category = specialist
+
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = bts_building_labyrinth_conceptual_architects_hybrid
+		}
+	}
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -272,6 +300,13 @@ bts_conceptual_architect = {
 
 bts_unreality_shaper = {
 	category = specialist
+
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = bts_building_labyrinth_unreality_shapers_capacity
+		}
+	}
 
 	possible_pre_triggers = {
 		has_owner = yes

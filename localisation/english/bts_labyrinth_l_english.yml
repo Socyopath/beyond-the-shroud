@@ -249,16 +249,16 @@ bts_building_labyrinth_veilwatchers_sensor_3_desc: "$bts_building_labyrinth_veil
 bts_building_labyrinth_veilwatchers_sensor_4: "$bts_building_labyrinth_veilwatchers_sensor$ $bts_tier_4$"
 bts_building_labyrinth_veilwatchers_sensor_4_desc: "$bts_building_labyrinth_veilwatchers_sensor_desc$"
 
-bts_building_labyrinth_veilwatchers_hyperlane: "Crossroads Sanctuary"
-bts_building_labyrinth_veilwatchers_hyperlane_desc: ""
-bts_building_labyrinth_veilwatchers_hyperlane_1: "$bts_building_labyrinth_veilwatchers_hyperlane$ $bts_tier_1$"
-bts_building_labyrinth_veilwatchers_hyperlane_1_desc: "$bts_building_labyrinth_veilwatchers_hyperlane_desc$"
-bts_building_labyrinth_veilwatchers_hyperlane_2: "$bts_building_labyrinth_veilwatchers_hyperlane$ $bts_tier_2$"
-bts_building_labyrinth_veilwatchers_hyperlane_2_desc: "$bts_building_labyrinth_veilwatchers_hyperlane_desc$"
-bts_building_labyrinth_veilwatchers_hyperlane_3: "$bts_building_labyrinth_veilwatchers_hyperlane$ $bts_tier_3$"
-bts_building_labyrinth_veilwatchers_hyperlane_3_desc: "$bts_building_labyrinth_veilwatchers_hyperlane_desc$"
-bts_building_labyrinth_veilwatchers_hyperlane_4: "$bts_building_labyrinth_veilwatchers_hyperlane$ $bts_tier_4$"
-bts_building_labyrinth_veilwatchers_hyperlane_4_desc: "$bts_building_labyrinth_veilwatchers_hyperlane_desc$"
+bts_building_labyrinth_veilwatchers_cloaking: "Shroud Phase Resonator"
+bts_building_labyrinth_veilwatchers_cloaking_desc: ""
+bts_building_labyrinth_veilwatchers_cloaking_1: "$bts_building_labyrinth_veilwatchers_cloaking$ $bts_tier_1$"
+bts_building_labyrinth_veilwatchers_cloaking_1_desc: "$bts_building_labyrinth_veilwatchers_cloaking_desc$"
+bts_building_labyrinth_veilwatchers_cloaking_2: "$bts_building_labyrinth_veilwatchers_cloaking$ $bts_tier_2$"
+bts_building_labyrinth_veilwatchers_cloaking_2_desc: "$bts_building_labyrinth_veilwatchers_cloaking_desc$"
+bts_building_labyrinth_veilwatchers_cloaking_3: "$bts_building_labyrinth_veilwatchers_cloaking$ $bts_tier_3$"
+bts_building_labyrinth_veilwatchers_cloaking_3_desc: "$bts_building_labyrinth_veilwatchers_cloaking_desc$"
+bts_building_labyrinth_veilwatchers_cloaking_4: "$bts_building_labyrinth_veilwatchers_cloaking$ $bts_tier_4$"
+bts_building_labyrinth_veilwatchers_cloaking_4_desc: "$bts_building_labyrinth_veilwatchers_cloaking_desc$"
 
 # Mindshapers buildings
 bts_building_labyrinth_mindshapers_trade: "Illusory Market"
@@ -337,12 +337,12 @@ bts_building_labyrinth_conceptual_architects_hybrid: "Precognitive Overload Core
 bts_building_labyrinth_conceptual_architects_hybrid_desc: ""
 
 # Unreality Shapers Buildings
-bts_building_labyrinth_unreality_shapers_cost: "Concept Harmonizer"
-bts_building_labyrinth_unreality_shapers_cost_desc: "By aligning the frequency of thought with the structure of unreality, this facility refines the invocation process, minimizing the energy required to give form to abstract entities."
+bts_building_labyrinth_unreality_shapers_cost: "Eidolic Bell"
+bts_building_labyrinth_unreality_shapers_cost_desc: "Forged in forgotten rituals and tuned to perfection to resonate with abstract ideas, the eidolic bell resonates through the layers of thought, facilitating the shaping of the unreal."
 bts_building_labyrinth_unreality_shapers_capacity: "Abstract Rift"
-bts_building_labyrinth_unreality_shapers_capacity_desc: "This rift draws energy from the deepest layers of abstraction, expanding the Shroud's reach into the physical realm. Though unstable, it allows more conceptual entities to exist at once at a steep energetic cost."
-bts_building_labyrinth_unreality_shapers_zroni: "Zroni Phase Shifter"
-bts_building_labyrinth_unreality_shapers_zroni_desc: "By embedding conceptual entities in a psionic envelope derived from Zroni relics, this structure allows them to become partially desynchronized from real space, making them immune to Zroni storms."
+bts_building_labyrinth_unreality_shapers_capacity_desc: "This rift draws energy from the deepest layers of abstraction, expanding the Shroud's reach into the physical realm. Though unstable, it allows more powerful abstract entities to exist at once at a steep energetic cost."
+bts_building_labyrinth_unreality_shapers_zroni: "Zroni Ritual Pillars"
+bts_building_labyrinth_unreality_shapers_zroni_desc: "Arranged according to ancient Zroni cognition patterns, these pillars emit a stabilizing psionic field. The ritual they perform protects abtract entities from the ancient chaos invoked by the Zronis."
 bts_building_labyrinth_unreality_shapers_zroni_effects: "All summoned entities gain §Y$ZRONI_SHIELD$§! which prevent shield nullificaiton during §YZroni Storm§!"
 
 
