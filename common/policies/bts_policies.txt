@@ -1,0 +1,50 @@
+bts_shieds_policy = {
+	potential = {
+		# has_crisis_perk = bts_menp_energy
+	}
+
+	option = {
+		name = bts_shieds_policy_no
+
+		policy_flags = {
+			bts_shieds_policy_no_flag
+		}
+	}
+
+	option = {
+		name = bts_shieds_policy_shield
+
+		policy_flags = {
+			bts_shieds_policy_shield_flag
+		}
+
+		modifier = {
+			ship_armor_mult = -0.15
+			ship_shield_mult = 0.25
+		}
+	}
+	option = {
+		name = bts_shieds_policy_regen
+
+		policy_flags = {
+			bts_shieds_policy_regen_flag
+		}
+
+		modifier = {
+			ship_shield_mult = -0.15 
+			ship_shield_regen_add_perc = 0.35
+		}
+	}
+	option = {
+		name = bts_shieds_policy_hard
+
+		policy_flags = {
+			bts_shieds_policy_hard_flag
+		}
+
+		modifier = {
+			ship_armor_mult = -0.50
+			ship_shield_hardening_add = 1.00
+		}
+	}
+}
