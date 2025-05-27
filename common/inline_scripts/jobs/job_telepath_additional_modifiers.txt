@@ -1,14 +1,21 @@
 triggered_planet_modifier = {
 	potential = {
-		enforcer_is_telepath_trigger = yes
+		enforcer_is_educator_trigger = no
 	}
 	planet_crime_add = -10
-	planet_jobs_produces_mult = 0.05
+	planet_defense_armies_add = 1
 }
 
 triggered_planet_modifier = {
 	potential = {
-		enforcer_is_telepath_trigger = yes
+		enforcer_is_educator_trigger = yes
+	}
+	planet_crime_add = -5
+	pop_government_ethic_attraction = 0.1
+}
+
+triggered_planet_modifier = {
+	potential = {
 		exists = owner
 		owner = {
 			exists = ruler
@@ -22,7 +29,6 @@ triggered_planet_modifier = {
 
 triggered_planet_modifier = {
 	potential = {
-		enforcer_is_telepath_trigger = yes
 		exists = owner
 		owner = { has_country_flag = instrument_covenant_confirmed }
 	}
@@ -31,7 +37,6 @@ triggered_planet_modifier = {
 
 triggered_planet_modifier = {
 	potential = {
-		enforcer_is_telepath_trigger = yes
 		exists = owner
 		owner = { has_country_flag = instrument_covenant_rank_1 }
 	}
@@ -40,29 +45,6 @@ triggered_planet_modifier = {
 
 triggered_planet_modifier = {
 	potential = {
-		enforcer_is_telepath_trigger = yes
-		exists = owner
-		owner = { has_tradition = tr_psionics_breach_shroud }
-	}
-	modifier = {
-		planet_jobs_produces_mult = 0.05
-	}
-}
-
-triggered_planet_modifier = {
-	potential = {
-		enforcer_is_telepath_trigger = yes
-		exists = owner
-		owner = { has_technology = bts_tech_psychic_coalition }
-	}
-	modifier = {
-		planet_jobs_produces_mult = @bts_tech_psychic_coalition_planet_jobs_produces_mult
-	}
-}
-
-triggered_planet_modifier = {
-	potential = {
-		enforcer_is_telepath_trigger = yes
 		exists = owner
 		owner = { has_edict = thought_enforcement }
 	}
@@ -73,16 +55,6 @@ triggered_planet_modifier = {
 
 triggered_planet_modifier = {
 	potential = {
-		enforcer_is_telepath_trigger = yes
-		has_councilor = { COUNCILOR = "councilor_psionic_sovereign" }
-	}
-	planet_jobs_produces_mult = 0.01
-	mult = value:councilor_level|TYPE|councilor_psionic_sovereign|
-}
-
-triggered_planet_modifier = {
-	potential = {
-		enforcer_is_telepath_trigger = yes
 		exists = owner
 		owner = { has_country_flag = composer_covenant_confirmed }
 	}
@@ -93,7 +65,6 @@ triggered_planet_modifier = {
 
 triggered_planet_modifier = {
 	potential = {
-		enforcer_is_telepath_trigger = yes
 		exists = owner
 		owner = { has_country_flag = composer_covenant_rank_1 }
 	}
@@ -104,7 +75,6 @@ triggered_planet_modifier = {
 
 triggered_country_modifier = {
 	potential = {
-		enforcer_is_telepath_trigger = yes
 		exists = owner
 		owner = { has_country_flag = eater_covenant_confirmed }
 	}
@@ -113,7 +83,6 @@ triggered_country_modifier = {
 
 triggered_country_modifier = {
 	potential = {
-		enforcer_is_telepath_trigger = yes
 		exists = owner
 		owner = { has_country_flag = eater_covenant_rank_1 }
 	}
