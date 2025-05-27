@@ -208,10 +208,10 @@ country_event = {
 
     immediate = {
 		bts_summon_power = {
-			FLEET_NAME = "NAME_Psionic_Avatar"
-			SHIP_NAME = "NAME_Psionic_Avatar"
-			SHIP_DESIGN = "bts_shroud_avatar"
-			SHIP_DESIGN_ZRONI = "bts_shroud_avatar_zroni"
+			FLEET_NAME = bts_abstract_entity_1
+			SHIP_NAME = EMPTY_STRING
+			SHIP_DESIGN = bts_abstract_entity_1
+			SHIP_DESIGN_ZRONI = bts_abstract_entity_1_zroni
 		}
     }
 }
@@ -223,10 +223,10 @@ country_event = {
 
     immediate = {
 		bts_summon_power = {
-			FLEET_NAME = "NAME_Shroud_Manifestation"
-			SHIP_NAME = "NAME_Shroud_Manifestation"
-			SHIP_DESIGN = "bts_shroud_manifestation"
-			SHIP_DESIGN_ZRONI = "bts_shroud_manifestation_zroni"
+			FLEET_NAME = bts_abstract_entity_2
+			SHIP_NAME = EMPTY_STRING
+			SHIP_DESIGN = bts_abstract_entity_2
+			SHIP_DESIGN_ZRONI = bts_abstract_entity_2_zroni
 		}
     }
 }
@@ -239,10 +239,10 @@ country_event = {
 
     immediate = {
 		bts_summon_power = {
-			FLEET_NAME = "NAME_The_End"
-			SHIP_NAME = "NAME_Reckoning"
-			SHIP_DESIGN = "bts_warped_consciousness"
-			SHIP_DESIGN_ZRONI = "bts_warped_consciousness_zroni"
+			FLEET_NAME = bts_abstract_entity_3
+			SHIP_NAME = EMPTY_STRING
+			SHIP_DESIGN = bts_abstract_entity_3
+			SHIP_DESIGN_ZRONI = bts_abstract_entity_3_zroni
 		}
 		last_created_ship = {
 			ship_event = { id = bts.433 } # Update modifiers

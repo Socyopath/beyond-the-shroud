@@ -721,13 +721,13 @@ country_event = {
 		}
 
 		create_fleet = {
-			name = NAME_Conceptual_Ship
+			name = bts_abstract_anomaly
 			settings = { spawn_debris = no }
 			effect = {
 				set_owner = event_target:shroud_country
 				create_ship = {
-					name = "NAME_Conceptual_Ship"
-					design = "bts_shroud_avatar"
+					name = bts_abstract_anomaly
+					design = "bts_abstract_entity_1"
 					effect = {
 						set_ship_flag = bts_labyrinth_abstract_entity
 						set_ship_flag = bts_abstract_entity_summoned_by_@root

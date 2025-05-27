@@ -1,6 +1,6 @@
 # Shroud Avatar
 ship_section_template = {
-	key = "bts_psionic_avatar_section"
+	key = "bts_abstract_entity_1_section"
 	ship_size = psionic_avatar
 	fits_on_slot = mid
 	entity = "shroud_creature_01_entity"
@@ -35,7 +35,7 @@ ship_section_template = {
 
 # Shroud Manifestation
 ship_section_template = {
-	key = "bts_shroud_manifestation_section"
+	key = "bts_abstract_entity_2_section"
 	ship_size = shroud_manifestation
 	fits_on_slot = mid
 	entity = "shroud_creature_corrupted_01_entity"
@@ -70,7 +70,7 @@ ship_section_template = {
 
 # Warped Consciousness
 ship_section_template = {
-	key = "bts_warped_consciousness_section"
+	key = "bts_abstract_entity_3_section"
 	ship_size = warped_consciousness
 	fits_on_slot = mid
 	entity = "shroud_creature_corrupted_01_entity"

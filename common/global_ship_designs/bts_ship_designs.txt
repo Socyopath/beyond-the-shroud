@@ -1,12 +1,12 @@
 # Shroud Avatar
 ship_design = {
-	name = "bts_shroud_avatar"
+	name = "bts_abstract_entity_1"
 	ship_size = psionic_avatar
 	is_event_design = yes
 	hide_size = yes
 
 	section = {
-		template = "bts_psionic_avatar_section"
+		template = "bts_abstract_entity_1_section"
 		slot = "mid"
 
 		component = {
@@ -34,13 +34,13 @@ ship_design = {
 
 # Shroud Avatar Zroni
 ship_design = {
-	name = "bts_shroud_avatar_zroni"
+	name = "bts_abstract_entity_1_zroni"
 	ship_size = psionic_avatar
 	is_event_design = yes
 	hide_size = yes
 
 	section = {
-		template = "bts_psionic_avatar_section"
+		template = "bts_abstract_entity_1_section"
 		slot = "mid"
 
 		component = {
@@ -80,13 +80,13 @@ ship_design = {
 
 # Warped Consciousness
 ship_design = {
-	name = "bts_warped_consciousness"
+	name = "bts_abstract_entity_3"
 	ship_size = warped_consciousness
 	is_event_design = yes
 	hide_size = yes
 
 	section = {
-		template = "bts_warped_consciousness_section"
+		template = "bts_abstract_entity_3_section"
 		slot = "mid"
 
 		component = {
@@ -118,13 +118,13 @@ ship_design = {
 
 # Warped Consciousness Zroni
 ship_design = {
-	name = "bts_warped_consciousness_zroni"
+	name = "bts_abstract_entity_3_zroni"
 	ship_size = warped_consciousness
 	is_event_design = yes
 	hide_size = yes
 
 	section = {
-		template = "bts_warped_consciousness_section"
+		template = "bts_abstract_entity_3_section"
 		slot = "mid"
 
 		component = {
@@ -168,13 +168,13 @@ ship_design = {
 
 # Shroud Manifestation
 ship_design = {
-	name = "bts_shroud_manifestation"
+	name = "bts_abstract_entity_2"
 	ship_size = shroud_manifestation
 	is_event_design = yes
 	hide_size = yes
 
 	section = {
-		template = "bts_shroud_manifestation_section"
+		template = "bts_abstract_entity_2_section"
 		slot = "mid"
 
 		component = {
@@ -202,13 +202,13 @@ ship_design = {
 
 # Shroud Manifestation Zroni
 ship_design = {
-	name = "bts_shroud_manifestation_zroni"
+	name = "bts_abstract_entity_2_zroni"
 	ship_size = shroud_manifestation
 	is_event_design = yes
 	hide_size = yes
 
 	section = {
-		template = "bts_shroud_manifestation_section"
+		template = "bts_abstract_entity_2_section"
 		slot = "mid"
 
 		component = {
