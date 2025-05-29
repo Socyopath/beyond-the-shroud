@@ -230,4 +230,57 @@ spriteTypes = {
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes
 	}
+
+	# District
+	# Main
+	spriteType = {
+		name = "GFX_bts_district_labyrinth_main_bg"
+		texturefile = "gfx/interface/planetview/district_backgrounds/bts_district_labyrinth_main_bg.dds"
+	}
+	corneredTileSpriteType = {
+		name = "GFX_bts_district_labyrinth_main_box_icon_rectangle"
+		texturefile = "gfx/interface/icons/districts/grid_box/bts_district_labyrinth_main_rectangle.dds"
+		borderSize = { x = 1 y = 1 }
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+
+	# Ressources
+	spriteType = {
+		name = "GFX_bts_district_labyrinth_ressources_bg"
+		texturefile = "gfx/interface/planetview/district_backgrounds/bts_district_labyrinth_ressources_bg.dds"
+	}
+	corneredTileSpriteType = {
+		name = "GFX_bts_district_labyrinth_ressources_box_icon_rectangle"
+		texturefile = "gfx/interface/icons/districts/grid_box/bts_district_labyrinth_ressources_rectangle.dds"
+		borderSize = { x = 1 y = 1 }
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+
+	# Mastery
+	spriteType = {
+		name = "GFX_bts_district_labyrinth_mastery_bg"
+		texturefile = "gfx/interface/planetview/district_backgrounds/bts_district_labyrinth_mastery_bg.dds"
+	}
+	corneredTileSpriteType = {
+		name = "GFX_bts_district_labyrinth_mastery_box_icon_rectangle"
+		texturefile = "gfx/interface/icons/districts/grid_box/bts_district_labyrinth_mastery_rectangle.dds"
+		borderSize = { x = 1 y = 1 }
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+
+	# Summon
+	spriteType = {
+		name = "GFX_bts_district_labyrinth_summon_bg"
+		texturefile = "gfx/interface/planetview/district_backgrounds/bts_district_labyrinth_summon_bg.dds"
+	}
+	corneredTileSpriteType = {
+		name = "GFX_bts_district_labyrinth_summon_box_icon_rectangle"
+		texturefile = "gfx/interface/icons/districts/grid_box/bts_district_labyrinth_summon_rectangle.dds"
+		borderSize = { x = 1 y = 1 }
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
 }
