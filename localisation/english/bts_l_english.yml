@@ -95,11 +95,11 @@ bts_tech_psychic_coalition_effect: "Telepaths now provide an additional §G+$@bt
 bts_tech_prescience: "Prescience"
 bts_tech_prescience_desc: "We have reached an unimaginable level of consciousness and are able to predict possible futures. We can instantly escape from space combat."
 bts_tech_shrouded_shields: "Shrouded Shields"
-bts_tech_shrouded_shields_desc: "We learned to enhance our shields with psychic energy."
+bts_tech_shrouded_shields_desc: "Prolonged exposure to the psionic harmonics of the Shroud has led to a breakthrough: shields can be brought into resonance with the vibrations of the Shroud itself. Although this weakens the armor, the resulting defenses are far more adaptive and resilient."
 bts_tech_zroni_shield: "Zroni Shield"
 bts_tech_zroni_shield_desc: "The shroud revealed an ancient artifact, the shield used by the Zroni empire. It provides immeasurable shield power and is impervious to Zroni storms."
 bts_tech_zro_infusion: "Zro Infusion"
-bts_tech_zro_infusion_desc: "As we're more connected to the shroud itself, we've found a way to infuse our bodies with zro in order to fuel ourselves with psionic energy instead of food."
+bts_tech_zro_infusion_desc: "By saturating biological systems with refined Zro, we've altered the metabolic needs of our population. Food is becoming less important, and thought-supported living is now possible."
 bts_tech_shroud_destabilizer: "Shroud Destabilizer"
 bts_tech_shroud_destabilizer_desc: "We've managed to infuse the pure psionic energy of the shroud into our starbase. Due to the unstable nature of this energy, violent psionic waves emanate from it, disrupting enemy systems."
 
