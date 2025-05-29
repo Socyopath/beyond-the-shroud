@@ -15,28 +15,25 @@
 
 @bts_covenant_favor_per_month_trad = 0.06
 
+# Agenda
+@bts_agenda_psionic_supremacy_covenant_rift_spawn_mult = 0.50
+
 ## Starting Bonus
-@bts_covenant_modifier_0_speed_mult = 0.15
-@bts_covenant_modifier_0_evasion_add = 10
-@bts_covenant_modifier_0_jump_cd_mult = -0.15
+@bts_covenant_modifier_0_unity_produces_mult = 0.10
+@bts_covenant_modifier_0_rift_clues_add = 2
+@bts_covenant_modifier_0_windup_mult = -0.30
+@bts_covenant_modifier_0_winddown_mult = -0.25
 @bts_covenant_modifier_0_disengage_reduc = 0.50
-@bts_covenant_phy_per_telepath_0 = 2  
-@bts_covenant_soc_per_telepath_0 = 5
-@bts_covenant_eng_per_telepath_0 = 2
-@bts_agenda_psionic_supremacy_covenant_psionic_draw = 0.50
 
 ## Rank 1 Bonus
-@bts_covenant_phy_per_telepath_1 = 2 # Total 2 + 2 = 4
-@bts_covenant_soc_per_telepath_1 = 5 # Total 5 + 5 = 10
-@bts_covenant_eng_per_telepath_1 = 2 # Total 2 + 2 = 4
-@bts_covenant_sanctum_telepath_jobs = 3
-@bts_covenant_sanctum_shroud_cooldown_mult = -0.10
-@bts_covenant_sanctum_ship_windup_mult = -0.15
+@bts_covenant_sanctum_evasion_add = 15
+@bts_covenant_sanctum_ship_jumpdrive_cd_mult = -0.30
 
 ## Rank 2 Bonus
-@bts_covenant_modifier_1_speed_mult = 0.30
-@bts_covenant_modifier_1_evasion_add = 20
-@bts_covenant_modifier_1_jump_cd_mult = -0.30
+@bts_covenant_modifier_1_unity_produces_mult = 0.20
+@bts_covenant_modifier_1_rift_clues_add = 4
+@bts_covenant_modifier_1_windup_mult = -0.60
+@bts_covenant_modifier_1_winddown_mult = -0.50
 @bts_covenant_modifier_1_disengage_reduc = 1.00
 
 ## Rank 3 Bonus

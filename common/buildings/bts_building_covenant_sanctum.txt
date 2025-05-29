@@ -33,12 +33,12 @@ bts_building_covenant_sanctum = {
 	}
 
 	planet_modifier = {
-		job_enforcer_add = @bts_covenant_sanctum_telepath_jobs
+		job_telepath_add = 300
 	}
 
 	country_modifier = {
-		shroud_delve_cooldown = @bts_covenant_sanctum_shroud_cooldown_mult
-		ship_windup_mult = @bts_covenant_sanctum_ship_windup_mult
+		ship_evasion_add = @bts_covenant_sanctum_evasion_add
+		ship_jumpdrive_cooldown_mult = @bts_covenant_sanctum_ship_jumpdrive_cd_mult
 	}
 
 	resources = {

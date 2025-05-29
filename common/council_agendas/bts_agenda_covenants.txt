@@ -26,7 +26,7 @@ agenda_psionic_supremacy = {
 		}
 	}
 	modifier = {
-		pop_bonus_workforce_mult = 0.05
+		psionic_pop_bonus_workforce_mult = 0.05
 		category_psionics_research_speed_mult = 0.1
 	}
 	finish_modifier = agenda_psionic_supremacy_finish_no_covenant
@@ -42,7 +42,7 @@ bts_agenda_psionic_supremacy_covenant = {
 		has_country_flag = bts_covenant_confirmed
 	}
 	modifier = {
-		pop_bonus_workforce_mult = 0.05
+		psionic_pop_bonus_workforce_mult = 0.05
 		category_psionics_research_speed_mult = 0.1
 	}
 	finish_modifier = agenda_psionic_supremacy_finish_bts_covenant

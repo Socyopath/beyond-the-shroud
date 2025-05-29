@@ -88,3 +88,19 @@ triggered_country_modifier = {
 	}
 	country_naval_cap_add = 7
 }
+
+triggered_country_modifier = {
+	potential = {
+		exists = owner
+		owner = { has_country_flag = bts_covenant_confirmed }
+	}
+	ship_speed_mult = 0.025
+}
+
+triggered_country_modifier = {
+	potential = {
+		exists = owner
+		owner = { has_country_flag = bts_covenant_rank_1 }
+	}
+	ship_speed_mult = 0.025
+}

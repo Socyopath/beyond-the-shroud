@@ -1,18 +1,21 @@
 bts_covenant_modifier_0 = {
-	ship_speed_mult = @bts_covenant_modifier_0_speed_mult
-	ship_evasion_add = @bts_covenant_modifier_0_evasion_add
-	ship_jumpdrive_cooldown_mult = @bts_covenant_modifier_0_jump_cd_mult
+	country_unity_produces_mult = @bts_covenant_modifier_0_unity_produces_mult
+	ship_astral_rift_clues_add = @bts_covenant_modifier_0_rift_clues_add
+	ship_windup_mult = @bts_covenant_modifier_0_windup_mult
+	ship_winddown_mult = @bts_covenant_modifier_0_winddown_mult
 	ship_disengage_chance_reduction = @bts_covenant_modifier_0_disengage_reduc
 }
 
 bts_covenant_modifier_1 = {
-	ship_speed_mult = @bts_covenant_modifier_1_speed_mult
-	ship_evasion_add = @bts_covenant_modifier_1_evasion_add
-	ship_jumpdrive_cooldown_mult = @bts_covenant_modifier_1_jump_cd_mult
+	country_unity_produces_mult = @bts_covenant_modifier_1_unity_produces_mult
+	ship_astral_rift_clues_add = @bts_covenant_modifier_1_rift_clues_add
+	ship_windup_mult = @bts_covenant_modifier_1_windup_mult
+	ship_winddown_mult = @bts_covenant_modifier_1_winddown_mult
 	ship_disengage_chance_reduction = @bts_covenant_modifier_1_disengage_reduc
 }
 
 agenda_psionic_supremacy_finish_bts_covenant = {
+	psionic_pop_bonus_workforce_mult = 0.2
 	category_psionics_research_speed_mult = 0.4
-	category_psionics_draw_chance_mult = @bts_agenda_psionic_supremacy_covenant_psionic_draw
+	bts_astral_rift_spawn_mult = @bts_agenda_psionic_supremacy_covenant_rift_spawn_mult
 }
