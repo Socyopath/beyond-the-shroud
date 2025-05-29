@@ -1,23 +1,126 @@
+@EdictShieldsCost = 50
+@EdictZroInfusionCost = 100
 
-bts_zro_infusion = {
+bts_shield_edicts_1 = {
 	length = -1
-	icon = "GFX_resource_energy"
+	icon = "GFX_resource_sr_zro"
+	
+	resources = {
+		category = edicts
+		cost = {
+			unity = @EdictShieldsCost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @EdictShieldsCost
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	allow = {
+		NOT = {
+			has_edict = bts_shield_edicts_2
+			has_edict = bts_shield_edicts_3
+		}
+	}
 
     modifier = {
-		custom_tooltip = "edict_bts_zro_infusion_effect"
-		show_only_custom_tooltip = yes
-
-		# planet_pops_unemployed_sr_zro_upkeep_add = @edict_bts_zro_infusion_zro_upkeep_cost
-		# pop_category_workers_sr_zro_upkeep_add = @edict_bts_zro_infusion_zro_upkeep_cost
-		# pop_category_specialists_sr_zro_upkeep_add = @edict_bts_zro_infusion_zro_upkeep_cost
-		# pop_category_rulers_sr_zro_upkeep_add = @edict_bts_zro_infusion_zro_upkeep_cost
-		# planet_pops_food_upkeep_mult = -1.00
-		# pop_category_workers_food_upkeep_add = -1
-		# pop_category_specialists_food_upkeep_add = -1
-		# pop_category_rulers_food_upkeep_add = -1
+		ship_shield_mult = 0.25
+		ship_armor_mult = -0.25
     }
 
-	prerequisites = {
-		"bts_tech_zro_infusion"
+	prerequisites = { bts_tech_shrouded_shields }
+}
+
+bts_shield_edicts_2 = {
+	length = -1
+	icon = "GFX_resource_sr_zro"
+	
+	resources = {
+		category = edicts
+		cost = {
+			unity = @EdictShieldsCost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @EdictShieldsCost
+			multiplier = value:edict_size_effect
+		}
 	}
+	
+	allow = {
+		NOT = {
+			has_edict = bts_shield_edicts_1
+			has_edict = bts_shield_edicts_3
+		}
+	}
+
+    modifier = {
+		ship_shield_regen_add_perc = 0.35
+		ship_shield_mult = -0.15 
+    }
+
+	prerequisites = { bts_tech_shrouded_shields }
+}
+
+bts_shield_edicts_3 = {
+	length = -1
+	icon = "GFX_resource_sr_zro"
+	
+	resources = {
+		category = edicts
+		cost = {
+			unity = @EdictShieldsCost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @EdictShieldsCost
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	allow = {
+		NOT = {
+			has_edict = bts_shield_edicts_1
+			has_edict = bts_shield_edicts_2
+		}
+	}
+
+    modifier = {
+		ship_shield_hardening_add = 0.50
+		ship_armor_mult = -0.25
+    }
+
+	prerequisites = { bts_tech_shrouded_shields }
+}
+
+bts_zro_infusion_edict = {
+	length = -1
+	icon = "GFX_resource_sr_zro"
+
+	resources = {
+		category = edicts
+		cost = {
+			unity = @EdictZroInfusionCost
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = @EdictZroInfusionCost
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	modifier = {
+		custom_tooltip = "edict_bts_zro_infusion_edict_effect"
+		show_only_custom_tooltip = yes
+
+		pop_category_workers_sr_zro_upkeep_add = @bts_tech_zro_infusion_zro_upkeep_cost
+		pop_category_specialists_sr_zro_upkeep_add = @bts_tech_zro_infusion_zro_upkeep_cost
+		pop_category_rulers_sr_zro_upkeep_add = @bts_tech_zro_infusion_zro_upkeep_cost
+		pop_category_civilians_sr_zro_upkeep_add = @bts_tech_zro_infusion_zro_upkeep_cost
+
+		planet_pops_organics_food_upkeep_mult = @bts_tech_zro_infusion_food_upkeep_mult
+	}
+
+	prerequisites = { bts_tech_zro_infusion }
 }

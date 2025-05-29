@@ -100,7 +100,6 @@ bts_tech_zroni_shield: "Zroni Shield"
 bts_tech_zroni_shield_desc: "The shroud revealed an ancient artifact, the shield used by the Zroni empire. It provides immeasurable shield power and is impervious to Zroni storms."
 bts_tech_zro_infusion: "Zro Infusion"
 bts_tech_zro_infusion_desc: "As we're more connected to the shroud itself, we've found a way to infuse our bodies with zro in order to fuel ourselves with psionic energy instead of food."
-bts_tech_zro_infusion_effect: "£food£ $food$ upkeep cost from £pops£ Pops: §G-100%§!\n£sr_zro£ $sr_zro$ upkeep cost from £pops£ Pops: §R+$@bts_tech_zro_infusion_zro_upkeep_cost$§!"
 bts_tech_shroud_destabilizer: "Shroud Destabilizer"
 bts_tech_shroud_destabilizer_desc: "We've managed to infuse the pure psionic energy of the shroud into our starbase. Due to the unstable nature of this energy, violent psionic waves emanate from it, disrupting enemy systems."
 
@@ -151,21 +150,16 @@ absorbed_consciousness_0: "$absorbed_consciousness_1$"
 mod_bts_relic_cooldown: "Relic Activation Cooldown"
 
 # Edicts
-edict_bts_zro_infusion: "Zro Infusion"
-edict_bts_zro_infusion_desc: "As we're more connected to the shroud itself, we've found a way to infuse our bodies with zro in order to fuel ourselves with psionic energy instead of food."
-edict_bts_zro_infusion_effect: "£food£ $food$ upkeep cost from £pops£ Pops: §G-100%§!\n£sr_zro£ $sr_zro$ upkeep cost from £pops£ Pops: §R+$@edict_bts_zro_infusion_zro_upkeep_cost$§!"
+edict_bts_shield_edicts_1: "$bts_tech_shrouded_shields$: Amplify"
+edict_bts_shield_edicts_1_desc: "$bts_tech_shrouded_shields_desc$"
+edict_bts_shield_edicts_2: "$bts_tech_shrouded_shields$: Sustain"
+edict_bts_shield_edicts_2_desc: "$bts_tech_shrouded_shields_desc$"
+edict_bts_shield_edicts_3: "$bts_tech_shrouded_shields$: Block"
+edict_bts_shield_edicts_3_desc: "$bts_tech_shrouded_shields_desc$"
 
-# Policy
-policy_bts_shieds_policy: "Ethereal Shield Mastery"
-policy_bts_shieds_policy_desc: "By drawing on the energy of the shroud, we've managed to alter the properties of our shields."
-bts_shieds_policy_no: "Disable"
-bts_shieds_policy_no_desc: "Disable §Y$policy_bts_shieds_policy$§! policy"
-bts_shieds_policy_shield: "Amplify"
-bts_shieds_policy_shield_desc: ""
-bts_shieds_policy_regen: "Sustain"
-bts_shieds_policy_regen_desc: ""
-bts_shieds_policy_hard: "Block"
-bts_shieds_policy_hard_desc: ""
+edict_bts_zro_infusion_edict: "$bts_tech_zro_infusion$"
+edict_bts_zro_infusion_edict_desc: "$bts_tech_zro_infusion_desc$"
+edict_bts_zro_infusion_edict_effect: "£food£ $food$ upkeep cost from £pops£ Pops: §G$@bts_tech_zro_infusion_food_upkeep_mult|%$§!\n£sr_zro£ $sr_zro$ upkeep cost from £pops£ Pops: §R+$@bts_tech_zro_infusion_zro_upkeep_cost$§!"
 
 # UI Text
 bts_reckoning_info: "§M$NAME_Reckoning$§! : §Y[root.bts_planet_killer_end_pop_killed]§! organic pops §Rkilled§!"

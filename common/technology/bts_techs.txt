@@ -249,39 +249,6 @@ bts_tech_prescience = {
 	}
 }
 
-bts_tech_shrouded_shields = {
-	icon = bts_tech_shrouded_shields
-	area = society
-	category = { psionics }
-	cost = @bts_tech_shrouded_shields_cost
-	tier = 5
-	is_rare = yes
-	is_reverse_engineerable = no
-	weight = @tier5weight2
-
-	prerequisites = { "tech_psionic_shield" }
-	
-	modifier = {
-		ship_shield_regen_add_perc = @bts_tech_shrouded_shields_regen_perc
-		ship_shield_mult = @bts_tech_shrouded_shields_hit_point
-	}
-
-	weight_modifier = {
-		modifier = {
-			factor = @bts_tech_zro_crystal_factor
-			has_relic = r_zro_crystal
-		}
-		inline_script = {
-			script = technologies/rare_technologies_weight_modifiers
-			TECHNOLOGY = bts_tech_shrouded_shields
-		}
-		modifier = {
-			factor = 2
-			has_tier1or2or3_in_council = { TRAIT = leader_trait_expertise_psionics }
-		}
-	}
-}
-
 bts_tech_zroni_shield = {
 	icon = bts_tech_zroni_shield
 	area = society
@@ -310,6 +277,7 @@ bts_tech_zroni_shield = {
 	}
 }
 
+# Event Techs
 bts_tech_zro_infusion = {
 	icon = bts_tech_zro_infusion
 	area = society
@@ -317,23 +285,27 @@ bts_tech_zro_infusion = {
 	cost = @bts_tech_zro_infusion_cost
 	tier = 5
 	is_rare = yes
-	is_dangerous = yes
 	is_reverse_engineerable = no
 	weight = 0
 
 	prerequisites = { "tech_mine_zro" }
 
-	modifier = {
-		planet_pops_unemployed_sr_zro_upkeep_add = @bts_tech_zro_infusion_zro_upkeep_cost
-		pop_category_workers_sr_zro_upkeep_add = @bts_tech_zro_infusion_zro_upkeep_cost
-		pop_category_specialists_sr_zro_upkeep_add = @bts_tech_zro_infusion_zro_upkeep_cost
-		pop_category_rulers_sr_zro_upkeep_add = @bts_tech_zro_infusion_zro_upkeep_cost
-		planet_pops_food_upkeep_mult = -1.00
-		pop_category_workers_food_upkeep_add = -1
-		pop_category_specialists_food_upkeep_add = -1
-		pop_category_rulers_food_upkeep_add = -1
-		description = bts_tech_zro_infusion_effect
+	weight_modifier = {
+		factor = 0
 	}
+}
+
+bts_tech_shrouded_shields = {
+	icon = bts_tech_shrouded_shields
+	area = society
+	category = { psionics }
+	cost = @bts_tech_shrouded_shields_cost
+	tier = 5
+	is_rare = yes
+	is_reverse_engineerable = no
+	weight = 0
+
+	prerequisites = { "tech_psionic_shield" }
 
 	weight_modifier = {
 		factor = 0

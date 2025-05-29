@@ -29,6 +29,7 @@
 @bts_tech_shrouded_shields_cost = 48000
 @bts_tech_shrouded_shields_regen_perc = 0.15
 @bts_tech_shrouded_shields_hit_point = 0.25
+@bts_tech_shrouded_shields_favor_cost = 200
 
 @bts_small_zroni_shield_point = 500
 @bts_small_zroni_shield_regen = 5
@@ -40,7 +41,8 @@
 @bts_tech_zroni_shield_storm_regen = 50
 
 @bts_tech_zro_infusion_cost = 36000
-@bts_tech_zro_infusion_zro_upkeep_cost = 0.5
+@bts_tech_zro_infusion_zro_upkeep_cost = 0.1
+@bts_tech_zro_infusion_food_upkeep_mult = -0.5
 @bts_tech_zro_infusion_favor_cost = 100
 
 @bts_tech_shroud_destabilizer_cost = 72000
