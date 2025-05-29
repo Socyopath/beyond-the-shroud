@@ -39,12 +39,6 @@ r_bts_relic_shroud_nexus = {
 
 	# Possible check for activation
 	possible = {
-		custom_tooltip = {
-			fail_text = r_bts_relic_shroud_nexus_needed_level
-			bts_has_labyrinth_of_abstraction_level = {
-				LEVEL = @bts_labyrinth_of_abstraction_relic_level
-			}
-		}
 		inline_script = {
 			script = relics/activation_checks
 			RELIC = r_bts_relic_shroud_nexus
