@@ -18,7 +18,10 @@ on_monthly_pulse_country = {
 		bts.300		# Labyrinth Check
 		bts.340		# Summon District Check
 		bts.100		# Zro Infusion Check
-		bts.101		# Shroud Destabilizer Tech Event
+		bts.101		# Shield Policy Check 
+		bts.102		# Labyrinth Summon Upgrade Tech
+		bts.103		# Shroud Destabilizer Tech Check
+
     }
 }
 

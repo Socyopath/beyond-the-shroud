@@ -12,9 +12,9 @@
 @bts_labyrinth_building_tier_3_favor = 200
 @bts_labyrinth_building_tier_4_favor = 300
 @bts_labyrinth_shroud_inter_choose_boon_favor_cost_medium = 75
-@bts_labyrinth_shroud_inter_choose_boon_favor_cost_high = 125
+@bts_labyrinth_shroud_inter_choose_boon_favor_cost_high = 100
 @bts_labyrinth_shroud_inter_choose_boon_cooldown = 3600
-@bts_labyrinth_shroud_inter_choose_effect_favor_cost = 250
+@bts_labyrinth_shroud_inter_choose_effect_favor_cost = 175
 @bts_labyrinth_shroud_inter_choose_effect_cooldown = 5400
 
 # Jobs

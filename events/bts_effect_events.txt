@@ -190,9 +190,60 @@ country_event = {
 	}
 }
 
-# Shroud Destabilizer Tech Event
+# Shrouded Shields Event
 country_event = { 
 	id = bts.101
+	is_triggered_only = yes
+	title = "utopia.3000.name"
+	desc = utopia.3000.intro.desc
+
+	trigger = {
+		NOR = {
+			has_tech_option = bts_tech_shrouded_shields
+			has_technology = bts_tech_shrouded_shields
+		}
+		bts_has_any_covenant_confirmed = yes
+		bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_tech_shrouded_shields_favor_cost }
+	}
+
+	option = {
+		name = OK
+		add_research_option = bts_tech_shrouded_shields
+	}
+}
+
+# Labyrinth Summon Upgrade Tech
+country_event = { 
+	id = bts.102
+	is_triggered_only = yes
+	title = "utopia.3000.name"
+	desc = utopia.3000.intro.desc
+
+	trigger = {
+		NOR = {
+			has_tech_option = bts_tech_labyrinth_summon_upgrade
+			has_technology = bts_tech_labyrinth_summon_upgrade
+		}
+		bts_has_any_covenant_confirmed = yes
+		bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_tech_labyrinth_summon_upgrade_favor_cost }
+		any_owned_planet = {
+			is_planet_class = pc_bts_labyrinth_of_abstraction
+			num_assigned_jobs = {
+				job = bts_unreality_shaper
+				value >= @bts_tech_labyrinth_summon_upgrade_job_cost
+			}
+		}
+	}
+
+	option = {
+		name = OK
+		add_research_option = bts_tech_labyrinth_summon_upgrade
+	}
+}
+
+# Shroud Destabilizer Tech Event
+country_event = { 
+	id = bts.103
 	is_triggered_only = yes
 	title = "utopia.3000.name"
 	desc = utopia.3000.intro.desc
