@@ -36,33 +36,6 @@ bts_covenant_sealed_option: "Let's see what lies beyond."
 bts_covenant_chain_title: "$bts_covenant_name_full$"
 bts_covenant_chain_desc: "We have created a bond with a Shroud Entity named the §Y$bts_covenant_name_full$§!. Unspeakable, it granted us crumbs of its power for a price. There will likely be more to follow.\n\nOur telepaths theorize, that the bond can be deepened more easily if we align ourselves more with our patron.\n\nThe $bts_covenant_name_prefix$ is unstoppable and its influence must travel beyond all realities. §YSeek for rifts in our universe§! and §Yexplore them§! as much as you can to expand the influence of your divinity and §Ygain favor§!.\n\n$text_covenant_favor_info$\n[root.bts_planet_killer_end_pop_killed_status]"
 
-# Psi Arcology
-## Decisions
-decision_bts_shrouded_arcology_project: "Psionic $ap_arcology_project$"
-decision_bts_shrouded_arcology_project_desc: "$decision_arcology_project_desc$"
-decision_bts_shrouded_arcology_project_effects: "Turns the planet into a §MPsionic§! §Y$pc_city$§!, increasing £housing£ §Y$PLANET_HOUSING_TITLE$§!, §YResource Production§! and §YPop Growth§! and unlocking special £district£ §YArcology Districts§! including £job_telepath£ $job_telepath_plural$ §Ydistricts§! at the expense of the planet's natural resources becoming §Rinaccessible§!, preventing all further construction of £district£ §YGenerator§!, §YMining§! and §YAgriculture Districts§!."
-decision_bts_convert_shrouded_arcology_project: "Psionic conversion $ap_arcology_project$"
-decision_bts_convert_shrouded_arcology_project_desc: "$decision_arcology_project_desc$"
-decision_bts_convert_shrouded_arcology_project_effects: "Convert this §Y$pc_city$§! planet into a §Mpsionic variant§!, providing special districts with £job_telepath£ $job_telepath_plural$"
-
-## Planet
-pc_bts_arcology_psionic: "Psi $pc_city$"
-pc_bts_arcology_psionic_desc: "$pc_city_desc$"
-
-## Districts
-bts_district_housing_arcology_psionic: "$district_arcology_housing$"
-bts_district_housing_arcology_psionic_plural: "$district_arcology_housing_plural$"
-bts_district_housing_arcology_psionic_desc: "$district_arcology_housing_desc$"
-bts_district_arms_industry_arcology_psionic: "$district_arcology_arms_industry$"
-bts_district_arms_industry_arcology_psionic_plural: "$district_arcology_arms_industry_plural$"
-bts_district_arms_industry_arcology_psionic_desc: "$district_arcology_arms_industry_desc$"
-bts_district_civilian_industry_arcology_psionic: "$district_arcology_civilian_industry$"
-bts_district_civilian_industry_arcology_psionic_plural: "$district_arcology_civilian_industry_plural$"
-bts_district_civilian_industry_arcology_psionic_desc: "$district_arcology_civilian_industry_desc$"
-bts_district_psi_arcology_psionic: "Psi Arcology"
-bts_district_psi_arcology_psionic_plural: "Psi Arcologies"
-bts_district_psi_arcology_psionic_desc: "A true testament to our devotion to a shroud entity, these spires may hold the key to the spiritual well-being of our empire."
-
 # Components
 ## Shields
 ZRONI_SHIELD: "$bts_tech_zroni_shield$"
@@ -108,7 +81,7 @@ utopia.2658.desc: "Time has passed since we established the foundation of a cove
 utopia.2658.b: "Renounce the §Y[BtsGetShroudPatron]§!."
 utopia.2671.desc: "Our understanding of our patron grows. We are no more than an afterthought to it. Insects in its home. Yet, it has taken a liking to us and on this occasion, it has bestowed another drop of power upon us.\n\nOur telepaths are now more closely attuned to our patron, and we have been inspired to create a monument to celebrate our covenant, a place where our best telepaths can try to commune with the §Y[BtsGetShroudPatron]§!."
 utopia.2676.desc: "The mysteries of the Shroud are too alien for us to dispel, but we have become more attuned to the §Y[BtsGetShroudPatron]§!. Everywhere we go, we can sense it at the back of our minds, and its power seeps into our reality from the cracks of our psyche." 
-utopia.2681.desc: "Our patron, the §Y[BtsGetShroudPatron]§! seems to have relinquished a fraction of its energy in a fold of the Shroud, allowing us to perform §M$decision_bts_shrouded_arcology_project$§! §Y(Ascension $ap_arcology_project$ is required)§!. The conclave of Telepaths is certain that our close bond will allow one of us to safely absorb and wield this power. A few candidates were selected, but only one of them can be granted the privilege to wield the power of our patron. Who shall it be?"
+utopia.2681.desc: "Our patron, the §Y[BtsGetShroudPatron]§! seems to have relinquished a fraction of its energy in a fold of the Shroud. The conclave of Telepaths is certain that our close bond will allow one of us to safely absorb and wield this power. A few candidates were selected, but only one of them can be granted the privilege to wield the power of our patron. Who shall it be?"
 utopia.2682.desc: "It is done. As the power was invested in [chosen_leader.GetName], all those around could feel the weight of its psionic presence. It is powerful and commands respect. [chosen_leader.GetHeShe] will now be the immortal champion of the §Y[BtsGetShroudPatron]§!."
 utopia.2686.desc: "The conclave of Telepaths has made a breakthrough in harnessing the powers of our patron, the §Y[BtsGetShroudPatron]§!. Where previously only psionic individuals could fully grasp the extent of the Covenant, we have devised a way to let power flow through entire starships, at a scale never seen before. Should we wish it, the mark of the §Y[BtsGetShroudPatron]§! can push our ships further than ever before."
 bts_whisperers_covenant_chain_title: "The Whisperers in the Void"
@@ -141,9 +114,6 @@ text_covenant_favor_info: "$text_covenant_total_favor$\n$text_covenant_favor_per
 origin_bts_zroni: "In the Footsteps of the Zroni"
 origin_bts_zroni_desc: "This origin begins with a civilization that perceives a mysterious energy emanating from its moon that disrupts dreams of it's own population. This leads them embark on a quest to understand how an ancient civilization as powerful as the Zroni disappeared. Their fascination with the relics of the past leads them to explore the mysteries hidden in galactic ruins, seeking answers through the stars."
 origin_bts_zroni_effects: "- Technology §Y$tech_archaeostudies$§! researched\n- §MZroni §!Abandoned Colony Ruins on capital's moon\n"
-
-# Ascension
-bts_shrouded_covenant_arcology_project: "§Y$pc_city$§! can be turned into a §Mpsionic variant§!, providing special districts with £job_telepath£ $job_telepath_plural$"
 
 # Modifiers
 absorbed_consciousness_0: "$absorbed_consciousness_1$"

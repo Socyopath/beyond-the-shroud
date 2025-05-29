@@ -37,19 +37,7 @@
 @bts_covenant_modifier_1_disengage_reduc = 1.00
 
 ## Rank 3 Bonus
-@bts_shrouded_covenant_arcology_favor_cost = 90
-@bts_district_psi_arcology_psionic_telepaths = 4
-@bts_district_psi_arcology_psionic_housing = 10
 
-@decision_bts_shrouded_arcology_project_build_time = 3600
-@decision_bts_shrouded_arcology_project_influence_cost = 200
-@decision_bts_shrouded_arcology_project_minerals_cost = 20000
-@decision_bts_shrouded_arcology_project_sr_zro_cost = 4000
-
-@decision_bts_convert_shrouded_arcology_project_build_time = 1800
-@decision_bts_convert_shrouded_arcology_project_influence_cost = 100
-@decision_bts_convert_shrouded_arcology_project_minerals_cost = 10000
-@decision_bts_convert_shrouded_arcology_project_sr_zro_cost = 2000
 
 ## Rank 4 Bonus
 @bts_tech_covenant_mark_cost = 48000

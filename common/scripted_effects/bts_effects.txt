@@ -26,60 +26,6 @@ bts_update_ship_shield_reduction_zroni_shield = {
 	}
 }
 
-# bts_arcology_swap_planet = {
-# 	[[CITY]
-# 	export_trigger_value_to_variable = {
-# 		trigger = num_districts
-# 		parameters = {
-# 			type = $CITY$
-# 		}
-# 		variable = num_housing_districts
-# 	}]
-# 	[[ARM_INDUSTRIAL]
-# 	export_trigger_value_to_variable = {
-# 		trigger = num_districts
-# 		parameters = {
-# 			type = $ARM_INDUSTRIAL$
-# 		}
-# 		variable = num_arm_industrial_districts
-# 	}]
-# 	[[CIV_INDUSTRIAL]
-# 	export_trigger_value_to_variable = {
-# 		trigger = num_districts
-# 		parameters = {
-# 			type = $CIV_INDUSTRIAL$
-# 		}
-# 		variable = num_civ_industrial_districts
-# 	}]
-	
-# 	change_pc = pc_bts_arcology_psionic
-# 	add_deposit = d_hab_zro_5
-
-# 	[[CITY]
-# 	while = {
-# 		count = num_housing_districts
-# 		add_district = bts_district_housing_arcology_psionic
-# 	}
-# 	clear_variable = num_housing_districts
-# 	]
-
-# 	[[ARM_INDUSTRIAL]
-# 	while = {
-# 		count = num_arm_industrial_districts
-# 		add_district = bts_district_arms_industry_arcology_psionic
-# 	}
-# 	clear_variable = num_arm_industrial_districts
-# 	]
-
-# 	[[CIV_INDUSTRIAL]
-# 	while = {
-# 		count = num_civ_industrial_districts
-# 		add_district = bts_district_civilian_industry_arcology_psionic
-# 	}
-# 	clear_variable = num_civ_industrial_districts
-# 	]
-# }
-
 # Scope : Planet
 bts_create_concept_ship = {
 	create_fleet = {
