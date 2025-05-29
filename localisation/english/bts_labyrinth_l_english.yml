@@ -346,8 +346,6 @@ bts_building_labyrinth_unreality_shapers_zroni: "Zroni Ritual Pillars"
 bts_building_labyrinth_unreality_shapers_zroni_desc: "Arranged according to ancient Zroni cognition patterns, these pillars emit a stabilizing psionic field. The ritual they perform protects abtract entities from the ancient chaos invoked by the Zronis."
 bts_building_labyrinth_unreality_shapers_zroni_effects: "All summoned entities gain §Y$ZRONI_SHIELD$§! which prevent shield nullificaiton during §YZroni Storm§!"
 
-
-
 ## Districts & Zones
 bts_district_labyrinth_main: "Labyrinth District"
 bts_district_labyrinth_main_desc: "A shifting nexus where thought shapes reality, and every path is a reflection of the mind that walks it."
