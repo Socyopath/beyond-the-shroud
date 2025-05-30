@@ -3,7 +3,7 @@ bts_leader_trait_covenant_chosen = {
 	inline_script = {
 		script = trait/icon_psionic
 		CLASS = leader
-		ICON = "GFX_leader_trait_whisperers_chosen"
+		ICON = "GFX_bts_leader_trait_covenant_chosen"
 		RARITY = common
 		COUNCIL = triggered
 		TIER = none
@@ -13,9 +13,7 @@ bts_leader_trait_covenant_chosen = {
 		potential = {
 			is_ruler = yes
 		}
-		espionage_operation_cost_mult = -0.20
-		country_ruler_influence_produces_add = 1
-		intel_encryption_add = 1
+		bts_astral_action_cost = -0.20
 	}
 	# Commander - Fleet Modifier
 	triggered_fleet_modifier = {
@@ -23,8 +21,9 @@ bts_leader_trait_covenant_chosen = {
 			is_ruler = no
 			leader_class = commander
 		}
-		ship_sensor_range_add = 3
-		ship_evasion_mult = 0.40
+		ship_shield_hardening_add = 0.10
+		ship_speed_mult = 0.15
+		ship_evasion_mult = 0.30
 	}
 	# Commander - Army Modifier
 	triggered_army_modifier = {
@@ -32,8 +31,8 @@ bts_leader_trait_covenant_chosen = {
 			is_ruler = no
 			leader_class = commander
 		}
-		army_damage_mult = 0.2
-		army_disengage_chance_mult = 0.2
+		army_damage_taken_mult = -0.25
+		army_morale_damage_taken_mult = -0.25
 	}
 	# Scientist - Science Ship Modifier
 	triggered_modifier = {
@@ -41,16 +40,16 @@ bts_leader_trait_covenant_chosen = {
 			is_ruler = no
 			leader_class = scientist
 		}
-		ship_anomaly_generation_chance_mult = 0.50
-		ship_archaeological_site_clues_add = 3
+		ship_astral_rift_clues_add = 6
+		ship_astral_rift_speed_mult = 0.50
 	}
-	triggered_modifier = {
+	# Scientist - Self Modifier
+	triggered_self_modifier = {
 		potential = {
-			has_astral_planes_dlc = yes
 			is_ruler = no
 			leader_class = scientist
 		}
-		ship_astral_rift_clues_add = 3
+		leader_scientists_astral_threads_produces_add = 2
 	}
 	# Official - GalCom Modifier
 	triggered_galcom_modifier = {
@@ -59,7 +58,7 @@ bts_leader_trait_covenant_chosen = {
 			leader_class = official
 		}
 		resolutions_cost_mult = -0.10
-		resolution_category_galacticstudies_vote_strength_mult = 0.25
+		resolution_category_divinity_vote_strength_mult = 0.25
 	}
 	# Official - Federation Modifier
 	triggered_federation_modifier = {
@@ -75,22 +74,25 @@ bts_leader_trait_covenant_chosen = {
 		potential = {
 			is_ruler = no
 		}
-		planet_jobs_physics_research_produces_mult = 0.10
-		planet_jobs_society_research_produces_mult = 0.10
-		planet_jobs_engineering_research_produces_mult = 0.10
+		planet_jobs_unity_produces_mult = 0.10
+		planet_jobs_physics_research_produces_mult = 0.05
+		planet_jobs_society_research_produces_mult = 0.05
+		planet_jobs_engineering_research_produces_mult = 0.05
 	}
 	# Any Class - Sector Modifier
 	triggered_sector_modifier = {
 		potential = {
 			is_ruler = no
 		}
-		planet_jobs_physics_research_produces_mult = 0.05
-		planet_jobs_society_research_produces_mult = 0.05
-		planet_jobs_engineering_research_produces_mult = 0.05
+		planet_jobs_unity_produces_mult = 0.05
+		planet_jobs_physics_research_produces_mult = 0.025
+		planet_jobs_society_research_produces_mult = 0.025
+		planet_jobs_engineering_research_produces_mult = 0.025
 	}
 	leader_class = { commander scientist official }
 	opposites = {
 		leader_trait_cyborg
+		leader_trait_limited_cyborg
 		leader_trait_synthetic
 	}
 	initial = no

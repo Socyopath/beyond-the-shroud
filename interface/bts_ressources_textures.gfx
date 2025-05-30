@@ -74,4 +74,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/agenda_icons/agenda_psionic_supremacy.dds"
 	}
 
+	# Traits
+	spriteType = {
+		name = "GFX_bts_leader_trait_covenant_chosen"
+		texturefile = "gfx/interface/icons/traits/bts_leader_trait_covenant_chosen.dds"
+	}
 }
