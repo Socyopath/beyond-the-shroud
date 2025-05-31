@@ -5,6 +5,7 @@ tr_concept_space_adopt = {
 			always = no
 		}
 	}
+	unlocks_agenda = bts_agenda_concept_space
 	modifier = {
 		country_megastructure_build_cap_add = @bts_concept_space_adopt_megastructure_capacity
 	}

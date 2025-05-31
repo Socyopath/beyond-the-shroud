@@ -623,6 +623,14 @@ r_bts_relic_concept_energy_desc: ""
 r_bts_relic_concept_energy_active: "Apply the §Yfollowing modifiers§! to §Yyour empire§! for §Y$@r_bts_relic_concept_energy_effect_duration|*0$§! days:\n- $r_bts_relic_concept_energy_active.0$"
 r_bts_relic_concept_energy_active.0: "$MOD_SHIP_SHIELD_PENETRATION_ADD$: §G+$@r_bts_relic_concept_energy_effect_shield_penetration|%0$§!"
 
+# Council Agenda
+council_agenda_bts_agenda_concept_time_name: "Temporal Feedback"
+council_agenda_bts_agenda_concept_time_desc: "Time, once a constraint, becomes a tool. Our architects pull on the threads of time, restoring vigor to those that have been shaped by its passage."
+council_agenda_bts_agenda_concept_space_name: "Spatial Overlay"
+council_agenda_bts_agenda_concept_space_desc: "By compressing the notion of space, we're able to expand the space available in our empire. More minds, more knowledge, more influence, all within a restructured framework."
+council_agenda_bts_agenda_concept_energy_name: "Optimizing Mental Energy"
+council_agenda_bts_agenda_concept_energy_desc: "The mind needs fuel to function at full throttle. By catering to the needs of our leaders, they make breathtaking progress."
+
 # UI Text
 bts_tr_concept_jobs_msg: "per $pop_group_unit$ $job_bts_conceptual_architect_plural_with_icon$"
 bts_req_spec_time: "$TRIGGER_FAIL$Choose §Y$bts.351.time$§! during §Y$situation_bts_conceptual_mastery$§! Situation"

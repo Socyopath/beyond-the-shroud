@@ -283,4 +283,18 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
 		noOfFrames = 3
 	}
+
+	# Agendas
+	spriteType = {
+		name = "GFX_council_agenda_icon_bts_agenda_concept_time"
+		texturefile = "gfx/interface/icons/agenda_icons/bts_agenda_concept_time.dds"
+	}
+	spriteType = {
+		name = "GFX_council_agenda_icon_bts_agenda_concept_space"
+		texturefile = "gfx/interface/icons/agenda_icons/bts_agenda_concept_space.dds"
+	}
+	spriteType = {
+		name = "GFX_council_agenda_icon_bts_agenda_concept_energy"
+		texturefile = "gfx/interface/icons/agenda_icons/bts_agenda_concept_energy.dds"
+	}
 }

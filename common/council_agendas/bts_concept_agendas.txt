@@ -1,0 +1,63 @@
+@base_tradition_agenda_cost = 7000
+
+bts_agenda_concept_time = {
+	agenda_cost = @base_tradition_agenda_cost
+    agenda_cooldown = 1800
+
+	allow = {
+		always = yes
+	}
+
+	potential = {
+		has_tradition = tr_concept_time_adopt
+	}
+
+	effect = {
+		every_owned_leader = {
+			add_age = -20
+		}
+	}
+}
+
+bts_agenda_concept_space = {
+	agenda_cost = @base_tradition_agenda_cost
+    agenda_cooldown = 3600
+
+	allow = {
+		always = yes
+	}
+
+	modifier = {
+		country_leader_pool_size = 4
+	}
+
+	potential = {
+		has_tradition = tr_concept_space_adopt
+	}
+
+	effect = {
+		refresh_leader_pool = yes
+	}
+}
+
+bts_agenda_concept_energy = {
+	agenda_cost = @base_tradition_agenda_cost
+    agenda_cooldown = 7200
+
+	allow = {
+		always = yes
+	}
+
+	potential = {
+		has_tradition = tr_concept_energy_adopt
+	}
+
+	modifier = {
+		species_leader_exp_gain = 0.25
+	}
+	effect = {
+		every_owned_leader = {
+			add_experience = 2500
+		}
+	}
+}

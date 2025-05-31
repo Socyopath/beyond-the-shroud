@@ -1,3 +1,6 @@
+@base_tradition_agenda_cost = 7000
+@short_agenda_cost = 3500
+
 # Override Vanilla
 agenda_psionic_supremacy = {
 	agenda_cost = @base_tradition_agenda_cost
