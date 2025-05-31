@@ -5,11 +5,22 @@ bts_agenda_concept_time = {
     agenda_cooldown = 1800
 
 	allow = {
-		always = yes
+		has_tradition = tr_concept_time_adopt
 	}
 
 	potential = {
-		has_tradition = tr_concept_time_adopt
+		has_utopia = yes
+		is_gestalt = no
+		NOR = {
+			has_cybernetic_ascension = yes
+			has_genetic_ascension = yes
+			has_synthetic_ascension = yes
+			is_natural_design_empire = yes
+			is_individual_machine = yes
+			has_purity_ascension = yes
+			has_cloning_ascension = yes
+			has_mutation_ascension = yes
+		}
 	}
 
 	effect = {
@@ -24,7 +35,7 @@ bts_agenda_concept_space = {
     agenda_cooldown = 3600
 
 	allow = {
-		always = yes
+		has_tradition = tr_concept_space_adopt
 	}
 
 	modifier = {
@@ -32,7 +43,18 @@ bts_agenda_concept_space = {
 	}
 
 	potential = {
-		has_tradition = tr_concept_space_adopt
+		has_utopia = yes
+		is_gestalt = no
+		NOR = {
+			has_cybernetic_ascension = yes
+			has_genetic_ascension = yes
+			has_synthetic_ascension = yes
+			is_natural_design_empire = yes
+			is_individual_machine = yes
+			has_purity_ascension = yes
+			has_cloning_ascension = yes
+			has_mutation_ascension = yes
+		}
 	}
 
 	effect = {
@@ -45,11 +67,22 @@ bts_agenda_concept_energy = {
     agenda_cooldown = 7200
 
 	allow = {
-		always = yes
+		has_tradition = tr_concept_energy_adopt
 	}
 
 	potential = {
-		has_tradition = tr_concept_energy_adopt
+		has_utopia = yes
+		is_gestalt = no
+		NOR = {
+			has_cybernetic_ascension = yes
+			has_genetic_ascension = yes
+			has_synthetic_ascension = yes
+			is_natural_design_empire = yes
+			is_individual_machine = yes
+			has_purity_ascension = yes
+			has_cloning_ascension = yes
+			has_mutation_ascension = yes
+		}
 	}
 
 	modifier = {

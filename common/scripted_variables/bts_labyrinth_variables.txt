@@ -104,8 +104,8 @@
 @bts_building_labyrinth_materializers_specials_exotic_gases = 2
 @bts_building_labyrinth_materializers_specials_rare_crystals = 2
 @bts_building_labyrinth_materializers_basic_energy = 6
-@bts_building_labyrinth_materializers_basic_minerals = 5
-@bts_building_labyrinth_materializers_basic_alloys = 4
+@bts_building_labyrinth_materializers_basic_minerals = 4
+@bts_building_labyrinth_materializers_basic_alloys = 3
 @bts_building_labyrinth_materializers_zro = 3
 
 
