@@ -125,11 +125,11 @@
 ### Conceptual Mastery 
 #### Situation
 @bts_days_before_conceptual_mastery = 720
-@situation_bts_conceptual_mastery_tree_unlock = 300             # ~10 year
-@situation_bts_conceptual_mastery_first_points_unlock = 1000    # ~10 year
-@situation_bts_conceptual_mastery_second_points_unlock = 3000   # ~15 year
-@situation_bts_conceptual_mastery_last_point_unlock = 6000      # ~15 year
-@situation_bts_conceptual_mastery_relic_unlock = 10000          # ~15 year
+@situation_bts_conceptual_mastery_tree_unlock = 1200            # 1 year with 1 architect
+@situation_bts_conceptual_mastery_first_points_unlock = 2400    # 1 year with 2 architect
+@situation_bts_conceptual_mastery_second_points_unlock = 4800   # 1 year with 4 architect
+@situation_bts_conceptual_mastery_last_point_unlock = 9600      # 1 year with 8 architect
+@situation_bts_conceptual_mastery_relic_unlock = 19200          # 1 years with 16 architect
 #### Tradition
 ##### Time
 @bts_concept_time_adopt_pop_growth = 0.15
@@ -214,7 +214,7 @@
 
 
 ## Unreality Shapers
-@bts_unreality_shaper_unlock_project_pops_start = 2000
+@bts_unreality_shaper_unlock_project_pops_start = 2500
 ### Jobs
 @bts_job_unreality_shaper_summon_boost_hull_regen = 0.01
 @bts_job_unreality_shaper_summon_boost_shield_regen = 0.01
