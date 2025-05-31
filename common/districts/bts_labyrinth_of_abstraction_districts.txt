@@ -21,6 +21,18 @@ bts_district_labyrinth_main = {
 	triggered_name = {
 		text = bts_district_labyrinth_main_name
 	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @bts_labyrinth_of_abstraction_district_cost
+			sr_zro = @bts_labyrinth_of_abstraction_district_cost_sr
+		}
+
+		upkeep = {
+			energy = @bts_labyrinth_of_abstraction_district_upkeep_energy 
+		}
+	}
 }
 
 bts_district_labyrinth_ressources = {
@@ -47,6 +59,18 @@ bts_district_labyrinth_ressources = {
 
 	triggered_desc = {
 		text = job_bts_materializer_effect_desc
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @bts_labyrinth_of_abstraction_district_cost
+			sr_zro = @bts_labyrinth_of_abstraction_district_cost_sr
+		}
+
+		upkeep = {
+			energy = @bts_labyrinth_of_abstraction_district_upkeep_energy 
+		}
 	}
 
 }
@@ -86,6 +110,17 @@ bts_district_labyrinth_mastery = {
 		text = job_bts_conceptual_architect_effect_desc
 	}
 
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @bts_labyrinth_of_abstraction_district_cost
+			sr_zro = @bts_labyrinth_of_abstraction_district_cost_sr
+		}
+
+		upkeep = {
+			energy = @bts_labyrinth_of_abstraction_district_upkeep_energy 
+		}
+	}
 	
 }
 
@@ -122,5 +157,17 @@ bts_district_labyrinth_summon = {
 
 	triggered_desc = {
 		text = job_bts_unreality_shaper_effect_desc
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @bts_labyrinth_of_abstraction_district_cost
+			sr_zro = @bts_labyrinth_of_abstraction_district_cost_sr
+		}
+
+		upkeep = {
+			energy = @bts_labyrinth_of_abstraction_district_upkeep_energy 
+		}
 	}
 }

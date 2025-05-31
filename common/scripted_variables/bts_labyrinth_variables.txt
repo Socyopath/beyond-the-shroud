@@ -36,7 +36,6 @@
 @bts_conceptual_architect_job_max_districts = 10
 @bts_unreality_shaper_job_max_districts = 10
 # Costs
-@bts_labyrinth_of_abstraction_district_upkeep_sr = 0.5
 @bts_labyrinth_of_abstraction_district_upkeep_energy = 1
 @bts_labyrinth_of_abstraction_district_cost_sr = 100
 @bts_labyrinth_of_abstraction_district_cost = 600
