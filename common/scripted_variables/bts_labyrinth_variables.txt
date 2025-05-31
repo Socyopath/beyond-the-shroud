@@ -18,11 +18,11 @@
 @bts_labyrinth_shroud_inter_choose_effect_cooldown = 5400
 
 # Jobs
-@bts_veilwatcher_unity_upkeep = 4
-@bts_mindshaper_unity_upkeep = 4
-@bts_materializer_unity_upkeep = 6
-@bts_conceptual_architect_unity_upkeep = 6
-@bts_unreality_shaper_unity_upkeep = 8
+@bts_veilwatcher_unity_upkeep = 3
+@bts_mindshaper_unity_upkeep = 3
+@bts_materializer_unity_upkeep = 4
+@bts_conceptual_architect_unity_upkeep = 5
+@bts_unreality_shaper_unity_upkeep = 6
 
 @bts_veilwatcher_job_per_district = 100
 @bts_mindshaper_job_per_district = 100
@@ -37,12 +37,12 @@
 @bts_unreality_shaper_job_max_districts = 10
 # Costs
 @bts_labyrinth_of_abstraction_district_upkeep_sr = 0.5
-@bts_labyrinth_of_abstraction_district_upkeep_energy = 2
+@bts_labyrinth_of_abstraction_district_upkeep_energy = 1
 @bts_labyrinth_of_abstraction_district_cost_sr = 100
 @bts_labyrinth_of_abstraction_district_cost = 600
 @bts_labyrinth_of_abstraction_district_time = 360
 @bts_labyrinth_of_abstraction_building_upkeep_sr = 1
-@bts_labyrinth_of_abstraction_building_upkeep_energy = 4
+@bts_labyrinth_of_abstraction_building_upkeep_energy = 3
 @bts_labyrinth_of_abstraction_building_cost_sr = 400
 @bts_labyrinth_of_abstraction_building_cost = 1200
 @bts_labyrinth_of_abstraction_building_time = 720
@@ -101,17 +101,17 @@
 @bts_building_labyrinth_mindshapers_influence = 0.25
 
 ## Materializers
-@bts_building_labyrinth_materializers_specials_volatile_motes = 1
-@bts_building_labyrinth_materializers_specials_exotic_gases = 1
-@bts_building_labyrinth_materializers_specials_rare_crystals = 1
-@bts_building_labyrinth_materializers_basic_energy = 3
-@bts_building_labyrinth_materializers_basic_minerals = 2
-@bts_building_labyrinth_materializers_basic_alloys = 1
-@bts_building_labyrinth_materializers_zro = 1
+@bts_building_labyrinth_materializers_specials_volatile_motes = 2
+@bts_building_labyrinth_materializers_specials_exotic_gases = 2
+@bts_building_labyrinth_materializers_specials_rare_crystals = 2
+@bts_building_labyrinth_materializers_basic_energy = 6
+@bts_building_labyrinth_materializers_basic_minerals = 5
+@bts_building_labyrinth_materializers_basic_alloys = 4
+@bts_building_labyrinth_materializers_zro = 3
 
 
 ## Conceptual Architects
-@bts_conceptual_effect_cooldown_planet_jobs_upkeep_mult = 5.00
+@bts_conceptual_effect_cooldown_planet_jobs_upkeep_mult = 3.00
 ### Jobs
 @bts_conceptual_architect_unity = 12
 @bts_conceptual_architect_conceptual_research = 100
