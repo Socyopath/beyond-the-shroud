@@ -243,13 +243,14 @@ country_event = {
 			SHIP_NAME = EMPTY_STRING
 			SHIP_DESIGN = bts_abstract_entity_3
 			SHIP_DESIGN_ZRONI = bts_abstract_entity_3_zroni
+			JOB_COUNT = @bts_power_summon_3_job_cost
 		}
 		last_created_ship = {
 			ship_event = { id = bts.433 } # Update modifiers
 		}
 		set_variable = {
 			which = "bts_planet_killer_end_pop_killed"
-			value = 0
+			value = @bts_power_summon_3_job_cost
 		}
     }
 }

@@ -134,7 +134,13 @@ bts_summon_power = {
 			last_created_ship = {
 				add_modifier = {
 					modifier = bts_job_unreality_shaper_summon_boost
+					[[JOB_COUNT]
+					multiplier = $JOB_COUNT$
+					]
+					[[!JOB_COUNT]
 					multiplier = event_target:bts_labyrinth_summon_target.value:bts_num_jobs|JOB|bts_unreality_shaper|
+					]
+					
 				}
 			}
 
