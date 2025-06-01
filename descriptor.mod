@@ -11,5 +11,5 @@ tags={
 	"Balance"
 }
 name="Beyond The Shroud"
-supported_version="v3.14.1"
+supported_version="v4.0.14"
 remote_file_id="3228869480"
