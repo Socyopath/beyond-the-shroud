@@ -14,6 +14,7 @@ bts_leader_trait_covenant_chosen = {
 			is_ruler = yes
 		}
 		bts_astral_action_cost = -0.20
+		country_astral_rift_fail_mult = -0.25
 	}
 	# Commander - Fleet Modifier
 	triggered_fleet_modifier = {
