@@ -110,7 +110,7 @@
 
 
 ## Conceptual Architects
-@bts_conceptual_effect_cooldown_planet_jobs_upkeep_mult = 3.00
+@bts_conceptual_effect_cooldown_planet_jobs_upkeep_mult = 0.75
 ### Jobs
 @bts_conceptual_architect_unity = 12
 @bts_conceptual_architect_conceptual_research = 100
