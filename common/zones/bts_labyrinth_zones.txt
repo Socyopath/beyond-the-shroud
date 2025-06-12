@@ -2,6 +2,10 @@ zone_bts_labyrinth_main = {
 	icon = GFX_diplomatic_weight_large
 	base_buildtime = @zone_buildtime
 
+	zone_sets = {
+		bts_labyrinth_main
+	}
+
 	max_buildings = 6
 
     included_building_sets = {
@@ -12,6 +16,10 @@ zone_bts_labyrinth_main = {
 zone_bts_labyrinth_mastery = {
 	icon = GFX_zone_bts_labyrinth_mastery
 	base_buildtime = @zone_buildtime
+
+	zone_sets = {
+		bts_labyrinth_mastery
+	}
 
 	max_buildings = 3
 
@@ -27,6 +35,10 @@ zone_bts_labyrinth_mastery = {
 zone_bts_labyrinth_summon = {
 	icon = GFX_zone_bts_labyrinth_summon
 	base_buildtime = @zone_buildtime
+
+	zone_sets = {
+		bts_labyrinth_summon
+	}
 
 	max_buildings = 3
 
@@ -44,6 +56,10 @@ zone_bts_labyrinth_summon = {
 zone_bts_labyrinth_observatory = {
 	icon = GFX_zone_bts_labyrinth_observatory
 	base_buildtime = @zone_buildtime
+
+	zone_sets = {
+		bts_labyrinth_observatory
+	}
 
 	max_buildings = 3
 
@@ -69,6 +85,10 @@ zone_bts_labyrinth_control = {
 	icon = GFX_zone_bts_labyrinth_control
 	base_buildtime = @zone_buildtime
 
+	zone_sets = {
+		bts_labyrinth_control
+	}
+
 	max_buildings = 3
 
     included_building_sets = {
@@ -92,6 +112,10 @@ zone_bts_labyrinth_control = {
 zone_bts_labyrinth_ressources = {
 	icon = GFX_zone_bts_labyrinth_ressources
 	base_buildtime = @zone_buildtime
+
+	zone_sets = {
+		bts_labyrinth_ressources
+	}
 
 	max_buildings = 3
 

@@ -1,8 +1,8 @@
 slot_bts_labyrinth_main = {
 	start = zone_bts_labyrinth_main
 
-	include = {
-		zone_bts_labyrinth_main
+	included_zone_sets = {
+		bts_labyrinth_main
 	}
 
 	unlock = { # planet scope
@@ -12,8 +12,8 @@ slot_bts_labyrinth_main = {
 
 slot_bts_labyrinth_mastery = {
 
-	include = {
-		zone_bts_labyrinth_mastery
+	included_zone_sets = {
+		bts_labyrinth_mastery
 	}
 
 	unlock = { # planet scope
@@ -32,8 +32,8 @@ slot_bts_labyrinth_mastery = {
 
 slot_bts_labyrinth_summon = {
 
-	include = {
-		zone_bts_labyrinth_summon
+	included_zone_sets = {
+		bts_labyrinth_summon
 	}
 
 	unlock = { # planet scope
@@ -49,8 +49,8 @@ slot_bts_labyrinth_summon = {
 slot_bts_labyrinth_observatory = {
 	start = zone_bts_labyrinth_observatory
 
-	include = {
-		zone_bts_labyrinth_observatory
+	included_zone_sets = {
+		bts_labyrinth_observatory
 	}
 
 	unlock = { # planet scope
@@ -61,8 +61,8 @@ slot_bts_labyrinth_observatory = {
 slot_bts_labyrinth_control = {
 	start = zone_bts_labyrinth_control
 
-	include = {
-		zone_bts_labyrinth_control
+	included_zone_sets = {
+		bts_labyrinth_control
 	}
 
 	unlock = { # planet scope
@@ -73,8 +73,8 @@ slot_bts_labyrinth_control = {
 slot_bts_labyrinth_ressources = {
 	start = zone_bts_labyrinth_ressources
 
-	include = {
-		zone_bts_labyrinth_ressources
+	included_zone_sets = {
+		bts_labyrinth_ressources
 	}
 
 	unlock = { # planet scope
