@@ -1,0 +1,195 @@
+# Crisis
+
+spriteTypes = {
+
+	# Ascension
+	spriteType = {
+		name = "GFX_ap_bts_crisis"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_bts_crisis.dds"
+		alwaystransparent = yes
+	}
+
+    # Currency
+	spriteType = {
+		name = "GFX_resource_bts_crisis_currency"
+		texturefile = "gfx/interface/icons/resources/bts_crisis_currency.dds"
+	}
+
+    # Buttons
+	spriteType = {
+		name = "GFX_bts_crisis_level_1_btn"
+		texturefile = "gfx/interface/icons/crisis/Crisis_Lvl1_btn.dds"
+		noOfFrames = 2			
+	}
+	spriteType = {
+		name = "GFX_bts_crisis_level_2_btn"
+		texturefile = "gfx/interface/icons/crisis/Crisis_Lvl2_btn.dds"
+		noOfFrames = 2			
+	}
+
+	spriteType = {
+		name = "GFX_bts_crisis_level_3_btn"
+		texturefile = "gfx/interface/icons/crisis/Crisis_Lvl3_btn.dds"
+		noOfFrames = 2			
+	}
+
+	spriteType = {
+		name = "GFX_bts_crisis_level_4_btn"
+		texturefile = "gfx/interface/icons/crisis/Crisis_Lvl4_btn.dds"
+		noOfFrames = 2			
+	}
+	spriteType = {
+		name = "GFX_bts_crisis_level_5_btn"
+		texturefile = "gfx/interface/icons/crisis/Crisis_Lvl5_btn.dds"
+		noOfFrames = 2			
+	}
+
+    # Perks
+
+    ## Level 1
+    spriteType = {
+		name = "GFX_crisis_icon_bts_mega"
+		texturefile = "gfx/interface/icons/crisis/crisis_icon_bts_mega.dds"
+		noOfFrames = 2			
+	}
+    spriteType = {
+		name = "GFX_crisis_icon_bts_building"
+		texturefile = "gfx/interface/icons/crisis/crisis_icon_bts_building.dds"
+		noOfFrames = 2			
+	}
+    spriteType = {
+		name = "GFX_crisis_icon_bts_spy_op"
+		texturefile = "gfx/interface/icons/crisis/crisis_icon_bts_spy_op.dds"
+		noOfFrames = 2			
+	}
+
+    ## Level 2
+    spriteType = {
+		name = "GFX_crisis_icon_bts_agendas"
+		texturefile = "gfx/interface/icons/crisis/crisis_icon_bts_agendas.dds"
+		noOfFrames = 2			
+	}
+
+    spriteType = {
+		name = "GFX_crisis_icon_bts_cult_1"
+		texturefile = "gfx/interface/icons/crisis/crisis_icon_bts_cult_1.dds"
+		noOfFrames = 2			
+	}
+
+    spriteType = {
+		name = "GFX_crisis_icon_bts_spec_rights"
+		texturefile = "gfx/interface/icons/crisis/crisis_icon_bts_spec_rights.dds"
+		noOfFrames = 2			
+	}
+
+    ## Level 3
+    spriteType = {
+		name = "GFX_crisis_icon_bts_terror"
+		texturefile = "gfx/interface/icons/crisis/crisis_icon_bts_terror.dds"
+		noOfFrames = 2			
+	}
+
+    spriteType = {
+		name = "GFX_crisis_icon_bts_energy"
+		texturefile = "gfx/interface/icons/crisis/crisis_icon_bts_energy.dds"
+		noOfFrames = 2			
+	}
+
+    spriteType = {
+		name = "GFX_crisis_icon_bts_new_trait"
+		texturefile = "gfx/interface/icons/crisis/crisis_icon_bts_new_trait.dds"
+		noOfFrames = 2			
+	}
+
+    ## Level 4
+    spriteType = {
+		name = "GFX_crisis_icon_bts_old_ones"
+		texturefile = "gfx/interface/icons/crisis/crisis_icon_bts_old_ones.dds"
+		noOfFrames = 2			
+	}
+
+    spriteType = {
+		name = "GFX_crisis_icon_bts_cult_2"
+		texturefile = "gfx/interface/icons/crisis/crisis_icon_bts_cult_2.dds"
+		noOfFrames = 2			
+	}
+
+    spriteType = {
+		name = "GFX_crisis_icon_bts_immortals"
+		texturefile = "gfx/interface/icons/crisis/crisis_icon_bts_immortals.dds"
+		noOfFrames = 2			
+	}
+
+	## Level 5
+	spriteType = {
+		name = "GFX_crisis_icon_bts_outer_gods"
+		texturefile = "gfx/interface/icons/crisis/crisis_icon_bts_outer_gods.dds"
+		noOfFrames = 2			
+	}
+
+    # Councilor
+	spriteType = {
+		name = "GFX_icon_bts_crisis_councilor_ritual"
+		texturefile = "gfx/interface/council_view/icon_bts_crisis_councilor_ritual.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_bts_crisis_councilor_pact"
+		texturefile = "gfx/interface/council_view/icon_bts_crisis_councilor_pact.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_bts_crisis_councilor_operation"
+		texturefile = "gfx/interface/council_view/icon_bts_crisis_councilor_operation.dds"
+	}
+
+
+    # Traits
+
+    # Agendas
+	spriteType = {
+		name = "GFX_council_agenda_icon_bts_crisis_agenda_1"
+		texturefile = "gfx/interface/icons/agenda_icons/icon_bts_crisis_agenda.dds"
+	}
+	spriteType = {
+		name = "GFX_council_agenda_icon_bts_crisis_agenda_2"
+		texturefile = "gfx/interface/icons/agenda_icons/icon_bts_crisis_agenda.dds"
+	}
+
+
+	# Events
+	spriteType = {
+		name = "GFX_bts_crisis_pact_4_rain"
+		texturefile = "gfx/event_pictures/bts_crisis_pact_4_rain.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_bts_outer_gods_ritual"
+		texturefile = "gfx/event_pictures/bts_outer_gods_ritual.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_bts_outer_gods_patron"
+		texturefile = "gfx/event_pictures/bts_outer_gods_patron.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_bts_outer_gods_sacrifice"
+		texturefile = "gfx/event_pictures/bts_outer_gods_sacrifice.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_bts_outer_gods_planet"
+		texturefile = "gfx/event_pictures/bts_outer_gods_planet.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+}
