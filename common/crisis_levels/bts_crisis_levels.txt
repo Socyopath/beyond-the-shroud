@@ -1,0 +1,103 @@
+# CRISIS LEVELS
+# Levels can be unlocked in the order they are written in this file. A later listed level with lower requirements will not be unlocked until the previous levels have been unlocked.
+#
+# level_name = {
+#	perks = {
+#		menp_undertaker		# The menace perks that will be applied when the level is unlocked.
+#		menp_ship_chipper
+#	}
+#	required_crisis_currency = 0		# The required amount of Menace to unlock the level
+#	allow = { has_completed_special_project_in_log = CRISIS_SPECIAL_PROJECT_1 }	# You can only unlock this level when this trigger returns true
+#																			# scope COUNTRY, This = country trying to unlock the level
+#	on_unlock = { set_country_flag = CRISIS_LEVEL_FLAG }	# an effect that is triggered when you unlock the level
+#															# scope COUNTRY, This = country the level is being unlocked for
+# }
+
+
+bts_crisis_level_1 = {
+	required_crisis_currency = 0
+
+	perks = {
+		bts_menp_mega
+		bts_menp_building
+		bts_menp_spy_op
+	}
+}
+
+bts_crisis_level_2 = {
+	required_crisis_currency = 100
+
+	allow = {
+		# has_megastructure = bts_mega_aetherophasic_collapser_3
+	}
+
+	perks = {
+		bts_menp_agendas
+		bts_menp_cult_1
+		bts_menp_spec_rights
+	}
+
+	on_unlock = { 
+		
+	}
+}
+
+bts_crisis_level_3 = {
+	required_crisis_currency = 200
+
+	allow = {
+		# custom_tooltip = {
+		# 	bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_crisis_level_3_favor_cost }
+		# 	fail_text = bts_crisis_level_3_favor_fail
+		# 	success_text = bts_crisis_level_3_favor_pass
+		# }
+	}
+
+	perks = {
+		bts_menp_war_terror
+		bts_menp_energy
+		bts_menp_new_trait
+	}
+
+	on_unlock = { 
+		
+	}
+}
+
+bts_crisis_level_4 = {
+	required_crisis_currency = 300
+
+	allow = {
+		# custom_tooltip = {
+		# 	has_country_flag = bts_situation_bts_conceptual_mastery_completed
+		# 	fail_text = bts_crisis_level_4_situation_fail
+		# 	success_text = bts_crisis_level_4_situation_pass
+		# }
+	}
+
+	perks = {
+		bts_menp_old_ones
+		bts_menp_cult_2
+		bts_menp_immortals
+	}
+
+	on_unlock = { 
+		
+	}
+}
+
+bts_crisis_level_5 = {
+	required_crisis_currency = 400
+
+	allow = {
+
+	}
+
+	perks = {
+		bts_menp_outer_gods
+	}
+
+	on_unlock = { 
+		
+	}
+}

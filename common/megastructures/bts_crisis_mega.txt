@@ -1,0 +1,234 @@
+bts_mega_aetherophasic_collapser_0 = {
+	entity = "bts_mega_aetherophasic_collapser_entity"
+	portrait = "GFX_megastructure_bts_aetherophasic_collapser"
+	construction_entity = "quantum_catapult_stage_1_entity"
+    build_time = @bts_mega_aetherophasic_collapser_0_build_time
+
+    resources = {
+        category = decisions
+        cost = {
+            energy = @bts_mega_aetherophasic_collapser_0_cost_energy
+            alloys = @bts_mega_aetherophasic_collapser_0_cost_alloys
+        }
+    }
+
+	potential = { 
+        has_crisis_perk = bts_menp_mega
+        NOT = { 
+            any_owned_megastructure = {
+                bts_is_aetherophasic_collapser = yes
+            }
+        }
+	}
+
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_black_hole_neutron_star_pulsar"
+			NOT = {
+				is_star_class = sc_black_hole
+				is_star_class = sc_neutron_star
+				is_star_class = sc_pulsar
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_binary_trinary"
+			NOR = {
+				is_star_class = sc_binary_1
+				is_star_class = sc_binary_2
+				is_star_class = sc_binary_3
+				is_star_class = sc_binary_4
+				is_star_class = sc_binary_5
+				is_star_class = sc_binary_6
+				is_star_class = sc_binary_7
+				is_star_class = sc_binary_8
+				is_star_class = sc_binary_9
+				is_star_class = sc_binary_10
+				is_star_class = sc_trinary_1
+				is_star_class = sc_trinary_2
+				is_star_class = sc_trinary_3
+				is_star_class = sc_trinary_4
+			}
+		}
+	}
+
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "must_build_around_star"
+				is_star = yes
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = { has_anomaly = yes }
+			}
+		}
+	}
+
+    on_build_complete = {
+        star = {
+			if = {
+				limit = { has_orbital_station = yes }
+				orbital_station = {
+					dismantle = yes
+				}
+			}
+		}
+    }
+}
+
+bts_mega_aetherophasic_collapser_1 = {
+	entity = "bts_mega_aetherophasic_collapser_entity"
+	portrait = "GFX_megastructure_bts_aetherophasic_collapser"
+    build_time = @bts_mega_aetherophasic_collapser_1_build_time
+
+    resources = {
+        category = decisions
+        cost = {
+            energy = @bts_mega_aetherophasic_collapser_1_cost_energy
+            alloys = @bts_mega_aetherophasic_collapser_1_cost_alloys
+        }
+    }
+
+    upgrade_from = {
+		bts_mega_aetherophasic_collapser_0
+	}
+
+    on_build_complete = {
+        set_star_class = sc_black_hole
+        star = {
+            change_pc = pc_black_hole
+            create_ambient_object = {
+                type = "star_explosion"
+                play_animation_once = yes
+                location = this
+            }
+            last_created_ambient_object = {
+                set_location = {
+                    target = prev
+                    distance = 0
+                    angle = random
+                }
+            }
+        }
+	}
+}
+
+bts_mega_aetherophasic_collapser_2 = {
+	entity = "bts_mega_aetherophasic_collapser_entity"
+	portrait = "GFX_megastructure_bts_aetherophasic_collapser"
+    build_time = @bts_mega_aetherophasic_collapser_2_build_time
+
+    resources = {
+        category = decisions
+        cost = {
+            energy = @bts_mega_aetherophasic_collapser_2_cost_energy
+            astral_threads = @bts_mega_aetherophasic_collapser_2_cost_astral_threads
+        }
+    }
+
+    upgrade_from = {
+		bts_mega_aetherophasic_collapser_1
+	}
+
+    on_build_complete = {
+        star = {
+            create_ambient_object = {
+                type = "bts_aetherophasic_collapser_energy_effect"
+                location = this
+            }
+            last_created_ambient_object = {
+                set_ambient_object_flag = bts_aetherophasic_collapser_energy_system_effect
+                set_location = {
+                    target = prev
+                    distance = 0
+                    angle = random
+                }
+            }
+        }
+    }
+}
+
+bts_mega_aetherophasic_collapser_3 = {
+	entity = "bts_mega_aetherophasic_collapser_entity"
+	portrait = "GFX_megastructure_bts_aetherophasic_collapser"
+    build_time = @bts_mega_aetherophasic_collapser_3_build_time
+    use_planet_resource = yes
+
+    resources = {
+        category = decisions
+        cost = {
+            energy = @bts_mega_aetherophasic_collapser_3_cost_energy
+            astral_threads = @bts_mega_aetherophasic_collapser_3_cost_astral_threads
+        }
+    }
+
+    upgrade_from = {
+		bts_mega_aetherophasic_collapser_2
+	}
+
+    on_build_complete = {
+        every_system_ambient_object = {
+            limit = { has_ambient_object_flag = bts_aetherophasic_collapser_energy_system_effect }
+            destroy_ambient_object = this
+        }
+        set_star_class = sc_rift_star
+        star = {
+            change_pc = pc_bts_shroud_rift
+            clear_deposits = yes
+            add_deposit = d_zro_deposit_5
+            add_deposit = d_zro_deposit_5
+            add_deposit = d_zro_deposit_5
+            add_deposit = d_zro_deposit_5
+            add_deposit = d_zro_deposit_5
+            add_deposit = d_zro_deposit_5
+            add_deposit = d_zro_deposit_5
+            add_deposit = d_zro_deposit_5
+            add_deposit = d_zro_deposit_5
+            add_deposit = d_zro_deposit_5
+            add_deposit = d_astral_threads_deposit_3
+            add_deposit = d_astral_threads_deposit_2
+            set_name = pc_bts_shroud_rift
+            create_ambient_object = {
+                type = "bts_psionic_wave"
+                play_animation_once = yes
+                location = this
+            }
+            last_created_ambient_object = {
+                set_location = {
+                    target = prev
+                    distance = 0
+                    angle = random
+                }
+            }
+            create_ambient_object = {
+                type = "psi_storm_1"
+                location = this
+            }
+            last_created_ambient_object = {
+                set_location = {
+                    target = prev
+                    distance = 0
+                    angle = random
+                }
+            }
+        }
+    }
+
+}
+
