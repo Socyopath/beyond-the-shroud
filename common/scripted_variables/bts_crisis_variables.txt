@@ -1,0 +1,150 @@
+# Levels Requirements
+@bts_crisis_level_3_favor_cost = 150
+@ap_bts_crisis_stability = -10
+@bts_menp_new_trait_stability = -20
+
+# Objectives
+@bts_crisis_obj_devour_mind_currency = 25
+@bts_crisis_obj_ritual_currency = 100
+@bts_crisis_obj_pact_currency = 1000
+
+# Buildings
+@bts_crisis_building_thrall_limit = 1
+@bts_crisis_building_thrall_1_jobs = 2
+@bts_crisis_building_thrall_2_jobs = 4
+@bts_crisis_building_thrall_3_jobs = 6
+
+# Jobs
+@bts_crisis_sacrifical_thrall_unity = 3
+@bts_crisis_sacrifical_thrall_society_research = 1
+
+# Shroud Rift Decisions 
+## Rituals
+@bts_ritual_pop_trade_cooldown = 720
+@bts_ritual_pop_trade_thrall_cost = 2
+@bts_ritual_pop_trade_custom_thrall_cost = 1
+@bts_ritual_pop_trade_boost_produces = 0.25
+@bts_ritual_pop_trade_boost_duration = 360
+
+@bts_ritual_remove_trait_cooldown = 2160
+@bts_ritual_remove_trait_thrall_cost = 2
+
+@bts_ritual_reset_leader_cooldown = 3600
+@bts_ritual_reset_leader_thrall_cost = 5
+
+@bts_ritual_harvest_cooldown = 180
+@bts_ritual_harvest_thrall_cost = 1
+
+@bts_ritual_war_terror_thrall_cost = 4
+@bts_ritual_war_terror_cooldown = 3600
+@bts_ritual_war_terror_duration = 720
+@bts_crisis_war_exhaust_value = 5.0
+
+
+## Decisions
+@bts_ritual_harvest_high_basic = 12
+@bts_ritual_harvest_high_tech = 6
+@bts_ritual_harvest_high_sr = 3
+@bts_ritual_harvest_medium_basic = 8
+@bts_ritual_harvest_medium_tech = 4
+@bts_ritual_harvest_medium_sr = 2
+@bts_ritual_harvest_low_basic = 4
+@bts_ritual_harvest_low_tech = 2
+@bts_ritual_harvest_low_sr = 1
+@bts_ritual_harvest_days_before_invasion_end = 720
+
+# Traits
+@bts_trait_crisis_main_1_ethics = 0.01
+@bts_trait_crisis_main_1_happiness = 0.01
+@bts_trait_crisis_main_2_ethics = 0.02
+@bts_trait_crisis_main_2_happiness = 0.02
+@bts_trait_crisis_main_2_habitability = 0.01
+
+# Council
+@bts_crisis_councilor_power_level = 5
+@bts_crisis_councilor_ulimate_power_level = 10
+
+@bts_crisis_councilor_operation_speed_per_level = 0.10
+@bts_crisis_councilor_pact_cooldown_per_level = -0.05
+@bts_crisis_councilor_ritual_cooldown_per_level = -0.025
+
+# Agendas
+@bts_crisis_agenda_1_tech_base = 0.20
+@bts_crisis_agenda_1_stability_base = -5
+@bts_crisis_agenda_1_tech_finish = 0.80
+@bts_crisis_agenda_1_stability_finish = -10
+
+@bts_crisis_agenda_2_jobs_upkeep_base = -0.15
+@bts_crisis_agenda_2_stability_base = -5
+@bts_crisis_agenda_2_jobs_upkeep_finish = -0.60
+@bts_crisis_agenda_2_stability_finish = -10
+
+# Megastructure
+@bts_mega_aetherophasic_collapser_0_cost_energy = 500
+@bts_mega_aetherophasic_collapser_0_cost_alloys = 1000
+@bts_mega_aetherophasic_collapser_0_build_time = 1800
+
+@bts_mega_aetherophasic_collapser_1_cost_energy = 1000
+@bts_mega_aetherophasic_collapser_1_cost_alloys = 2000
+@bts_mega_aetherophasic_collapser_1_build_time = 1800
+
+@bts_mega_aetherophasic_collapser_2_cost_energy = 2000
+@bts_mega_aetherophasic_collapser_2_cost_astral_threads = 500
+@bts_mega_aetherophasic_collapser_2_build_time = 1800
+
+@bts_mega_aetherophasic_collapser_3_cost_energy = 2500
+@bts_mega_aetherophasic_collapser_3_cost_astral_threads = 1000
+@bts_mega_aetherophasic_collapser_3_build_time = 1800
+
+
+# Pacts
+@bts_elder_gods_project_days = 180
+@bts_crisis_pact_cooldown = 1800
+
+# Krahn’Gath
+@bts_crisis_pact_1_cost = 2
+@bts_crisis_pact_1_cost_delay = 360
+@bts_crisis_pact_1_duration = 1800
+@bts_crisis_pact_1_cloaking_detection = 10
+@bts_crisis_pact_1_ship_debuff_accuracy = -0.50
+@bts_crisis_pact_1_ship_debuff_fire_rate = -0.25
+@bts_crisis_pact_1_ship_debuff_speed_reduction = 0.35
+@bts_crisis_pact_1_stabase_debuff_no_cost_duration = 180
+
+# Omirkos
+@bts_crisis_pact_2_cost = 3
+@bts_crisis_pact_2_cost_delay = 360
+@bts_crisis_pact_2_duration = 1800
+@bts_crisis_pact_2_boon_cooldown = 360
+@bts_crisis_pact_2_curse_cooldown = 360
+@opinion_bts_crisis_pact_good_value = 100
+@opinion_bts_crisis_pact_bad_value = -100
+@opinion_bts_crisis_pact_fail_value = -250
+
+# Zyralea
+@bts_crisis_pact_3_cost = 4
+@bts_crisis_pact_3_cost_delay = 360
+@bts_crisis_pact_3_duration = 1800
+@bts_crisis_pact_3_natural_worlds_society = 5
+@bts_crisis_pact_3_natural_worlds_growth = 0.35
+@bts_crisis_pact_3_natural_worlds_produces = 1.50
+@bts_crisis_pact_3_natural_worlds_upkeep = -0.25
+@bts_crisis_pact_3_natural_worlds_happiness = 0.15
+
+# Uthal'Kaar
+@bts_crisis_pact_4_cost = 5
+@bts_crisis_pact_4_cost_delay = 360
+@bts_crisis_pact_4_duration = 1800
+@bts_crisis_pact_4_hostile_duration = 180
+@bts_crisis_pact_4_situation_duration_ocean_month = 12
+@bts_crisis_pact_4_situation_progress_lose = -6
+
+# Zhul’tharoth
+@bts_crisis_pact_5_cost = 6
+@bts_crisis_pact_5_cost_delay = 360
+@bts_crisis_pact_5_duration = 1800
+@bts_crisis_pact_5_respawn_delay = 360
+@bts_crisis_pact_5_control_delay = 30
+@bts_crisis_pact_5_control_ship_size_mult = 8
+@bts_crisis_pact_5_devastation_fail = 25
+@bts_crisis_pact_5_devastation_system = 2
