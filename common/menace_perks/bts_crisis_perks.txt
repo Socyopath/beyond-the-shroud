@@ -1,0 +1,166 @@
+# menp_name = {
+#	portrait = "GFX_crisis_1_perk_1"	# Icon that will be used to display the perk
+#	modifier = {						# static modifier added to the country for as long as they have the perk
+#		pop_purge_mult = 5.0
+#	}
+#	on_unlock = {						# Effect that will be executed when the country receives perk
+#		log = "Country [This.GetName] received menace perk 'menp_name'"
+#	}
+#	resources = {						# resources for the country that has the perk. Only upkeep and produces are hooked in
+#		category = menace_perks
+#		produces = {
+#			alloys = 1
+#		}
+#		upkeep = {
+#			energy = 1
+#		}
+#	}
+# }
+
+# Level 1
+bts_menp_mega = {
+	portrait = "GFX_crisis_icon_bts_mega"
+	on_unlock = {
+		custom_tooltip = bts_menp_mega_effect
+	}
+}
+
+bts_menp_building = {
+	portrait = "GFX_crisis_icon_bts_building"
+	on_unlock = {
+		custom_tooltip = bts_menp_building_effect
+	}
+}
+
+bts_menp_spy_op = {
+	portrait = "GFX_crisis_icon_bts_spy_op"
+	modifier = {
+		intel_decryption_add = 2
+		envoys_add = 1
+	}
+	on_unlock = {
+		custom_tooltip = bts_menp_spy_op_effect
+	}
+}
+
+# Level 2
+bts_menp_agendas = {
+	portrait = "GFX_crisis_icon_bts_agendas"
+	on_unlock = {
+		custom_tooltip = bts_menp_agendas_effect
+	}
+}
+
+bts_menp_cult_1 = {
+	portrait = "GFX_crisis_icon_bts_cult_1"
+	on_unlock = {
+		custom_tooltip = bts_menp_cult_1_effect
+		hidden_effect = {
+			change_government = {
+				cooldown = no
+				remove_invalid_civics = yes
+				civics = {
+					civic = bts_civic_council_ritual
+					civic = bts_civic_council_operation
+					civic = bts_civic_council_pact_locked
+				}
+			}
+		}
+	}
+}
+
+bts_menp_spec_rights = {
+	portrait = "GFX_crisis_icon_bts_spec_rights"
+	on_unlock = {
+		custom_tooltip = bts_menp_spec_rights_effect
+	}
+}
+
+# Level 3
+bts_menp_war_terror = {
+	portrait = "GFX_crisis_icon_bts_terror"
+	on_unlock = {
+		custom_tooltip = bts_menp_war_terror_effect
+	}
+}
+
+bts_menp_energy = {
+	portrait = "GFX_crisis_icon_bts_energy"
+	on_unlock = {
+		custom_tooltip = bts_menp_energy_effect
+	}
+}
+
+bts_menp_new_trait = {
+	portrait = "GFX_crisis_icon_bts_new_trait"
+	modifier = {
+		planet_stability_add = @bts_menp_new_trait_stability
+	}
+	on_unlock = {
+		custom_tooltip = bts_menp_new_trait_effect
+		owner_main_species = {
+			change_species_characteristics = {
+				remove_trait = bts_trait_crisis_main_1
+				add_trait = bts_trait_crisis_main_2
+			}
+		}
+	}
+}
+
+# Level 4
+bts_menp_old_ones = {
+	portrait = "GFX_crisis_icon_bts_old_ones"
+	on_unlock = {
+		custom_tooltip = bts_menp_old_ones_effect
+
+		hidden_effect = {
+			random_planet_within_border = {
+				limit = { is_planet_class = pc_bts_shroud_rift }
+				enable_special_project = { 
+					name = BTS_ELDER_GODS_PROJECT
+					owner = root
+					location = this
+				}
+			}
+		}
+	}
+}
+
+bts_menp_cult_2 = {
+	portrait = "GFX_crisis_icon_bts_cult_2"
+	on_unlock = {
+		custom_tooltip = bts_menp_cult_2_effect
+		hidden_effect = {
+			change_government = {
+				cooldown = no
+				remove_invalid_civics = yes
+				civics = {
+					civic = bts_civic_council_ritual
+					civic = bts_civic_council_operation
+					civic = bts_civic_council_pact
+				}
+			}
+		}
+	}
+}
+
+bts_menp_immortals = {
+	portrait = "GFX_crisis_icon_bts_immortals"
+	on_unlock = {
+		custom_tooltip = bts_menp_immortals_effect
+		owner_main_species = {
+			change_species_characteristics = {
+				immortal = yes
+			}
+		}
+	}
+}
+
+
+# Level 5
+bts_menp_outer_gods = {
+	portrait = "GFX_crisis_icon_bts_outer_gods"
+	on_unlock = {
+		custom_tooltip = bts_menp_outer_gods_effect
+	}
+}

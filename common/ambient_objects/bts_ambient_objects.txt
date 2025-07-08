@@ -1,20 +1,6 @@
 ambient_object = {
-	name = "bts_shroud_portal_1"
-	entity = "bts_shroud_portal_system_effect_1_entity"
-	selectable = no
-	show_name = no
-}
-
-ambient_object = {
-	name = "bts_shroud_portal_2"
-	entity = "bts_shroud_portal_system_effect_2_entity"
-	selectable = no
-	show_name = no
-}
-
-ambient_object = {
-	name = "bts_shroud_portal_3"
-	entity = "bts_shroud_portal_system_effect_3_entity"
+	name = "bts_aetherophasic_collapser_energy_effect"
+	entity = "bts_aetherophasic_collapser_energy_entity"
 	selectable = no
 	show_name = no
 }

@@ -1,0 +1,17 @@
+objectTypes = {
+		
+	pdxparticle = {
+		name = "bts_aetherophasic_collapser_energy_system_core_effect"
+		type = "bts_aetherophasic_collapser_energy_system_core_file"
+		
+		scale = 1
+	}
+
+	pdxparticle = {
+		name = "bts_shroud_rift_particle"
+		type = "bts_shroud_rift_file"
+		
+		scale = 1.0
+	}
+}
+
