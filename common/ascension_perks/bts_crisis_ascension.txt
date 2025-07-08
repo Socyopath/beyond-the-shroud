@@ -16,27 +16,27 @@ ap_bts_crisis = {
 
 	on_enabled = {	
 		custom_tooltip = ap_bts_crisis_effect
-		hidden_effect = {
-			clear_ethos = yes
-			country_add_ethic = "ethic_fanatic_spiritualist"
-			country_add_ethic = "ethic_authoritarian"
-			change_government = {
-				authority = auth_imperial
-				cooldown = no
-				remove_invalid_civics = yes
-				civics = {
-					civic = bts_civic_council_ritual_locked
-					civic = bts_civic_council_operation_locked
-					civic = bts_civic_council_pact_locked
-				}
-			}
-			set_government_cooldown = no
-			owner_main_species = {
-				# change_species_characteristics = {
-				# 	add_trait = bts_trait_crisis_main_1
-				# }
-			}
-		}
+		# hidden_effect = {
+		# 	clear_ethos = yes
+		# 	country_add_ethic = "ethic_fanatic_spiritualist"
+		# 	country_add_ethic = "ethic_authoritarian"
+		# 	change_government = {
+		# 		authority = auth_imperial
+		# 		cooldown = no
+		# 		remove_invalid_civics = yes
+		# 		civics = {
+		# 			civic = bts_civic_council_ritual_locked
+		# 			civic = bts_civic_council_operation_locked
+		# 			civic = bts_civic_council_pact_locked
+		# 		}
+		# 	}
+		# 	set_government_cooldown = no
+		# 	owner_main_species = {
+		# 		# change_species_characteristics = {
+		# 		# 	add_trait = bts_trait_crisis_main_1
+		# 		# }
+		# 	}
+		# }
 
 		activate_crisis_progression = bts_crisis_path
 

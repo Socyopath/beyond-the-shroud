@@ -12,15 +12,27 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { has_country_flag = bts_labyrinth_of_abstraction_unlocked }
+		NOR = { 
+			has_country_flag = bts_labyrinth_of_abstraction_unlocked
+			has_country_flag = bts_crisis_unlocked
+		}
 		bts_has_any_covenant_confirmed = yes
 		bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_of_abstraction_favor_cost }
 	}
 
 	option = {
-		name = OK
+		name = "bts.300.ok"
+		custom_tooltip = "bts.300.ok.desc"
 		hidden_effect = {
 			set_country_flag = bts_labyrinth_of_abstraction_unlocked
+		}
+	}
+
+	option = {
+		name = "bts.300.no"
+		custom_tooltip = "bts.300.no.desc"
+		hidden_effect = {
+			set_country_flag = bts_crisis_unlocked
 		}
 	}
 }

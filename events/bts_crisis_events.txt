@@ -1,0 +1,1442 @@
+namespace = bts
+
+# # bts.50X -> Crisis Global Events
+# # bts.51X -> Crisis Lvl 1 Events
+# # bts.52X -> Crisis Lvl 2 Events
+# # bts.53X -> Crisis Lvl 3 Events
+# # bts.54X -> Crisis Lvl 4 Events
+# # bts.55X -> Crisis Lvl 5 Events
+
+# # DEBUG : Gives Devoured Mind Pop
+# country_event = {
+# 	id = bts.5000
+# 	is_triggered_only = yes
+# 	hide_window = yes
+	
+# 	immediate = {
+# 		capital_scope = {
+# 			create_pop = {
+# 				species = root
+# 			}
+# 			last_created_pop = {
+# 				bts_effect_devour_mind = {
+# 					CASTER = root
+# 				}
+# 				bts_auto_resettle_thrall = {
+# 					CASTER = root
+# 				}
+# 			}
+# 		}
+# 	}
+# }
+
+# # DEBUG : Steal a pop
+# country_event = {
+# 	id = bts.5001
+# 	is_triggered_only = yes
+# 	hide_window = yes
+	
+# 	immediate = {
+# 		random_country = {
+# 			limit = {
+# 				NOT = {
+# 					is_same_value = root
+# 				}
+# 				any_owned_pop = {
+# 					is_robot_pop = no
+# 				}
+# 			}
+# 			random_owned_pop = {
+# 				limit = {
+# 					is_robot_pop = no
+# 					NOT = { 
+# 						has_trait = bts_trait_crisis_thrall
+# 					}
+# 				}
+# 				bts_effect_devour_mind = {
+# 					CASTER = root
+# 				}
+# 				bts_auto_resettle_thrall = {
+# 					CASTER = root
+# 				}
+# 			}
+# 		}
+# 	}
+# }
+
+# # DEBUG : Gives crisis currency
+# country_event = {
+# 	id = bts.5002
+# 	is_triggered_only = yes
+# 	hide_window = yes
+	
+# 	immediate = {
+# 		complete_crisis_objective = bts_crisis_obj_debug
+# 	}
+# }
+
+# # DEBUG : Establish communication with elder gods
+# country_event = {
+# 	id = bts.5003
+# 	is_triggered_only = yes
+# 	hide_window = yes
+	
+# 	immediate = {
+# 		if = {
+# 			limit = {
+# 				NOT = {
+# 					exists = event_target:bts_elder_gods_country
+# 				}
+# 			}
+# 			### SPAWN SPECIAL COUNTRIES
+# 			create_country = {
+# 				name = bts_elder_gods_country_name
+# 				type = bts_elder_gods
+# 				flag = {
+# 					icon = {
+# 						category = "special"
+# 						file = "the_shroud.dds"
+# 					}
+# 					background= {
+# 						category = "backgrounds"
+# 						file = "00_solid.dds"
+# 					}
+# 					colors={
+# 						"red"
+# 						"black"
+# 						"null"
+# 						"null"
+# 					}
+# 				}
+# 				effect = {
+# 					save_global_event_target_as = bts_elder_gods_country
+# 				}
+# 			}
+# 		}
+
+# 		establish_communications_no_message = event_target:bts_elder_gods_country
+# 	}
+# }
+
+# # Auto resetlle thralls (monthly)
+# country_event = {
+# 	id = bts.501
+# 	is_triggered_only = yes
+# 	hide_window = yes
+# 	trigger = {
+# 		any_owned_planet = {
+# 			free_jobs_of_type = {
+# 				job = bts_crisis_sacrifical_thrall
+# 				value >= 1
+# 			}
+# 		}
+# 	}
+
+# 	immediate = {
+# 		every_owned_pop = {
+# 			limit = {
+# 				has_trait = bts_trait_crisis_thrall
+# 				NOT = { has_job = bts_crisis_sacrifical_thrall }
+# 			}
+# 			bts_auto_resettle_thrall = {
+# 				CASTER = root
+# 			}
+# 		}
+# 	}
+# }
+
+# # Ritual: Mindset Shift
+# country_event = {
+# 	id = bts.502
+# 	picture = GFX_evt_alien_abduction
+# 	title = bts_ritual_reset_leader
+# 	desc = bts_ritual_reset_leader_effects
+
+# 	is_triggered_only = yes
+
+# 	immediate = {
+# 		bts_event_target_list_clear = yes
+# 		every_owned_leader = {
+# 			limit = {
+# 				has_skill > 1
+# 			}
+# 			bts_event_target_list_save = yes
+# 		}
+# 	}
+
+# 	inline_script = {
+# 		script = bts_option_list_hidden
+# 		ACTION = "leader_event = { id = bts.503 }"
+# 	}
+
+# 	option = {
+# 		name = OK
+# 		default_hide_option = yes
+# 	}
+# }
+
+# leader_event = {
+# 	id = bts.503
+# 	picture = GFX_evt_alien_abduction
+# 	title = bts_ritual_reset_leader
+# 	desc = bts_ritual_reset_leader_choose_spec
+
+# 	is_triggered_only = yes
+
+# 	option = {
+# 		name = official_with_icon
+# 		hidden_effect = {
+# 			bts_reset_leader = { CLASS = official }
+# 		}
+# 	} 
+	
+# 	option = {
+# 		name = commander_with_icon
+# 		hidden_effect = {
+# 			bts_reset_leader = { CLASS = commander }
+# 		}
+# 	}
+
+# 	option = {
+# 		name = scientist_with_icon
+# 		hidden_effect = {
+# 			bts_reset_leader = { CLASS = scientist }
+# 		}
+# 	}
+# }
+
+# # Create Game Country
+# country_event = {
+# 	id = bts.504
+# 	is_triggered_only = yes
+# 	hide_window = yes
+
+# 	immediate = {
+# 		create_country = {
+# 			name = "NAME_Creatures_of_the_Shroud"
+# 			type = shroud_spirits
+# 			flag = {
+# 				icon = {
+# 					category = "special"
+# 					file = "the_shroud.dds"
+# 				}
+# 				background= {
+# 					category = "backgrounds"
+# 					file = "00_solid.dds"
+# 				}
+# 				colors={
+# 					"dark_purple"
+# 					"black"
+# 					"null"
+# 					"null"
+# 				}
+# 			}
+# 		}
+# 		last_created_country = {
+# 			establish_communications_no_message = root
+# 			save_global_event_target_as = bts_shroud_rift_creatures
+# 		}
+# 	}
+# }
+
+# # Kill a fleet
+# fleet_event = {
+# 	id = bts.505
+# 	hide_window = yes
+
+# 	is_triggered_only = yes
+
+# 	immediate = {
+# 		destroy_fleet = this
+# 	}
+# }
+
+# # this = operation; from = target (country)
+# espionage_operation_event = {
+# 	id = bts.513
+# 	title = operation_bts_crisis_devour_mind_event_title
+# 	desc = operation_bts_crisis_devour_mind_event_desc
+
+# 	picture = GFX_evt_alien_abduction
+# 	show_sound = event_espionage_concluded
+# 	espionage_operation = yes
+# 	is_triggered_only = yes
+
+# 	trigger = {
+# 		exists = from
+# 	}
+
+# 	option = {
+# 		name = OK
+
+# 		from = {
+# 			random_owned_pop = {
+# 				limit = {
+# 					is_robot_pop = no
+# 					NOT = { 
+# 						has_trait = bts_trait_crisis_thrall
+# 					}
+# 				}
+# 				custom_tooltip = operation_bts_crisis_devour_mind_tooltip_effect
+# 				hidden_effect = {
+# 					bts_effect_devour_mind = {
+# 						CASTER = root.owner
+# 					}
+# 					bts_auto_resettle_thrall = {
+# 						CASTER = root.owner
+# 					}
+# 				}
+				
+# 			}
+# 		}
+
+# 		if = {
+# 			limit = {
+# 				owner = {
+# 					bts_can_use_councilor_power = { COUNCILOR = bts_crisis_councilor_operation }
+# 				}
+# 			}
+# 			from = {
+# 				random_owned_pop = {
+# 					limit = {
+# 						is_robot_pop = no
+# 						NOT = { 
+# 							has_trait = bts_trait_crisis_thrall
+# 						}
+# 					}
+# 					custom_tooltip = operation_bts_crisis_devour_mind_tooltip_effect
+# 					hidden_effect = {
+# 						bts_effect_devour_mind = {
+# 							CASTER = root.owner
+# 						}
+# 						bts_auto_resettle_thrall = {
+# 							CASTER = root.owner
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+		
+# 	}
+
+# 	after = {
+# 		spynetwork = {
+# 			add_spy_network_level_on_success_effect = { VALUE = -5 }
+# 		}
+# 		destroy_espionage_operation = this
+# 	}
+# }
+
+# # Devour Mind species rights
+# country_event = {
+# 	id = bts.523
+# 	hide_window = yes
+# 	is_triggered_only = yes
+
+# 	trigger = {
+# 		any_owned_species = {
+# 			has_citizenship_type = {
+# 				type = citizenship_bts_crisis
+# 				country = root
+# 			}
+# 		}
+# 	}
+
+# 	immediate = {
+# 		random_list = {
+# 			1 = { # 3 pops
+# 				while = {
+# 					count = 3
+# 					random_owned_pop = {
+# 						limit = {
+# 							has_citizenship_type = {
+# 								type = citizenship_bts_crisis
+# 								country = root
+# 							}
+# 						}
+# 						bts_effect_devour_mind = { 
+# 							CASTER = root
+# 						}
+# 						bts_auto_resettle_thrall = {
+# 							CASTER = root
+# 						}
+# 					}
+# 				}
+# 			}
+
+# 			1 = { # 6 pops
+# 				while = {
+# 					count = 6
+# 					random_owned_pop = {
+# 						limit = {
+# 							has_citizenship_type = {
+# 								type = citizenship_bts_crisis
+# 								country = root
+# 							}
+# 						}
+# 						bts_effect_devour_mind = { 
+# 							CASTER = root
+# 						}
+# 						bts_auto_resettle_thrall = {
+# 							CASTER = root
+# 						}
+# 					}
+# 				}
+# 			}
+
+# 			1 = { # 12 pops
+# 				while = {
+# 					count = 12
+# 					random_owned_pop = {
+# 						limit = {
+# 							has_citizenship_type = {
+# 								type = citizenship_bts_crisis
+# 								country = root
+# 							}
+# 						}
+# 						bts_effect_devour_mind = { 
+# 							CASTER = root
+# 						}
+# 						bts_auto_resettle_thrall = {
+# 							CASTER = root
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+# }
+
+# country_event = {
+# 	id = bts.5400
+# 	title = bts.5400.name
+# 	desc = bts.5400.desc
+
+# 	is_triggered_only = yes
+# 	diplomatic = yes
+# 	custom_gui = "bts_elder_gods_window"
+# 	custom_gui_option = "bts_elder_gods_option"
+# 	picture_event_data = {
+# 		room = no_video_feed_room
+# 	}
+
+# 	option = {
+# 		name = bts.5400.option
+# 		default_hide_option = yes
+# 	}
+# }
+
+# # This = target country (player)
+# # From = source country
+# country_event = {
+# 	id = bts.540
+# 	title = "bts.540.name"
+# 	desc = bts.540.desc
+# 	is_triggered_only = yes
+
+# 	force_open = yes
+# 	diplomatic = yes
+# 	custom_gui = "bts_elder_gods_window"
+# 	custom_gui_option = "bts_elder_gods_option"
+# 	picture_event_data = {
+# 		portrait = par_renown_15
+# 		room = shroud_room
+# 	}
+
+# 	trigger = {
+# 		from = { is_country_type = bts_elder_gods }
+# 		NOT = { has_country_flag = bts_elder_gods_diplomacy_engaged } 
+# 	}
+
+# 	immediate = {
+# 		set_country_flag = bts_elder_gods_diplomacy_engaged
+# 	}
+
+# 	after = {
+# 		hidden_effect = {
+# 			remove_country_flag = bts_elder_gods_diplomacy_engaged
+# 		}
+# 	}
+
+# 	option = {
+# 		name =  bts.540.option.1
+# 		is_dialog_only = yes
+# 		response_text = bts.540.resp.1
+# 	}
+
+# 	option = {
+# 		name =  bts.540.option.2
+# 		is_dialog_only = yes
+# 		response_text = bts.540.resp.2
+# 	}
+
+# 	option = {
+# 		name =  bts.540.option.3
+# 		is_dialog_only = yes
+# 		response_text = bts.540.resp.3
+# 	}
+
+# 	option = {
+# 		name = bts.540.option.4
+# 		custom_tooltip = bts.540.option.4.desc
+# 		allow = {
+# 			NOT = {
+# 				has_modifier = bts_crisis_pact_cooldown
+# 			}
+# 			if = {
+# 				limit = { bts_can_use_councilor_ultimate_power = { COUNCILOR = bts_crisis_councilor_pact } }
+# 				custom_tooltip = {
+# 					fail_text = bts_crisis_pact_only_2
+# 					check_variable = {
+# 						which = bts_crisis_pact_count
+# 						value < 2
+# 					}
+# 				}
+# 			}
+# 			else = {
+# 				custom_tooltip = {
+# 					fail_text = bts_crisis_pact_only_1
+# 					check_variable = {
+# 						which = bts_crisis_pact_count
+# 						value < 1
+# 					}
+# 				}
+# 			}
+# 		}
+# 		add_modifier = {
+# 			modifier = bts_crisis_pact_cooldown
+# 			days = @bts_crisis_pact_cooldown
+# 			time_multiplier = value:scripted_modifier_mult|MODIFIER|bts_crisis_pact_cooldown_mult|
+# 		}
+# 		hidden_effect = {
+# 			random_list = {
+# 				1 = {
+# 					modifier = {
+# 						factor = 0
+# 						has_modifier = bts_crisis_pact_1
+# 					}
+# 					country_event = { id = bts.541 days = 1 }
+# 				}
+# 				1 = {
+# 					modifier = {
+# 						factor = 0
+# 						has_modifier = bts_crisis_pact_2
+# 					}
+# 					country_event = { id = bts.542 days = 1 }
+# 				}
+# 				1 = {
+# 					modifier = {
+# 						factor = 0
+# 						has_modifier = bts_crisis_pact_3
+# 					}
+# 					country_event = { id = bts.543 days = 1 }
+# 				}
+# 				1 = {
+# 					modifier = {
+# 						factor = 0
+# 						has_modifier = bts_crisis_pact_4
+# 					}
+# 					country_event = { id = bts.544 days = 1 }
+# 				}
+# 				1 = {
+# 					modifier = {
+# 						factor = 0
+# 						has_modifier = bts_crisis_pact_5
+# 					}
+# 					country_event = { id = bts.545 days = 1 }
+# 				}
+# 			}
+# 		}
+# 	}
+
+# 	option = {
+# 		trigger = {
+# 			has_modifier = bts_crisis_pact_2
+# 		}
+# 		name = bts.5422.menu.option.title
+# 		custom_tooltip = bts.5422.menu.option.desc
+# 		hidden_effect = {
+# 			country_event = {
+# 				id = bts.5422
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		name = EXIT
+# 		default_hide_option = yes
+# 	}
+# }
+
+# # Elder God 1 : Krahn’Gath
+# inline_script = {
+#     script = bts_crisis_pact_event_end
+#     EVENT_ID = bts.541
+#     ROOM = bts_gods_1_room
+#     PACT = bts_crisis_pact_1
+# 	EVENT_NO_COST_ID = bts.5411
+#     EVENT_END_ID = bts.5412
+# }
+# country_event = {
+# 	id = bts.5411
+# 	hide_window = yes
+# 	is_triggered_only = yes
+
+# 	immediate = {
+# 		every_owned_starbase = {
+# 			fleet = {
+# 				add_modifier = {
+# 					modifier = bts_crisis_pact_1_stabase_debuff_no_cost
+# 					days = @bts_crisis_pact_1_stabase_debuff_no_cost_duration
+# 				}
+# 			}
+# 		}
+# 	}
+# }
+# country_event = {
+# 	id = bts.5412
+# 	hide_window = yes
+# 	is_triggered_only = yes
+# 	immediate = {
+# 		every_owned_starbase = {
+# 			limit = {
+# 				fleet = {
+# 					has_modifier =  bts_crisis_pact_1_stabase_debuff_no_cost	
+# 				}
+# 			}
+# 			fleet = {
+# 				remove_modifier = bts_crisis_pact_1_stabase_debuff_no_cost
+# 			}
+# 		}
+# 		every_system_within_border = {
+# 			every_ship_in_system = {
+# 				limit = {
+# 					has_modifier =  bts_crisis_pact_1_ship_debuff	
+# 				}
+# 				remove_modifier = bts_crisis_pact_1_ship_debuff
+# 			}
+# 		}
+# 	}
+# }
+# ship_event = {
+# 	id = bts.5413
+# 	hide_window = yes
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		OR = {
+# 			AND = { # System owner hasn't pact and ship has debuff
+# 				has_modifier = bts_crisis_pact_1_ship_debuff
+# 				OR = {
+# 					NOT = { exists = from.owner }
+# 					from.owner = {
+# 						NOT = { has_modifier = bts_crisis_pact_1 }
+# 					}
+# 				}
+# 			}
+
+# 			AND = { # System owner has pact and ship has no debuff
+# 				NOT = { has_modifier = bts_crisis_pact_1_ship_debuff } 
+# 				exists = from.owner
+# 				from.owner = {
+# 					NOT = { is_same_value = root.owner }
+# 					has_modifier = bts_crisis_pact_1
+# 				}
+# 			}
+			
+# 		}
+# 	}
+# 	immediate = {
+# 		if = {
+# 			limit = {
+# 				has_modifier = bts_crisis_pact_1_ship_debuff
+# 			}
+# 			remove_modifier = bts_crisis_pact_1_ship_debuff
+# 		}
+# 		else = {
+# 			add_modifier = {
+# 				modifier = bts_crisis_pact_1_ship_debuff
+# 				days = -1
+# 			}
+# 		}
+# 	}
+# }
+
+# # Elder God 2 : Omirkos
+# inline_script = {
+#     script = bts_crisis_pact_event
+#     EVENT_ID = bts.542
+#     ROOM = bts_gods_2_room
+#     PACT = bts_crisis_pact_2
+# 	EVENT_NO_COST_ID = bts.5421
+# }
+# country_event = {
+# 	id = bts.5421
+# 	hide_window = yes
+# 	is_triggered_only = yes
+
+# 	immediate = {
+# 		every_playable_country = {
+# 			limit = {
+# 				NOT = { is_same_value = root }
+# 			}
+# 			add_opinion_modifier = { modifier = opinion_bts_crisis_pact_fail who = root }
+# 		}
+# 	}
+# }
+# country_event = {
+# 	id = bts.5422
+# 	title = bts.542.name
+# 	desc = bts.542.desc
+# 	is_triggered_only = yes
+
+# 	force_open = yes
+# 	diplomatic = yes
+# 	show_sound = event_screams
+# 	custom_gui = "bts_elder_gods_window"
+# 	custom_gui_option = "bts_elder_gods_option"
+# 	picture_event_data = {
+# 		room = bts_gods_2_room
+# 	}
+
+# 	option = {
+# 		name = bts.5422.menu.boon
+# 		custom_tooltip = bts.5422.menu.boon.tooltip
+# 		allow = {
+# 			custom_tooltip = {
+# 				fail_text = bts.5422.menu.boon.cooldown
+# 				NOT = { has_country_flag = bts_crisis_pact_2_boon_cooldown }
+# 			}
+# 		}
+# 		hidden_effect = {
+# 			country_event = { id = bts.5423 }
+# 		}
+# 	}
+
+# 	option = {
+# 		name = bts.5422.menu.curse
+# 		custom_tooltip = bts.5422.menu.curse.tooltip
+# 		allow = {
+# 			custom_tooltip = {
+# 				fail_text = bts.5422.menu.curse.cooldown
+# 				NOT = { has_country_flag = bts_crisis_pact_2_curse_cooldown }
+# 			}
+# 		}
+# 		hidden_effect = {
+# 			country_event = { id = bts.5424 }
+# 		}
+# 	}
+
+# 	option = {
+# 		name = EXIT
+# 		default_hide_option = yes
+# 	}
+# }
+# country_event = {
+# 	id = bts.5423
+# 	title = bts.542.name
+# 	desc = bts.542.desc
+# 	is_triggered_only = yes
+
+# 	force_open = yes
+# 	diplomatic = yes
+# 	show_sound = event_screams
+# 	custom_gui = "bts_elder_gods_window"
+# 	custom_gui_option = "bts_elder_gods_option"
+# 	picture_event_data = {
+# 		room = bts_gods_2_room
+# 	}
+# 	immediate = {
+# 		bts_event_target_list_clear = yes
+# 		every_playable_country = {
+# 			bts_event_target_list_save = yes
+# 		}
+# 	}
+# 	inline_script = {
+# 		script = bts_option_list_hidden
+# 		ACTION = "every_playable_country = { limit = { NOT = { is_same_value = root } } add_opinion_modifier = { modifier = opinion_bts_crisis_pact_good who = prev } }"
+# 	}
+
+# 	after = {
+# 		set_saved_date = {
+# 			key = bts_crisis_pact_2_boon_cooldown
+# 			days_from_present = @bts_crisis_pact_2_boon_cooldown
+# 			expires = @bts_crisis_pact_2_boon_cooldown
+# 		}
+# 	}
+# }
+# country_event = {
+# 	id = bts.5424
+# 	title = bts.542.name
+# 	desc = bts.542.desc
+# 	is_triggered_only = yes
+
+# 	force_open = yes
+# 	diplomatic = yes
+# 	show_sound = event_screams
+# 	custom_gui = "bts_elder_gods_window"
+# 	custom_gui_option = "bts_elder_gods_option"
+# 	picture_event_data = {
+# 		room = bts_gods_2_room
+# 	}
+# 	immediate = {
+# 		bts_event_target_list_clear = yes
+# 		every_playable_country = {
+# 			bts_event_target_list_save = yes
+# 		}
+# 	}
+# 	inline_script = {
+# 		script = bts_option_list_hidden
+# 		ACTION = "every_playable_country = { limit = { NOT = { is_same_value = root } } add_opinion_modifier = { modifier = opinion_bts_crisis_pact_bad who = prev } }"
+# 	}
+
+# 	after = {
+# 		set_saved_date = {
+# 			key = bts_crisis_pact_2_curse_cooldown
+# 			days_from_present = @bts_crisis_pact_2_curse_cooldown
+# 			expires = @bts_crisis_pact_2_curse_cooldown
+# 		}
+# 	}
+# }
+
+# # Elder God 3 : Zyralea
+# inline_script = {
+#     script = bts_crisis_pact_event_all
+#     EVENT_ID = bts.543
+#     ROOM = bts_gods_3_room
+#     PACT = bts_crisis_pact_3
+# 	EVENT_NO_COST_ID = bts.5431
+#     EVENT_START_ID = bts.5432
+#     EVENT_END_ID = bts.5433
+	
+# }
+# country_event = {
+# 	id = bts.5431
+# 	hide_window = yes
+# 	is_triggered_only = yes
+
+# 	immediate = {
+# 		every_owned_planet = {
+# 			limit = {
+# 				habitable_planet_not_urban = yes
+# 			}
+# 			if = {
+# 				limit = {
+# 					is_dry = yes
+# 				}
+# 				random_list = {
+# 					1 = {
+# 						add_deposit = d_deep_sinkhole
+
+# 					}
+# 					1 = {
+# 						add_deposit = d_quicksand_basin
+# 					}
+# 					1 = {
+# 						add_deposit = d_active_volcano
+# 					}
+# 					1 = {
+# 						add_deposit = d_mountain_range
+# 					}
+# 					1 = {
+# 						add_deposit = d_dangerous_wildlife_blocker
+# 					}
+# 				}
+# 			}
+# 			else_if = {
+# 				limit = {
+# 					is_wet = yes
+# 				}
+# 				random_list = {
+# 					1 = {
+# 						add_deposit = d_dense_jungle
+# 					}
+# 					1 = {
+# 						add_deposit = d_toxic_kelp
+# 					}
+# 					1 = {
+# 						add_deposit = d_active_volcano
+# 					}
+# 					1 = {
+# 						add_deposit = d_mountain_range
+# 					}
+# 					1 = {
+# 						add_deposit = d_dangerous_wildlife_blocker
+# 					}
+# 				}
+# 			}
+# 			else_if = {
+# 				limit = {
+# 					is_cold = yes
+# 				}
+# 				random_list = {
+# 					1 = {
+# 						add_deposit = d_noxious_swamp
+# 					}
+# 					1 = {
+# 						add_deposit = d_massive_glacier
+# 					}
+# 					1 = {
+# 						add_deposit = d_active_volcano
+# 					}
+# 					1 = {
+# 						add_deposit = d_mountain_range
+# 					}
+# 					1 = {
+# 						add_deposit = d_dangerous_wildlife_blocker
+# 					}
+# 				}
+# 			}
+# 			else = {
+# 				add_deposit = d_dense_jungle
+# 			}
+# 		}	
+# 	}
+# }
+# country_event = {
+# 	id = bts.5432
+# 	hide_window = yes
+# 	is_triggered_only = yes
+
+# 	trigger = {
+# 		has_modifier = bts_crisis_pact_3
+# 	}
+
+# 	immediate = {
+# 		every_owned_planet = {
+# 			limit = {
+# 				habitable_planet_not_urban = yes
+# 				NOT = { has_modifier = bts_crisis_pact_3_natural_worlds }
+# 			}
+# 			if = {
+# 				limit = { is_planet_class = pc_gaia }
+# 				add_modifier = {
+# 					modifier = bts_crisis_pact_3_natural_worlds
+# 					multiplier = 2
+# 					days = -1
+# 				}
+# 			}
+# 			else = {
+# 				add_modifier = {
+# 					modifier = bts_crisis_pact_3_natural_worlds
+# 					days = -1
+# 				}
+# 			}
+# 		}
+# 	}
+# }
+# country_event = {
+# 	id = bts.5433
+# 	hide_window = yes
+# 	is_triggered_only = yes
+# 	immediate = {
+# 		every_planet_within_border = {
+# 			limit = {
+# 				has_modifier = bts_crisis_pact_3_natural_worlds
+# 			}
+# 			remove_modifier = bts_crisis_pact_3_natural_worlds
+# 		}
+# 	}
+# }
+
+# # Elder God 4 : Uthal'Kaar
+# inline_script = {
+#     script = bts_crisis_pact_event_end
+#     EVENT_ID = bts.544
+#     ROOM = bts_gods_4_room
+#     PACT = bts_crisis_pact_4
+# 	EVENT_NO_COST_ID = bts.5441
+# 	EVENT_END_ID = bts.5442
+# }
+# country_event = {
+# 	id = bts.5441
+# 	hide_window = yes
+# 	is_triggered_only = yes
+
+# 	trigger = {
+# 		OR = {
+# 			any_owned_ship = {
+# 				has_ship_flag = bts_pact_4_god_@root
+# 			}
+# 			any_situation = {
+# 				is_situation_type = situation_bts_crisis_pact_4_convert
+# 			}
+# 		}
+# 	}
+# 	immediate = {
+# 		every_situation = { 
+# 			limit = { 
+# 				is_situation_type = situation_bts_crisis_pact_4_convert
+# 			} 
+# 			add_situation_progress = @bts_crisis_pact_4_situation_progress_lose
+# 		}
+# 		random_owned_ship = {
+# 			limit = {
+# 				has_ship_flag = bts_pact_4_god_@root
+# 			}
+# 			fleet = {
+# 				set_owner = event_target:bts_elder_gods_country
+# 				set_fleet_stance = aggressive
+# 				root = {
+# 					country_event = {
+# 						id = bts.5443
+# 						days = @bts_crisis_pact_4_hostile_duration
+# 						scopes = {
+# 							from = prev
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+# }
+# country_event = {
+# 	id = bts.5442
+# 	hide_window = yes
+# 	is_triggered_only = yes
+# 	immediate = {
+# 		every_system = {
+# 			every_system_planet = {
+# 				limit = {
+# 					has_planet_flag = leviathan_summoned_by_@root
+# 				}
+# 				remove_planet_flag = leviathan_summoned_by_@root
+# 			}
+# 			every_ship_in_system = { 
+# 				limit = { 
+# 					has_ship_flag = bts_pact_4_god_@root 
+# 				} 
+# 				destroy_ship = this
+# 			}
+# 		}
+# 	}
+# }
+# country_event = {
+# 	id = bts.5443
+# 	hide_window = yes
+# 	is_triggered_only = yes
+
+# 	trigger = {
+# 		exists = from
+# 		from = { 
+# 			is_scope_type = fleet
+# 		}
+# 	}
+
+# 	immediate = {
+# 		from = {
+# 			set_owner = root
+# 		}
+# 	}
+# }
+
+# # Elder God 5 : Zhul’tharoth
+# inline_script = {
+#     script = bts_crisis_pact_event_all
+#     EVENT_ID = bts.545
+#     ROOM = bts_gods_5_room
+#     PACT = bts_crisis_pact_5
+# 	EVENT_NO_COST_ID = bts.5451
+# 	EVENT_START_ID = bts.5452
+# 	EVENT_END_ID = bts.5453
+# }
+# country_event = {
+# 	id = bts.5451
+# 	hide_window = yes
+# 	is_triggered_only = yes
+# 	immediate = {
+# 		every_owned_planet = {
+# 			limit = {
+# 				is_colony = yes
+# 			}
+# 			add_planet_devastation = @bts_crisis_pact_5_devastation_fail
+# 		}
+# 	}
+# }
+# country_event = {
+# 	id = bts.5452
+# 	hide_window = yes
+# 	is_triggered_only = yes
+
+# 	immediate = {
+# 		create_fleet = {
+#             name = bts_crisis_dreamlike_fleet_name
+#             settings = {
+#                 can_upgrade = no
+# 				can_change_composition = no
+# 				can_change_leader = no
+# 				uses_naval_capacity = no
+# 				spawn_debris = no
+#                 is_boss = yes
+#             }
+#             effect = {
+#                 set_owner = root.owner
+#                 create_ship = {
+#                     name = bts_crisis_dreamlike_ship_name
+#                     design = "bts_crisis_dreamlike_design"
+# 					effect = {
+# 						set_ship_flag = bts_crisis_dreamlike_ship_effect_ready
+# 					}
+#                 }
+#                 set_location = {
+#                     target = root.capital_scope
+#                 }
+#             }
+#         }
+# 	}
+# }
+# country_event = {
+# 	id = bts.5453
+# 	hide_window = yes
+# 	is_triggered_only = yes
+
+# 	trigger = {
+# 		any_owned_ship = {
+# 			is_ship_size = bts_crisis_dreamlike_ship
+# 		}
+# 	}
+
+# 	immediate = {
+# 		every_owned_ship = {
+# 			limit = { is_ship_size = bts_crisis_dreamlike_ship }
+# 			destroy_ship = this
+# 		}
+# 	}
+# }
+# country_event = {
+# 	id = bts.5454
+# 	hide_window = yes
+# 	is_triggered_only = yes
+
+# 	trigger = {
+# 		has_modifier = bts_crisis_pact_5
+# 		any_owned_ship = {
+# 			is_ship_size = bts_crisis_dreamlike_ship
+# 			solar_system = {
+# 				OR = {
+# 					NOT = { exists = owner }
+# 					AND = {
+# 						exists = owner
+# 						owner = { NOT = { is_same_value = root } }
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+
+# 	immediate = {
+# 		random_owned_ship = {
+# 			limit = { is_ship_size = bts_crisis_dreamlike_ship }
+# 			fleet.solar_system = {
+# 				every_system_colony = {
+# 					add_planet_devastation = @bts_crisis_pact_5_devastation_system
+# 				}
+# 			}
+# 		}
+# 	}
+# }
+# country_event = {
+# 	id = bts.5455
+# 	hide_window = yes
+# 	is_triggered_only = yes
+
+# 	trigger = {
+# 		fromfrom = {
+# 			is_ship_size = bts_crisis_dreamlike_ship
+# 		}
+# 		has_country_flag = bts_crisis_pact_5
+# 		timed_flag_days_left = { 
+# 			flag = bts_crisis_pact_5 
+# 			value > @bts_crisis_pact_5_respawn_delay 
+# 		}
+# 	}
+
+# 	immediate = {
+# 		country_event = {
+# 			id = bts.5452
+# 			days = @bts_crisis_pact_5_respawn_delay 
+# 		}
+# 	}
+# }
+# country_event = {
+# 	id = bts.5456
+# 	hide_window = yes
+# 	is_triggered_only = yes
+
+# 	trigger = {
+# 		from = {
+# 			is_ship_size = bts_crisis_dreamlike_ship
+# 		}
+# 		has_modifier = bts_crisis_pact_5
+# 	}
+
+# 	immediate = {
+# 		country_event = {
+# 			id = bts.5452
+# 		}
+# 	}
+# }
+
+# ship_event = {
+# 	id = bts.5457
+# 	hide_window = yes
+# 	mean_time_to_happen = { days = 1 }
+# 	trigger = {
+# 		is_ship_size = bts_crisis_dreamlike_ship
+# 		is_in_combat = yes
+# 		has_ship_flag = bts_crisis_dreamlike_ship_effect_ready
+# 	}
+
+# 	immediate = {
+# 		remove_ship_flag = bts_crisis_dreamlike_ship_effect_ready
+# 		set_ship_flag = bts_crisis_dreamlike_ship_effect_running
+# 		ship_event = {
+# 			id = bts.5458
+# 			days = @bts_crisis_pact_5_control_delay
+# 		}
+# 	}
+# }
+
+# ship_event = {
+# 	id = bts.5458
+# 	hide_window = yes
+# 	is_triggered_only = yes
+
+# 	trigger = {
+# 		is_ship_size = bts_crisis_dreamlike_ship
+# 		has_ship_flag = bts_crisis_dreamlike_ship_effect_running 
+# 	}
+
+# 	immediate = {
+# 		if = {
+# 			limit = { is_in_combat = yes }
+# 			fleet = {
+# 				random_combatant_fleet = {
+# 					limit = { any_owned_ship = { ship_size_multiplier < @bts_crisis_pact_5_control_ship_size_mult } }
+# 					random_owned_ship = {
+# 						limit = { ship_size_multiplier < @bts_crisis_pact_5_control_ship_size_mult }
+# 						create_fleet = {
+# 							name = fleet
+# 							effect = {
+# 								set_owner = root.owner
+# 								set_location = prev.fleet
+# 								create_ship = {
+# 									name = random
+# 									design = prev
+# 									graphical_culture = prev
+# 									graphical_culture_fallback = prev.controller
+# 									upgradable = no
+# 								}
+# 							}
+# 						}
+# 						delete_ship = this
+# 					}
+# 				}
+# 			}
+# 			ship_event = {
+# 				id = bts.5458
+# 				days = @bts_crisis_pact_5_control_delay
+# 			}
+# 		}
+# 		else = {
+# 			remove_ship_flag = bts_crisis_dreamlike_ship_effect_running
+# 			set_ship_flag = bts_crisis_dreamlike_ship_effect_ready
+# 		}
+# 	}
+# }
+
+# # This = target country (player)
+# # From = source country
+# country_event = {
+# 	id = bts.550
+# 	title = "bts.550.name"
+# 	desc = bts.550.desc
+# 	is_triggered_only = yes
+
+# 	force_open = yes
+# 	diplomatic = yes
+# 	custom_gui = "bts_elder_gods_window"
+# 	custom_gui_option = "bts_elder_gods_option"
+# 	show_sound = voidspawn_death
+# 	picture_event_data = {
+# 		room = bts_crisis_elder_gods_extra_room
+# 	}
+
+# 	trigger = {
+# 		from = { is_country_type = bts_elder_gods }
+# 		NOT = { has_country_flag = bts_elder_gods_diplomacy_engaged } 
+# 		has_country_flag = bts_crisis_outer_gods
+# 	}
+
+# 	immediate = {
+# 		set_country_flag = bts_elder_gods_diplomacy_engaged
+# 	}
+
+# 	after = {
+# 		hidden_effect = {
+# 			remove_country_flag = bts_elder_gods_diplomacy_engaged
+# 		}
+# 	}
+
+# 	option = {
+# 		name =  bts.550.option.1
+# 		is_dialog_only = yes
+# 		response_text = bts.550.resp.1
+# 	}
+
+# 	option = {
+# 		name =  bts.550.option.2
+# 		is_dialog_only = yes
+# 		response_text = bts.550.resp.2
+# 	}
+
+# 	option = {
+# 		name =  bts.550.option.3
+# 		is_dialog_only = yes
+# 		response_text = bts.550.resp.3
+# 	}
+
+# 	option = {
+# 		name = bts.550.option.4
+# 		custom_tooltip = bts.550.option.4.desc
+# 		allow = {
+# 			NOT = {
+# 				has_modifier = bts_crisis_pact_cooldown
+# 			}
+# 			if = {
+# 				limit = { bts_can_use_councilor_ultimate_power = { COUNCILOR = bts_crisis_councilor_pact } }
+# 				custom_tooltip = {
+# 					fail_text = bts_crisis_pact_only_2
+# 					check_variable = {
+# 						which = bts_crisis_pact_count
+# 						value < 2
+# 					}
+# 				}
+# 			}
+# 			else = {
+# 				custom_tooltip = {
+# 					fail_text = bts_crisis_pact_only_1
+# 					check_variable = {
+# 						which = bts_crisis_pact_count
+# 						value < 1
+# 					}
+# 				}
+# 			}
+# 		}
+# 		add_modifier = {
+# 			modifier = bts_crisis_pact_cooldown
+# 			days = @bts_crisis_pact_cooldown
+# 			time_multiplier = value:scripted_modifier_mult|MODIFIER|bts_crisis_pact_cooldown_mult|
+# 		}
+# 		hidden_effect = {
+# 			random_list = {
+# 				1 = {
+# 					modifier = {
+# 						factor = 0
+# 						has_modifier = bts_crisis_pact_1
+# 					}
+# 					country_event = { id = bts.541 days = 1 }
+# 				}
+# 				1 = {
+# 					modifier = {
+# 						factor = 0
+# 						has_modifier = bts_crisis_pact_2
+# 					}
+# 					country_event = { id = bts.542 days = 1 }
+# 				}
+# 				1 = {
+# 					modifier = {
+# 						factor = 0
+# 						has_modifier = bts_crisis_pact_3
+# 					}
+# 					country_event = { id = bts.543 days = 1 }
+# 				}
+# 				1 = {
+# 					modifier = {
+# 						factor = 0
+# 						has_modifier = bts_crisis_pact_4
+# 					}
+# 					country_event = { id = bts.544 days = 1 }
+# 				}
+# 				1 = {
+# 					modifier = {
+# 						factor = 0
+# 						has_modifier = bts_crisis_pact_5
+# 					}
+# 					country_event = { id = bts.545 days = 1 }
+# 				}
+# 			}
+# 		}
+# 	}
+
+# 	option = {
+# 		trigger = {
+# 			has_modifier = bts_crisis_pact_2
+# 		}
+# 		name = bts.5422.menu.option.title
+# 		custom_tooltip = bts.5422.menu.option.desc
+# 		hidden_effect = {
+# 			country_event = {
+# 				id = bts.5422
+# 			}
+# 		}
+# 	}
+
+# 	option = {
+# 		trigger = {
+# 			NOT = { has_event_chain = bts_crisis_final_ritual_chain }
+# 		}
+# 		name = bts.550.option.5
+
+# 		begin_event_chain = {
+# 			event_chain = bts_crisis_final_ritual_chain
+# 			target = this
+# 		}
+# 		random_planet_within_border = {
+# 			limit = { is_planet_class = pc_bts_shroud_rift }
+# 			root = {
+# 				create_point_of_interest = { 
+# 					id = bts_crisis_final_ritual_chain.1
+# 					name = BTS_OUTER_GODS_RITUAL_1 
+# 					desc = BTS_OUTER_GODS_RITUAL_1_POI_DESC
+# 					event_chain = bts_crisis_final_ritual_chain
+# 					location = prev
+# 				}
+# 			}
+# 		}
+# 		hidden_effect = {
+# 			set_country_flag = bts_crisis_can_summon_patron
+# 		}
+# 	}
+
+# 	option = {
+# 		name = EXIT
+# 		default_hide_option = yes
+# 	}
+# }
+
+# # FromFrom = ship
+# country_event = {
+# 	id = bts.551
+# 	hide_window = yes
+# 	is_triggered_only = yes
+
+# 	trigger = {
+# 		exists = fromfrom
+# 		fromfrom = {
+# 			has_ship_flag = bts_shroud_patron
+# 		}
+# 	}
+
+# 	immediate = {
+# 		random_country = {
+# 			limit = { 
+# 				has_country_flag = bts_shroud_patron_summoned_@fromfrom
+# 			}
+# 			remove_point_of_interest = bts_crisis_final_ritual_chain.1
+# 			enable_special_project = { 
+# 				name = BTS_OUTER_GODS_RITUAL_1
+# 				owner = this
+# 				location = this
+# 			}
+# 		}
+# 	}
+# }

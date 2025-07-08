@@ -3,6 +3,10 @@
 # Events
 bts.300.title: "$pc_bts_labyrinth_of_abstraction_full$"
 bts.300.desc: "Our divinity offered us a vision in which we could see strange patterns for a §Ymegastructure§!.\n\n§PFORBIDDEN KNOWLEDGE : $pc_bts_labyrinth_of_abstraction_full$§!"
+bts.300.ok: "Abstraction ? We embrace this knowledge"
+bts.300.ok.desc: "Unlock §Y$pc_bts_labyrinth_of_abstraction$§! megastructure"
+bts.300.no: "We refuse this knowledge, we want something darker..."
+bts.300.no.desc: "Unlock §Y$ap_bts_crisis$§! Crisis Ascension Perk"
 bts.301.powers: "Summon an §MAbstract Entity§!"
 bts.301.boon: "Choose §Yboon§! of the Shroud"
 bts.301.boon.low: "$bts.301.boon$ - $shroud.chances.low$"

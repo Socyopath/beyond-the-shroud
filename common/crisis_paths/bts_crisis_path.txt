@@ -1,0 +1,18 @@
+bts_crisis_path = {
+    crisis_currency = "bts_crisis_currency"
+
+
+    levels = {
+        bts_crisis_level_1
+        bts_crisis_level_2
+        bts_crisis_level_3
+        bts_crisis_level_4
+        bts_crisis_level_5
+    }
+
+    objectives = {
+        bts_crisis_obj_ritual
+        bts_crisis_obj_devour_mind
+        bts_crisis_obj_pact
+    }
+}
