@@ -437,3 +437,17 @@ bts.550.option.4: "§REstablish Eldritch Pact§!"
 bts.550.option.4.desc: "Attempt to contact a Great Old One."
 
 bts.550.option.5: "§RStart the Awakening Ritual§!"
+
+# UI
+
+BTS_CRISIS_MENU_PROGRESS_BAR_0: "0 Deviancy"
+BTS_CRISIS_MENU_PROGRESS_BAR_1: "1 Deviancy"
+BTS_CRISIS_MENU_PROGRESS_BAR_2: "2 Deviancy"
+BTS_CRISIS_MENU_PROGRESS_BAR_3: "3 Deviancy"
+BTS_CRISIS_MENU_PROGRESS_BAR_4: "4 Deviancy"
+BTS_CRISIS_MENU_PROGRESS_BAR_5: "5 Deviancy"
+BTS_CRISIS_MENU_PROGRESS_BAR_6: "6 Deviancy"
+BTS_CRISIS_MENU_PROGRESS_BAR_7: "7 Deviancy"
+BTS_CRISIS_MENU_PROGRESS_BAR_8: "8 Deviancy"
+BTS_CRISIS_MENU_PROGRESS_BAR_9: "9 Deviancy"
+BTS_CRISIS_MENU_PROGRESS_BAR_10: "10 Deviancy"

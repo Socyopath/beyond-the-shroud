@@ -192,4 +192,103 @@ spriteTypes = {
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes
 	}
+
+	# GUI
+
+	corneredTileSpriteType = {
+		name = "GFX_bts_crisis_menu_background"
+		textureFile = "gfx/interface/crisis_menu/bts_crisis_menu_background.dds"
+		borderSize = { x=330 y=296 }
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+
+	spriteType = {
+		name = "GFX_bts_crisis_menu_ritual_button"
+		texturefile = "gfx/interface/crisis_menu/aaa.dds"
+		# noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.shader"
+	}
+
+	spriteType = {
+		name = "GFX_bts_crisis_menu_ritual_text_bg"
+		texturefile = "gfx/interface/crisis_menu/bts_crisis_menu_ritual_text_bg.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_bts_crisis_menu_progress_bar_0"
+		texturefile = "gfx/interface/crisis_menu/bts_crisis_menu_progress_bar_0.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bts_crisis_menu_progress_bar_1"
+		texturefile = "gfx/interface/crisis_menu/bts_crisis_menu_progress_bar_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bts_crisis_menu_progress_bar_2"
+		texturefile = "gfx/interface/crisis_menu/bts_crisis_menu_progress_bar_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bts_crisis_menu_progress_bar_3"
+		texturefile = "gfx/interface/crisis_menu/bts_crisis_menu_progress_bar_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bts_crisis_menu_progress_bar_4"
+		texturefile = "gfx/interface/crisis_menu/bts_crisis_menu_progress_bar_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bts_crisis_menu_progress_bar_5"
+		texturefile = "gfx/interface/crisis_menu/bts_crisis_menu_progress_bar_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bts_crisis_menu_progress_bar_6"
+		texturefile = "gfx/interface/crisis_menu/bts_crisis_menu_progress_bar_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bts_crisis_menu_progress_bar_7"
+		texturefile = "gfx/interface/crisis_menu/bts_crisis_menu_progress_bar_7.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bts_crisis_menu_progress_bar_8"
+		texturefile = "gfx/interface/crisis_menu/bts_crisis_menu_progress_bar_8.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bts_crisis_menu_progress_bar_9"
+		texturefile = "gfx/interface/crisis_menu/bts_crisis_menu_progress_bar_9.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bts_crisis_menu_progress_bar_10"
+		texturefile = "gfx/interface/crisis_menu/bts_crisis_menu_progress_bar_10.dds"
+	}
+
+	
+
+	# spriteType = {
+	# 	name = "GFX_bts_crisis_menu_ritual_button"
+	# 	texturefile = "gfx/interface/buttons/bts_crisis_menu_ritual_button.dds"
+	# 	noOfFrames = 3
+	# 	effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	# 	animation = {
+	# 		animationmaskfile = "gfx/interface/buttons/close_button_mask.dds"
+	# 		animationtexturefile = "gfx/interface/buttons/close_texture.dds"
+	# 		animationrotation = 180.0
+	# 		animationlooping = yes
+	# 		animationtime = 12.0
+	# 		animationdelay = 0.0
+	# 		animationblendmode = "overlay"       #add, multiply, overlay
+	# 		animationtype = "scrolling"      #scrolling, rotating, pulsing
+	# 		animationrotationoffset = { x = 0.0 y = 0.0 }
+	# 		animationtexturescale = { x = 1.0 y = 1.0 } 
+	# 		animationframes = { 1 2 3 }
+	# 	}
+	# }
 }

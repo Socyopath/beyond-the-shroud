@@ -1,0 +1,453 @@
+guiTypes = {
+	### DEFAULT EVENT WINDOW ###
+
+	containerWindowType = {
+		name = "bts_crisis_menu_window"
+		orientation = center
+		origo = center
+		moveable = yes
+		size = { width = 990 height = 660 }
+
+		background = {
+			name = "background"
+			quadTextureSprite ="GFX_bts_crisis_menu_background"
+		}
+
+		buttonType = {
+			name = "close"
+			quadTextureSprite = "GFX_main_close_button_artist"
+			position = { x = -72 y = 55 }
+			Orientation = "UPPER_RIGHT"
+			clicksound = "back_click"
+		}
+
+		containerWindowType = {
+			name = "bts_crisis_menu_ritual_group"
+			position = { x = 332 y = 300 }
+			size = { width = 200 height = 150 }
+			clipping = yes
+
+			effectButtonType = { #Mini window
+				name = "bts_crisis_menu_ritual_button"
+				quadTextureSprite = "GFX_bts_crisis_menu_ritual_button"
+				position = { x= 45 y = 0 }
+				Orientation = "UPPER_LEFT"
+				clicksound = tab_click
+				effect = "bts_crisis_menu_ritual_button"
+			}
+
+			iconType = {
+				name = "bts_crisis_menu_ritual_group_text_bg"
+				spriteType = "GFX_bts_crisis_menu_ritual_text_bg"
+				position = { x = 0 y = 100 }
+			}
+
+			instantTextBoxType={
+				name = "bts_crisis_menu_ritual_group_text"
+				font = "large_title_font_28"
+				text = "Rituals"
+				position = { x = 45 y = 105	} # +45 +5 bg
+				maxWidth = 0
+				maxHeight = 0
+				format = LEFT
+				fixedsize = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "bts_crisis_menu_pact_group"
+			position = { x = 532 y = 300 }
+			size = { width = 200 height = 150 }
+			clipping = yes
+
+			effectButtonType = { #Mini window
+				name = "bts_crisis_menu_pact_button"
+				quadTextureSprite = "GFX_bts_crisis_menu_ritual_button"
+				position = { x= 45 y = 0 }
+				Orientation = "UPPER_LEFT"
+				clicksound = tab_click
+				effect = "bts_crisis_menu_ritual_button"
+			}
+
+			iconType = {
+				name = "bts_crisis_menu_pact_group_text_bg"
+				spriteType = "GFX_bts_crisis_menu_ritual_text_bg"
+				position = { x = 0 y = 100 }
+			}
+
+			instantTextBoxType={
+				name = "bts_crisis_menu_pact_group_text"
+				font = "large_title_font_28"
+				text = "Pacts"
+				position = { x = 45 y = 105	} # +45 +5 bg
+				maxWidth = 0
+				maxHeight = 0
+				format = LEFT
+				fixedsize = yes
+			}
+		}
+
+
+		containerWindowType = {
+			name = "bts_crisis_menu_deviancy"
+			position = { x = 850 y = 55 }
+			size = { width = 85 height = 400 }
+			clipping = yes
+
+			effectButtonType = { #Mini window
+				name = "bts_crisis_menu_progress_bar_0"
+				quadTextureSprite = "GFX_bts_crisis_menu_progress_bar_0"
+				position = { x= 16 y = 80 }
+				orientation = "UPPER_LEFT"
+				tooltipText = "BTS_CRISIS_MENU_PROGRESS_BAR_0"
+				oversound = no_sound
+				clicksound = no_sound
+				effect = "bts_crisis_menu_progress_bar_0"
+			}
+
+			effectButtonType = { #Mini window
+				name = "bts_crisis_menu_progress_bar_1"
+				quadTextureSprite = "GFX_bts_crisis_menu_progress_bar_1"
+				position = { x= 16 y = 80 }
+				orientation = "UPPER_LEFT"
+				tooltipText = "BTS_CRISIS_MENU_PROGRESS_BAR_1"
+				oversound = no_sound
+				clicksound = no_sound
+				effect = "bts_crisis_menu_progress_bar_1"
+			}
+
+			effectButtonType = { #Mini window
+				name = "bts_crisis_menu_progress_bar_2"
+				quadTextureSprite = "GFX_bts_crisis_menu_progress_bar_2"
+				position = { x= 16 y = 80 }
+				orientation = "UPPER_LEFT"
+				tooltipText = "BTS_CRISIS_MENU_PROGRESS_BAR_2"
+				oversound = no_sound
+				clicksound = no_sound
+				effect = "bts_crisis_menu_progress_bar_2"
+			}
+			effectButtonType = { #Mini window
+				name = "bts_crisis_menu_progress_bar_3"
+				quadTextureSprite = "GFX_bts_crisis_menu_progress_bar_3"
+				position = { x= 16 y = 80 }
+				orientation = "UPPER_LEFT"
+				tooltipText = "BTS_CRISIS_MENU_PROGRESS_BAR_3"
+				oversound = no_sound
+				clicksound = no_sound
+				effect = "bts_crisis_menu_progress_bar_3"
+			}
+			effectButtonType = { #Mini window
+				name = "bts_crisis_menu_progress_bar_4"
+				quadTextureSprite = "GFX_bts_crisis_menu_progress_bar_4"
+				position = { x= 16 y = 80 }
+				orientation = "UPPER_LEFT"
+				tooltipText = "BTS_CRISIS_MENU_PROGRESS_BAR_4"
+				oversound = no_sound
+				clicksound = no_sound
+				effect = "bts_crisis_menu_progress_bar_4"
+			}
+			effectButtonType = { #Mini window
+				name = "bts_crisis_menu_progress_bar_5"
+				quadTextureSprite = "GFX_bts_crisis_menu_progress_bar_5"
+				position = { x= 16 y = 80 }
+				orientation = "UPPER_LEFT"
+				tooltipText = "BTS_CRISIS_MENU_PROGRESS_BAR_5"
+				oversound = no_sound
+				clicksound = no_sound
+				effect = "bts_crisis_menu_progress_bar_5"
+			}
+			effectButtonType = { #Mini window
+				name = "bts_crisis_menu_progress_bar_6"
+				quadTextureSprite = "GFX_bts_crisis_menu_progress_bar_6"
+				position = { x= 16 y = 80 }
+				orientation = "UPPER_LEFT"
+				tooltipText = "BTS_CRISIS_MENU_PROGRESS_BAR_6"
+				oversound = no_sound
+				clicksound = no_sound
+				effect = "bts_crisis_menu_progress_bar_6"
+			}
+			effectButtonType = { #Mini window
+				name = "bts_crisis_menu_progress_bar_7"
+				quadTextureSprite = "GFX_bts_crisis_menu_progress_bar_7"
+				position = { x= 16 y = 80 }
+				orientation = "UPPER_LEFT"
+				tooltipText = "BTS_CRISIS_MENU_PROGRESS_BAR_7"
+				oversound = no_sound
+				clicksound = no_sound
+				effect = "bts_crisis_menu_progress_bar_7"
+			}
+			effectButtonType = { #Mini window
+				name = "bts_crisis_menu_progress_bar_8"
+				quadTextureSprite = "GFX_bts_crisis_menu_progress_bar_8"
+				position = { x= 16 y = 80 }
+				orientation = "UPPER_LEFT"
+				tooltipText = "BTS_CRISIS_MENU_PROGRESS_BAR_8"
+				oversound = no_sound
+				clicksound = no_sound
+				effect = "bts_crisis_menu_progress_bar_8"
+			}
+			effectButtonType = { #Mini window
+				name = "bts_crisis_menu_progress_bar_9"
+				quadTextureSprite = "GFX_bts_crisis_menu_progress_bar_9"
+				position = { x= 16 y = 80 }
+				orientation = "UPPER_LEFT"
+				tooltipText = "BTS_CRISIS_MENU_PROGRESS_BAR_9"
+				oversound = no_sound
+				clicksound = no_sound
+				effect = "bts_crisis_menu_progress_bar_9"
+			}
+			effectButtonType = { #Mini window
+				name = "bts_crisis_menu_progress_bar_10"
+				quadTextureSprite = "GFX_bts_crisis_menu_progress_bar_10"
+				position = { x= 16 y = 80 }
+				orientation = "UPPER_LEFT"
+				tooltipText = "BTS_CRISIS_MENU_PROGRESS_BAR_10"
+				oversound = no_sound
+				clicksound = no_sound
+				effect = "bts_crisis_menu_progress_bar_10"
+			}
+		}
+
+		### DESCRIPTION ###
+
+		instantTextBoxType = {
+			name = "alien_message"
+			font = "cg_16b"
+			position = { x = 20 y = 440 }
+			maxWidth = 0
+			maxHeight = 0
+			format = left
+			scrollbartype = "standardtext_slider"
+		}
+
+		### PORTRAIT ###
+
+		containerWindowType = {
+			name = "portrait_background"
+			position = { x = 17 y = 45 }
+			size = { width = 0 height = 0 }
+			clipping = yes
+
+			iconType = {
+				name = "event_picture"
+				spriteType = "GFX_diplomacy_portrait_frame"
+				position = { x = -6 y = -5 }
+			}
+
+			iconType = {
+				name = "portrait"
+				position = { x = 250 y = 0 }
+				spriteType = "GFX_portrait_character"
+			}
+		}
+
+		containerWindowType = {
+			name = "portrait"
+			position = { x = 17 y = 45 }
+			size = { width = 0 height = 0 }
+			clipping = yes
+
+			iconType = {
+				name = "portrait"
+				spriteType = "GFX_portrait_gamesetup_mask"
+				alwaysTransparent = yes
+			}
+
+			iconType = {
+				name = "black_frame"
+				spriteType = "GFX_diplomacy_portrait_shadow_frame"
+				position = { x = -4 y = -5}
+				alwaysTransparent = yes
+			}
+
+			iconType = {
+				name = "stripes_1"
+				spriteType = "GFX_diplomacy_stripes_2"
+				alwaysTransparent = yes
+			}
+
+			iconType = {
+				name = "city_frame"
+				spriteType = "GFX_diplomacy_portrait_frame"
+				position = { x = -6 y = -5 }
+				alwaysTransparent = yes
+			}
+		}
+
+		### EMPIRE INFO ###
+
+		iconType = {
+			name = "empire_info_bg"
+			spriteType = "GFX_diplomacy_dark_fade_bg"
+			position = { x = 33 y = 64 }
+			alwaysTransparent = yes
+		}
+
+		instantTextBoxType={
+			name = "empire_name"
+			font = "malgun_goth_24"
+			text = "Kammarian Galactic Concordat"
+			position = { x = 45 y = 70 }
+			maxWidth = 0
+			maxHeight = 0
+			format = LEFT
+			text_color_code = "E"
+			fixedsize = yes
+		}
+
+		instantTextBoxType={
+			name = "empire_government_type"
+			font = "cg_16b"
+			text = "Autocracy"
+			position = { x = 45 y = 95	}
+			maxWidth = 0
+			maxHeight = 0
+			format = LEFT
+			fixedsize = yes
+			text_color_code = "Y"
+		}
+
+		instantTextBoxType={
+			name = "empire_personality_type"
+			font = "cg_16b"
+			text = "Despicable Neutrals"
+			position = { x = 45 y = 112	}
+			maxWidth = 0
+			maxHeight = 0
+			format = LEFT
+			fixedsize = yes
+		}
+
+		buttonType = {
+			name = "empire_flag"
+			quadTextureSprite = "GFX_empire_flag_128"
+			position = { x = 25 y = 235 }
+			orientation = UPPER_LEFT
+		}
+
+		containerWindowType = {
+			name = "leader_details"
+			position = { x = 25 y = 75 }
+
+			containerWindowType = {
+				name = "leader_traits_box"
+				position = { x = 0 y = -5 }
+				size = { width = 0 height = 0 }
+
+				background = {
+					name = "ethics_bg"
+					spriteType = "GFX_tiles_dark_area_cut_8"
+				}
+			}
+
+			instantTextBoxType = {
+				name = "empire_traits_label"
+				position = { x = 835 y = 95 }
+				font = "cg_16b"
+				maxWidth = 0
+				maxHeight = 0
+				fixedSize = yes
+				format = left
+				#text_color_code = "E"
+				text = "RULER_TRAITS"
+				alwaysTransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "leader_traits_label"
+				position = { x = 214 y = 37 }
+				font = "cg_16b"
+				maxWidth = 0
+				maxHeight = 0
+				fixedSize = yes
+				format = left
+				#text_color_code = "E"
+				text = "RULER_TRAITS"
+				alwaysTransparent = yes
+			}
+
+			overlappingElementsBoxType = {
+				name = "leader_traits"
+				position = { x = 215 y = 55 }
+				size = { x = 0 y = 0 }
+			}
+
+			instantTextBoxType = {
+				name = "leader_name"
+				position = { x = 10 y = 0 }
+				font = "cg_16b"
+				maxWidth = 0
+				maxHeight = 0
+				fixedSize = yes
+				format = left
+				text = "Leader Name"
+				text_color_code = "E"
+			}
+
+			instantTextBoxType = {
+				name = "leader_species"
+				position = { x = 10 y = 18 }
+				font = "cg_16b"
+				maxWidth = 0
+				maxHeight = 0
+				fixedSize = yes
+				text = "Leader Species"
+				format = left
+			}
+		}
+
+		### EVENT DIPLO ###
+
+		containerWindowType = {
+			name = "EVENT_DIPLO"
+			position = { x = 0 y = 400 }
+			size = { width=0 height=0 }
+			moveable = no
+
+			instantTextBoxType = {
+				name = "action_title"
+				font = "malgun_goth_24"
+				position = { x = 20 y = 0 }
+				maxWidth = 0
+				alwaysTransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "action_desc"
+				font = "malgun_goth_24"
+				position = { x = 490 y = 0 }
+				maxWidth = 0
+				maxHeight = 0
+				Orientation = "UPPER_LEFT"
+				format = center
+				alwaysTransparent = yes
+				text_color_code = "H"
+			}
+
+			listboxType = {
+				name = "option_list"
+				position = { x = 500 y = 20 }
+				backGround=""
+				size = { x=0 y=0 }
+				spacing = 1
+				scrollbartype = "standardlistbox_slider"
+				borderSize = { x = 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+		}
+	}
+}
+
+
+# [21:38:46][containerwindow.h:88]: interface/diplomacy_bts_crisis_event_view.gui: Could not find buttonType "tts_button" in window "bts_crisis_menu_window".
+# [21:38:46][containerwindow.h:88]: interface/diplomacy_bts_crisis_event_view.gui: Could not find instantTextboxType "heading" in window "bts_crisis_menu_window".
+# [21:38:46][containerwindow.h:88]: interface/diplomacy_bts_crisis_event_view.gui: Could not find containerWindowType "EVENT_DIPLO" in window "bts_crisis_menu_window".
+# [21:38:46][containerwindow.h:88]: interface/diplomacy_bts_crisis_event_view.gui: Could not find icon "empire_info_bg" in window "bts_crisis_menu_window".
+# [21:38:46][containerwindow.h:88]: interface/diplomacy_bts_crisis_event_view.gui: Could not find instantTextboxType "empire_name" in window "bts_crisis_menu_window".
+# [21:38:46][containerwindow.h:88]: interface/diplomacy_bts_crisis_event_view.gui: Could not find instantTextboxType "empire_government_type" in window "bts_crisis_menu_window".
+# [21:38:46][containerwindow.h:88]: interface/diplomacy_bts_crisis_event_view.gui: Could not find instantTextboxType "empire_personality_type" in window "bts_crisis_menu_window".
+# [21:38:46][containerwindow.h:88]: interface/diplomacy_bts_crisis_event_view.gui: Could not find buttonType "empire_flag" in window "bts_crisis_menu_window".
+# [21:38:46][containerwindow.h:88]: interface/diplomacy_bts_crisis_event_view.gui: Could not find containerWindowType "portrait" in window "bts_crisis_menu_window".
+# [21:38:46][containerwindow.h:88]: interface/diplomacy_bts_crisis_event_view.gui: Could not find containerWindowType "portrait_background" in window "bts_crisis_menu_window".
+# [21:41:24][containerwindow.h:128]: interface/diplomacy_bts_crisis_event_view.gui: Could not find containerWindowType "leader_details" in window "bts_crisis_menu_window".
+# [21:41:24][containerwindow.h:88]: interface/diplomacy_bts_crisis_event_view.gui: Could not find instantTextboxType "alien_message" in window "bts_crisis_menu_window".

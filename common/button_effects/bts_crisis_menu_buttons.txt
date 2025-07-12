@@ -1,0 +1,134 @@
+
+#Scope type varies depending on what is selected
+# This = selected object (if planet, ship, fleet, system, ambient object, megastructure, federation, espionage operation, arc site or first contact) or player country
+# From = player country
+# Note: It's advised to check is_scope_type = planet/whatever in the allow trigger, since it's possible to confuse the scopes if multiple interfaces are open
+
+# Usage example in a .gui file:
+#	effectbuttonType = {
+#		name = button_effect_test
+#		quadTextureSprite = GFX_fleetview_destroy_fleet
+#		position = { x = 283 y = 0 }
+#		scale = 1
+#		orientation = UPPER_LEFT
+#		effect = example_button_effect
+#	}
+
+
+bts_crisis_menu_ritual_button = {
+	potential = {
+		always = yes
+	}
+	allow = {
+		has_country_flag = omewa
+	}
+
+	effect = {
+		add_monthly_resource_mult = {
+			resource = minerals
+			value = 5
+			min = 5
+			max = 500
+		}
+	}
+}
+
+
+bts_crisis_menu_progress_bar_0 = {
+	potential = {
+		check_variable_arithmetic = {
+			which = modifier:bts_crisis_deviancy
+			value = 0
+		}
+	}
+}
+
+bts_crisis_menu_progress_bar_1 = {
+	potential = {
+		check_variable_arithmetic = {
+			which = modifier:bts_crisis_deviancy
+			value = 1
+		}
+	}
+}
+
+bts_crisis_menu_progress_bar_2 = {
+	potential = {
+		check_variable_arithmetic = {
+			which = modifier:bts_crisis_deviancy
+			value = 2
+		}
+	}
+}
+
+bts_crisis_menu_progress_bar_3 = {
+	potential = {
+		check_variable_arithmetic = {
+			which = modifier:bts_crisis_deviancy
+			value = 3
+		}
+	}
+}
+
+bts_crisis_menu_progress_bar_4 = {
+	potential = {
+		check_variable_arithmetic = {
+			which = modifier:bts_crisis_deviancy
+			value = 4
+		}
+	}
+}
+
+bts_crisis_menu_progress_bar_5 = {
+	potential = {
+		check_variable_arithmetic = {
+			which = modifier:bts_crisis_deviancy
+			value = 5
+		}
+	}
+}
+
+bts_crisis_menu_progress_bar_6 = {
+	potential = {
+		check_variable_arithmetic = {
+			which = modifier:bts_crisis_deviancy
+			value = 6
+		}
+	}
+}
+
+bts_crisis_menu_progress_bar_7 = {
+	potential = {
+		check_variable_arithmetic = {
+			which = modifier:bts_crisis_deviancy
+			value = 7
+		}
+	}
+}
+
+bts_crisis_menu_progress_bar_8 = {
+	potential = {
+		check_variable_arithmetic = {
+			which = modifier:bts_crisis_deviancy
+			value = 8
+		}
+	}
+}
+
+bts_crisis_menu_progress_bar_9 = {
+	potential = {
+		check_variable_arithmetic = {
+			which = modifier:bts_crisis_deviancy
+			value = 9
+		}
+	}
+}
+
+bts_crisis_menu_progress_bar_10 = {
+	potential = {
+		check_variable_arithmetic = {
+			which = modifier:bts_crisis_deviancy
+			value = 10
+		}
+	}
+}
