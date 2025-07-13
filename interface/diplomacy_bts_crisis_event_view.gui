@@ -15,10 +15,19 @@ guiTypes = {
 
 		buttonType = {
 			name = "close"
-			quadTextureSprite = "GFX_main_close_button_artist"
-			position = { x = -72 y = 55 }
-			Orientation = "UPPER_RIGHT"
-			clicksound = "back_click"
+			quadTextureSprite = "GFX_bts_crisis_menu_close_button"
+			position = {  x= 150 y = 200 }
+			orientation = "UPPER_LEFT"
+			clicksound = back_click
+		}
+
+		effectButtonType = { #Mini window
+			name = "bts_crisis_menu_back_button"
+			quadTextureSprite = "GFX_bts_crisis_menu_back_button"
+			position = { x= 150 y = 300 }
+			orientation = "UPPER_LEFT"
+			clicksound = back_click					
+			effect = "bts_crisis_menu_back_button"
 		}
 
 		containerWindowType = {
@@ -30,60 +39,52 @@ guiTypes = {
 			effectButtonType = { #Mini window
 				name = "bts_crisis_menu_ritual_button"
 				quadTextureSprite = "GFX_bts_crisis_menu_ritual_button"
-				position = { x= 45 y = 0 }
-				Orientation = "UPPER_LEFT"
-				clicksound = tab_click
+				position = { x= 10 y = 0 }
+				orientation = "UPPER_LEFT"
+				clicksound = tab_click					
 				effect = "bts_crisis_menu_ritual_button"
 			}
 
-			iconType = {
-				name = "bts_crisis_menu_ritual_group_text_bg"
-				spriteType = "GFX_bts_crisis_menu_ritual_text_bg"
-				position = { x = 0 y = 100 }
-			}
-
-			instantTextBoxType={
-				name = "bts_crisis_menu_ritual_group_text"
-				font = "large_title_font_28"
-				text = "Rituals"
-				position = { x = 45 y = 105	} # +45 +5 bg
-				maxWidth = 0
-				maxHeight = 0
+			effectButtonType = { #Mini window
+				name = "bts_crisis_menu_ritual_text"
+				position = { x= 45 y = 104 }
+				orientation = "UPPER_LEFT"		
+				alwaystransparent = yes
+				buttonText = bts_crisis_menu_ritual_text
+				buttonFont = malgun_goth_24
 				format = LEFT
-				fixedsize = yes
+				size = { x = 80 y = 20 }
+				alwaystransparent = yes
+				effect = bts_crisis_menu_main_button
 			}
 		}
 
 		containerWindowType = {
 			name = "bts_crisis_menu_pact_group"
-			position = { x = 532 y = 300 }
+			position = { x = 600 y = 300 }
 			size = { width = 200 height = 150 }
 			clipping = yes
 
 			effectButtonType = { #Mini window
 				name = "bts_crisis_menu_pact_button"
-				quadTextureSprite = "GFX_bts_crisis_menu_ritual_button"
-				position = { x= 45 y = 0 }
-				Orientation = "UPPER_LEFT"
-				clicksound = tab_click
-				effect = "bts_crisis_menu_ritual_button"
+				quadTextureSprite = "GFX_bts_crisis_menu_pact_button"
+				position = { x= 10 y = 0 }
+				orientation = "UPPER_LEFT"
+				clicksound = tab_click					
+				effect = "bts_crisis_menu_pact_button"
 			}
 
-			iconType = {
-				name = "bts_crisis_menu_pact_group_text_bg"
-				spriteType = "GFX_bts_crisis_menu_ritual_text_bg"
-				position = { x = 0 y = 100 }
-			}
-
-			instantTextBoxType={
-				name = "bts_crisis_menu_pact_group_text"
-				font = "large_title_font_28"
-				text = "Pacts"
-				position = { x = 45 y = 105	} # +45 +5 bg
-				maxWidth = 0
-				maxHeight = 0
+			effectButtonType = { #Mini window
+				name = "bts_crisis_menu_pact_text"
+				position = { x= 45 y = 104 }
+				orientation = "UPPER_LEFT"		
+				alwaystransparent = yes
+				buttonText = bts_crisis_menu_pact_text
+				buttonFont = malgun_goth_24
 				format = LEFT
-				fixedsize = yes
+				size = { x = 80 y = 20 }
+				alwaystransparent = yes
+				effect = bts_crisis_menu_main_button
 			}
 		}
 

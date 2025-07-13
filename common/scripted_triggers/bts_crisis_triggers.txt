@@ -1,0 +1,13 @@
+# UI
+bts_crisis_menu_is_main = {
+    bts_crisis_menu_is_ritual = no
+    bts_crisis_menu_is_pact = no
+}
+
+bts_crisis_menu_is_ritual = {
+    has_country_flag = bts_crisis_menu_ritual
+}
+
+bts_crisis_menu_is_pact = {
+    has_country_flag = bts_crisis_menu_pact
+}

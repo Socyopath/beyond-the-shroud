@@ -440,6 +440,11 @@ bts.550.option.5: "§RStart the Awakening Ritual§!"
 
 # UI
 
+
+
+bts_crisis_menu_ritual_text: "Rituals"
+bts_crisis_menu_pact_text: "Pacts"
+
 BTS_CRISIS_MENU_PROGRESS_BAR_0: "0 Deviancy"
 BTS_CRISIS_MENU_PROGRESS_BAR_1: "1 Deviancy"
 BTS_CRISIS_MENU_PROGRESS_BAR_2: "2 Deviancy"
