@@ -204,15 +204,26 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_bts_crisis_menu_ritual_button"
-		texturefile = "gfx/interface/crisis_menu/aaa.dds"
-		# noOfFrames = 3
-		effectFile = "gfx/FX/buttonstate.shader"
+		texturefile = "gfx/interface/crisis_menu/bts_crisis_menu_ritual_button.dds"
+		# effectFile = "gfx/FX/buttonstate.shader"
 	}
 
 	spriteType = {
-		name = "GFX_bts_crisis_menu_ritual_text_bg"
-		texturefile = "gfx/interface/crisis_menu/bts_crisis_menu_ritual_text_bg.dds"
-		alwaystransparent = yes
+		name = "GFX_bts_crisis_menu_pact_button"
+		texturefile = "gfx/interface/crisis_menu/bts_crisis_menu_pact_button.dds"
+		# effectFile = "gfx/FX/buttonstate.shader"
+	}
+
+	spriteType = {
+		name = "GFX_bts_crisis_menu_back_button"
+		texturefile = "gfx/interface/crisis_menu/bts_crisis_menu_back_button.dds"
+		noOfFrames = 3
+	}
+
+	spriteType = {
+		name = "GFX_bts_crisis_menu_close_button"
+		texturefile = "gfx/interface/crisis_menu/bts_crisis_menu_close_button.dds"
+		noOfFrames = 3
 	}
 
 	spriteType = {
@@ -270,25 +281,4 @@ spriteTypes = {
 		texturefile = "gfx/interface/crisis_menu/bts_crisis_menu_progress_bar_10.dds"
 	}
 
-	
-
-	# spriteType = {
-	# 	name = "GFX_bts_crisis_menu_ritual_button"
-	# 	texturefile = "gfx/interface/buttons/bts_crisis_menu_ritual_button.dds"
-	# 	noOfFrames = 3
-	# 	effectFile = "gfx/FX/buttonstate_onlydisable.shader"
-	# 	animation = {
-	# 		animationmaskfile = "gfx/interface/buttons/close_button_mask.dds"
-	# 		animationtexturefile = "gfx/interface/buttons/close_texture.dds"
-	# 		animationrotation = 180.0
-	# 		animationlooping = yes
-	# 		animationtime = 12.0
-	# 		animationdelay = 0.0
-	# 		animationblendmode = "overlay"       #add, multiply, overlay
-	# 		animationtype = "scrolling"      #scrolling, rotating, pulsing
-	# 		animationrotationoffset = { x = 0.0 y = 0.0 }
-	# 		animationtexturescale = { x = 1.0 y = 1.0 } 
-	# 		animationframes = { 1 2 3 }
-	# 	}
-	# }
 }

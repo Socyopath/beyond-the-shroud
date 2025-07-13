@@ -17,22 +17,55 @@
 
 bts_crisis_menu_ritual_button = {
 	potential = {
-		always = yes
+		bts_crisis_menu_is_main = yes
 	}
 	allow = {
-		has_country_flag = omewa
+		
 	}
 
 	effect = {
-		add_monthly_resource_mult = {
-			resource = minerals
-			value = 5
-			min = 5
-			max = 500
+		hidden_effect = {
+			set_country_flag = bts_crisis_menu_ritual
 		}
 	}
 }
 
+bts_crisis_menu_pact_button = {
+	potential = {
+		bts_crisis_menu_is_main = yes
+	}
+	allow = {
+
+	}
+
+	effect = {
+		hidden_effect = {
+			set_country_flag = bts_crisis_menu_pact
+		}
+	}
+}
+
+bts_crisis_menu_back_button = {
+	potential = {
+		OR = {
+			bts_crisis_menu_is_ritual = yes
+			bts_crisis_menu_is_pact = yes
+		}
+	}
+	effect = {
+		hidden_effect = {
+			remove_country_flag = bts_crisis_menu_ritual
+			remove_country_flag = bts_crisis_menu_pact
+		}
+	}
+}
+
+
+bts_crisis_menu_main_button = {
+	potential = {
+		bts_crisis_menu_is_main = yes
+	}
+}
 
 bts_crisis_menu_progress_bar_0 = {
 	potential = {
