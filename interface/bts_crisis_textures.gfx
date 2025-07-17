@@ -281,6 +281,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/crisis_menu/bts_crisis_menu_progress_bar_10.dds"
 	}
 
+
+	spriteType = {
+		name = "GFX_bts_crisis_menu_ritual_text_bg"
+		texturefile = "gfx/interface/crisis_menu/bts_crisis_menu_ritual_text_bg.dds"
+	}
+
 	spriteType = {
 		name = "GFX_bts_crisis_ritual_frame"
 		texturefile = "gfx/interface/crisis_menu/bts_crisis_ritual_frame.dds"
@@ -301,3 +307,5 @@ spriteTypes = {
 		texturefile = "gfx/interface/crisis_menu/bts_crisis_ritual_1_icon.dds"
 	}
 }
+
+
