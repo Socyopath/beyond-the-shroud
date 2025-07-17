@@ -67,6 +67,18 @@ bts_crisis_menu_main_button = {
 	}
 }
 
+bts_crisis_menu_ritual_page_button = {
+	potential = {
+		bts_crisis_menu_is_ritual = yes
+	}
+}
+
+bts_crisis_menu_pact_page_button = {
+	potential = {
+		bts_crisis_menu_is_pact = yes
+	}
+}
+
 bts_crisis_menu_progress_bar_0 = {
 	potential = {
 		check_variable_arithmetic = {
@@ -163,5 +175,18 @@ bts_crisis_menu_progress_bar_10 = {
 			which = modifier:bts_crisis_deviancy
 			value = 10
 		}
+	}
+}
+
+
+bts_crisis_menu_ritual_1 = {
+	potential = {
+		bts_crisis_menu_is_ritual = yes
+	}
+	allow = {
+		# always = no
+	}
+	effect = {
+		custom_tooltip = bts_ritual_pop_trade_effects
 	}
 }
