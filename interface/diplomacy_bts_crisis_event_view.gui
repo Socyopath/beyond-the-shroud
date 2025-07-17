@@ -211,6 +211,20 @@ guiTypes = {
 
 		### RITUAL PAGE
 
+		effectButtonType = {
+			name = "bts_crisis_menu_ritual_page_text"
+			quadTextureSprite = GFX_bts_crisis_menu_ritual_text_bg
+			position = { x= 200 y = 104 }
+			orientation = "UPPER_LEFT"		
+			alwaystransparent = yes
+			buttonText = bts_crisis_menu_ritual_text
+			buttonFont = large_title_font
+			borderSize = { x = 100 y = 0 } 
+			format = LEFT
+			alwaystransparent = yes
+			effect = bts_crisis_menu_ritual_page_button
+		}
+
 		containerWindowType = {
 			name = "bts_crisis_menu_ritual_1"
 			position = { x = 150 y = 120 }
