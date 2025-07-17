@@ -21,7 +21,7 @@ guiTypes = {
 			clicksound = back_click
 		}
 
-		effectButtonType = { #Mini window
+		effectButtonType = {
 			name = "bts_crisis_menu_back_button"
 			quadTextureSprite = "GFX_bts_crisis_menu_back_button"
 			position = { x= 150 y = 300 }
@@ -36,7 +36,7 @@ guiTypes = {
 			size = { width = 200 height = 150 }
 			clipping = yes
 
-			effectButtonType = { #Mini window
+			effectButtonType = {
 				name = "bts_crisis_menu_ritual_button"
 				quadTextureSprite = "GFX_bts_crisis_menu_ritual_button"
 				position = { x= 10 y = 0 }
@@ -45,7 +45,7 @@ guiTypes = {
 				effect = "bts_crisis_menu_ritual_button"
 			}
 
-			effectButtonType = { #Mini window
+			effectButtonType = {
 				name = "bts_crisis_menu_ritual_text"
 				position = { x= 45 y = 104 }
 				orientation = "UPPER_LEFT"		
@@ -65,7 +65,7 @@ guiTypes = {
 			size = { width = 200 height = 150 }
 			clipping = yes
 
-			effectButtonType = { #Mini window
+			effectButtonType = {
 				name = "bts_crisis_menu_pact_button"
 				quadTextureSprite = "GFX_bts_crisis_menu_pact_button"
 				position = { x= 10 y = 0 }
@@ -74,7 +74,7 @@ guiTypes = {
 				effect = "bts_crisis_menu_pact_button"
 			}
 
-			effectButtonType = { #Mini window
+			effectButtonType = {
 				name = "bts_crisis_menu_pact_text"
 				position = { x= 45 y = 104 }
 				orientation = "UPPER_LEFT"		
@@ -95,7 +95,7 @@ guiTypes = {
 			size = { width = 85 height = 400 }
 			clipping = yes
 
-			effectButtonType = { #Mini window
+			effectButtonType = {
 				name = "bts_crisis_menu_progress_bar_0"
 				quadTextureSprite = "GFX_bts_crisis_menu_progress_bar_0"
 				position = { x= 16 y = 80 }
@@ -106,7 +106,7 @@ guiTypes = {
 				effect = "bts_crisis_menu_progress_bar_0"
 			}
 
-			effectButtonType = { #Mini window
+			effectButtonType = {
 				name = "bts_crisis_menu_progress_bar_1"
 				quadTextureSprite = "GFX_bts_crisis_menu_progress_bar_1"
 				position = { x= 16 y = 80 }
@@ -117,7 +117,7 @@ guiTypes = {
 				effect = "bts_crisis_menu_progress_bar_1"
 			}
 
-			effectButtonType = { #Mini window
+			effectButtonType = {
 				name = "bts_crisis_menu_progress_bar_2"
 				quadTextureSprite = "GFX_bts_crisis_menu_progress_bar_2"
 				position = { x= 16 y = 80 }
@@ -127,7 +127,7 @@ guiTypes = {
 				clicksound = no_sound
 				effect = "bts_crisis_menu_progress_bar_2"
 			}
-			effectButtonType = { #Mini window
+			effectButtonType = {
 				name = "bts_crisis_menu_progress_bar_3"
 				quadTextureSprite = "GFX_bts_crisis_menu_progress_bar_3"
 				position = { x= 16 y = 80 }
@@ -137,7 +137,7 @@ guiTypes = {
 				clicksound = no_sound
 				effect = "bts_crisis_menu_progress_bar_3"
 			}
-			effectButtonType = { #Mini window
+			effectButtonType = {
 				name = "bts_crisis_menu_progress_bar_4"
 				quadTextureSprite = "GFX_bts_crisis_menu_progress_bar_4"
 				position = { x= 16 y = 80 }
@@ -147,7 +147,7 @@ guiTypes = {
 				clicksound = no_sound
 				effect = "bts_crisis_menu_progress_bar_4"
 			}
-			effectButtonType = { #Mini window
+			effectButtonType = {
 				name = "bts_crisis_menu_progress_bar_5"
 				quadTextureSprite = "GFX_bts_crisis_menu_progress_bar_5"
 				position = { x= 16 y = 80 }
@@ -157,7 +157,7 @@ guiTypes = {
 				clicksound = no_sound
 				effect = "bts_crisis_menu_progress_bar_5"
 			}
-			effectButtonType = { #Mini window
+			effectButtonType = {
 				name = "bts_crisis_menu_progress_bar_6"
 				quadTextureSprite = "GFX_bts_crisis_menu_progress_bar_6"
 				position = { x= 16 y = 80 }
@@ -167,7 +167,7 @@ guiTypes = {
 				clicksound = no_sound
 				effect = "bts_crisis_menu_progress_bar_6"
 			}
-			effectButtonType = { #Mini window
+			effectButtonType = {
 				name = "bts_crisis_menu_progress_bar_7"
 				quadTextureSprite = "GFX_bts_crisis_menu_progress_bar_7"
 				position = { x= 16 y = 80 }
@@ -177,7 +177,7 @@ guiTypes = {
 				clicksound = no_sound
 				effect = "bts_crisis_menu_progress_bar_7"
 			}
-			effectButtonType = { #Mini window
+			effectButtonType = {
 				name = "bts_crisis_menu_progress_bar_8"
 				quadTextureSprite = "GFX_bts_crisis_menu_progress_bar_8"
 				position = { x= 16 y = 80 }
@@ -187,7 +187,7 @@ guiTypes = {
 				clicksound = no_sound
 				effect = "bts_crisis_menu_progress_bar_8"
 			}
-			effectButtonType = { #Mini window
+			effectButtonType = {
 				name = "bts_crisis_menu_progress_bar_9"
 				quadTextureSprite = "GFX_bts_crisis_menu_progress_bar_9"
 				position = { x= 16 y = 80 }
@@ -197,7 +197,7 @@ guiTypes = {
 				clicksound = no_sound
 				effect = "bts_crisis_menu_progress_bar_9"
 			}
-			effectButtonType = { #Mini window
+			effectButtonType = {
 				name = "bts_crisis_menu_progress_bar_10"
 				quadTextureSprite = "GFX_bts_crisis_menu_progress_bar_10"
 				position = { x= 16 y = 80 }
