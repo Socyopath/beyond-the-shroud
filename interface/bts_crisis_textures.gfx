@@ -281,4 +281,23 @@ spriteTypes = {
 		texturefile = "gfx/interface/crisis_menu/bts_crisis_menu_progress_bar_10.dds"
 	}
 
+	spriteType = {
+		name = "GFX_bts_crisis_ritual_frame"
+		texturefile = "gfx/interface/crisis_menu/bts_crisis_ritual_frame.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bts_crisis_ritual_icon_frame"
+		texturefile = "gfx/interface/crisis_menu/bts_crisis_ritual_icon_frame.dds"
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_bts_crisis_ritual_text_frame"
+		textureFile = "gfx/interface/tiles/dark_area.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bts_crisis_ritual_1_icon"
+		texturefile = "gfx/interface/crisis_menu/bts_crisis_ritual_1_icon.dds"
+	}
 }
