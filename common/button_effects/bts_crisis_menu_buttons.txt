@@ -60,6 +60,11 @@ bts_crisis_menu_back_button = {
 	}
 }
 
+bts_crisis_menu_all_page_button = {
+	potential = {
+		always = yes
+	}
+}
 
 bts_crisis_menu_main_button = {
 	potential = {

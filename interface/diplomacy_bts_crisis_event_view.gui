@@ -13,6 +13,19 @@ guiTypes = {
 			quadTextureSprite ="GFX_bts_crisis_menu_background"
 		}
 
+		effectButtonType = {
+			name = "thrall_count_text"
+			quadTextureSprite = "GFX_bts_crisis_menu_thrall_count"
+			position = {  x= 120 y = 215 }
+			orientation = "UPPER_LEFT"
+			buttonText = bts_crisis_menu_thrall_count
+			tooltipText = GROWTH_BUTTON_DESC
+			buttonFont = malgun_goth_24
+			format = center
+			multiline = yes
+			effect = bts_crisis_menu_all_page_button
+		}
+
 		buttonType = {
 			name = "close"
 			quadTextureSprite = "GFX_bts_crisis_menu_close_button"
