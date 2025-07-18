@@ -29,7 +29,7 @@ guiTypes = {
 		buttonType = {
 			name = "close"
 			quadTextureSprite = "GFX_bts_crisis_menu_close_button"
-			position = {  x= 150 y = 200 }
+			position = {  x= 100 y = 285 }
 			orientation = "UPPER_LEFT"
 			clicksound = back_click
 		}
@@ -37,7 +37,7 @@ guiTypes = {
 		effectButtonType = {
 			name = "bts_crisis_menu_back_button"
 			quadTextureSprite = "GFX_bts_crisis_menu_back_button"
-			position = { x= 150 y = 300 }
+			position = { x= 100 y = 370 }
 			orientation = "UPPER_LEFT"
 			clicksound = back_click					
 			effect = "bts_crisis_menu_back_button"
@@ -224,10 +224,11 @@ guiTypes = {
 
 		### RITUAL PAGE
 
+		# Title
 		effectButtonType = {
 			name = "bts_crisis_menu_ritual_page_text"
 			quadTextureSprite = GFX_bts_crisis_menu_ritual_text_bg
-			position = { x= 200 y = 104 }
+			position = { x= 195 y = 95 }
 			orientation = "UPPER_LEFT"		
 			alwaystransparent = yes
 			buttonText = bts_crisis_menu_ritual_text
@@ -238,57 +239,75 @@ guiTypes = {
 			effect = bts_crisis_menu_ritual_page_button
 		}
 
+		# Content
 		containerWindowType = {
-			name = "bts_crisis_menu_ritual_1"
-			position = { x = 150 y = 120 }
-			size = { width = 300 height = 57 }
+			name = "bts_crisis_menu_ritual_all"
+			position = { x = 200 y = 180 }
+			size = { width = 600 height = 400 }
 			clipping = yes
 
 			effectButtonType = {
-				name = "bts_crisis_menu_ritual_1_frame"
-				quadTextureSprite = "GFX_bts_crisis_ritual_frame"
+				name = "bts_crisis_menu_ritual_bg"
+				quadTextureSprite = GFX_bts_crisis_menu_bg_frame
 				position = { x= 0 y = 0 }
 				orientation = "UPPER_LEFT"
-				clicksound = ui_kaiju_grow_up
-				effect = bts_crisis_menu_ritual_1
-			}
-
-			effectButtonType = {
-				name = "bts_crisis_menu_ritual_1_icon_frame"
-				quadTextureSprite = "GFX_bts_crisis_ritual_icon_frame"
-				position = { x= 5 y = 5 }
-				orientation = "UPPER_LEFT"
-				oversound = no_sound
-				clicksound = no_sound
-				effect = bts_crisis_menu_ritual_1
-				alwaysTransparent = yes
-			}
-
-			effectButtonType = {
-				name = "bts_crisis_menu_ritual_1_icon"
-				quadTextureSprite = "GFX_bts_crisis_ritual_1_icon"
-				position = { x= 7 y = 7 }
-				orientation = "UPPER_LEFT"
-				oversound = no_sound
-				clicksound = no_sound
-				effect = bts_crisis_menu_ritual_1
-				alwaysTransparent = yes
-			}
-			
-			effectButtonType = {
-				name = "bts_crisis_menu_ritual_1_text"
-				quadTextureSprite = "GFX_bts_crisis_ritual_text_frame"
-				size = { x = 118 y = 47 }
-				position = { x = 55 y = 5 }
-				orientation = "UPPER_LEFT"
-				oversound = no_sound
-				clicksound = no_sound
-				buttonText = bts_ritual_harvest
-				buttonFont = malgun_goth_24
-				vertical_alignment = center
-				format = center
+				alwaystransparent = yes
 				effect = bts_crisis_menu_ritual_page_button
-				alwaysTransparent = yes
+			}
+
+			containerWindowType = {
+				name = "bts_crisis_menu_ritual_1"
+				position = { x = 20 y = 30 }
+				size = { width = 300 height = 57 }
+				clipping = yes
+
+				effectButtonType = {
+					name = "bts_crisis_menu_ritual_1_frame"
+					quadTextureSprite = "GFX_bts_crisis_ritual_frame"
+					position = { x= 0 y = 0 }
+					orientation = "UPPER_LEFT"
+					clicksound = ui_kaiju_grow_up
+					effect = bts_crisis_menu_ritual_1
+				}
+
+				effectButtonType = {
+					name = "bts_crisis_menu_ritual_1_icon_frame"
+					quadTextureSprite = "GFX_bts_crisis_ritual_icon_frame"
+					position = { x= 5 y = 5 }
+					orientation = "UPPER_LEFT"
+					oversound = no_sound
+					clicksound = no_sound
+					effect = bts_crisis_menu_ritual_1
+					alwaysTransparent = yes
+				}
+
+				effectButtonType = {
+					name = "bts_crisis_menu_ritual_1_icon"
+					quadTextureSprite = "GFX_bts_crisis_ritual_1_icon"
+					position = { x= 7 y = 7 }
+					orientation = "UPPER_LEFT"
+					oversound = no_sound
+					clicksound = no_sound
+					effect = bts_crisis_menu_ritual_1
+					alwaysTransparent = yes
+				}
+				
+				effectButtonType = {
+					name = "bts_crisis_menu_ritual_1_text"
+					quadTextureSprite = "GFX_bts_crisis_ritual_text_frame"
+					size = { x = 118 y = 47 }
+					position = { x = 55 y = 5 }
+					orientation = "UPPER_LEFT"
+					oversound = no_sound
+					clicksound = no_sound
+					buttonText = bts_crisis_menu_ritual_1_text
+					buttonFont = malgun_goth_24
+					vertical_alignment = center
+					format = center
+					multiline = yes
+					effect = bts_crisis_menu_ritual_page_button
+					alwaysTransparent = yes
+				}
 			}
 		}
 
