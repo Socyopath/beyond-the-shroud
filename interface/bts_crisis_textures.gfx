@@ -231,6 +231,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/jobs/job_bts_crisis_sacrifical_thrall.dds"
 	}
 
+	spriteType = {
+		name = "GFX_bts_crisis_menu_bg_frame"
+		texturefile = "gfx/interface/crisis_menu/bts_crisis_menu_bg_frame.dds"
+	}
+
 
 	spriteType = {
 		name = "GFX_bts_crisis_menu_progress_bar_0"
