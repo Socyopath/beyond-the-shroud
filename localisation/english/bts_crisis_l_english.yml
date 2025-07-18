@@ -443,6 +443,7 @@ bts.550.option.5: "§RStart the Awakening Ritual§!"
 
 
 bts_crisis_menu_ritual_text: "Rituals"
+bts_crisis_menu_ritual_1_text: "§H$bts_ritual_harvest$§!\n£job_bts_crisis_sacrifical_thrall£ 120"
 bts_crisis_menu_pact_text: "Pacts"
 bts_crisis_menu_thrall_count: "\n\n500"
 BTS_CRISIS_MENU_PROGRESS_BAR_0: "0 Deviancy"
