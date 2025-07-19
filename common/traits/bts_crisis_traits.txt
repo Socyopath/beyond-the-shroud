@@ -77,7 +77,6 @@ bts_trait_crisis_thrall = {
 	randomized = no
 	advanced_trait = no
 	infertile = yes
-	sapient = no
 
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 
