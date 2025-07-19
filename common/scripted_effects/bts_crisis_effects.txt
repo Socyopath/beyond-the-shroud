@@ -1,0 +1,295 @@
+
+# This Target country
+# CASTER : country
+# AMOUNT : Amount of pops
+bts_effect_devour_mind = {
+	bts_create_devoured_mind_pop_group = {
+		AMOUNT = $AMOUNT$
+		EVENT_TARGET_POP_GROUP = bts_last_created_pop_group_devoured
+	}
+
+	resettle_pop_group = {
+		POP_GROUP = event_target:bts_last_created_pop_group_devoured
+		PLANET = $CASTER$.capital_scope
+		AMOUNT = $AMOUNT$
+	}
+
+	while = {
+		count = $AMOUNT$
+		$CASTER$ = {
+			complete_crisis_objective = bts_crisis_obj_devour_mind
+		}	
+	}
+}
+
+# This: Country
+bts_create_devoured_mind_pop_group = {
+	weighted_random_owned_pop_group = {
+		limit = {
+			NOT = { has_trait = bts_trait_crisis_thrall }
+			is_robot_pop_group = no
+		}
+		save_event_target_as = old_pop_group
+		species = {
+			save_event_target_as = old_species
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				any_galaxy_species = {
+					has_species_flag = devoured_mind_species_of_species@event_target:old_species
+				}
+			}
+		}
+		event_target:old_species = {
+			modify_species = {
+				effect = {
+					create_species = {
+						is_mod = yes
+						name = this
+						plural = this
+						class = this
+						portrait = this
+						namelist = this
+						sapient = no
+						can_be_modified = no
+						traits = {
+							ideal_planet_class = this
+							trait = bts_trait_crisis_thrall
+							# trait = trait_zombie
+						}
+					}
+				}
+			}
+			last_created_species = {
+				set_species_flag = devoured_mind_species_of_species@event_target:old_species
+				save_event_target_as = target_species
+			}
+		}
+	}
+	else = {
+		random_galaxy_species = {
+			limit = {
+				has_species_flag = devoured_mind_species_of_species@event_target:old_species
+			}
+			save_event_target_as = target_species
+		}
+	}
+	# Kill old pop
+	while = {
+		count = $AMOUNT$
+		random_owned_pop_group = {
+			limit = {
+				NOT = { has_trait = bts_trait_crisis_thrall }
+			}
+			kill_pop_group = { 
+				pop_group = this
+				amount = 1
+			}
+		}
+	}
+	# Create new devoured pop
+	capital_scope = {
+		create_pop_group = {
+			pop_group = event_target:old_pop_group
+			species = event_target:target_species
+			size = $AMOUNT$
+			effect = {
+				[[EVENT_TARGET_POP_GROUP] save_event_target_as = $EVENT_TARGET_POP_GROUP$ ]
+			}
+		}
+	}
+}
+
+# This : Pop
+# CASTER : country
+# bts_auto_resettle_thrall = {
+# 	if = {
+# 		limit = { 
+# 			any_owned_planet = {
+# 				free_jobs_of_type = {
+# 					job = bts_crisis_sacrifical_thrall
+# 					value >= 100
+# 				}
+# 			}
+# 		}
+# 		random_owned_planet = {
+# 			limit = {
+# 				free_jobs_of_type = {
+# 					job = bts_crisis_sacrifical_thrall
+# 					value >= 100
+# 				}
+# 			}
+# 			save_event_target_as = thrall_resettle_planet
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = {
+# 			any_owned_planet = {
+# 				bts_crisis_has_thrall_building = yes
+# 			}
+# 		}
+# 		random_owned_planet = {
+# 			limit = {
+# 				bts_crisis_has_thrall_building = yes
+# 			}
+# 			save_event_target_as = thrall_resettle_planet
+# 		}
+# 	}
+# 	else = {
+# 		capital_scope = {
+# 			save_event_target_as = thrall_resettle_planet
+# 		}
+# 	}
+# 	resettle_pop_group = {
+# 		POP_GROUP = this
+# 		PLANET = event_target:thrall_resettle_planet
+# 		AMOUNT = 100
+# 	}
+# 	resettle_pop = {
+# 		pop = this
+# 		planet = event_target:thrall_resettle_planet
+# 	}
+# }
+
+# bts_effect_consume_thrall = {
+# 	while = {
+# 		count = $COUNT$
+# 		random_owned_pop = {
+# 			limit = {
+# 				has_job = bts_crisis_sacrifical_thrall
+# 			}
+# 			kill_pop = yes
+# 		}
+# 	}
+# }
+
+bts_crisis_ritual_setup = {
+	custom_tooltip_with_params = {
+		description = "bts_crisis_ritual_info_tooltip"
+		description_parameters = {
+			"COST" = $COST$
+			"RITUAL" = $RITUAL$
+		}
+	}
+
+	hidden_effect = {
+		# bts_effect_consume_thrall = { COUNT = $COST$ }
+		set_saved_date = {
+			key = bts_crisis_ritual_cooldown_$RITUAL$
+			days_from_present = value:bts_crisis_ritual_cooldown_value|COOLDOWN|@$RITUAL$_cooldown|
+			expires = value:bts_crisis_ritual_cooldown_value|COOLDOWN|@$RITUAL$_cooldown|
+		}
+		complete_crisis_objective = bts_crisis_obj_ritual
+	}
+}
+
+bts_save_leader_trait_flag = {
+	if = {
+		limit = {
+			has_trait = $TRAIT$
+		}
+		set_leader_flag = bts_had_trait_$TRAIT$
+	}
+}
+
+bts_restore_leader_trait_flag = {
+	if = {
+		limit = {
+			has_leader_flag = bts_had_trait_$TRAIT$
+		}
+		add_trait = $TRAIT$
+		remove_leader_flag = bts_had_trait_$TRAIT$
+	}
+}
+
+
+# bts_save_leader_trait_flag = { TRAIT = }
+# bts_restore_leader_trait_flag = { TRAIT = }
+bts_reset_leader_trait = {
+	bts_save_leader_trait_flag = { TRAIT = leader_trait_psionic }
+	bts_save_leader_trait_flag = { TRAIT = leader_trait_chosen }
+	bts_save_leader_trait_flag = { TRAIT = leader_trait_composer_chosen }
+	bts_save_leader_trait_flag = { TRAIT = leader_trait_instrument_chosen }
+	bts_save_leader_trait_flag = { TRAIT = leader_trait_eater_chosen }
+	bts_save_leader_trait_flag = { TRAIT = leader_trait_whisperers_chosen }
+	bts_save_leader_trait_flag = { TRAIT = leader_trait_admiral_warform }
+	bts_save_leader_trait_flag = { TRAIT = bts_leader_trait_covenant_chosen }
+	remove_all_traits = yes
+	bts_restore_leader_trait_flag = { TRAIT = leader_trait_psionic }
+	bts_restore_leader_trait_flag = { TRAIT = leader_trait_chosen }
+	bts_restore_leader_trait_flag = { TRAIT = leader_trait_composer_chosen }
+	bts_restore_leader_trait_flag = { TRAIT = leader_trait_instrument_chosen }
+	bts_restore_leader_trait_flag = { TRAIT = leader_trait_eater_chosen }
+	bts_restore_leader_trait_flag = { TRAIT = leader_trait_whisperers_chosen }
+	bts_restore_leader_trait_flag = { TRAIT = leader_trait_admiral_warform }
+	bts_restore_leader_trait_flag = { TRAIT = bts_leader_trait_covenant_chosen }
+}
+
+# Scope: Leader
+bts_reset_leader = {
+	unassign_leader = this 
+	change_leader_class = $CLASS$
+
+	# Reset XP
+	export_trigger_value_to_variable = {
+		trigger = has_experience
+		variable = bts_leader_xp
+	}
+	add_experience = value:bts_leader_xp_neg
+
+	# Reset Level
+	export_trigger_value_to_variable = {
+		trigger = has_level
+		variable = bts_leader_level
+	}
+	subtract_variable = {
+		which = bts_leader_level
+		value = 1
+	}
+	set_skill = 1
+
+	# Reset traits
+	bts_reset_leader_trait  = yes
+
+	# Add bonus traits from modifier
+	while = {
+		count = owner.modifier:leader_initial_skill
+		add_trait_no_notify = random_common
+	}
+
+	# Restore XP
+	# Restore Level
+	add_skill_without_trait_selection = bts_leader_level
+	add_experience = value:bts_leader_raw_experience|XP|bts_leader_xp|
+	clear_variable = bts_leader_level
+	clear_variable = bts_leader_xp
+}
+
+
+
+bts_add_deposit = {
+	while = {
+		count = $COUNT|1$
+		add_deposit = $DEPOSIT$
+	}
+}
+
+bts_add_random_deposit = {
+	random_list = {
+		3 = { bts_add_deposit = { DEPOSIT = d_energy_1 COUNT = $BASIC_COUNT$ } }
+		3 = { bts_add_deposit = { DEPOSIT = d_minerals_1 COUNT = $BASIC_COUNT$ } }
+		3 = { bts_add_deposit = { DEPOSIT = d_alloys_1 COUNT = $BASIC_COUNT$ } }
+		2 = { bts_add_deposit = { DEPOSIT = d_society_1 COUNT = $TECH_COUNT$ } }
+		2 = { bts_add_deposit = { DEPOSIT = d_physics_1 COUNT = $TECH_COUNT$ } }
+		2 = { bts_add_deposit = { DEPOSIT = d_engineering_1 COUNT = $TECH_COUNT$ } }
+		1 = { bts_add_deposit = { DEPOSIT = d_rare_crystals_1 COUNT = $SR_COUNT$ } }
+		1 = { bts_add_deposit = { DEPOSIT = d_volatile_motes_1 COUNT = $SR_COUNT$ } }
+		1 = { bts_add_deposit = { DEPOSIT = d_exotic_gases_1 COUNT = $SR_COUNT$ } }
+		1 = { bts_add_deposit = { DEPOSIT = d_zro_deposit_1 COUNT = $SR_COUNT$ } }
+		1 = { bts_add_deposit = { DEPOSIT = d_dark_matter_deposit_1 COUNT = $SR_COUNT$ } }
+		1 = { bts_add_deposit = { DEPOSIT = d_astral_threads_deposit_1 COUNT = $SR_COUNT$ } }
+	}
+}
+

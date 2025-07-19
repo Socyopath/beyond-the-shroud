@@ -1,0 +1,100 @@
+bts_trait_crisis_main_1 = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/bts_trait_crisis_main_1.dds"
+	initial = no
+	randomized = no
+	advanced_trait = no
+	infertile = yes
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	leader_potential_add = {
+		always = no
+	}
+
+	custom_tooltip_with_modifiers = bts_trait_crisis_main_1_effect
+	triggered_pop_group_modifier = {
+		pop_government_ethic_attraction = @bts_trait_crisis_main_1_ethics
+		mult = owner.value:bts_trait_crisis_main_thrall_bonus
+	}
+	triggered_pop_group_modifier = {
+		pop_happiness = @bts_trait_crisis_main_1_happiness
+		mult = owner.value:bts_trait_crisis_main_thrall_bonus
+	}
+}
+
+bts_trait_crisis_main_2 = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/bts_trait_crisis_main_2.dds"
+	initial = no
+	randomized = no
+	advanced_trait = no
+	infertile = yes
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	leader_potential_add = {
+		always = no
+	}
+
+	custom_tooltip_with_modifiers = bts_trait_crisis_main_2_effect
+	triggered_pop_group_modifier = {
+		pop_government_ethic_attraction = @bts_trait_crisis_main_2_ethics
+		mult = owner.value:bts_trait_crisis_main_thrall_bonus
+	}
+	triggered_pop_group_modifier = {
+		pop_happiness = @bts_trait_crisis_main_2_happiness
+		mult = owner.value:bts_trait_crisis_main_thrall_bonus
+	}
+	triggered_pop_group_modifier = {
+		pop_environment_tolerance = @bts_trait_crisis_main_2_habitability
+		mult = owner.value:bts_trait_crisis_main_thrall_bonus
+	}
+}
+
+bts_trait_crisis_thrall = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/bts_trait_crisis_thrall.dds"
+	initial = no
+	randomized = no
+	advanced_trait = no
+	infertile = yes
+	sapient = no
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	leader_potential_add = {
+		always = no
+	}
+    
+	modifier = {
+		
+	}
+}

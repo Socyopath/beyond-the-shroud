@@ -4,15 +4,15 @@
 @bts_menp_new_trait_stability = -20
 
 # Objectives
-@bts_crisis_obj_devour_mind_currency = 25
+@bts_crisis_obj_devour_mind_currency = 1
 @bts_crisis_obj_ritual_currency = 100
 @bts_crisis_obj_pact_currency = 1000
 
 # Buildings
-@bts_crisis_building_thrall_limit = 1
-@bts_crisis_building_thrall_1_jobs = 2
-@bts_crisis_building_thrall_2_jobs = 4
-@bts_crisis_building_thrall_3_jobs = 6
+@bts_crisis_building_thrall_limit = 100
+@bts_crisis_building_thrall_1_jobs = 200
+@bts_crisis_building_thrall_2_jobs = 400
+@bts_crisis_building_thrall_3_jobs = 600
 
 # Jobs
 @bts_crisis_sacrifical_thrall_unity = 3

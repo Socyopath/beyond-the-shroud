@@ -1,0 +1,21 @@
+bts_crisis_deviancy = {
+	icon = mod_sr_zro_cost_mult
+	max_decimals = 0
+	good = no
+	category = country
+	percentage = no
+}
+
+bts_crisis_ritual_coolodwn_mult = {
+	icon = mod_relic_cooldown
+	good = no
+	category = country
+	percentage = yes
+}
+
+bts_crisis_pact_cooldown_mult = {
+	icon = mod_shroud_unavailable
+	good = no
+	category = country
+	percentage = yes
+}
