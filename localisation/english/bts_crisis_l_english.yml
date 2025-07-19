@@ -395,12 +395,6 @@ bts_civic_council_pact: "Apostle"
 bts_crisis_councilor_ritual_effect: "- $mod_bts_crisis_ritual_coolodwn_mult$: §G$@bts_crisis_councilor_ritual_cooldown_per_level|%1$§!\n- $bts_menp_cult_1_effect_councilor_power$Ritual §YUmbral Trade§! grants $mod_planet_jobs_produces_mult$\n- $bts_menp_cult_1_effect_councilor_power_ultimate$Ritual §YUmbral Trade's§! cost is reduced by §G1§!"
 bts_crisis_councilor_operation_effect: "- $MOD_ESPIONAGE_OPERATION_SPEED_MULT$: §G$@bts_crisis_councilor_operation_speed_per_level|%0$§!\n- $bts_menp_cult_1_effect_councilor_power$Operation §Y$operation_bts_crisis_devour_mind$§! steals §G+1§! pop\n- $bts_menp_cult_1_effect_councilor_power_ultimate$Operation §Y$operation_bts_crisis_devour_mind$§! works on FTL empires"
 bts_crisis_councilor_pact_effect: "- $mod_bts_crisis_pact_cooldown_mult$: §G$@bts_crisis_councilor_pact_cooldown_per_level|%0$§!\n- $bts_menp_cult_1_effect_councilor_power$Eldritch Pact Yearly Cost: §G-1§!\n- $bts_menp_cult_1_effect_councilor_power_ultimate$Eldritch Pact Limit: §G+1§!"
-bts_civic_council_ritual_locked: "Locked"
-bts_civic_council_ritual_locked_desc: "Progress through the crisis to unlock"
-bts_civic_council_operation_locked: "$bts_civic_council_ritual_locked$"
-bts_civic_council_operation_locked_desc: "$bts_civic_council_ritual_locked_desc$"
-bts_civic_council_pact_locked: "$bts_civic_council_ritual_locked$"
-bts_civic_council_pact_locked_desc: "$bts_civic_council_ritual_locked_desc$"
 
 # Outer Gods Ritual event chain
 bts_crisis_final_ritual_chain_title: "The Last Ritual"

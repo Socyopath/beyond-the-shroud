@@ -8,6 +8,17 @@ bts_effect_devour_mind = {
 		EVENT_TARGET_POP_GROUP = bts_last_created_pop_group_devoured
 	}
 
+	event_target:bts_last_created_pop_group_devoured.species = {
+		set_citizenship_type = {
+			country = $CASTER$
+			type = citizenship_slavery
+		}
+		set_slavery_type = { 
+			country = $CASTER$ 
+			type = slavery_domestic
+		}
+	}
+
 	resettle_pop_group = {
 		POP_GROUP = event_target:bts_last_created_pop_group_devoured
 		PLANET = $CASTER$.capital_scope
@@ -52,12 +63,10 @@ bts_create_devoured_mind_pop_group = {
 						class = this
 						portrait = this
 						namelist = this
-						sapient = no
 						can_be_modified = no
 						traits = {
 							ideal_planet_class = this
 							trait = bts_trait_crisis_thrall
-							# trait = trait_zombie
 						}
 					}
 				}
@@ -94,7 +103,7 @@ bts_create_devoured_mind_pop_group = {
 		create_pop_group = {
 			pop_group = event_target:old_pop_group
 			species = event_target:target_species
-			category = pre_sapients
+			category = slave
 			size = $AMOUNT$
 			effect = {
 				[[EVENT_TARGET_POP_GROUP] save_event_target_as = $EVENT_TARGET_POP_GROUP$ ]

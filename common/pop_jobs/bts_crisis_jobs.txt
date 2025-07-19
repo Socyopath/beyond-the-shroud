@@ -1,11 +1,9 @@
 bts_crisis_sacrifical_thrall = {
-	category = pre_sapients
-
-    contributes_to_diplo_weight = no
+	category = slave
 
 	possible_pre_triggers = {
 		has_owner = yes
-        is_sapient = no
+		is_enslaved = yes
 		is_being_purged = no
 		is_being_assimilated = no
 	}
