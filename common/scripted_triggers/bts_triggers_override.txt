@@ -42,3 +42,12 @@ has_chosen_covenant_trait_non_ruler = {
 		has_trait = bts_leader_trait_covenant_chosen
 	}
 }
+
+can_think = {
+	NOR = {
+		has_trait = bts_trait_crisis_thrall
+		has_trait = trait_nerve_stapled
+		has_trait = trait_zombie
+		has_trait = trait_robot_suppressed
+	}
+}

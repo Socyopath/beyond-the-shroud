@@ -94,6 +94,7 @@ bts_create_devoured_mind_pop_group = {
 		create_pop_group = {
 			pop_group = event_target:old_pop_group
 			species = event_target:target_species
+			category = pre_sapients
 			size = $AMOUNT$
 			effect = {
 				[[EVENT_TARGET_POP_GROUP] save_event_target_as = $EVENT_TARGET_POP_GROUP$ ]
