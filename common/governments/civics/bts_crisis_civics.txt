@@ -1,0 +1,57 @@
+bts_civic_council_ritual_locked = {
+    pickable_at_start = no
+    playable = { always = no }
+    modifier = {
+        country_government_civic_points_add = 1
+    }
+    modification = no
+}
+
+bts_civic_council_operation_locked = {
+    pickable_at_start = no
+    playable = { always = no }
+    modifier = {
+        country_government_civic_points_add = 1
+    }
+    modification = no
+}
+
+bts_civic_council_pact_locked = {
+    pickable_at_start = no
+    playable = { always = no }
+    modifier = {
+        country_government_civic_points_add = 1
+    }
+    modification = no
+}
+
+bts_civic_council_ritual = {
+    icon = "gfx/interface/council_view/icon_bts_crisis_councilor_ritual.dds"
+    pickable_at_start = no
+    playable = { always = no }
+    modifier = {
+        country_government_civic_points_add = 1
+    }
+    modification = no
+}
+
+bts_civic_council_operation = {
+    icon = "gfx/interface/council_view/icon_bts_crisis_councilor_operation.dds"
+    pickable_at_start = no
+    playable = { always = no }
+    ai_playable = { always = no }
+    modifier = {
+        country_government_civic_points_add = 1
+    }
+    modification = no
+}
+
+bts_civic_council_pact = {
+    icon = "gfx/interface/council_view/icon_bts_crisis_councilor_pact.dds"
+    pickable_at_start = no
+    playable = { always = no }
+    modifier = {
+        country_government_civic_points_add = 1
+    }
+    modification = no
+}
