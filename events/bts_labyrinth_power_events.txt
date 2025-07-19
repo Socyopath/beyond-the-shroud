@@ -432,7 +432,7 @@ planet_event = {
         # Robots pops
 		every_owned_pop_group = {
 			limit = {
-				is_robot_pop = yes
+				is_robot_pop_group = yes
 			}
             while = {
 				count = value:per_100_pop_amount #For every 100 pops iterate through this loop once
@@ -449,7 +449,7 @@ planet_event = {
         # Organic pops
 		every_owned_pop_group = {
 			limit = {
-				is_robot_pop = no
+				is_robot_pop_group = no
 			}
             while = {
 				count = value:per_100_pop_amount #For every 100 pops iterate through this loop once
