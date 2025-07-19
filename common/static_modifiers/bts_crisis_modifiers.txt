@@ -1,0 +1,70 @@
+
+
+bts_debug_modifier = {
+    bts_crisis_deviancy = 1
+}
+
+bts_ritual_pop_trade_boost = {
+    planet_jobs_produces_mult = @bts_ritual_pop_trade_boost_produces
+}
+
+# bts_crisis_agenda_1_finish = {
+#     planet_stability_add = @bts_crisis_agenda_1_stability_finish
+#     all_technology_research_speed = @bts_crisis_agenda_1_tech_finish
+# }
+
+# bts_crisis_agenda_2_finish = {
+#     planet_stability_add = @bts_crisis_agenda_2_stability_finish
+#     planet_jobs_upkeep_mult = @bts_crisis_agenda_2_jobs_upkeep_finish
+# }
+
+# bts_crisis_pact_1 = {
+#     icon = "gfx/interface/icons/modifiers/mod_pop_robot_upkeep_mult.dds"
+#     custom_tooltip = bts_crisis_pact_1_tooltip
+#     ship_cloaking_detection_add = @bts_crisis_pact_1_cloaking_detection
+# }
+# bts_crisis_pact_1_ship_debuff = {
+#     icon = "gfx/interface/icons/modifiers/mod_pop_robot_upkeep_mult.dds"
+#     ship_accuracy_mult = @bts_crisis_pact_1_ship_debuff_accuracy
+#     ship_fire_rate_mult = @bts_crisis_pact_1_ship_debuff_fire_rate
+#     ship_speed_reduction = @bts_crisis_pact_1_ship_debuff_speed_reduction
+# }
+# bts_crisis_pact_1_stabase_debuff_no_cost = {
+#     icon = "gfx/interface/icons/modifiers/mod_pop_robot_upkeep_mult.dds"
+#     ship_fire_rate_mult = -5.00
+# }
+
+# bts_crisis_pact_2 = {
+#     icon = "gfx/interface/icons/modifiers/mod_pop_robot_upkeep_mult.dds"
+#     custom_tooltip = bts_crisis_pact_2_tooltip
+# }
+
+# bts_crisis_pact_3 = {
+#     icon = "gfx/interface/icons/modifiers/mod_pop_robot_upkeep_mult.dds"
+#     custom_tooltip = bts_crisis_pact_3_tooltip
+# }
+# bts_crisis_pact_3_natural_worlds = {
+#     pop_category_workers_society_research_produces_add = @bts_crisis_pact_3_natural_worlds_society
+#     pop_growth_speed = @bts_crisis_pact_3_natural_worlds_growth
+#     planet_jobs_produces_mult = @bts_crisis_pact_3_natural_worlds_produces
+#     planet_jobs_upkeep_mult = @bts_crisis_pact_3_natural_worlds_upkeep
+#     pop_happiness = @bts_crisis_pact_3_natural_worlds_happiness
+# }
+
+# bts_crisis_pact_4 = {
+#     icon = "gfx/interface/icons/modifiers/mod_pop_robot_upkeep_mult.dds"
+#     custom_tooltip = bts_crisis_pact_4_tooltip
+# }
+
+# bts_crisis_pact_5 = {
+#     icon = "gfx/interface/icons/modifiers/mod_pop_robot_upkeep_mult.dds"
+#     custom_tooltip = bts_crisis_pact_5_tooltip
+# }
+
+# bts_crisis_pact_cooldown = {
+#     custom_tooltip = bts_crisis_pact_cooldown_tooltip
+# }
+
+# bts_crisis_war_exhaust = {
+#     country_war_exhaustion_mult = @bts_crisis_war_exhaust_value
+# }

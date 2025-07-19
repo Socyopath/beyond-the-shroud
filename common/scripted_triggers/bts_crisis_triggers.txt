@@ -11,3 +11,55 @@ bts_crisis_menu_is_ritual = {
 bts_crisis_menu_is_pact = {
     has_country_flag = bts_crisis_menu_pact
 }
+
+bts_crisis_has_thrall = {
+    check_variable_arithmetic = {
+        which = value:bts_num_jobs|JOB|bts_crisis_sacrifical_thrall|
+        value >= $COST$
+    }
+}
+
+bts_crisis_has_thrall_building = {
+	OR = {
+		has_building = bts_crisis_building_thrall_1
+		has_building = bts_crisis_building_thrall_2
+		has_building = bts_crisis_building_thrall_3
+	}
+}
+
+bts_can_use_councilor_power = {
+	any_owned_leader = {
+		is_councilor = yes
+		is_councilor_type = $COUNCILOR$
+		has_total_skill >= @bts_crisis_councilor_power_level
+	}
+}
+
+bts_can_use_councilor_ultimate_power = {
+	any_owned_leader = {
+		is_councilor = yes
+		is_councilor_type = $COUNCILOR$
+		has_total_skill >= @bts_crisis_councilor_ulimate_power_level
+	}
+}
+
+
+bts_crisis_ritual_can_use_cost = {
+	custom_tooltip = {
+		fail_text = bts_crisis_ritual_no_thrall
+		from = {
+            bts_crisis_has_thrall = { COST = $COST$ }
+        }
+	}
+}
+
+bts_crisis_ritual_can_use_cooldown = {
+    custom_tooltip = {
+        fail_text = bts_crisis_ritual_on_cooldown_$RITUAL$
+        from = {
+            NOT = { has_country_flag = bts_crisis_ritual_cooldown_$RITUAL$ }
+        }
+    }
+}
+
+    

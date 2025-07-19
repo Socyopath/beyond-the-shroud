@@ -1,0 +1,122 @@
+
+bts_crisis_building_thrall_1 = {
+	base_buildtime = @b1_time
+	category = unity
+	icon = building_galactic_memorial_1
+	base_cap_amount = @bts_crisis_building_thrall_limit
+	
+    potential = {
+        owner = {
+            has_crisis_perk = bts_menp_building
+        }
+	}
+
+	building_sets = {
+		government
+		unity
+	}
+	
+	planet_modifier = {
+		job_bts_crisis_sacrifical_thrall_add = @bts_crisis_building_thrall_1_jobs
+	}
+
+	triggered_desc = { text = job_bts_crisis_sacrifical_thrall_effect_desc }
+	
+    upgrades = {
+		bts_crisis_building_thrall_2
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b1_minerals
+		}
+		upkeep = {
+			energy = @b1_upkeep
+		}
+	}
+}
+
+bts_crisis_building_thrall_2 = {
+	base_buildtime = @b2_time
+    can_build = no
+	category = unity
+	icon = building_galactic_memorial_2
+
+    potential = {
+        owner = {
+            has_crisis_perk = bts_menp_building
+        }
+	}
+
+	building_sets = {
+		government
+		unity
+	}
+
+    allow = {
+		has_upgraded_capital = yes
+	}
+
+	planet_modifier = {
+		job_bts_crisis_sacrifical_thrall_add = @bts_crisis_building_thrall_2_jobs
+	}
+
+	triggered_desc = { text = job_bts_crisis_sacrifical_thrall_effect_desc }
+
+    upgrades = {
+		bts_crisis_building_thrall_3
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+			sr_zro = @b2_rare_cost
+		}
+		upkeep = {
+			energy = @b2_upkeep
+			sr_zro = @b2_rare_upkeep
+		}
+	}
+}
+
+bts_crisis_building_thrall_3 = {
+	base_buildtime = @b3_time
+    can_build = no
+	category = unity
+	icon = building_galactic_memorial_3
+
+    potential = {
+        owner = {
+            has_crisis_perk = bts_menp_building
+        }
+	}
+	
+	building_sets = {
+		government
+		unity
+	}
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+
+	planet_modifier = {
+		job_bts_crisis_sacrifical_thrall_add = @bts_crisis_building_thrall_3_jobs
+	}
+
+	triggered_desc = { text = job_bts_crisis_sacrifical_thrall_effect_desc }
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+			sr_zro = @b3_rare_cost
+		}
+		upkeep = {
+			energy = @b3_upkeep
+			sr_zro = @b3_rare_upkeep
+		}
+	}
+}

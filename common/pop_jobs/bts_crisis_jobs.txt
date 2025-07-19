@@ -1,22 +1,15 @@
 bts_crisis_sacrifical_thrall = {
-	category = worker
+	category = pre_sapients
 
-    swappable_data = {
-		default = {
-			condition_string = WORKER_JOB_TRIGGER
-			building_icon = building_psi_corps
-		}
-	}
-
-	ignores_sapience = yes
+    contributes_to_diplo_weight = no
 
 	possible_pre_triggers = {
 		has_owner = yes
+        is_sapient = no
 		is_being_purged = no
 		is_being_assimilated = no
 	}
 
-	possible_precalc = can_fill_worker_job
 	possible = {
         has_trait = bts_trait_crisis_thrall
 	}
