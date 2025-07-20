@@ -1,0 +1,66 @@
+bts_crisis_menu_ritual_page_button = {
+	potential = {
+		bts_crisis_menu_is_ritual = yes
+	}
+}
+
+bts_crisis_menu_ritual_1 = {
+	potential = {
+		bts_crisis_menu_is_ritual = yes
+	}
+	allow = {
+		has_crisis_perk = bts_menp_mega
+		if = {
+            limit = { 
+				bts_can_use_councilor_ultimate_power = { COUNCILOR = bts_crisis_councilor_ritual } 
+            }
+            bts_crisis_ritual_can_use_cost = {
+                COST = @bts_ritual_pop_trade_custom_thrall_cost
+            }
+        }
+        else = {
+            bts_crisis_ritual_can_use_cost = {
+                COST = @bts_ritual_pop_trade_thrall_cost
+            }
+        }
+	}
+	effect = {
+		custom_tooltip = bts_ritual_pop_trade_effects
+		hidden_effect = {
+            capital_scope = {
+				create_pop_group = {
+					size = 100
+					species = owner_main_species
+				}
+            }
+        }
+		if = {
+            limit = {
+				bts_can_use_councilor_power = { COUNCILOR = bts_crisis_councilor_ritual }
+            }
+            custom_tooltip = bts_ritual_pop_trade_bonus_effect
+            hidden_effect = {
+                add_modifier = {
+                    modifier = bts_ritual_pop_trade_boost
+                    days = @bts_ritual_pop_trade_boost_duration
+                }
+            }
+        }
+
+        if = {
+            limit = { 
+				bts_can_use_councilor_ultimate_power = { COUNCILOR = bts_crisis_councilor_ritual } 
+            }
+            bts_crisis_ritual_setup = {
+                COST = @bts_ritual_pop_trade_custom_thrall_cost
+                RITUAL = bts_ritual_pop_trade
+            }
+        }
+        else = {
+            bts_crisis_ritual_setup = {
+                COST = @bts_ritual_pop_trade_thrall_cost
+                RITUAL = bts_ritual_pop_trade
+            }
+        }
+	}
+}

@@ -68,7 +68,7 @@ guiTypes = {
 				format = LEFT
 				size = { x = 80 y = 20 }
 				alwaystransparent = yes
-				effect = bts_crisis_menu_main_button
+				effect = bts_crisis_menu_main_page_button
 			}
 		}
 
@@ -97,7 +97,7 @@ guiTypes = {
 				format = LEFT
 				size = { x = 80 y = 20 }
 				alwaystransparent = yes
-				effect = bts_crisis_menu_main_button
+				effect = bts_crisis_menu_main_page_button
 			}
 		}
 
