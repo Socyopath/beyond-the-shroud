@@ -21,10 +21,10 @@
 # Shroud Rift Decisions 
 ## Rituals
 @bts_ritual_pop_trade_cooldown = 720
-@bts_ritual_pop_trade_thrall_cost = 2
-@bts_ritual_pop_trade_custom_thrall_cost = 1
-@bts_ritual_pop_trade_boost_produces = 0.25
-@bts_ritual_pop_trade_boost_duration = 360
+@bts_ritual_pop_trade_thrall_cost = 200
+# @bts_ritual_pop_trade_custom_thrall_cost = 1
+# @bts_ritual_pop_trade_boost_produces = 0.25
+# @bts_ritual_pop_trade_boost_duration = 360
 
 @bts_ritual_remove_trait_cooldown = 2160
 @bts_ritual_remove_trait_thrall_cost = 2

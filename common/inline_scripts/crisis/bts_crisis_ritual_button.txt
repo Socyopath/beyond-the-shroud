@@ -1,0 +1,37 @@
+$BUTTON_NAME$ = {
+    potential = {
+		bts_crisis_menu_is_ritual = yes
+	}
+    allow = {
+        has_crisis_perk = $PERK$
+        bts_crisis_ritual_can_use_cost = {
+            COST = value:bts_crisis_ritual_cost_value|COST|$BASE_COST$|
+        }
+    }
+    effect = {
+        custom_tooltip = $RITUAL$_effects
+        # custom_tooltip_with_params = {
+        #     description = "bts_crisis_ritual_info_tooltip"
+        #     description_parameters = {
+        #         "COST" = $COST$
+        #         "RITUAL" = $RITUAL$
+        #     }
+        # }
+
+        hidden_effect = {
+            bts_effect_consume_thrall = { 
+                COUNT = value:bts_crisis_ritual_cost_value|COST|$BASE_COST$|
+            }
+            set_saved_date = {
+                key = bts_crisis_ritual_cooldown_$RITUAL$
+                days_from_present = value:bts_crisis_ritual_cooldown_value|COOLDOWN|$BASE_COOLDON$|
+                expires = value:bts_crisis_ritual_cooldown_value|COOLDOWN|$BASE_COOLDON$|
+            }
+            country_event = {
+                id = $RITUAL_EVENT$
+                scopes = { from = event_target:bts_shroud_rift_of_@root }
+            }
+            complete_crisis_objective = bts_crisis_obj_ritual
+        }
+    }
+}

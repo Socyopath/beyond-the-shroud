@@ -163,17 +163,16 @@
 # 	}
 # }
 
-# bts_effect_consume_thrall = {
-# 	while = {
-# 		count = $COUNT$
-# 		random_owned_pop = {
-# 			limit = {
-# 				has_job = bts_crisis_sacrifical_thrall
-# 			}
-# 			kill_pop = yes
-# 		}
-# 	}
-# }
+bts_effect_consume_thrall = {
+	random_owned_pop_job = {
+		limit = {
+			has_job_type = bts_crisis_sacrifical_thrall
+		}
+		kill_assigned_pop_amount = {
+			amount = $COUNT$
+		}
+	}
+}
 
 bts_crisis_ritual_setup = {
 	custom_tooltip_with_params = {

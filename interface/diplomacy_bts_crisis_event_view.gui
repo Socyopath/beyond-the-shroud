@@ -18,7 +18,7 @@ guiTypes = {
 			quadTextureSprite = "GFX_bts_crisis_menu_thrall_count"
 			position = {  x= 120 y = 215 }
 			orientation = "UPPER_LEFT"
-			buttonText = bts_crisis_menu_thrall_count
+			buttonText = bts_crisis_menu_thrall_count_text
 			tooltipText = GROWTH_BUTTON_DESC
 			buttonFont = malgun_goth_24
 			format = center
@@ -32,6 +32,7 @@ guiTypes = {
 			position = {  x= 100 y = 285 }
 			orientation = "UPPER_LEFT"
 			clicksound = back_click
+			shortcut = "ESCAPE"
 		}
 
 		effectButtonType = {
