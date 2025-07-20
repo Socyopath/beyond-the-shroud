@@ -109,10 +109,11 @@ country_event = {
 	is_triggered_only = yes
 	diplomatic = yes
 	custom_gui = "bts_crisis_menu_window"
-	# custom_gui_option = "bts_crisis_menu_option"
-	# picture_event_data = {
-	# 	room = no_video_feed_room
-	# }
+
+	after = {
+		remove_country_flag = bts_crisis_menu_ritual
+		remove_country_flag = bts_crisis_menu_pact
+	}
 
 }
 
