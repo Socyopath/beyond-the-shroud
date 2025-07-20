@@ -1,0 +1,18 @@
+namespace = bts
+
+
+# Umbral Trade
+country_event = {
+	id = bts.520
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+        capital_scope = {
+            create_pop_group = {
+                species = owner_main_species
+                size = 100
+            }
+        }
+	}
+}
