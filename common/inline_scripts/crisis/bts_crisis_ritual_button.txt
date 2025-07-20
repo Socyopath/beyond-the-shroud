@@ -7,16 +7,19 @@ $BUTTON_NAME$ = {
         bts_crisis_ritual_can_use_cost = {
             COST = value:bts_crisis_ritual_cost_value|COST|$BASE_COST$|
         }
+        bts_crisis_ritual_can_use_cooldown = { 
+            RITUAL = $RITUAL$ 
+        }
     }
     effect = {
+        custom_tooltip = bts_crisis_menu_ritual_desc_title
         custom_tooltip = $RITUAL$_effects
-        # custom_tooltip_with_params = {
-        #     description = "bts_crisis_ritual_info_tooltip"
-        #     description_parameters = {
-        #         "COST" = $COST$
-        #         "RITUAL" = $RITUAL$
-        #     }
-        # }
+        custom_tooltip_with_params = {
+            description = bts_crisis_menu_ritual_desc_ressources
+            description_parameters = {
+                "RITUAL" = $RITUAL$
+            }
+        }
 
         hidden_effect = {
             bts_effect_consume_thrall = { 

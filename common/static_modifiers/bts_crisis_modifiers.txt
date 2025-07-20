@@ -4,10 +4,6 @@ bts_debug_modifier = {
     bts_crisis_deviancy = 1
 }
 
-bts_ritual_pop_trade_boost = {
-    planet_jobs_produces_mult = @bts_ritual_pop_trade_boost_produces
-}
-
 # bts_crisis_agenda_1_finish = {
 #     planet_stability_add = @bts_crisis_agenda_1_stability_finish
 #     all_technology_research_speed = @bts_crisis_agenda_1_tech_finish

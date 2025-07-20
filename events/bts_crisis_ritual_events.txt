@@ -11,7 +11,7 @@ country_event = {
         capital_scope = {
             create_pop_group = {
                 species = owner_main_species
-                size = 100
+                size = @bts_ritual_pop_trade_pop_gain
             }
         }
 	}
