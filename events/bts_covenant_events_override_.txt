@@ -1,5 +1,56 @@
 namespace = utopia
 
+# A Covenant
+country_event = {
+	id = utopia.2657
+	title = "utopia.2657.name"
+	desc = "utopia.2657.desc"
+	picture = GFX_evt_shroudwalker_enclave
+	show_sound = event_psionic
+	trackable = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_country_flag = form_covenant_flag
+		}
+	}
+
+	immediate = {
+		set_country_flag = form_covenant_flag
+	}
+
+	option = {
+		name = "utopia.2657.a"
+		custom_tooltip = utopia.2657.a.tt
+		hidden_effect = { save_event_target_as = form_covenant_owner }
+		capital_scope = {
+			enable_special_project = {
+				name = "FORM_COVENANT_PROJECT"
+				location = this
+				owner = root
+			}
+		}
+	}
+	option = {
+		name = bts_crisis_covenant_contact
+		hidden_effect = {
+			set_country_flag = has_shroud_patron
+			set_country_flag = bts_crisis_unlocked
+			country_event = { id = utopia.2659 days = 180 }
+			remove_country_flag = form_covenant_flag
+		}
+	}
+	option = {
+		name = "utopia.2657.c"
+		hidden_effect = {
+			country_event = { id = utopia.2659 days = 360 }
+			remove_country_flag = form_covenant_flag
+		}
+	}
+}
+
 # Pick a Patron to contact
 country_event = {
 	id = utopia.3303
