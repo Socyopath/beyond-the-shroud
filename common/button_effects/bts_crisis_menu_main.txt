@@ -1,0 +1,35 @@
+bts_crisis_menu_main_page_button = {
+	potential = {
+		bts_crisis_menu_is_main = yes
+	}
+}
+
+bts_crisis_menu_ritual_button = {
+	potential = {
+		bts_crisis_menu_is_main = yes
+	}
+	allow = {
+		
+	}
+
+	effect = {
+		hidden_effect = {
+			set_country_flag = bts_crisis_menu_ritual
+		}
+	}
+}
+
+bts_crisis_menu_pact_button = {
+	potential = {
+		bts_crisis_menu_is_main = yes
+	}
+	allow = {
+
+	}
+
+	effect = {
+		hidden_effect = {
+			set_country_flag = bts_crisis_menu_pact
+		}
+	}
+}

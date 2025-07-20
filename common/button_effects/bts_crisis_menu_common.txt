@@ -1,50 +1,3 @@
-
-#Scope type varies depending on what is selected
-# This = selected object (if planet, ship, fleet, system, ambient object, megastructure, federation, espionage operation, arc site or first contact) or player country
-# From = player country
-# Note: It's advised to check is_scope_type = planet/whatever in the allow trigger, since it's possible to confuse the scopes if multiple interfaces are open
-
-# Usage example in a .gui file:
-#	effectbuttonType = {
-#		name = button_effect_test
-#		quadTextureSprite = GFX_fleetview_destroy_fleet
-#		position = { x = 283 y = 0 }
-#		scale = 1
-#		orientation = UPPER_LEFT
-#		effect = example_button_effect
-#	}
-
-
-bts_crisis_menu_ritual_button = {
-	potential = {
-		bts_crisis_menu_is_main = yes
-	}
-	allow = {
-		
-	}
-
-	effect = {
-		hidden_effect = {
-			set_country_flag = bts_crisis_menu_ritual
-		}
-	}
-}
-
-bts_crisis_menu_pact_button = {
-	potential = {
-		bts_crisis_menu_is_main = yes
-	}
-	allow = {
-
-	}
-
-	effect = {
-		hidden_effect = {
-			set_country_flag = bts_crisis_menu_pact
-		}
-	}
-}
-
 bts_crisis_menu_back_button = {
 	potential = {
 		OR = {
@@ -63,24 +16,6 @@ bts_crisis_menu_back_button = {
 bts_crisis_menu_all_page_button = {
 	potential = {
 		always = yes
-	}
-}
-
-bts_crisis_menu_main_button = {
-	potential = {
-		bts_crisis_menu_is_main = yes
-	}
-}
-
-bts_crisis_menu_ritual_page_button = {
-	potential = {
-		bts_crisis_menu_is_ritual = yes
-	}
-}
-
-bts_crisis_menu_pact_page_button = {
-	potential = {
-		bts_crisis_menu_is_pact = yes
 	}
 }
 
@@ -180,18 +115,5 @@ bts_crisis_menu_progress_bar_10 = {
 			which = modifier:bts_crisis_deviancy
 			value = 10
 		}
-	}
-}
-
-
-bts_crisis_menu_ritual_1 = {
-	potential = {
-		bts_crisis_menu_is_ritual = yes
-	}
-	allow = {
-		# always = no
-	}
-	effect = {
-		custom_tooltip = bts_ritual_pop_trade_effects
 	}
 }

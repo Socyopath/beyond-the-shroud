@@ -1,0 +1,5 @@
+bts_crisis_menu_pact_page_button = {
+	potential = {
+		bts_crisis_menu_is_pact = yes
+	}
+}
