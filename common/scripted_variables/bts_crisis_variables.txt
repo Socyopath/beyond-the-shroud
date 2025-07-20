@@ -54,11 +54,10 @@
 @bts_ritual_harvest_days_before_invasion_end = 720
 
 # Traits
-@bts_trait_crisis_main_1_ethics = 0.01
+@bts_trait_crisis_main_1_workforce = 0.025
 @bts_trait_crisis_main_1_happiness = 0.01
-@bts_trait_crisis_main_2_ethics = 0.02
+@bts_trait_crisis_main_2_workforce = 0.05
 @bts_trait_crisis_main_2_happiness = 0.02
-@bts_trait_crisis_main_2_habitability = 0.01
 
 # Council
 @bts_crisis_councilor_power_level = 5
