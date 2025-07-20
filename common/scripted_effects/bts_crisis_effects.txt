@@ -174,26 +174,6 @@ bts_effect_consume_thrall = {
 	}
 }
 
-bts_crisis_ritual_setup = {
-	custom_tooltip_with_params = {
-		description = "bts_crisis_ritual_info_tooltip"
-		description_parameters = {
-			"COST" = $COST$
-			"RITUAL" = $RITUAL$
-		}
-	}
-
-	hidden_effect = {
-		# bts_effect_consume_thrall = { COUNT = $COST$ }
-		set_saved_date = {
-			key = bts_crisis_ritual_cooldown_$RITUAL$
-			days_from_present = value:bts_crisis_ritual_cooldown_value|COOLDOWN|@$RITUAL$_cooldown|
-			expires = value:bts_crisis_ritual_cooldown_value|COOLDOWN|@$RITUAL$_cooldown|
-		}
-		complete_crisis_objective = bts_crisis_obj_ritual
-	}
-}
-
 bts_save_leader_trait_flag = {
 	if = {
 		limit = {

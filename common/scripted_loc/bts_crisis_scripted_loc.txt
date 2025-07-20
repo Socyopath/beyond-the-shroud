@@ -1,11 +1,15 @@
 defined_text = {
     name = bts_crisis_menu_thrall_count
-    value = root.value:bts_num_jobs|JOB|bts_crisis_sacrifical_thrall|
+    value = value:bts_num_jobs|JOB|bts_crisis_sacrifical_thrall|
 }
 
 # RITUALS
 defined_text = {
-    name = bts_crisis_menu_ritual_1_cost
-    value = root.value:bts_crisis_ritual_cost_value|COST|@bts_ritual_pop_trade_thrall_cost|
+    name = bts_ritual_pop_trade_cost
+    value = value:bts_crisis_ritual_cost_value|COST|@bts_ritual_pop_trade_thrall_cost|
+}
+defined_text = {
+    name = bts_ritual_pop_trade_cooldown
+    value = value:bts_crisis_ritual_cooldown_value|COOLDOWN|@bts_ritual_pop_trade_cooldown|
 }
 

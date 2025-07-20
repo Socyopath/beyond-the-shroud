@@ -135,31 +135,25 @@ pc_bts_shroud_rift: "Shroud Rift"
 pc_bts_shroud_rift_desc: ""
 
 
-# Eldritch Rituals (Shroud Rift Decision)
-bts_ritual_pop_trade: "Ritual: Umbral Trade"
-bts_ritual_pop_trade_desc: ""
-bts_ritual_pop_trade_bonus_effect: "§G+$@bts_ritual_pop_trade_boost_produces|%0$§! $mod_planet_jobs_produces_mult$ for §Y$@bts_ritual_pop_trade_boost_duration|0$§! days"
-bts_ritual_pop_trade_effects: "Adds §Y1 [from.GetSpeciesName]§! pop on §Y[from.Capital.GetName]§!"
+# Eldritch Rituals
+bts_ritual_pop_trade: "Umbral Trade"
+bts_ritual_pop_trade_effects: "Adds §Y$@bts_ritual_pop_trade_pop_gain|0$ [from.GetSpeciesName]§! pop on §Y[from.Capital.GetName]§!"
 bts_crisis_ritual_on_cooldown_bts_ritual_pop_trade: "§RCan't use this ritual until§! §Y[from.bts_crisis_ritual_cooldown_bts_ritual_pop_trade]§!"
 
-bts_ritual_remove_trait: "Ritual: Exorcism"
-bts_ritual_remove_trait_desc: ""
+bts_ritual_remove_trait: "Exorcism"
 bts_ritual_remove_trait_effects: "Removes all §Rnegative§! traits from a random leader"
 bts_crisis_ritual_on_cooldown_bts_ritual_remove_trait: "§RCan't use this ritual until§! §Y[from.bts_crisis_ritual_cooldown_bts_ritual_remove_trait]§!"
 
-bts_ritual_reset_leader: "Ritual: Mind Warp"
-bts_ritual_reset_leader_desc: ""
+bts_ritual_reset_leader: "Mind Warp"
 bts_ritual_reset_leader_effects: "Changes a leader class and resets all of its traits"
 bts_ritual_reset_leader_choose_spec: "Choose a §Yclass§! for leader §Y[this.GetName]§!. All of its traits will be converted back to unspent trait points."
 bts_crisis_ritual_on_cooldown_bts_ritual_reset_leader: "§RCan't use this ritual until§! §Y[from.bts_crisis_ritual_cooldown_bts_ritual_reset_leader]§!"
 
 bts_ritual_harvest: "Abyssal Delve"
-bts_ritual_harvest_desc: ""
 bts_ritual_harvest_effects: "Adds a random deposit between £energy£ £minerals£ £alloys£ £physics£ £society£ £engineering£ £rare_crystals£ £volatile_motes£ £exotic_gases£ £sr_zro£ £sr_dark_matter£ £astral_threads£\n§RDangerous events may occur...§!"
 bts_crisis_ritual_on_cooldown_bts_ritual_harvest: "§RCan't use this ritual until§! §Y[from.bts_crisis_ritual_cooldown_bts_ritual_harvest]§!"
 
-bts_ritual_war_terror: "Ritual: Lost Hope"
-bts_ritual_war_terror_desc: ""
+bts_ritual_war_terror: "Lost Hope"
 bts_ritual_war_terror_effects: "Every §Rwar enemies§! gain §YWar Exhaustion§! §R$@bts_crisis_war_exhaust_value|%0$§! faster for §Y$@bts_ritual_war_terror_duration|0$§! days"
 bts_crisis_ritual_on_cooldown_bts_ritual_war_terror: "§RCan't use this ritual until§! §Y[from.bts_crisis_ritual_cooldown_bts_ritual_war_terror]§!"
 
@@ -181,50 +175,16 @@ decision_bts_shroud_rift_summon_4_effect: "Summon §M$NAME_Reckoning$§!."
 decision_bts_shroud_rift_summon_4_invalid_number: "Less than §Y$@bts_power_summon_4_max_number|0*$§! §Y$NAME_Reckoning$§! are summoned"
 
 # Techs
-edict_bts_zro_infusion: "Zro Infusion"
-edict_bts_zro_infusion_desc: "As we're more connected to the shroud itself, we've found a way to infuse our bodies with zro in order to fuel ourselves with psionic energy instead of food."
-edict_bts_zro_infusion_effect: "£food£ $food$ upkeep cost from £pops£ Pops: §G-100%§!\n£sr_zro£ $sr_zro$ upkeep cost from £pops£ Pops: §R+$@edict_bts_zro_infusion_zro_upkeep_cost$§!"
-bts_tech_shroud_destabilizer: "Shroud Destabilizer"
-bts_tech_shroud_destabilizer_desc: "We've managed to infuse the pure psionic energy of the shroud into our starbase. Due to the unstable nature of this energy, violent psionic waves emanate from it, disrupting enemy systems."
-
 
 # Components
-## Planet Killers
-BTS_PLANET_KILLER_END: "Consciousness Assimilator"
-BTS_PLANET_KILLER_END_DESC: "Assimilate the consciousness of all living beings on a planet and increase your power as you kill more."
-BTS_PLANET_KILLER_END_ACTION: "Assimilate all the consciousnesses"
-FLEETORDER_DESTROY_PLANET_WITH_BTS_PLANET_KILLER_END: "Preparing to assimilate all consciousnesses of $PLANET|Y$."
-MESSAGE_DESC_FOR_BTS_PLANET_KILLER_END: "had all of its life forms consciousness being absorbed by"
-bts_planet_destruction_name: "Consciousness assimilated"
-bts_planet_destruction_desc: "The psionic power from [From.From.GetName]'s fades, and for a moment all is quiet. Down on [From.GetName] the people stand slack-jawed (or local physiognomic equivalent), enraptured by the powerful and personal truths the psionic ray unfetters from the tangled web of their minds.\n\nIf they did not understand before, they know now viscerally: we are all part of something greater."
-bts_planet_destruction_tooltip: "Any §Y$trait_mechanical$§!, §Y$trait_machine_unit$§! or §Y$trait_hive_mind$§! pops are §Rdestroyed§! by the psionic resonance.\n\nAll remaining §Ybiological§! pops consciousness have been absorbed to strengthen the §M$NAME_Reckoning$§!"
-## Section Templates
-bts_shroud_avatar: "$NAME_Shroud_Avatar$"
-bts_shroud_avatar_zroni: "Zroni $bts_shroud_avatar$"
-bts_shroud_manifestation: "$NAME_Shroud_Manifestation$"
-bts_shroud_manifestation_zroni: "Zroni $bts_shroud_manifestation$"
-bts_warped_consciousness: "$NAME_Warped_Consciousness$"
-bts_warped_consciousness_zroni: "Zroni $bts_warped_consciousness$"
 bts_dimensional_horror: "$NAME_Dimensional_Horror$"
 bts_dimensional_horror_zroni: "Zroni $bts_dimensional_horror$"
-## Weapons
-BTS_SHROUD_BLAST: "Shroud Blast"
-BTS_SHROUD_BLAST_DESC: ""
-## Starbase Buildings
-sm_bts_shroud_destabilizer: "$bts_tech_shroud_destabilizer$"
-sm_bts_shroud_destabilizer_desc: "$bts_tech_shroud_destabilizer_desc$"
-sm_bts_shroud_destabilizer_effects: ""
-bts_shroud_destabilizer_aura_component: "$bts_tech_shroud_destabilizer$"
-bts_shroud_destabilizer_aura_component_desc: "$bts_tech_shroud_destabilizer_desc$"
 
 # Modifiers
-absorbed_consciousness_0: "$absorbed_consciousness_1$"
 mod_bts_crisis_ritual_coolodwn_mult: "Eldritch Ritual Cooldown"
 mod_bts_crisis_pact_cooldown_mult: "Eldritch Pact Attempt Cooldown"
 bts_crisis_pact_cooldown: "Horrific Visions"
 bts_crisis_pact_cooldown_tooltip: "§RCannot attempt to contact a Great Old One§!"
-bts_ritual_pop_trade_boost: "$bts_ritual_pop_trade$"
-bts_ritual_pop_trade_boost_desc: "$bts_ritual_pop_trade_desc$"
 bts_crisis_war_exhaust: "$bts_ritual_war_terror$"
 bts_crisis_war_exhaust_desc: "$bts_ritual_war_terror_desc$"
 
@@ -276,14 +236,6 @@ council_agenda_bts_crisis_agenda_2_desc: "We sacrifice part of our sanity to imp
 citizenship_bts_crisis: "Devour Mind"
 citizenship_bts_crisis_tooltip: "All owned Pops of this species will turn into a §Rdevoured mind§! variant."
 citizenship_bts_crisis_tooltip_delayed: "§LInferior creatures do not deserve free will.§!"
-
-# UI Text
-bts_reckoning_info: "§M$NAME_Reckoning$§! : §Y[root.bts_planet_killer_end_pop_killed]§! organic pops §Rkilled§!"
-bts_crisis_ritual_info_tooltip: "\n§EEldritch Ritual:§!\nCost: §R$COST|0$§! £job_bts_crisis_sacrifical_thrall£ $job_bts_crisis_sacrifical_thrall_plural$\nCooldown: §Y[this.bts_crisis_ritual_cooldown_$RITUAL$_text]§! days"
-bts_crisis_pact_info_tooltip: "\n§EEldritch Pact:§!\nYearly Cost: §R[this.bts_crisis_pact_cost_$PACT$_text]§! £job_bts_crisis_sacrifical_thrall£ $job_bts_crisis_sacrifical_thrall_plural$"
-bts_crisis_ritual_no_thrall: "§RNot enough§! §Y$job_bts_crisis_sacrifical_thrall_plural$§!"
-bts_crisis_pact_only_1: "§RCannot have more than §Y1§! active Eldricth Pact§!"
-bts_crisis_pact_only_2: "§RCannot have more than §Y2§! active Eldricth Pact§!"
 
 # Elder Gods
 BTS_ELDER_GODS_PROJECT: ""
@@ -437,9 +389,13 @@ bts.550.option.5: "§RStart the Awakening Ritual§!"
 
 
 bts_crisis_menu_ritual_text: "Rituals"
-bts_crisis_menu_ritual_1_text: "§H$bts_ritual_harvest$§!\n£job_bts_crisis_sacrifical_thrall£ [bts_crisis_menu_ritual_1_cost]"
+bts_crisis_menu_ritual_desc_title: "§EEldritch Ritual§!"
+bts_crisis_menu_ritual_desc_ressources: "\nCost: §R[$RITUAL$_cost]§! £job_bts_crisis_sacrifical_thrall£ $job_bts_crisis_sacrifical_thrall_plural$\nCooldown: §Y[from.$RITUAL$_cooldown]§! days" 
+
+bts_crisis_menu_ritual_1_text: "§H$bts_ritual_pop_trade$§!\n£job_bts_crisis_sacrifical_thrall£ [from.bts_ritual_pop_trade_cost]"
+
 bts_crisis_menu_pact_text: "Pacts"
-bts_crisis_menu_thrall_count_text: "\n\n[bts_crisis_menu_thrall_count]"
+bts_crisis_menu_thrall_count_text: "\n\n[from.bts_crisis_menu_thrall_count]"
 BTS_CRISIS_MENU_PROGRESS_BAR_0: "0 Deviancy"
 BTS_CRISIS_MENU_PROGRESS_BAR_1: "1 Deviancy"
 BTS_CRISIS_MENU_PROGRESS_BAR_2: "2 Deviancy"
