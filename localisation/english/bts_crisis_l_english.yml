@@ -235,8 +235,8 @@ bts_trait_crisis_main_1_effect: "$MOD_POP_GOVERNMENT_ETHIC_ATTRACTION$ per §Y$j
 bts_trait_crisis_main_2: "Tortured Mind"
 bts_trait_crisis_main_2_desc: ""
 bts_trait_crisis_main_2_effect: "$MOD_POP_GOVERNMENT_ETHIC_ATTRACTION$ per §Y$job_bts_crisis_sacrifical_thrall$§!: §G+$@bts_trait_crisis_main_2_ethics|%0$§! (max: §G+50%§!)\n$MOD_POP_HAPPINESS$ per §Y$job_bts_crisis_sacrifical_thrall$§!: §G+$@bts_trait_crisis_main_2_happiness|%0$§! (max: §G+50%§!)\n$MOD_POP_ENVIRONMENT_TOLERANCE$ per §Y$job_bts_crisis_sacrifical_thrall$§!: §G+$@bts_trait_crisis_main_2_habitability|%0$§! (max: §G+25%§!)"
-bts_trait_crisis_thrall: "Devoured Mind"
-bts_trait_crisis_thrall_desc: ""
+# bts_trait_crisis_thrall: "Devoured Mind"
+# bts_trait_crisis_thrall_desc: ""
 
 # Buildings
 bts_crisis_building_thrall_1: "Sacrificial Altar"

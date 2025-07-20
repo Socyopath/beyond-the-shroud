@@ -116,33 +116,6 @@ country_event = {
 
 }
 
-# # Auto resetlle thralls (monthly)
-# country_event = {
-# 	id = bts.501
-# 	is_triggered_only = yes
-# 	hide_window = yes
-# 	trigger = {
-# 		any_owned_planet = {
-# 			free_jobs_of_type = {
-# 				job = bts_crisis_sacrifical_thrall
-# 				value >= 1
-# 			}
-# 		}
-# 	}
-
-# 	immediate = {
-# 		every_owned_pop = {
-# 			limit = {
-# 				has_trait = bts_trait_crisis_thrall
-# 				NOT = { has_job = bts_crisis_sacrifical_thrall }
-# 			}
-# 			bts_auto_resettle_thrall = {
-# 				CASTER = root
-# 			}
-# 		}
-# 	}
-# }
-
 # # Ritual: Mindset Shift
 # country_event = {
 # 	id = bts.502
