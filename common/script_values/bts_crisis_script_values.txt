@@ -10,6 +10,10 @@ bts_crisis_ritual_cooldown_value = {
     mult = value:scripted_modifier_mult|MODIFIER|bts_crisis_ritual_coolodwn_mult|
 }
 
+bts_crisis_ritual_cost_value = {
+    base = $COST$
+    # mult = value:scripted_modifier_mult|MODIFIER|bts_crisis_ritual_coolodwn_mult|
+}
 
 bts_crisis_pact_cost_value = {
     base = $COST$
