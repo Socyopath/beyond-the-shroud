@@ -70,30 +70,30 @@ bts_trait_crisis_main_2 = {
 	}
 }
 
-bts_trait_crisis_thrall = {
-	cost = 0
-	icon = "gfx/interface/icons/traits/bts_trait_crisis_thrall.dds"
-	initial = no
-	randomized = no
-	advanced_trait = no
-	infertile = yes
+# bts_trait_crisis_thrall = {
+# 	cost = 0
+# 	icon = "gfx/interface/icons/traits/bts_trait_crisis_thrall.dds"
+# 	initial = no
+# 	randomized = no
+# 	advanced_trait = no
+# 	infertile = yes
 
-	allowed_archetypes = { BIOLOGICAL LITHOID }
+# 	allowed_archetypes = { BIOLOGICAL LITHOID }
 
-	species_potential_add = {
-		always = no
-	}
-	species_possible_remove = {
-		always = no
-	}
-	species_possible_merge_add = {
-		always = no
-	}
-	leader_potential_add = {
-		always = no
-	}
+# 	species_potential_add = {
+# 		always = no
+# 	}
+# 	species_possible_remove = {
+# 		always = no
+# 	}
+# 	species_possible_merge_add = {
+# 		always = no
+# 	}
+# 	leader_potential_add = {
+# 		always = no
+# 	}
     
-	modifier = {
+# 	modifier = {
 		
-	}
-}
+# 	}
+# }
