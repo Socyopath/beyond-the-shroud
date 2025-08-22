@@ -8,6 +8,7 @@ bts_labyrinth_of_abstraction_core_1 = {
 	can_be_disabled = no
 	position_priority = 0
 	category = government
+	capital_tier = 1
 	building_sets = { bts_labyrinth_of_abstraction_main_building_set }
 
 	potential = {
@@ -40,6 +41,7 @@ bts_labyrinth_of_abstraction_core_2 = {
 	can_be_disabled = no
 	position_priority = 0
 	category = government
+	capital_tier = 2
 	building_sets = { bts_labyrinth_of_abstraction_main_building_set }
 
 	potential = {
@@ -83,6 +85,7 @@ bts_labyrinth_of_abstraction_core_3 = {
 	can_be_disabled = no
 	position_priority = 0
 	category = government
+	capital_tier = 3
 	building_sets = { bts_labyrinth_of_abstraction_main_building_set }
 
 	potential = {
@@ -126,6 +129,7 @@ bts_labyrinth_of_abstraction_core_4 = {
 	can_be_disabled = no
 	position_priority = 0
 	category = government
+	capital_tier = 4
 	building_sets = { bts_labyrinth_of_abstraction_main_building_set }
 	
 	potential = {
