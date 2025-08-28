@@ -5,9 +5,7 @@ origin_bts_zroni = {
 	max_once_global = yes
 
 	possible = {
-		species_archetype = {
-			value = BIOLOGICAL
-		}
+		species_archetype = { NOT = { value = MACHINE } }
 	}
 
     modifier = {
