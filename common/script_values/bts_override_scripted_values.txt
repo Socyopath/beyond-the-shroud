@@ -28,11 +28,13 @@ progressive_rifts_additional_weight = {
 	mult = value:scripted_modifier_mult|MODIFIER|bts_astral_rift_spawn_mult|
 }
 
-psionic_workforce_from_telepaths = {
+psionic_workforce_basic_value = {
 	base = 5			# 5% Base
 	modifier = {
 		exists = owner
-		owner = { has_tradition = tr_psionics_breach_shroud }
+		owner = {
+			has_tradition = tr_psionics_breach_shroud
+		}
 		add = 5			# +5% from tradition
 	}
 	modifier = {
@@ -45,12 +47,4 @@ psionic_workforce_from_telepaths = {
 		add = value:councilor_level|TYPE|councilor_psionic_sovereign|
 	}
 	divide = 100		# Normalise to percentages
-	complex_trigger_modifier = {
-		trigger = num_assigned_jobs
-		parameters = {
-			job = telepath
-		}
-		mode = mult		# Scale with Telepath jobs
-	}
-	divide = 100		# Renormalise to "per 100 jobs"
 }

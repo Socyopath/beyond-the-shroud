@@ -68,12 +68,6 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/modules/bts_shroud_destabilizer.dds"
 	}
 
-	# Agendas
-	spriteType = {
-		name = "GFX_council_agenda_icon_bts_agenda_psionic_supremacy_covenant"
-		texturefile = "gfx/interface/icons/agenda_icons/agenda_psionic_supremacy.dds"
-	}
-
 	# Traits
 	spriteType = {
 		name = "GFX_bts_leader_trait_covenant_chosen"

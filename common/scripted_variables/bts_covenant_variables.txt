@@ -15,9 +15,6 @@
 
 @bts_covenant_favor_per_month_trad = 0.06
 
-# Agenda
-@bts_agenda_psionic_supremacy_covenant_rift_spawn_mult = 0.50
-
 ## Starting Bonus
 @bts_covenant_modifier_0_unity_produces_mult = 0.10
 @bts_covenant_modifier_0_rift_clues_add = 2

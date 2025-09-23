@@ -12,11 +12,6 @@ bts_leader_trait_covenant_chosen_desc: "This leader has been chosen to wield the
 ## Buildings
 bts_building_covenant_sanctum: "Sanctum of the $bts_covenant_name_prefix$"
 bts_building_covenant_sanctum_desc: "The Sanctum is a place dedicated to communion with the $bts_covenant_name_full$. Here, secrets are traded in hushed tones, new knowledge is brought to be sealed away, and our murmurs join the chorus."
-## Council Agenda
-council_agenda_bts_agenda_psionic_supremacy_covenant_name: "$council_agenda_agenda_psionic_supremacy_name$"
-council_agenda_bts_agenda_psionic_supremacy_covenant_desc: "$council_agenda_agenda_psionic_supremacy_desc$"
-agenda_psionic_supremacy_finish_bts_covenant: "$council_agenda_agenda_psionic_supremacy_name$ $agenda_ref$" # Modifier
-agenda_psionic_supremacy_finish_bts_covenant_desc: "$council_agenda_agenda_psionic_supremacy_desc$" # Modifier
 ## Components
 BTS_COVENANT_MARK: "Mark of the $bts_covenant_name_prefix$"
 BTS_COVENANT_MARK_DESC: "$COMPOSER_MARK_DESC$"

@@ -1,6 +1,7 @@
 @ascension_path_base_weight = 100
 @ascension_path_synergy_weight = 2
 @ascension_path_anti_synergy_weight = 0.5
+@ascension_path_mindwardens_present = 0.3
 
 # Psionic Ascension (regular empires)
 ap_mind_over_matter = {
@@ -13,17 +14,41 @@ ap_mind_over_matter = {
 			NOT = { has_trait = trait_mechanical }
 		}
 		if = {
-			limit = { has_relic = r_zro_crystal }
-			custom_tooltip = {
-                fail_text = "requires_ascension_perks_1"
-                num_ascension_perks > 0
-            }
+			limit = {
+				OR = { 
+					is_synthetic_empire = no
+					has_origin = origin_shroud_forged 
+					is_chosen_empire = yes
+				}
+			}
+			if = {
+				limit = { has_relic = r_zro_crystal }
+				custom_tooltip = {
+					fail_text = "requires_ascension_perks_1"
+					num_ascension_perks > 0
+				}
+			}
+			else = {
+				custom_tooltip = {
+					fail_text = "requires_ascension_perks_2"
+					num_ascension_perks > 1
+				}
+			}
 		}
-		else = {
-			custom_tooltip = {
-                fail_text = "requires_ascension_perks_2"
-                num_ascension_perks > 1
-            }
+		else_if = {
+			if = {
+				limit = { has_relic = r_zro_crystal }
+				custom_tooltip = {
+					fail_text = "requires_ascension_perks_2"
+					num_ascension_perks > 1
+				}
+			}
+			else = {
+				custom_tooltip = {
+					fail_text = "requires_ascension_perks_3"
+					num_ascension_perks > 2
+				}
+			}
 		}
 		custom_tooltip = {
 			fail_text = "requires_not_ap_engineered_evolution"
@@ -50,10 +75,33 @@ ap_mind_over_matter = {
 				has_country_flag = is_decyberized
 			}
 		}
+		if = {
+			limit = { has_origin = origin_shroud_forged }
+			if = {
+				limit = {
+					any_situation = {
+						is_situation_type = situation_shroud_forged
+					}
+				}
+				custom_tooltip = {
+					fail_text = "shroud_forged_situation_ongoing"
+					always = no
+				}
+			}
+			else = {	
+				custom_tooltip = {
+					fail_text = "shroud_forged_liberation_acquired"
+					NOT = { has_country_flag = finish_shroud_forged_liberation_flag }
+				}
+			}
+		}
 	}
 
 	potential = {
-		has_utopia = yes
+		OR = {
+			has_utopia = yes
+			has_shroud_dlc = yes
+		}
 		NOR = {
 			has_country_flag = ratling_country
 			has_ascension_perk = ap_mind_over_matter
@@ -61,19 +109,43 @@ ap_mind_over_matter = {
 			has_origin = origin_cybernetic_creed
 			has_origin = origin_synthetic_fertility
 			has_origin = origin_evolutionary_predators
+			has_origin = origin_wilderness
 			has_valid_civic = civic_augmentation_bazaars
+			has_origin = origin_mindwardens
+			has_origin = origin_endbringers
 		}
-		is_gestalt = no
-		is_mechanical_empire = no
 		OR = {
-			is_cyborg_empire = no
+			has_shroud_dlc = yes # Shroud DLC allows gestalt/machines to become Psionic
 			AND = {
-				has_origin = origin_unplugged
-				NOT = { has_country_flag = is_cyberized }
+				is_gestalt = no
+				is_mechanical_empire = no
+				OR = {
+					is_cyborg_empire = no
+					AND = {
+						has_origin = origin_unplugged
+						NOT = { has_country_flag = is_cyberized }
+					}
+				}
+				is_individual_machine = no
 			}
 		}
 		is_natural_design_empire = no
-		is_individual_machine = no
+		if = {
+			limit = { has_origin = origin_shroud_forged }
+			NOT = { has_country_flag = finish_shroud_forged_control_flag }
+		}
+	}
+
+	tradition_swap = {
+		name = ap_interdimensional_processing
+		inherit_name = no
+		inherit_icon = no
+		inherit_effects = yes
+		trigger = {
+			has_shroud_dlc = yes
+			is_synthetic_empire = yes
+		}
+		weight = { factor = 1 }
 	}
 
 	ai_weight = {
@@ -83,8 +155,20 @@ ap_mind_over_matter = {
 			has_mind_over_matter_synergy = yes
 		}
 		modifier = {
+			factor = @ascension_path_synergy_weight
+			# We want more psionic AIs when someone's playing Mindwardens, so you should ascend if at least you're not materialist
+			is_materialist = no
+			any_country = {
+				has_origin = origin_mindwardens
+			}
+		}
+		modifier = {
 			factor = @ascension_path_anti_synergy_weight
 			has_mind_over_matter_anti_synergy = yes
+		}
+		modifier = {
+			factor = 0
+			has_origin = origin_mindwardens
 		}
 	}
 }

@@ -13,9 +13,3 @@ bts_covenant_modifier_1 = {
 	ship_winddown_mult = @bts_covenant_modifier_1_winddown_mult
 	ship_disengage_chance_reduction = @bts_covenant_modifier_1_disengage_reduc
 }
-
-agenda_psionic_supremacy_finish_bts_covenant = {
-	psionic_pop_bonus_workforce_mult = 0.2
-	category_psionics_research_speed_mult = 0.4
-	bts_astral_rift_spawn_mult = @bts_agenda_psionic_supremacy_covenant_rift_spawn_mult
-}
