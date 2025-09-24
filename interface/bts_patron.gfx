@@ -1,0 +1,192 @@
+spriteTypes = {
+
+    
+
+	spriteType = {
+		name = "GFX_bts_patron_icon"
+		texturefile = "gfx/interface/icons/patrons/whisperers_in_the_void.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_bts_patron_bg"
+		texturefile = "gfx/interface/icons/patrons/backgrounds/whisperers_in_the_void_bg.dds"
+		effectFile = "gfx/FX/buttonstate.shader"
+	}
+
+	spriteType = {
+		name = "GFX_bts_patron_quadrant_1"
+		texturefile = "gfx/interface/icons/patrons/quadrants/whisperers_in_the_void_quadrant_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bts_patron_quadrant_2"
+		texturefile = "gfx/interface/icons/patrons/quadrants/whisperers_in_the_void_quadrant_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bts_patron_quadrant_3"
+		texturefile = "gfx/interface/icons/patrons/quadrants/whisperers_in_the_void_quadrant_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bts_patron_quadrant_selected_1"
+		texturefile = "gfx/interface/icons/patrons/quadrants/whisperers_in_the_void_quadrant_selected_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_bts_patron_quadrant_selected_2"
+		texturefile = "gfx/interface/icons/patrons/quadrants/whisperers_in_the_void_quadrant_selected_2.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_bts_patron_quadrant_selected_3"
+		texturefile = "gfx/interface/icons/patrons/quadrants/whisperers_in_the_void_quadrant_selected_3.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_bts_patron_calling_anim"
+		texturefile = "gfx/interface/icons/patrons/callings/whisperers_calling_highlight.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		animation = {
+			animationmaskfile = "gfx/interface/icons/patrons/callings/whisperers_calling_anim_texture.dds"
+			animationtexturefile = "gfx/interface/icons/patrons/callings/whisperers_calling_anim_texture.dds"
+			animationlooping = no
+			animationtime = 2.0
+			animationtype = "pulsing"
+		}
+	}
+
+	spriteType = {
+		name = "GFX_bts_patron_calling_1_bg"
+		texturefile = "gfx/interface/icons/patrons/callings/whisperers_calling_tier1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bts_patron_calling_2_bg"
+		texturefile = "gfx/interface/icons/patrons/callings/whisperers_calling_tier2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bts_patron_calling_3_bg"
+		texturefile = "gfx/interface/icons/patrons/callings/whisperers_calling_tier3.dds"
+	}
+
+	# spriteType = {
+	# 	name = "GFX_bts_patron_active_accords_frame_bg"
+	# 	texturefile = "gfx/interface/icons/patrons/accords/active_accord_frame_witv.dds"
+	# 	alwaysTransparent = yes
+	# }
+	# 	spriteType = {
+	# 	name = "GFX_bts_patron_passive_accords_frame_bg"
+	# 	texturefile = "gfx/interface/icons/patrons/accords/passive_accord_frame_witv.dds"
+	# 	alwaysTransparent = yes
+	# }
+	spriteType = {
+		name = "GFX_bts_patron_active_accords_bg"
+		texturefile = "gfx/interface/icons/patrons/accords/accord_cost_witv.dds"
+		transparenceCheck = yes
+	}
+	# spriteType = {
+	# 	name = "GFX_bts_patron_accords_bg"
+	# 	texturefile = "gfx/interface/icons/patrons/accords/whisperers_accords_bg.dds"
+	# 	alwaysTransparent = yes
+	# }
+
+
+
+
+
+
+
+	# spriteType = {
+	# 	name = "GFX_bts_patron_quadrant_selected_border_1"
+	# 	texturefile = "gfx/interface/icons/patrons/quadrants/whisperers_in_the_void_quadrant_selected_border_1.dds"
+	# 	alwaystransparent = yes
+	# }
+
+
+
+	spriteType = {
+		name = "GFX_bts_patron_quadrant_selected_border_3"
+		texturefile = "gfx/interface/icons/patrons/quadrants/whisperers_in_the_void_quadrant_selected_border_3.dds"
+		alwaystransparent = yes
+	}
+
+
+    # Covenant
+	spriteType = {
+		name = "GFX_bts_patron_covenant"
+		texturefile = "gfx/interface/icons/patrons/covenants/whisperers_in_the_void_covenant.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+
+	spriteType = {
+		name = "GFX_bts_patron_covenant_large"
+		texturefile = "gfx/interface/icons/patrons/covenants/whisperers_in_the_void_covenant_large.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_bts_patron_covenant_bg"
+		texturefile = "gfx/interface/icons/patrons/covenants/whisperers_in_the_void_covenant_bg.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+
+    # Accord 1
+	spriteType = {
+		name = "GFX_bts_patron_accord_1_locked"
+		texturefile = "gfx/interface/icons/patrons/accords/passive/accord_knowledge_inactive.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		transparenceCheck = yes
+	}
+	spriteType = {
+		name = "GFX_bts_patron_accord_1_unlocked"
+		texturefile = "gfx/interface/icons/patrons/accords/passive/accord_knowledge_active.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		transparenceCheck = yes
+	}
+
+    # Accord 2
+	spriteType = {
+		name = "GFX_bts_patron_accord_2_locked"
+		texturefile = "gfx/interface/icons/patrons/accords/passive/accord_wisdom_inactive.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		transparenceCheck = yes
+	}
+	spriteType = {
+		name = "GFX_bts_patron_accord_2_unlocked"
+		texturefile = "gfx/interface/icons/patrons/accords/passive/accord_wisdom_active.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		transparenceCheck = yes
+	}
+
+    # Power 1
+    spriteType = {
+		name = "GFX_bts_patron_power_1"
+		texturefile = "gfx/interface/icons/patrons/accords/active/accord_foresight.dds"
+		effectFile = "gfx/FX/buttonstate_onlyanim.shader"
+		transparenceCheck = yes
+		noOfFrames = 5
+		default_frame = 2
+	}
+
+    # Power 2
+	spriteType = {
+		name = "GFX_bts_patron_power_2"
+		texturefile = "gfx/interface/icons/patrons/accords/active/accord_hindsight.dds"
+		effectFile = "gfx/FX/buttonstate_onlyanim.shader"
+		transparenceCheck = yes
+		noOfFrames = 5
+		default_frame = 2
+	}
+
+    # Aura
+    corneredTileSpriteType = {
+		name = "GFX_aura_bts_patron"
+		texturefile = "gfx/interface/icons/auras/aura_whisperers_bg.dds"
+	}
+}

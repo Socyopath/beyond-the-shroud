@@ -1,0 +1,114 @@
+bts_patron = {
+	category = great_patron
+	color = { 0.647 0.052 0.858 1 }
+	text_color_code = "M"
+	covenant_event = bts.205
+	covenant_confirmation_time = @covenant_confirmation_time_days
+	add_modifier = yes
+
+	pre_communications_name_format = "{<whisperers_adj> {<patron_noun>}}"
+
+	position = { x = 0 y = 0 }
+
+	callings = {
+		calling_build_research_lab
+		calling_finish_megastructure
+		calling_launch_agenda
+		calling_complete_arc_site
+		calling_complete_arc_rift
+		calling_research_special_project
+	}
+
+	deeds = {
+		deed_explore_wormhole
+		deed_wormhole_locks_mastery
+		deed_arc_rift_stage
+	}
+
+	covenant = {
+		name = "bts_patron_covenant"
+		icon = "GFX_bts_patron_covenant"
+		desc = bts_patron_covenant_desc
+		triggered_modifier = {
+			potential = { has_country_flag = bts_patron_covenant_confirmed }
+			custom_tooltip = bts_patron_covenant_telepath_bonus_tt
+		}
+		triggered_modifier = {
+			ship_disengage_chance_reduction = @bts_patron_covenant_ship_disengage_chance_reduction
+		}
+	}
+
+	passive_accord = {
+		name = "bts_patron_accord_1"
+		icon = "GFX_bts_patron_accord_1"
+		on_unlock = {
+			# set_country_flag = knowledge_accord
+		}
+		triggered_modifier = {
+            country_unity_produces_mult = @bts_patron_modifier_unity_produces_mult
+	        ship_astral_rift_clues_add = @bts_patron_modifier_rift_clues_add
+            country_astral_rift_speed_mult = @bts_patron_modifier_astral_rift_speed_mult
+		}
+	}
+
+	passive_accord = {
+		name = "bts_patron_accord_2"
+		icon = "GFX_bts_patron_accord_2"
+		on_unlock = {
+			custom_tooltip = bts_patron_accord_2_tt
+			# set_country_flag = wisdom_accord
+            if = {
+				limit = { NOT = { has_technology = tech_hyper_relays } }
+				give_technology = { tech = tech_hyper_relays }
+			}
+		}
+		triggered_modifier = {
+			country_astral_threads_produces_mult = @bts_patron_modifier_astral_threads_produces_mult
+		}
+	}
+
+	active_accord = {
+		name = "bts_patron_power_1"
+		icon = "GFX_bts_patron_power_1"
+		sound = "accord_activation_whisperers_foresight"
+
+		cooldown = 1
+		first_cooldown = 1
+		activation_cost = {
+			cost = {
+				sr_zro = 150
+			}
+		}
+
+		effect = {
+			custom_tooltip = bts_patron_power_1_tt
+			hidden_effect = {
+                set_timed_country_flag = {
+                    flag = disable_jump_drive_cooldown_malus
+                    years = @bts_patron_power_disable_shroud_malus_duration_years
+                }
+			}
+		}
+	}
+
+	active_accord = {
+		name = "bts_patron_power_2"
+		icon = "GFX_bts_patron_power_2"
+		sound = "accord_activation_whisperers_hindsight"
+
+		cooldown = 10
+		first_cooldown = 10
+		activation_cost = {
+			cost = {
+				sr_zro = 300
+			}
+		}
+
+		effect = {
+			custom_tooltip = bts_patron_power_2
+			hidden_effect = {
+				country_event = { id = bts.210 }
+			}
+		}
+	}
+}

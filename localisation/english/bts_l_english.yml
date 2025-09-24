@@ -1,6 +1,26 @@
 ﻿l_english:
 
 # Covenant Traveller From Beyond
+bts_patron_covenant: "§HCovenant of the Traveller§!"
+bts_patron_covenant_desc: "DESC Our Covenant with $whisperers_in_the_void_article$ instills us with the accumulated wisdom of their acquired secrets from the centermost domains in the Shroud."
+bts_patron_covenant_telepath_bonus_tt: "£mod_ship_speed_mult£ $MOD_SHIP_SPEED_MULT$ per $pop_group_unit$ $job_telepath_swap_plural_with_icon$: §G$@bts_patron_covenant_ship_speed_per_telepath|0%$§!"
+
+bts_patron_accord_1: "bts_patron_accord_1"
+bts_patron_accord_1_desc: "bts_patron_accord_1_desc"
+
+bts_patron_accord_2: "bts_patron_accord_2"
+bts_patron_accord_2_desc: "bts_patron_accord_2_desc"
+bts_patron_accord_2_tt: "Unlock £building£ §Y$BUILDING$§!: ['building:bts_building_covenant_sanctum']"
+
+bts_patron_power_1: "bts_patron_power_1"
+bts_patron_power_1_desc: "bts_patron_power_1_desc"
+bts_patron_power_1_tt: "bts_patron_power_1_tt"
+
+bts_patron_power_2: "bts_patron_power_2"
+bts_patron_power_2_desc: "bts_patron_power_2_desc"
+bts_patron_power_2_tt: "bts_patron_power_2_tt"
+
+
 bts_covenant_name_full: "Traveller From Beyond"
 bts_covenant_name_prefix: "Traveller"
 ## Modifiers
