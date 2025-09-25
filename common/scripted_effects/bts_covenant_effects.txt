@@ -1,0 +1,27 @@
+bts_patron_aura_max_intensity_effect = {
+	if = {
+        limit = {
+            NOR = {
+                has_megastructure = hyper_relay
+                has_megastructure = hyper_relay_restored
+            }
+        }
+        spawn_megastructure = {
+            type = "hyper_relay"
+            orbit_distance = 300
+            orbit_angle = 260
+            owner = aura_owner
+            graphical_culture = aura_owner
+        }
+        create_message = {
+            type = MESSAGE_PSIONIC_AURA_whisperers_in_the_void
+            localization = MESSAGE_PSIONIC_AURA_MAX_INTENSITY_bts_patron_DESC
+            days = 30
+            variable = {
+                type = name
+                localization = SYSTEM
+                scope = this
+            }
+        }
+    }
+}

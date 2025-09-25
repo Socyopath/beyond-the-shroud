@@ -149,7 +149,7 @@ bts_patron_aura = {
 
 	inline_script = {
 		script = shroud/psionic_aura_definition
-		TYPE = whisperers_aura
+		TYPE = bts_patron_aura
 	}
 
 	aura_galaxy_texture = "gfx/map/psionic_auras/whisperers_aura.dds"

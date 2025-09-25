@@ -20,6 +20,10 @@ bts_patron_power_2: "bts_patron_power_2"
 bts_patron_power_2_desc: "bts_patron_power_2_desc"
 bts_patron_power_2_tt: "bts_patron_power_2_tt"
 
+bts_patron_aura: "AURA"
+bts_patron_aura_effect_tt: "MAX EFFECT"
+
+MESSAGE_PSIONIC_AURA_MAX_INTENSITY_bts_patron_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n- Gain AAAA Research\n- $aura_intensity_lost_level_tt$"
 
 bts_covenant_name_full: "Traveller From Beyond"
 bts_covenant_name_prefix: "Traveller"

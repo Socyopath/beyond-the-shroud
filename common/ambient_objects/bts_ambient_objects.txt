@@ -18,3 +18,22 @@ ambient_object = {
 	selectable = no
 	show_name = no
 }
+
+ambient_object = {
+	name = "bts_patron_aura_level1"
+	entity = "whisperers_in_the_void_level1_entity"
+	selectable = no
+	show_name = no
+}
+ambient_object = {
+	name = "bts_patron_aura_level2"
+	entity = "whisperers_in_the_void_level2_entity"
+	selectable = no
+	show_name = no
+}
+ambient_object = {
+	name = "bts_patron_aura_level3"
+	entity = "whisperers_in_the_void_level3_entity"
+	selectable = no
+	show_name = no
+}
