@@ -48,11 +48,11 @@
 
 # 1st Accord
 @bts_patron_modifier_rift_clues_add = 4
-@bts_patron_modifier_unity_produces_mult = 0.20
 @bts_patron_modifier_astral_rift_speed_mult = 0.50
 
 # 2nd Accord
 @bts_patron_modifier_astral_threads_produces_mult = 0.20
+@bts_patron_modifier_astral_threads_capacity_add = 500
 
 # 1st Power
 @bts_patron_power_disable_shroud_malus_duration_years = 5

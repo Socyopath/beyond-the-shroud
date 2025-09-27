@@ -42,10 +42,20 @@ bts_patron = {
 		name = "bts_patron_accord_1"
 		icon = "GFX_bts_patron_accord_1"
 		on_unlock = {
-			# set_country_flag = knowledge_accord
+            custom_tooltip = bts_patron_accord_1_tt
+            hidden_effect = {
+                if = {
+                    limit = { 
+                        NOR = {
+                            has_tech_option = tech_hyper_relays
+                            has_technology = tech_hyper_relays
+                        }
+                    }
+                    add_research_option = tech_hyper_relays
+                }
+            }
 		}
 		triggered_modifier = {
-            country_unity_produces_mult = @bts_patron_modifier_unity_produces_mult
 	        ship_astral_rift_clues_add = @bts_patron_modifier_rift_clues_add
             country_astral_rift_speed_mult = @bts_patron_modifier_astral_rift_speed_mult
 		}
@@ -56,14 +66,11 @@ bts_patron = {
 		icon = "GFX_bts_patron_accord_2"
 		on_unlock = {
 			custom_tooltip = bts_patron_accord_2_tt
-			# set_country_flag = wisdom_accord
-            if = {
-				limit = { NOT = { has_technology = tech_hyper_relays } }
-				give_technology = { tech = tech_hyper_relays }
-			}
+            set_country_flag = bts_patron_accord_2
 		}
 		triggered_modifier = {
 			country_astral_threads_produces_mult = @bts_patron_modifier_astral_threads_produces_mult
+            country_resource_max_astral_threads_add = @bts_patron_modifier_astral_threads_capacity_add
 		}
 	}
 

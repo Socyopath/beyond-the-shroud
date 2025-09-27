@@ -1,29 +1,58 @@
 ﻿l_english:
 
-# Covenant Traveller From Beyond
-bts_patron_covenant: "§HCovenant of the Traveller§!"
+
+bts_patron_covenant: "§HCovenant of the $bts_patron_prefix$§!"
 bts_patron_covenant_desc: "DESC Our Covenant with $whisperers_in_the_void_article$ instills us with the accumulated wisdom of their acquired secrets from the centermost domains in the Shroud."
 bts_patron_covenant_telepath_bonus_tt: "£mod_ship_speed_mult£ $MOD_SHIP_SPEED_MULT$ per $pop_group_unit$ $job_telepath_swap_plural_with_icon$: §G$@bts_patron_covenant_ship_speed_per_telepath|0%$§!"
 
-bts_patron_accord_1: "bts_patron_accord_1"
-bts_patron_accord_1_desc: "bts_patron_accord_1_desc"
+bts_patron_accord_1: "Invitation"
+bts_patron_accord_1_desc: "Where others fear the unknown, the Traveler sees patterns. Each breach in the veil is not a danger, but a whispered invitation."
+bts_patron_accord_1_tt: "Research option gained:\n['technology:tech_hyper_relays', £physics£$tech_hyper_relays$]"
 
-bts_patron_accord_2: "bts_patron_accord_2"
-bts_patron_accord_2_desc: "bts_patron_accord_2_desc"
+bts_patron_accord_2: "Unraveling"
+bts_patron_accord_2_desc: "The threads are not simply pulled: they are undone, rewoven, and restored. The Traveler guides our hand to undo what is, so that what must be can emerge."
 bts_patron_accord_2_tt: "Unlock £building£ §Y$BUILDING$§!: ['building:bts_building_covenant_sanctum']"
 
-bts_patron_power_1: "bts_patron_power_1"
-bts_patron_power_1_desc: "bts_patron_power_1_desc"
-bts_patron_power_1_tt: "bts_patron_power_1_tt"
+bts_patron_power_1: "Unbound Warp"
+bts_patron_power_1_desc: "The Traveler breaks the chains of space, leaving behind only the infinite call of the next horizon"
+bts_patron_power_1_tt: "Our fleets can Jump without suffering negative effects for the next §H$@bts_patron_power_disable_shroud_malus_duration_years|0$§! years."
 
-bts_patron_power_2: "bts_patron_power_2"
-bts_patron_power_2_desc: "bts_patron_power_2_desc"
-bts_patron_power_2_tt: "bts_patron_power_2_tt"
+bts_patron_power_2: "Void Lock"
+bts_patron_power_2_desc: "With a simple whisper, the Traveler silences the paths between the stars and the cosmos stands still"
+bts_patron_power_2_tt: "Every system inside of your §H$PSIONIC_AURA$§! will §Rlose§! their §Hhyperlanes§! for §H$@bts_patron_power_hyperlane_diabled_years_duration|0$§! years.\n$ACCORD_LOOSE_INTENSITY$"
 
-bts_patron_aura: "AURA"
-bts_patron_aura_effect_tt: "MAX EFFECT"
+bts_patron_aura: "Aura of Traveler"
+bts_patron_aura_effect_tt: "$try_spread_aura_tt$\n- Open a rift in space and time inside systems with §HAstral Scar§!\n- Call a small §MDimensional Fleet§! inside systems with an £astral_rift£ §HAstral Rift§!"
 
-MESSAGE_PSIONIC_AURA_MAX_INTENSITY_bts_patron_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n- Gain AAAA Research\n- $aura_intensity_lost_level_tt$"
+MESSAGE_PSIONIC_AURA_MAX_INTENSITY_bts_patron_split_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n- A new rift in space and time has opened in the §Y$SYSTEM$§! system!\n- $aura_intensity_lost_level_tt$"
+MESSAGE_PSIONIC_AURA_MAX_INTENSITY_bts_patron_fleet_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n- §M$NAME_Astral_Avatar$§! manifested in $SYSTEM$: §Y$@bts_patron_aura_effect_dimensional_cruiser_count|0$§!\n- §M$NAME_Astral_Avatar_Small$§! manifested in $SYSTEM$: §Y$@bts_patron_aura_effect_dimensional_destroyer_count|0$§!\n- $aura_intensity_lost_level_tt$"
+
+calling_bts_astral_siphon: "Calling of Loom"
+calling_bts_astral_siphon_desc: ""
+po_bts_astral_siphon: "Build or Upgarde a £building£ §HAstral Siphon§!"
+
+calling_bts_astral_action: "Calling of Divination"
+po_bts_astral_action: "Perform an §HAstral Action§!"
+calling_bts_astral_action_desc: ""
+
+calling_bts_astral_rift: "Calling of Exploration"
+calling_bts_astral_rift_desc: ""
+po_bts_astral_rift: "Complete an §H$ASTRAL_RIFT$§!"
+
+calling_bts_hyper_relay: "Calling of Connection"
+calling_bts_hyper_relay_desc: ""
+po_bts_hyper_relay: "Build §H$hyper_relay$§! Megastructure"
+
+
+deed_bts_rift_stage: "Exploring"
+po_bts_rift_stage: "Complete a chapter of an §H$ASTRAL_RIFT$§!"
+deed_bts_travel_bypass: "Traveling"
+po_bts_travel_bypass: "Travel through §H$BYPASS_WORMHOLE$§! or §H$BYPASS_SHROUD_TUNNEL$§!"
+deed_bts_jump_drive: "Jumping"
+po_bts_jump_drive: " Use §HJump Drive§! with any ship"
+deed_bts_tradition_astral: "Studying"
+po_bts_tradition_astral: "Adopt £traditions£ §H$tradition_astral_studies$§! Tradition"
+
 
 bts_covenant_name_full: "Traveller From Beyond"
 bts_covenant_name_prefix: "Traveller"
