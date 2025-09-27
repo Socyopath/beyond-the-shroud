@@ -91,3 +91,7 @@
 @bts_patron_aura_1_hyper_jump_cooldown_mult_rival = 1.00
 @bts_patron_aura_2_hyper_jump_cooldown_mult_rival = 2.00
 @bts_patron_aura_3_hyper_jump_cooldown_mult_rival = 3.00
+
+# Effect
+@bts_patron_aura_effect_dimensional_cruiser_count = 1
+@bts_patron_aura_effect_dimensional_destroyer_count = 2

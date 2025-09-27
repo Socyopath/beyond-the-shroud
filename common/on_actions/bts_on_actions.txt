@@ -10,11 +10,6 @@ on_game_start_country = {
 
 on_monthly_pulse_country = {
 	events = {
-		bts.201			# Monthly covenant progress
-		bts.210			# Covenant Rank 1 check
-		bts.220			# Covenant Rank 2 check
-		bts.230			# Covenant Rank 3 check
-		bts.240			# Covenant Rank 4 check
 		bts.300		# Labyrinth Check
 		bts.340		# Summon District Check
 		bts.100		# Zro Infusion Check
@@ -77,9 +72,18 @@ on_entering_battle = {
 }
 
 
+#A building construction has been completed.
+# This = Planet
+on_building_complete = {
+	events = {
+		bts.220 # Astral Siphon Calling
+	}
+}
+
 # This = Planet
 on_building_upgraded = {
 	events = {
+		bts.220 # Astral Siphon Calling
 		bts.330 # Gives relic on capital upgrade
 	}
 }
@@ -100,3 +104,89 @@ on_ship_destroyed_perp = {
 		bts.344
 	}
 }
+
+# Fired when a country completes a patron's first contact
+# This = Country
+on_patron_contact_completed = {
+	events = {
+		bts.200
+	}
+}
+
+
+# A Megastructure has been built
+# Root = Country
+# From = Megastructure
+# FromFrom = System
+# FromFromFrom = Fleet
+on_megastructure_built = {
+	events = {
+		bts.223 # Hyper Relay Calling
+	}
+}
+
+# Executed when the exploration of an astral rift ends
+# THIS = Country: Explorer country
+# FROM = AstralRift: Explored astral rift
+# FROMFROM = Exploring Fleet
+on_astral_rift_exploration_complete = {
+	events = {
+		bts.222 # Astral Rift Calling
+	}
+}
+
+# Custom Handler for astral actions
+# THIS = Country
+on_bts_astral_action = {
+	events = {
+		bts.221 # Astral Action Calling
+	}
+}
+
+# Executed when an astral rift event is about to be fired
+# THIS = Country: Explorer country
+# FROM = AstralRift: Explored astral rift
+# FROMFROM = Exploring Fleet
+on_astral_rift_pre_event_fire = {
+	events = {
+		bts.230 # Astral Rift Exploration Deed
+	}
+}
+
+
+# Called upon entering FTL (on-action name scripted on the Bypass type)
+# THIS = Fleet
+# FROM = System jumping to
+# FROMFROM = System jumped from
+on_entering_wormhole = {
+	events = {
+		bts.231 # Travel Through wormhole / Shroud Tunnel Deed
+	}
+}
+
+# Called upon entering FTL (on-action name scripted on the Bypass type)
+# THIS = Fleet
+# FROM = System jumping to
+# FROMFROM = System jumped from
+on_entering_shroud_tunnel = {
+	events = {
+		bts.231 # Travel Through wormhole / Shroud Tunnel Deed
+	}
+}
+
+# THIS = Ship
+on_jump_drive = {
+	events = {
+		bts.232 # Jump Drive Deed
+	}
+}
+
+# Executed when a country picks any tradition (including starters and finishers)
+# THIS = country
+on_tradition_picked = {
+	events = {
+		bts.233 # Tradition Astral Deed
+	}
+}
+
+

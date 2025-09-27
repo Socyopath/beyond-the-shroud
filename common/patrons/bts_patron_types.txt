@@ -11,18 +11,18 @@ bts_patron = {
 	position = { x = 0 y = 0 }
 
 	callings = {
-		calling_build_research_lab
-		calling_finish_megastructure
-		calling_launch_agenda
-		calling_complete_arc_site
-		calling_complete_arc_rift
-		calling_research_special_project
+        calling_bts_astral_siphon
+        calling_bts_astral_action
+        calling_bts_astral_rift
+        calling_bts_hyper_relay
 	}
 
 	deeds = {
-		deed_explore_wormhole
+        deed_bts_tradition_astral
 		deed_wormhole_locks_mastery
-		deed_arc_rift_stage
+		deed_bts_rift_stage
+        deed_bts_travel_bypass
+        deed_bts_jump_drive
 	}
 
 	covenant = {
@@ -105,7 +105,7 @@ bts_patron = {
 		}
 
 		effect = {
-			custom_tooltip = bts_patron_power_2
+			custom_tooltip = bts_patron_power_2_tt
 			hidden_effect = {
 				country_event = { id = bts.210 }
 			}

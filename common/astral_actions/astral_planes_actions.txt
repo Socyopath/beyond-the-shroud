@@ -32,6 +32,9 @@ action_astral_boost = {
 				value = 1
 			}
 		}
+		hidden_effect = {
+			fire_on_action = { on_action = on_bts_astral_action }
+		}
 	}
 
 	ai_weight = {
@@ -73,6 +76,9 @@ action_quantum_catapult_insight = {
 		add_tech_progress = {
 			tech = tech_quantum_catapult
 			progress = 0.25
+		}
+		hidden_effect = {
+			fire_on_action = { on_action = on_bts_astral_action }
 		}
 	}
 
@@ -122,6 +128,9 @@ action_quantum_catapult_insight_2 = {
 	effect = {
 		add_modifier = {
 			modifier = quantum_catapult_insight_2_modifier
+		}
+		hidden_effect = {
+			fire_on_action = { on_action = on_bts_astral_action }
 		}
 	}
 
@@ -209,6 +218,9 @@ action_summon_dimensional_fleet = {
 				}
 			}
 		}
+		hidden_effect = {
+			fire_on_action = { on_action = on_bts_astral_action }
+		}
 	}
 
 	ai_weight = {
@@ -267,6 +279,9 @@ action_astral_splitting = {
 			}
 		}
 		astral_splitting = yes
+		hidden_effect = {
+			fire_on_action = { on_action = on_bts_astral_action }
+		}
 	}
 
 	ai_weight = {
@@ -316,6 +331,9 @@ action_gain_physics_insight = {
 				value = 1
 			}
 		}
+		hidden_effect = {
+			fire_on_action = { on_action = on_bts_astral_action }
+		}
 	}
 
 	ai_weight = {
@@ -358,6 +376,9 @@ action_hyper_relay_insight = {
 			tech = tech_hyper_relays
 			progress = 0.5
 		}
+		hidden_effect = {
+			fire_on_action = { on_action = on_bts_astral_action }
+		}
 	}
 
 	ai_weight = {
@@ -399,6 +420,9 @@ action_flash_forge_hyper_relay = {
 				which = flash_forge_usage_count
 				value = 1
 			}
+		}
+		hidden_effect = {
+			fire_on_action = { on_action = on_bts_astral_action }
 		}
 	}
 
@@ -474,6 +498,9 @@ action_lateral_artifacting = {
 			}
 		}
 		custom_tooltip = "action_lateral_artifacting_tooltip"
+		hidden_effect = {
+			fire_on_action = { on_action = on_bts_astral_action }
+		}
 	}
 
 	ai_weight = {
@@ -510,6 +537,9 @@ action_dimensional_lock = {
 	effect = {
 		custom_tooltip = "action_dimensional_lock_tooltip"
 		set_country_flag = dimensional_lock_available
+		hidden_effect = {
+			fire_on_action = { on_action = on_bts_astral_action }
+		}
 	}
 
 	ai_weight = {
@@ -559,6 +589,9 @@ action_folding_hyperspace = {
 	effect = {
 		custom_tooltip = "action_folding_hyperspace_tooltip"
 		set_country_flag = unlock_astral_jump
+		hidden_effect = {
+			fire_on_action = { on_action = on_bts_astral_action }
+		}
 	}
 
 	ai_weight = {
@@ -592,6 +625,9 @@ action_dimensional_shifting = {
 	effect = {
 		custom_tooltip = "action_dimensional_shifting_tooltip"
 		set_country_flag = unlock_phase_fleet
+		hidden_effect = {
+			fire_on_action = { on_action = on_bts_astral_action }
+		}
 	}
 
 	ai_weight = {
@@ -667,6 +703,9 @@ action_astral_siphon = {
 				value = 1
 			}
 		}
+		hidden_effect = {
+			fire_on_action = { on_action = on_bts_astral_action }
+		}
 	}
 
 	ai_weight = {
@@ -691,6 +730,9 @@ action_planar_mastery = {
 	effect = {
 		custom_tooltip = "action_planar_mastery_tooltip"
 		set_country_flag = action_planar_mastery_activated
+		hidden_effect = {
+			fire_on_action = { on_action = on_bts_astral_action }
+		}
 	}
 
 	ai_weight = {

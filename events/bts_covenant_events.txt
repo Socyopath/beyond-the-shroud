@@ -123,3 +123,175 @@ system_event = {
 		}
 	}
 }
+
+# Callings
+# Build or upgrade astral siphon
+planet_event = {
+	id = bts.220
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		exists = owner
+		owner = {
+			can_access_shroud = yes
+		}
+		OR = {
+			last_building_changed = building_astral_siphon_1
+			last_building_changed = building_astral_siphon_2
+			last_building_changed = building_astral_siphon_3
+		}
+		
+	}
+
+	immediate = {
+		owner = {
+            add_patron_objective_counter = {
+                counter = po_bts_astral_siphon
+                amount = 1
+            }
+        }
+	}
+
+}
+
+# Use astral action
+country_event = {
+	id = bts.221
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		can_access_shroud = yes
+	}
+
+	immediate = {
+		add_patron_objective_counter = {
+			counter = po_bts_astral_action
+			amount = 1
+		}
+	}
+}
+
+# Explore astral rift
+country_event = {
+	id = bts.222
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		can_access_shroud = yes
+	}
+
+	immediate = {
+		add_patron_objective_counter = {
+			counter = po_bts_astral_rift
+			amount = 1
+		}
+	}
+}
+
+# Build Hyper Relay
+country_event = {
+	id = bts.223
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		can_access_shroud = yes
+		from = {
+			OR = {
+				is_megastructure_type = hyper_relay
+                is_megastructure_type = hyper_relay_restored
+			}
+		}
+	}
+
+	immediate = {
+		add_patron_objective_counter = {
+			counter = po_bts_hyper_relay
+			amount = 1
+		}
+	}
+}
+
+# Deeds
+country_event = {
+	id = bts.230
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		can_access_shroud = yes
+	}
+
+	immediate = {
+		add_patron_objective_counter = {
+			counter = po_bts_rift_stage
+			amount = 1
+		}
+	}
+}
+
+fleet_event = {
+	id = bts.231
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		exists = owner
+		owner = {
+			can_access_shroud = yes
+		}
+	}
+
+	immediate = {
+		owner = {
+			add_patron_objective_counter = {
+				counter = po_bts_travel_bypass
+				amount = 1
+			}
+		}
+	}
+}
+
+ship_event = {
+	id = bts.232
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		exists = owner
+		owner = {
+			can_access_shroud = yes
+		}
+	}
+
+	immediate = {
+		owner = {
+			add_patron_objective_counter = {
+				counter = po_bts_jump_drive
+				amount = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = bts.233
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		can_access_shroud = yes
+		category_last_picked_tradition = tradition_astral_studies
+	}
+
+	immediate = {
+		add_patron_objective_counter = {
+			counter = po_bts_tradition_astral
+			amount = 1
+		}
+	}
+}

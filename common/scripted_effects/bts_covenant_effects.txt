@@ -1,21 +1,64 @@
 bts_patron_aura_max_intensity_effect = {
 	if = {
         limit = {
-            NOR = {
-                has_megastructure = hyper_relay
-                has_megastructure = hyper_relay_restored
+            any_system_planet = { is_astral_scar = yes }
+        }
+        
+        random_system_planet = {
+            limit = { is_astral_scar = yes }
+            split_astral_scar = yes
+        }
+
+        create_message = {
+            type = MESSAGE_PSIONIC_AURA_whisperers_in_the_void
+            localization = MESSAGE_PSIONIC_AURA_MAX_INTENSITY_bts_patron_split_DESC
+            days = 30
+            variable = {
+                type = name
+                localization = SYSTEM
+                scope = this
             }
         }
-        spawn_megastructure = {
-            type = "hyper_relay"
-            orbit_distance = 300
-            orbit_angle = 260
-            owner = aura_owner
-            graphical_culture = aura_owner
+    }
+    else_if = {
+        limit = {
+            has_astral_rift = yes
+        }
+        random_astral_rift = {
+            create_fleet = {
+                name = "NAME_Dimensional_Fleet"
+                settings = {
+                    can_upgrade = no
+                    uses_naval_capacity = no
+                    spawn_debris = no
+                }
+                effect = {
+                    set_owner = root.aura_owner
+                    while = {
+                        count = @bts_patron_aura_effect_dimensional_cruiser_count
+                        create_ship = {
+                            name = "NAME_Astral_Avatar"
+                            design = "NAME_Astral_Avatar"
+                            upgradable = no
+                            graphical_culture = "extra_dimensional_01"
+                        }
+                    }
+                    while = {
+                        count = @bts_patron_aura_effect_dimensional_destroyer_count
+                        create_ship = {
+                            name = "NAME_Astral_Avatar_Small"
+                            design = "NAME_Astral_Avatar_Small"
+                            upgradable = no
+                            graphical_culture = "extra_dimensional_01"
+                        }
+                    }
+                    set_location = prev
+                }
+            }
         }
         create_message = {
             type = MESSAGE_PSIONIC_AURA_whisperers_in_the_void
-            localization = MESSAGE_PSIONIC_AURA_MAX_INTENSITY_bts_patron_DESC
+            localization = MESSAGE_PSIONIC_AURA_MAX_INTENSITY_bts_patron_fleet_DESC
             days = 30
             variable = {
                 type = name

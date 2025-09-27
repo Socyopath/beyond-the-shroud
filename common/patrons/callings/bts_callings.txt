@@ -1,0 +1,125 @@
+#calling_example = {
+#	potential = { }						# Whether the calling can be picked for the given country (can be empty)
+#	first_tier = 1						# The tiers of this calling will begin at this tier (optional, default CALLINGS_TIER_MIN)
+#	tier = {							# Calling tier (add as much as required)
+#		attunement = 100				# Attunement given towards the patron (must be >0)
+#		trigger = { }					# If the conditions are all true, completes the calling (daily checked) (cannot be empty if no counter)
+#		counter = { }					# Objectives to complete the calling (can be empty)
+#	}
+#}
+#
+# Three localizations needed:
+#	- calling_example (name of the calling)
+#	- calling_example_desc (flavor text for the calling)
+#	- calling_example_tierX_trigger_desc (text simplifying the trigger conditions, not needed when the trigger is empty)
+
+
+calling_bts_astral_siphon = {
+	tier = {
+		attunement = @calling_attunement_tier1
+
+		counter = { 
+			po_bts_astral_siphon = {
+				max = 1
+			}
+		}
+	}
+
+	tier = {
+		attunement = @calling_attunement_tier2
+
+		counter = { 
+			po_bts_astral_siphon = {
+				max = 1
+			}
+		}
+	}
+
+	tier = {
+		attunement = @calling_attunement_tier3
+
+		counter = {
+			po_bts_astral_siphon = {
+				max = 1
+			}
+		}
+	}
+}
+
+calling_bts_astral_action = {
+	tier = {
+		attunement = @calling_attunement_tier1
+
+		counter = { 
+			po_bts_astral_action = {
+				max = 1
+			}
+		}
+	}
+
+	tier = {
+		attunement = @calling_attunement_tier2
+
+		counter = { 
+			po_bts_astral_action = {
+				max = 1
+			}
+		}
+	}
+
+	tier = {
+		attunement = @calling_attunement_tier3
+
+		counter = {
+			po_bts_astral_action = {
+				max = 1
+			}
+		}
+	}
+}
+
+calling_bts_astral_rift = {
+	first_tier = 3
+
+	tier = {
+		attunement = @calling_attunement_tier3
+
+		counter = {
+			po_bts_astral_rift = {
+				max = 1
+			}
+		}
+	}
+}
+
+calling_bts_hyper_relay = {
+	tier = {
+		attunement = @calling_attunement_tier1
+
+		counter = { 
+			po_bts_hyper_relay = {
+				max = 1
+			}
+		}
+	}
+
+	tier = {
+		attunement = @calling_attunement_tier2
+
+		counter = { 
+			po_bts_hyper_relay = {
+				max = 1
+			}
+		}
+	}
+
+	tier = {
+		attunement = @calling_attunement_tier3
+
+		counter = { 
+			po_bts_hyper_relay = {
+				max = 1
+			}
+		}
+	}
+}

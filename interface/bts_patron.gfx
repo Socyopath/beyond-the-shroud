@@ -8,25 +8,9 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
 	}
 
-	corneredTileSpriteType = {
-		name = "GFX_bts_patron_bg"
-		texturefile = "gfx/interface/icons/patrons/backgrounds/whisperers_in_the_void_bg.dds"
-		effectFile = "gfx/FX/buttonstate.shader"
-	}
-
 	spriteType = {
 		name = "GFX_bts_patron_quadrant_1"
 		texturefile = "gfx/interface/icons/patrons/quadrants/whisperers_in_the_void_quadrant_1.dds"
-	}
-
-	spriteType = {
-		name = "GFX_bts_patron_quadrant_2"
-		texturefile = "gfx/interface/icons/patrons/quadrants/whisperers_in_the_void_quadrant_2.dds"
-	}
-
-	spriteType = {
-		name = "GFX_bts_patron_quadrant_3"
-		texturefile = "gfx/interface/icons/patrons/quadrants/whisperers_in_the_void_quadrant_3.dds"
 	}
 
 	spriteType = {
@@ -36,9 +20,25 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_bts_patron_quadrant_selected_border_1"
+		texturefile = "gfx/interface/icons/patrons/quadrants/whisperers_in_the_void_quadrant_selected_border_1.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_bts_patron_quadrant_2"
+		texturefile = "gfx/interface/icons/patrons/quadrants/whisperers_in_the_void_quadrant_2.dds"
+	}
+
+	spriteType = {
 		name = "GFX_bts_patron_quadrant_selected_2"
 		texturefile = "gfx/interface/icons/patrons/quadrants/whisperers_in_the_void_quadrant_selected_2.dds"
 		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_bts_patron_quadrant_3"
+		texturefile = "gfx/interface/icons/patrons/quadrants/whisperers_in_the_void_quadrant_3.dds"
 	}
 
 	spriteType = {
@@ -48,16 +48,15 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_bts_patron_calling_anim"
-		texturefile = "gfx/interface/icons/patrons/callings/whisperers_calling_highlight.dds"
-		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
-		animation = {
-			animationmaskfile = "gfx/interface/icons/patrons/callings/whisperers_calling_anim_texture.dds"
-			animationtexturefile = "gfx/interface/icons/patrons/callings/whisperers_calling_anim_texture.dds"
-			animationlooping = no
-			animationtime = 2.0
-			animationtype = "pulsing"
-		}
+		name = "GFX_bts_patron_quadrant_selected_border_3"
+		texturefile = "gfx/interface/icons/patrons/quadrants/whisperers_in_the_void_quadrant_selected_border_3.dds"
+		alwaystransparent = yes
+	}
+
+    corneredTileSpriteType = {
+		name = "GFX_bts_patron_bg"
+		texturefile = "gfx/interface/icons/patrons/backgrounds/whisperers_in_the_void_bg.dds"
+		effectFile = "gfx/FX/buttonstate.shader"
 	}
 
 	spriteType = {
@@ -74,48 +73,44 @@ spriteTypes = {
 		name = "GFX_bts_patron_calling_3_bg"
 		texturefile = "gfx/interface/icons/patrons/callings/whisperers_calling_tier3.dds"
 	}
+    
 
-	# spriteType = {
-	# 	name = "GFX_bts_patron_active_accords_frame_bg"
-	# 	texturefile = "gfx/interface/icons/patrons/accords/active_accord_frame_witv.dds"
-	# 	alwaysTransparent = yes
-	# }
-	# 	spriteType = {
-	# 	name = "GFX_bts_patron_passive_accords_frame_bg"
-	# 	texturefile = "gfx/interface/icons/patrons/accords/passive_accord_frame_witv.dds"
-	# 	alwaysTransparent = yes
-	# }
+    spriteType = {
+		name = "GFX_bts_patron_accords_bg"
+		texturefile = "gfx/interface/icons/patrons/accords/whisperers_accords_bg.dds"
+		alwaysTransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_bts_patron_passive_accords_frame_bg"
+		texturefile = "gfx/interface/icons/patrons/accords/passive_accord_frame_witv.dds"
+		alwaysTransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_bts_patron_active_accords_frame_bg"
+		texturefile = "gfx/interface/icons/patrons/accords/active_accord_frame_witv.dds"
+		alwaysTransparent = yes
+	}
+
 	spriteType = {
 		name = "GFX_bts_patron_active_accords_bg"
 		texturefile = "gfx/interface/icons/patrons/accords/accord_cost_witv.dds"
 		transparenceCheck = yes
 	}
-	# spriteType = {
-	# 	name = "GFX_bts_patron_accords_bg"
-	# 	texturefile = "gfx/interface/icons/patrons/accords/whisperers_accords_bg.dds"
-	# 	alwaysTransparent = yes
-	# }
-
-
-
-
-
-
-
-	# spriteType = {
-	# 	name = "GFX_bts_patron_quadrant_selected_border_1"
-	# 	texturefile = "gfx/interface/icons/patrons/quadrants/whisperers_in_the_void_quadrant_selected_border_1.dds"
-	# 	alwaystransparent = yes
-	# }
-
-
 
 	spriteType = {
-		name = "GFX_bts_patron_quadrant_selected_border_3"
-		texturefile = "gfx/interface/icons/patrons/quadrants/whisperers_in_the_void_quadrant_selected_border_3.dds"
-		alwaystransparent = yes
+		name = "GFX_bts_patron_calling_anim"
+		texturefile = "gfx/interface/icons/patrons/callings/whisperers_calling_highlight.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		animation = {
+			animationmaskfile = "gfx/interface/icons/patrons/callings/whisperers_calling_anim_texture.dds"
+			animationtexturefile = "gfx/interface/icons/patrons/callings/whisperers_calling_anim_texture.dds"
+			animationlooping = no
+			animationtime = 2.0
+			animationtype = "pulsing"
+		}
 	}
-
 
     # Covenant
 	spriteType = {

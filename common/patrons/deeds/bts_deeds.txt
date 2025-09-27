@@ -1,0 +1,59 @@
+#############
+#			#
+#	DEEDS	#
+#			#
+#############
+
+# Example:
+#deed_example = {
+#	attunement = 100					# Attunement given towards the patron (must be >0)
+#	has_desc = no # (/yes)				# Does the deed has a description describing a specific case for the given attunement (ex: attunement multiplied by a certain value) (Can be empty and no by default)
+#	counter = { }						# Objectives to complete the calling
+#	potential = { }						# Whether the deed can be picked for the given country (can be empty)
+#}
+
+deed_bts_rift_stage = {
+	attunement = 25
+
+	counter = {
+		po_bts_rift_stage = {
+			max = 1
+		}
+	}
+}
+
+
+deed_bts_travel_bypass = {
+	attunement = 5
+
+	counter = {
+		po_bts_travel_bypass = {
+			max = 1
+		}
+	}
+}
+
+deed_bts_jump_drive = {
+	attunement = 0.5
+
+	counter = {
+		po_bts_jump_drive = {
+			max = 1
+		}
+	}
+}
+
+deed_bts_tradition_astral = {
+	attunement = 100
+
+	counter = {
+		po_bts_tradition_astral = {
+			max = 1
+		}
+	}
+}
+
+
+
+
+
