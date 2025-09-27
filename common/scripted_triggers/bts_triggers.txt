@@ -1,3 +1,11 @@
+has_covenant_with_bts_patron = {
+	OR = {
+		# Not present in Utopia DLC
+		# Shroud DLC check
+		has_covenant = bts_patron
+	}
+}
+
 bts_has_any_covenant_favor = {
 	OR = {
 		check_variable = { which = composer_covenant_rank value >= $FAVOR_AMOUNT$ }
