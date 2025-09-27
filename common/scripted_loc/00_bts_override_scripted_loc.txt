@@ -1,0 +1,56 @@
+defined_text = {
+	name = GetShroudPatron
+	text = {
+		localization_key = name_composer
+		trigger = {
+			OR = {
+				has_covenant_with_the_composer_of_strands = yes
+				has_country_flag = composer_covenant_confirmed
+			}
+		}
+	}
+	text = {
+		localization_key = name_eater
+		trigger = {
+			OR = {
+				has_covenant_with_the_eater_of_worlds = yes
+				has_country_flag = eater_covenant_confirmed
+			}
+		}
+	}
+	text = {
+		localization_key = name_instrument
+		trigger = {
+			OR = {
+				has_covenant_with_the_instrument_of_desire = yes
+				has_country_flag = instrument_covenant_confirmed
+			}
+		}
+	}
+	text = {
+		localization_key = name_whisperers
+		trigger = {
+			OR = {
+				has_covenant_with_whisperers_in_the_void = yes
+				has_country_flag = whisperers_covenant_confirmed
+			}
+		}
+	}
+	# TODO AUG-49049 need to warn the localization teams that they will need to adapt custom loca files (00_scripted_loc_fr.txt and scripted_loc_deloc.txt)
+	text = {
+		localization_key = name_cradle
+		trigger = {
+			has_country_flag = cradle_covenant_confirmed
+		}
+	}
+
+    text = {
+		localization_key = name_bts_patron
+		trigger = {
+			OR = {
+				has_covenant_with_bts_patron = yes
+				has_country_flag = bts_patron_covenant_confirmed
+			}
+		}
+	}
+}

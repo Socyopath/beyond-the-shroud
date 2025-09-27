@@ -1,0 +1,23 @@
+suitable_for_chosen_covenant = {
+	suitable_for_chosen = yes
+	OR = {
+		owner = { has_country_flag = composer_covenant_rank_3 }
+		owner = { has_country_flag = eater_covenant_rank_3 }
+		owner = { has_country_flag = instrument_covenant_rank_3 }
+		owner = { has_country_flag = cradle_covenant_rank_3 }
+		owner = { has_country_flag = whisperers_covenant_rank_3 }
+        owner = { has_country_flag = bts_patron_covenant_rank_3 }
+		owner = { has_country_flag = forging_our_own_path }
+	}
+}
+
+has_patron_chosen_one_leader_trait = {
+	OR = {
+		has_trait = leader_trait_composer_chosen
+		has_trait = leader_trait_instrument_chosen
+		has_trait = leader_trait_eater_chosen
+		has_trait = leader_trait_cradle_chosen
+		has_trait = leader_trait_whisperers_chosen
+        has_trait = bts_leader_trait_covenant_chosen
+	}
+}

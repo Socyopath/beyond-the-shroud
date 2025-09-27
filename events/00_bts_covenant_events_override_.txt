@@ -1,0 +1,366 @@
+namespace = utopia
+
+# Covenant level 3 - Chosen One
+country_event = {
+	id = utopia.2681
+	title = "utopia.2681.name"
+	desc = "utopia.2681.desc"
+	picture = GFX_evt_shroudwalker_enclave
+	show_sound = {
+		trigger = {
+			has_shroud_dlc = yes
+			is_robot_empire = yes
+		}
+		sound = event_psionic_robot
+	}
+	show_sound = {
+		trigger = {
+			OR = {
+				has_shroud_dlc = no
+				is_robot_empire = no
+			}
+		}
+		sound = event_psionic
+	}
+	trackable = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+
+		# First leader option.
+		# If Ruler's class fits, pick it.
+		if = {
+			limit = {
+				ruler = { suitable_for_chosen_covenant = yes }
+			}
+			ruler = { save_event_target_as = leader_1 }
+		}
+		# Else, do regular pick.
+		if = {
+			limit = {
+				NOT = { exists = event_target:leader_1 }
+			}
+			random_owned_leader = {
+				limit = { suitable_for_chosen_covenant = yes }
+				save_event_target_as = leader_1
+			}
+		}
+
+		# Second leader option.
+		random_owned_leader = {
+			limit = {
+				NOT = { is_same_value = event_target:leader_1 }
+				suitable_for_chosen_covenant = yes
+			}
+			save_event_target_as = leader_2
+		}
+
+		# Third leader option.
+		random_owned_leader = {
+			limit = {
+				NOR = {
+					is_same_value = event_target:leader_1
+					is_same_value = event_target:leader_2
+				}
+				is_exploring_astral_rift = no
+				is_gestalt_node = no
+				# If Chosen One exists, pick it.
+				has_chosen_one_leader_trait = yes
+			}
+			save_event_target_as = leader_3
+		}
+		# Else, do regular pick.
+		if = {
+			limit = {
+				NOT = { exists = event_target:leader_3 }
+			}
+			random_owned_leader = {
+				limit = {
+					suitable_for_chosen_covenant = yes
+					NOR = {
+						is_same_value = event_target:leader_1
+						is_same_value = event_target:leader_2
+					}
+				}
+				save_event_target_as = leader_3
+			}
+		}
+
+		# Forth leader option.
+		random_owned_leader = {
+			limit = {
+				suitable_for_chosen_covenant = yes
+				NOR = {
+					is_same_value = event_target:leader_1
+					is_same_value = event_target:leader_2
+					is_same_value = event_target:leader_3
+				}
+				OR = {
+					AND = {
+						owner = { has_country_flag = composer_covenant_rank_3 }
+						leader_class = scientist
+					}
+					AND = {
+						owner = { has_country_flag = eater_covenant_rank_3 }
+						leader_class = commander
+					}
+					AND = {
+						owner = { has_country_flag = instrument_covenant_rank_3 }
+						leader_class = official
+					}
+					AND = {
+						owner = { has_country_flag = cradle_covenant_rank_3 }
+						leader_class = official
+					}
+					AND = {
+						owner = { has_country_flag = whisperers_covenant_rank_3 }
+						leader_class = scientist
+					}
+                    AND = {
+						owner = { has_country_flag = bts_patron_covenant_rank_3 }
+						leader_class = scientist
+					}
+				}
+			}
+			save_event_target_as = leader_4
+		}
+	}
+
+	option = { #Ruler 1
+		name = utopia.2681.a
+		hidden_effect = {
+			event_target:leader_1 = { save_event_target_as = chosen_leader }
+			country_event = { id = utopia.2682 }
+		}
+	}
+	option = { #Ruler 2
+		name = utopia.2681.b
+		hidden_effect = {
+			event_target:leader_2 = { save_event_target_as = chosen_leader }
+			country_event = { id = utopia.2682 }
+		}
+	}
+	option = { #Ruler 3
+		name = utopia.2681.c
+		trigger = {
+			exists = event_target:leader_3
+		}
+		hidden_effect = {
+			event_target:leader_3 = { save_event_target_as = chosen_leader }
+			country_event = { id = utopia.2682 }
+		}
+	}
+	option = { #Ruler 4
+		name = utopia.2681.d
+		trigger = {
+			exists = event_target:leader_4
+		}
+		hidden_effect = {
+			event_target:leader_4 = { save_event_target_as = chosen_leader }
+			country_event = { id = utopia.2682 }
+		}
+	}
+}
+
+country_event = {
+	id = utopia.2682
+	title = "utopia.2682.name"
+	desc = {
+		trigger = {
+			if = {
+				limit = { has_country_flag = forging_our_own_path }
+				text = utopia.2682.desc.shroudshaper_champion
+			}
+			else = {
+				text = utopia.2682.desc.patron_champion
+			}
+			if = {
+				limit = { exists = event_target:previous_chosen_leader }
+				text = newline
+				text = utopia.2682.desc.previous_chosen_killed
+			}
+			if = {
+				limit = { exists = event_target:chosen_leader_lost_patron }
+				text = newline
+				text = utopia.2682.desc.previous_chosen_lost_patron
+			}
+		}
+	}
+	picture = GFX_evt_chosen_leader
+	show_sound = {
+		trigger = {
+			has_shroud_dlc = yes
+			is_robot_empire = yes
+		}
+		sound = event_psionic_robot
+	}
+	show_sound = {
+		trigger = {
+			OR = {
+				has_shroud_dlc = no
+				is_robot_empire = no
+			}
+		}
+		sound = event_psionic
+	}
+	trackable = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		random_owned_leader = {
+			limit = {
+				NOT = { is_same_value = event_target:chosen_leader }
+				has_patron_chosen_one_leader_trait = yes
+				has_chosen_one_leader_trait = yes
+			}
+			save_event_target_as = chosen_leader_lost_patron
+		}
+		random_owned_leader = {
+			limit = {
+				NOR = { 
+					exists = event_target:chosen_leader_lost_patron
+					is_same_value = event_target:chosen_leader 
+				}
+				has_chosen_one_leader_trait = no
+				has_patron_chosen_one_leader_trait = yes
+			}
+			save_event_target_as = previous_chosen_leader
+			exile_leader_as = previous_chosen_leader
+		}
+	}
+
+	option = {
+		name = "utopia.2682.a"
+		default_hide_option = yes
+		event_target:chosen_leader = {
+			remove_all_negative_traits = yes
+
+			if = {
+				limit = { has_trait = leader_trait_psionic }
+				remove_trait = leader_trait_psionic
+			}
+			# Remove chosen traits from previous covenant if newly chosen leader was already chosen
+			if = {
+				limit = { has_trait = leader_trait_composer_chosen }
+				remove_trait = leader_trait_composer_chosen
+			}
+			if = {
+				limit = { has_trait = leader_trait_instrument_chosen }
+				remove_trait = leader_trait_instrument_chosen
+			}
+			if = {
+				limit = { has_trait = leader_trait_eater_chosen }
+				remove_trait = leader_trait_eater_chosen
+			}
+			if = {
+				limit = { has_trait = leader_trait_cradle_chosen }
+				remove_trait = leader_trait_cradle_chosen
+			}
+			if = {
+				limit = { has_trait = leader_trait_whisperers_chosen }
+				remove_trait = leader_trait_whisperers_chosen
+			}
+			if = {
+				limit = { has_trait = bts_leader_trait_covenant_chosen }
+				remove_trait = bts_leader_trait_covenant_chosen
+			}
+
+			if = {
+				limit = {
+					root = { has_country_flag = composer_covenant_rank_3 }
+				}
+				add_trait = {
+					trait = leader_trait_composer_chosen
+				}
+			}
+			else_if = {
+				limit = {
+					root = { has_country_flag = eater_covenant_rank_3 }
+				}
+				add_trait = {
+					trait = leader_trait_eater_chosen
+				}
+			}
+			else_if = {
+				limit = {
+					root = { has_country_flag = instrument_covenant_rank_3 }
+				}
+				add_trait = {
+					trait = leader_trait_instrument_chosen
+				}
+			}
+			else_if = {
+				limit = {
+					root = { has_country_flag = cradle_covenant_rank_3 }
+				}
+				add_trait = {
+					trait = leader_trait_cradle_chosen
+				}
+			}
+			else_if = {
+				limit = {
+					root = { has_country_flag = whisperers_covenant_rank_3 }
+				}
+				add_trait = {
+					trait = leader_trait_whisperers_chosen
+				}
+			}
+			else_if = {
+				limit = {
+					root = { has_country_flag = bts_patron_covenant_rank_3 }
+				}
+				add_trait = {
+					trait = bts_leader_trait_covenant_chosen
+				}
+			}
+
+			# Forging our own path.
+			if = {
+				limit = {
+					ROOT = { has_country_flag = forging_our_own_path }
+				}
+				add_trait = {
+					trait = leader_trait_shroudshaper
+				}
+			}
+		}
+
+		if = {
+			limit = { exists = event_target:previous_chosen_leader }
+			event_target:previous_chosen_leader = {
+				kill_leader = { show_notification = yes }
+			}
+		}
+		if = {
+			limit = { exists = event_target:chosen_leader_lost_patron }
+			event_target:chosen_leader_lost_patron = {
+				if = {
+					limit = { has_trait = leader_trait_composer_chosen }
+					remove_trait = leader_trait_composer_chosen
+				}
+				if = {
+					limit = { has_trait = leader_trait_instrument_chosen }
+					remove_trait = leader_trait_instrument_chosen
+				}
+				if = {
+					limit = { has_trait = leader_trait_eater_chosen }
+					remove_trait = leader_trait_eater_chosen
+				}
+				if = {
+					limit = { has_trait = leader_trait_cradle_chosen }
+					remove_trait = leader_trait_cradle_chosen
+				}
+				if = {
+					limit = { has_trait = leader_trait_whisperers_chosen }
+					remove_trait = leader_trait_whisperers_chosen
+				}
+                if = {
+					limit = { has_trait = bts_leader_trait_covenant_chosen }
+					remove_trait = bts_leader_trait_covenant_chosen
+				}
+			}
+		}
+	}
+}
