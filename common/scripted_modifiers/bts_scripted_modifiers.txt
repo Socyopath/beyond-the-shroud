@@ -20,12 +20,12 @@
 	# 	Possible values: all, pop, ship, station, fleet, country, army, leader, planet, component, pop_faction (currently unused, do not use), deposit,
 	# 		megastructure, habitability, starbase, economic_unit, system, trade, federation, espionage
 
-# bts_astral_action_cooldown = {
-# 	icon = mod_country_astral_threads_produces_mult
-# 	good = no
-# 	category = country
-# 	percentage = yes
-# }
+bts_patron_monthly_attunement_add = {
+	icon = mod_add_attunement_whisperers_in_the_void
+	good = yes
+	percentage = no
+	category = country
+}
 
 bts_astral_action_cost = {
 	icon = mod_country_astral_threads_produces_mult

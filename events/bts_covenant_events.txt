@@ -34,6 +34,8 @@ country_event = {
 
 		hidden_effect = {
 			revert_accords = whisperers_in_the_void
+			remove_country_flag = knowledge_accord
+			remove_country_flag = wisdom_accord
 			replace_patron = {
 				new_patron = bts_patron
 				replaced_patron = whisperers_in_the_void
@@ -48,6 +50,10 @@ country_event = {
 			# 	limit = { is_corporeal_authority = yes }
 			# 	set_psionic_choir_policy = yes
 			# }
+			every_owned_planet = { 
+				limit = { has_building = building_whisperers_sanctum } 
+				remove_building = building_whisperers_sanctum
+			}
 			set_country_flag = bts_covenant_contact
 			remove_country_flag = bts_covenant_contact_pending
 		}
@@ -62,7 +68,7 @@ inline_script = {
 	FORMED_EVENT_ID = bts.206
 	CONFIRM_EVENT_ID = bts.207
 	PATRON_TYPE = bts_patron
-	CHAIN = "shroud_composer_covenant_chain"
+	CHAIN = "shroud_bts_patron_covenant_chain"
 }
 
 # Covenant Formed
@@ -80,9 +86,29 @@ inline_script = {
 	PATRON_TYPE = bts_patron
 	MARK_TECH = bts_tech_covenant_mark
 	TECH_PATRON = bts_patron
-	CHAIN = "shroud_whisperers_covenant_chain"
+	CHAIN = "shroud_bts_patron_covenant_chain"
 }
 
+
+# Monthly attunement modifier: Whisperers in the Void
+country_event = {
+	id = bts.208
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		check_modifier_value = {
+			modifier = bts_patron_monthly_attunement_add
+			value != 0
+		}
+	}
+
+	immediate = {
+		add_attunement = {
+			bts_patron = modifier:bts_patron_monthly_attunement_add
+		}
+	}
+}
 
 # Power 2 Event 
 country_event = {

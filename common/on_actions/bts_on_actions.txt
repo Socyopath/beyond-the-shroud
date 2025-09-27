@@ -10,6 +10,7 @@ on_game_start_country = {
 
 on_monthly_pulse_country = {
 	events = {
+		bts.208		# Covenant Attunement Modifier
 		bts.300		# Labyrinth Check
 		bts.340		# Summon District Check
 		bts.100		# Zro Infusion Check

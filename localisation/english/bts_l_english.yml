@@ -1,5 +1,21 @@
 ﻿l_english:
 
+name_bts_patron: "$bts_patron$"
+bts_patron: "Traveler From Beyond"
+bts_patron_prefix: "Traveler"
+bts_patron_desc: "AADADADADADA"
+bts_patron_article: "the $bts_patron$"
+bts_patron_article_cap: "The $bts_patron$"
+bts_patron_color: "§H$bts_patron$§!"
+bts_patron_color_article: "the §H$bts_patron$§!"
+bts_patron_color_article_cap: "The §H$bts_patron$§!"
+bts_patron_code: "the §H[This.Patron:bts_patron.GetPreCommunicationName]§!"
+
+
+bts_song_of_policy: "Song of Horizons"
+bts_song_of_policy_desc: "A psionic chant that beckons toward unseen paths.\n\n"
+
+
 
 bts_patron_covenant: "§HCovenant of the $bts_patron_prefix$§!"
 bts_patron_covenant_desc: "DESC Our Covenant with $whisperers_in_the_void_article$ instills us with the accumulated wisdom of their acquired secrets from the centermost domains in the Shroud."
@@ -166,7 +182,7 @@ origin_bts_zroni_effects: "- Technology §Y$tech_archaeostudies$§! researched\n
 # Modifiers
 absorbed_consciousness_0: "$absorbed_consciousness_1$"
 mod_bts_relic_cooldown: "Relic Activation Cooldown"
-
+mod_bts_patron_monthly_attunement_add: "Monthly Attunement with [This.GetBtsPatronColor]"
 # Edicts
 edict_bts_shield_edicts_1: "$bts_tech_shrouded_shields$: Amplify"
 edict_bts_shield_edicts_1_desc: "$bts_tech_shrouded_shields_desc$"
