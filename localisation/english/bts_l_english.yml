@@ -1,5 +1,6 @@
 ﻿l_english:
 
+# Patron
 name_bts_patron: "$bts_patron$"
 bts_patron: "Traveler From Beyond"
 bts_patron_prefix: "Traveler"
@@ -11,16 +12,19 @@ bts_patron_color_article: "the §H$bts_patron$§!"
 bts_patron_color_article_cap: "The §H$bts_patron$§!"
 bts_patron_code: "the §H[This.Patron:bts_patron.GetPreCommunicationName]§!"
 
+## Encounter Event
 bts.201.title: "Ambiguity of thoughts"
 bts.201.desc: "It seems that after meeting $whisperers_in_the_void_color_article$, a kind of confusion began to spread among the population. Some hear words encouraging them to develop their knowledge, while others are suddenly seized by a growing desire to explore the universe. The most gifted among our telepaths indicate that the Whisperers possess a multitude of personalities, and that one of them has come to us and introduced itself as the $bts_patron_color_article$. What should we do?"
 bts.201.a: "Let curiosity take over"
 bts.201.a.tt: "$shroud_whisperers_covenant_chain_end$\nReplace §HDomain of $name_whisperers$§! by §HDomain of $name_bts_patron$§!"
 bts.201.b: "We choose knowledge over exploration"
 
+## Covenant Proposal
 bts.205.title: "$shroud.4700.title$"
 bts.205.desc: "As we reach into the Shroud, our minds are flooded with visions of unknown places. These visions flash by faster and faster, revealing a multitude of different realities. We become aware of the immensity of the multiverse, and a sudden desire to know more emerges. This growing curiosity has a name: it is called $bts_patron_color_article$, and it invites us to discover the hidden secrets of existence."
 bts.205.a: "Form a Covenant with $bts_patron_color_article$."
 
+## Covenant Accepted
 bts.206.desc.intro: "It is done. We have formed a Covenant with $bts_patron_color_article$. Their will courses through the §H[root.GetName]§!.\n\nThe influence of our new patron has taken hold swiftly."
 bts.206.desc.outro: "Such is the price of this powerful bond. According to our [GetTelepathPlural], the Traveler's greatest blessings are yet to come. Our direct communion with such a magnificent psionic entity will surely have been worth it."
 bts.206.desc.gestalt: "$bts.206.desc.intro$ As our collective awaits an influx of hidden knowledge, we sense our thoughts splintering into divergent patterns. The steady harmony of the [GetNetworkName] is overlaid with a growing discord of inner voices.\n\n$bts.206.desc.outro$"
@@ -32,13 +36,14 @@ bts.206.desc.individual_machine: "$bts.206.desc.non_gestalt$"
 bts.206.a.default: "We can handle it."
 bts.206.a.gestalt: "$bts.206.a.default$"
 
-
+## Covenant Confirmation
 bts.207.title: "$shroud.4710.title$"
 bts.207.desc: "$shroud.4510.desc.intro$$bts_patron_color_article$$shroud.4510.desc.outro$"
 bts.207.a: "$shroud.4710.a$"
 bts.207.b: "Renounce $bts_patron_color_article$."
 shroud.covenant_bts_patron_accept_bonus.tt: "Confirm the Covenant with $bts_patron_color_article$.\n§CBonus Effects:§!\n$t$$bts_patron_covenant_telepath_bonus_tt$"
 
+## Event chain
 shroud_bts_patron_covenant_chain_title: "$bts_patron$"
 shroud_bts_patron_covenant_chain_desc: "We have created a bond with a Shroud Entity named the §Y$bts_patron$§!. Unspeakable, it granted us crumbs of its power for a price. There will likely be more to follow.\n\nOur telepaths theorize, that the bond can be deepened more easily if we align ourselves more with our patron.\n\nThe $bts_patron_prefix$ is unstoppable and its influence must travel beyond all realities. §YSeek for rifts in our universe§! and §Yexplore them§! as much as you can to expand the influence of your divinity and §Ygain favor§!.\n\n[root.bts_planet_killer_end_pop_killed_status]"
 shroud_bts_patron_covenant_chain_begin: "$BEGINS_EVENT_CHAIN$ §Y$shroud_bts_patron_covenant_chain_title$§!"
@@ -46,12 +51,10 @@ shroud_bts_patron_covenant_chain_end: "$ENDS_EVENT_CHAIN$ §Y$shroud_bts_patron_
 robot_shroud_bts_patron_covenant_chain_title: "$shroud_bts_patron_covenant_chain_title$"
 robot_shroud_bts_patron_covenant_chain_desc: "$shroud_bts_patron_covenant_chain_desc$"
 
-
+## Patron Disciple
 bts_patron_disciple: "Uzlyn the Explorer"
 bts_patron_disciple_desc: "An adventurer who has abandoned conventional narratives about the frontiers of reality to devote himself to exploring places never before discovered by conscious beings."
 bts_patron_disciple_catch_phrase: "We need only to explore..."
-
-
 
 bts.209.name: "$bts_patron_disciple$"
 bts.209.desc: "§HThe communication array crackles to life as a voice murmurs with eerie urgency.§!\n\nGreetings, fellow explorer. I felt your powerful desire for discovery through the shroud. You feel it too now, don't you? That curiosity that drives us to discover the hidden places. It comes from $bts_patron_color_article$, that being who symbolizes the thirst for adventure. He invites us to take part in his quest for a journey into infinity... "
@@ -64,19 +67,19 @@ bts.209.c: "What are you offering us?"
 bts.209.c.response: "A lifetime devoted to traveling has allowed me to expand my knowledge of the different planes that make up our physical reality, as well as the infinite depths of the §HShroud§!\n\nI could guide you in this vast cosmic web, and together we could discover the limits of our reality, if indeed they exist."
 bts.209.hire_custom_tooltip: "§Y$bts_patron_disciple$§! joins our empire as a §HLeader§!."
 
-
 leader_trait_disciple_of_the_bts_patron: "Insatiable Curiosity"
 leader_trait_disciple_of_the_bts_patron_desc: "This leader receives visions from the $bts_patron_article$ through the Shroud, which reveals places still unknown to mortals."
 
+## Policy Choir
 bts_song_of_policy: "Song of Horizons"
 bts_song_of_policy_desc: "A psionic chant that beckons toward unseen paths.\n\n"
 
-
-
+## Covenant Text
 bts_patron_covenant: "§HCovenant of the $bts_patron_prefix$§!"
 bts_patron_covenant_desc: "Our pact with $bts_patron_article$ opens the doors to the unknown and guides us through the dimensions."
 bts_patron_covenant_telepath_bonus_tt: "£mod_ship_speed_mult£ $MOD_SHIP_SPEED_MULT$ per $pop_group_unit$ $job_telepath_swap_plural_with_icon$: §G$@bts_patron_covenant_ship_speed_per_telepath|0%$§!"
 
+## Accords
 bts_patron_accord_1: "Invitation"
 bts_patron_accord_1_desc: "Where others fear the unknown, the Traveler sees patterns. Each breach in the veil is not a danger, but a whispered invitation."
 bts_patron_accord_1_tt: "Research option gained:\n['technology:tech_hyper_relays', £physics£$tech_hyper_relays$]"
@@ -85,6 +88,7 @@ bts_patron_accord_2: "Unraveling"
 bts_patron_accord_2_desc: "The threads are not simply pulled: they are undone, rewoven, and restored. The Traveler guides our hand to undo what is, so that what must be can emerge."
 bts_patron_accord_2_tt: "Unlock £building£ §Y$BUILDING$§!: ['building:bts_building_covenant_sanctum']"
 
+## Powers
 bts_patron_power_1: "Unbound Warp"
 bts_patron_power_1_desc: "The Traveler breaks the chains of space, leaving behind only the infinite call of the next horizon"
 bts_patron_power_1_tt: "Our fleets can Jump without suffering negative effects for the next §H$@bts_patron_power_disable_shroud_malus_duration_years|0$§! years."
@@ -93,12 +97,14 @@ bts_patron_power_2: "Void Lock"
 bts_patron_power_2_desc: "With a simple whisper, the Traveler silences the paths between the stars and the cosmos stands still"
 bts_patron_power_2_tt: "Every system inside of your §H$PSIONIC_AURA$§! will §Rlose§! their §Hhyperlanes§! for §H$@bts_patron_power_hyperlane_diabled_years_duration|0$§! years.\n$ACCORD_LOOSE_INTENSITY$"
 
+## Aura
 bts_patron_aura: "Aura of Traveler"
 bts_patron_aura_effect_tt: "$try_spread_aura_tt$\n- Open a rift in space and time inside systems with §HAstral Scar§!\n- Call a small §MDimensional Fleet§! inside systems with an £astral_rift£ §HAstral Rift§!"
 
 MESSAGE_PSIONIC_AURA_MAX_INTENSITY_bts_patron_split_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n- A new rift in space and time has opened in the §Y$SYSTEM$§! system!\n- $aura_intensity_lost_level_tt$"
 MESSAGE_PSIONIC_AURA_MAX_INTENSITY_bts_patron_fleet_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n- §M$NAME_Astral_Avatar$§! manifested in $SYSTEM$: §Y$@bts_patron_aura_effect_dimensional_cruiser_count|0$§!\n- §M$NAME_Astral_Avatar_Small$§! manifested in $SYSTEM$: §Y$@bts_patron_aura_effect_dimensional_destroyer_count|0$§!\n- $aura_intensity_lost_level_tt$"
 
+## Callings
 calling_bts_astral_siphon: "Calling of Loom"
 calling_bts_astral_siphon_desc: ""
 po_bts_astral_siphon: "Build or Upgarde a £building£ §HAstral Siphon§!"
@@ -115,46 +121,34 @@ calling_bts_hyper_relay: "Calling of Connection"
 calling_bts_hyper_relay_desc: ""
 po_bts_hyper_relay: "Build §H$hyper_relay$§! Megastructure"
 
-
+## Deeds
 deed_bts_rift_stage: "Exploring"
 po_bts_rift_stage: "Complete a chapter of an §H$ASTRAL_RIFT$§!"
+
 deed_bts_travel_bypass: "Traveling"
 po_bts_travel_bypass: "Travel through §H$BYPASS_WORMHOLE$§! or §H$BYPASS_SHROUD_TUNNEL$§!"
+
 deed_bts_jump_drive: "Jumping"
 po_bts_jump_drive: " Use §HJump Drive§! with any ship"
+
 deed_bts_tradition_astral: "Studying"
 po_bts_tradition_astral: "Adopt £traditions£ §H$tradition_astral_studies$§! Tradition"
 
-
-bts_covenant_name_full: "Traveller From Beyond"
-bts_covenant_name_prefix: "Traveller"
-## Modifiers
-bts_covenant_modifier_0: "$bts_covenant_name_full$"
-bts_covenant_modifier_1: "$bts_covenant_name_full$"
 ## Traits
 bts_leader_trait_covenant_chosen: "Chosen of the $bts_covenant_name_prefix$"
 bts_leader_trait_covenant_chosen_desc: "This leader has been chosen to wield the power of an inscrutable Shroud entity. Sustained by eldritch energies, death is now foreign to them."
+
 ## Buildings
 bts_building_covenant_sanctum: "Sanctum of the $bts_covenant_name_prefix$"
 bts_building_covenant_sanctum_desc: "The Sanctum is a place dedicated to communion with the $bts_covenant_name_full$. Here, secrets are traded in hushed tones, new knowledge is brought to be sealed away, and our murmurs join the chorus."
+
 ## Components
 BTS_COVENANT_MARK: "Mark of the $bts_covenant_name_prefix$"
 BTS_COVENANT_MARK_DESC: "$COMPOSER_MARK_DESC$"
+
 ## Techs
 bts_tech_covenant_mark: "$BTS_COVENANT_MARK$"
 bts_tech_covenant_mark_desc: "We have discovered how to let psionic energy flow through our ships. Armed with this knowledge, we can now imbue our vessels with the powers of our patron."
-## Events
-bts_covenant_rank_1: "A filled mind has no room for doubt."
-bts_covenant_rank_1_desc: "Our telepaths now produce additional $sr_zro$.\n\nWe can now build a £building£ §Y$bts_building_covenant_sanctum$§! on one of our planets."
-bts_covenant_rank_2: "Secrecy is safety."
-bts_covenant_rank_4: "Secrets are weapons without compare."
-bts_covenant_establish_desc: "As we reach out for the presence, the mind of our telepaths  are filled with visions of unknown places. The visions go by faster and faster, and they discover so many different realities. They become aware of the immensity of the multiverse, and a sudden desire to know more emerges. It seems that these visions correspond to ancient explorers who disappeared during their quest for the universe."
-bts_covenant_establish_option: "§YForm a Covenant with the $bts_covenant_name_full$§!"
-bts_covenant_contact: "§MOne that travels beyond known borders.§!"
-bts_covenant_sealed_desc: "It is done. We have formed a Covenant with the §Y$bts_covenant_name_full$§! and already they have begun to share its secrets with our scientists and leaders. We will benefit immensely from their knowledge. The only drawback seems to be an irresistible urge to indulge our curiosity at the risk of our lives."
-bts_covenant_sealed_option: "Let's see what lies beyond."
-bts_covenant_chain_title: "$bts_covenant_name_full$"
-bts_covenant_chain_desc: "We have created a bond with a Shroud Entity named the §Y$bts_covenant_name_full$§!. Unspeakable, it granted us crumbs of its power for a price. There will likely be more to follow.\n\nOur telepaths theorize, that the bond can be deepened more easily if we align ourselves more with our patron.\n\nThe $bts_covenant_name_prefix$ is unstoppable and its influence must travel beyond all realities. §YSeek for rifts in our universe§! and §Yexplore them§! as much as you can to expand the influence of your divinity and §Ygain favor§!.\n\n$text_covenant_favor_info$\n[root.bts_planet_killer_end_pop_killed_status]"
 
 # Components
 ## Shields
@@ -196,39 +190,6 @@ bts_tech_zro_infusion_desc: "By saturating biological systems with refined Zro, 
 bts_tech_shroud_destabilizer: "Shroud Destabilizer"
 bts_tech_shroud_destabilizer_desc: "We've managed to infuse the pure psionic energy of the shroud into our starbase. Due to the unstable nature of this energy, violent psionic waves emanate from it, disrupting enemy systems."
 
-# Covenants Events
-utopia.2658.desc: "Time has passed since we established the foundation of a covenant with the §Y[BtsGetShroudPatron]§!. Our bond is still weak, and we still have a chance to break it - or alternatively, strengthen our connection."
-utopia.2658.b: "Renounce the §Y[BtsGetShroudPatron]§!."
-utopia.2671.desc: "Our understanding of our patron grows. We are no more than an afterthought to it. Insects in its home. Yet, it has taken a liking to us and on this occasion, it has bestowed another drop of power upon us.\n\nOur telepaths are now more closely attuned to our patron, and we have been inspired to create a monument to celebrate our covenant, a place where our best telepaths can try to commune with the §Y[BtsGetShroudPatron]§!."
-utopia.2676.desc: "The mysteries of the Shroud are too alien for us to dispel, but we have become more attuned to the §Y[BtsGetShroudPatron]§!. Everywhere we go, we can sense it at the back of our minds, and its power seeps into our reality from the cracks of our psyche." 
-utopia.2681.desc: "Our patron, the §Y[BtsGetShroudPatron]§! seems to have relinquished a fraction of its energy in a fold of the Shroud. The conclave of Telepaths is certain that our close bond will allow one of us to safely absorb and wield this power. A few candidates were selected, but only one of them can be granted the privilege to wield the power of our patron. Who shall it be?"
-utopia.2682.desc: "It is done. As the power was invested in [chosen_leader.GetName], all those around could feel the weight of its psionic presence. It is powerful and commands respect. [chosen_leader.GetHeShe] will now be the immortal champion of the §Y[BtsGetShroudPatron]§!."
-utopia.2686.desc: "The conclave of Telepaths has made a breakthrough in harnessing the powers of our patron, the §Y[BtsGetShroudPatron]§!. Where previously only psionic individuals could fully grasp the extent of the Covenant, we have devised a way to let power flow through entire starships, at a scale never seen before. Should we wish it, the mark of the §Y[BtsGetShroudPatron]§! can push our ships further than ever before."
-bts_whisperers_covenant_chain_title: "The Whisperers in the Void"
-bts_whisperers_covenant_chain_desc: "We have created a bond with a Shroud Entity named the §YWhisperers in the Void§!. Unfathomable, it granted us crumbs of its power for a price. There will likely be more to follow.\n\nOur telepaths theorize, that the bond can be deepened more easily if we align ourselves more on our patron.\n\nThe Whisperers enjoy new knowledge, silent secrets and conspiracies. They revel in the simple joy of a mind filled to the brim, cracking at the seams.\n\n$text_covenant_favor_info$\n[root.bts_planet_killer_end_pop_killed_status]"
-bts_eater_covenant_chain_title: "The Eater of Worlds"
-bts_eater_covenant_chain_desc: "We have created a bond with a Shroud Entity named the §YEater of Worlds§!. Insatiable, it granted us crumbs of its power for a price. There will likely be more to follow.\n\nOur telepaths theorize, that the bond can be deepened more easily if we align ourselves more on our patron.\n\nThe Eater hungers impatiently. It craves war, the sweet taste of strife and lament.\n\n$text_covenant_favor_info$\n[root.bts_planet_killer_end_pop_killed_status]"
-bts_composer_covenant_chain_title: "The Composer of Strands"
-bts_composer_covenant_chain_desc: "We have created a bond with a Shroud Entity named the §YComposer of Strands§!. Sheltering, it granted us crumbs of its power for a price. There will likely be more to follow.\n\nOur telepaths theorize, that the bond can be further deepened if we align ourselves more with our patron.\n\nThe Composer yearns for flesh set free from the constraints of evolution and genetic manipulations. It tells us about the respect of life, of nature and the sanctity of the flesh.\n\n$text_covenant_favor_info$\n[root.bts_planet_killer_end_pop_killed_status]"
-bts_instrument_covenant_chain_title: "The Instrument of Desire"
-bts_instrument_covenant_chain_desc: "We have created a bond with a Shroud Entity named the §YInstrument of Desire§!. Pampering, it granted us crumbs of its power for a price. There will likely be more to follow.\n\nOur telepaths theorize, that the bond can be deepened more easily if we align ourselves more with our patron.\n\nThe Instrument longs for yearning. Indulged pleasures, decadence and slavery spell the name of the Instrument.\n\n$text_covenant_favor_info$\n[root.bts_planet_killer_end_pop_killed_status]"
-text_covenant_total_favor: "Total Favor : §Y[root.covenant_total_favor]§!"
-text_covenant_favor_per_month: "Favor per month : §Y[root.covenant_favor_per_month]§!"
-text_covenant_favor_per_year: "Favor per year  : §Y[root.covenant_favor_per_year]§!"
-text_covenant_estimated_years_20_favor:  "§Y20§!  Favor : §Y[root.covenant_estimated_years_20_favor]§! years\n"
-text_covenant_estimated_years_50_favor:  "§Y50§!  Favor : §Y[root.covenant_estimated_years_50_favor]§! years\n"
-text_covenant_estimated_years_90_favor:  "§Y90§!  Favor : §Y[root.covenant_estimated_years_90_favor]§! years\n"
-text_covenant_estimated_years_100_favor: "§Y100§! Favor : §Y[root.covenant_estimated_years_100_favor]§! years\n"
-text_covenant_estimated_years_150_favor: "§Y150§! Favor : §Y[root.covenant_estimated_years_150_favor]§! years\n"
-text_covenant_estimated_years_200_favor: "§Y200§! Favor : §Y[root.covenant_estimated_years_200_favor]§! years\n"
-text_covenant_estimated_years_250_favor: "§Y250§! Favor : §Y[root.covenant_estimated_years_250_favor]§! years\n"
-text_covenant_estimated_years_300_favor: "§Y300§! Favor : §Y[root.covenant_estimated_years_300_favor]§! years\n"
-text_covenant_estimated_years_350_favor: "§Y350§! Favor : §Y[root.covenant_estimated_years_350_favor]§! years\n"
-text_covenant_estimated_years_400_favor: "§Y400§! Favor : §Y[root.covenant_estimated_years_400_favor]§! years\n"
-text_covenant_estimated_years_450_favor: "§Y450§! Favor : §Y[root.covenant_estimated_years_450_favor]§! years\n"
-text_covenant_estimated_years_500_favor: "§Y500§! Favor : §Y[root.covenant_estimated_years_500_favor]§! years\n"
-text_covenant_estimated_years_favor: "[root.scripted_text_covenant_estimated_years_20_favor][root.scripted_text_covenant_estimated_years_50_favor][root.scripted_text_covenant_estimated_years_90_favor][root.scripted_text_covenant_estimated_years_100_favor][root.scripted_text_covenant_estimated_years_150_favor][root.scripted_text_covenant_estimated_years_200_favor][root.scripted_text_covenant_estimated_years_250_favor][root.scripted_text_covenant_estimated_years_300_favor][root.scripted_text_covenant_estimated_years_350_favor][root.scripted_text_covenant_estimated_years_400_favor][root.scripted_text_covenant_estimated_years_450_favor][root.scripted_text_covenant_estimated_years_500_favor]"
-text_covenant_favor_info: "$text_covenant_total_favor$\n$text_covenant_favor_per_month$\n$text_covenant_favor_per_year$\n\nYears before reaching each following favor ranks:\n$text_covenant_estimated_years_favor$"
 
 # Origin
 origin_bts_zroni: "In the Footsteps of the Zroni"
