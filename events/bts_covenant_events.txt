@@ -6,7 +6,7 @@ country_event = {
 	hide_window = yes
 	
 	trigger = {
-		NOT = { has_country_flag = bts_covenant_contact }
+		NOT = { has_country_flag = bts_covenant_contacted }
 		NOT = { has_country_flag = bts_covenant_contact_pending }
 		has_patron_relation = { patron = whisperers_in_the_void contact = completed }
 	}
@@ -23,16 +23,33 @@ country_event = {
 
 country_event = {
 	id = bts.201
+	title = bts.201.title
+	desc = bts.201.desc
+	picture = GFX_evt_shroud_whisperers_in_the_void
 	is_triggered_only = yes
-	
+
+	show_sound = event_whisperers_in_the_void
+
 	trigger = {
 		has_country_flag = bts_covenant_contact_pending
 	}
 
-	option = {
-		name = OK
+	immediate = {
+		remove_country_flag = bts_covenant_contact_pending
+		set_country_flag = bts_covenant_contacted
+	}
 
+	option = {
+		name = bts.201.a
+		custom_tooltip = bts.201.a.tt
 		hidden_effect = {
+			if = {
+				limit = { is_robot_empire = yes }
+				end_event_chain = robot_shroud_whisperers_covenant_chain
+			}
+			else = {
+				end_event_chain = shroud_whisperers_covenant_chain
+			}
 			revert_accords = whisperers_in_the_void
 			remove_country_flag = knowledge_accord
 			remove_country_flag = wisdom_accord
@@ -40,6 +57,7 @@ country_event = {
 				new_patron = bts_patron
 				replaced_patron = whisperers_in_the_void
 			}
+			clear_covenant_flags = yes
 			set_patron_first_contact_state = { patron = bts_patron state = completed }
 			set_attunement = {
 				patron = bts_patron
@@ -54,22 +72,82 @@ country_event = {
 				limit = { has_building = building_whisperers_sanctum } 
 				remove_building = building_whisperers_sanctum
 			}
-			set_country_flag = bts_covenant_contact
-			remove_country_flag = bts_covenant_contact_pending
 		}
+	}
 
+	option = {
+		name = bts.201.b
 	}
 }
 
 # Covenant Proposal
-inline_script = {
-	script = shroud/patron_covenant_proposition_event
-	EVENT_ID = bts.205
-	FORMED_EVENT_ID = bts.206
-	CONFIRM_EVENT_ID = bts.207
-	PATRON_TYPE = bts_patron
-	CHAIN = "shroud_bts_patron_covenant_chain"
+country_event = {
+	id = bts.205
+	diplomatic_title = shroud.3.diplo_title
+	title = bts.205.title
+	desc = bts.205.desc
+	picture = GFX_evt_shroud_whisperers_in_the_void
+	is_triggered_only = yes
+
+	show_sound = event_whisperers_in_the_void
+
+	is_triggered_only = yes
+	diplomatic = yes
+	force_open = yes
+
+	picture_event_data = {
+		portrait = shroud1
+		room = shroud_room
+	}
+
+	option = {
+		name = bts.205.a
+		custom_tooltip = covenant.tooltip
+		custom_tooltip = shroud_bts_patron_covenant_chain_begin
+		accept_covenant = bts_patron
+		
+		hidden_effect = {
+			if = {
+				limit = { is_robot_empire = yes }
+				begin_event_chain = {
+					event_chain = robot_shroud_bts_patron_covenant_chain
+					target = this
+				}
+			}
+			else = {
+				begin_event_chain = {
+					event_chain = shroud_bts_patron_covenant_chain
+					target = this
+				}
+			}
+			set_country_flag = has_shroud_patron
+			country_event = { id = bts.206 } # FORMED_EVENT_ID
+			country_event = { id = bts.207 days = @covenant_confirmation_time_days } # CONFIRM_EVENT_ID
+		}
+	}
+	option = {
+		name = shroud.reject_covenant
+		custom_tooltip = shroud.reject_covenant.tt
+		default_hide_option = yes
+		hidden_effect = {
+			refuse_covenant = {
+				patron = bts_patron
+				reset_attunement = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			NOT = { has_country_flag = has_ever_established_covenant }
+		}
+		allow = {
+			NOT = { is_chosen_empire = yes }
+		}
+		name = shroud.forge_our_own_path
+		shroud_forge_your_own_path = yes
+	}
 }
+
 
 # Covenant Formed
 inline_script = {

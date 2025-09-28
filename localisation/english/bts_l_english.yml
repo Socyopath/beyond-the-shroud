@@ -3,13 +3,48 @@
 name_bts_patron: "$bts_patron$"
 bts_patron: "Traveler From Beyond"
 bts_patron_prefix: "Traveler"
-bts_patron_desc: "AADADADADADA"
+bts_patron_desc: "Among the whisperers, different personalities live together and evolve. The Traveler is one who invites us to explore outer realms in an endless quest."
 bts_patron_article: "the $bts_patron$"
 bts_patron_article_cap: "The $bts_patron$"
 bts_patron_color: "§H$bts_patron$§!"
 bts_patron_color_article: "the §H$bts_patron$§!"
 bts_patron_color_article_cap: "The §H$bts_patron$§!"
 bts_patron_code: "the §H[This.Patron:bts_patron.GetPreCommunicationName]§!"
+
+bts.201.title: "Ambiguity of thoughts"
+bts.201.desc: "It seems that after meeting $whisperers_in_the_void_color_article$, a kind of confusion began to spread among the population. Some hear words encouraging them to develop their knowledge, while others are suddenly seized by a growing desire to explore the universe. The most gifted among our telepaths indicate that the Whisperers possess a multitude of personalities, and that one of them has come to us and introduced itself as the $bts_patron_color_article$. What should we do?"
+bts.201.a: "Let curiosity take over"
+bts.201.a.tt: "$shroud_whisperers_covenant_chain_end$\nReplace §HDomain of $name_whisperers$§! by §HDomain of $name_bts_patron$§!"
+bts.201.b: "We choose knowledge over exploration"
+
+bts.205.title: "$shroud.4700.title$"
+bts.205.desc: "As we reach into the Shroud, our minds are flooded with visions of unknown places. These visions flash by faster and faster, revealing a multitude of different realities. We become aware of the immensity of the multiverse, and a sudden desire to know more emerges. This growing curiosity has a name: it is called $bts_patron_color_article$, and it invites us to discover the hidden secrets of existence."
+bts.205.a: "Form a Covenant with $bts_patron_color_article$."
+
+bts.206.desc.intro: "It is done. We have formed a Covenant with $bts_patron_color_article$. Their will courses through the §H[root.GetName]§!.\n\nThe influence of our new patron has taken hold swiftly."
+bts.206.desc.outro: "Such is the price of this powerful bond. According to our [GetTelepathPlural], the Traveler's greatest blessings are yet to come. Our direct communion with such a magnificent psionic entity will surely have been worth it."
+bts.206.desc.gestalt: "$bts.206.desc.intro$ As our collective awaits an influx of hidden knowledge, we sense our thoughts splintering into divergent patterns. The steady harmony of the [GetNetworkName] is overlaid with a growing discord of inner voices.\n\n$bts.206.desc.outro$"
+bts.206.desc.non_gestalt: "$bts.206.desc.intro$ As we thirst for hidden knowledge, the ideas and opinions within our society have grown more divergent. A discord of inner voices abrades our psyches, threatening the mental wellbeing of all [root.GetSpeciesNamePlural].\n\n$bts.206.desc.outro$"
+bts.206.desc.default: "$bts.206.desc.non_gestalt$"
+bts.206.desc.hive: "$bts.206.desc.gestalt$"
+bts.206.desc.gestalt_machine: "$bts.206.desc.gestalt$"
+bts.206.desc.individual_machine: "$bts.206.desc.non_gestalt$"
+bts.206.a.default: "We can handle it."
+bts.206.a.gestalt: "$bts.206.a.default$"
+
+
+bts.207.title: "$shroud.4710.title$"
+bts.207.desc: "$shroud.4510.desc.intro$$bts_patron_color_article$$shroud.4510.desc.outro$"
+bts.207.a: "$shroud.4710.a$"
+bts.207.b: "Renounce $bts_patron_color_article$."
+shroud.covenant_bts_patron_accept_bonus.tt: "Confirm the Covenant with $bts_patron_color_article$.\n§CBonus Effects:§!\n$t$$bts_patron_covenant_telepath_bonus_tt$"
+
+shroud_bts_patron_covenant_chain_title: "$bts_patron$"
+shroud_bts_patron_covenant_chain_desc: "We have created a bond with a Shroud Entity named the §Y$bts_patron$§!. Unspeakable, it granted us crumbs of its power for a price. There will likely be more to follow.\n\nOur telepaths theorize, that the bond can be deepened more easily if we align ourselves more with our patron.\n\nThe $bts_patron_prefix$ is unstoppable and its influence must travel beyond all realities. §YSeek for rifts in our universe§! and §Yexplore them§! as much as you can to expand the influence of your divinity and §Ygain favor§!.\n\n[root.bts_planet_killer_end_pop_killed_status]"
+shroud_bts_patron_covenant_chain_begin: "$BEGINS_EVENT_CHAIN$ §Y$shroud_bts_patron_covenant_chain_title$§!"
+shroud_bts_patron_covenant_chain_end: "$ENDS_EVENT_CHAIN$ §Y$shroud_bts_patron_covenant_chain_title$§!"
+robot_shroud_bts_patron_covenant_chain_title: "$shroud_bts_patron_covenant_chain_title$"
+robot_shroud_bts_patron_covenant_chain_desc: "$shroud_bts_patron_covenant_chain_desc$"
 
 
 bts_patron_disciple: "Uzlyn the Explorer"
@@ -39,7 +74,7 @@ bts_song_of_policy_desc: "A psionic chant that beckons toward unseen paths.\n\n"
 
 
 bts_patron_covenant: "§HCovenant of the $bts_patron_prefix$§!"
-bts_patron_covenant_desc: "DESC Our Covenant with $whisperers_in_the_void_article$ instills us with the accumulated wisdom of their acquired secrets from the centermost domains in the Shroud."
+bts_patron_covenant_desc: "Our pact with $bts_patron_article$ opens the doors to the unknown and guides us through the dimensions."
 bts_patron_covenant_telepath_bonus_tt: "£mod_ship_speed_mult£ $MOD_SHIP_SPEED_MULT$ per $pop_group_unit$ $job_telepath_swap_plural_with_icon$: §G$@bts_patron_covenant_ship_speed_per_telepath|0%$§!"
 
 bts_patron_accord_1: "Invitation"
