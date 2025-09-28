@@ -21,3 +21,15 @@ has_patron_chosen_one_leader_trait = {
         has_trait = bts_leader_trait_covenant_chosen
 	}
 }
+
+has_patron_disciple_leader_trait = {
+	OR = {
+		has_trait = leader_trait_disciple_of_the_cradle
+		has_trait = leader_trait_disciple_of_the_eater
+		has_trait = leader_trait_disciple_of_the_instrument
+		has_trait = leader_trait_disciple_of_the_composer
+		has_trait = leader_trait_disciple_of_the_whisperers
+		has_trait = leader_trait_disciple_of_the_end
+		has_trait = leader_trait_disciple_of_the_bts_patron
+	}
+}

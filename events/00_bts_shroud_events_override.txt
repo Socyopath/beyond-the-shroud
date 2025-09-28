@@ -1,0 +1,175 @@
+namespace = shroud
+
+# Roll for shroud leader acquisition
+country_event = {
+	id = shroud.12000
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_shroud_dlc = yes
+		has_breached_shroud = yes
+	}
+
+	immediate = {
+		if = {
+			limit = { has_covenant_with_end_of_the_cycle = yes }
+			if = {
+				limit = { 
+					NOR = { 
+						has_global_flag = eotc_leader_found 
+						has_country_flag = eotc_leader_found
+					} 
+				}
+				random = {
+					chance = 3
+					set_global_flag = eotc_leader_found
+					country_event = { id = shroud.12060 }
+					set_country_flag = eotc_leader_found
+				}
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					NOR = { 
+						has_global_flag = cradle_leader_found 
+						has_country_flag = cradle_leader_found
+					} 
+					has_patron_relation = { patron = the_cradle_of_souls }
+					is_in_domain = the_cradle_of_souls
+					has_covenant_with_the_composer_of_strands = no
+					has_covenant_with_the_eater_of_worlds = no
+					has_covenant_with_the_instrument_of_desire = no
+					has_covenant_with_whisperers_in_the_void = no
+                    has_covenant_with_bts_patron = no
+					is_homicidal = no
+				}
+				random = {
+					chance = value:calc_patron_paragon_roll_chance|PATRON|the_cradle_of_souls|
+					set_global_flag = cradle_leader_found
+					country_event = { id = shroud.12010 }
+					set_country_flag = cradle_leader_found
+					break = yes
+				}
+			}
+			if = {
+				limit = {
+					NOR = { 
+						has_global_flag = eater_leader_found 
+						has_country_flag = eater_leader_found
+					}
+					has_patron_relation = { patron = the_eater_of_worlds }
+					is_in_domain = the_eater_of_worlds
+					has_covenant_with_the_composer_of_strands = no
+					has_covenant_with_the_cradle_of_souls = no
+					has_covenant_with_the_instrument_of_desire = no
+					has_covenant_with_whisperers_in_the_void = no
+                    has_covenant_with_bts_patron = no
+					NOT = { has_valid_civic = civic_hive_devouring_swarm }
+				}
+				random = {
+					chance = value:calc_patron_paragon_roll_chance|PATRON|the_eater_of_worlds|
+					set_global_flag = eater_leader_found
+					country_event = { id = shroud.12020 }
+					set_country_flag = eater_leader_found
+					break = yes
+				}
+			}
+			if = {
+				limit = {
+					NOT = { 
+						has_global_flag = instrument_leader_found 
+						has_country_flag = instrument_leader_found
+					}
+					has_patron_relation = { patron = the_instrument_of_desire }
+					is_in_domain = the_instrument_of_desire
+					has_covenant_with_the_composer_of_strands = no
+					has_covenant_with_the_cradle_of_souls = no
+					has_covenant_with_the_eater_of_worlds = no
+					has_covenant_with_whisperers_in_the_void = no
+                    has_covenant_with_bts_patron = no
+					is_homicidal = no
+				}
+				random = {
+					chance = value:calc_patron_paragon_roll_chance|PATRON|the_instrument_of_desire|
+					set_global_flag = instrument_leader_found
+					country_event = { id = shroud.12030 }
+					set_country_flag = instrument_leader_found
+					break = yes
+				}
+			}
+			if = {
+				limit = {
+					NOR = { 
+						has_global_flag = composer_leader_found 
+						has_country_flag = composer_leader_found
+					}
+					has_patron_relation = { patron = the_composer_of_strands }
+					is_in_domain = the_composer_of_strands
+					has_covenant_with_the_instrument_of_desire = no
+					has_covenant_with_the_cradle_of_souls = no
+					has_covenant_with_the_eater_of_worlds = no
+					has_covenant_with_whisperers_in_the_void = no
+                    has_covenant_with_bts_patron = no
+					is_homicidal = no
+				}
+				random = {
+					chance = value:calc_patron_paragon_roll_chance|PATRON|the_composer_of_strands|
+					set_global_flag = composer_leader_found
+					country_event = { id = shroud.12040 }
+					set_country_flag = composer_leader_found
+					break = yes
+				}
+			}
+			if = {
+				limit = {
+					NOR = { 
+						has_global_flag = whisperers_leader_found 
+						has_country_flag = whisperers_leader_found
+					}
+					has_patron_relation = { patron = whisperers_in_the_void }
+					is_in_domain = whisperers_in_the_void
+					has_covenant_with_the_instrument_of_desire = no
+					has_covenant_with_the_cradle_of_souls = no
+					has_covenant_with_the_eater_of_worlds = no
+					has_covenant_with_the_composer_of_strands = no
+                    has_covenant_with_bts_patron = no
+					is_homicidal = no
+					is_gestalt = no
+				}
+				random = {
+					chance = value:calc_patron_paragon_roll_chance|PATRON|whisperers_in_the_void|
+					set_global_flag = whisperers_leader_found
+					country_event = { id = shroud.12050 }
+					set_country_flag = whisperers_leader_found
+					break = yes
+				}
+			}
+            if = {
+				limit = {
+					NOR = { 
+						has_global_flag = bts_patron_leader_found 
+						has_country_flag = bts_patron_leader_found
+					}
+					has_patron_relation = { patron = bts_patron }
+					is_in_domain = bts_patron
+					has_covenant_with_the_instrument_of_desire = no
+					has_covenant_with_the_cradle_of_souls = no
+					has_covenant_with_the_eater_of_worlds = no
+					has_covenant_with_the_composer_of_strands = no
+                    has_covenant_with_whisperers_in_the_void = no
+					is_homicidal = no
+					is_gestalt = no
+				}
+				random = {
+					chance = value:calc_patron_paragon_roll_chance|PATRON|bts_patron|
+					set_global_flag = bts_patron_leader_found
+					country_event = { id = bts.209 }
+					set_country_flag = bts_patron_leader_found
+					break = yes
+				}
+			}
+		}
+	}
+}

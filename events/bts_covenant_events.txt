@@ -110,6 +110,92 @@ country_event = {
 	}
 }
 
+# Patron - Paragon Disciple
+country_event = {
+	id = bts.209
+	title = bts.209.name
+	desc = bts.209.desc
+	show_sound = {
+		trigger = { is_robot_empire = yes }
+		sound = event_psionic_robot
+	}
+	show_sound = {
+		trigger = { is_robot_empire = no }
+		sound = event_psionic
+	}
+	is_triggered_only = yes
+
+	picture = GFX_leader_recruitment_bg_renowned
+
+	event_window_type = leader_recruit
+	auto_opens = yes
+
+	immediate = {
+		shroud_leader_creator = {
+			LEADER_PORTRAIT = psionic_02
+			SPECIES_CLASS = FUN
+			CLASS = scientist
+			NAME = bts_patron_disciple
+			LEVEL = 8
+			AGE = 38
+			GENDER = indeterminable
+			ETHIC = xenophile
+			DESC = bts_patron_disciple_desc
+			CATCH_PHRASE = bts_patron_disciple_catch_phrase
+		}
+		last_created_leader = {
+			add_trait = { trait = leader_trait_disciple_of_the_bts_patron consume_selection = yes }
+			add_trait = { trait = leader_trait_psionic consume_selection = yes }
+			add_trait = { trait = leader_trait_rift_warped consume_selection = yes }
+			add_trait = { trait = leader_trait_expertise_psionics_2 consume_selection = yes }
+			add_trait = { trait = leader_trait_academic_astral_rift_expert consume_selection = yes }
+			add_trait = { trait = subclass_scientist_scholar consume_selection = yes }
+			add_trait = { trait = leader_trait_spark_of_genius_2 consume_selection = yes }
+		}
+	}
+
+	picture_event_data = {
+		portrait = event_target:shroud_leader
+		room = shroud_room
+	}
+
+	option = {
+		name = DISMISS
+		tag = dismiss_leader
+		hidden_effect = {
+			remove_global_flag = bts_patron_leader_found
+			event_target:shroud_leader = {
+				kill_leader = { show_notification = no }
+			}
+		}
+	}
+	option = {
+		name = bts.209.a
+		response_text = bts.209.a.response
+		is_dialog_only = yes
+	}
+	option = {
+		name = bts.209.b
+		response_text = bts.209.b.response
+		is_dialog_only = yes
+	}
+	option = {
+		name = bts.209.c
+		response_text = bts.209.c.response
+		is_dialog_only = yes
+	}
+	option = {
+		name = HIRE
+		tag = hire_leader
+		custom_tooltip = bts.209.hire_custom_tooltip
+		hidden_effect = {
+			shroud_leader_hire_effect = {
+				GLOBAL_EVENT_TARGET = bts_patron_disciple_target
+			}
+		}
+	}
+}
+
 # Power 2 Event 
 country_event = {
 	id = bts.210

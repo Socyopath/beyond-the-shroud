@@ -12,6 +12,27 @@ bts_patron_color_article_cap: "The §H$bts_patron$§!"
 bts_patron_code: "the §H[This.Patron:bts_patron.GetPreCommunicationName]§!"
 
 
+bts_patron_disciple: "Uzlyn the Explorer"
+bts_patron_disciple_desc: "An adventurer who has abandoned conventional narratives about the frontiers of reality to devote himself to exploring places never before discovered by conscious beings."
+bts_patron_disciple_catch_phrase: "We need only to explore..."
+
+
+
+bts.209.name: "$bts_patron_disciple$"
+bts.209.desc: "§HThe communication array crackles to life as a voice murmurs with eerie urgency.§!\n\nGreetings, fellow explorer. I felt your powerful desire for discovery through the shroud. You feel it too now, don't you? That curiosity that drives us to discover the hidden places. It comes from $bts_patron_color_article$, that being who symbolizes the thirst for adventure. He invites us to take part in his quest for a journey into infinity... "
+
+bts.209.a: "What makes you think you can help?"
+bts.209.a.response: "You've pierced the veil of the §HShroud§!, haven't you? But tell me, did you know that there are countless other dimensions within the multiverse?\n\nI've spent my entire life mapping as many of them as possible, tracing the unfathomable drift of their entities and their echoes on our fragile realm."
+bts.209.b: "What do you know of the Traveler?"
+bts.209.b.response: "The Traveler has guided me for a long time, and he wishes to share this curiosity with all conscious beings...\n\nI cataloged his visions for years, waiting for this precise moment. Now that you are in tune with his thoughts, I will not let this chance to share our discoveries pass me by."
+bts.209.c: "What are you offering us?"
+bts.209.c.response: "A lifetime devoted to traveling has allowed me to expand my knowledge of the different planes that make up our physical reality, as well as the infinite depths of the §HShroud§!\n\nI could guide you in this vast cosmic web, and together we could discover the limits of our reality, if indeed they exist."
+bts.209.hire_custom_tooltip: "§Y$bts_patron_disciple$§! joins our empire as a §HLeader§!."
+
+
+leader_trait_disciple_of_the_bts_patron: "Insatiable Curiosity"
+leader_trait_disciple_of_the_bts_patron_desc: "This leader receives visions from the $bts_patron_article$ through the Shroud, which reveals places still unknown to mortals."
+
 bts_song_of_policy: "Song of Horizons"
 bts_song_of_policy_desc: "A psionic chant that beckons toward unseen paths.\n\n"
 

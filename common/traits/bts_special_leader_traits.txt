@@ -99,3 +99,24 @@ bts_leader_trait_covenant_chosen = {
 	initial = no
 	randomized = no
 }
+
+
+leader_trait_disciple_of_the_bts_patron = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_foreign_consciousness"
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
+	leader_class = { scientist }
+	triggered_councilor_modifier = {
+		shroud_delve_cooldown = -0.2
+		country_astral_rift_speed_mult = 0.35
+		country_astral_rift_fail_mult = -0.15
+	}
+	initial = no
+	randomized = no
+}
