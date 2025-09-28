@@ -1,4 +1,5 @@
 bts_building_covenant_sanctum = {
+	icon = building_zroni_equilibrator
 	base_buildtime = @b3_time
 
 	category = government

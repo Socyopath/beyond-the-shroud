@@ -4,7 +4,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_bts_patron_icon"
-		texturefile = "gfx/interface/icons/patrons/whisperers_in_the_void.dds"
+		texturefile = "gfx/interface/icons/patrons/bts_patron_icon.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
 	}
 
@@ -134,13 +134,13 @@ spriteTypes = {
     # Accord 1
 	spriteType = {
 		name = "GFX_bts_patron_accord_1_locked"
-		texturefile = "gfx/interface/icons/patrons/accords/passive/accord_knowledge_inactive.dds"
+		texturefile = "gfx/interface/icons/patrons/accords/passive/bts_patron_accord_1_locked.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
 		transparenceCheck = yes
 	}
 	spriteType = {
 		name = "GFX_bts_patron_accord_1_unlocked"
-		texturefile = "gfx/interface/icons/patrons/accords/passive/accord_knowledge_active.dds"
+		texturefile = "gfx/interface/icons/patrons/accords/passive/bts_patron_accord_1_unlocked.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
 		transparenceCheck = yes
 	}
@@ -148,13 +148,13 @@ spriteTypes = {
     # Accord 2
 	spriteType = {
 		name = "GFX_bts_patron_accord_2_locked"
-		texturefile = "gfx/interface/icons/patrons/accords/passive/accord_wisdom_inactive.dds"
+		texturefile = "gfx/interface/icons/patrons/accords/passive/bts_patron_accord_2_locked.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
 		transparenceCheck = yes
 	}
 	spriteType = {
 		name = "GFX_bts_patron_accord_2_unlocked"
-		texturefile = "gfx/interface/icons/patrons/accords/passive/accord_wisdom_active.dds"
+		texturefile = "gfx/interface/icons/patrons/accords/passive/bts_patron_accord_2_unlocked.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
 		transparenceCheck = yes
 	}
@@ -162,7 +162,7 @@ spriteTypes = {
     # Power 1
     spriteType = {
 		name = "GFX_bts_patron_power_1"
-		texturefile = "gfx/interface/icons/patrons/accords/active/accord_foresight.dds"
+		texturefile = "gfx/interface/icons/patrons/accords/active/accord_distortion.dds"
 		effectFile = "gfx/FX/buttonstate_onlyanim.shader"
 		transparenceCheck = yes
 		noOfFrames = 5
@@ -172,7 +172,7 @@ spriteTypes = {
     # Power 2
 	spriteType = {
 		name = "GFX_bts_patron_power_2"
-		texturefile = "gfx/interface/icons/patrons/accords/active/accord_hindsight.dds"
+		texturefile = "gfx/interface/icons/patrons/accords/active/accord_fractalization.dds"
 		effectFile = "gfx/FX/buttonstate_onlyanim.shader"
 		transparenceCheck = yes
 		noOfFrames = 5
