@@ -47,11 +47,10 @@
 @bts_tech_zro_infusion_cost = 36000
 @bts_tech_zro_infusion_zro_upkeep_cost = 0.1
 @bts_tech_zro_infusion_food_upkeep_mult = -0.5
-@bts_tech_zro_infusion_favor_cost = 125
 
 @bts_tech_labyrinth_summon_upgrade_cost = 56000
 @bts_tech_labyrinth_summon_upgrade_favor_cost = 300
 @bts_tech_labyrinth_summon_upgrade_job_cost = 5000
 
 @bts_tech_shroud_destabilizer_cost = 72000
-@bts_tech_shroud_destabilizer_favor_cost = 400
+

@@ -168,30 +168,6 @@ country_event = {
 
 }
 
-# Zro Infusion Event
-country_event = { 
-	id = bts.100
-	is_triggered_only = yes
-	title = bts_tech_zro_infusion
-	desc = bts_tech_zro_infusion_desc
-	picture = GFX_evt_psionics
-	show_sound = event_psionic
-
-	trigger = {
-		NOR = {
-			has_tech_option = bts_tech_zro_infusion
-			has_technology = bts_tech_zro_infusion
-		}
-		bts_has_any_covenant_confirmed = yes
-		bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_tech_zro_infusion_favor_cost }
-	}
-
-	option = {
-		name = OK
-		add_research_option = bts_tech_zro_infusion
-	}
-}
-
 # Shrouded Shields Event
 country_event = { 
 	id = bts.101
@@ -244,29 +220,5 @@ country_event = {
 	option = {
 		name = OK
 		add_research_option = bts_tech_labyrinth_summon_upgrade
-	}
-}
-
-# Shroud Destabilizer Tech Event
-country_event = { 
-	id = bts.103
-	is_triggered_only = yes
-	title = bts_tech_shroud_destabilizer
-	desc = bts_tech_shroud_destabilizer_desc
-	picture = GFX_evt_psionics
-	show_sound = event_psionic
-
-	trigger = {
-		NOR = {
-			has_tech_option = bts_tech_shroud_destabilizer
-			has_technology = bts_tech_shroud_destabilizer
-		}
-		bts_has_any_covenant_confirmed = yes
-		bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_tech_shroud_destabilizer_favor_cost }
-	}
-
-	option = {
-		name = OK
-		add_research_option = bts_tech_shroud_destabilizer
 	}
 }
