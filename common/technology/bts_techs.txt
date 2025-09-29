@@ -16,9 +16,7 @@ bts_tech_occultism = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				has_tradition = tr_psionics_finish
-			}
+			has_breached_shroud = no
 		}
 		inline_script = {
 			script = technologies/rare_technologies_weight_modifiers
@@ -40,24 +38,19 @@ bts_tech_otherworldly_knowledge_1 = {
 	area = society
 	category = { psionics }
 	cost = @bts_tech_otherworldly_knowledge_1_cost
-	tier = 3
+	tier = 4
 	is_rare = yes
 	is_reverse_engineerable = no
 	weight = @tier3weight2
 
-	prerequisites = { "tech_psionic_theory" }
+	prerequisites = { "tech_aura_intensification" }
 	
 	modifier = {
-		shroud_delve_cost = @bts_tech_otherworldly_knowledge_1_shroud_delve_cost
+		psionic_aura_intensity_mult = @bts_tech_otherworldly_knowledge_1_aura_growth
+		psionic_aura_effectiveness_mult = @bts_tech_otherworldly_knowledge_1_aura_effectiveness
 	}
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				has_tradition = tr_psionics_finish
-			}
-		}
 		inline_script = {
 			script = technologies/rare_technologies_weight_modifiers
 			TECHNOLOGY = bts_tech_otherworldly_knowledge_1
@@ -86,7 +79,8 @@ bts_tech_otherworldly_knowledge_2 = {
 	prerequisites = { "bts_tech_otherworldly_knowledge_1" }
 	
 	modifier = {
-		shroud_delve_cost = @bts_tech_otherworldly_knowledge_2_shroud_delve_cost
+		psionic_aura_intensity_mult = @bts_tech_otherworldly_knowledge_2_aura_growth
+		psionic_aura_effectiveness_mult = @bts_tech_otherworldly_knowledge_2_aura_effectiveness
 	}
 
 	weight_modifier = {
@@ -126,7 +120,7 @@ bts_tech_mind_evocation_1 = {
 		modifier = {
 			factor = 0
 			NOT = {
-				has_tradition = tr_psionics_mind_readers
+				has_tradition = tr_psionics_shroud_clairvoyance
 			}
 		}
 		modifier = {
@@ -149,7 +143,7 @@ bts_tech_mind_evocation_2 = {
 	area = society
 	category = { psionics }
 	cost = @bts_tech_mind_evocation_2_cost
-	tier = 4
+	tier = 3
 	is_rare = yes
 	is_reverse_engineerable = no
 	weight = @tier4weight1
@@ -194,12 +188,6 @@ bts_tech_psychic_coalition = {
 	}
 
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			NOT = {
-				has_tradition = tr_psionics_mind_readers
-			}
-		}
 		modifier = {
 			factor = @bts_tech_zro_crystal_factor
 			has_relic = r_zro_crystal
@@ -277,7 +265,6 @@ bts_tech_zroni_shield = {
 	}
 }
 
-# Event Techs
 bts_tech_zro_infusion = {
 	icon = bts_tech_zro_infusion
 	area = society
@@ -286,46 +273,23 @@ bts_tech_zro_infusion = {
 	tier = 5
 	is_rare = yes
 	is_reverse_engineerable = no
-	weight = 0
+	weight = @tier5weight1
 
 	prerequisites = { "tech_mine_zro" }
 
 	weight_modifier = {
-		factor = 0
-	}
-}
-
-bts_tech_shrouded_shields = {
-	icon = bts_tech_shrouded_shields
-	area = society
-	category = { psionics }
-	cost = @bts_tech_shrouded_shields_cost
-	tier = 5
-	is_rare = yes
-	is_reverse_engineerable = no
-	weight = 0
-
-	prerequisites = { "tech_psionic_shield" }
-
-	weight_modifier = {
-		factor = 0
-	}
-}
-
-bts_tech_covenant_mark = {
-	icon = bts_tech_covenant_mark
-	area = society
-	cost = @guardiantechcost
-	tier = @guardiantechtier
-	category = { psionics }
-	ai_update_type = all
-	is_rare = yes
-	prerequisites = { "tech_psionic_theory" }
-	weight = 0
-	is_reverse_engineerable = no
-
-	weight_modifier = {
-		factor = 0
+		modifier = {
+			factor = @bts_tech_zro_crystal_factor
+			has_relic = r_zro_crystal
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = bts_tech_zro_infusion
+		}
+		modifier = {
+			factor = 2
+			has_tier1or2or3_in_council = { TRAIT = leader_trait_expertise_psionics }
+		}
 	}
 }
 
@@ -338,11 +302,28 @@ bts_tech_shroud_destabilizer = {
 	is_rare = yes
 	is_dangerous = yes
 	is_reverse_engineerable = no
-	weight = 0
+	weight = @tier5weight3
 
 	prerequisites = { "tech_psionic_theory" }
 
 	weight_modifier = {
-		factor = 0
+		modifier = {
+			factor = 0
+			NOT = {
+				has_modifier = psionic_mastery
+			}
+		}
+		modifier = {
+			factor = @bts_tech_zro_crystal_factor
+			has_relic = r_zro_crystal
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = bts_tech_shroud_destabilizer
+		}
+		modifier = {
+			factor = 2
+			has_tier1or2or3_in_council = { TRAIT = leader_trait_expertise_psionics }
+		}
 	}
 }

@@ -4,11 +4,15 @@
 @bts_tech_occultism_cost = 12000
 @bts_tech_occultism_shroud_delve_cooldown = -0.10
 
-@bts_tech_otherworldly_knowledge_1_cost = 12000
-@bts_tech_otherworldly_knowledge_1_shroud_delve_cost = -0.15
+@bts_tech_otherworldly_knowledge_1_cost = 18000
+@bts_tech_otherworldly_knowledge_1_aura_growth = 0.10
+@bts_tech_otherworldly_knowledge_1_aura_effectiveness = 0.05
 
-@bts_tech_otherworldly_knowledge_2_cost = 16000
-@bts_tech_otherworldly_knowledge_2_shroud_delve_cost = -0.25
+
+
+@bts_tech_otherworldly_knowledge_2_cost = 22000
+@bts_tech_otherworldly_knowledge_2_aura_growth = 0.15
+@bts_tech_otherworldly_knowledge_2_aura_effectiveness = 0.10
 
 @bts_tech_mind_evocation_1_cost = 12000
 @bts_tech_mind_evocation_1_intel_add = 10
