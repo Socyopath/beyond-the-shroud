@@ -31,9 +31,7 @@
 @bts_tech_prescience_mia_time = -0.75
 
 @bts_tech_shrouded_shields_cost = 48000
-@bts_tech_shrouded_shields_regen_perc = 0.15
-@bts_tech_shrouded_shields_hit_point = 0.25
-@bts_tech_shrouded_shields_favor_cost = 250
+@bts_tech_shrouded_shields_minor_patron_count = 3
 
 @bts_small_zroni_shield_point = 500
 @bts_small_zroni_shield_regen = 5

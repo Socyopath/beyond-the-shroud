@@ -327,3 +327,37 @@ bts_tech_shroud_destabilizer = {
 		}
 	}
 }
+
+bts_tech_shrouded_shields = {
+	icon = bts_tech_shrouded_shields
+	area = society
+	category = { psionics }
+	cost = @bts_tech_shrouded_shields_cost
+	tier = 5
+	is_rare = yes
+	is_reverse_engineerable = no
+	weight = 0
+
+	prerequisites = { "tech_psionic_shield" }
+
+	weight_modifier = {
+		factor = 0
+	}
+}
+
+bts_tech_covenant_mark = {
+	icon = bts_tech_covenant_mark
+	area = society
+	cost = @guardiantechcost
+	tier = @guardiantechtier
+	category = { psionics }
+	ai_update_type = all
+	is_rare = yes
+	prerequisites = { "tech_psionic_theory" }
+	weight = 0
+	is_reverse_engineerable = no
+
+	weight_modifier = {
+		factor = 0
+	}
+}

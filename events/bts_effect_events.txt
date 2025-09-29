@@ -182,8 +182,10 @@ country_event = {
 			has_tech_option = bts_tech_shrouded_shields
 			has_technology = bts_tech_shrouded_shields
 		}
-		bts_has_any_covenant_confirmed = yes
-		bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_tech_shrouded_shields_favor_cost }
+		check_variable_arithmetic = {
+			which = value:num_minor_patron_relations
+			value >= @bts_tech_shrouded_shields_minor_patron_count
+		}
 	}
 
 	option = {
@@ -206,8 +208,6 @@ country_event = {
 			has_tech_option = bts_tech_labyrinth_summon_upgrade
 			has_technology = bts_tech_labyrinth_summon_upgrade
 		}
-		bts_has_any_covenant_confirmed = yes
-		bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_tech_labyrinth_summon_upgrade_favor_cost }
 		any_owned_planet = {
 			is_planet_class = pc_bts_labyrinth_of_abstraction
 			num_assigned_jobs = {
