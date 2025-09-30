@@ -19,6 +19,13 @@ bts_shroud_destabilizer = {
 				is_orbital_ring = yes
 			}
 		}
+		owner = {
+			count_starbase_buildings = {
+				type = bts_shroud_destabilizer
+				count < @bts_shroud_destabilizer_max_amount
+				include_being_constructed = yes
+			}
+		}
 		solar_system = {
 			count_starbase_buildings = {
 				type = bts_shroud_destabilizer
@@ -38,6 +45,10 @@ bts_shroud_destabilizer = {
 		}
 	}
 
+	country_modifier = {
+		bts_shroud_destabilizer_intensity_add = 1
+	}
+
 	resources = {
 		category = starbase_buildings
 		cost = {
@@ -51,5 +62,4 @@ bts_shroud_destabilizer = {
 
 	show_in_tech = "bts_tech_shroud_destabilizer"
 	custom_tooltip = sm_bts_shroud_destabilizer_effects
-	equipped_component = "bts_shroud_destabilizer_aura_component"
 }

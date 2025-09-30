@@ -143,3 +143,11 @@ bts_power_cost_mult = {
 	category = country
 	percentage = yes
 }
+
+bts_shroud_destabilizer_intensity_add = {
+	icon = mod_sr_zro_cost_mult
+	max_decimals = 0
+	good = yes
+	category = country
+	percentage = no
+}

@@ -160,10 +160,12 @@ bts_large_zroni_shield: "$ZRONI_SHIELD$"
 ## Starbase Buildings
 sm_bts_shroud_destabilizer: "$bts_tech_shroud_destabilizer$"
 sm_bts_shroud_destabilizer_desc: "$bts_tech_shroud_destabilizer_desc$"
-sm_bts_shroud_destabilizer_effects: ""
-bts_shroud_destabilizer_aura_component: "$bts_tech_shroud_destabilizer$"
-bts_shroud_destabilizer_aura_component_desc: "$bts_tech_shroud_destabilizer_desc$"
-
+sm_bts_shroud_destabilizer_effects: "§I$PSIONIC_AURA$§! (§RHostile Effects§!):\n$t$$sm_bts_shroud_destabilizer_effect_evasion$\n$t$$sm_bts_shroud_destabilizer_effect_accuracy$\n$t$$sm_bts_shroud_destabilizer_effect_tracking$\n$t$$sm_bts_shroud_destabilizer_effect_fire_rate$\n$t$$sm_bts_shroud_destabilizer_effect_speed_reduction$"
+sm_bts_shroud_destabilizer_effect_evasion: "§R$@bts_shroud_destabilizer_evasion_mult|0%$§! $MOD_SHIP_EVASION_MULT$"
+sm_bts_shroud_destabilizer_effect_accuracy: "§R$@bts_shroud_destabilizer_accuracy_mult|0%$§! $MOD_SHIP_ACCURACY_MULT$"
+sm_bts_shroud_destabilizer_effect_tracking: "§R$@bts_shroud_destabilizer_tracking_mult|0%$§! $MOD_SHIP_TRACKING_MULT$"
+sm_bts_shroud_destabilizer_effect_fire_rate: "§R$@bts_shroud_destabilizer_fire_rate_mult|0%$§! $MOD_SHIP_FIRE_RATE_MULT$"
+sm_bts_shroud_destabilizer_effect_speed_reduction: "§R$@bts_shroud_destabilizer_speed_reduction|0%$§! $MOD_SHIP_SPEED_REDUCTION$"
 
 # Techs
 bts_tech_occultism: "Occultism"
@@ -188,7 +190,7 @@ bts_tech_zroni_shield_desc: "The shroud revealed an ancient artifact, the shield
 bts_tech_zro_infusion: "Zro Infusion"
 bts_tech_zro_infusion_desc: "By saturating biological systems with refined Zro, we've altered the metabolic needs of our population. Food is becoming less important, and thought-supported living is now possible."
 bts_tech_shroud_destabilizer: "Shroud Destabilizer"
-bts_tech_shroud_destabilizer_desc: "We've managed to infuse the pure psionic energy of the shroud into our starbase. Due to the unstable nature of this energy, violent psionic waves emanate from it, disrupting enemy systems."
+bts_tech_shroud_destabilizer_desc: "By channeling the unstable echoes of the Shroud into our psionic aura, this device disrupts the minds and systems of enemy ships. Within its range, order falters, signals fracture, and the void itself seems to conspire against intruders."
 
 
 # Origin

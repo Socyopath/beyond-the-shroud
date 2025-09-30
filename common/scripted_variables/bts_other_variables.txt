@@ -2,5 +2,14 @@
 @decision_bts_zroni_astral_spliting_energy_cost = 2000
 @decision_bts_zroni_astral_spliting_astral_threads_cost = 100
 
-
+# Shroud Destabilizer Starbase Module
+@bts_shroud_destabilizer_build_time = 1080
+@bts_shroud_destabilizer_zro_cost = 15000
+@bts_shroud_destabilizer_zro_upkeep = 5
+@bts_shroud_destabilizer_max_amount = 5
+@bts_shroud_destabilizer_evasion_mult = -0.10
+@bts_shroud_destabilizer_accuracy_mult = -0.05
+@bts_shroud_destabilizer_tracking_mult = -0.05
+@bts_shroud_destabilizer_fire_rate_mult = -0.05
+@bts_shroud_destabilizer_speed_reduction = 0.05
 
