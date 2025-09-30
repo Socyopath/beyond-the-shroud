@@ -1,7 +1,7 @@
 psionic_choir = {
 	potential = {
 		has_shroud_dlc = yes
-		# is_corporeal_authority = yes
+		is_corporeal_authority = yes
 		has_covenant_with_end_of_the_cycle = no
 	}
 
