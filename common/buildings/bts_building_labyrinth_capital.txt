@@ -59,6 +59,10 @@ bts_labyrinth_of_abstraction_core_2 = {
 		bts_labyrinth_of_abstraction_core_3
 	}
 
+	country_modifier = {
+		psionic_aura_hyperlane_range_add = @bts_labyrinth_of_abstraction_aura_hyperlane
+	}
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -103,6 +107,10 @@ bts_labyrinth_of_abstraction_core_3 = {
 		bts_labyrinth_of_abstraction_core_4
 	}
 
+	country_modifier = {
+		psionic_aura_hyperlane_range_add = @bts_labyrinth_of_abstraction_aura_hyperlane
+	}
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -142,6 +150,10 @@ bts_labyrinth_of_abstraction_core_4 = {
 	}
 	convert_to = {
 		bts_labyrinth_of_abstraction_core_4
+	}
+
+	country_modifier = {
+		psionic_aura_hyperlane_range_add = @bts_labyrinth_of_abstraction_aura_hyperlane
 	}
 
 	resources = {
