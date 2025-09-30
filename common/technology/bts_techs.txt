@@ -349,10 +349,7 @@ bts_tech_shroud_destabilizer = {
 			factor = 0
 			NAND = {
 				has_modifier = psionic_mastery
-				check_variable_arithmetic = {
-					which = value:num_minor_patron_relations
-					value >= @bts_tech_shroud_destabilizer_minor_patron_count
-				}
+				bts_num_minor_patron_relations = { COUNT = @bts_tech_shroud_destabilizer_minor_patron_count }
 			}
 		}
 		modifier = {

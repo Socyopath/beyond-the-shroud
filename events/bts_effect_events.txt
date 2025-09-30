@@ -123,10 +123,7 @@ country_event = {
 			has_tech_option = bts_tech_shrouded_shields
 			has_technology = bts_tech_shrouded_shields
 		}
-		check_variable_arithmetic = {
-			which = value:num_minor_patron_relations
-			value >= @bts_tech_shrouded_shields_minor_patron_count
-		}
+		bts_num_minor_patron_relations = { COUNT = @bts_tech_shrouded_shields_minor_patron_count }
 	}
 
 	option = {
