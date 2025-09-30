@@ -293,6 +293,44 @@ bts_tech_zro_infusion = {
 	}
 }
 
+bts_tech_aura_mastery = {
+	icon = bts_tech_aura_mastery
+	area = society
+	category = { psionics }
+	cost = @bts_tech_aura_mastery_cost
+	tier = 5
+	is_rare = yes
+	is_reverse_engineerable = no
+	weight = @tier5weight1
+
+	prerequisites = { "tech_aura_intensification" }
+
+	modifier = {
+		description = bts_tech_aura_mastery_effect
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_modifier = psionic_mastery
+			}
+		}
+		modifier = {
+			factor = @bts_tech_zro_crystal_factor
+			has_relic = r_zro_crystal
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = bts_tech_aura_mastery
+		}
+		modifier = {
+			factor = 2
+			has_tier1or2or3_in_council = { TRAIT = leader_trait_expertise_psionics }
+		}
+	}
+}
+
 bts_tech_shroud_destabilizer = {
 	icon = bts_tech_shroud_destabilizer
 	area = society
