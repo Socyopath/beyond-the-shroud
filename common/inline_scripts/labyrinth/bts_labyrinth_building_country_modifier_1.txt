@@ -45,7 +45,7 @@ $NAME$_2 = {
 
 	allow = {
 		owner = {
-			bts_has_any_covenant_favor_with_tooltip = { FAVOR_AMOUNT = @bts_labyrinth_building_tier_2_favor }
+			bts_num_minor_patron_relations_with_tooltip = { COUNT = @bts_labyrinth_building_tier_2_minor_patron }
 		}
 	}
 
@@ -89,7 +89,7 @@ $NAME$_3 = {
 
 	allow = {
 		owner = {
-			bts_has_any_covenant_favor_with_tooltip = { FAVOR_AMOUNT = @bts_labyrinth_building_tier_3_favor }
+			bts_num_minor_patron_relations_with_tooltip = { COUNT = @bts_labyrinth_building_tier_3_minor_patron }
 		}
 	}
 
@@ -133,7 +133,7 @@ $NAME$_4 = {
 
 	allow = {
 		owner = {
-			bts_has_any_covenant_favor_with_tooltip = { FAVOR_AMOUNT = @bts_labyrinth_building_tier_4_favor }
+			bts_num_minor_patron_relations_with_tooltip = { COUNT = @bts_labyrinth_building_tier_4_minor_patron }
 		}
 	}
 	

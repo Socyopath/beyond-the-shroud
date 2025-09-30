@@ -14,7 +14,7 @@ country_event = {
 	trigger = {
 		NOT = { has_country_flag = bts_labyrinth_of_abstraction_unlocked }
 		bts_has_any_covenant_confirmed = yes
-		bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_of_abstraction_favor_cost }
+		has_country_flag = forging_our_own_path
 	}
 
 	option = {

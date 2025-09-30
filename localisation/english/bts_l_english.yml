@@ -219,3 +219,7 @@ edict_bts_zro_infusion_edict_effect: "£food£ $food$ upkeep cost from £pops£ 
 
 # UI Text
 bts_reckoning_info: "§M$NAME_Reckoning$§! : §Y[root.bts_planet_killer_end_pop_killed]§! organic pops §Rkilled§!"
+bts_requires_bts_num_minor_patron_1: "Has contacted at least §Y1§! minor patron"
+bts_requires_bts_num_minor_patron_2: "Has contacted at least §Y2§! minor patrons"
+bts_requires_bts_num_minor_patron_3: "Has contacted at least §Y3§! minor patrons"
+bts_requires_bts_num_minor_patron_4: "Has contacted at least §Y4§! minor patrons"

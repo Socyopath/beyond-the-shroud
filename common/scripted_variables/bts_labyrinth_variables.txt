@@ -8,9 +8,9 @@
 @bts_labyrinth_of_abstraction_megastructure_cost_energy = 2000
 
 # Favor related
-@bts_labyrinth_building_tier_2_favor = 100
-@bts_labyrinth_building_tier_3_favor = 200
-@bts_labyrinth_building_tier_4_favor = 300
+@bts_labyrinth_building_tier_2_minor_patron = 2
+@bts_labyrinth_building_tier_3_minor_patron = 3
+@bts_labyrinth_building_tier_4_minor_patron = 4
 @bts_labyrinth_shroud_inter_choose_boon_favor_cost_medium = 75
 @bts_labyrinth_shroud_inter_choose_boon_favor_cost_high = 100
 @bts_labyrinth_shroud_inter_choose_boon_cooldown = 3600

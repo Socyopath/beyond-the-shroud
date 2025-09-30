@@ -6,6 +6,22 @@ has_covenant_with_bts_patron = {
 	}
 }
 
+bts_num_minor_patron_relations = {
+	check_variable_arithmetic = {
+		which = value:num_minor_patron_relations
+		value >= $COUNT$
+	}
+}
+
+bts_num_minor_patron_relations_with_tooltip = {
+	custom_tooltip = {
+		bts_num_minor_patron_relations = { COUNT = $COUNT$ }
+		fail_text = bts_requires_bts_num_minor_patron_$COUNT$
+	}
+}
+
+
+
 bts_has_any_covenant_favor = {
 	OR = {
 		check_variable = { which = composer_covenant_rank value >= $FAVOR_AMOUNT$ }
