@@ -409,119 +409,83 @@ country_event = {
 		set_country_flag = shroud_diplomacy_engaged
 	}
 
-	option = { # Psionic Shield
-		name = "utopia.3170.a"
-		custom_tooltip = "shroud.unknown.chances.medium"
-		trigger = {
-			NOR = {
-				has_technology = tech_psionic_shield
-				has_tech_option = tech_psionic_shield
-			}
-		}
-		hidden_effect = {
-			random_list = {
-				60 = {
-					country_event = { id = utopia.3171 }
-				}
-				40 = {
-					modifier = {
-						factor = 0.5
-						has_relic = r_zro_crystal
-					}
-					country_Event = { id = utopia.3172 }
-				}
-			}
-		}		
-	}
-
 	option = {
-		name = "utopia.3180.a"
-		custom_tooltip = "shroud.unknown.chances.medium"
+		name = bts.314.eater
 		trigger = {
-			NOR = {
-				has_technology = tech_precognition_interface
-				has_tech_option = tech_precognition_interface
+			has_patron_relation = { patron = the_eater_of_worlds }
+		}
+		custom_tooltip_with_params = {
+			description = bts.314.eater.tt
+			description_parameters = {
+				"ATTUNEMENT" = @bts_labyrinth_shroud_interraction_aura_value
 			}
 		}
-		hidden_effect = {
-			random_list = {
-				60 = {
-					country_event = { id = utopia.3181 }
-				}
-				40 = {
-					modifier = {
-						factor = 0.5
-						has_relic = r_zro_crystal
-					}
-					country_Event = { id = utopia.3182 }
-				}
-			}
-		}
+		bts_set_patron_attunement_exact = { PATRON = the_eater_of_worlds VALUE = @bts_labyrinth_shroud_interraction_aura_value }
 	}
-
 	option = {
-		name = "utopia.3160.a"
-		custom_tooltip = "shroud.unknown.chances.medium"
+		name = bts.314.cradle
 		trigger = {
-			NOR = {
-				has_technology = tech_psi_jump_drive_1
-				has_tech_option = tech_psi_jump_drive_1
+			has_patron_relation = { patron = the_cradle_of_souls }
+		}
+		custom_tooltip_with_params = {
+			description = bts.314.cradle.tt
+			description_parameters = {
+				"ATTUNEMENT" = @bts_labyrinth_shroud_interraction_aura_value
 			}
 		}
-		hidden_effect = {
-			random_list = {
-				60 = { 
-					modifier = {
-						factor = 1.5
-						has_country_flag = jaunted_traveler_secret_revealed
-					}
-					country_event = { id = utopia.3161 }
-				}
-				40 = {
-					modifier = {
-						factor = 0.5
-						has_relic = r_zro_crystal
-					}
-					country_event = { id = utopia.3162 }
-				}
-			}
-		}
+		bts_set_patron_attunement_exact = { PATRON = the_cradle_of_souls VALUE = @bts_labyrinth_shroud_interraction_aura_value }
 	}
-
 	option = {
-		name = "bts.301.effects.chosen"
+		name = bts.314.composer
 		trigger = {
-			NOT = {
-				any_owned_leader = {
-					has_trait = leader_trait_chosen
-				}
+			has_patron_relation = { patron = the_composer_of_strands }
+		}
+		custom_tooltip_with_params = {
+			description = bts.314.composer.tt
+			description_parameters = {
+				"ATTUNEMENT" = @bts_labyrinth_shroud_interraction_aura_value
 			}
 		}
-		hidden_effect = {
-			country_event = { id = utopia.3190 }
-		}
+		bts_set_patron_attunement_exact = { PATRON = the_composer_of_strands VALUE = @bts_labyrinth_shroud_interraction_aura_value }
 	}
-
 	option = {
-		name = "bts.301.effects.steal"
+		name = bts.314.instrument
 		trigger = {
-			any_country = {
-				is_country_type = fallen_empire
-				NOT = { has_ethic = ethic_gestalt_consciousness }
-				has_communications = root
-				NOT = { is_at_war_with = root }
+			has_patron_relation = { patron = the_instrument_of_desire }
+		}
+		custom_tooltip_with_params = {
+			description = bts.314.instrument.tt
+			description_parameters = {
+				"ATTUNEMENT" = @bts_labyrinth_shroud_interraction_aura_value
 			}
-			# NOT = { has_country_flag = shroud_fallen_empire }
 		}
-		hidden_effect = {
-			country_event = { id = utopia.3150 }
-		}
+		bts_set_patron_attunement_exact = { PATRON = the_instrument_of_desire VALUE = @bts_labyrinth_shroud_interraction_aura_value }
 	}
-
 	option = {
-		name = "exit.shroud"
-		custom_tooltip = "exit.shroud.tooltip"
-		default_hide_option = yes
+		name = bts.314.whisperers
+		trigger = {
+			has_patron_relation = { patron = whisperers_in_the_void }
+		}
+		custom_tooltip_with_params = {
+			description = bts.314.whisperers.tt
+			description_parameters = {
+				"ATTUNEMENT" = @bts_labyrinth_shroud_interraction_aura_value
+			}
+		}
+		bts_set_patron_attunement_exact = { PATRON = whisperers_in_the_void VALUE = @bts_labyrinth_shroud_interraction_aura_value }
+	}
+	option = {
+		name = bts.314.patron
+		trigger = {
+			has_patron_relation = { patron = bts_patron }
+		}
+		custom_tooltip_with_params = {
+			description = bts.314.patron.tt
+			description_parameters = {
+				"ATTUNEMENT" = @bts_labyrinth_shroud_interraction_aura_value
+			}
+		}
+		bts_set_patron_attunement_exact = { PATRON = bts_patron VALUE = @bts_labyrinth_shroud_interraction_aura_value }
 	}
 
 	after = {

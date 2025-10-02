@@ -17,7 +17,7 @@
 @bts_labyrinth_shroud_interraction_reset_cost = 1000
 @bts_labyrinth_shroud_interraction_reset_cooldown = 1000
 @bts_labyrinth_shroud_interraction_aura_cost = 1000
-@bts_labyrinth_shroud_interraction_aura_cooldown = 1000
+@bts_labyrinth_shroud_interraction_aura_value = 300
 
 # Jobs
 @bts_veilwatcher_unity_upkeep = 3
