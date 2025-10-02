@@ -135,55 +135,37 @@ country_event = {
 		}
 	}
 
-	option = { # Shroud Boons
-		name = {
-			exclusive_trigger = {
-				bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_shroud_inter_choose_boon_favor_cost_high }
-			}
-			text = bts.301.boon.high
-		}
-
-		name = {
-			exclusive_trigger = {
-				bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_shroud_inter_choose_boon_favor_cost_medium }
-			}
-			text = bts.301.boon.medium
-		}
-
-		name = bts.301.boon.low
-
-		allow = {
-			resource_stockpile_compare = {
-				resource = energy
-				value >= 1500
-				mult = value:scripted_modifier_mult|MODIFIER|shroud_delve_cost|
-			}
-		}
-		add_resource = {
-			energy = -1500
-			mult = value:scripted_modifier_mult|MODIFIER|shroud_delve_cost|
-		}
-
-		add_modifier = {
-			modifier = "shroud_cooldown"
-			days = @bts_labyrinth_shroud_inter_choose_boon_cooldown
-			time_multiplier = value:scripted_modifier_mult|MODIFIER|shroud_delve_cooldown|
-		}
-		hidden_effect = {
-			if = {
-				limit = { bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_shroud_inter_choose_boon_favor_cost_high } }
-				country_event = { id = bts.312 }
-			}
-			else_if = {
-				limit = { bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_shroud_inter_choose_boon_favor_cost_medium } }
-				country_event = { id = bts.311 }
-			}
-			else = {
-				country_event = { id = bts.310 }
-			}
-		}
+	inline_script = {
+		script = labyrinth/bts_labyrinth_shroud_interraction
+		NAME = bts.301.boon.low
+		TRIGGER = bts_can_use_labyrinth_shroud_inter_choose_boon_low
+		COST = @bts_labyrinth_shroud_interraction_boon_cost
+		COOLDOWN = @bts_labyrinth_shroud_interraction_boon_cooldown
+		COOLDOWN_FLAG = bts_labyrinth_shroud_interraction_boon
+		EVENT_ID = bts.310
 	}
-	option = { # BTS Custom covenant special powers
+	
+	inline_script = {
+		script = labyrinth/bts_labyrinth_shroud_interraction
+		NAME = bts.301.boon.medium
+		TRIGGER = bts_can_use_labyrinth_shroud_inter_choose_boon_medium
+		COST = @bts_labyrinth_shroud_interraction_boon_cost
+		COOLDOWN = @bts_labyrinth_shroud_interraction_boon_cooldown
+		COOLDOWN_FLAG = bts_labyrinth_shroud_interraction_boon
+		EVENT_ID = bts.311
+	}
+
+	inline_script = {
+		script = labyrinth/bts_labyrinth_shroud_interraction
+		NAME = bts.301.boon.high
+		TRIGGER = bts_can_use_labyrinth_shroud_inter_choose_boon_high
+		COST = @bts_labyrinth_shroud_interraction_boon_cost
+		COOLDOWN = @bts_labyrinth_shroud_interraction_boon_cooldown
+		COOLDOWN_FLAG = bts_labyrinth_shroud_interraction_boon
+		EVENT_ID = bts.312
+	}
+
+	option = { # Summon Abstract Entities
 		name = bts.301.powers
 		trigger = {
 			# bts_has_labyrinth_of_abstraction_level = { LEVEL = @bts_labyrinth_shroud_inter_powers_unlock_level }
@@ -199,33 +181,29 @@ country_event = {
 		}
 	}
 
-	option = { # Shroud effects
-		name = bts.301.effects
-		trigger = {
-			bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_shroud_inter_choose_effect_favor_cost }
-		}
+	# Reset shroud delve cd
+	inline_script = {
+		script = labyrinth/bts_labyrinth_shroud_interraction_tooltip
+		NAME = bts.301.reset
+		TOOLTIP = bts.301.reset.tt
+		TRIGGER = bts_can_use_labyrinth_shroud_inter_reset_cd
+		COST = @bts_labyrinth_shroud_interraction_reset_cost
+		COOLDOWN = @bts_labyrinth_shroud_interraction_reset_cooldown
+		COOLDOWN_FLAG = bts_labyrinth_shroud_interraction_reset
+		EVENT_ID = bts.313
+	}
 
-		allow = {
-			resource_stockpile_compare = {
-				resource = energy
-				value >= 2000
-				mult = value:scripted_modifier_mult|MODIFIER|shroud_delve_cost|
-			}
-		}
 
-		add_resource = {
-			energy = -2000
-			mult = value:scripted_modifier_mult|MODIFIER|shroud_delve_cost|
-		}
-
-		add_modifier = {
-			modifier = "shroud_cooldown"
-			days = @bts_labyrinth_shroud_inter_choose_effect_cooldown
-			time_multiplier = value:scripted_modifier_mult|MODIFIER|shroud_delve_cooldown|
-		}
-		hidden_effect = {
-			country_event = { id = bts.320 }
-		}
+	# Change psionic aura
+	inline_script = {
+		script = labyrinth/bts_labyrinth_shroud_interraction_tooltip
+		NAME = bts.301.aura
+		TOOLTIP = bts.301.aura.tt
+		TRIGGER = bts_can_use_labyrinth_shroud_inter_change_aura
+		COST = @bts_labyrinth_shroud_interraction_aura_cost
+		COOLDOWN = @bts_labyrinth_shroud_interraction_aura_cooldown
+		COOLDOWN_FLAG = bts_labyrinth_shroud_interraction_aura
+		EVENT_ID = bts.314
 	}
 
 	inline_script = {
@@ -391,9 +369,20 @@ country_event = {
 	}
 }
 
-# Shroud Effects
+# Reduce Shroud Delve cooldown
 country_event = {
-	id = bts.320
+	id = bts.313
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		add_modifier = { modifier = reduce_next_delve_cooldown }
+	}
+}
+
+# Aura Mastery
+country_event = {
+	id = bts.314
 	title = "utopia.3000.name"
 	desc = { text = utopia.3200.1.desc }
 	desc = { text = utopia.3200.2.desc }

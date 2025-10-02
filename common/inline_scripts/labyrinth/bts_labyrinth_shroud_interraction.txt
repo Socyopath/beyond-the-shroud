@@ -1,0 +1,35 @@
+option = {
+    name = $NAME$
+    trigger = {
+        $TRIGGER$ = yes
+    }
+
+    allow = {
+        custom_tooltip = {
+            fail_text = $COOLDOWN_FLAG$_cooldown_tt
+            NOT = {
+                has_country_flag = $COOLDOWN_FLAG$
+            }
+        }
+        resource_stockpile_compare = {
+            resource = sr_zro
+            value >= $COST$
+        }
+    }
+    add_resource = {
+        sr_zro = -$COST$
+    }
+
+    hidden_effect = {
+        set_timed_country_flag = { 
+            flag = $COOLDOWN_FLAG$ 
+            days = $COOLDOWN$ 
+        }
+        set_saved_date = {
+            key = $COOLDOWN_FLAG$_timer
+            days_from_present = $COOLDOWN$ 
+            expires = $COOLDOWN$ 
+        }
+        country_event = { id = $EVENT_ID$ }
+    }
+}

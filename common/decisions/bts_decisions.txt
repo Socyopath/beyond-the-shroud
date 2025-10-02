@@ -48,13 +48,7 @@ decision_bts_labyrinth_of_abstraction_shroud_interraction = {
 			NOT = { has_country_flag = shroud_diplomacy_engaged }
 		}
 	}
-	allow = {
-		owner = {
-			NOT = {
-				has_modifier = shroud_cooldown
-			}
-		}
-	}
+	
 	effect = {
 		custom_tooltip = decision_bts_labyrinth_of_abstraction_shroud_interraction_effects
 		hidden_effect = {

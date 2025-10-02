@@ -1,0 +1,165 @@
+bts_has_labyrinth_of_abstraction = {
+	any_owned_planet = {
+		is_planet_class = pc_bts_labyrinth_of_abstraction
+	}
+}
+
+bts_has_labyrinth_of_abstraction_level_1 = {
+	any_owned_planet = {
+		is_planet_class = pc_bts_labyrinth_of_abstraction
+		OR = {
+			has_building = bts_labyrinth_of_abstraction_core_1
+			has_building = bts_labyrinth_of_abstraction_core_2
+			has_building = bts_labyrinth_of_abstraction_core_3
+			has_building = bts_labyrinth_of_abstraction_core_4
+		}
+	}
+}
+
+bts_has_labyrinth_of_abstraction_level_2 = {
+	any_owned_planet = {
+		is_planet_class = pc_bts_labyrinth_of_abstraction
+		OR = {
+			has_building = bts_labyrinth_of_abstraction_core_2
+			has_building = bts_labyrinth_of_abstraction_core_3
+			has_building = bts_labyrinth_of_abstraction_core_4
+		}
+	}
+}
+
+bts_has_labyrinth_of_abstraction_level_3 = {
+	any_owned_planet = {
+		is_planet_class = pc_bts_labyrinth_of_abstraction
+		OR = {
+			has_building = bts_labyrinth_of_abstraction_core_3
+			has_building = bts_labyrinth_of_abstraction_core_4
+		}
+	}
+}
+
+bts_has_labyrinth_of_abstraction_level_4 = {
+	any_owned_planet = {
+		is_planet_class = pc_bts_labyrinth_of_abstraction
+		has_building = bts_labyrinth_of_abstraction_core_4
+	}
+}
+
+bts_has_labyrinth_of_abstraction_level = {
+	bts_has_labyrinth_of_abstraction_level_$LEVEL$ = yes
+}
+
+can_destroy_planet_with_BTS_PLANET_KILLER_END = {
+	custom_tooltip = {
+		fail_text = is_not_a_habitable_planet_or_megastructure
+		OR = {
+			is_a_habitable_planet_megastructure = yes
+			is_planet_class = pc_ai
+		}
+		is_under_colonization = no
+	}
+	custom_tooltip = {
+		fail_text = is_shielded
+		NOR = {
+			is_planet_class = pc_shielded
+			is_planet_class = pc_ringworld_shielded
+			is_planet_class = pc_habitat_shielded
+		}
+	}
+	custom_tooltip = {
+		fail_text = fotd_cant_collossus
+		NOT = { has_planet_flag = fotd_seperatist_planet@from.owner }
+		exists = from.owner
+		from.owner = { 
+			NOT = { has_country_flag = fotd_seperatist_country@from.owner }
+		}
+	}
+	custom_tooltip = { # Hostile or owned planets / pre ftl
+		fail_text = is_not_hostile_or_primitive 
+		OR = {
+			planet_is_hostile = yes
+			is_planet_class = pc_ai
+			AND = { # Pre ftl
+				exists = owner
+				owner = { is_country_type = primitive }
+			}
+			AND = { # Owned planets
+				exists = owner
+				owner = { is_same_value = from.owner }
+			}
+		}
+	}
+	if = {
+		limit = {
+			exists = owner
+			owner = { is_country_type = primitive }
+		}
+		custom_tooltip = {
+			fail_text = primitives_not_full_interference
+			from.owner = {
+				has_policy_flag = interference_aggressive
+			}
+		}
+	}
+	# target own colony
+	if = {
+		limit = {
+			NOR = {
+				planet_is_hostile = yes
+				AND = {
+					exists = owner
+					owner = { is_country_type = primitive }
+				}
+			}
+			exists = owner
+			owner = {
+				is_same_value = from.owner
+			}
+		}
+		custom_tooltip = {
+			text = not_owned_test_fire
+			exists = owner
+			owner = {
+				is_same_value = from.owner
+			}
+		}
+	}
+}
+
+bts_have_spec_point = {
+	check_variable = {
+		which = bts_spec_point
+		value >= 1
+	}
+}
+
+bts_can_use_labyrinth_shroud_inter_choose_boon_low = {
+	any_owned_planet = {
+		is_planet_class = pc_bts_labyrinth_of_abstraction
+		OR = {
+			has_building = bts_labyrinth_of_abstraction_core_1
+			has_building = bts_labyrinth_of_abstraction_core_2
+		}
+	}
+}
+
+bts_can_use_labyrinth_shroud_inter_choose_boon_medium = {
+	any_owned_planet = {
+		is_planet_class = pc_bts_labyrinth_of_abstraction
+		has_building = bts_labyrinth_of_abstraction_core_3
+	}
+}
+
+bts_can_use_labyrinth_shroud_inter_choose_boon_high = {
+	any_owned_planet = {
+		is_planet_class = pc_bts_labyrinth_of_abstraction
+		has_building = bts_labyrinth_of_abstraction_core_4
+	}
+}
+
+bts_can_use_labyrinth_shroud_inter_reset_cd = {
+	bts_has_labyrinth_of_abstraction_level = { LEVEL = 2 }
+}
+
+bts_can_use_labyrinth_shroud_inter_change_aura = {
+	has_technology = bts_tech_aura_mastery
+}
