@@ -96,6 +96,7 @@ bts_shroud_portal_megastructure: "Shroud Portal"
 bts_shroud_portal_megastructure_DESC: "Portal linking several locations in space. Any entity able to pass through it will be dematerialized in order to pass through the shroud, then rematerialized once on the other side."
 bts_shroud_portal_megastructure_MEGASTRUCTURE_DETAILS: "$bts_shroud_portal_megastructure_DESC$"
 bts_shroud_portal_galactic_DESC: "This system contains a §Y$bts_shroud_portal_megastructure$§!"
+bts_shroud_portal_megastructure_max_reached: "§RWe cannot keep more than §Y$@bts_shroud_portal_megastructure_max|0$§! portals open§!"
 
 # Techs
 bts_tech_aura_mastery: "$PSIONIC_AURA$ Mastery"

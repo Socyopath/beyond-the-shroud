@@ -147,6 +147,11 @@ bts_shroud_portal_megastructure = {
 		}
 	}
 
+	dismantle_potential = {
+		NOT = {
+			has_megastructure_flag = bts_shroud_portal_megastructure_temp_of@from
+		}
+	}
     potential = {
         bts_has_labyrinth_of_abstraction_level = {
             LEVEL = @bts_labyrinth_of_abstraction_shroud_portal_level
@@ -154,11 +159,33 @@ bts_shroud_portal_megastructure = {
     }
 
     possible = {
+		custom_tooltip = {
+			fail_text = bts_shroud_portal_megastructure_max_reached
+			from = {
+				count_owned_megastructure = {
+					limit = { 
+						is_megastructure_type = bts_shroud_portal_megastructure
+						NOT = { has_megastructure_flag = bts_shroud_portal_megastructure_temp_of@prev }
+					}
+					count < @bts_shroud_portal_megastructure_max
+				}
+			}
+		}
+
         custom_tooltip = {
 			fail_text = "requires_inside_border"
 			is_inside_border = from
 		}
-        NOT = { has_megastructure = bts_shroud_portal_megastructure }
+
+		custom_tooltip = {
+			fail_text = "requires_no_existing_megastructure"
+			NOT = {
+				any_system_megastructure = {
+					is_megastructure_type = bts_shroud_portal_megastructure
+					NOT = { has_megastructure_flag = bts_shroud_portal_megastructure_temp_of@from }
+				}
+			}
+		}
     }
 
 	bypass_type = bts_shroud_portal

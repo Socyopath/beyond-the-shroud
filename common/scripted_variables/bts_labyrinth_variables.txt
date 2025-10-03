@@ -75,7 +75,7 @@
 @bts_shroud_portal_energy = 400
 @bts_labyrinth_of_abstraction_relic_level = 4
 @bts_shroud_portal_expiration_days = 100
-
+@bts_shroud_portal_megastructure_max = 5
 
 ## Buildings
 @bts_building_dimensional_converger_shroud_cooldown = -0.05
