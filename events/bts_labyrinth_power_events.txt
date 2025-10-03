@@ -5,7 +5,15 @@ namespace = bts
 country_event = {
 	id = bts.400
 	title = "utopia.3000.name"
-	desc = "utopia.3190.desc"
+	desc = { text = utopia.3200.1.desc }
+	desc = { text = utopia.3200.2.desc }
+	desc = { text = utopia.3200.3.desc }
+	desc = { text = utopia.3200.4.desc }
+	desc = { text = utopia.3200.5.desc }
+	desc = { text = utopia.3200.6.desc }
+	desc = { text = utopia.3200.7.desc }
+	desc = { text = utopia.3200.8.desc }
+	desc = { text = utopia.3200.9.desc }
 	diplomatic = yes
 	diplomatic_title = BLANK_STRING
 	force_open = yes
@@ -36,7 +44,7 @@ country_event = {
         allow = {
             resource_stockpile_compare = {
                 resource = sr_zro
-                value >= 1000
+                value >= @bts_power_summon_1_cost
                 mult = value:scripted_modifier_mult|MODIFIER|bts_power_cost_mult|
             }
         }
@@ -57,16 +65,10 @@ country_event = {
 		}
 		
         add_resource = {
-            sr_zro = -1000
+            sr_zro = @[-bts_power_summon_1_cost]
             mult = value:scripted_modifier_mult|MODIFIER|bts_power_cost_mult|
         }
         
-        add_modifier = {
-            modifier = "shroud_cooldown"
-            days = @bts_power_summon_1_shroud_delve_cooldown
-            time_multiplier = value:scripted_modifier_mult|MODIFIER|shroud_delve_cooldown|
-        }
-
         hidden_effect = {
             country_event = { id = bts.410 }
         }
@@ -88,7 +90,7 @@ country_event = {
             }
             resource_stockpile_compare = {
                 resource = sr_zro
-                value >= 2000
+                value >= @bts_power_summon_2_cost
                 mult = value:scripted_modifier_mult|MODIFIER|bts_power_cost_mult|
             }
         }
@@ -109,14 +111,8 @@ country_event = {
 		}
 
         add_resource = {
-            sr_zro = -2000
+            sr_zro = @[-bts_power_summon_2_cost]
             mult = value:scripted_modifier_mult|MODIFIER|bts_power_cost_mult|
-        }
-        
-        add_modifier = {
-            modifier = "shroud_cooldown"
-            days = @bts_power_summon_2_shroud_delve_cooldown
-            time_multiplier = value:scripted_modifier_mult|MODIFIER|shroud_delve_cooldown|
         }
 
         hidden_effect = {
@@ -146,7 +142,7 @@ country_event = {
             }
             resource_stockpile_compare = {
                 resource = sr_zro
-                value >= 20000
+                value >= @bts_power_summon_3_cost
                 mult = value:scripted_modifier_mult|MODIFIER|bts_power_cost_mult|
             }
         }
@@ -178,16 +174,10 @@ country_event = {
 		}
 
         add_resource = {
-            sr_zro = -20000
+            sr_zro = @[-bts_power_summon_3_cost]
             mult = value:scripted_modifier_mult|MODIFIER|bts_power_cost_mult|
         }
         
-        add_modifier = {
-            modifier = "shroud_cooldown"
-            days = @bts_power_summon_3_shroud_delve_cooldown
-            time_multiplier = value:scripted_modifier_mult|MODIFIER|shroud_delve_cooldown|
-        }
-
         hidden_effect = {
             country_event = { id = bts.430 }
         }

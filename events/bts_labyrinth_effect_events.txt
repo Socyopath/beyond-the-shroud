@@ -33,86 +33,25 @@ country_event = {
 country_event = {
 	id = bts.301
 	title = "utopia.3000.name"
-	desc = {
-		text = utopia.3000.intro.desc
-		trigger = { has_country_flag = shroud_intro }
-	}
-	desc = {
-		text = utopia.3000.1.desc
-		trigger = { normal_shroud_message = yes }
-	}
-	desc = {
-		text = utopia.3000.2.desc
-		trigger = { normal_shroud_message = yes }
-	}
-	desc = {
-		text = utopia.3000.3.desc
-		trigger = { normal_shroud_message = yes }
-	}
-	desc = {
-		text = utopia.3000.4.desc
-		trigger = { normal_shroud_message = yes }
-	}
-	desc = {
-		text = utopia.3000.5.desc
-		trigger = { normal_shroud_message = yes }
-	}
-	desc = {
-		text = utopia.3000.6.desc
-		trigger = { normal_shroud_message = yes }
-	}
-	desc = {
-		text = utopia.3000.7.desc
-		trigger = { normal_shroud_message = yes }
-	}
-	desc = {
-		text = utopia.3000.8.desc
-		trigger = { normal_shroud_message = yes }
-	}
-	desc = {
-		text = utopia.3000.9.desc
-		trigger = { normal_shroud_message = yes }
-	}
-	desc = {
-		text = utopia.3000.10.desc
-		trigger = { normal_shroud_message = yes }
-	}
-	desc = {
-		text = utopia.3000.11.desc
-		trigger = { normal_shroud_message = yes }
-	}
-	desc = {
-		text = utopia.3000.12.desc
-		trigger = { normal_shroud_message = yes }
-	}
-	desc = {
-		text = utopia.3000.13.desc
-		trigger = { normal_shroud_message = yes }
-	}
-	desc = {
-		text = utopia.3000.14.desc
-		trigger = { normal_shroud_message = yes }
-	}
-	desc = {
-		text = utopia.3000.15.desc
-		trigger = { normal_shroud_message = yes }
-	}
-	desc = {
-		text = utopia.3000.16.desc
-		trigger = { normal_shroud_message = yes }
-	}
-	desc = {
-		text = utopia.3000.17.desc
-		trigger = { normal_shroud_message = yes }
-	}
-	desc = {
-		text = utopia.3000.18.desc
-		trigger = { normal_shroud_message = yes }
-	}
-	desc = {
-		text = utopia.3000.19.desc
-		trigger = { normal_shroud_message = yes }
-	}
+	desc = { text = utopia.3000.1.desc }
+	desc = { text = utopia.3000.2.desc }
+	desc = { text = utopia.3000.3.desc }
+	desc = { text = utopia.3000.4.desc }
+	desc = { text = utopia.3000.5.desc }
+	desc = { text = utopia.3000.6.desc }
+	desc = { text = utopia.3000.7.desc }
+	desc = { text = utopia.3000.8.desc }
+	desc = { text = utopia.3000.9.desc }
+	desc = { text = utopia.3000.10.desc }
+	desc = { text = utopia.3000.11.desc }
+	desc = { text = utopia.3000.12.desc }
+	desc = { text = utopia.3000.13.desc }
+	desc = { text = utopia.3000.14.desc }
+	desc = { text = utopia.3000.15.desc }
+	desc = { text = utopia.3000.16.desc }
+	desc = { text = utopia.3000.17.desc }
+	desc = { text = utopia.3000.18.desc }
+	desc = { text = utopia.3000.19.desc }
 
 	diplomatic_title = BLANK_STRING
 	diplomatic = yes
@@ -232,15 +171,25 @@ country_event = {
 country_event = {
 	id = bts.310
 	title = "utopia.3000.name"
-	desc = { text = utopia.3200.1.desc }
-	desc = { text = utopia.3200.2.desc }
-	desc = { text = utopia.3200.3.desc }
-	desc = { text = utopia.3200.4.desc }
-	desc = { text = utopia.3200.5.desc }
-	desc = { text = utopia.3200.6.desc }
-	desc = { text = utopia.3200.7.desc }
-	desc = { text = utopia.3200.8.desc }
-	desc = { text = utopia.3200.9.desc }
+	desc = { text = utopia.3000.1.desc }
+	desc = { text = utopia.3000.2.desc }
+	desc = { text = utopia.3000.3.desc }
+	desc = { text = utopia.3000.4.desc }
+	desc = { text = utopia.3000.5.desc }
+	desc = { text = utopia.3000.6.desc }
+	desc = { text = utopia.3000.7.desc }
+	desc = { text = utopia.3000.8.desc }
+	desc = { text = utopia.3000.9.desc }
+	desc = { text = utopia.3000.10.desc }
+	desc = { text = utopia.3000.11.desc }
+	desc = { text = utopia.3000.12.desc }
+	desc = { text = utopia.3000.13.desc }
+	desc = { text = utopia.3000.14.desc }
+	desc = { text = utopia.3000.15.desc }
+	desc = { text = utopia.3000.16.desc }
+	desc = { text = utopia.3000.17.desc }
+	desc = { text = utopia.3000.18.desc }
+	desc = { text = utopia.3000.19.desc }
 
 	diplomatic = yes
 	diplomatic_title = BLANK_STRING
@@ -279,15 +228,25 @@ country_event = {
 country_event = {
 	id = bts.311
 	title = "utopia.3000.name"
-	desc = { text = utopia.3200.1.desc }
-	desc = { text = utopia.3200.2.desc }
-	desc = { text = utopia.3200.3.desc }
-	desc = { text = utopia.3200.4.desc }
-	desc = { text = utopia.3200.5.desc }
-	desc = { text = utopia.3200.6.desc }
-	desc = { text = utopia.3200.7.desc }
-	desc = { text = utopia.3200.8.desc }
-	desc = { text = utopia.3200.9.desc }
+	desc = { text = utopia.3000.1.desc }
+	desc = { text = utopia.3000.2.desc }
+	desc = { text = utopia.3000.3.desc }
+	desc = { text = utopia.3000.4.desc }
+	desc = { text = utopia.3000.5.desc }
+	desc = { text = utopia.3000.6.desc }
+	desc = { text = utopia.3000.7.desc }
+	desc = { text = utopia.3000.8.desc }
+	desc = { text = utopia.3000.9.desc }
+	desc = { text = utopia.3000.10.desc }
+	desc = { text = utopia.3000.11.desc }
+	desc = { text = utopia.3000.12.desc }
+	desc = { text = utopia.3000.13.desc }
+	desc = { text = utopia.3000.14.desc }
+	desc = { text = utopia.3000.15.desc }
+	desc = { text = utopia.3000.16.desc }
+	desc = { text = utopia.3000.17.desc }
+	desc = { text = utopia.3000.18.desc }
+	desc = { text = utopia.3000.19.desc }
 
 	diplomatic = yes
 	diplomatic_title = BLANK_STRING
@@ -326,15 +285,25 @@ country_event = {
 country_event = {
 	id = bts.312
 	title = "utopia.3000.name"
-	desc = { text = utopia.3200.1.desc }
-	desc = { text = utopia.3200.2.desc }
-	desc = { text = utopia.3200.3.desc }
-	desc = { text = utopia.3200.4.desc }
-	desc = { text = utopia.3200.5.desc }
-	desc = { text = utopia.3200.6.desc }
-	desc = { text = utopia.3200.7.desc }
-	desc = { text = utopia.3200.8.desc }
-	desc = { text = utopia.3200.9.desc }
+	desc = { text = utopia.3000.1.desc }
+	desc = { text = utopia.3000.2.desc }
+	desc = { text = utopia.3000.3.desc }
+	desc = { text = utopia.3000.4.desc }
+	desc = { text = utopia.3000.5.desc }
+	desc = { text = utopia.3000.6.desc }
+	desc = { text = utopia.3000.7.desc }
+	desc = { text = utopia.3000.8.desc }
+	desc = { text = utopia.3000.9.desc }
+	desc = { text = utopia.3000.10.desc }
+	desc = { text = utopia.3000.11.desc }
+	desc = { text = utopia.3000.12.desc }
+	desc = { text = utopia.3000.13.desc }
+	desc = { text = utopia.3000.14.desc }
+	desc = { text = utopia.3000.15.desc }
+	desc = { text = utopia.3000.16.desc }
+	desc = { text = utopia.3000.17.desc }
+	desc = { text = utopia.3000.18.desc }
+	desc = { text = utopia.3000.19.desc }
 
 	diplomatic = yes
 	diplomatic_title = BLANK_STRING
@@ -384,15 +353,25 @@ country_event = {
 country_event = {
 	id = bts.314
 	title = "utopia.3000.name"
-	desc = { text = utopia.3200.1.desc }
-	desc = { text = utopia.3200.2.desc }
-	desc = { text = utopia.3200.3.desc }
-	desc = { text = utopia.3200.4.desc }
-	desc = { text = utopia.3200.5.desc }
-	desc = { text = utopia.3200.6.desc }
-	desc = { text = utopia.3200.7.desc }
-	desc = { text = utopia.3200.8.desc }
-	desc = { text = utopia.3200.9.desc }
+	desc = { text = utopia.3000.1.desc }
+	desc = { text = utopia.3000.2.desc }
+	desc = { text = utopia.3000.3.desc }
+	desc = { text = utopia.3000.4.desc }
+	desc = { text = utopia.3000.5.desc }
+	desc = { text = utopia.3000.6.desc }
+	desc = { text = utopia.3000.7.desc }
+	desc = { text = utopia.3000.8.desc }
+	desc = { text = utopia.3000.9.desc }
+	desc = { text = utopia.3000.10.desc }
+	desc = { text = utopia.3000.11.desc }
+	desc = { text = utopia.3000.12.desc }
+	desc = { text = utopia.3000.13.desc }
+	desc = { text = utopia.3000.14.desc }
+	desc = { text = utopia.3000.15.desc }
+	desc = { text = utopia.3000.16.desc }
+	desc = { text = utopia.3000.17.desc }
+	desc = { text = utopia.3000.18.desc }
+	desc = { text = utopia.3000.19.desc }
 
 	diplomatic = yes
 	diplomatic_title = BLANK_STRING
@@ -486,6 +465,15 @@ country_event = {
 			}
 		}
 		bts_set_patron_attunement_exact = { PATRON = bts_patron VALUE = @bts_labyrinth_shroud_interraction_aura_value }
+	}
+
+	option = {
+		name = "exit.shroud"
+		custom_tooltip = "exit.shroud.tooltip"
+		default_hide_option = yes
+		hidden_effect = {
+			remove_country_flag = bts_labyrinth_shroud_interraction_aura
+		}
 	}
 
 	after = {

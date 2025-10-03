@@ -11,12 +11,12 @@
 @bts_labyrinth_building_tier_3_minor_patron = 3
 @bts_labyrinth_building_tier_4_minor_patron = 4
 
-@bts_labyrinth_shroud_interraction_boon_cost = 3600
+@bts_labyrinth_shroud_interraction_boon_cost = 100
 @bts_labyrinth_shroud_interraction_boon_cooldown = 3600
-
-@bts_labyrinth_shroud_interraction_reset_cost = 1000
-@bts_labyrinth_shroud_interraction_reset_cooldown = 1000
+@bts_labyrinth_shroud_interraction_reset_cost = 250
+@bts_labyrinth_shroud_interraction_reset_cooldown = 1800
 @bts_labyrinth_shroud_interraction_aura_cost = 1000
+@bts_labyrinth_shroud_interraction_aura_cooldown = 1800
 @bts_labyrinth_shroud_interraction_aura_value = 300
 
 # Jobs
@@ -220,14 +220,14 @@
 @bts_job_unreality_shaper_summon_boost_shield_regen = 0.01
 ### Buildings
 @bts_building_labyrinth_unreality_shapers_cost_cost_mult = -0.25
-@bts_building_labyrinth_unreality_shapers_capacity_summon_2_add = 1
+@bts_building_labyrinth_unreality_shapers_capacity_summon_2_add = 2
 @bts_building_labyrinth_unreality_shapers_capacity_cost_mult = 1.50
 @bts_building_labyrinth_unreality_shapers_zroni_cost = 2.00
 ### Powers
-@bts_power_summon_1_shroud_delve_cooldown = 360
-@bts_power_summon_2_shroud_delve_cooldown = 720
+@bts_power_summon_1_cost = 500
+@bts_power_summon_2_cost = 2000
 @bts_power_summon_2_max_number = 2
-@bts_power_summon_3_shroud_delve_cooldown = 3600
+@bts_power_summon_3_cost = 20000
 @bts_power_summon_3_max_number = 1
 @bts_power_summon_3_job_cost = 10000
 
