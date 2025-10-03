@@ -20,6 +20,10 @@
 # Mark
 @bts_tech_covenant_mark_jumpdrive_range_mult = 0.25
 
+# Sanctum
+@bts_covenant_sanctum_evasion_add = 15
+@bts_covenant_sanctum_ship_jumpdrive_cd_mult = -0.3
+
 # Aura
 # Owner
 @bts_patron_aura_1_jumpdrive_range_mult_owner = 0.25

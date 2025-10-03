@@ -135,11 +135,11 @@ deed_bts_tradition_astral: "Studying"
 po_bts_tradition_astral: "Adopt £traditions£ §H$tradition_astral_studies$§! Tradition"
 
 ## Traits
-bts_leader_trait_covenant_chosen: "Chosen of the $bts_covenant_name_prefix$"
+bts_leader_trait_covenant_chosen: "Chosen of the $bts_patron_prefix$"
 bts_leader_trait_covenant_chosen_desc: "This leader has been chosen to wield the power of an inscrutable Shroud entity. Sustained by eldritch energies, death is now foreign to them."
 
 ## Buildings
-bts_building_covenant_sanctum: "Sanctum of the $bts_covenant_name_prefix$"
+bts_building_covenant_sanctum: "Sanctum of the $bts_patron_prefix$"
 bts_building_covenant_sanctum_desc: "The Sanctum is a place dedicated to communion with the $bts_covenant_name_full$. Here, secrets are traded in hushed tones, new knowledge is brought to be sealed away, and our murmurs join the chorus."
 
 ## Components
