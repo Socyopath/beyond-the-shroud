@@ -45,7 +45,7 @@ shroud.covenant_bts_patron_accept_bonus.tt: "Confirm the Covenant with $bts_patr
 
 ## Event chain
 shroud_bts_patron_covenant_chain_title: "$bts_patron$"
-shroud_bts_patron_covenant_chain_desc: "We have created a bond with a Shroud Entity named the §Y$bts_patron$§!. Unspeakable, it granted us crumbs of its power for a price. There will likely be more to follow.\n\nOur telepaths theorize, that the bond can be deepened more easily if we align ourselves more with our patron.\n\nThe $bts_patron_prefix$ is unstoppable and its influence must travel beyond all realities. §YSeek for rifts in our universe§! and §Yexplore them§! as much as you can to expand the influence of your divinity and §Ygain favor§!.\n\n[root.bts_planet_killer_end_pop_killed_status]"
+shroud_bts_patron_covenant_chain_desc: "We have created a bond with a Shroud Entity named the §Y$bts_patron$§!. Unspeakable, it granted us crumbs of its power for a price. There will likely be more to follow.\n\nOur telepaths theorize, that the bond can be deepened more easily if we align ourselves more with our patron.\n\nThe $bts_patron_prefix$ is unstoppable and its influence must travel beyond all realities. §YSeek for rifts in our universe§! and §Yexplore them§! as much as you can to expand the influence of your divinity and §Ygain attunement§!."
 shroud_bts_patron_covenant_chain_begin: "$BEGINS_EVENT_CHAIN$ §Y$shroud_bts_patron_covenant_chain_title$§!"
 shroud_bts_patron_covenant_chain_end: "$ENDS_EVENT_CHAIN$ §Y$shroud_bts_patron_covenant_chain_title$§!"
 robot_shroud_bts_patron_covenant_chain_title: "$shroud_bts_patron_covenant_chain_title$"

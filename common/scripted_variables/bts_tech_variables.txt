@@ -47,7 +47,6 @@
 @bts_tech_zro_infusion_food_upkeep_mult = -0.5
 
 @bts_tech_labyrinth_summon_upgrade_cost = 56000
-@bts_tech_labyrinth_summon_upgrade_favor_cost = 300
 @bts_tech_labyrinth_summon_upgrade_job_cost = 5000
 
 @bts_tech_aura_mastery_cost = 50000

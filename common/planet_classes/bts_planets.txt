@@ -18,6 +18,7 @@ pc_bts_labyrinth_of_abstraction = {
 	district_set = bts_labyrinth_of_abstraction_district_set
 	starting_district = bts_district_labyrinth_main
 	ideal = yes
+	asteroid = yes # Prevent destruction when patron betrayal event occurs shroud.11120
 	starting_planet = no
 	has_colonization_influence_cost = no			# applies when within own borders
 	is_artificial_planet = yes
