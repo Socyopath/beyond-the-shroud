@@ -107,8 +107,7 @@ country_event = {
 	option = { # Summon Abstract Entities
 		name = bts.301.powers
 		trigger = {
-			# bts_has_labyrinth_of_abstraction_level = { LEVEL = @bts_labyrinth_shroud_inter_powers_unlock_level }
-			# bts_has_any_covenant_favor = { FAVOR_AMOUNT = @bts_labyrinth_shroud_inter_powers_favor_cost }
+			has_country_flag = bts_labyrinth_summon_district_unlocked
 		}
 		hidden_effect = {
 			country_event = { 
