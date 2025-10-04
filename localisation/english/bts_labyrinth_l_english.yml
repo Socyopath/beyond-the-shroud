@@ -79,9 +79,9 @@ BTS_SHROUD_BLAST: "Shroud Blast"
 BTS_SHROUD_BLAST_DESC: ""
 
 # Decision
-decision_bts_labyrinth_of_abstraction_shroud_interraction: "Enter Shroud"
+decision_bts_labyrinth_of_abstraction_shroud_interraction: "§rShroud Delve§!"
 decision_bts_labyrinth_of_abstraction_shroud_interraction_desc: ""
-decision_bts_labyrinth_of_abstraction_shroud_interraction_effects: "Ask your §Y$job_bts_conceptual_architect_plural$§! to commune with the shroud to alter the reality."
+decision_bts_labyrinth_of_abstraction_shroud_interraction_effects: "Ask your most talented telepaths to commune with the §rShroud§! to alter reality"
 
 # Planet
 pc_bts_labyrinth_of_abstraction_full: "Laybrinth of Abstraction"

@@ -7,9 +7,9 @@
 @bts_labyrinth_of_abstraction_megastructure_cost_energy = 2000
 
 # Favor related
-@bts_labyrinth_building_tier_2_minor_patron = 2
-@bts_labyrinth_building_tier_3_minor_patron = 3
-@bts_labyrinth_building_tier_4_minor_patron = 4
+@bts_labyrinth_building_tier_2_minor_patron = 1
+@bts_labyrinth_building_tier_3_minor_patron = 2
+@bts_labyrinth_building_tier_4_minor_patron = 3
 
 @bts_labyrinth_shroud_interraction_boon_cost = 100
 @bts_labyrinth_shroud_interraction_boon_cooldown = 3600
@@ -219,7 +219,7 @@
 @bts_job_unreality_shaper_summon_boost_hull_regen = 0.01
 @bts_job_unreality_shaper_summon_boost_shield_regen = 0.01
 ### Buildings
-@bts_building_labyrinth_unreality_shapers_cost_cost_mult = -0.25
+@bts_building_labyrinth_unreality_shapers_cost_cost_mult = -0.15
 @bts_building_labyrinth_unreality_shapers_capacity_summon_2_add = 2
 @bts_building_labyrinth_unreality_shapers_capacity_cost_mult = 1.50
 @bts_building_labyrinth_unreality_shapers_zroni_cost = 2.00
