@@ -15,11 +15,11 @@ country_event = {
 		if = {
 			limit = { has_covenant_with_end_of_the_cycle = yes }
 			if = {
-				limit = { 
-					NOR = { 
-						has_global_flag = eotc_leader_found 
+				limit = {
+					NOR = {
+						has_global_flag = eotc_leader_found
 						has_country_flag = eotc_leader_found
-					} 
+					}
 				}
 				random = {
 					chance = 3
@@ -32,10 +32,10 @@ country_event = {
 		else = {
 			if = {
 				limit = {
-					NOR = { 
-						has_global_flag = cradle_leader_found 
+					NOR = {
+						has_global_flag = cradle_leader_found
 						has_country_flag = cradle_leader_found
-					} 
+					}
 					has_patron_relation = { patron = the_cradle_of_souls }
 					is_in_domain = the_cradle_of_souls
 					has_covenant_with_the_composer_of_strands = no
@@ -55,8 +55,8 @@ country_event = {
 			}
 			if = {
 				limit = {
-					NOR = { 
-						has_global_flag = eater_leader_found 
+					NOR = {
+						has_global_flag = eater_leader_found
 						has_country_flag = eater_leader_found
 					}
 					has_patron_relation = { patron = the_eater_of_worlds }
@@ -78,8 +78,8 @@ country_event = {
 			}
 			if = {
 				limit = {
-					NOT = { 
-						has_global_flag = instrument_leader_found 
+					NOT = {
+						has_global_flag = instrument_leader_found
 						has_country_flag = instrument_leader_found
 					}
 					has_patron_relation = { patron = the_instrument_of_desire }
@@ -101,8 +101,8 @@ country_event = {
 			}
 			if = {
 				limit = {
-					NOR = { 
-						has_global_flag = composer_leader_found 
+					NOR = {
+						has_global_flag = composer_leader_found
 						has_country_flag = composer_leader_found
 					}
 					has_patron_relation = { patron = the_composer_of_strands }
@@ -124,8 +124,8 @@ country_event = {
 			}
 			if = {
 				limit = {
-					NOR = { 
-						has_global_flag = whisperers_leader_found 
+					NOR = {
+						has_global_flag = whisperers_leader_found
 						has_country_flag = whisperers_leader_found
 					}
 					has_patron_relation = { patron = whisperers_in_the_void }
@@ -148,8 +148,8 @@ country_event = {
 			}
             if = {
 				limit = {
-					NOR = { 
-						has_global_flag = bts_patron_leader_found 
+					NOR = {
+						has_global_flag = bts_patron_leader_found
 						has_country_flag = bts_patron_leader_found
 					}
 					has_patron_relation = { patron = bts_patron }

@@ -219,9 +219,9 @@ country_event = {
 		}
 		random_owned_leader = {
 			limit = {
-				NOR = { 
+				NOR = {
 					exists = event_target:chosen_leader_lost_patron
-					is_same_value = event_target:chosen_leader 
+					is_same_value = event_target:chosen_leader
 				}
 				has_chosen_one_leader_trait = no
 				has_patron_chosen_one_leader_trait = yes
